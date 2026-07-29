@@ -1,0 +1,156 @@
+=== EMC - Easily Embed Calendly Scheduling ===
+Authors: Simpma Solutions
+Plugin Page: https://wordpress.org/plugins/embed-calendly-scheduling/
+
+== Changelog ==
+
+= 5.7 - 16-07-2026 =
+
+- Tested & ensured compatibility with the latest WordPress version
+
+= 5.6 - 01-06-2026 =
+
+- Improved inline popup button styling
+- Tested & ensured compatibility with the latest WordPress version
+
+= 5.5 - 29-04-2026 =
+
+- Improved compatibility with older PHP versions
+
+= 5.4 - 06-04-2026 =
+
+- Prevent duplicates on event types sync
+- Redirect correcly when sync button is clicked
+- Performance improvement
+
+= 5.3 - 17-03-2026 =
+
+- Security improvement
+
+= 5.2 - 14-03-2026 =
+
+- Security improvement
+- Fixed dynamic embedder UX
+- Correctly hide cookie notice in popup button
+
+= 5.1 - 12-03-2026 =
+
+- Dynamic embedder lite
+
+= 5.0 - 11-03-2026 =
+
+- Added dynamic calendar embedder
+- Security and performance improvements
+
+= 4.5 - 21-02-2026 =
+
+- Security fixes
+
+= 4.4 - 05-02-2026 =
+
+- Support for passing UTM and GCLID parameters to Calendly
+- Tested & ensured compatibility with the latest WordPress version
+
+= 4.3 - 26-01-2026 =
+
+- Tested & ensured compatibility with the latest WordPress version
+
+= 4.2 - 17-01-2025 =
+
+- Added prefill field option to customizer
+- Updated readme
+- Adjusted promotion module
+
+= 4.1 - 26-11-2024 =
+
+- Verified compatibility with WordPress updates.
+- Updated readme
+
+= 4.0 - 05-11-2024 =
+
+- UI rebranding and redesign
+- Added shortcode option for prefilling current logged in user info in embedded booking form
+- Improved pro version support
+- Improved internationalization support
+
+= 3.8 - 21-03-2024 =
+
+- Fixed customizer plugin conflicts
+
+= 3.7 - 12-10-2023 =
+
+- Improved security
+- Adjusted promotion module
+
+= 3.6 - 09-07-2023 =
+
+- Fixed customizer bug on Divi theme
+- Adjusted promotion module
+
+
+= 3.5 - 25-06-2023 =
+
+- Published changelog
+- Added optional promotion
+- Added option to permanently disable all promotion notices
+- Updated readme
+- Added pro version support
+- Updated settings page UI
+- Removed donation section from settings page
+
+
+= 3.4 - 13-05-2023 =
+
+- Removed experimental promotion
+
+
+= 3.3 - 22-04-2023 =
+
+- Added experimental promotion
+
+
+= 3.2 - 14-12-2022 =
+
+- Added internationalization support
+
+
+= 3.1 - 18-10-2022 =
+
+- Enqueue style and script on demand
+- Updated widget script
+- Fixed popup embed error
+
+
+= 3.0 - 08-05-2022 =
+
+- Added support for v2 api key
+- Fixed inline embed mobile responsiveness issue
+- Implemented cookie banner on customizer and other fixes
+- Updated settings page
+
+
+= 2.0 - 06-08-2021 =
+
+- Added embed customizer
+- Fixed v2 activation problem
+
+
+= 1.3 - 16-04-2021 =
+
+- Fixed JS error when embedding calendar iframe
+
+
+= 1.2 - 24-01-2021 =
+
+- Fixed typo in shortcode attributes
+- Fixed styling typo
+
+
+= 1.1 - 10-01-2021 =
+
+- Fixed the issue with adding shortcode
+
+
+= 1.0 - 22-10-2020 =
+
+- Initial release

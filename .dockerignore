@@ -1,0 +1,17 @@
+.git
+.gitignore
+.php_errorlog
+php_errorlog
+.htaccess.bk
+Default.html
+readme.html
+license.txt
+wp-content/cache
+wp-content/upgrade
+wp-content/upgrade-temp-backup
+wp-content/plugins/*.zip
+*.md
+.env
+.env.*
+dbtzar7ap8dnym.sql
+*.sql

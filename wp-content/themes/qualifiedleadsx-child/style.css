@@ -1,0 +1,42 @@
+/*
+Theme Name: QualifiedLeadsX Child
+Theme URI: https://www.qualifiedleadsx.com
+Description: Premium React-powered homepage redesign for QualifiedLeadsX. Preserves brand colors, content, and WordPress functionality.
+Author: QualifiedLeadsX
+Template: astra
+Version: 1.0.0
+Text Domain: qualifiedleadsx-child
+*/
+
+/* WordPress admin bar offset on front page */
+body.admin-bar.qlx-redesign-page #qlx-root {
+  padding-top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+  body.admin-bar.qlx-redesign-page #qlx-root {
+    padding-top: 46px;
+  }
+}
+
+/* Hide default Astra layout chrome on React homepage */
+body.qlx-redesign-page #masthead,
+body.qlx-redesign-page .site-header,
+body.qlx-redesign-page .site-footer,
+body.qlx-redesign-page .ast-header-break-point .main-header-bar-wrap,
+body.qlx-redesign-page .ast-footer-overlay {
+  display: none !important;
+}
+
+body.qlx-redesign-page .site-content,
+body.qlx-redesign-page #content,
+body.qlx-redesign-page .ast-container {
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+body.qlx-redesign-page {
+  margin: 0;
+  padding: 0;
+}

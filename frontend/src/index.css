@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #1dbf73;
+  --color-primary-dark: #0c5132;
+  --color-primary-darker: #1b3d2b;
+  --color-gold: #c58c4c;
+  --color-gold-light: #f5bc7b;
+  --color-text: #1d1d1d;
+  --color-text-muted: #252525;
+  --font-sans: 'Poppins', system-ui, sans-serif;
+  --font-display: 'Raleway', 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#qlx-root {
+  min-height: 100vh;
+}
+
+section[id] {
+  scroll-margin-top: 110px;
+}
+
+.qlx-gradient-dark {
+  background: linear-gradient(0deg, rgba(12, 81, 50, 1) 0%, rgba(5, 5, 5, 1) 80%);
+}
+
+.qlx-gradient-gold {
+  background: linear-gradient(to right, #f5bc7b, #dba262, #c28949, #a97031, #905819);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

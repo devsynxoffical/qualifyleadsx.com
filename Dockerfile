@@ -10,20 +10,26 @@ RUN docker-php-ext-install mysqli \
 		echo 'max_input_vars = 3000'; \
 	} > /usr/local/etc/php/conf.d/uploads.ini
 
-WORKDIR /var/www/html
-
-# Full WordPress site (core + wp-content from SiteGround)
-COPY --chown=www-data:www-data . /var/www/html/
-
-# Install Node.js, install root dependencies (mysql2), and build React frontend
+# Install Node.js first (before COPY to maximise layer caching)
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
 	&& apt-get install -y nodejs \
-	&& cd /var/www/html \
+	&& rm -rf /var/lib/apt/lists/*
+
+WORKDIR /var/www/html
+
+# Copy entrypoint script FIRST so it is always present in the build context check
+COPY docker/apache-railway.sh /usr/local/bin/apache-railway.sh
+RUN chmod +x /usr/local/bin/apache-railway.sh
+
+# Full WordPress site (core + wp-content)
+COPY --chown=www-data:www-data . /var/www/html/
+
+# Install root npm dependencies (mysql2) and build React frontend
+RUN cd /var/www/html \
 	&& npm install --omit=dev \
 	&& cd /var/www/html/frontend \
 	&& npm install \
-	&& npm run build \
-	&& rm -rf /var/lib/apt/lists/*
+	&& npm run build
 
 # Remove SiteGround-only drop-ins that break outside SG
 RUN rm -f /var/www/html/wp-content/object-cache.php \
@@ -31,11 +37,6 @@ RUN rm -f /var/www/html/wp-content/object-cache.php \
 	&& rm -f /var/www/html/php_errorlog \
 	&& mkdir -p /var/www/html/wp-content/mu-plugins \
 	&& chown -R www-data:www-data /var/www/html/wp-content
-
-# apache-railway.sh is already in /var/www/html/docker/ from the COPY above.
-# Use cp instead of a second COPY to avoid Docker build-cache key failures.
-RUN cp /var/www/html/docker/apache-railway.sh /usr/local/bin/apache-railway.sh \
-	&& chmod +x /usr/local/bin/apache-railway.sh
 
 EXPOSE 80
 

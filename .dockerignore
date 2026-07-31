@@ -13,5 +13,3 @@ wp-content/plugins/*.zip
 *.md
 .env
 .env.*
-dbtzar7ap8dnym.sql
-*.sql

@@ -4,17 +4,36 @@ const path = require('path');
 const mysql = require('mysql2/promise');
 
 async function migrateDatabase() {
-    const host = process.env.MYSQLHOST || process.env.MYSQL_HOST || process.env.DB_HOST || 'sakura.proxy.railway.net';
-    const port = parseInt(process.env.MYSQLPORT || process.env.MYSQL_PORT || process.env.DB_PORT || '55901', 10);
-    const user = process.env.MYSQLUSER || process.env.MYSQL_USER || process.env.DB_USER || 'root';
-    const password = process.env.MYSQLPASSWORD || process.env.MYSQL_PASSWORD || process.env.DB_PASSWORD || 'aBtGfzsJlczlvNTunBYeVWwClAwWuyov';
-    const database = process.env.MYSQLDATABASE || process.env.MYSQL_DATABASE || process.env.DB_NAME || 'railway';
-    
+    let host = process.env.MYSQLHOST || process.env.MYSQL_HOST || process.env.DB_HOST || process.env.WORDPRESS_DB_HOST;
+    let port = parseInt(process.env.MYSQLPORT || process.env.MYSQL_PORT || process.env.DB_PORT || process.env.WORDPRESS_DB_PORT || '3306', 10);
+    let user = process.env.MYSQLUSER || process.env.MYSQL_USER || process.env.DB_USER || process.env.WORDPRESS_DB_USER || 'root';
+    let password = process.env.MYSQLPASSWORD || process.env.MYSQL_PASSWORD || process.env.DB_PASSWORD || process.env.WORDPRESS_DB_PASSWORD || 'aBtGfzsJlczlvNTunBYeVWwClAwWuyov';
+    let database = process.env.MYSQLDATABASE || process.env.MYSQL_DATABASE || process.env.DB_NAME || process.env.WORDPRESS_DB_NAME || 'railway';
+
+    const connectionUrl = process.env.MYSQL_URL || process.env.DATABASE_URL || process.env.MYSQL_PRIVATE_URL;
+    if (connectionUrl) {
+        try {
+            const parsed = new URL(connectionUrl);
+            if (parsed.hostname) host = parsed.hostname;
+            if (parsed.port) port = parseInt(parsed.port, 10);
+            if (parsed.username) user = parsed.username;
+            if (parsed.password) password = parsed.password;
+            if (parsed.pathname && parsed.pathname.length > 1) database = parsed.pathname.substring(1);
+        } catch (e) {
+            console.warn('Could not parse MYSQL_URL/DATABASE_URL, falling back to individual env variables.');
+        }
+    }
+
+    if (!host) {
+        host = 'sakura.proxy.railway.net';
+        port = 55901;
+    }
+
     const targetUrl = process.env.TARGET_URL || process.env.WP_HOME || 'https://charming-energy-production.up.railway.app';
     const sqlFilePath = process.env.SQL_FILE || path.join(__dirname, '..', 'dbtzar7ap8dnym.sql');
 
     console.log(`==================================================`);
-    console.log(`Starting Database Migration`);
+    console.log(`Starting Database Migration Check`);
     console.log(`Host: ${host}:${port}`);
     console.log(`User: ${user}`);
     console.log(`Database: ${database}`);
@@ -40,6 +59,19 @@ async function migrateDatabase() {
         });
         console.log('Successfully connected to MySQL database.');
 
+        const tablePrefix = process.env.WORDPRESS_TABLE_PREFIX || 'vlb_';
+        const optionsTable = `${tablePrefix}options`;
+
+        // Check if database is already populated
+        const [tables] = await connection.query(`SHOW TABLES LIKE '${optionsTable}';`);
+        if (tables.length > 0 && process.env.FORCE_MIGRATE !== 'true') {
+            console.log(`Table '${optionsTable}' already exists. Updating siteurl/home options...`);
+            await connection.query(`UPDATE \`${optionsTable}\` SET option_value = ? WHERE option_name IN ('siteurl', 'home');`, [targetUrl]);
+            console.log(`Siteurl/home options updated to ${targetUrl}. Migration skipped (already populated).`);
+            await connection.end();
+            return;
+        }
+
         console.log('Disabling foreign key and unique checks...');
         await connection.query('SET FOREIGN_KEY_CHECKS = 0;');
         await connection.query('SET UNIQUE_CHECKS = 0;');
@@ -56,20 +88,18 @@ async function migrateDatabase() {
 
         for await (const line of rl) {
             const trimmed = line.trim();
-            // Skip comments and empty lines
             if (!trimmed || trimmed.startsWith('--') || trimmed.startsWith('/*') || trimmed.startsWith('#')) {
                 continue;
             }
 
             currentQuery += line + '\n';
 
-            // Check if line ends with semicolon (end of statement)
             if (trimmed.endsWith(';')) {
                 try {
                     await connection.query(currentQuery);
                     queryCount++;
-                    if (queryCount % 100 === 0) {
-                        console.log(`Processed ${queryCount} queries...`);
+                    if (queryCount % 200 === 0) {
+                        console.log(`Executed ${queryCount} queries...`);
                     }
                 } catch (err) {
                     console.warn(`Query execution warning (${err.code}): ${err.message.substring(0, 150)}`);
@@ -78,7 +108,6 @@ async function migrateDatabase() {
             }
         }
 
-        // Execute any remaining query
         if (currentQuery.trim()) {
             try {
                 await connection.query(currentQuery);
@@ -95,11 +124,8 @@ async function migrateDatabase() {
         await connection.query('SET UNIQUE_CHECKS = 1;');
 
         console.log(`Updating WordPress siteurl and home options to: ${targetUrl}`);
-        const tablePrefix = process.env.WORDPRESS_TABLE_PREFIX || 'vlb_';
-        const optionsTable = `${tablePrefix}options`;
-
         try {
-            await connection.query(`UPDATE \`${optionsTable}\` SET option_value = ? WHERE option_name IN ('siteurl', 'home')`, [targetUrl]);
+            await connection.query(`UPDATE \`${optionsTable}\` SET option_value = ? WHERE option_name IN ('siteurl', 'home');`, [targetUrl]);
             console.log(`Successfully updated ${optionsTable} siteurl and home options.`);
         } catch (err) {
             console.error(`Failed to update ${optionsTable} table: ${err.message}`);

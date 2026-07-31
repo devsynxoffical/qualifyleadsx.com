@@ -30,14 +30,12 @@ export function ResultsCarousel() {
     setCurrent((prev) => (prev <= 0 ? maxIndex : prev - 1))
   }, [maxIndex])
 
-  // Reduced slide timer to 2.5 seconds (2500ms) for faster auto scrolling
   useEffect(() => {
     if (!isAutoPlaying) return
     const timer = setInterval(next, 2500)
     return () => clearInterval(timer)
   }, [isAutoPlaying, next])
 
-  // Touch Swipe handlers for mobile manual scroll
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.targetTouches[0].clientX
   }
@@ -49,32 +47,33 @@ export function ResultsCarousel() {
   const handleTouchEnd = () => {
     if (!touchStartX.current || !touchEndX.current) return
     const distance = touchStartX.current - touchEndX.current
-    if (distance > 40) {
-      next()
-    } else if (distance < -40) {
-      prev()
-    }
+    if (distance > 40) next()
+    else if (distance < -40) prev()
     touchStartX.current = null
     touchEndX.current = null
   }
 
   return (
-    <section id="results" className="qlx-gradient-dark py-12 sm:py-16 lg:py-20">
-      <Container>
-        <SectionHeading className="mb-6 max-w-3xl mx-auto text-xl sm:text-2xl lg:text-3xl">
+    <section id="results" className="qlx-gradient-dark relative overflow-hidden py-12 sm:py-16 lg:py-20">
+      <div className="qlx-glow-orb left-1/2 top-0 h-72 w-72 -translate-x-1/2 bg-primary/10" />
+      <Container className="relative z-10">
+        <SectionHeading className="mb-8 max-w-3xl mx-auto">
           {siteContent.results.title}
         </SectionHeading>
 
         <AnimatedSection>
-          {/* Pause/Play indicator */}
-          <div className="mb-4 flex justify-center">
+          <div className="mb-5 flex justify-center">
             <button
               type="button"
               onClick={() => setIsAutoPlaying((prev) => !prev)}
-              className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/80 transition hover:bg-white/15 hover:text-white"
+              className="qlx-glass inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs text-white/80 transition hover:border-primary/40 hover:text-white"
             >
-              {isAutoPlaying ? <Pause size={12} className="text-primary" /> : <Play size={12} className="text-primary" />}
-              <span>{isAutoPlaying ? 'Auto Playing (2.5s)' : 'Paused'}</span>
+              {isAutoPlaying ? (
+                <Pause size={12} className="text-primary" />
+              ) : (
+                <Play size={12} className="text-primary" />
+              )}
+              <span>{isAutoPlaying ? 'Auto Playing' : 'Paused'}</span>
             </button>
           </div>
 
@@ -86,7 +85,7 @@ export function ResultsCarousel() {
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
-            <div className="overflow-hidden rounded-xl">
+            <div className="overflow-hidden rounded-2xl">
               <div
                 className="flex transition-transform duration-500 ease-out"
                 style={{
@@ -96,14 +95,14 @@ export function ResultsCarousel() {
                 {images.map((src) => (
                   <div
                     key={src}
-                    className="shrink-0 px-2 flex justify-center"
+                    className="flex shrink-0 justify-center px-2"
                     style={{ width: `${100 / slidesToShow}%` }}
                   >
-                    <div className="overflow-hidden rounded-xl bg-black/40 p-1.5 shadow-lg ring-1 ring-white/10">
+                    <div className="qlx-glass overflow-hidden rounded-2xl p-2">
                       <img
                         src={src}
                         alt="Client revenue result"
-                        className="max-h-60 sm:max-h-72 lg:max-h-80 w-auto rounded-lg object-contain"
+                        className="max-h-60 w-auto rounded-xl object-contain sm:max-h-72 lg:max-h-80"
                         loading="lazy"
                       />
                     </div>
@@ -112,11 +111,10 @@ export function ResultsCarousel() {
               </div>
             </div>
 
-            {/* Navigation Arrows */}
             <button
               type="button"
               onClick={prev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 text-black shadow-md transition hover:bg-primary hover:text-white"
+              className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full border border-white/15 bg-white/10 p-2.5 text-white backdrop-blur-md transition hover:border-primary/50 hover:bg-primary hover:text-[#05070a]"
               aria-label="Previous slide"
             >
               <ChevronLeft size={20} />
@@ -124,14 +122,13 @@ export function ResultsCarousel() {
             <button
               type="button"
               onClick={next}
-              className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 text-black shadow-md transition hover:bg-primary hover:text-white"
+              className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full border border-white/15 bg-white/10 p-2.5 text-white backdrop-blur-md transition hover:border-primary/50 hover:bg-primary hover:text-[#05070a]"
               aria-label="Next slide"
             >
               <ChevronRight size={20} />
             </button>
           </div>
 
-          {/* Dots Indicator */}
           <div className="mt-5 flex justify-center gap-1.5">
             {Array.from({ length: maxIndex + 1 }).map((_, index) => (
               <button
@@ -139,7 +136,9 @@ export function ResultsCarousel() {
                 type="button"
                 onClick={() => setCurrent(index)}
                 className={`h-2 rounded-full transition-all ${
-                  current === index ? 'w-6 bg-primary' : 'w-2 bg-white/30'
+                  current === index
+                    ? 'w-6 bg-primary shadow-[0_0_12px_rgba(0,255,157,0.8)]'
+                    : 'w-2 bg-white/25'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />

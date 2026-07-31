@@ -5,28 +5,21 @@ import { SectionHeading } from '../ui/SectionHeading'
 
 export function RecognitionGallery() {
   return (
-    <section
-      className="py-16 sm:py-24"
-      style={{
-        backgroundImage: `linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.98)), url(${siteContent.recognition.background})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-      }}
-    >
-      <Container>
-        <SectionHeading dark className="mb-12">
+    <section className="qlx-gradient-dark relative overflow-hidden py-16 sm:py-24">
+      <div className="qlx-glow-orb bottom-10 right-10 h-64 w-64 bg-primary/15" />
+      <Container className="relative z-10">
+        <SectionHeading className="mb-12">
           {siteContent.recognition.title}
         </SectionHeading>
 
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {siteContent.recognition.images.map((src, index) => (
-            <AnimatedSection key={src} delay={index * 0.05}>
-              <div className="group overflow-hidden rounded-xl border-2 border-primary-dark/20 bg-white shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <AnimatedSection key={src} delay={index * 0.04}>
+              <div className="qlx-glass group overflow-hidden rounded-2xl p-1.5 transition duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-[0_0_28px_rgba(0,255,157,0.22)]">
                 <img
                   src={src}
                   alt={`Client success story ${index + 1}`}
-                  className="aspect-square w-full object-cover transition duration-500 group-hover:scale-105"
+                  className="aspect-square w-full rounded-xl object-cover transition duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
               </div>

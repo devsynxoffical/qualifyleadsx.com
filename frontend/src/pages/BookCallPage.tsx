@@ -28,10 +28,10 @@ export function BookCallPage() {
   }
 
   return (
-    <div className="pt-24 sm:pt-28 pb-16 bg-[#050505] min-h-screen">
-      {/* ── Page Header ── */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#050505] via-primary-dark/30 to-[#050505] py-12 sm:py-16">
-        <Container>
+    <div className="qlx-gradient-dark min-h-screen pb-16 pt-24 sm:pt-28">
+      <section className="relative overflow-hidden py-12 sm:py-16">
+        <div className="qlx-glow-orb left-1/2 top-0 h-64 w-64 -translate-x-1/2 bg-primary/20" />
+        <Container className="relative z-10">
           <div className="mx-auto max-w-3xl text-center">
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -72,7 +72,7 @@ export function BookCallPage() {
           
           {/* Left Column: What Happens On The Call & Guarantee */}
           <div className="lg:col-span-5">
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md sm:p-8">
+            <div className="qlx-glass rounded-3xl p-6 sm:p-8">
               <h2 className="mb-6 text-xl font-bold uppercase text-white flex items-center gap-2">
                 <ShieldCheck className="text-primary" size={24} />
                 What Happens On Your Session
@@ -120,7 +120,7 @@ export function BookCallPage() {
 
           {/* Right Column: Interactive Booking Form */}
           <div className="lg:col-span-7">
-            <div className="rounded-2xl border border-white/15 bg-gradient-to-b from-white/10 via-black/40 to-primary-dark/30 p-6 shadow-2xl backdrop-blur-md sm:p-8">
+            <div className="qlx-glass-strong rounded-3xl p-6 shadow-2xl sm:p-8">
               {isSubmitted ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -267,7 +267,7 @@ export function BookCallPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-4 text-sm font-semibold uppercase tracking-widest text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 hover:shadow-primary/50 disabled:opacity-50"
+                      className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-4 text-sm font-semibold uppercase tracking-widest text-[#05070a] shadow-[0_0_32px_rgba(0,255,157,0.45)] transition-all hover:bg-primary/90 hover:scale-[1.01] disabled:opacity-50"
                     >
                       {isSubmitting ? 'Securing Your Spot...' : 'CONFIRM MY ATTACK SESSION NOW 🚀'}
                     </button>

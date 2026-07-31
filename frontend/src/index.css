@@ -1,16 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
 @import 'tailwindcss';
 
 @theme {
-  --color-primary: #1dbf73;
-  --color-primary-dark: #0c5132;
-  --color-primary-darker: #1b3d2b;
+  /* Reference palette: neon mint + electric cyan on deep navy */
+  --color-primary: #00ff9d;
+  --color-primary-dark: #00c97a;
+  --color-primary-darker: #00995c;
+  --color-cyan: #00d1ff;
+  --color-cyan-soft: #4de3ff;
+  --color-navy: #05070a;
+  --color-navy-soft: #0a0f18;
+  --color-navy-card: #0d1422;
   --color-gold: #c58c4c;
   --color-gold-light: #f5bc7b;
-  --color-text: #1d1d1d;
-  --color-text-muted: #252525;
+  --color-text: #f2f6fb;
+  --color-text-muted: #9aa8bc;
   --font-sans: 'Poppins', system-ui, sans-serif;
-  --font-display: 'Raleway', 'Poppins', sans-serif;
+  --font-display: 'Outfit', 'Poppins', system-ui, sans-serif;
 }
 
 * {
@@ -25,6 +31,7 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   color: var(--color-text);
+  background: #05070a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -37,13 +44,140 @@ section[id] {
   scroll-margin-top: 110px;
 }
 
+/* ── Reference dark aurora background ── */
 .qlx-gradient-dark {
-  background: linear-gradient(0deg, rgba(12, 81, 50, 1) 0%, rgba(5, 5, 5, 1) 80%);
+  background:
+    radial-gradient(ellipse 70% 45% at 15% 10%, rgba(0, 255, 157, 0.14), transparent 55%),
+    radial-gradient(ellipse 55% 40% at 88% 18%, rgba(0, 209, 255, 0.12), transparent 50%),
+    radial-gradient(ellipse 50% 35% at 50% 100%, rgba(80, 40, 160, 0.12), transparent 55%),
+    linear-gradient(180deg, #05070a 0%, #0a0f18 48%, #05070a 100%);
+}
+
+.qlx-aurora {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.qlx-aurora::before,
+.qlx-aurora::after {
+  content: '';
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(100px);
+  animation: qlx-aurora-move 12s ease-in-out infinite;
+}
+
+.qlx-aurora::before {
+  width: 420px;
+  height: 420px;
+  top: -80px;
+  left: -60px;
+  background: rgba(0, 255, 157, 0.22);
+}
+
+.qlx-aurora::after {
+  width: 480px;
+  height: 480px;
+  right: -80px;
+  top: 20%;
+  background: rgba(0, 209, 255, 0.18);
+  animation-delay: -4s;
+}
+
+@keyframes qlx-aurora-move {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translate(24px, -18px) scale(1.08);
+    opacity: 0.9;
+  }
 }
 
 .qlx-gradient-gold {
-  background: linear-gradient(to right, #f5bc7b, #dba262, #c28949, #a97031, #905819);
+  background: linear-gradient(90deg, #00ff9d, #00d1ff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.qlx-glass {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow:
+    0 10px 36px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transition:
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    transform 0.35s ease;
+}
+
+.qlx-glass:hover {
+  border-color: rgba(0, 255, 157, 0.35);
+  box-shadow:
+    0 14px 40px rgba(0, 0, 0, 0.45),
+    0 0 28px rgba(0, 255, 157, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.qlx-glass-strong {
+  background: rgba(10, 16, 28, 0.72);
+  border: 1px solid rgba(0, 209, 255, 0.22);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(0, 255, 157, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.qlx-glow-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  pointer-events: none;
+  animation: qlx-float 8s ease-in-out infinite;
+}
+
+@keyframes qlx-float {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.08);
+    opacity: 0.9;
+  }
+}
+
+@keyframes qlx-pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 157, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(0, 255, 157, 0);
+  }
+}
+
+.qlx-btn-glow:hover {
+  animation: qlx-pulse-glow 1.3s ease-out;
+}
+
+.qlx-grid-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.qlx-heading {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
 }

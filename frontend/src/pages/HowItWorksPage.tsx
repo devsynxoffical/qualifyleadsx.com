@@ -9,8 +9,9 @@ export function HowItWorksPage() {
   return (
     <div className="pt-24 sm:pt-28">
       {/* ── Page Header Banner ── */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#050505] via-primary-dark/30 to-[#050505] py-16 sm:py-20">
-        <Container>
+      <section className="qlx-gradient-dark relative overflow-hidden py-16 sm:py-20">
+        <div className="qlx-glow-orb left-10 top-10 h-56 w-56 bg-primary/20" />
+        <Container className="relative z-10">
           <div className="mx-auto max-w-3xl text-center">
             <motion.div
               initial={{ opacity: 0, y: -10 }}

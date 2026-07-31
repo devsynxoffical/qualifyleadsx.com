@@ -1,15 +1,22 @@
+import { motion } from 'framer-motion'
 import { siteContent } from '../../data/content'
 import { Button } from '../ui/Button'
 import { Container } from '../ui/Container'
 
 export function PromoBar() {
   return (
-    <div className="bg-[#f5ebe0] py-4">
-      <Container className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-        <p className="text-center text-sm font-medium text-text sm:text-left sm:text-base">
+    <div className="relative overflow-hidden border-y border-primary/25 bg-gradient-to-r from-primary/10 via-cyan/5 to-primary/10 py-5 backdrop-blur-md">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,255,157,0.08),transparent_70%)]" />
+      <Container className="relative z-10 flex flex-col items-center justify-between gap-4 sm:flex-row">
+        <motion.p
+          initial={{ opacity: 0, x: -16 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="text-center text-sm font-medium text-white sm:text-left sm:text-base"
+        >
           {siteContent.promo.text}
-        </p>
-        <Button href={siteContent.brand.ctaUrl} variant="secondary" className="shrink-0 !text-xs">
+        </motion.p>
+        <Button href={siteContent.brand.ctaUrl} className="shrink-0 !text-xs">
           {siteContent.promo.button}
         </Button>
       </Container>

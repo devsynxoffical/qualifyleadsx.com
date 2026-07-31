@@ -8,18 +8,18 @@ export function TestimonialSection() {
   const { testimonial } = siteContent
 
   return (
-    <section id="testimonial" className="bg-primary-dark py-12 sm:py-16 lg:py-20">
-      <Container>
-        <SectionHeading className="mb-8 text-xl sm:text-2xl lg:text-3xl">
+    <section id="testimonial" className="qlx-gradient-dark relative overflow-hidden py-12 sm:py-16 lg:py-20">
+      <div className="qlx-glow-orb left-0 top-1/3 h-72 w-72 bg-primary/15" />
+      <Container className="relative z-10">
+        <SectionHeading className="mb-10">
           {testimonial.heading}
         </SectionHeading>
 
-        <div className="grid items-center gap-8 grid-cols-1 lg:grid-cols-12 lg:gap-10">
-          {/* Left Column: Responsive Video Player */}
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-6">
             <AnimatedSection>
-              <div className="overflow-hidden rounded-xl shadow-xl shadow-black/40 ring-1 ring-white/10">
-                <div className="aspect-video w-full bg-black">
+              <div className="qlx-glass-strong overflow-hidden rounded-3xl p-2">
+                <div className="aspect-video w-full overflow-hidden rounded-2xl bg-black">
                   <iframe
                     src={testimonial.videoUrl}
                     title="Edgar testimonial video"
@@ -32,17 +32,16 @@ export function TestimonialSection() {
             </AnimatedSection>
           </div>
 
-          {/* Right Column: Testimonial Details */}
           <div className="lg:col-span-6">
-            <AnimatedSection delay={0.1}>
-              <div className="relative rounded-2xl bg-white/5 p-5 backdrop-blur-sm sm:p-7">
-                <Quote className="mb-3 text-gold" size={32} fill="currentColor" />
+            <AnimatedSection delay={0.12}>
+              <div className="qlx-glass relative rounded-3xl p-5 sm:p-7">
+                <Quote className="mb-3 text-primary" size={32} fill="currentColor" />
 
                 <h3 className="mb-3 text-lg font-bold uppercase leading-snug text-white sm:text-xl">
                   {testimonial.title}
                 </h3>
 
-                <p className="mb-5 text-xs leading-relaxed text-white/80 sm:text-sm">
+                <p className="mb-5 text-xs leading-relaxed text-white/70 sm:text-sm">
                   {testimonial.description}
                 </p>
 
@@ -50,9 +49,9 @@ export function TestimonialSection() {
                   {testimonial.bullets.map((bullet) => (
                     <li
                       key={bullet}
-                      className="flex items-start gap-2.5 rounded-lg bg-white/10 px-3.5 py-2.5 text-xs font-semibold text-white sm:text-sm"
+                      className="flex items-start gap-2.5 rounded-2xl border border-white/10 bg-white/5 px-3.5 py-2.5 text-xs font-semibold text-white sm:text-sm"
                     >
-                      <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-primary" />
+                      <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-primary shadow-[0_0_10px_rgba(0,255,157,0.9)]" />
                       {bullet}
                     </li>
                   ))}

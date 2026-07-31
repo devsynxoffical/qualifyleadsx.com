@@ -35,8 +35,9 @@ export function TestimonialsPage() {
   return (
     <div className="pt-24 sm:pt-28">
       {/* ── Header ── */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#050505] via-primary-dark/30 to-[#050505] py-16 sm:py-20">
-        <Container>
+      <section className="qlx-gradient-dark relative overflow-hidden py-16 sm:py-20">
+        <div className="qlx-glow-orb left-1/2 top-0 h-56 w-56 -translate-x-1/2 bg-primary/20" />
+        <Container className="relative z-10">
           <div className="mx-auto max-w-3xl text-center">
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -75,8 +76,8 @@ export function TestimonialsPage() {
       <TestimonialSection />
 
       {/* ── Additional Written Testimonials ── */}
-      <section className="bg-[#050505] py-16">
-        <Container>
+      <section className="qlx-gradient-dark relative overflow-hidden py-16">
+        <Container className="relative z-10">
           <h2 className="mb-10 text-center text-2xl font-bold uppercase text-white sm:text-3xl">
             Verified Client Reviews
           </h2>
@@ -88,7 +89,7 @@ export function TestimonialsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex flex-col justify-between rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
+                className="qlx-glass flex flex-col justify-between rounded-3xl p-6 transition hover:-translate-y-1 hover:border-primary/40"
               >
                 <div>
                   <div className="mb-3 flex items-center gap-1 text-amber-400">

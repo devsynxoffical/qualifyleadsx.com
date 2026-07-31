@@ -14,11 +14,11 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    'bg-primary text-[#05070a] hover:bg-primary/90 shadow-[0_0_28px_rgba(0,255,157,0.4)] hover:shadow-[0_0_42px_rgba(0,255,157,0.65)] hover:-translate-y-0.5 hover:scale-[1.02]',
+    'qlx-btn-gradient text-white hover:brightness-110 shadow-[0_0_28px_rgba(19,139,212,0.45)] hover:shadow-[0_0_42px_rgba(19,139,212,0.7)] hover:-translate-y-0.5 hover:scale-[1.02]',
   secondary:
-    'bg-cyan text-[#05070a] hover:bg-cyan/90 shadow-[0_0_24px_rgba(0,209,255,0.35)] hover:shadow-[0_0_36px_rgba(0,209,255,0.55)] hover:-translate-y-0.5',
+    'bg-primary-dark text-white hover:bg-primary-dark/90 shadow-[0_0_24px_rgba(22,67,130,0.4)] hover:shadow-[0_0_36px_rgba(22,67,130,0.6)] hover:-translate-y-0.5',
   outline:
-    'border border-cyan/50 bg-cyan/10 text-cyan hover:bg-cyan hover:text-[#05070a]',
+    'border border-primary/60 bg-primary/10 text-primary hover:bg-primary hover:text-white',
   ghost: 'text-white hover:bg-white/10',
 }
 
@@ -36,7 +36,7 @@ export function Button({
     <>
       <span>{children}</span>
       {showArrow && variant === 'primary' && (
-        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-black/25 transition group-hover:translate-x-0.5 group-hover:bg-black/35">
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/20 transition group-hover:translate-x-0.5 group-hover:bg-white/30">
           <ArrowRight size={14} />
         </span>
       )}

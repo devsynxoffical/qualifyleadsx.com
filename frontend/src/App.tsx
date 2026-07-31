@@ -23,7 +23,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTopOnNavigate />
-      <div className="min-h-screen bg-navy flex flex-col justify-between">
+      <div className="min-h-screen bg-[#081136] flex flex-col justify-between">
         <div>
           <Navbar />
           <main>

@@ -54,19 +54,19 @@ export function ResultsCarousel() {
   }
 
   return (
-    <section id="results" className="qlx-gradient-dark relative overflow-hidden py-12 sm:py-16 lg:py-20">
-      <div className="qlx-glow-orb left-1/2 top-0 h-72 w-72 -translate-x-1/2 bg-primary/10" />
+    <section id="results" className="qlx-gradient-dark relative overflow-hidden py-10 sm:py-14 lg:py-20">
+      <div className="qlx-glow-orb left-1/2 top-0 h-48 w-48 -translate-x-1/2 bg-primary/10 sm:h-72 sm:w-72" />
       <Container className="relative z-10">
-        <SectionHeading className="mb-8 max-w-3xl mx-auto">
+        <SectionHeading className="mx-auto mb-6 max-w-3xl sm:mb-8">
           {siteContent.results.title}
         </SectionHeading>
 
         <AnimatedSection>
-          <div className="mb-5 flex justify-center">
+          <div className="mb-4 flex justify-center sm:mb-5">
             <button
               type="button"
               onClick={() => setIsAutoPlaying((prev) => !prev)}
-              className="qlx-glass inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs text-white/80 transition hover:border-primary/40 hover:text-white"
+              className="qlx-glass inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[11px] text-white/80 transition hover:border-primary/40 hover:text-white sm:px-3.5 sm:text-xs"
             >
               {isAutoPlaying ? (
                 <Pause size={12} className="text-primary" />
@@ -78,14 +78,14 @@ export function ResultsCarousel() {
           </div>
 
           <div
-            className="relative mx-auto max-w-4xl px-4 sm:px-8"
+            className="relative mx-auto max-w-4xl px-8 sm:px-10"
             onMouseEnter={() => setIsAutoPlaying(false)}
             onMouseLeave={() => setIsAutoPlaying(true)}
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
-            <div className="overflow-hidden rounded-2xl">
+            <div className="overflow-hidden rounded-xl sm:rounded-2xl">
               <div
                 className="flex transition-transform duration-500 ease-out"
                 style={{
@@ -95,14 +95,14 @@ export function ResultsCarousel() {
                 {images.map((src) => (
                   <div
                     key={src}
-                    className="flex shrink-0 justify-center px-2"
+                    className="flex shrink-0 justify-center px-1.5 sm:px-2"
                     style={{ width: `${100 / slidesToShow}%` }}
                   >
-                    <div className="qlx-glass overflow-hidden rounded-2xl p-2">
+                    <div className="qlx-glass overflow-hidden rounded-xl p-1.5 sm:rounded-2xl sm:p-2">
                       <img
                         src={src}
                         alt="Client revenue result"
-                        className="max-h-60 w-auto rounded-xl object-contain sm:max-h-72 lg:max-h-80"
+                        className="max-h-48 w-auto rounded-lg object-contain sm:max-h-64 md:max-h-72 lg:max-h-80"
                         loading="lazy"
                       />
                     </div>
@@ -114,18 +114,18 @@ export function ResultsCarousel() {
             <button
               type="button"
               onClick={prev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full border border-white/15 bg-white/10 p-2.5 text-white backdrop-blur-md transition hover:border-primary/50 hover:bg-primary hover:text-[#05070a]"
+              className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full border border-white/15 bg-white/10 p-1.5 text-white backdrop-blur-md transition hover:border-primary/50 hover:bg-primary hover:text-white sm:p-2.5"
               aria-label="Previous slide"
             >
-              <ChevronLeft size={20} />
+              <ChevronLeft size={18} />
             </button>
             <button
               type="button"
               onClick={next}
-              className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full border border-white/15 bg-white/10 p-2.5 text-white backdrop-blur-md transition hover:border-primary/50 hover:bg-primary hover:text-[#05070a]"
+              className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full border border-white/15 bg-white/10 p-1.5 text-white backdrop-blur-md transition hover:border-primary/50 hover:bg-primary hover:text-white sm:p-2.5"
               aria-label="Next slide"
             >
-              <ChevronRight size={20} />
+              <ChevronRight size={18} />
             </button>
           </div>
 
@@ -137,7 +137,7 @@ export function ResultsCarousel() {
                 onClick={() => setCurrent(index)}
                 className={`h-2 rounded-full transition-all ${
                   current === index
-                    ? 'w-6 bg-primary shadow-[0_0_12px_rgba(0,255,157,0.8)]'
+                    ? 'w-6 bg-primary shadow-[0_0_12px_rgba(19,139,212,0.8)]'
                     : 'w-2 bg-white/25'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}

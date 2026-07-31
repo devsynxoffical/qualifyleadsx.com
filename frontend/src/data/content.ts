@@ -1,16 +1,32 @@
+import brandLogo from '../assets/logo-qualified-leadsx.png'
+
 const UPLOADS = 'https://www.qualifiedleadsx.com/wp-content/uploads'
 
 export const siteContent = {
   brand: {
     name: 'QualifiedLeadsX™',
-    logo: `${UPLOADS}/2024/03/qualified-leadsx.webp`,
+    logo: brandLogo,
     logoAlt: 'QualifiedLeadsX logo',
     ctaUrl: '/book-your-call/',
     ctaText: 'BOOK YOUR GAMEPLAN & ATTACK SESSION! Spots Are EXTREMELY Limited - Secure Yours NOW',
     ctaShort: 'Book Your Call',
   },
   hero: {
-    title: 'High-Ticket Coaches, Consultant & Service Providers',
+    title:
+      'We Will Install Our Proprietary QUALIFIEDLEADSX™ Client Acquisition System Into Your Business...',
+    titleHighlight: 'Double Your Revenue Within The Next 90 Days...',
+    titleGuarantee: "Or We'll Continue Working For You At No Management Fee Until We Do.",
+    titleBacked: 'Backed by a Written Agreement.',
+    subtitle:
+      'Stop relying on referrals, inconsistent lead generation, and multiple freelancers. We build your entire client acquisition ecosystem so your only job is to show up, take the calls, and close premium clients.',
+    cta: 'BOOK YOUR FREE STRATEGY CALL',
+    trustItems: [
+      '12+ Years Experience',
+      '$50M+ Managed in Meta Ads',
+      'Multi-Industry Experience',
+      'Proven Client Acquisition Framework',
+      '100% Done-For-You',
+    ],
     backgroundDesktop: `${UPLOADS}/2024/08/16x9-2nd-1-1.webp`,
     backgroundMobile: `${UPLOADS}/2024/08/1000X1200-2nd.webp`,
   },

@@ -203,7 +203,7 @@ export function BookCallPage() {
                       <select
                         value={formData.revenue}
                         onChange={(e) => setFormData({ ...formData, revenue: e.target.value })}
-                        className="w-full rounded-xl border border-white/15 bg-[#0d1712] px-4 py-3 text-sm text-white focus:border-primary focus:outline-none"
+                        className="w-full rounded-xl border border-white/15 bg-[#0c1a4a] px-4 py-3 text-sm text-white focus:border-primary focus:outline-none"
                       >
                         <option value="$0-$5k">$0 - $5,000 / mo</option>
                         <option value="$5k-$10k">$5,000 - $10,000 / mo</option>
@@ -240,7 +240,7 @@ export function BookCallPage() {
                         required
                         value={formData.date}
                         onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                        className="w-full rounded-xl border border-white/15 bg-[#0d1712] px-4 py-3 text-sm text-white focus:border-primary focus:outline-none"
+                        className="w-full rounded-xl border border-white/15 bg-[#0c1a4a] px-4 py-3 text-sm text-white focus:border-primary focus:outline-none"
                       />
                     </div>
 
@@ -251,7 +251,7 @@ export function BookCallPage() {
                       <select
                         value={formData.time}
                         onChange={(e) => setFormData({ ...formData, time: e.target.value })}
-                        className="w-full rounded-xl border border-white/15 bg-[#0d1712] px-4 py-3 text-sm text-white focus:border-primary focus:outline-none"
+                        className="w-full rounded-xl border border-white/15 bg-[#0c1a4a] px-4 py-3 text-sm text-white focus:border-primary focus:outline-none"
                       >
                         <option value="09:00 AM">09:00 AM EST</option>
                         <option value="10:00 AM">10:00 AM EST</option>
@@ -267,7 +267,7 @@ export function BookCallPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-4 text-sm font-semibold uppercase tracking-widest text-[#05070a] shadow-[0_0_32px_rgba(0,255,157,0.45)] transition-all hover:bg-primary/90 hover:scale-[1.01] disabled:opacity-50"
+                      className="qlx-btn-gradient inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-4 text-sm font-semibold uppercase tracking-widest text-white shadow-[0_0_32px_rgba(19,139,212,0.5)] transition-all hover:brightness-110 hover:scale-[1.01] disabled:opacity-50"
                     >
                       {isSubmitting ? 'Securing Your Spot...' : 'CONFIRM MY ATTACK SESSION NOW 🚀'}
                     </button>

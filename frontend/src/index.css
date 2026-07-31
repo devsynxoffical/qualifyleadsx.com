@@ -2,15 +2,15 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Reference palette: neon mint + electric cyan on deep navy */
-  --color-primary: #00ff9d;
-  --color-primary-dark: #00c97a;
-  --color-primary-darker: #00995c;
-  --color-cyan: #00d1ff;
-  --color-cyan-soft: #4de3ff;
-  --color-navy: #05070a;
-  --color-navy-soft: #0a0f18;
-  --color-navy-card: #0d1422;
+  /* Blue gradient palette: #081136 → #164382 → #138BD4 */
+  --color-primary: #138bd4;
+  --color-primary-dark: #164382;
+  --color-primary-darker: #081136;
+  --color-cyan: #138bd4;
+  --color-cyan-soft: #4aaee0;
+  --color-navy: #081136;
+  --color-navy-soft: #0c1a4a;
+  --color-navy-card: #0f2558;
   --color-gold: #c58c4c;
   --color-gold-light: #f5bc7b;
   --color-text: #f2f6fb;
@@ -31,7 +31,7 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   color: var(--color-text);
-  background: #05070a;
+  background: #081136;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,16 +41,22 @@ body {
 }
 
 section[id] {
-  scroll-margin-top: 110px;
+  scroll-margin-top: 88px;
 }
 
-/* ── Reference dark aurora background ── */
+@media (min-width: 640px) {
+  section[id] {
+    scroll-margin-top: 100px;
+  }
+}
+
+/* Blue gradient section background */
 .qlx-gradient-dark {
   background:
-    radial-gradient(ellipse 70% 45% at 15% 10%, rgba(0, 255, 157, 0.14), transparent 55%),
-    radial-gradient(ellipse 55% 40% at 88% 18%, rgba(0, 209, 255, 0.12), transparent 50%),
-    radial-gradient(ellipse 50% 35% at 50% 100%, rgba(80, 40, 160, 0.12), transparent 55%),
-    linear-gradient(180deg, #05070a 0%, #0a0f18 48%, #05070a 100%);
+    radial-gradient(ellipse 70% 45% at 15% 10%, rgba(19, 139, 212, 0.18), transparent 55%),
+    radial-gradient(ellipse 55% 40% at 88% 18%, rgba(22, 67, 130, 0.35), transparent 50%),
+    radial-gradient(ellipse 50% 35% at 50% 100%, rgba(8, 17, 54, 0.9), transparent 55%),
+    linear-gradient(180deg, #081136 0%, #164382 48%, #081136 100%);
 }
 
 .qlx-aurora {
@@ -74,7 +80,7 @@ section[id] {
   height: 420px;
   top: -80px;
   left: -60px;
-  background: rgba(0, 255, 157, 0.22);
+  background: rgba(19, 139, 212, 0.28);
 }
 
 .qlx-aurora::after {
@@ -82,7 +88,7 @@ section[id] {
   height: 480px;
   right: -80px;
   top: 20%;
-  background: rgba(0, 209, 255, 0.18);
+  background: rgba(22, 67, 130, 0.35);
   animation-delay: -4s;
 }
 
@@ -98,20 +104,25 @@ section[id] {
   }
 }
 
-.qlx-gradient-gold {
-  background: linear-gradient(90deg, #00ff9d, #00d1ff);
+.qlx-gradient-gold,
+.qlx-gradient-blue {
+  background: linear-gradient(90deg, #081136, #164382, #138bd4);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
+.qlx-btn-gradient {
+  background: linear-gradient(135deg, #081136 0%, #164382 45%, #138bd4 100%);
+}
+
 .qlx-glass {
-  background: rgba(255, 255, 255, 0.035);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(19, 139, 212, 0.18);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow:
-    0 10px 36px rgba(0, 0, 0, 0.4),
+    0 10px 36px rgba(8, 17, 54, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.06);
   transition:
     border-color 0.35s ease,
@@ -120,21 +131,21 @@ section[id] {
 }
 
 .qlx-glass:hover {
-  border-color: rgba(0, 255, 157, 0.35);
+  border-color: rgba(19, 139, 212, 0.55);
   box-shadow:
-    0 14px 40px rgba(0, 0, 0, 0.45),
-    0 0 28px rgba(0, 255, 157, 0.12),
+    0 14px 40px rgba(8, 17, 54, 0.5),
+    0 0 28px rgba(19, 139, 212, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .qlx-glass-strong {
-  background: rgba(10, 16, 28, 0.72);
-  border: 1px solid rgba(0, 209, 255, 0.22);
+  background: rgba(8, 17, 54, 0.72);
+  border: 1px solid rgba(19, 139, 212, 0.35);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   box-shadow:
-    0 16px 48px rgba(0, 0, 0, 0.5),
-    0 0 40px rgba(0, 255, 157, 0.08),
+    0 16px 48px rgba(0, 0, 0, 0.45),
+    0 0 40px rgba(19, 139, 212, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
@@ -161,10 +172,10 @@ section[id] {
 @keyframes qlx-pulse-glow {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(0, 255, 157, 0.5);
+    box-shadow: 0 0 0 0 rgba(19, 139, 212, 0.5);
   }
   50% {
-    box-shadow: 0 0 0 14px rgba(0, 255, 157, 0);
+    box-shadow: 0 0 0 14px rgba(19, 139, 212, 0);
   }
 }
 

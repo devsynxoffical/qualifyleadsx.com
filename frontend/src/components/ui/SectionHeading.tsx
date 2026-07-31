@@ -16,21 +16,21 @@ export function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 28 }}
+      initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-80px' }}
-      transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+      viewport={{ once: true, margin: '-60px' }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`text-center ${className}`}
     >
       {subtitle && (
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.28em] text-cyan sm:text-sm">
+        <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-primary sm:mb-3 sm:text-xs md:text-sm">
           {subtitle}
         </p>
       )}
-      <h2 className="qlx-heading text-2xl font-bold leading-tight text-white sm:text-3xl lg:text-4xl">
+      <h2 className="qlx-heading text-xl font-bold leading-tight text-white sm:text-2xl md:text-3xl lg:text-4xl">
         {children}
       </h2>
-      <div className="mx-auto mt-5 h-px w-20 bg-gradient-to-r from-transparent via-primary to-cyan" />
+      <div className="mx-auto mt-3 h-px w-14 bg-gradient-to-r from-[#081136] via-[#164382] to-[#138bd4] sm:mt-4 sm:w-20" />
     </motion.div>
   )
 }

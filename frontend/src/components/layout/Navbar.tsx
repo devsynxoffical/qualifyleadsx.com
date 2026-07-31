@@ -35,7 +35,7 @@ export function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'border-b border-white/10 bg-navy/85 py-3 shadow-[0_10px_40px_rgba(0,0,0,0.5)] backdrop-blur-xl'
+          ? 'border-b border-white/10 bg-[#081136]/90 py-3 shadow-[0_10px_40px_rgba(8,17,54,0.6)] backdrop-blur-xl'
           : 'bg-transparent py-5'
       }`}
     >
@@ -45,7 +45,7 @@ export function Navbar() {
             <img
               src={siteContent.brand.logo}
               alt={siteContent.brand.logoAlt}
-              className="h-11 w-auto sm:h-12"
+              className="h-12 w-auto sm:h-14"
             />
           </Link>
 

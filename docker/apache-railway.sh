@@ -21,4 +21,10 @@ a2enmod rewrite || true
 mkdir -p /var/www/html/wp-content/uploads
 chown -R www-data:www-data /var/www/html/wp-content/uploads || true
 
+# ── Database Migration Check ──
+if [ "${AUTO_MIGRATE_DB:-true}" = "true" ] && [ -f "/var/www/html/scripts/migrate-db.js" ]; then
+    echo "Running automated database migration check..."
+    node /var/www/html/scripts/migrate-db.js || echo "Database migration warning (continuing startup)..."
+fi
+
 exec apache2-foreground

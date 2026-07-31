@@ -7,12 +7,12 @@
 define( 'WP_CACHE', false );
 
 // ** Database settings ** //
-define( 'DB_NAME', getenv( 'MYSQLDATABASE' ) ?: ( getenv( 'MYSQL_DATABASE' ) ?: ( getenv( 'WORDPRESS_DB_NAME' ) ?: 'wordpress' ) ) );
+define( 'DB_NAME', getenv( 'MYSQLDATABASE' ) ?: ( getenv( 'MYSQL_DATABASE' ) ?: ( getenv( 'WORDPRESS_DB_NAME' ) ?: 'railway' ) ) );
 define( 'DB_USER', getenv( 'MYSQLUSER' ) ?: ( getenv( 'MYSQL_USER' ) ?: ( getenv( 'WORDPRESS_DB_USER' ) ?: 'root' ) ) );
-define( 'DB_PASSWORD', getenv( 'MYSQLPASSWORD' ) ?: ( getenv( 'MYSQL_PASSWORD' ) ?: ( getenv( 'WORDPRESS_DB_PASSWORD' ) ?: '' ) ) );
+define( 'DB_PASSWORD', getenv( 'MYSQLPASSWORD' ) ?: ( getenv( 'MYSQL_PASSWORD' ) ?: ( getenv( 'WORDPRESS_DB_PASSWORD' ) ?: 'aBtGfzsJlczlvNTunBYeVWwClAwWuyov' ) ) );
 
-$db_host = getenv( 'MYSQLHOST' ) ?: ( getenv( 'MYSQL_HOST' ) ?: ( getenv( 'WORDPRESS_DB_HOST' ) ?: '127.0.0.1' ) );
-$db_port = getenv( 'MYSQLPORT' ) ?: ( getenv( 'MYSQL_PORT' ) ?: '3306' );
+$db_host = getenv( 'MYSQLHOST' ) ?: ( getenv( 'MYSQL_HOST' ) ?: ( getenv( 'WORDPRESS_DB_HOST' ) ?: 'sakura.proxy.railway.net' ) );
+$db_port = getenv( 'MYSQLPORT' ) ?: ( getenv( 'MYSQL_PORT' ) ?: '55901' );
 define( 'DB_HOST', $db_host . ':' . $db_port );
 
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -34,17 +34,6 @@ define( 'WP_CACHE_KEY_SALT', getenv( 'WP_CACHE_KEY_SALT' ) ?: 'HOyO0`[5qdiW6f?2[
 
 $table_prefix = getenv( 'WORDPRESS_TABLE_PREFIX' ) ?: 'vlb_';
 
-/**
- * Optional: force site URL from env (useful for Railway *.up.railway.app
- * before pointing the custom domain).
- */
-if ( getenv( 'WP_HOME' ) ) {
-	define( 'WP_HOME', getenv( 'WP_HOME' ) );
-}
-if ( getenv( 'WP_SITEURL' ) ) {
-	define( 'WP_SITEURL', getenv( 'WP_SITEURL' ) );
-}
-
 // Trust Railway / reverse-proxy HTTPS.
 if (
 	( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' )
@@ -53,11 +42,30 @@ if (
 	$_SERVER['HTTPS'] = 'on';
 }
 
+/**
+ * Dynamic site URL configuration for Railway deployment.
+ */
+if ( getenv( 'WP_HOME' ) ) {
+	define( 'WP_HOME', getenv( 'WP_HOME' ) );
+} else if ( isset( $_SERVER['HTTP_HOST'] ) ) {
+	$scheme = ( isset( $_SERVER['HTTPS'] ) && $_SERVER['HTTPS'] === 'on' ) ? 'https://' : 'http://';
+	define( 'WP_HOME', $scheme . $_SERVER['HTTP_HOST'] );
+}
+
+if ( getenv( 'WP_SITEURL' ) ) {
+	define( 'WP_SITEURL', getenv( 'WP_SITEURL' ) );
+} else if ( defined( 'WP_HOME' ) ) {
+	define( 'WP_SITEURL', WP_HOME );
+}
+
 define( 'FS_METHOD', 'direct' );
 
 if ( ! defined( 'WP_DEBUG' ) ) {
-	define( 'WP_DEBUG', filter_var( getenv( 'WP_DEBUG' ) ?: 'false', FILTER_VALIDATE_BOOLEAN ) );
+	define( 'WP_DEBUG', filter_var( getenv( 'WP_DEBUG' ) ?: 'true', FILTER_VALIDATE_BOOLEAN ) );
 }
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );
+@ini_set( 'display_errors', '0' );
 
 /* That's all, stop editing! Happy publishing. */
 

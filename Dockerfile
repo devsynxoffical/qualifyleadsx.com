@@ -15,14 +15,14 @@ WORKDIR /var/www/html
 # Full WordPress site (core + wp-content from SiteGround)
 COPY --chown=www-data:www-data . /var/www/html/
 
-# Build React homepage assets for the child theme
+# Install Node.js, install root dependencies (mysql2), and build React frontend
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
 	&& apt-get install -y nodejs \
+	&& cd /var/www/html \
+	&& npm install --omit=dev \
 	&& cd /var/www/html/frontend \
 	&& npm install \
 	&& npm run build \
-	&& apt-get purge -y nodejs \
-	&& apt-get autoremove -y \
 	&& rm -rf /var/lib/apt/lists/*
 
 # Remove SiteGround-only drop-ins that break outside SG

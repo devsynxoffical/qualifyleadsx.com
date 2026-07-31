@@ -13,6 +13,7 @@ Thumbs.db
 .env.local
 .idea/
 .vscode/
+node_modules/
 frontend/node_modules/
 
 # SiteGround backups / zips

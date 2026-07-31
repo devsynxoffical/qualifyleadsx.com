@@ -61,13 +61,15 @@ async function migrateDatabase() {
 
         const tablePrefix = process.env.WORDPRESS_TABLE_PREFIX || 'vlb_';
         const optionsTable = `${tablePrefix}options`;
+        const safeActivePlugins = 'a:3:{i:0;s:23:"elementor/elementor.php";i:1;s:24:"header-footer/plugin.php";i:2;s:29:"pro-elements/pro-elements.php";}';
 
         // Check if database is already populated
         const [tables] = await connection.query(`SHOW TABLES LIKE '${optionsTable}';`);
         if (tables.length > 0 && process.env.FORCE_MIGRATE !== 'true') {
-            console.log(`Table '${optionsTable}' already exists. Updating siteurl/home options...`);
+            console.log(`Table '${optionsTable}' exists. Updating siteurl, home, and active_plugins...`);
             await connection.query(`UPDATE \`${optionsTable}\` SET option_value = ? WHERE option_name IN ('siteurl', 'home');`, [targetUrl]);
-            console.log(`Siteurl/home options updated to ${targetUrl}. Migration skipped (already populated).`);
+            await connection.query(`UPDATE \`${optionsTable}\` SET option_value = ? WHERE option_name = 'active_plugins';`, [safeActivePlugins]);
+            console.log(`Siteurl/home options updated to ${targetUrl}. SiteGround plugins disabled.`);
             await connection.end();
             return;
         }
@@ -123,10 +125,11 @@ async function migrateDatabase() {
         await connection.query('SET FOREIGN_KEY_CHECKS = 1;');
         await connection.query('SET UNIQUE_CHECKS = 1;');
 
-        console.log(`Updating WordPress siteurl and home options to: ${targetUrl}`);
+        console.log(`Updating WordPress siteurl, home, and active_plugins in ${optionsTable}...`);
         try {
             await connection.query(`UPDATE \`${optionsTable}\` SET option_value = ? WHERE option_name IN ('siteurl', 'home');`, [targetUrl]);
-            console.log(`Successfully updated ${optionsTable} siteurl and home options.`);
+            await connection.query(`UPDATE \`${optionsTable}\` SET option_value = ? WHERE option_name = 'active_plugins';`, [safeActivePlugins]);
+            console.log(`Successfully updated ${optionsTable} options.`);
         } catch (err) {
             console.error(`Failed to update ${optionsTable} table: ${err.message}`);
         }

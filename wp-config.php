@@ -60,12 +60,11 @@ if ( getenv( 'WP_SITEURL' ) ) {
 
 define( 'FS_METHOD', 'direct' );
 
-if ( ! defined( 'WP_DEBUG' ) ) {
-	define( 'WP_DEBUG', filter_var( getenv( 'WP_DEBUG' ) ?: 'true', FILTER_VALIDATE_BOOLEAN ) );
-}
+// Display errors for debugging 500 issues
+define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
-define( 'WP_DEBUG_DISPLAY', false );
-@ini_set( 'display_errors', '0' );
+define( 'WP_DEBUG_DISPLAY', true );
+@ini_set( 'display_errors', '1' );
 
 /* That's all, stop editing! Happy publishing. */
 

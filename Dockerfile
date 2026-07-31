@@ -32,8 +32,10 @@ RUN rm -f /var/www/html/wp-content/object-cache.php \
 	&& mkdir -p /var/www/html/wp-content/mu-plugins \
 	&& chown -R www-data:www-data /var/www/html/wp-content
 
-COPY docker/apache-railway.sh /usr/local/bin/apache-railway.sh
-RUN chmod +x /usr/local/bin/apache-railway.sh
+# apache-railway.sh is already in /var/www/html/docker/ from the COPY above.
+# Use cp instead of a second COPY to avoid Docker build-cache key failures.
+RUN cp /var/www/html/docker/apache-railway.sh /usr/local/bin/apache-railway.sh \
+	&& chmod +x /usr/local/bin/apache-railway.sh
 
 EXPOSE 80
 

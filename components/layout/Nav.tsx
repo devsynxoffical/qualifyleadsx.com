@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { nav, navCta, site } from "@/lib/site";
 import { scrollToId } from "@/components/providers/SmoothScroll";
@@ -9,7 +10,7 @@ import { cn } from "@/lib/utils";
 
 function Logo() {
   return (
-    <a href="#top" className="group flex items-center gap-2" aria-label="QualifiedLeadsX home">
+    <Link href="/" className="group flex items-center gap-2" aria-label="QualifiedLeadsX home">
       <span className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-lime text-ink">
         <svg viewBox="0 0 24 24" className="h-4.5 w-4.5" fill="none" aria-hidden="true">
           <path
@@ -26,7 +27,7 @@ function Logo() {
         Qualified<span className="text-lime">Leads</span>X
         <span className="ml-0.5 align-super text-[8px] font-medium text-mist">™</span>
       </span>
-    </a>
+    </Link>
   );
 }
 

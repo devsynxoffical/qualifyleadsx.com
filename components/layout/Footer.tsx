@@ -1,4 +1,5 @@
 import { ArrowUpRight, Mail, Phone } from "lucide-react";
+import Link from "next/link";
 import { site } from "@/lib/site";
 
 const footerColumns = [
@@ -32,7 +33,7 @@ export function Footer() {
         <div className="grid gap-14 py-16 sm:py-20 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           {/* Brand */}
           <div>
-            <a href="#top" className="flex items-center gap-2" aria-label="QualifiedLeadsX home">
+            <Link href="/" className="flex items-center gap-2" aria-label="QualifiedLeadsX home">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-lime text-ink">
                 <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" aria-hidden="true">
                   <path
@@ -49,7 +50,7 @@ export function Footer() {
                 Qualified<span className="text-lime">Leads</span>X
                 <span className="ml-0.5 align-super text-[9px] font-medium text-mist">™</span>
               </span>
-            </a>
+            </Link>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-mist">
               The done-for-you client acquisition system for high-ticket coaches, consultants and
               service providers.

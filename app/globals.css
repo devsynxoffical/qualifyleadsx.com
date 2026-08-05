@@ -1,0 +1,330 @@
+@import "tailwindcss";
+
+@theme {
+  /* ---- Surfaces ---- */
+  --color-ink: #06080a;
+  --color-base: #0a0c0f;
+  --color-panel: #0f1216;
+  --color-elevated: #151920;
+  --color-glass: #ffffff08;
+
+  /* ---- Lines ---- */
+  --color-line: #ffffff12;
+  --color-line-strong: #ffffff24;
+
+  /* ---- Text ---- */
+  --color-fog: #f2f4f5;
+  --color-mist: #a2a8b0;
+  --color-dim: #626a73;
+
+  /* ---- Accents ---- */
+  --color-lime: #c9f26b;
+  --color-lime-soft: #e4ffae;
+  --color-violet: #9b8bff;
+  --color-amber: #ffc857;
+  --color-mint: #5ef2c2;
+  --color-rose: #ff7a90;
+
+  /* ---- Fonts ---- */
+  --font-sans: var(--font-sans-stack);
+  --font-heading: var(--font-heading-stack);
+  --font-mono: var(--font-mono-stack);
+
+  /* ---- Motion ---- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in-out-smooth: cubic-bezier(0.77, 0, 0.175, 1);
+  --duration-fast: 300ms;
+  --duration-base: 600ms;
+  --duration-slow: 1100ms;
+
+  /* ---- Shadows ---- */
+  --shadow-glow: 0 0 80px -20px color-mix(in oklab, var(--color-lime) 55%, transparent);
+  --shadow-soft: 0 24px 80px -32px rgb(0 0 0 / 0.85);
+}
+
+:root {
+  --background: var(--color-base);
+  --foreground: var(--color-fog);
+  color-scheme: dark;
+}
+
+@theme {
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-float: float 7s var(--ease-in-out-smooth) infinite;
+  --animate-float-slow: float 11s var(--ease-in-out-smooth) infinite;
+  --animate-pulse-ring: pulse-ring 2.6s var(--ease-out-expo) infinite;
+  --animate-aurora: aurora 18s ease-in-out infinite alternate;
+  --animate-spin-slow: spin 14s linear infinite;
+  --animate-shimmer: shimmer 2.8s linear infinite;
+  --animate-grain: grain 1.2s steps(6) infinite;
+
+  @keyframes marquee {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-50%, 0, 0); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+    50% { transform: translate3d(0, -14px, 0) rotate(0.5deg); }
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(0.8); opacity: 0.9; }
+    70% { transform: scale(1.6); opacity: 0; }
+    100% { transform: scale(1.6); opacity: 0; }
+  }
+  @keyframes aurora {
+    0% { transform: translate3d(-6%, -3%, 0) scale(1); }
+    50% { transform: translate3d(4%, 5%, 0) scale(1.08); }
+    100% { transform: translate3d(-3%, 2%, 0) scale(1.03); }
+  }
+  @keyframes shimmer {
+    from { background-position: 200% 0; }
+    to { background-position: -200% 0; }
+  }
+  @keyframes grain {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    20% { transform: translate3d(-5%, 5%, 0); }
+    40% { transform: translate3d(3%, -4%, 0); }
+    60% { transform: translate3d(-4%, -6%, 0); }
+    80% { transform: translate3d(6%, 4%, 0); }
+  }
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+* {
+  border-color: var(--color-line);
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background: var(--color-base);
+  color: var(--color-fog);
+  font-family: var(--font-sans-stack);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  font-feature-settings: "cv11", "ss01";
+  letter-spacing: -0.011em;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-heading-stack);
+  letter-spacing: -0.03em;
+}
+
+::selection {
+  background: var(--color-lime);
+  color: #0a0c0f;
+}
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: #23282f;
+  border-radius: 999px;
+  border: 2px solid var(--color-ink);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2e353d;
+}
+
+/* ============================================================
+   Focus / Accessibility
+   ============================================================ */
+:focus-visible {
+  outline: 2px solid var(--color-lime);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 200;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-lime);
+  color: #0a0c0f;
+  font-weight: 700;
+  border-radius: 999px;
+  transition: top 0.2s var(--ease-out-expo);
+}
+.skip-link:focus-visible {
+  top: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   Components / Utilities
+   ============================================================ */
+@layer components {
+  .container-x {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 88rem;
+    padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+  }
+
+  .panel {
+    background: linear-gradient(180deg, var(--color-panel), var(--color-base));
+    border: 1px solid var(--color-line);
+  }
+
+  .panel-glass {
+    background: var(--color-glass);
+    border: 1px solid var(--color-line);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .hairline {
+    border: 1px solid var(--color-line);
+  }
+
+  .text-gradient-lime {
+    background: linear-gradient(100deg, var(--color-lime-soft), var(--color-lime) 45%, #7dffc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-gradient-soft {
+    background: linear-gradient(180deg, #ffffff 30%, var(--color-mist));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--color-lime);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .eyebrow::before {
+    content: "";
+    width: 1.75rem;
+    height: 1px;
+    background: currentColor;
+  }
+
+  .noise {
+    position: relative;
+  }
+  .noise::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+  }
+
+  .grid-lines {
+    background-image:
+      linear-gradient(to right, var(--color-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-line) 1px, transparent 1px);
+    background-size: 6rem 6rem;
+  }
+
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+  }
+
+  .mask-fade-y {
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+  }
+
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+
+  .outline-text {
+    -webkit-text-stroke: 1px var(--color-line-strong);
+    color: transparent;
+  }
+}
+
+.prose-custom h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-fog);
+  letter-spacing: -0.01em;
+  margin-top: 2rem;
+}
+.prose-custom p {
+  color: var(--color-mist);
+}
+
+/* ============================================================
+   Light theme sections (apply .theme-light to a section root)
+   ============================================================ */
+.theme-light {
+  --color-base: #f4f6f8;
+  --color-panel: #ffffff;
+  --color-elevated: #ffffff;
+  --color-glass: #00000006;
+  --color-line: #e6e9ee;
+  --color-line-strong: #ccd3dc;
+  --color-fog: #0c1117;
+  --color-mist: #47515d;
+  --color-dim: #737d88;
+  --color-lime: #4f7a1e;
+  --color-lime-soft: #eef4dd;
+  color-scheme: light;
+  background: var(--color-base);
+}
+
+/* Cursor: hide native cursor only on fine pointers when custom cursor is active */
+@media (pointer: fine) {
+  body.has-cursor,
+  body.has-cursor a,
+  body.has-cursor button,
+  body.has-cursor [role="button"] {
+    cursor: none;
+  }
+}

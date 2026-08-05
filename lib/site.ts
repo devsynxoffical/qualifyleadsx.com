@@ -2,7 +2,7 @@ export const site = {
   name: "QualifiedLeadsX™",
   legalName: "Qualified LeadsX",
   url: "https://www.qualifiedleadsx.com",
-  bookCallUrl: "https://www.qualifiedleadsx.com/book-your-call/",
+  bookCallUrl: "/book-your-call/",
   email: "hello@qualifiedleadsx.com",
   phone: "+1 (800) 555-0148",
   founded: 2022,

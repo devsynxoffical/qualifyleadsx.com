@@ -57,13 +57,16 @@ export function AnnouncementBar() {
         className="group flex h-full w-full items-center justify-center gap-2.5 bg-lime px-10 text-[10px] font-bold uppercase tracking-[0.12em] text-ink transition-colors hover:bg-lime-soft sm:text-[12px]"
         data-cursor="book"
       >
-        <span className="hidden shrink-0 sm:inline">
-          ⚠️ This is only for agency owners, coaches, high-ticket service providers &amp; B2B
-          founders already generating $10,000+/month.
+        <span className="hidden shrink-0 lg:inline">
+          ⚠️ Only for agency owners, coaches, high-ticket providers &amp; B2B founders generating
+          $10K+/month.
         </span>
-        <span className="shrink-0 sm:hidden">Only for businesses generating $10K+/month.</span>
-        <span className="hidden whitespace-nowrap border-l border-ink/25 pl-2.5 text-ink/70 lg:inline">
-          If you&apos;re below $10,000/month, this system isn&apos;t the right fit.
+        <span className="hidden shrink-0 md:inline lg:hidden">
+          Only for businesses generating $10K+/month.
+        </span>
+        <span className="shrink-0 md:hidden">Only for businesses generating $10K+/month.</span>
+        <span className="hidden whitespace-nowrap border-l border-ink/25 pl-2.5 text-ink/70 2xl:inline">
+          Below $10K/month? Not the right fit.
         </span>
       </a>
       <button

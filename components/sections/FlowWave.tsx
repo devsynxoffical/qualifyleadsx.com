@@ -187,6 +187,7 @@ export function FlowWave() {
   const p2WrapRef = useRef<HTMLDivElement>(null);
   const p2CounterRef = useRef<HTMLDivElement>(null);
   const p2LabelRef = useRef<HTMLSpanElement>(null);
+  const p2HeadRef = useRef<HTMLHeadingElement>(null);
   const p2SubRef = useRef<HTMLParagraphElement>(null);
   const p2StatsRef = useRef<HTMLDivElement>(null);
   const p2StepsRef = useRef<HTMLDivElement>(null);
@@ -476,7 +477,8 @@ export function FlowWave() {
         p2CounterRef.current.style.opacity = String(fadeIn(0.3, 0.46));
       }
       stage(fadeIn(0.28, 0.42), p2LabelRef.current, 20);
-      stage(fadeIn(0.32, 0.5) * fadeOut(0.86, 0.97), p2SubRef.current, 40);
+      stage(fadeIn(0.3, 0.5) * fadeOut(0.86, 0.97), p2HeadRef.current, 44);
+      stage(fadeIn(0.36, 0.54) * fadeOut(0.86, 0.97), p2SubRef.current, 34);
       stage(fadeIn(0.42, 0.6) * fadeOut(0.86, 0.97), p2StatsRef.current, 28);
       stage(fadeIn(0.48, 0.66) * fadeOut(0.86, 0.97), p2StepsRef.current, 28);
       stage(fadeIn(0.54, 0.72) * fadeOut(0.86, 0.97), p2CtaRef.current, 24);
@@ -592,16 +594,6 @@ export function FlowWave() {
           </div>
 
           <div className="flex flex-1 flex-col items-center justify-center px-6 text-center">
-            <div className="pointer-events-auto mb-4 inline-flex items-center gap-2.5 rounded-full border border-[#34e89a]/30 bg-[#34e89a]/[0.06] px-4 py-1.5 backdrop-blur-sm sm:mb-7">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#34e89a] opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-[#34e89a]" />
-              </span>
-              <span className="font-mono text-[9px] uppercase tracking-[0.22em] text-[#7affbf] sm:text-[10px]">
-                The done-for-you client acquisition system
-              </span>
-            </div>
-
             <div ref={headlineWrapRef}>
               <h1 className="max-w-4xl text-balance font-semibold tracking-[-0.03em] text-fog">
                 <span className="block text-[clamp(1.2rem,2.4vw,1.9rem)] leading-[1.22]">
@@ -665,9 +657,18 @@ export function FlowWave() {
               02 / The System
             </span>
 
+            <h2
+              ref={p2HeadRef}
+              className="mx-auto mt-2.5 max-w-4xl text-balance text-[clamp(1.6rem,4.8vw,4.2rem)] font-bold leading-[1.04] tracking-[-0.03em] text-fog sm:mt-4"
+              style={{ opacity: 0 }}
+            >
+              The done-for-you{" "}
+              <em className="text-gradient-lime not-italic">client acquisition system</em>
+            </h2>
+
             <p
               ref={p2SubRef}
-              className="mx-auto mt-3 max-w-2xl text-pretty text-[1.05rem] font-medium text-fog sm:mt-4 sm:text-[1.2rem]"
+              className="mx-auto mt-2.5 max-w-2xl text-pretty text-sm text-mist sm:mt-4 sm:text-[1.05rem]"
               style={{ opacity: 0 }}
             >
               We design, run and optimize the entire acquisition engine for you — from Meta Ads

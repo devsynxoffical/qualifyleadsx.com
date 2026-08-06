@@ -184,6 +184,27 @@ export function FlowWave() {
   const statRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
   const hintRef = useRef<HTMLDivElement>(null);
+  const p2WrapRef = useRef<HTMLDivElement>(null);
+  const p2CounterRef = useRef<HTMLDivElement>(null);
+  const p2LabelRef = useRef<HTMLSpanElement>(null);
+  const p2HeadRef = useRef<HTMLHeadingElement>(null);
+  const p2SubRef = useRef<HTMLParagraphElement>(null);
+  const p2StatsRef = useRef<HTMLDivElement>(null);
+  const p2StepsRef = useRef<HTMLDivElement>(null);
+  const p2CtaRef = useRef<HTMLDivElement>(null);
+
+  const systemStats = [
+    { value: "90", label: "days to your written result" },
+    { value: "$50M+", label: "managed in Meta Ads" },
+    { value: "0%", label: "management fee until we deliver" },
+    { value: "100%", label: "done-for-you — we do the work" },
+  ];
+
+  const systemSteps = [
+    { title: "We build", desc: "Offer, funnel, creative and tracking — installed from scratch." },
+    { title: "We run", desc: "Meta ads, AI qualification and follow-ups — managed daily." },
+    { title: "You win", desc: "You take the calls. Revenue follows the results." },
+  ];
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -425,25 +446,42 @@ export function FlowWave() {
     const overlay = () => {
       const p = scrollCurrent;
       const fadeOut = (start: number, end: number) => 1 - smoothstep(p, start, end);
+      const fadeIn = (start: number, end: number) => smoothstep(p, start, end);
+      const stage = (o: number, el: HTMLElement | null, y: number) => {
+        if (!el) return;
+        el.style.opacity = String(o);
+        el.style.transform = `translateY(${(1 - o) * y}px)`;
+      };
+
+      /* ---- stage 1: the promise ---- */
       if (headlineWrapRef.current) {
-        const o = fadeOut(0.18, 0.42);
-        headlineWrapRef.current.style.opacity = String(o);
-        headlineWrapRef.current.style.transform = `translateY(${(1 - o) * -44}px)`;
-        headlineWrapRef.current.style.maxHeight = `${o * 560}px`;
+        const o = fadeOut(0.12, 0.34);
+        stage(o, headlineWrapRef.current, -44);
       }
       if (ctaRef.current) {
-        const o = fadeOut(0.2, 0.44);
-        ctaRef.current.style.opacity = String(o);
-        ctaRef.current.style.transform = `translateY(${(1 - o) * -30}px)`;
+        const o = fadeOut(0.16, 0.38);
+        stage(o, ctaRef.current, -30);
       }
       if (statRef.current) {
-        const o = fadeOut(0.22, 0.46);
-        statRef.current.style.opacity = String(o);
-        statRef.current.style.transform = `translateY(${(1 - o) * -22}px)`;
+        const o = fadeOut(0.18, 0.4);
+        stage(o, statRef.current, -22);
       }
       if (hintRef.current) {
-        hintRef.current.style.opacity = String(1 - smoothstep(p, 0.03, 0.1));
+        hintRef.current.style.opacity = String(1 - smoothstep(p, 0.02, 0.08));
       }
+
+      /* ---- stage 2: the system ---- */
+      const p2On = p > 0.24;
+      if (p2WrapRef.current) p2WrapRef.current.style.visibility = p2On ? "visible" : "hidden";
+      if (p2CounterRef.current) {
+        p2CounterRef.current.style.opacity = String(fadeIn(0.3, 0.46));
+      }
+      stage(fadeIn(0.28, 0.42), p2LabelRef.current, 20);
+      stage(fadeIn(0.3, 0.5) * fadeOut(0.86, 0.97), p2HeadRef.current, 44);
+      stage(fadeIn(0.36, 0.54) * fadeOut(0.86, 0.97), p2SubRef.current, 34);
+      stage(fadeIn(0.42, 0.6) * fadeOut(0.86, 0.97), p2StatsRef.current, 28);
+      stage(fadeIn(0.48, 0.66) * fadeOut(0.86, 0.97), p2StepsRef.current, 28);
+      stage(fadeIn(0.54, 0.72) * fadeOut(0.86, 0.97), p2CtaRef.current, 24);
     };
 
     let raf = 0;
@@ -538,8 +576,20 @@ export function FlowWave() {
             <span className="font-mono text-[11px] uppercase tracking-[0.28em] text-[#7affbf]/90">
               QualifiedLeadsX · Flow
             </span>
-            <div ref={hintRef} className="font-mono text-[11px] uppercase tracking-[0.28em] text-[#7affbf]/60">
-              scroll ↓
+            <div className="flex items-center gap-6">
+              <div
+                ref={hintRef}
+                className="font-mono text-[11px] uppercase tracking-[0.28em] text-[#7affbf]/60"
+              >
+                scroll ↓
+              </div>
+              <div
+                ref={p2CounterRef}
+                className="font-mono text-[11px] uppercase tracking-[0.28em] text-[#7affbf]/60"
+                style={{ opacity: 0 }}
+              >
+                02 / 02
+              </div>
             </div>
           </div>
 
@@ -554,20 +604,21 @@ export function FlowWave() {
               </span>
             </div>
 
-            <div
-              ref={headlineWrapRef}
-              className="overflow-hidden"
-              style={{ maxHeight: 560 }}
-            >
-              <h1 className="max-w-4xl text-balance text-[clamp(1.4rem,3.6vw,3rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-fog">
-                We will install our proprietary{" "}
-                <em className="text-gradient-lime not-italic">QualifiedLeadsX™</em> client
-                acquisition system into your business —{" "}
-                <em className="text-gradient-lime not-italic">
+            <div ref={headlineWrapRef}>
+              <h1 className="max-w-4xl text-balance font-semibold tracking-[-0.03em] text-fog">
+                <span className="block text-[clamp(1.2rem,2.4vw,1.9rem)] leading-[1.22]">
+                  We will install our proprietary{" "}
+                  <em className="text-gradient-lime not-italic">QualifiedLeadsX™</em> client
+                  acquisition system into your business —
+                </span>
+                <span className="mt-2 block text-gradient-lime text-[clamp(1.9rem,5.6vw,4.8rem)] font-bold leading-[1.02]">
                   double your revenue within the next 90 days
-                </em>{" "}
-                — or we&apos;ll continue working for you at{" "}
-                <em className="text-gradient-lime not-italic">no management fee</em> until we do.
+                </span>
+                <span className="mt-3 block text-[clamp(0.95rem,1.6vw,1.25rem)] leading-[1.35] text-mist">
+                  — or we&apos;ll continue working for you at{" "}
+                  <em className="text-gradient-lime not-italic">no management fee</em> until we
+                  do.
+                </span>
               </h1>
               <p className="mx-auto mt-4 max-w-xl text-pretty text-sm leading-relaxed text-mist sm:text-[1rem]">
                 Done-for-you client acquisition — from Meta Ads to the booked call.
@@ -577,7 +628,7 @@ export function FlowWave() {
             <div ref={ctaRef} className="mt-6 flex flex-col items-center gap-3.5 sm:mt-8 sm:flex-row sm:gap-5">
               <a
                 href={site.bookCallUrl}
-                className="pointer-events-auto group inline-flex items-center gap-2 rounded-full bg-[#34e89a] px-9 py-3.5 text-sm font-semibold text-[#02160c] shadow-[0_0_50px_-12px_var(--color-lime)] transition-colors hover:bg-[#7affbf] sm:py-4"
+                className="pointer-events-auto group inline-flex items-center gap-2 rounded-full bg-[#34e89a] px-9 py-3 text-sm font-semibold text-[#02160c] shadow-[0_0_50px_-12px_var(--color-lime)] transition-colors hover:bg-[#7affbf] sm:py-4"
               >
                 Book Your Free Strategy Call
                 <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
@@ -599,6 +650,96 @@ export function FlowWave() {
           </div>
 
           <div className="h-10" />
+        </div>
+
+        {/* stage 2 — the system */}
+        <div
+          ref={p2WrapRef}
+          className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center"
+          style={{ visibility: "hidden" }}
+        >
+          <div className="w-full">
+            <span
+              ref={p2LabelRef}
+              className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#7affbf]/80 sm:text-[11px]"
+              style={{ opacity: 0 }}
+            >
+              02 / The System
+            </span>
+
+            <h2
+              ref={p2HeadRef}
+              className="mx-auto mt-2.5 max-w-4xl text-balance text-[clamp(1.6rem,4.8vw,4.2rem)] font-bold leading-[1.04] tracking-[-0.03em] text-fog sm:mt-4"
+              style={{ opacity: 0 }}
+            >
+              The done-for-you{" "}
+              <em className="text-gradient-lime not-italic">client acquisition system</em>
+            </h2>
+
+            <p
+              ref={p2SubRef}
+              className="mx-auto mt-2.5 max-w-2xl text-pretty text-sm text-mist sm:mt-4 sm:text-[1.05rem]"
+              style={{ opacity: 0 }}
+            >
+              We design, run and optimize the entire acquisition engine for you — from Meta Ads
+              to the booked call. You just take the calls.
+            </p>
+
+            <div
+              ref={p2StatsRef}
+              className="mx-auto mt-5 grid w-full max-w-3xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:mt-8 sm:grid-cols-4"
+              style={{ opacity: 0 }}
+            >
+              {systemStats.map((s) => (
+                <div key={s.label} className="bg-[#02160c]/85 px-4 py-3.5 backdrop-blur-sm sm:py-5">
+                  <div className="text-gradient-lime text-xl font-bold sm:text-3xl">
+                    {s.value}
+                  </div>
+                  <div className="mt-1 text-[10px] uppercase tracking-[0.14em] text-mist sm:text-[11px]">
+                    {s.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div
+              ref={p2StepsRef}
+              className="mx-auto mt-4 grid w-full max-w-3xl gap-3 text-left sm:mt-7 sm:grid-cols-3"
+              style={{ opacity: 0 }}
+            >
+              {systemSteps.map((s, i) => (
+                <div key={s.title} className="rounded-xl border border-white/10 bg-white/[0.03] px-5 py-2.5 sm:py-4">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-[#34e89a]">
+                    0{i + 1}
+                  </span>
+                  <div className="mt-1.5 text-sm font-semibold text-fog sm:text-base">
+                    {s.title}
+                  </div>
+                  <div className="mt-1 text-xs leading-relaxed text-mist sm:text-[13px]">
+                    {s.desc}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div
+              ref={p2CtaRef}
+              className="mt-5 flex flex-col items-center gap-2.5 sm:mt-8 sm:flex-row sm:gap-5"
+              style={{ opacity: 0 }}
+            >
+              <a
+                href={site.bookCallUrl}
+                className="pointer-events-auto group inline-flex items-center gap-2 rounded-full bg-[#34e89a] px-9 py-3 text-sm font-semibold text-[#02160c] shadow-[0_0_50px_-12px_var(--color-lime)] transition-colors hover:bg-[#7affbf] sm:py-4"
+              >
+                Book Your Free Strategy Call
+                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </a>
+              <div className="inline-flex items-center gap-2.5 text-xs font-medium text-mist">
+                <ShieldCheck className="h-4 w-4 shrink-0 text-[#34e89a]" />
+                90-day written guarantee · No management fee until results
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

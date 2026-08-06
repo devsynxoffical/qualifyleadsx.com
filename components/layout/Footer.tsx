@@ -35,13 +35,13 @@ export function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center" aria-label="QualifiedLeadsX home">
-              <span className="relative h-10 w-[92px]">
+              <span className="inline-flex items-center">
                 <Image
-                  src="/images/qualified-leadsx.webp"
+                  src="/images/logo-white.webp"
                   alt="QualifiedLeadsX"
-                  fill
-                  sizes="92px"
-                  className="object-contain brightness-0 invert"
+                  width={535}
+                  height={812}
+                  className="h-11 w-auto object-contain sm:h-12"
                 />
               </span>
             </Link>

@@ -12,16 +12,14 @@ import { cn } from "@/lib/utils";
 function Logo() {
   return (
     <Link href="/" className="group flex items-center" aria-label="QualifiedLeadsX home">
-      <span className="relative h-8 w-[76px] sm:h-9 sm:w-[86px]">
-        <Image
-          src="/images/qualified-leadsx.webp"
-          alt="QualifiedLeadsX"
-          fill
-          sizes="(min-width: 640px) 86px, 76px"
-          className="object-contain brightness-0 invert"
-          priority
-        />
-      </span>
+      <Image
+        src="/images/logo-white.webp"
+        alt="QualifiedLeadsX"
+        width={535}
+        height={812}
+        priority
+        className="h-9 w-auto object-contain transition-opacity duration-300 group-hover:opacity-90 sm:h-10"
+      />
     </Link>
   );
 }

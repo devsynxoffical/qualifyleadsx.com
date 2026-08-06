@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { nav, navCta, site } from "@/lib/site";
 import { scrollToId } from "@/components/providers/SmoothScroll";
@@ -10,22 +11,16 @@ import { cn } from "@/lib/utils";
 
 function Logo() {
   return (
-    <Link href="/" className="group flex items-center gap-2" aria-label="QualifiedLeadsX home">
-      <span className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-lime text-ink">
-        <svg viewBox="0 0 24 24" className="h-4.5 w-4.5" fill="none" aria-hidden="true">
-          <path
-            d="M4 12.5 9 7l4 5 3.5-3.5L20 12.5"
-            stroke="currentColor"
-            strokeWidth="2.6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path d="M4 17h16" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" />
-        </svg>
-      </span>
-      <span className="text-[17px] font-bold tracking-tight text-fog">
-        Qualified<span className="text-lime">Leads</span>X
-        <span className="ml-0.5 align-super text-[8px] font-medium text-mist">™</span>
+    <Link href="/" className="group flex items-center" aria-label="QualifiedLeadsX home">
+      <span className="relative h-8 w-[76px] sm:h-9 sm:w-[86px]">
+        <Image
+          src="/images/qualified-leadsx.webp"
+          alt="QualifiedLeadsX"
+          fill
+          sizes="(min-width: 640px) 86px, 76px"
+          className="object-contain brightness-0 invert"
+          priority
+        />
       </span>
     </Link>
   );

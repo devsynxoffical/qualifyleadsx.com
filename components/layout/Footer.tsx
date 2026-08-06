@@ -1,5 +1,6 @@
 import { ArrowUpRight, Mail, Phone } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { site } from "@/lib/site";
 
 const footerColumns = [
@@ -33,22 +34,15 @@ export function Footer() {
         <div className="grid gap-14 py-16 sm:py-20 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center gap-2" aria-label="QualifiedLeadsX home">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-lime text-ink">
-                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" aria-hidden="true">
-                  <path
-                    d="M4 12.5 9 7l4 5 3.5-3.5L20 12.5"
-                    stroke="currentColor"
-                    strokeWidth="2.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path d="M4 17h16" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" />
-                </svg>
-              </span>
-              <span className="text-lg font-bold tracking-tight text-fog">
-                Qualified<span className="text-lime">Leads</span>X
-                <span className="ml-0.5 align-super text-[9px] font-medium text-mist">™</span>
+            <Link href="/" className="flex items-center" aria-label="QualifiedLeadsX home">
+              <span className="relative h-10 w-[92px]">
+                <Image
+                  src="/images/qualified-leadsx.webp"
+                  alt="QualifiedLeadsX"
+                  fill
+                  sizes="92px"
+                  className="object-contain brightness-0 invert"
+                />
               </span>
             </Link>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-mist">

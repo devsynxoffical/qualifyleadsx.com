@@ -8,7 +8,7 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass";
 import { GammaCorrectionShader } from "three/examples/jsm/shaders/GammaCorrectionShader";
 import { CopyShader } from "three/examples/jsm/shaders/CopyShader";
-import { ArrowUpRight, Bot, CalendarCheck2, PhoneCall, ShieldCheck, Zap } from "lucide-react";
+import { ArrowUpRight, ShieldCheck } from "lucide-react";
 import { site } from "@/lib/site";
 
 /* ============================================================
@@ -172,29 +172,6 @@ void main(){ vec2 p = gl_PointCoord - 0.5; float l = length(p); if (l > 0.5) dis
   float tex = smoothstep(0.5, 0.0, l); gl_FragColor = vec4(uColor * tex, tex * vA * 0.6); }
 `;
 
-const CARDS = [
-  {
-    icon: Bot,
-    title: "AI lead qualification",
-    body: "Every prospect is qualified and pre-sold before they ever reach your calendar.",
-  },
-  {
-    icon: PhoneCall,
-    title: "CRM + AI follow-up",
-    body: "Automated email, SMS, reminders and follow-up that run 24/7.",
-  },
-  {
-    icon: Zap,
-    title: "Meta Ads, managed daily",
-    body: "Campaigns launched, optimised and scaled by our team every day.",
-  },
-  {
-    icon: CalendarCheck2,
-    title: "90-day written guarantee",
-    body: "We keep working at no management fee until you see the results.",
-  },
-] as const;
-
 const smoothstep = (v: number, a: number, b: number) => {
   const x = clamp((v - a) / (b - a), 0, 1);
   return x * x * (3 - 2 * x);
@@ -204,7 +181,6 @@ export function FlowWave() {
   const sectionRef = useRef<HTMLElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const headlineWrapRef = useRef<HTMLDivElement>(null);
-  const cardsRef = useRef<HTMLDivElement>(null);
   const statRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
   const hintRef = useRef<HTMLDivElement>(null);
@@ -465,11 +441,6 @@ export function FlowWave() {
         statRef.current.style.opacity = String(o);
         statRef.current.style.transform = `translateY(${(1 - o) * -22}px)`;
       }
-      if (cardsRef.current) {
-        const o = fadeOut(0.24, 0.5);
-        cardsRef.current.style.opacity = String(o);
-        cardsRef.current.style.transform = `translateY(${(1 - o) * -40}px)`;
-      }
       if (hintRef.current) {
         hintRef.current.style.opacity = String(1 - smoothstep(p, 0.03, 0.1));
       }
@@ -630,33 +601,6 @@ export function FlowWave() {
               className="mt-4 font-mono text-[9px] uppercase tracking-[0.28em] text-[#34e89a]/80 sm:mt-6 sm:text-[11px]"
             >
               Free 30-minute strategy call · No pressure · No obligation
-            </div>
-
-            <div
-              ref={cardsRef}
-              className="mt-5 grid w-full max-w-5xl grid-cols-2 gap-3 sm:mt-8 sm:gap-4 lg:grid-cols-4"
-            >
-              {CARDS.map((c) => {
-                const Icon = c.icon;
-                return (
-                  <div
-                    key={c.title}
-                    className="panel-glass rounded-2xl px-4 py-3 text-left sm:px-5 sm:py-4"
-                  >
-                    <div className="flex items-center gap-3">
-                      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl border border-[#34e89a]/30 bg-[#34e89a]/10 text-[#34e89a]">
-                        <Icon className="h-4 w-4" strokeWidth={1.75} />
-                      </div>
-                      <p className="text-xs font-semibold leading-snug text-fog sm:text-[13px]">
-                        {c.title}
-                      </p>
-                    </div>
-                    <p className="mt-1.5 text-[10px] leading-relaxed text-mist sm:text-[11px] sm:leading-relaxed">
-                      {c.body}
-                    </p>
-                  </div>
-                );
-              })}
             </div>
           </div>
 

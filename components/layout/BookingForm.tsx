@@ -187,7 +187,7 @@ export function BookingForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="group mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-lime px-8 py-4 text-base font-bold text-ink transition-all duration-300 hover:shadow-[0_0_40px_-8px_var(--color-lime)] disabled:cursor-not-allowed disabled:opacity-70"
+        className="group mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-lime px-8 py-4 text-[1rem] font-bold text-ink transition-all duration-300 hover:shadow-[0_0_40px_-8px_var(--color-lime)] disabled:cursor-not-allowed disabled:opacity-70"
         data-cursor="book"
       >
         {status === "sending" ? (

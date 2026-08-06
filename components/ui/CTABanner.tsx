@@ -59,7 +59,7 @@ export function CTABanner({
           </SplitReveal>
 
           <Reveal delay={0.2}>
-            <p className="mx-auto mt-6 max-w-xl text-pretty text-base leading-relaxed text-mist sm:text-lg">
+            <p className="mx-auto mt-6 max-w-xl text-pretty text-[1rem] leading-relaxed text-mist sm:text-lg">
               Book a free strategy call. We’ll audit your offer, show you the exact funnel you
               need — and get qualified sales calls onto your calendar. No pressure, no fluff.
             </p>

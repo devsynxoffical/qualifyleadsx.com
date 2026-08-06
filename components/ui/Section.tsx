@@ -52,7 +52,7 @@ export function SectionHeading({
         <Reveal delay={0.15}>
           <p
             className={cn(
-              "mt-6 max-w-2xl text-pretty text-base leading-relaxed text-mist sm:text-lg",
+              "mt-6 max-w-2xl text-pretty text-[1rem] leading-relaxed text-mist sm:text-lg",
               align === "center" && "mx-auto"
             )}
           >

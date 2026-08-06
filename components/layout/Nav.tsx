@@ -166,7 +166,7 @@ export function Nav() {
             <a
               href={navCta.href}
               onClick={(e) => go(e, navCta.href)}
-              className="flex items-center justify-center gap-2 rounded-full bg-lime px-6 py-4 text-base font-bold text-ink"
+              className="flex items-center justify-center gap-2 rounded-full bg-lime px-6 py-4 text-[1rem] font-bold text-ink"
               data-cursor="book"
             >
               {navCta.label}

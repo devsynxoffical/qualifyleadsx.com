@@ -43,7 +43,7 @@ export default function BookYourCallPage() {
               Let&apos;s build the funnel that fills your{" "}
               <span className="text-gradient-lime">calendar with calls</span>
             </h1>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-mist sm:text-lg">
+            <p className="mt-5 max-w-xl text-[1rem] leading-relaxed text-mist sm:text-lg">
               Tell us about your business and we&apos;ll show you the exact same client acquisition
               system that has generated{" "}
               <span className="font-semibold text-fog">$100K+ months</span> across different

@@ -41,7 +41,7 @@ function FaqItem({
             <span className="hidden font-mono text-[10px] text-dim sm:inline">
               {String(index + 1).padStart(2, "0")}
             </span>
-            <span className={cn("text-base font-semibold tracking-tight sm:text-lg", open ? "text-fog" : "text-mist")}>
+            <span className={cn("text-[1rem] font-semibold tracking-tight sm:text-lg", open ? "text-fog" : "text-mist")}>
               {q}
             </span>
           </span>

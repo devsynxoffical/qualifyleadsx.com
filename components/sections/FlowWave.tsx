@@ -523,7 +523,7 @@ export function FlowWave() {
       id="top"
       ref={sectionRef}
       className="relative"
-      style={{ height: "620vh" }}
+      style={{ height: "320vh" }}
       aria-label="Qualified demand hero"
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden bg-[#02160c]">
@@ -569,14 +569,8 @@ export function FlowWave() {
                 — or we&apos;ll continue working for you at{" "}
                 <em className="text-gradient-lime not-italic">no management fee</em> until we do.
               </h1>
-              <p className="mx-auto mt-4 max-w-2xl text-pretty text-sm leading-relaxed text-mist sm:mt-5 sm:text-base">
-                Stop relying on referrals, inconsistent lead generation, and multiple freelancers.{" "}
-                <span className="hidden sm:inline">
-                  We build your entire client acquisition ecosystem — including your offer
-                  positioning, Meta Ads, ad creatives, landing pages, CRM, AI automations, lead
-                  qualification and follow-up systems — so your only job is to show up, take the
-                  calls and close premium clients.
-                </span>
+              <p className="mx-auto mt-4 max-w-xl text-pretty text-sm leading-relaxed text-mist sm:text-[1rem]">
+                Done-for-you client acquisition — from Meta Ads to the booked call.
               </p>
             </div>
 

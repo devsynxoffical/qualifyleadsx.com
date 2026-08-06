@@ -24,7 +24,6 @@ export default function Home() {
       <Nav />
       <FlowWave />
       <TrustBar />
-      <CTABanner compact eyebrow="Free strategy call" />
       <WhyScale />
       <Different />
       <FunnelProof />

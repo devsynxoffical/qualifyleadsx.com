@@ -8,7 +8,7 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass";
 import { GammaCorrectionShader } from "three/examples/jsm/shaders/GammaCorrectionShader";
 import { CopyShader } from "three/examples/jsm/shaders/CopyShader";
-import { ArrowUpRight, Bot, CalendarCheck2, PhoneCall, Zap } from "lucide-react";
+import { ArrowUpRight, Bot, CalendarCheck2, PhoneCall, ShieldCheck, Zap } from "lucide-react";
 import { site } from "@/lib/site";
 
 /* ============================================================
@@ -204,10 +204,7 @@ export function FlowWave() {
   const sectionRef = useRef<HTMLElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const headlineWrapRef = useRef<HTMLDivElement>(null);
-  const headlineRef = useRef<HTMLHeadingElement>(null);
-  const subRef = useRef<HTMLParagraphElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
-  const cardElsRef = useRef<(HTMLDivElement | null)[]>([]);
   const statRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
   const hintRef = useRef<HTMLDivElement>(null);
@@ -451,29 +448,27 @@ export function FlowWave() {
 
     const overlay = () => {
       const p = scrollCurrent;
+      const fadeOut = (start: number, end: number) => 1 - smoothstep(p, start, end);
       if (headlineWrapRef.current) {
-        const o = 1 - smoothstep(p, 0.28, 0.44);
+        const o = fadeOut(0.18, 0.42);
         headlineWrapRef.current.style.opacity = String(o);
-        headlineWrapRef.current.style.transform = `translateY(${(1 - o) * -34}px)`;
-        headlineWrapRef.current.style.maxHeight = `${o * 480}px`;
-      }
-      if (cardsRef.current) {
-        const o = smoothstep(p, 0.3, 0.48);
-        cardsRef.current.style.opacity = String(o);
-        cardsRef.current.style.transform = `translateY(${(1 - o) * 56}px)`;
-        cardElsRef.current.forEach((el, i) => {
-          if (el) el.style.transform = `translateY(${(1 - o) * (14 + i * 10)}px)`;
-        });
-      }
-      if (statRef.current) {
-        const o = smoothstep(p, 0.5, 0.62);
-        statRef.current.style.opacity = String(o);
-        statRef.current.style.transform = `translateY(${(1 - o) * 20}px)`;
+        headlineWrapRef.current.style.transform = `translateY(${(1 - o) * -44}px)`;
+        headlineWrapRef.current.style.maxHeight = `${o * 560}px`;
       }
       if (ctaRef.current) {
-        const o = smoothstep(p, 0.55, 0.68);
+        const o = fadeOut(0.2, 0.44);
         ctaRef.current.style.opacity = String(o);
-        ctaRef.current.style.transform = `translateY(${(1 - o) * 26}px)`;
+        ctaRef.current.style.transform = `translateY(${(1 - o) * -30}px)`;
+      }
+      if (statRef.current) {
+        const o = fadeOut(0.22, 0.46);
+        statRef.current.style.opacity = String(o);
+        statRef.current.style.transform = `translateY(${(1 - o) * -22}px)`;
+      }
+      if (cardsRef.current) {
+        const o = fadeOut(0.24, 0.5);
+        cardsRef.current.style.opacity = String(o);
+        cardsRef.current.style.transform = `translateY(${(1 - o) * -40}px)`;
       }
       if (hintRef.current) {
         hintRef.current.style.opacity = String(1 - smoothstep(p, 0.03, 0.1));
@@ -481,6 +476,7 @@ export function FlowWave() {
     };
 
     let raf = 0;
+    let renderFailed = false;
     const loop = () => {
       scrollTarget = computeScroll();
       scrollSmooth = Lerp(scrollSmooth, scrollTarget, 0.1);
@@ -488,16 +484,30 @@ export function FlowWave() {
       mouse.x = Lerp(mouse.x, mouseTarget.x, 0.06);
       mouse.y = Lerp(mouse.y, mouseTarget.y, 0.06);
 
-      render(scrollCurrent, mouse);
+      try {
+        render(scrollCurrent, mouse);
 
-      camera.layers.set(LAYERS.TORUS_SCENE);
-      torusComposer.render();
-      camera.layers.set(LAYERS.BLOOM_SCENE);
-      bloomComposer.render();
-      camera.layers.set(LAYERS.ENTIRE_SCENE);
-      finalComposer.render();
+        camera.layers.set(LAYERS.TORUS_SCENE);
+        torusComposer.render();
+        camera.layers.set(LAYERS.BLOOM_SCENE);
+        bloomComposer.render();
+        camera.layers.set(LAYERS.ENTIRE_SCENE);
+        finalComposer.render();
+      } catch (err) {
+        if (!renderFailed) {
+          renderFailed = true;
+          console.warn("hero render skipped", err);
+        }
+      }
 
-      overlay();
+      try {
+        overlay();
+      } catch (err) {
+        if (!renderFailed) {
+          renderFailed = true;
+          console.warn("hero overlay failed", err);
+        }
+      }
       raf = requestAnimationFrame(loop);
     };
 
@@ -563,15 +573,22 @@ export function FlowWave() {
           </div>
 
           <div className="flex flex-1 flex-col items-center justify-center px-6 text-center">
+            <div className="pointer-events-auto mb-4 inline-flex items-center gap-2.5 rounded-full border border-[#34e89a]/30 bg-[#34e89a]/[0.06] px-4 py-1.5 backdrop-blur-sm sm:mb-7">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#34e89a] opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-[#34e89a]" />
+              </span>
+              <span className="font-mono text-[9px] uppercase tracking-[0.22em] text-[#7affbf] sm:text-[10px]">
+                The done-for-you client acquisition system
+              </span>
+            </div>
+
             <div
               ref={headlineWrapRef}
               className="overflow-hidden"
-              style={{ maxHeight: 480 }}
+              style={{ maxHeight: 560 }}
             >
-              <h1
-                ref={headlineRef}
-                className="max-w-4xl text-balance text-[clamp(1.5rem,3.9vw,3.4rem)] font-semibold leading-[1.05] tracking-[-0.03em] text-fog"
-              >
+              <h1 className="max-w-4xl text-balance text-[clamp(1.4rem,3.6vw,3rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-fog">
                 We will install our proprietary{" "}
                 <em className="text-gradient-lime not-italic">QualifiedLeadsX™</em> client
                 acquisition system into your business —{" "}
@@ -581,10 +598,7 @@ export function FlowWave() {
                 — or we&apos;ll continue working for you at{" "}
                 <em className="text-gradient-lime not-italic">no management fee</em> until we do.
               </h1>
-              <p
-                ref={subRef}
-                className="mx-auto mt-5 max-w-2xl text-pretty text-sm leading-relaxed text-mist sm:text-base"
-              >
+              <p className="mx-auto mt-4 max-w-2xl text-pretty text-sm leading-relaxed text-mist sm:mt-5 sm:text-base">
                 Stop relying on referrals, inconsistent lead generation, and multiple freelancers.{" "}
                 <span className="hidden sm:inline">
                   We build your entire client acquisition ecosystem — including your offer
@@ -595,51 +609,54 @@ export function FlowWave() {
               </p>
             </div>
 
+            <div ref={ctaRef} className="mt-6 flex flex-col items-center gap-3.5 sm:mt-8 sm:flex-row sm:gap-5">
+              <a
+                href={site.bookCallUrl}
+                className="pointer-events-auto group inline-flex items-center gap-2 rounded-full bg-[#34e89a] px-9 py-3.5 text-sm font-semibold text-[#02160c] shadow-[0_0_50px_-12px_var(--color-lime)] transition-colors hover:bg-[#7affbf] sm:py-4"
+              >
+                Book Your Free Strategy Call
+                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </a>
+              <div className="pointer-events-auto inline-flex items-center gap-2.5 rounded-full border border-[#34e89a]/25 bg-[#02160c]/70 px-5 py-3.5 backdrop-blur-sm">
+                <ShieldCheck className="h-4 w-4 shrink-0 text-[#34e89a]" />
+                <span className="text-xs font-medium text-mist sm:text-[13px]">
+                  Backed by a <span className="text-fog">written agreement</span>
+                </span>
+              </div>
+            </div>
+
+            <div
+              ref={statRef}
+              className="mt-4 font-mono text-[9px] uppercase tracking-[0.28em] text-[#34e89a]/80 sm:mt-6 sm:text-[11px]"
+            >
+              Free 30-minute strategy call · No pressure · No obligation
+            </div>
+
             <div
               ref={cardsRef}
-              className="mt-7 grid w-full max-w-5xl grid-cols-2 gap-3 sm:mt-10 sm:gap-4 lg:grid-cols-4"
-              style={{ opacity: 0 }}
+              className="mt-5 grid w-full max-w-5xl grid-cols-2 gap-3 sm:mt-8 sm:gap-4 lg:grid-cols-4"
             >
-              {CARDS.map((c, i) => {
+              {CARDS.map((c) => {
                 const Icon = c.icon;
                 return (
                   <div
                     key={c.title}
-                    ref={(el) => {
-                      cardElsRef.current[i] = el;
-                    }}
-                    className="panel-glass rounded-2xl p-4 text-left sm:p-5"
+                    className="panel-glass rounded-2xl px-4 py-3 text-left sm:px-5 sm:py-4"
                   >
-                    <div className="flex h-8 w-8 items-center justify-center rounded-xl border border-[#34e89a]/30 bg-[#34e89a]/10 text-[#34e89a] sm:h-10 sm:w-10">
-                      <Icon className="h-4 w-4 sm:h-5 sm:w-5" strokeWidth={1.75} />
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl border border-[#34e89a]/30 bg-[#34e89a]/10 text-[#34e89a]">
+                        <Icon className="h-4 w-4" strokeWidth={1.75} />
+                      </div>
+                      <p className="text-xs font-semibold leading-snug text-fog sm:text-[13px]">
+                        {c.title}
+                      </p>
                     </div>
-                    <p className="mt-3 text-xs font-semibold text-fog sm:mt-4 sm:text-sm">
-                      {c.title}
-                    </p>
-                    <p className="mt-1.5 text-[11px] leading-relaxed text-mist sm:text-xs sm:leading-relaxed">
+                    <p className="mt-1.5 text-[10px] leading-relaxed text-mist sm:text-[11px] sm:leading-relaxed">
                       {c.body}
                     </p>
                   </div>
                 );
               })}
-            </div>
-
-            <div
-              ref={statRef}
-              className="mt-5 font-mono text-[9px] uppercase tracking-[0.28em] text-[#34e89a]/80 sm:mt-8 sm:text-[11px]"
-              style={{ opacity: 0 }}
-            >
-              Backed by a written agreement
-            </div>
-
-            <div ref={ctaRef} className="mt-5 sm:mt-8" style={{ opacity: 0 }}>
-              <a
-                href={site.bookCallUrl}
-                className="pointer-events-auto group inline-flex items-center gap-2 rounded-full bg-[#34e89a] px-8 py-3.5 text-sm font-semibold text-[#02160c] transition-colors hover:bg-[#7affbf] sm:py-4"
-              >
-                Book Your Free Strategy Call
-                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-              </a>
             </div>
           </div>
 

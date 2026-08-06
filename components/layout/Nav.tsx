@@ -34,6 +34,7 @@ function Logo() {
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [barDismissed, setBarDismissed] = useState(false);
   const pathname = usePathname();
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -42,6 +43,14 @@ export function Nav() {
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    try {
+      setBarDismissed(!!localStorage.getItem("qlx-announcement-dismissed"));
+    } catch {
+      /* noop */
+    }
   }, []);
 
   useEffect(() => {
@@ -77,8 +86,8 @@ export function Nav() {
     <>
       <header
         className={cn(
-          "fixed inset-x-0 top-0 z-[60] transition-all duration-500",
-          scrolled ? "top-0" : "top-10"
+          "fixed inset-x-0 z-[60] transition-all duration-500",
+          barDismissed ? "top-0" : "top-10"
         )}
       >
         <nav

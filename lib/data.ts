@@ -54,27 +54,27 @@ export const whyNotScale = [
 export const differentiators = [
   {
     icon: Funnel,
-    title: "Complete done-for-you system",
+    title: "Complete Done-For-You Client Acquisition System",
     body: "We install every piece — offer positioning, Meta Ads, creatives, landing pages, CRM, AI automations, qualification and follow-up. Your only job is to close.",
   },
   {
     icon: BadgeCheck,
-    title: "Premium lead qualification",
+    title: "Premium Lead Qualification & Multi-Validation Process",
     body: "A proprietary multi-validation process filters leads before they reach your calendar — lifting booking and show-up rates.",
   },
   {
     icon: Bot,
-    title: "CRM + AI follow-up included",
+    title: "CRM + AI Follow-Up Automations Included",
     body: "Every lead automatically enters your CRM, nurtured by email, SMS, reminders and AI follow-up around the clock.",
   },
   {
     icon: Database,
-    title: "You own everything",
+    title: "Everything We Build Becomes Your Business Asset",
     body: "Everything we build becomes your business asset. No lock-ins, no hidden ownership, no dependence on another agency.",
   },
   {
     icon: TrendingUp,
-    title: "Revenue-focused growth",
+    title: "Revenue-Focused Growth Strategy — Not Just More Leads",
     body: "Not just more leads — a growth strategy engineered around closed revenue, ROAS and predictable compounding.",
   },
 ] as const;
@@ -232,9 +232,9 @@ export const comparisonRows: {
   qlx: string | boolean;
   highlight?: boolean;
 }[] = [
-  { label: "Runs ads", agency: "Yes", qlx: "Complete acquisition system" },
+  { label: "Runs ads", agency: "Yes", qlx: "Complete client acquisition system" },
   { label: "Delivers leads", agency: "Yes", qlx: "Premium client acquisition" },
-  { label: "Follow-up", agency: "Limited", qlx: "24/7 AI follow-up" },
+  { label: "Follow-up", agency: "Limited", qlx: "AI follow-up" },
   { label: "CRM", agency: false, qlx: true },
   { label: "Automation", agency: false, qlx: true },
   { label: "Ownership", agency: false, qlx: true, highlight: true },

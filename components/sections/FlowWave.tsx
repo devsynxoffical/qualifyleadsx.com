@@ -585,11 +585,12 @@ export function FlowWave() {
                 ref={subRef}
                 className="mx-auto mt-5 max-w-2xl text-pretty text-sm leading-relaxed text-mist sm:text-base"
               >
-                Stop relying on referrals, inconsistent lead generation and multiple freelancers.{" "}
+                Stop relying on referrals, inconsistent lead generation, and multiple freelancers.{" "}
                 <span className="hidden sm:inline">
-                  We build your entire client acquisition ecosystem — offer positioning, Meta Ads,
-                  ad creatives, landing pages, CRM, AI automations, lead qualification and follow-up
-                  — so your only job is to show up, take the calls and close premium clients.
+                  We build your entire client acquisition ecosystem — including your offer
+                  positioning, Meta Ads, ad creatives, landing pages, CRM, AI automations, lead
+                  qualification and follow-up systems — so your only job is to show up, take the
+                  calls and close premium clients.
                 </span>
               </p>
             </div>

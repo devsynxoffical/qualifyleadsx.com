@@ -27,18 +27,17 @@ export function WhyScale() {
           <Reveal delay={0.15}>
             <p className="mt-6 max-w-md text-pretty leading-relaxed text-mist">
               Most agencies only run ads. Some build funnels. Others write copy. Someone else
-              handles follow-up. Nobody owns the entire customer journey — which is exactly why
-              growth stalls.
+              handles follow-up. Nobody owns the entire customer journey. That&apos;s exactly why
+              businesses struggle to scale consistently.
             </p>
           </Reveal>
           <Reveal delay={0.25}>
             <div className="mt-8 inline-flex items-center gap-3 rounded-2xl border border-rose/20 bg-rose/[0.04] px-5 py-4">
               <X className="h-5 w-5 shrink-0 text-rose" />
               <p className="text-sm text-mist">
-                We build{" "}
-                <span className="font-semibold text-fog">one complete ecosystem</span> where every
-                part works together — from first click to a{" "}
-                <span className="font-semibold text-lime">qualified client on your calendar.</span>
+                At <span className="font-semibold text-fog">QualifiedLeadsX™</span>, we build one
+                complete ecosystem where every part works together — from the first click to a{" "}
+                <span className="font-semibold text-lime">qualified client sitting on your calendar.</span>
               </p>
             </div>
           </Reveal>

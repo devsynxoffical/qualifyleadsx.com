@@ -23,8 +23,8 @@ export default function Home() {
       <AnnouncementBar />
       <Nav />
       <FlowWave />
-      <CTABanner compact eyebrow="Free strategy call" />
       <TrustBar />
+      <CTABanner compact eyebrow="Free strategy call" />
       <WhyScale />
       <Different />
       <FunnelProof />

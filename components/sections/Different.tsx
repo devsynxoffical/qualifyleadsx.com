@@ -1,8 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
-import { PhoneCall } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { differentiators } from "@/lib/data";
@@ -78,38 +76,6 @@ export function Different() {
             </Reveal>
           );
         })}
-      </div>
-      <div className="mt-14 grid items-center gap-8 overflow-hidden rounded-3xl border border-line bg-panel lg:grid-cols-[1.1fr_1fr]">
-        <Reveal className="relative aspect-[6/5] overflow-hidden sm:aspect-[16/10] lg:aspect-auto lg:h-full">
-          <Image
-            src="/images/gif-1.gif"
-            alt="AI outbound voice call booking appointments in real time"
-            fill
-            sizes="(min-width: 1024px) 55vw, 100vw"
-            className="object-cover"
-            unoptimized
-          />
-        </Reveal>
-        <Reveal delay={0.12} className="p-8 sm:p-10">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-lime/25 bg-lime/[0.07] text-lime">
-            <PhoneCall className="h-5 w-5" strokeWidth={1.75} />
-          </div>
-          <h3 className="mt-5 text-2xl font-semibold tracking-tight text-fog">
-            An AI rep on the phone while you sleep.
-          </h3>
-          <p className="mt-3 text-sm leading-relaxed text-mist">
-            Every booked call is confirmed, reminded and rescheduled by an AI voice agent that
-            sounds human. No-shows drop, and your calendar fills while you&apos;re off the clock.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 border-t border-line pt-5">
-            {["100% AI follow-up", "86%+ show rate", "24/7 availability"].map((label) => (
-              <span key={label} className="flex items-center gap-2 text-xs text-dim">
-                <span className="h-1.5 w-1.5 rounded-full bg-lime" />
-                {label}
-              </span>
-            ))}
-          </div>
-        </Reveal>
       </div>
     </Section>
   );

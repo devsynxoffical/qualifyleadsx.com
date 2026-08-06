@@ -48,7 +48,7 @@ export function AnnouncementBar() {
   return (
     <div
       id="announcement-bar"
-      className="relative z-[70] h-10"
+      className="sticky top-0 z-[70] h-10"
       role="region"
       aria-label="Announcement"
     >
@@ -58,12 +58,12 @@ export function AnnouncementBar() {
         data-cursor="book"
       >
         <span className="hidden shrink-0 sm:inline">
-          ⚠️ Only for agency owners, coaches, high-ticket service providers &amp; B2B founders already
-          generating $10,000+/month.
+          ⚠️ This is only for agency owners, coaches, high-ticket service providers &amp; B2B
+          founders already generating $10,000+/month.
         </span>
         <span className="shrink-0 sm:hidden">Only for businesses generating $10K+/month.</span>
         <span className="hidden whitespace-nowrap border-l border-ink/25 pl-2.5 text-ink/70 lg:inline">
-          Below $10K/month? This system isn&apos;t for you.
+          If you&apos;re below $10,000/month, this system isn&apos;t the right fit.
         </span>
       </a>
       <button

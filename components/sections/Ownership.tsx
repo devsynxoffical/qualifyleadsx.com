@@ -57,10 +57,11 @@ export function Ownership() {
         eyebrow="No hostage-holding"
         title={
           <>
-            You own <em className="font-semibold not-italic text-lime">everything.</em>
+            Unlike most agencies...{" "}
+            <em className="font-semibold not-italic text-lime">you own everything.</em>
           </>
         }
-        subtitle="The moment you plug in, every account and asset is registered under your name. If we ever part ways, the entire system stays with you."
+        subtitle="When we build your Client Acquisition System, it becomes your business asset. No lock-ins, no hidden ownership, no dependence on another agency."
       />
 
       <div ref={flowRef} className="mx-auto max-w-4xl">
@@ -104,7 +105,7 @@ export function Ownership() {
           <div className="mt-12 rounded-3xl border border-line bg-panel/60 p-7 sm:p-9">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-dim">
-                Transferred to you, day one
+                You own
               </p>
               <p className="text-xs text-lime">Written into the agreement</p>
             </div>

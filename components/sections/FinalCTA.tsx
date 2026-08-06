@@ -57,18 +57,19 @@ export function FinalCTA() {
 
         <SplitReveal
           as="h2"
-          className="mt-6 max-w-5xl text-balance text-[clamp(2.6rem,7vw,5.5rem)] font-semibold leading-[1.02] tracking-[-0.03em] text-fog"
+          className="mt-6 max-w-5xl text-balance text-[clamp(2.4rem,6.5vw,4.8rem)] font-semibold leading-[1.02] tracking-[-0.03em] text-fog"
         >
-          Your calendar could be{" "}
-          <em className="font-semibold not-italic text-lime">full</em> by this time next
-          week.
+          Ready to build a{" "}
+          <em className="font-semibold not-italic text-lime">
+            predictable client acquisition system?
+          </em>
         </SplitReveal>
 
         <Reveal delay={0.15}>
           <p className="mx-auto mt-7 max-w-xl text-pretty text-lg leading-relaxed text-mist">
-            Every high-ticket founder we work with started the same way — with one free strategy
-            call. In 30 minutes, you&apos;ll know exactly how the system books qualified clients
-            for your offer.
+            Stop guessing. Stop relying on referrals. Stop switching agencies. Install a complete
+            system that attracts, qualifies, nurtures and books premium clients — so you can focus
+            on closing deals and scaling your business.
           </p>
         </Reveal>
 
@@ -84,7 +85,7 @@ export function FinalCTA() {
               Book Your Free Strategy Call
             </Button>
             <p className="font-mono text-[11px] uppercase tracking-widest text-dim">
-              Free · No pressure · Calendly scheduled
+              Free · No pressure · 90-day written guarantee
             </p>
           </div>
         </Reveal>

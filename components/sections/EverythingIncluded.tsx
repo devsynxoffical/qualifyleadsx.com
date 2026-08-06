@@ -8,16 +8,16 @@ import { cn } from "@/lib/utils";
 
 export function EverythingIncluded() {
   return (
-    <Section id="included" className="bg-ink">
+    <Section id="included" className="theme-light">
       <SectionHeading
         eyebrow="Everything included"
         title={
           <>
-            One system.{" "}
-            <em className="font-semibold not-italic text-lime">Everything covered.</em>
+            Here&apos;s everything{" "}
+            <em className="font-semibold not-italic text-lime">we build for you.</em>
           </>
         }
-        subtitle="No à-la-carte pricing. No 'upsell after the fact'. When you plug into the QualifiedLeadsX™ system, the entire engine comes included."
+        subtitle="No à-la-carte pricing, no 'upsell after the fact'. When you plug into the QualifiedLeadsX™ system, the entire engine comes included."
       />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

@@ -8,32 +8,37 @@ import { whyNotScale } from "@/lib/data";
 
 export function WhyScale() {
   return (
-    <Section id="why" className="bg-ink">
+      <Section id="why" className="bg-ink">
       <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
         {/* Left: sticky editorial */}
         <div className="lg:sticky lg:top-32 lg:self-start">
           <Reveal>
-            <span className="eyebrow">The hard truth</span>
+            <span className="eyebrow">Why growth stalls</span>
           </Reveal>
           <SplitReveal
             as="h2"
             className="mt-5 text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-fog sm:text-5xl lg:text-6xl"
           >
-            Why most businesses{" "}
-            <em className="font-semibold not-italic text-lime">never</em> scale.
+            Most businesses don&apos;t have a lead problem... they have a{" "}
+            <em className="font-semibold not-italic text-lime">
+              client acquisition system problem.
+            </em>
           </SplitReveal>
           <Reveal delay={0.15}>
             <p className="mt-6 max-w-md text-pretty leading-relaxed text-mist">
-              It&apos;s not a lack of talent, offer or effort. It&apos;s the way you acquire
-              clients. These four dead ends keep founders stuck on the revenue treadmill.
+              Most agencies only run ads. Some build funnels. Others write copy. Someone else
+              handles follow-up. Nobody owns the entire customer journey — which is exactly why
+              growth stalls.
             </p>
           </Reveal>
           <Reveal delay={0.25}>
             <div className="mt-8 inline-flex items-center gap-3 rounded-2xl border border-rose/20 bg-rose/[0.04] px-5 py-4">
               <X className="h-5 w-5 shrink-0 text-rose" />
               <p className="text-sm text-mist">
-                The old way is a <span className="font-semibold text-fog">ceiling</span>.
-                The system is the <span className="font-semibold text-lime">lift</span>.
+                We build{" "}
+                <span className="font-semibold text-fog">one complete ecosystem</span> where every
+                part works together — from first click to a{" "}
+                <span className="font-semibold text-lime">qualified client on your calendar.</span>
               </p>
             </div>
           </Reveal>

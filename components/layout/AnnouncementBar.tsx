@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { X, Sparkles } from "lucide-react";
+import { X } from "lucide-react";
 import { gsap, prefersReducedMotion } from "@/lib/motion";
 import { site } from "@/lib/site";
 
@@ -54,16 +54,17 @@ export function AnnouncementBar() {
     >
       <a
         href={site.bookCallUrl}
-        className="group flex h-full w-full items-center justify-center gap-2.5 bg-lime px-4 text-[12px] font-bold uppercase tracking-[0.14em] text-ink transition-colors hover:bg-lime-soft sm:text-[13px]"
+        className="group flex h-full w-full items-center justify-center gap-2.5 bg-lime px-10 text-[10px] font-bold uppercase tracking-[0.12em] text-ink transition-colors hover:bg-lime-soft sm:text-[12px]"
         data-cursor="book"
       >
-        <span className="relative flex h-2 w-2">
-          <span className="absolute inline-flex h-full w-full animate-pulse-ring rounded-full bg-ink/60" />
-          <span className="relative inline-flex h-2 w-2 rounded-full bg-ink" />
+        <span className="hidden shrink-0 sm:inline">
+          ⚠️ Only for agency owners, coaches, high-ticket service providers &amp; B2B founders already
+          generating $10,000+/month.
         </span>
-        <span className="hidden sm:inline">Now onboarding new clients —</span>
-        <span className="inline">Spots are extremely limited</span>
-        <Sparkles className="h-3.5 w-3.5 transition-transform duration-300 group-hover:rotate-12" />
+        <span className="shrink-0 sm:hidden">Only for businesses generating $10K+/month.</span>
+        <span className="hidden whitespace-nowrap border-l border-ink/25 pl-2.5 text-ink/70 lg:inline">
+          Below $10K/month? This system isn&apos;t for you.
+        </span>
       </a>
       <button
         type="button"

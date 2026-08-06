@@ -150,15 +150,15 @@ export function Guarantee() {
               as="h2"
               className="mt-5 text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-fog sm:text-5xl lg:text-6xl"
             >
-              A written{" "}
-              <em className="font-semibold not-italic text-lime">90-day</em> guarantee.
-              Or you&apos;re covered.
+              We take the risk...{" "}
+              <em className="font-semibold not-italic text-lime">not you.</em>
             </SplitReveal>
             <Reveal delay={0.15}>
               <p className="mt-6 max-w-lg text-pretty text-lg leading-relaxed text-mist">
-                We don&apos;t ask you to trust us. We put it in writing. If the QualifiedLeadsX™
-                system doesn&apos;t deliver qualified booked appointments within 90 days, you&apos;re
-                covered by the written guarantee. That&apos;s how sure we are.
+                If we don&apos;t help you achieve the mutually agreed growth milestones within the
+                first 90 days after implementing your Client Acquisition System, we&apos;ll continue
+                working for you at <span className="font-semibold text-fog">no management fee</span>{" "}
+                until we do. Everything is backed by a written agreement.
               </p>
             </Reveal>
 
@@ -166,8 +166,8 @@ export function Guarantee() {
               <ul className="mt-8 space-y-3.5">
                 {[
                   "Written into every engagement",
-                  "Covers delivery of qualified appointments",
-                  "No weasel clauses, no fine-print traps",
+                  "Covers mutually agreed growth milestones",
+                  "No management fee until we deliver",
                 ].map((t) => (
                   <li key={t} className="flex items-start gap-3 text-mist">
                     <BadgeCheck className="mt-0.5 h-5 w-5 shrink-0 text-lime" />

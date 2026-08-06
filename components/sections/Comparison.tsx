@@ -28,8 +28,13 @@ function Value({ v }: { v: string | boolean }) {
     );
   }
   if (typeof v === "string") {
-    const isWeak = v.toLowerCase().startsWith("yes") || v.toLowerCase().includes("fee") || v.toLowerCase().includes("lock");
-    const isStrong = v.toLowerCase().includes("weeks") || v.toLowerCase() === "never";
+    const isWeak = v.toLowerCase().startsWith("yes") || v.toLowerCase().includes("fee") || v.toLowerCase().includes("lock") || v.toLowerCase() === "limited";
+    const isStrong =
+      v.toLowerCase().includes("complete") ||
+      v.toLowerCase().includes("premium") ||
+      v.toLowerCase().includes("ai") ||
+      v.toLowerCase().includes("weeks") ||
+      v.toLowerCase() === "never";
     return (
       <span
         className={cn(
@@ -51,14 +56,16 @@ export function Comparison() {
   return (
     <Section id="comparison" className="theme-light">
       <SectionHeading
-        eyebrow="The honest comparison"
+        eyebrow="Why businesses choose us"
         title={
           <>
-            Traditional agency vs.{" "}
-            <em className="font-semibold not-italic text-lime">QualifiedLeadsX™.</em>
+            Traditional agencies generate leads.{" "}
+            <em className="font-semibold not-italic text-lime">
+              QualifiedLeadsX™ builds predictable growth.
+            </em>
           </>
         }
-        subtitle="We've seen how the 'old way' treats clients. Here's exactly where the system wins — line by line."
+        subtitle="Here's exactly where the system wins — line by line."
       />
 
       <Reveal y={32}>

@@ -50,14 +50,16 @@ export function Different() {
   return (
     <Section id="different" className="theme-light">
       <SectionHeading
-        eyebrow="What makes it different"
+        eyebrow="What makes us different"
         title={
           <>
-            Not another agency.{" "}
-            <em className="font-semibold not-italic text-lime">A system.</em>
+            We don&apos;t just generate leads... we build a{" "}
+            <em className="font-semibold not-italic text-lime">
+              complete client acquisition ecosystem.
+            </em>
           </>
         }
-        subtitle="We don't sell hours or 'strategy decks'. We install a revenue engine that pre-sells your prospects and books your calendar — then back it in writing."
+        subtitle="Unlike traditional marketing agencies, we handle every step of your customer journey — from attracting the right prospects, to qualifying them, to nurturing them, to getting them booked onto your calendar. Everything works together inside one proven system."
       />
 
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

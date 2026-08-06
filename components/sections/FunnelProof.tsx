@@ -101,15 +101,14 @@ export function FunnelProof() {
   return (
     <Section id="results" className="bg-ink">
       <SectionHeading
-        eyebrow="Proof in the funnel"
+        eyebrow="Real client results"
         title={
           <>
-            Here&apos;s how this same funnel has generated{" "}
-            <em className="font-semibold not-italic text-lime">OVER $100K+ per month</em> for our
-            clients in <em className="font-semibold not-italic text-fog">different niches…</em>
+            Don&apos;t take our word for it...{" "}
+            <em className="font-semibold not-italic text-lime">see what our clients achieved.</em>
           </>
         }
-        subtitle="One system. Ten industries. These are the actual funnels running for clients right now — pre-selling prospects and booking qualified calls before a human ever picks up the phone."
+        subtitle="Revenue screenshots, Meta Ads dashboards, case studies and success stories from funnels we've installed across different niches — the same system, proven over and over."
       />
 
       {/* Stat strip */}

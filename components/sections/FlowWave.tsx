@@ -175,23 +175,23 @@ void main(){ vec2 p = gl_PointCoord - 0.5; float l = length(p); if (l > 0.5) dis
 const CARDS = [
   {
     icon: Bot,
-    title: "AI pre-selling",
-    body: "Every prospect is educated, warmed and qualified before they ever reach your calendar.",
+    title: "AI lead qualification",
+    body: "Every prospect is qualified and pre-sold before they ever reach your calendar.",
   },
   {
     icon: PhoneCall,
-    title: "Always-on follow-up",
-    body: "24/7 automated nurture runs while you sleep. No lead ever goes cold.",
+    title: "CRM + AI follow-up",
+    body: "Automated email, SMS, reminders and follow-up that run 24/7.",
   },
   {
     icon: Zap,
-    title: "$9 booked appointments",
-    body: "The average cost of a qualified, pre-sold sales call across all niches.",
+    title: "Meta Ads, managed daily",
+    body: "Campaigns launched, optimised and scaled by our team every day.",
   },
   {
     icon: CalendarCheck2,
-    title: "88% show rate",
-    body: "AI confirmations, reminders and rescheduling keep your calendar full — not flaky.",
+    title: "90-day written guarantee",
+    body: "We keep working at no management fee until you see the results.",
   },
 ] as const;
 
@@ -455,7 +455,7 @@ export function FlowWave() {
         const o = 1 - smoothstep(p, 0.28, 0.44);
         headlineWrapRef.current.style.opacity = String(o);
         headlineWrapRef.current.style.transform = `translateY(${(1 - o) * -34}px)`;
-        headlineWrapRef.current.style.maxHeight = `${o * 260}px`;
+        headlineWrapRef.current.style.maxHeight = `${o * 480}px`;
       }
       if (cardsRef.current) {
         const o = smoothstep(p, 0.3, 0.48);
@@ -553,7 +553,7 @@ export function FlowWave() {
 
         {/* overlay content */}
         <div className="pointer-events-none absolute inset-0 z-10 flex flex-col">
-          <div className="container-x flex items-center justify-between pt-28">
+          <div className="container-x flex items-center justify-between pt-16 sm:pt-20">
             <span className="font-mono text-[11px] uppercase tracking-[0.28em] text-[#7affbf]/90">
               QualifiedLeadsX · Flow
             </span>
@@ -566,21 +566,31 @@ export function FlowWave() {
             <div
               ref={headlineWrapRef}
               className="overflow-hidden"
-              style={{ maxHeight: 260 }}
+              style={{ maxHeight: 480 }}
             >
               <h1
                 ref={headlineRef}
-                className="max-w-4xl text-balance text-[clamp(2.1rem,5.6vw,4.6rem)] font-semibold leading-[1.04] tracking-[-0.03em] text-fog"
+                className="max-w-4xl text-balance text-[clamp(1.5rem,3.9vw,3.4rem)] font-semibold leading-[1.05] tracking-[-0.03em] text-fog"
               >
-                Qualified demand,{" "}
-                <em className="text-gradient-lime not-italic">streaming toward you.</em>
+                We will install our proprietary{" "}
+                <em className="text-gradient-lime not-italic">QualifiedLeadsX™</em> client
+                acquisition system into your business —{" "}
+                <em className="text-gradient-lime not-italic">
+                  double your revenue within the next 90 days
+                </em>{" "}
+                — or we&apos;ll continue working for you at{" "}
+                <em className="text-gradient-lime not-italic">no management fee</em> until we do.
               </h1>
               <p
                 ref={subRef}
-                className="mx-auto mt-5 max-w-xl text-pretty text-sm leading-relaxed text-mist sm:text-base"
+                className="mx-auto mt-5 max-w-2xl text-pretty text-sm leading-relaxed text-mist sm:text-base"
               >
-                This is your pipeline rendered in real time — every swell is a booked call, every
-                drift a pre-sold prospect. Keep scrolling and you&apos;ll fly right into it.
+                Stop relying on referrals, inconsistent lead generation and multiple freelancers.{" "}
+                <span className="hidden sm:inline">
+                  We build your entire client acquisition ecosystem — offer positioning, Meta Ads,
+                  ad creatives, landing pages, CRM, AI automations, lead qualification and follow-up
+                  — so your only job is to show up, take the calls and close premium clients.
+                </span>
               </p>
             </div>
 
@@ -615,10 +625,10 @@ export function FlowWave() {
 
             <div
               ref={statRef}
-              className="mt-6 font-mono text-[10px] uppercase tracking-[0.28em] text-[#34e89a]/80 sm:mt-9 sm:text-[11px]"
+              className="mt-5 font-mono text-[9px] uppercase tracking-[0.28em] text-[#34e89a]/80 sm:mt-8 sm:text-[11px]"
               style={{ opacity: 0 }}
             >
-              $100K+ client months · 200+ calls booked monthly · $9 avg. per appointment
+              Backed by a written agreement
             </div>
 
             <div ref={ctaRef} className="mt-5 sm:mt-8" style={{ opacity: 0 }}>

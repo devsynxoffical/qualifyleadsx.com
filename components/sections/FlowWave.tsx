@@ -646,7 +646,10 @@ export function FlowWave() {
           className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center"
           style={{ visibility: "hidden" }}
         >
-          <div className="w-full">
+          {/* dark scrim so stage-2 cards read clearly over the wave */}
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(110%_110%_at_50%_50%,rgba(2,22,12,0.72)_20%,rgba(2,22,12,0.9)_100%)]" />
+
+          <div className="relative max-h-full w-full overflow-y-auto py-14 sm:py-16">
             <h2
               ref={p2HeadRef}
               className="mx-auto mt-2.5 max-w-4xl text-balance text-[clamp(1.6rem,4.8vw,4.2rem)] font-bold leading-[1.04] tracking-[-0.03em] text-fog sm:mt-4"
@@ -658,7 +661,7 @@ export function FlowWave() {
 
             <p
               ref={p2SubRef}
-              className="mx-auto mt-2.5 max-w-2xl text-pretty text-sm text-mist sm:mt-4 sm:text-[1.05rem]"
+              className="mx-auto mt-2.5 max-w-2xl text-pretty text-sm text-fog/90 sm:mt-4 sm:text-[1.05rem]"
               style={{ opacity: 0 }}
             >
               We design, run and optimize the entire acquisition engine for you, from Meta Ads
@@ -667,15 +670,18 @@ export function FlowWave() {
 
             <div
               ref={p2StatsRef}
-              className="mx-auto mt-5 grid w-full max-w-3xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/15 bg-white/10 sm:mt-8 sm:grid-cols-4"
+              className="mx-auto mt-5 grid w-full max-w-3xl grid-cols-2 gap-2.5 sm:mt-8 sm:grid-cols-4 sm:gap-3"
               style={{ opacity: 0 }}
             >
               {systemStats.map((s) => (
-                <div key={s.label} className="bg-[#02160c]/90 px-4 py-3.5 backdrop-blur-md sm:py-5">
+                <div
+                  key={s.label}
+                  className="rounded-xl border border-white/15 bg-[#02160c] px-4 py-4 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.7)] sm:py-5"
+                >
                   <div className="text-gradient-lime text-xl font-bold sm:text-3xl">
                     {s.value}
                   </div>
-                  <div className="mt-1 text-[10px] uppercase tracking-[0.14em] text-mist sm:text-[11px]">
+                  <div className="mt-1.5 text-[10px] uppercase tracking-[0.14em] text-fog/70 sm:text-[11px]">
                     {s.label}
                   </div>
                 </div>
@@ -684,21 +690,21 @@ export function FlowWave() {
 
             <div
               ref={p2StepsRef}
-              className="mx-auto mt-4 grid w-full max-w-3xl gap-3 text-left sm:mt-7 sm:grid-cols-3"
+              className="mx-auto mt-4 grid w-full max-w-3xl gap-2.5 text-left sm:mt-7 sm:grid-cols-3 sm:gap-3"
               style={{ opacity: 0 }}
             >
               {systemSteps.map((s, i) => (
                 <div
                   key={s.title}
-                  className="rounded-xl border border-white/15 bg-[#02160c]/75 px-5 py-2.5 backdrop-blur-md sm:py-4"
+                  className="rounded-xl border border-white/15 bg-[#02160c] px-5 py-4 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.7)] sm:py-4"
                 >
                   <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-[#34e89a]">
                     0{i + 1}
                   </span>
-                  <div className="mt-1.5 text-sm font-semibold text-fog sm:text-base">
+                  <div className="mt-2 text-sm font-semibold text-fog sm:text-base">
                     {s.title}
                   </div>
-                  <div className="mt-1 text-xs leading-relaxed text-mist sm:text-[13px]">
+                  <div className="mt-1 text-xs leading-relaxed text-fog/60 sm:text-[13px]">
                     {s.desc}
                   </div>
                 </div>
@@ -717,7 +723,7 @@ export function FlowWave() {
                 Book Your Free Strategy Call
                 <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </a>
-              <div className="inline-flex items-center gap-2.5 text-xs font-medium text-mist">
+              <div className="inline-flex items-center gap-2.5 text-xs font-medium text-fog/80">
                 <ShieldCheck className="h-4 w-4 shrink-0 text-[#34e89a]" />
                 90-day written guarantee · No management fee until results
               </div>

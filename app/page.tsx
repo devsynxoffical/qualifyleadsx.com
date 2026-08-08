@@ -6,13 +6,13 @@ import { TrustBar } from "@/components/sections/TrustBar";
 import { WhyScale } from "@/components/sections/WhyScale";
 import { Different } from "@/components/sections/Different";
 import { FunnelProof } from "@/components/sections/FunnelProof";
+import { VSL } from "@/components/sections/VSL";
 import { ClientSuccess } from "@/components/sections/ClientSuccess";
 import { Process } from "@/components/sections/Process";
 import { EverythingIncluded } from "@/components/sections/EverythingIncluded";
 import { FlowWave } from "@/components/sections/FlowWave";
 import { Ownership } from "@/components/sections/Ownership";
 import { Industries } from "@/components/sections/Industries";
-import { Comparison } from "@/components/sections/Comparison";
 import { Guarantee } from "@/components/sections/Guarantee";
 import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
@@ -27,6 +27,7 @@ export default function Home() {
       <WhyScale />
       <Different />
       <FunnelProof />
+      <VSL />
       <ClientSuccess />
       <CTABanner
         compact
@@ -52,7 +53,6 @@ export default function Home() {
       <EverythingIncluded />
       <Ownership />
       <Industries />
-      <Comparison />
       <Guarantee />
       <CTABanner
         compact

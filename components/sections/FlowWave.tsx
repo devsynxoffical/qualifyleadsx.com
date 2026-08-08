@@ -197,12 +197,12 @@ export function FlowWave() {
     { value: "90", label: "days to your written result" },
     { value: "$50M+", label: "managed in Meta Ads" },
     { value: "0%", label: "management fee until we deliver" },
-    { value: "100%", label: "done-for-you — we do the work" },
+    { value: "100%", label: "done-for-you, we do the work" },
   ];
 
   const systemSteps = [
-    { title: "We build", desc: "Offer, funnel, creative and tracking — installed from scratch." },
-    { title: "We run", desc: "Meta ads, AI qualification and follow-ups — managed daily." },
+    { title: "We build", desc: "Offer, funnel, creative and tracking, installed from scratch." },
+    { title: "We run", desc: "Meta ads, AI qualification and follow-ups, managed daily." },
     { title: "You win", desc: "You take the calls. Revenue follows the results." },
   ];
 
@@ -599,19 +599,19 @@ export function FlowWave() {
                 <span className="block text-[clamp(1.2rem,2.4vw,1.9rem)] leading-[1.22]">
                   We will install our proprietary{" "}
                   <em className="text-gradient-lime not-italic">QualifiedLeadsX™</em> client
-                  acquisition system into your business —
+                  acquisition system into your business.
                 </span>
                 <span className="mt-2 block text-gradient-lime text-[clamp(1.9rem,5.6vw,4.8rem)] font-bold leading-[1.02]">
-                  double your revenue within the next 90 days
+                  Double your revenue within the next 90 days
                 </span>
                 <span className="mt-3 block text-[clamp(0.95rem,1.6vw,1.25rem)] leading-[1.35] text-mist">
-                  — or we&apos;ll continue working for you at{" "}
+                  Or we&apos;ll continue working for you at{" "}
                   <em className="text-gradient-lime not-italic">no management fee</em> until we
                   do.
                 </span>
               </h1>
               <p className="mx-auto mt-4 max-w-xl text-pretty text-sm leading-relaxed text-mist sm:text-[1rem]">
-                Done-for-you client acquisition — from Meta Ads to the booked call.
+                Done-for-you client acquisition from Meta Ads to the booked call.
               </p>
             </div>
 
@@ -671,7 +671,7 @@ export function FlowWave() {
               className="mx-auto mt-2.5 max-w-2xl text-pretty text-sm text-mist sm:mt-4 sm:text-[1.05rem]"
               style={{ opacity: 0 }}
             >
-              We design, run and optimize the entire acquisition engine for you — from Meta Ads
+              We design, run and optimize the entire acquisition engine for you, from Meta Ads
               to the booked call. You just take the calls.
             </p>
 

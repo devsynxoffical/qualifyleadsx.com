@@ -186,7 +186,6 @@ export function FlowWave() {
   const hintRef = useRef<HTMLDivElement>(null);
   const p2WrapRef = useRef<HTMLDivElement>(null);
   const p2CounterRef = useRef<HTMLDivElement>(null);
-  const p2LabelRef = useRef<HTMLSpanElement>(null);
   const p2HeadRef = useRef<HTMLHeadingElement>(null);
   const p2SubRef = useRef<HTMLParagraphElement>(null);
   const p2StatsRef = useRef<HTMLDivElement>(null);
@@ -476,7 +475,6 @@ export function FlowWave() {
       if (p2CounterRef.current) {
         p2CounterRef.current.style.opacity = String(fadeIn(0.3, 0.46));
       }
-      stage(fadeIn(0.28, 0.42), p2LabelRef.current, 20);
       stage(fadeIn(0.3, 0.5) * fadeOut(0.86, 0.97), p2HeadRef.current, 44);
       stage(fadeIn(0.36, 0.54) * fadeOut(0.86, 0.97), p2SubRef.current, 34);
       stage(fadeIn(0.42, 0.6) * fadeOut(0.86, 0.97), p2StatsRef.current, 28);
@@ -649,14 +647,6 @@ export function FlowWave() {
           style={{ visibility: "hidden" }}
         >
           <div className="w-full">
-            <span
-              ref={p2LabelRef}
-              className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#7affbf]/80 sm:text-[11px]"
-              style={{ opacity: 0 }}
-            >
-              02 / The System
-            </span>
-
             <h2
               ref={p2HeadRef}
               className="mx-auto mt-2.5 max-w-4xl text-balance text-[clamp(1.6rem,4.8vw,4.2rem)] font-bold leading-[1.04] tracking-[-0.03em] text-fog sm:mt-4"
@@ -677,11 +667,11 @@ export function FlowWave() {
 
             <div
               ref={p2StatsRef}
-              className="mx-auto mt-5 grid w-full max-w-3xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:mt-8 sm:grid-cols-4"
+              className="mx-auto mt-5 grid w-full max-w-3xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/15 bg-white/10 sm:mt-8 sm:grid-cols-4"
               style={{ opacity: 0 }}
             >
               {systemStats.map((s) => (
-                <div key={s.label} className="bg-[#02160c]/85 px-4 py-3.5 backdrop-blur-sm sm:py-5">
+                <div key={s.label} className="bg-[#02160c]/90 px-4 py-3.5 backdrop-blur-md sm:py-5">
                   <div className="text-gradient-lime text-xl font-bold sm:text-3xl">
                     {s.value}
                   </div>
@@ -698,7 +688,10 @@ export function FlowWave() {
               style={{ opacity: 0 }}
             >
               {systemSteps.map((s, i) => (
-                <div key={s.title} className="rounded-xl border border-white/10 bg-white/[0.03] px-5 py-2.5 sm:py-4">
+                <div
+                  key={s.title}
+                  className="rounded-xl border border-white/15 bg-[#02160c]/75 px-5 py-2.5 backdrop-blur-md sm:py-4"
+                >
                   <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-[#34e89a]">
                     0{i + 1}
                   </span>

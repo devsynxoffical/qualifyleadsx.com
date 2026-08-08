@@ -32,8 +32,8 @@ export function WhyScale() {
             </p>
           </Reveal>
           <Reveal delay={0.25}>
-            <div className="mt-8 inline-flex items-center gap-3 rounded-2xl border border-rose/20 bg-rose/[0.04] px-5 py-4">
-              <X className="h-5 w-5 shrink-0 text-rose" />
+            <div className="mt-8 inline-flex items-center gap-3 rounded-2xl border border-lime/20 bg-lime/[0.04] px-5 py-4">
+              <X className="h-5 w-5 shrink-0 text-lime" />
               <p className="text-sm text-mist">
                 At <span className="font-semibold text-fog">QualifiedLeadsX™</span>, we build one
                 complete ecosystem where every part works together — from the first click to a{" "}
@@ -48,7 +48,7 @@ export function WhyScale() {
           {whyNotScale.map((item, i) => (
             <Reveal key={item.title} delay={i * 0.08} y={44}>
               <article className="group relative overflow-hidden rounded-3xl border border-line bg-panel p-7 transition-all duration-500 hover:border-line-strong hover:bg-elevated sm:p-9">
-                <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-rose/[0.07] blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-lime/[0.07] blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="flex flex-wrap items-start justify-between gap-6">
                   <div className="max-w-sm">
                     <h3 className="text-xl font-semibold tracking-tight text-fog sm:text-2xl">
@@ -57,7 +57,7 @@ export function WhyScale() {
                     <p className="mt-3 text-pretty leading-relaxed text-mist">{item.body}</p>
                   </div>
                   <div className="text-right">
-                    <p className="font-mono text-4xl font-bold tracking-tight text-rose sm:text-5xl">
+                    <p className="font-mono text-4xl font-bold tracking-tight text-lime sm:text-5xl">
                       {item.stat}
                     </p>
                     <p className="mt-1 max-w-[9rem] font-mono text-[10px] uppercase tracking-widest text-dim">
@@ -65,7 +65,7 @@ export function WhyScale() {
                     </p>
                   </div>
                 </div>
-                <span className="pointer-events-none absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-gradient-to-r from-rose/60 to-transparent transition-transform duration-500 group-hover:scale-x-100" />
+                <span className="pointer-events-none absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-gradient-to-r from-lime/60 to-transparent transition-transform duration-500 group-hover:scale-x-100" />
               </article>
             </Reveal>
           ))}

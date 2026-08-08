@@ -42,28 +42,28 @@ export function CTABanner({
             <span className="eyebrow justify-center">{eyebrow}</span>
           </Reveal>
 
-          <SplitReveal
-            as="h3"
-            className={cn(
-              "mt-6 max-w-3xl text-balance font-semibold tracking-tight text-fog",
-              compact ? "text-3xl leading-[1.08] sm:text-4xl" : "text-4xl leading-[1.05] sm:text-6xl"
-            )}
-          >
-            {title ?? (
-              <>
-                Let’s install the system that{" "}
-                <em className="font-semibold not-italic text-lime">books your calendar</em>{" "}
-                by this week.
-              </>
-            )}
-          </SplitReveal>
+<SplitReveal
+             as="h3"
+             className={cn(
+               "mt-6 max-w-3xl text-balance font-semibold tracking-tight text-fog",
+               compact ? "text-3xl leading-[1.08] sm:text-4xl" : "text-4xl leading-[1.05] sm:text-6xl"
+             )}
+           >
+             {title ?? (
+               <>
+                 Let's install the system that{" "}
+                 <em className="font-semibold not-italic text-lime">books your calendar</em>{" "}
+                 by this week.
+               </>
+             )}
+           </SplitReveal>
 
-          <Reveal delay={0.2}>
-            <p className="mx-auto mt-6 max-w-xl text-pretty text-[1rem] leading-relaxed text-mist sm:text-lg">
-              Book a free strategy call. We’ll audit your offer, show you the exact funnel you
-              need — and get qualified sales calls onto your calendar. No pressure, no fluff.
-            </p>
-          </Reveal>
+           <Reveal delay={0.2}>
+             <p className="mx-auto mt-6 max-w-xl text-pretty text-[1rem] leading-relaxed text-fog/80 sm:text-lg">
+               Book a free strategy call. We'll audit your offer, show you the exact funnel you
+               need, and get qualified sales calls onto your calendar. No pressure, no fluff.
+             </p>
+           </Reveal>
 
           <Reveal delay={0.3}>
             <div className="mt-9 flex flex-col items-center gap-5">
@@ -77,7 +77,7 @@ export function CTABanner({
               >
                 Book Your Free Strategy Call
               </Button>
-              <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-dim">
+              <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-fog/60">
                 <span className="inline-flex items-center gap-1.5">
                   <CalendarDays className="h-3.5 w-3.5 text-lime" />
                   No commitment required

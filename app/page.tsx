@@ -34,7 +34,7 @@ export default function Home() {
         eyebrow="The results speak for themselves"
         title={
           <>
-            The calls they&apos;re missing are{" "}
+            The calls they're missing are{" "}
             <em className="font-semibold not-italic text-lime">yours to take.</em>
           </>
         }
@@ -45,7 +45,7 @@ export default function Home() {
         eyebrow="Done-for-you"
         title={
           <>
-            Every step above —{" "}
+            Every step above,{" "}
             <em className="font-semibold not-italic text-lime">installed for you.</em>
           </>
         }
@@ -59,7 +59,7 @@ export default function Home() {
         eyebrow="Risk reversed"
         title={
           <>
-            Your free strategy call —{" "}
+            Your free strategy call,{" "}
             <em className="font-semibold not-italic text-lime">backed in writing.</em>
           </>
         }

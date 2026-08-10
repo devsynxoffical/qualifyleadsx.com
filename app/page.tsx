@@ -34,7 +34,7 @@ export default function Home() {
         eyebrow="The results speak for themselves"
         title={
           <>
-            The calls they're missing are{" "}
+            The calls they&apos;re missing are{" "}
             <em className="font-semibold not-italic text-lime">yours to take.</em>
           </>
         }

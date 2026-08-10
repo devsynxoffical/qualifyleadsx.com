@@ -51,7 +51,7 @@ export function CTABanner({
            >
              {title ?? (
                <>
-                 Let's install the system that{" "}
+                 Let&apos;s install the system that{" "}
                  <em className="font-semibold not-italic text-lime">books your calendar</em>{" "}
                  by this week.
                </>
@@ -60,7 +60,7 @@ export function CTABanner({
 
            <Reveal delay={0.2}>
              <p className="mx-auto mt-6 max-w-xl text-pretty text-[1rem] leading-relaxed text-fog/80 sm:text-lg">
-               Book a free strategy call. We'll audit your offer, show you the exact funnel you
+                Book a free strategy call. We&apos;ll audit your offer, show you the exact funnel you
                need, and get qualified sales calls onto your calendar. No pressure, no fluff.
              </p>
            </Reveal>

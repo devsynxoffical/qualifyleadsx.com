@@ -34,14 +34,14 @@ export function Footer() {
         <div className="grid gap-14 py-16 sm:py-20 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center" aria-label="QualifiedLeadsX home">
-              <span className="inline-flex items-center">
+            <Link href="/" className="group flex items-center" aria-label="QualifiedLeadsX home">
+              <span className="flex items-center rounded-full bg-white px-3 py-1.5 shadow-[0_0_0_1px_rgba(255,255,255,0.08)] transition-colors duration-300 group-hover:bg-white/90 sm:px-3.5 sm:py-2">
                 <Image
-                  src="/images/logo-white.webp"
+                  src="/images/qualified-leadsx.webp"
                   alt="QualifiedLeadsX"
-                  width={535}
-                  height={812}
-                  className="h-11 w-auto object-contain sm:h-12"
+                  width={1000}
+                  height={444}
+                  className="h-4 w-auto sm:h-5"
                 />
               </span>
             </Link>

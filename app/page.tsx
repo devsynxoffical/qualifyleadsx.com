@@ -7,9 +7,11 @@ import { WhyScale } from "@/components/sections/WhyScale";
 import { Different } from "@/components/sections/Different";
 import { FunnelProof } from "@/components/sections/FunnelProof";
 import { VSL } from "@/components/sections/VSL";
+import { Testimonials } from "@/components/sections/Testimonials";
 import { ClientSuccess } from "@/components/sections/ClientSuccess";
 import { Process } from "@/components/sections/Process";
 import { EverythingIncluded } from "@/components/sections/EverythingIncluded";
+import { Training } from "@/components/sections/Training";
 import { FlowWave } from "@/components/sections/FlowWave";
 import { Ownership } from "@/components/sections/Ownership";
 import { Industries } from "@/components/sections/Industries";
@@ -29,6 +31,7 @@ export default function Home() {
       <FunnelProof />
       <VSL />
       <ClientSuccess />
+      <Testimonials />
       <CTABanner
         compact
         eyebrow="The results speak for themselves"
@@ -51,6 +54,7 @@ export default function Home() {
         }
       />
       <EverythingIncluded />
+      <Training />
       <Ownership />
       <Industries />
       <Guarantee />

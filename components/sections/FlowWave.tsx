@@ -15,15 +15,15 @@ import { site } from "@/lib/site";
    Fixed parameters (baked in)
    ============================================================ */
 const bgColor = "#02160c";
-const flameColor = "#0aff7f";
-const flameColor2 = "#aef0c0";
+const flameColor = "#c9f26b";
+const flameColor2 = "#e4ffae";
 const flameAmt = 0.2;
-const atmoColor = "#7affbf";
+const atmoColor = "#5ef2c2";
 const atmoCount = 300;
 const atmoSize = 24;
 const atmoSpeed = 1.0;
 const colorLow = "#02160c";
-const colorHigh = "#34e89a";
+const colorHigh = "#5ef2c2";
 const opacity = 0.26;
 const pointSize = 5.5;
 const brightness = 0.45;
@@ -571,19 +571,19 @@ export function FlowWave() {
         {/* overlay content */}
         <div className="pointer-events-none absolute inset-0 z-10 flex flex-col">
           <div className="container-x flex items-center justify-between pt-16 sm:pt-20">
-            <span className="font-mono text-[11px] uppercase tracking-[0.28em] text-[#7affbf]/90">
+            <span className="font-mono text-[11px] uppercase tracking-[0.28em] text-mint/90">
               QualifiedLeadsX · Flow
             </span>
             <div className="flex items-center gap-6">
               <div
                 ref={hintRef}
-                className="font-mono text-[11px] uppercase tracking-[0.28em] text-[#7affbf]/60"
+                className="font-mono text-[11px] uppercase tracking-[0.28em] text-mint/60"
               >
                 scroll ↓
               </div>
               <div
                 ref={p2CounterRef}
-                className="font-mono text-[11px] uppercase tracking-[0.28em] text-[#7affbf]/60"
+                className="font-mono text-[11px] uppercase tracking-[0.28em] text-mint/60"
                 style={{ opacity: 0 }}
               >
                 02 / 02
@@ -616,13 +616,13 @@ export function FlowWave() {
             <div ref={ctaRef} className="mt-6 flex flex-col items-center gap-3.5 sm:mt-8 sm:flex-row sm:gap-5">
               <a
                 href={site.bookCallUrl}
-                className="pointer-events-auto group inline-flex items-center gap-2 rounded-full bg-[#34e89a] px-9 py-3 text-sm font-semibold text-[#02160c] shadow-[0_0_50px_-12px_var(--color-lime)] transition-colors hover:bg-[#7affbf] sm:py-4"
+                className="pointer-events-auto group inline-flex items-center gap-2 rounded-full bg-lime px-9 py-3 text-sm font-semibold text-ink shadow-[0_0_50px_-12px_var(--color-lime)] transition-colors hover:bg-lime-soft sm:py-4"
               >
                 Book Your Free Strategy Call
                 <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </a>
-              <div className="pointer-events-auto inline-flex items-center gap-2.5 rounded-full border border-[#34e89a]/25 bg-[#02160c]/70 px-5 py-3.5 backdrop-blur-sm">
-                <ShieldCheck className="h-4 w-4 shrink-0 text-[#34e89a]" />
+              <div className="pointer-events-auto inline-flex items-center gap-2.5 rounded-full border border-lime/25 bg-ink/70 px-5 py-3.5 backdrop-blur-sm">
+                <ShieldCheck className="h-4 w-4 shrink-0 text-mint" />
                 <span className="text-xs font-medium text-mist sm:text-[13px]">
                   Backed by a <span className="text-fog">written agreement</span>
                 </span>
@@ -631,7 +631,7 @@ export function FlowWave() {
 
             <div
               ref={statRef}
-              className="mt-4 font-mono text-[9px] uppercase tracking-[0.28em] text-[#34e89a]/80 sm:mt-6 sm:text-[11px]"
+              className="mt-4 font-mono text-[9px] uppercase tracking-[0.28em] text-mint/80 sm:mt-6 sm:text-[11px]"
             >
               Free 30-minute strategy call · No pressure · No obligation
             </div>
@@ -661,7 +661,7 @@ export function FlowWave() {
 
             <p
               ref={p2SubRef}
-              className="mx-auto mt-2.5 max-w-2xl text-pretty text-sm text-fog/90 sm:mt-4 sm:text-[1.05rem]"
+              className="mx-auto mt-2.5 max-w-2xl text-pretty text-sm text-fog sm:mt-4 sm:text-[1.05rem]"
               style={{ opacity: 0 }}
             >
               We design, run and optimize the entire acquisition engine for you, from Meta Ads
@@ -676,12 +676,12 @@ export function FlowWave() {
               {systemStats.map((s) => (
                 <div
                   key={s.label}
-                  className="rounded-xl border border-white/15 bg-[#02160c] px-4 py-4 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.7)] sm:py-5"
+                  className="rounded-xl border border-line bg-base/80 px-4 py-4 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.7)] backdrop-blur-sm sm:py-5"
                 >
                   <div className="text-gradient-lime text-xl font-bold sm:text-3xl">
                     {s.value}
                   </div>
-                  <div className="mt-1.5 text-[10px] uppercase tracking-[0.14em] text-fog/70 sm:text-[11px]">
+                  <div className="mt-1.5 text-[10px] uppercase tracking-[0.14em] text-fog sm:text-[11px]">
                     {s.label}
                   </div>
                 </div>
@@ -696,15 +696,15 @@ export function FlowWave() {
               {systemSteps.map((s, i) => (
                 <div
                   key={s.title}
-                  className="rounded-xl border border-white/15 bg-[#02160c] px-5 py-4 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.7)] sm:py-4"
+                  className="rounded-xl border border-line bg-base/80 px-5 py-4 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.7)] backdrop-blur-sm sm:py-4"
                 >
-                  <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-[#34e89a]">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-mint">
                     0{i + 1}
                   </span>
                   <div className="mt-2 text-sm font-semibold text-fog sm:text-base">
                     {s.title}
                   </div>
-                  <div className="mt-1 text-xs leading-relaxed text-fog/60 sm:text-[13px]">
+                  <div className="mt-1 text-xs leading-relaxed text-fog/90 sm:text-[13px]">
                     {s.desc}
                   </div>
                 </div>
@@ -718,13 +718,13 @@ export function FlowWave() {
             >
               <a
                 href={site.bookCallUrl}
-                className="pointer-events-auto group inline-flex items-center gap-2 rounded-full bg-[#34e89a] px-9 py-3 text-sm font-semibold text-[#02160c] shadow-[0_0_50px_-12px_var(--color-lime)] transition-colors hover:bg-[#7affbf] sm:py-4"
+                className="pointer-events-auto group inline-flex items-center gap-2 rounded-full bg-lime px-9 py-3 text-sm font-semibold text-ink shadow-[0_0_50px_-12px_var(--color-lime)] transition-colors hover:bg-lime-soft sm:py-4"
               >
                 Book Your Free Strategy Call
                 <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </a>
-              <div className="inline-flex items-center gap-2.5 text-xs font-medium text-fog/80">
-                <ShieldCheck className="h-4 w-4 shrink-0 text-[#34e89a]" />
+              <div className="inline-flex items-center gap-2.5 text-xs font-medium text-fog">
+                <ShieldCheck className="h-4 w-4 shrink-0 text-mint" />
                 90-day written guarantee · No management fee until results
               </div>
             </div>

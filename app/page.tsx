@@ -31,7 +31,6 @@ export default function Home() {
       <FunnelProof />
       <VSL />
       <ClientSuccess />
-      <Testimonials />
       <CTABanner
         compact
         eyebrow="The results speak for themselves"
@@ -68,6 +67,7 @@ export default function Home() {
           </>
         }
       />
+      <Testimonials />
       <FAQ />
       <FinalCTA />
       <Footer />

@@ -1,10 +1,12 @@
 export const site = {
   name: "QualifiedLeadsX™",
-  legalName: "Qualified LeadsX",
+  legalName: "Ecom Expertz LLC®",
+  legalAddress: "1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801",
   url: "https://www.qualifiedleadsx.com",
   bookCallUrl: "/book-your-call/",
   email: "hello@qualifiedleadsx.com",
   phone: "+1 (800) 555-0148",
+  whatsappNumber: "919582296172",
   founded: 2022,
   location: {
     addressLocality: "Austin",

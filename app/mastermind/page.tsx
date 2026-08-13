@@ -19,6 +19,7 @@ import {
 import { site } from "@/lib/site";
 import { Footer } from "@/components/layout/Footer";
 import { Nav } from "@/components/layout/Nav";
+import { VSL } from "@/components/sections/VSL";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 
@@ -177,6 +178,8 @@ export default function MastermindPage() {
           </Reveal>
         </div>
       </section>
+
+      <VSL />
 
       {/* Pillars Section */}
       <Section id="pillars" className="bg-[#040c07] border-y border-line">

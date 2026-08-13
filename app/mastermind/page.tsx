@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { ArrowUpRight } from "lucide-react";
 import { site } from "@/lib/site";
-import { SmoothScroll } from "@/components/providers/SmoothScroll";
 import { Footer } from "@/components/layout/Footer";
 import { Nav } from "@/components/layout/Nav";
 

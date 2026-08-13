@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { ArrowUpRight, Users, Zap, TrendingUp } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
@@ -144,7 +143,7 @@ export function Community() {
         <Reveal delay={0.18}>
           <div className="mx-auto mt-12 flex max-w-md flex-col items-center gap-4 text-center">
             <p className="text-sm leading-relaxed text-dim">
-              Free to join. Updated daily with real results, strategies and what's working right now across 30+ niches.
+              Free to join. Updated daily with real results, strategies and what&apos;s working right now across 30+ niches.
             </p>
             <a
               href="https://www.facebook.com/groups/qualifiedleadsx"

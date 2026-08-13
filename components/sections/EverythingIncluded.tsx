@@ -1,6 +1,5 @@
 "use client";
 
-import { Check } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import {
@@ -51,7 +50,7 @@ export function EverythingIncluded() {
 
       <Reveal y={20} delay={0.05}>
         <div className="relative z-10 mx-auto mt-12 grid max-w-5xl grid-cols-2 gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-3 lg:grid-cols-4">
-          {features.map((s, i) => {
+          {features.map((s) => {
             const Icon = s.icon;
             return (
               <article

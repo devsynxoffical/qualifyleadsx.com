@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Section } from "@/components/ui/Section";
 
 const logos = Array.from({ length: 22 }, (_, i) => ({
   src: `/logos/logo-${String(i + 1).padStart(2, "0")}.png`,

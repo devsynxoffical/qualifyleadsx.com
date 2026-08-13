@@ -103,7 +103,7 @@ export function FunnelProof() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
-  const lightboxItems: LightboxItem[] = funnelProofs.map((p, i) => ({
+  const lightboxItems: LightboxItem[] = funnelProofs.map((p) => ({
     src: p.src,
     title: `${p.name} — ${p.niche}`,
     w: 800,

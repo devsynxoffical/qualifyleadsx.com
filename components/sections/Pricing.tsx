@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, ArrowUpRight, Zap, Star } from "lucide-react";
+import { Check, ArrowUpRight, Star } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { site } from "@/lib/site";

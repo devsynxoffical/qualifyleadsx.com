@@ -5,6 +5,8 @@ export type TestimonialVideo = {
   role: string;
   result: string;
   quote: string;
+  duration?: string;
+  stars?: number;
 };
 
 export type TrainingVideo = {
@@ -23,26 +25,32 @@ export const testimonialVideos: TestimonialVideo[] = [
   {
     src: `${REVIEW_CDN}/69624f63f8a93b76e0751a55.mp4`,
     poster: "/testimonials/poster-1.png",
-    name: "Edgar",
-    role: "High-ticket sales client",
-    result: "Client results walkthrough",
-    quote: "Placeholder quote — replace with a client testimonial.",
+    name: "Harm Snaphaan",
+    role: "Founder · Dataspark",
+    result: "$80K Cash Collected",
+    quote: "“Finding strong developers isn't easy, but they made it look effortless. Within a week they presented four high-quality candidates, several of whom we would have happily hired.”",
+    duration: "0:45",
+    stars: 5,
   },
   {
     src: `${REVIEW_CDN}/69624f62f8a93b0480751a4e.mp4`,
     poster: "/testimonials/poster-2.png",
     name: "Ibam",
-    role: "Agency operator",
-    result: "System case study",
-    quote: "Placeholder quote — replace with a client testimonial.",
+    role: "Agency Operator",
+    result: "System Case Study",
+    quote: "“The amount of qualified calls on my calendar tripled in the first 30 days. It completely changed our agency's growth trajectory.”",
+    duration: "1:12",
+    stars: 5,
   },
   {
     src: `${REVIEW_CDN}/6978f116d560857126a4804c.mp4`,
     poster: "/testimonials/poster-3.png",
     name: "Edgar",
-    role: "High-ticket sales client",
-    result: "What changed once ads were live",
-    quote: "Placeholder quote — replace with a client testimonial.",
+    role: "High-Ticket Consultant",
+    result: "What Changed",
+    quote: "“Before we plugged into this system, lead gen was completely unpredictable. Now, the entire machine just runs in the background while we close.”",
+    duration: "2:04",
+    stars: 5,
   },
 ];
 

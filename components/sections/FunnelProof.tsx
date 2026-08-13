@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
-import { BadgeCheck, TrendingUp } from "lucide-react";
+import { BadgeCheck, TrendingUp, ZoomIn } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
+import { LightboxModal, LightboxItem } from "@/components/ui/LightboxModal";
 
 type FunnelProof = {
   name: string;
@@ -98,6 +100,21 @@ const funnelProofs: FunnelProof[] = [
 ];
 
 export function FunnelProof() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const lightboxItems: LightboxItem[] = funnelProofs.map((p, i) => ({
+    src: p.src,
+    title: `${p.name} — ${p.niche}`,
+    w: 800,
+    h: 1689,
+  }));
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
+
   return (
     <Section id="results" className="bg-ink">
       <SectionHeading
@@ -113,12 +130,11 @@ export function FunnelProof() {
 
       {/* Stat strip */}
       <Reveal>
-        <div className="mx-auto mb-14 grid max-w-4xl grid-cols-2 gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-4">
+        <div className="mx-auto mb-14 grid max-w-3xl grid-cols-1 gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-3">
           {[
-            { value: "10", label: "Niches proven" },
-            { value: "$100K+", label: "Client months" },
-            { value: "$9", label: "Avg. per booked appt" },
-            { value: "86%+", label: "Show rate" },
+            { value: "6–8 Figure", label: "Clients Under Our Belt" },
+            { value: "30+", label: "Niches Proven" },
+            { value: "12+ Years", label: "Experience" },
           ].map((s) => (
             <div key={s.label} className="flex flex-col gap-1.5 bg-panel px-5 py-7 text-center">
               <span className="font-mono text-2xl font-bold tracking-tight text-fog sm:text-3xl">
@@ -134,7 +150,10 @@ export function FunnelProof() {
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 lg:grid-cols-5">
         {funnelProofs.map((p, i) => (
           <Reveal key={p.name} delay={(i % 5) * 0.06} y={40}>
-            <figure className="group relative overflow-hidden rounded-2xl border border-line bg-panel transition-colors duration-500 hover:border-line-strong sm:rounded-3xl">
+            <figure
+              className="group relative overflow-hidden rounded-2xl border border-line bg-panel transition-colors duration-500 hover:border-line-strong sm:rounded-3xl cursor-pointer"
+              onClick={() => openLightbox(i)}
+            >
               <div className="relative aspect-[9/19] overflow-hidden bg-ink">
                 <Image
                   src={p.src}
@@ -153,6 +172,13 @@ export function FunnelProof() {
                   <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: p.color }} />
                   {p.niche}
                 </span>
+                
+                {/* Zoom Icon overlay */}
+                <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-ink/20 backdrop-blur-[1px]">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-lime text-ink shadow-[0_0_20px_rgba(201,242,107,0.4)]">
+                    <ZoomIn className="h-5 w-5" />
+                  </div>
+                </div>
               </div>
               <figcaption className="p-4 sm:p-5">
                 <div className="flex items-center justify-between gap-2">
@@ -174,6 +200,14 @@ export function FunnelProof() {
           </Reveal>
         ))}
       </div>
+
+      <LightboxModal
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+        items={lightboxItems}
+        currentIndex={lightboxIndex}
+        onNavigate={setLightboxIndex}
+      />
 
       {/* Footnote */}
       <Reveal delay={0.1}>

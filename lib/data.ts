@@ -82,6 +82,11 @@ export const differentiators = [
     title: "90-Day Written Guarantee — Risk Reversed",
     body: "Everything is backed in writing. If we don't double your revenue within the next 90 days, we keep working at no management fee until we do.",
   },
+  {
+    icon: Target,
+    title: "Dedicated Growth Partner — Not a Vendor",
+    body: "You get a single point of contact managing your entire acquisition system. We act as your in-house growth team, fully invested in your results.",
+  },
 ] as const;
 
 /* ============================================================

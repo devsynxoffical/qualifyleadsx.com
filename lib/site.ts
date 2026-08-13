@@ -16,16 +16,16 @@ export const site = {
   description:
     "QualifiedLeadsX™ installs a done-for-you client acquisition funnel system for high-ticket coaches, consultants and service providers — generating $100K+ months of qualified sales calls on your calendar.",
   socials: [
-    { label: "Facebook", href: "https://www.facebook.com/qualifiedleadsx" },
-    { label: "Instagram", href: "https://www.instagram.com/qualifiedleadsx" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/company/qualifiedleadsx" },
-    { label: "YouTube", href: "https://www.youtube.com/@qualifiedleadsx" },
+    { label: "Facebook", href: "https://www.facebook.com/qualifiedleadsx/" },
+    { label: "Instagram", href: "https://www.instagram.com/qualifiedleadsx/" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/gauravecom/" },
   ],
 } as const;
 
 export const nav = [
   { label: "System", href: "#different" },
   { label: "Results", href: "#results" },
+  { label: "Mastermind", href: "/mastermind" },
   { label: "Industries", href: "#industries" },
   { label: "Guarantee", href: "#guarantee" },
   { label: "FAQ", href: "#faq" },

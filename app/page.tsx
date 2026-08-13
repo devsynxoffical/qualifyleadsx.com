@@ -7,16 +7,18 @@ import { WhyScale } from "@/components/sections/WhyScale";
 import { Different } from "@/components/sections/Different";
 import { FunnelProof } from "@/components/sections/FunnelProof";
 import { VSL } from "@/components/sections/VSL";
+import { LogoBar } from "@/components/sections/LogoBar";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { ClientSuccess } from "@/components/sections/ClientSuccess";
 import { Process } from "@/components/sections/Process";
 import { EverythingIncluded } from "@/components/sections/EverythingIncluded";
 import { Training } from "@/components/sections/Training";
 import { FlowWave } from "@/components/sections/FlowWave";
-import { Ownership } from "@/components/sections/Ownership";
 import { Industries } from "@/components/sections/Industries";
 import { Guarantee } from "@/components/sections/Guarantee";
 import { FAQ } from "@/components/sections/FAQ";
+import { Pricing } from "@/components/sections/Pricing";
+import { Community } from "@/components/sections/Community";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 
 export default function Home() {
@@ -25,22 +27,13 @@ export default function Home() {
       <AnnouncementBar />
       <Nav />
       <FlowWave />
+      <VSL />
+      <LogoBar />
       <TrustBar />
       <WhyScale />
       <Different />
       <FunnelProof />
-      <VSL />
       <ClientSuccess />
-      <CTABanner
-        compact
-        eyebrow="The results speak for themselves"
-        title={
-          <>
-            The calls they&apos;re missing are{" "}
-            <em className="font-semibold not-italic text-lime">yours to take.</em>
-          </>
-        }
-      />
       <Process />
       <CTABanner
         compact
@@ -54,7 +47,6 @@ export default function Home() {
       />
       <EverythingIncluded />
       <Training />
-      <Ownership />
       <Industries />
       <Guarantee />
       <CTABanner
@@ -69,8 +61,11 @@ export default function Home() {
       />
       <Testimonials />
       <FAQ />
+      <Pricing />
+      <Community />
       <FinalCTA />
       <Footer />
     </main>
   );
 }
+

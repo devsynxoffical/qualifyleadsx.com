@@ -6,6 +6,7 @@ import { CustomCursor } from "@/components/providers/CustomCursor";
 import { NoiseOverlay } from "@/components/ui/NoiseOverlay";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
 import { site } from "@/lib/site";
 
 const inter = Inter({
@@ -104,6 +105,7 @@ export default function RootLayout({
             {children}
           </div>
         </SmoothScroll>
+        <WhatsAppWidget />
       </body>
     </html>
   );

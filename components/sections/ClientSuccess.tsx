@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
-import { ShieldCheck, BadgeCheck, CalendarCheck2 } from "lucide-react";
+import { ShieldCheck, BadgeCheck, CalendarCheck2, ZoomIn } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
+import { LightboxModal, LightboxItem } from "@/components/ui/LightboxModal";
 
 type SuccessShot = { src: string; w: number; h: number };
 
@@ -28,8 +30,23 @@ const successShots: SuccessShot[] = [
 ];
 
 export function ClientSuccess() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const lightboxItems: LightboxItem[] = successShots.map((shot, i) => ({
+    src: shot.src,
+    title: `Client Success Proof ${i + 1}`,
+    w: shot.w,
+    h: shot.h,
+  }));
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
+
   return (
-    <Section id="success" className="theme-light">
+    <Section id="success" className="theme-dark bg-base">
       <SectionHeading
         eyebrow="Recognised by client results"
         title={
@@ -45,10 +62,13 @@ export function ClientSuccess() {
       <div className="columns-2 gap-4 sm:columns-3 sm:gap-5 [&>*]:mb-4 sm:[&>*]:mb-5">
         {successShots.map((shot, i) => (
           <Reveal key={shot.src} delay={(i % 3) * 0.07} y={36} className="break-inside-avoid">
-            <figure className="group relative overflow-hidden rounded-2xl border border-line bg-panel sm:rounded-3xl">
+            <figure
+              className="group relative overflow-hidden rounded-2xl border border-line bg-panel sm:rounded-3xl cursor-pointer"
+              onClick={() => openLightbox(i)}
+            >
               <Image
                 src={shot.src}
-                alt="Verified client success screenshot"
+                alt={`Verified client success screenshot ${i + 1}`}
                 width={shot.w}
                 height={shot.h}
                 sizes="(min-width: 1024px) 23vw, (min-width: 640px) 30vw, 45vw"
@@ -56,14 +76,27 @@ export function ClientSuccess() {
               />
               <div className="pointer-events-none absolute inset-x-0 top-0 flex items-center justify-between p-3">
                 <span className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-ink/60 px-2.5 py-1 font-mono text-[9px] uppercase tracking-widest text-white backdrop-blur-md">
-                  <BadgeCheck className="h-3 w-3" />
+                  <BadgeCheck className="h-3 w-3 text-lime" />
                   Verified
                 </span>
+              </div>
+              <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-ink/20 backdrop-blur-[1px]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-lime text-ink shadow-[0_0_20px_rgba(201,242,107,0.4)]">
+                  <ZoomIn className="h-5 w-5" />
+                </div>
               </div>
             </figure>
           </Reveal>
         ))}
       </div>
+
+      <LightboxModal
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+        items={lightboxItems}
+        currentIndex={lightboxIndex}
+        onNavigate={setLightboxIndex}
+      />
 
       {/* Trust strip */}
       <Reveal delay={0.1}>

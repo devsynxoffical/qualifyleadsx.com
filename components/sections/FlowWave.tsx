@@ -190,7 +190,6 @@ export function FlowWave() {
   const p2SubRef = useRef<HTMLParagraphElement>(null);
   const p2StatsRef = useRef<HTMLDivElement>(null);
   const p2StepsRef = useRef<HTMLDivElement>(null);
-  const p2CtaRef = useRef<HTMLDivElement>(null);
 
   const systemStats = [
     { value: "90", label: "days to your written result" },
@@ -200,9 +199,9 @@ export function FlowWave() {
   ];
 
   const systemSteps = [
-    { title: "We build", desc: "Offer, funnel, creative and tracking, installed from scratch." },
-    { title: "We run", desc: "Meta ads, AI qualification and follow-ups, managed daily." },
-    { title: "You win", desc: "You take the calls. Revenue follows the results." },
+    { title: "Build", desc: "Offer, Funnel, Creative & Tracking" },
+    { title: "Scale", desc: "Meta Ads, AI Qualification & Follow-Ups" },
+    { title: "Close", desc: "You Take the Calls, We Handle the Growth" },
   ];
 
   useEffect(() => {
@@ -478,8 +477,7 @@ export function FlowWave() {
       stage(fadeIn(0.3, 0.5) * fadeOut(0.86, 0.97), p2HeadRef.current, 44);
       stage(fadeIn(0.36, 0.54) * fadeOut(0.86, 0.97), p2SubRef.current, 34);
       stage(fadeIn(0.42, 0.6) * fadeOut(0.86, 0.97), p2StatsRef.current, 28);
-      stage(fadeIn(0.48, 0.66) * fadeOut(0.86, 0.97), p2StepsRef.current, 28);
-      stage(fadeIn(0.54, 0.72) * fadeOut(0.86, 0.97), p2CtaRef.current, 24);
+      stage(fadeIn(0.5, 0.7) * fadeOut(0.86, 0.97), p2StepsRef.current, 16);
     };
 
     let raf = 0;
@@ -602,13 +600,13 @@ export function FlowWave() {
                 <span className="mt-2 block text-gradient-lime text-[clamp(1.9rem,5.6vw,4.8rem)] font-bold leading-[1.02]">
                   Double your revenue within the next 90 days
                 </span>
-                <span className="mt-3 block text-[clamp(0.95rem,1.6vw,1.25rem)] leading-[1.35] text-mist">
+                <span className="mt-3 block text-[clamp(0.95rem,1.6vw,1.25rem)] font-medium leading-[1.35] text-fog drop-shadow-md">
                   Or we&apos;ll continue working for you at{" "}
-                  <em className="text-gradient-lime not-italic">no management fee</em> until we
+                  <em className="text-lime not-italic drop-shadow-[0_0_8px_rgba(201,242,107,0.5)]">no management fee</em> until we
                   do.
                 </span>
               </h1>
-              <p className="mx-auto mt-4 max-w-xl text-pretty text-sm leading-relaxed text-mist sm:text-[1rem]">
+              <p className="mx-auto mt-4 max-w-xl text-pretty text-sm font-medium leading-relaxed text-fog drop-shadow-md sm:text-[1rem]">
                 Done-for-you client acquisition from Meta Ads to the booked call.
               </p>
             </div>
@@ -690,13 +688,13 @@ export function FlowWave() {
 
             <div
               ref={p2StepsRef}
-              className="mx-auto mt-4 grid w-full max-w-3xl gap-2.5 text-left sm:mt-7 sm:grid-cols-3 sm:gap-3"
+              className="mx-auto mt-4 grid w-full max-w-3xl gap-2.5 text-center sm:mt-7 sm:grid-cols-3 sm:gap-3"
               style={{ opacity: 0 }}
             >
               {systemSteps.map((s, i) => (
                 <div
                   key={s.title}
-                  className="rounded-xl border border-line bg-base/80 px-5 py-4 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.7)] backdrop-blur-sm sm:py-4"
+                  className="flex flex-col items-center justify-center rounded-xl border border-line bg-base/80 px-5 py-4 text-center shadow-[0_8px_30px_-12px_rgba(0,0,0,0.7)] backdrop-blur-sm sm:py-5"
                 >
                   <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-mint">
                     0{i + 1}
@@ -709,24 +707,6 @@ export function FlowWave() {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div
-              ref={p2CtaRef}
-              className="mt-5 flex flex-col items-center gap-2.5 sm:mt-8 sm:flex-row sm:gap-5"
-              style={{ opacity: 0 }}
-            >
-              <a
-                href={site.bookCallUrl}
-                className="pointer-events-auto group inline-flex items-center gap-2 rounded-full bg-lime px-9 py-3 text-sm font-semibold text-ink shadow-[0_0_50px_-12px_var(--color-lime)] transition-colors hover:bg-lime-soft sm:py-4"
-              >
-                Book Your Free Strategy Call
-                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-              </a>
-              <div className="inline-flex items-center gap-2.5 text-xs font-medium text-fog">
-                <ShieldCheck className="h-4 w-4 shrink-0 text-mint" />
-                90-day written guarantee · No management fee until results
-              </div>
             </div>
           </div>
         </div>

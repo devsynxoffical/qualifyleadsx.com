@@ -90,75 +90,35 @@ export function Different() {
           subtitle="Unlike traditional marketing agencies, we handle every step of your customer journey — from attracting the right prospects, to qualifying them, to nurturing them, to getting them booked onto your calendar. Everything works together inside one proven system."
         />
 
-        {/* ── Featured card (full width) ── */}
-        <Reveal y={36} className="mt-12">
-          <SpotlightCard className="p-8 sm:p-10 lg:p-12">
-            <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-16">
-              {/* Left: giant icon with ring */}
-              <div className="shrink-0 self-start">
-                <div className="relative flex h-20 w-20 items-center justify-center rounded-3xl border border-lime/25 bg-lime/[0.08] sm:h-24 sm:w-24">
-                  <FeaturedIcon className="h-10 w-10 text-lime sm:h-12 sm:w-12" strokeWidth={1.5} />
-                  {/* pulsing ring */}
-                  <span className="absolute inset-0 animate-ping rounded-3xl bg-lime/10 [animation-duration:2.5s]" />
-                </div>
-              </div>
-
-              {/* Right: text */}
-              <div className="flex-1">
-                <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-lime">
-                  01 — Core Differentiator
-                </div>
-                <h3 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
-                  {featured.title}
-                </h3>
-                <p className="mt-4 max-w-2xl text-base leading-relaxed text-mist">
-                  {featured.body}
-                </p>
-              </div>
-            </div>
-
-            {/* bottom shine line */}
-            <span className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-lime/40 to-transparent" />
-          </SpotlightCard>
-        </Reveal>
-
-        {/* ── 5-card grid ── */}
-        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {rest.map((d, i) => {
+        <div className="mt-16 flex flex-col gap-8 lg:gap-10">
+          {differentiators.map((d, i) => {
             const Icon = d.icon;
-            const gradient = accentColors[(i + 1) % accentColors.length];
             return (
-              <Reveal key={d.title} delay={(i % 3) * 0.07} y={32}>
-                <SpotlightCard className="h-full p-7">
-                  <div className="flex items-start gap-4">
-                    {/* numbered icon badge */}
-                    <div className="relative shrink-0">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.05] text-lime transition-all duration-500 group-hover:border-lime/30 group-hover:bg-lime/10 group-hover:-translate-y-1 group-hover:shadow-[0_8px_20px_-6px_rgba(201,242,107,0.25)]">
-                        <Icon className="h-5 w-5" strokeWidth={1.75} />
-                      </div>
-                      {/* number badge */}
-                      <span
-                        className={cn(
-                          "absolute -right-1.5 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br text-[9px] font-bold text-white",
-                          gradient
-                        )}
-                      >
-                        0{i + 2}
-                      </span>
+              <Reveal key={d.title} y={40} delay={0.1}>
+                <SpotlightCard className="p-8 text-center sm:p-12 lg:p-16">
+                  <div className="flex flex-col items-center justify-center gap-6">
+                    {/* Icon */}
+                    <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-3xl border border-lime/25 bg-lime/[0.08] sm:h-24 sm:w-24">
+                      <Icon className="h-10 w-10 text-lime sm:h-12 sm:w-12" strokeWidth={1.5} />
+                      <span className="absolute inset-0 animate-ping rounded-3xl bg-lime/10 [animation-duration:3s]" />
                     </div>
 
-                    <div className="flex-1 pt-0.5">
-                      <h3 className="text-[15px] font-semibold leading-snug tracking-tight text-white">
+                    {/* Text content */}
+                    <div className="flex flex-col items-center max-w-4xl">
+                      <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-[0.2em] text-lime">
+                        0{i + 1}{i === 0 && " — Core Differentiator"}
+                      </div>
+                      <h3 className="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl text-balance">
                         {d.title}
                       </h3>
-                      <p className="mt-2 text-[13px] leading-relaxed text-mist/80">
+                      <p className="mt-5 text-base leading-relaxed text-mist sm:text-lg">
                         {d.body}
                       </p>
                     </div>
                   </div>
 
-                  {/* hover bottom bar */}
-                  <span className="pointer-events-none absolute inset-x-7 bottom-0 h-px origin-left scale-x-0 bg-gradient-to-r from-lime/60 to-transparent transition-transform duration-500 group-hover:scale-x-100" />
+                  {/* bottom shine line */}
+                  <span className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-lime/50 to-transparent" />
                 </SpotlightCard>
               </Reveal>
             );

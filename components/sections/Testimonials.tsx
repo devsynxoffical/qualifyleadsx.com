@@ -57,10 +57,10 @@ export function Testimonials() {
       <Reveal y={40} className="w-full">
         <div className="relative mx-auto mt-12 w-full max-w-[1100px] rounded-[32px] border border-line bg-panel p-4 sm:p-6 shadow-soft md:p-8">
           
-          <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-8 lg:grid-cols-[1fr_1.5fr] lg:gap-16 items-center">
             
             {/* Left: Video Player */}
-            <div className="relative aspect-[9/16] w-full max-w-[380px] mx-auto overflow-hidden rounded-[24px] border border-line-strong bg-black shadow-2xl group cursor-pointer" onClick={togglePlay}>
+            <div className="relative aspect-[9/16] w-full max-w-[320px] mx-auto overflow-hidden rounded-[24px] border border-line-strong bg-black shadow-2xl group cursor-pointer" onClick={togglePlay}>
               <video
                 ref={videoRef}
                 src={currentVideo.src}

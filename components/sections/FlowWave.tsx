@@ -453,15 +453,15 @@ export function FlowWave() {
 
       /* ---- stage 1: the promise ---- */
       if (headlineWrapRef.current) {
-        const o = fadeOut(0.12, 0.34);
+        const o = fadeOut(0.08, 0.28);
         stage(o, headlineWrapRef.current, -44);
       }
       if (ctaRef.current) {
-        const o = fadeOut(0.16, 0.38);
+        const o = fadeOut(0.1, 0.3);
         stage(o, ctaRef.current, -30);
       }
       if (statRef.current) {
-        const o = fadeOut(0.18, 0.4);
+        const o = fadeOut(0.12, 0.32);
         stage(o, statRef.current, -22);
       }
       if (hintRef.current) {
@@ -469,15 +469,15 @@ export function FlowWave() {
       }
 
       /* ---- stage 2: the system ---- */
-      const p2On = p > 0.24;
+      const p2On = p > 0.18;
       if (p2WrapRef.current) p2WrapRef.current.style.visibility = p2On ? "visible" : "hidden";
       if (p2CounterRef.current) {
-        p2CounterRef.current.style.opacity = String(fadeIn(0.3, 0.46));
+        p2CounterRef.current.style.opacity = String(fadeIn(0.18, 0.36));
       }
-      stage(fadeIn(0.3, 0.5) * fadeOut(0.86, 0.97), p2HeadRef.current, 44);
-      stage(fadeIn(0.36, 0.54) * fadeOut(0.86, 0.97), p2SubRef.current, 34);
-      stage(fadeIn(0.42, 0.6) * fadeOut(0.86, 0.97), p2StatsRef.current, 28);
-      stage(fadeIn(0.5, 0.7) * fadeOut(0.86, 0.97), p2StepsRef.current, 16);
+      stage(fadeIn(0.2, 0.4) * fadeOut(0.85, 0.98), p2HeadRef.current, 44);
+      stage(fadeIn(0.24, 0.44) * fadeOut(0.85, 0.98), p2SubRef.current, 34);
+      stage(fadeIn(0.28, 0.48) * fadeOut(0.85, 0.98), p2StatsRef.current, 28);
+      stage(fadeIn(0.32, 0.52) * fadeOut(0.85, 0.98), p2StepsRef.current, 16);
     };
 
     let raf = 0;
@@ -557,7 +557,7 @@ export function FlowWave() {
       id="top"
       ref={sectionRef}
       className="relative"
-      style={{ height: "320vh" }}
+      style={{ height: "170vh" }}
       aria-label="Qualified demand hero"
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden bg-[#02160c]">

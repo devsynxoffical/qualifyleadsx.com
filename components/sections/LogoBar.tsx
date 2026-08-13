@@ -21,18 +21,18 @@ export function LogoBar() {
 
       {/* marquee track — duplicated for seamless loop */}
       <div className="flex overflow-hidden">
-        <div className="flex animate-marquee gap-10 pr-10 will-change-transform items-center sm:gap-12 sm:pr-12">
+        <div className="flex animate-marquee gap-8 pr-8 will-change-transform items-center sm:gap-12 sm:pr-12">
           {[...logos, ...logos].map((logo, i) => (
             <div
               key={i}
-              className="flex h-24 w-56 shrink-0 items-center justify-center opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
+              className="flex h-24 w-auto shrink-0 items-center justify-center opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
             >
               <Image
                 src={logo.src}
                 alt={logo.alt}
                 width={240}
                 height={96}
-                className="h-20 w-auto max-w-[220px] object-contain"
+                className="h-16 w-auto max-w-[160px] object-contain sm:h-20 sm:max-w-[200px]"
               />
             </div>
           ))}

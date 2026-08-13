@@ -90,28 +90,32 @@ export function Different() {
           subtitle="Unlike traditional marketing agencies, we handle every step of your customer journey — from attracting the right prospects, to qualifying them, to nurturing them, to getting them booked onto your calendar. Everything works together inside one proven system."
         />
 
-        <div className="mt-16 flex flex-col gap-8 lg:gap-10">
+        <div className="mx-auto mt-16 flex max-w-4xl flex-col gap-6 pb-24 sm:gap-8 lg:pb-32">
           {differentiators.map((d, i) => {
             const Icon = d.icon;
             return (
-              <Reveal key={d.title} y={40} delay={0.1}>
-                <SpotlightCard className="p-8 text-center sm:p-12 lg:p-16">
-                  <div className="flex flex-col items-center justify-center gap-6">
+              <div
+                key={d.title}
+                className="sticky z-10 transition-transform duration-500 will-change-transform"
+                style={{ top: `calc(8rem + ${i * 1.5}rem)` }}
+              >
+                <SpotlightCard className="p-6 text-center shadow-2xl shadow-black/50 sm:p-10 lg:p-12">
+                  <div className="flex flex-col items-center justify-center gap-5">
                     {/* Icon */}
-                    <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-3xl border border-lime/25 bg-lime/[0.08] sm:h-24 sm:w-24">
-                      <Icon className="h-10 w-10 text-lime sm:h-12 sm:w-12" strokeWidth={1.5} />
+                    <div className="relative flex h-16 w-16 shrink-0 items-center justify-center rounded-3xl border border-lime/25 bg-lime/[0.08] sm:h-20 sm:w-20">
+                      <Icon className="h-8 w-8 text-lime sm:h-10 sm:w-10" strokeWidth={1.5} />
                       <span className="absolute inset-0 animate-ping rounded-3xl bg-lime/10 [animation-duration:3s]" />
                     </div>
 
                     {/* Text content */}
-                    <div className="flex flex-col items-center max-w-4xl">
-                      <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-[0.2em] text-lime">
+                    <div className="flex flex-col items-center max-w-3xl">
+                      <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-4 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-lime sm:text-xs">
                         0{i + 1}{i === 0 && " — Core Differentiator"}
                       </div>
-                      <h3 className="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl text-balance">
+                      <h3 className="text-xl font-bold tracking-tight text-white sm:text-2xl lg:text-3xl text-balance">
                         {d.title}
                       </h3>
-                      <p className="mt-5 text-base leading-relaxed text-mist sm:text-lg">
+                      <p className="mt-4 text-sm leading-relaxed text-mist sm:text-base">
                         {d.body}
                       </p>
                     </div>
@@ -120,7 +124,7 @@ export function Different() {
                   {/* bottom shine line */}
                   <span className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-lime/50 to-transparent" />
                 </SpotlightCard>
-              </Reveal>
+              </div>
             );
           })}
         </div>

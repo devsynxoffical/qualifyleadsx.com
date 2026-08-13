@@ -674,12 +674,12 @@ export function FlowWave() {
               {systemStats.map((s) => (
                 <div
                   key={s.label}
-                  className="rounded-xl border border-line bg-base/80 px-4 py-4 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.7)] backdrop-blur-sm sm:py-5"
+                  className="rounded-2xl border border-lime/20 bg-[#07120a]/90 px-4 py-4.5 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-300 hover:border-lime/40 sm:py-5"
                 >
-                  <div className="text-gradient-lime text-xl font-bold sm:text-3xl">
+                  <div className="text-2xl font-extrabold text-lime sm:text-3xl drop-shadow-[0_0_15px_rgba(201,242,107,0.35)]">
                     {s.value}
                   </div>
-                  <div className="mt-1.5 text-[10px] uppercase tracking-[0.14em] text-fog sm:text-[11px]">
+                  <div className="mt-1.5 text-[11px] font-bold uppercase tracking-[0.14em] text-fog sm:text-[12px]">
                     {s.label}
                   </div>
                 </div>
@@ -688,21 +688,18 @@ export function FlowWave() {
 
             <div
               ref={p2StepsRef}
-              className="mx-auto mt-4 grid w-full max-w-3xl gap-2.5 text-center sm:mt-7 sm:grid-cols-3 sm:gap-3"
+              className="mx-auto mt-4 grid w-full max-w-3xl gap-3 text-center sm:mt-7 sm:grid-cols-3 sm:gap-4"
               style={{ opacity: 0 }}
             >
               {systemSteps.map((s, i) => (
                 <div
                   key={s.title}
-                  className="flex flex-col items-center justify-center rounded-xl border border-line bg-base/80 px-5 py-4 text-center shadow-[0_8px_30px_-12px_rgba(0,0,0,0.7)] backdrop-blur-sm sm:py-5"
+                  className="group flex flex-col items-center justify-center rounded-2xl border border-lime/25 bg-[#07120a]/90 p-5 text-center shadow-[0_10px_30px_-10px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-300 hover:border-lime/50 hover:bg-[#0a1a0e]/95 sm:p-6"
                 >
-                  <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-mint">
-                    0{i + 1}
+                  <span className="inline-flex items-center rounded-full border border-lime/30 bg-lime/10 px-3 py-1 font-mono text-xs font-bold tracking-widest text-lime shadow-[0_0_12px_rgba(201,242,107,0.2)]">
+                    0{i + 1} — {s.title}
                   </span>
-                  <div className="mt-2 text-sm font-semibold text-fog sm:text-base">
-                    {s.title}
-                  </div>
-                  <div className="mt-1 text-xs leading-relaxed text-fog/90 sm:text-[13px]">
+                  <div className="mt-3 text-sm font-semibold leading-relaxed text-fog sm:text-[15px]">
                     {s.desc}
                   </div>
                 </div>

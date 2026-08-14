@@ -9,20 +9,21 @@ import { cn } from "@/lib/utils";
 const plans = [
   {
     id: "meta-ads",
-    badge: "Starter",
+    badge: "Ads Scaling",
     name: "Meta Ads Management",
     price: "$849",
     period: "/month",
-    tagline: "For clients who already have their funnel and creatives ready and only need us to manage and scale their Meta Ads.",
-    cta: "Get Started",
-    featured: false,
+    tagline: "For clients who want us to produce high-converting ad creatives, write direct-response copy, and scale their Meta Ads daily.",
+    cta: "Book Free Strategy Call",
+    featured: true,
     features: [
-      "Meta Ads Management",
-      "Testing & Scaling",
-      "Hyper-Targeted Market Segmentation",
-      "Ad Copy Creation",
-      "Campaign Optimization",
-      "Heatmap Analysis",
+      "Full Meta Ads Campaign Management",
+      "Scroll-Stopping Ad Creative Creation",
+      "Direct-Response Ad Copywriting",
+      "Hyper-Targeted Market & Audience Segmentation",
+      "Daily Creative Testing & Scaling",
+      "Pixel & Custom Conversion Tracking",
+      "Heatmap & ROAS Performance Optimization",
     ],
   },
   {
@@ -31,19 +32,18 @@ const plans = [
     name: "Full-Service Growth",
     price: "$2,499",
     period: "/month",
-    tagline: "For clients who want us to build and manage the complete done-for-you system.",
+    tagline: "For clients who want us to build, launch, and scale the complete done-for-you client acquisition ecosystem.",
     cta: "Book Free Strategy Call",
     featured: true,
     features: [
       "Everything in Meta Ads Management",
-      "Complete 3–5 Page Funnel",
-      "AI Automations & Workflows",
-      "Email & SMS Nurturing",
-      "All Creatives Included",
-      "40–100+ Creatives if Required",
-      "Ad Copy",
-      "Testing & Scaling",
-      "Continuous Optimization",
+      "Custom 3–5 Page High-Converting Funnel",
+      "24/7 AI Automations & Follow-Up Workflows",
+      "Automated Email & SMS Nurture Sequences",
+      "Unlimited Ad Creatives & Variations (40–100+)",
+      "Multi-Validation Lead Qualification System",
+      "CRM Pipeline Integration & Direct Calendar Booking",
+      "Continuous Conversion & ROAS Optimization",
     ],
   },
 ];
@@ -165,7 +165,7 @@ export function Pricing() {
           <p className="mx-auto mt-10 max-w-lg text-center text-xs leading-relaxed text-dim">
             All plans include onboarding, account setup and a dedicated point of contact.
             Backed by our{" "}
-            <span className="font-semibold text-mist">90-day written guarantee</span> — or we
+            <span className="font-semibold text-mist">90-day written guarantee</span> - or we
             work for free until we deliver.
           </p>
         </Reveal>

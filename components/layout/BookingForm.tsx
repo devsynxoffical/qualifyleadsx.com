@@ -24,7 +24,7 @@ export function BookingForm() {
     if (String(fd.get("_honey") || "").trim()) return;
 
     const payload = {
-      _subject: "New booking request — QualifiedLeadsX",
+      _subject: "New booking request - QualifiedLeadsX",
       _template: "table",
       _captcha: "false",
       name: fd.get("name"),
@@ -65,7 +65,7 @@ export function BookingForm() {
         </h2>
         <p className="mx-auto mt-3 max-w-sm text-sm leading-relaxed text-mist">
           Thanks for reaching out. Our team will email you within one business day to lock in
-          your free strategy call — keep an eye on your inbox.
+          your free strategy call - keep an eye on your inbox.
         </p>
         <button
           type="button"
@@ -118,12 +118,13 @@ export function BookingForm() {
         </div>
         <div>
           <label htmlFor="phone" className={labelCls}>
-            Phone
+            Phone number *
           </label>
           <input
             id="phone"
             name="phone"
             type="tel"
+            required
             autoComplete="tel"
             placeholder="+1 (555) 000-0000"
             className={inputCls}

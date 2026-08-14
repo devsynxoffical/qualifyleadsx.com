@@ -30,11 +30,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "QualifiedLeadsX™ — High-Ticket Client Acquisition System",
+    default: "QualifiedLeadsX™ - High-Ticket Client Acquisition System",
     template: "%s | QualifiedLeadsX™",
   },
   description:
-    "QualifiedLeadsX™ installs a done-for-you lead generation funnel system for high-ticket coaches, consultants & service providers — generating $100K+ months of qualified sales calls on your calendar.",
+    "QualifiedLeadsX™ installs a done-for-you lead generation funnel system for high-ticket coaches, consultants & service providers - generating $100K+ months of qualified sales calls on your calendar.",
   keywords: [
     "high ticket lead generation",
     "client acquisition system",
@@ -54,13 +54,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: site.url,
     siteName: "QualifiedLeadsX™",
-    title: "QualifiedLeadsX™ — High-Ticket Client Acquisition System",
+    title: "QualifiedLeadsX™ - High-Ticket Client Acquisition System",
     description:
       "Done-for-you client acquisition for high-ticket coaches, consultants & service providers. $100K+ months. You own everything. 90-day guarantee.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "QualifiedLeadsX™ — High-Ticket Client Acquisition System",
+    title: "QualifiedLeadsX™ - High-Ticket Client Acquisition System",
     description:
       "Done-for-you client acquisition for high-ticket coaches, consultants & service providers. $100K+ months. You own everything. 90-day guarantee.",
   },

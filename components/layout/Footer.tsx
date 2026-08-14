@@ -145,15 +145,6 @@ export function Footer() {
                   {site.email}
                 </a>
               </li>
-              <li>
-                <a
-                  href={`tel:${site.phone.replace(/[^+\d]/g, "")}`}
-                  className="inline-flex items-center gap-2 text-mist transition-colors hover:text-lime"
-                >
-                  <Phone className="h-4 w-4" />
-                  {site.phone}
-                </a>
-              </li>
             </ul>
             <a
               href={site.bookCallUrl}

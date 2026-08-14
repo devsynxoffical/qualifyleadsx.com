@@ -57,19 +57,21 @@ function SpotlightCard({
 }
 
 const revealVariants = {
-  hidden: { y: 60, scale: 0.96, opacity: 0, filter: "blur(8px)" },
-  visible: { y: 0, scale: 1, opacity: 1, filter: "blur(0px)" },
+  hidden: { y: 36, opacity: 0 },
+  visible: { y: 0, opacity: 1 },
 };
 
-export function Different() {
-  const [featured, ...rest] = differentiators;
-  const FeaturedIcon = featured.icon;
-  const sectionRef = useRef<HTMLElement>(null);
-  
-  const { scrollYProgress } = useScroll({ target: sectionRef, offset: ["start end", "end start"] });
-  const parallaxY1 = useTransform(scrollYProgress, [0, 1], [30, -30]);
-  const parallaxY2 = useTransform(scrollYProgress, [0, 1], [50, -50]);
+const categoryLabels = [
+  "Core Differentiator",
+  "Qualification & Filtering",
+  "Automation & Nurturing",
+  "100% Asset Ownership",
+  "Revenue & ROAS Focus",
+  "Risk Reversal Guarantee",
+  "Dedicated Partnership",
+];
 
+export function Different() {
   return (
     <Section id="different" className="relative overflow-hidden bg-[#040c07]" container={false}>
       {/* Background aurora blobs & grid */}
@@ -86,7 +88,7 @@ export function Different() {
         />
       </div>
 
-      <div className="container-x relative z-10" ref={sectionRef}>
+      <div className="container-x relative z-10">
         <SectionHeading
           eyebrow="What makes us different"
           title={
@@ -97,72 +99,55 @@ export function Different() {
               </em>
             </>
           }
-              <div className="shrink-0 self-start">
-                <div className="relative flex h-20 w-20 items-center justify-center rounded-3xl border border-lime/25 bg-lime/[0.08] sm:h-24 sm:w-24">
-                  <FeaturedIcon className="h-10 w-10 text-lime sm:h-12 sm:w-12" strokeWidth={1.5} />
-                  {/* pulsing ring */}
-                  <span className="absolute inset-0 animate-ping rounded-3xl bg-lime/10 [animation-duration:2.5s]" />
-                </div>
-              </div>
+          subtitle="Unlike traditional marketing agencies, we handle every step of your customer journey - from attracting the right prospects, to qualifying them, to nurturing them, to getting them booked onto your calendar."
+        />
 
-              {/* Right: text */}
-              <div className="flex-1">
-                <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-lime">
-                  01 — Core Differentiator
-                </div>
-                <h3 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
-                  {featured.title}
-                </h3>
-                <p className="mt-4 max-w-2xl text-base leading-relaxed text-mist">
-                  {featured.body}
-                </p>
-              </div>
-            </div>
-
-            {/* bottom shine line */}
-            <span className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-lime/40 to-transparent" />
-          </SpotlightCard>
-        </Reveal>
-
-        {/* ── 5-card grid ── */}
-        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {rest.map((d, i) => {
+        {/* ── All 7 Differentiator Cards (Unified Design) ── */}
+        <div className="mt-12 flex flex-col gap-6 sm:gap-8">
+          {differentiators.map((d, i) => {
             const Icon = d.icon;
-            const gradient = accentColors[(i + 1) % accentColors.length];
+            const category = categoryLabels[i] || "System Component";
+
             return (
-              <Reveal key={d.title} delay={(i % 3) * 0.07} y={32}>
-                <SpotlightCard className="h-full p-7">
-                  <div className="flex items-start gap-4">
-                    {/* numbered icon badge */}
-                    <div className="relative shrink-0">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.05] text-lime transition-all duration-500 group-hover:border-lime/30 group-hover:bg-lime/10 group-hover:-translate-y-1 group-hover:shadow-[0_8px_20px_-6px_rgba(201,242,107,0.25)]">
-                        <Icon className="h-5 w-5" strokeWidth={1.75} />
+              <motion.div
+                key={d.title}
+                variants={revealVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
+              >
+                <SpotlightCard className="p-8 sm:p-12 lg:p-14">
+                  {/* Pill Badge */}
+                  <div className="absolute right-6 top-6 flex h-8 w-16 items-center justify-center rounded-full border border-lime/20 bg-black/40 font-mono text-xs font-bold text-lime shadow-[0_0_15px_rgba(201,242,107,0.1)] transition-colors duration-500 group-hover:border-lime/40 group-hover:bg-black/60 group-hover:text-lime-soft sm:right-8 sm:top-8">
+                    0{i + 1}
+                  </div>
+
+                  <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-14">
+                    {/* Icon Container */}
+                    <div className="shrink-0 self-start lg:self-center">
+                      <div className="relative flex h-20 w-20 items-center justify-center rounded-2xl border border-lime/20 bg-lime/[0.06] shadow-[inset_0_0_20px_rgba(201,242,107,0.05)] transition-transform duration-500 group-hover:scale-[1.05] group-hover:rotate-[4deg] group-hover:border-lime/40 group-hover:bg-lime/[0.1] sm:h-24 sm:w-24">
+                        {/* Pulsing background glow behind icon */}
+                        <span className="absolute inset-0 animate-pulse rounded-2xl bg-lime/10 [animation-duration:3s]" />
+                        <Icon className="relative z-10 h-10 w-10 text-lime sm:h-12 sm:w-12" strokeWidth={1.75} />
                       </div>
-                      {/* number badge */}
-                      <span
-                        className={cn(
-                          "absolute -right-1.5 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br text-[9px] font-bold text-white",
-                          gradient
-                        )}
-                      >
-                        0{i + 2}
-                      </span>
                     </div>
 
-                    <div className="flex-1 pt-0.5">
-                      <h3 className="text-[15px] font-semibold leading-snug tracking-tight text-white">
+                    {/* Text Content */}
+                    <div className="flex-1 pr-12 lg:pr-16">
+                      <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-lime/20 bg-lime/[0.04] px-4 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-lime sm:text-xs">
+                        0{i + 1} - {category}
+                      </div>
+                      <h3 className="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl text-balance">
                         {d.title}
                       </h3>
-                      <p className="mt-2 text-[13px] leading-relaxed text-mist/80">
+                      <p className="mt-4 text-base leading-relaxed text-mist sm:text-lg">
                         {d.body}
                       </p>
                     </div>
                   </div>
-
-                  {/* hover bottom bar */}
-                  <span className="pointer-events-none absolute inset-x-7 bottom-0 h-px origin-left scale-x-0 bg-gradient-to-r from-lime/60 to-transparent transition-transform duration-500 group-hover:scale-x-100" />
                 </SpotlightCard>
-              </Reveal>
+              </motion.div>
             );
           })}
         </div>

@@ -55,7 +55,7 @@ export function ClientSuccess() {
             <em className="font-semibold not-italic text-lime">the success of our clients.</em>
           </>
         }
-        subtitle="Booked calendars, paid invoices, closed deals. Every screenshot below is real client output — not marketing mockups."
+        subtitle="Booked calendars, paid invoices, closed deals. Every screenshot below is real client output - not marketing mockups."
       />
 
       {/* Masonry gallery */}

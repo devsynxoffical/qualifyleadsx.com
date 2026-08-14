@@ -19,7 +19,7 @@ export function LogoBar() {
         Trusted by clients across 30+ industries
       </p>
 
-      {/* marquee track — duplicated for seamless loop */}
+      {/* marquee track - duplicated for seamless loop */}
       <div className="flex overflow-hidden">
         <div className="flex animate-marquee gap-8 pr-8 will-change-transform items-center sm:gap-12 sm:pr-12">
           {[...logos, ...logos].map((logo, i) => (

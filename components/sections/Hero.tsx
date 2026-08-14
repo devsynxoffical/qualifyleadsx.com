@@ -338,7 +338,7 @@ export function Hero() {
 
             <p className="hero-fade mt-7 max-w-xl text-pretty text-[1rem] leading-relaxed text-mist sm:text-lg">
               We install a done-for-you funnel system for high-ticket coaches, consultants &amp;
-              service providers — pre-selling prospects so only{" "}
+              service providers - pre-selling prospects so only{" "}
               <span className="text-fog">qualified buyers reach your calendar</span>. No cold
               outreach. No guessing.
             </p>

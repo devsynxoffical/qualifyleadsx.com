@@ -41,7 +41,7 @@ export function Reel() {
             <em className="font-semibold not-italic text-lime">Neither does your pipeline.</em>
           </>
         }
-        subtitle="One constant in every install: motion. Prospects are being warmed, qualified and booked into your calendar around the clock — whether you're watching or not."
+        subtitle="One constant in every install: motion. Prospects are being warmed, qualified and booked into your calendar around the clock - whether you're watching or not."
       />
 
       <Reveal>
@@ -58,7 +58,7 @@ export function Reel() {
             onPlay={() => setPlaying(true)}
             onPause={() => setPlaying(false)}
             onLoadedData={() => setReady(true)}
-            aria-label="Sea storm — the system in motion"
+            aria-label="Sea storm - the system in motion"
           />
 
           {/* loading shimmer until video ready */}
@@ -112,7 +112,7 @@ export function Reel() {
 
       <Reveal delay={0.12}>
         <p className="mx-auto mt-8 max-w-2xl text-center text-sm leading-relaxed text-dim">
-          The sea is your pipeline — always moving, never still. The system pre-sells, books and
+          The sea is your pipeline - always moving, never still. The system pre-sells, books and
           confirms while you focus on the close.
         </p>
       </Reveal>

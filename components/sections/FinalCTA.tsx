@@ -68,7 +68,7 @@ export function FinalCTA() {
         <Reveal delay={0.15}>
           <p className="mx-auto mt-7 max-w-xl text-pretty text-lg leading-relaxed text-mist">
             Stop guessing. Stop relying on referrals. Stop switching agencies. Install a complete
-            system that attracts, qualifies, nurtures and books premium clients — so you can focus
+            system that attracts, qualifies, nurtures and books premium clients - so you can focus
             on closing deals and scaling your business.
           </p>
         </Reveal>

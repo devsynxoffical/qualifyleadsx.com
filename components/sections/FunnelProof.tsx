@@ -105,7 +105,7 @@ export function FunnelProof() {
 
   const lightboxItems: LightboxItem[] = funnelProofs.map((p) => ({
     src: p.src,
-    title: `${p.name} — ${p.niche}`,
+    title: `${p.name} - ${p.niche}`,
     w: 800,
     h: 1689,
   }));
@@ -125,7 +125,7 @@ export function FunnelProof() {
             <em className="font-semibold not-italic text-lime">see what our clients achieved.</em>
           </>
         }
-        subtitle="Revenue screenshots, Meta Ads dashboards, case studies and success stories from funnels we've installed across different niches — the same system, proven over and over."
+        subtitle="Revenue screenshots, Meta Ads dashboards, case studies and success stories from funnels we've installed across different niches - the same system, proven over and over."
       />
 
       {/* Stat strip */}
@@ -157,7 +157,7 @@ export function FunnelProof() {
               <div className="relative aspect-[9/19] overflow-hidden bg-ink">
                 <Image
                   src={p.src}
-                  alt={`${p.name} — ${p.niche} funnel screenshot`}
+                  alt={`${p.name} - ${p.niche} funnel screenshot`}
                   fill
                   sizes="(min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"
                   className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
@@ -213,7 +213,7 @@ export function FunnelProof() {
       <Reveal delay={0.1}>
         <p className="mx-auto mt-10 max-w-xl text-center text-xs leading-relaxed text-dim">
           Screenshots are from real client funnels installed by QualifiedLeadsX™. Individual results
-          vary — every funnel below uses the exact same system we would install for you.
+          vary - every funnel below uses the exact same system we would install for you.
         </p>
       </Reveal>
     </Section>

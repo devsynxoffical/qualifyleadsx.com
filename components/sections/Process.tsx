@@ -15,7 +15,7 @@ export function Process() {
             <em className="font-semibold not-italic text-lime">client acquisition process.</em>
           </>
         }
-        subtitle="One complete system. Eight proven steps — from market research to premium clients on your calendar. Everything handled for you."
+        subtitle="One complete system. Eight proven steps - from market research to premium clients on your calendar. Everything handled for you."
       />
 
       <div className="relative">

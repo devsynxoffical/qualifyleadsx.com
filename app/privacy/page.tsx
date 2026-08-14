@@ -20,7 +20,7 @@ export default function PrivacyPage() {
       <h2>2. How We Use Your Information</h2>
       <p>
         We use your information to respond to enquiries, schedule strategy calls, deliver the
-        services you request, improve our website, and — where you have consented — send relevant
+        services you request, improve our website, and - where you have consented - send relevant
         updates about QualifiedLeadsX™.
       </p>
 

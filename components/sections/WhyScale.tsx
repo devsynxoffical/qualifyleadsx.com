@@ -36,7 +36,7 @@ export function WhyScale() {
               <X className="h-5 w-5 shrink-0 text-lime" />
               <p className="text-sm text-mist">
                 At <span className="font-semibold text-fog">QualifiedLeadsX™</span>, we build one
-                complete ecosystem where every part works together — from the first click to a{" "}
+                complete ecosystem where every part works together - from the first click to a{" "}
                 <span className="font-semibold text-lime">qualified client sitting on your calendar.</span>
               </p>
             </div>

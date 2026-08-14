@@ -8,7 +8,7 @@ interface IconProps {
   size?: number;
 }
 
-/* Offer Positioning — Target & Compass pulse */
+/* Offer Positioning - Target & Compass pulse */
 export function MotionOfferIcon({ className, size = 28 }: IconProps) {
   return (
     <div className={cn("relative flex items-center justify-center text-lime", className)}>
@@ -33,7 +33,7 @@ export function MotionOfferIcon({ className, size = 28 }: IconProps) {
   );
 }
 
-/* Messaging Strategy — Animated sound waves */
+/* Messaging Strategy - Animated sound waves */
 export function MotionMessagingIcon({ className, size = 28 }: IconProps) {
   return (
     <div className={cn("relative flex items-center justify-center text-lime", className)}>
@@ -64,7 +64,7 @@ export function MotionMessagingIcon({ className, size = 28 }: IconProps) {
   );
 }
 
-/* Meta Ads — Growing bar chart with spark line */
+/* Meta Ads - Growing bar chart with spark line */
 export function MotionMetaAdsIcon({ className, size = 28 }: IconProps) {
   return (
     <div className={cn("relative flex items-center justify-center text-lime", className)}>
@@ -89,7 +89,7 @@ export function MotionMetaAdsIcon({ className, size = 28 }: IconProps) {
   );
 }
 
-/* Ad Creatives — Rotating magic palette spark */
+/* Ad Creatives - Rotating magic palette spark */
 export function MotionCreativesIcon({ className, size = 28 }: IconProps) {
   return (
     <div className={cn("relative flex items-center justify-center text-lime", className)}>
@@ -111,7 +111,7 @@ export function MotionCreativesIcon({ className, size = 28 }: IconProps) {
   );
 }
 
-/* Landing Pages — Floating browser window */
+/* Landing Pages - Floating browser window */
 export function MotionLandingIcon({ className, size = 28 }: IconProps) {
   return (
     <div className={cn("relative flex items-center justify-center text-lime", className)}>
@@ -136,7 +136,7 @@ export function MotionLandingIcon({ className, size = 28 }: IconProps) {
   );
 }
 
-/* Sales Funnel — Pulsing stream funnel */
+/* Sales Funnel - Pulsing stream funnel */
 export function MotionFunnelIcon({ className, size = 28 }: IconProps) {
   return (
     <div className={cn("relative flex items-center justify-center text-lime", className)}>
@@ -157,7 +157,7 @@ export function MotionFunnelIcon({ className, size = 28 }: IconProps) {
   );
 }
 
-/* CRM Setup — Database node connection */
+/* CRM Setup - Database node connection */
 export function MotionCrmIcon({ className, size = 28 }: IconProps) {
   return (
     <div className={cn("relative flex items-center justify-center text-lime", className)}>
@@ -180,7 +180,7 @@ export function MotionCrmIcon({ className, size = 28 }: IconProps) {
   );
 }
 
-/* AI Automations — AI Bot eye & circuit glow */
+/* AI Automations - AI Bot eye & circuit glow */
 export function MotionAiIcon({ className, size = 28 }: IconProps) {
   return (
     <div className={cn("relative flex items-center justify-center text-lime", className)}>
@@ -205,7 +205,7 @@ export function MotionAiIcon({ className, size = 28 }: IconProps) {
   );
 }
 
-/* Email Sequences — Envelope open & float */
+/* Email Sequences - Envelope open & float */
 export function MotionEmailIcon({ className, size = 28 }: IconProps) {
   return (
     <div className={cn("relative flex items-center justify-center text-lime", className)}>
@@ -226,7 +226,7 @@ export function MotionEmailIcon({ className, size = 28 }: IconProps) {
   );
 }
 
-/* Qualification — Shield checkmark glow */
+/* Qualification - Shield checkmark glow */
 export function MotionQualificationIcon({ className, size = 28 }: IconProps) {
   return (
     <div className={cn("relative flex items-center justify-center text-lime", className)}>
@@ -271,7 +271,7 @@ export function MotionCalendarIcon({ className, size = 28 }: IconProps) {
   );
 }
 
-/* Optimization — Trending up rocket */
+/* Optimization - Trending up rocket */
 export function MotionOptimizationIcon({ className, size = 28 }: IconProps) {
   return (
     <div className={cn("relative flex items-center justify-center text-lime", className)}>

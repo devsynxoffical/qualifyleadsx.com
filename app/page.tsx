@@ -33,6 +33,7 @@ export default function Home() {
       <WhyScale />
       <Different />
       <FunnelProof />
+      <EverythingIncluded />
       <ClientSuccess />
       <Process />
       <CTABanner
@@ -45,7 +46,6 @@ export default function Home() {
           </>
         }
       />
-      <EverythingIncluded />
       <Training />
       <Industries />
       <Guarantee />

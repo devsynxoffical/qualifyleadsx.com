@@ -17,7 +17,7 @@ const points = [
   {
     icon: Timer,
     title: "Free 30-minute call",
-    text: "A focused audit of your current offer, traffic and sales process — not a sales pitch.",
+    text: "A focused audit of your current offer, traffic and sales process - not a sales pitch.",
   },
   {
     icon: Sparkles,
@@ -47,7 +47,7 @@ export default function BookYourCallPage() {
               Tell us about your business and we&apos;ll show you the exact same client acquisition
               system that has generated{" "}
               <span className="font-semibold text-fog">$100K+ months</span> across different
-              niches — done for you, from funnel to follow-up.
+              niches - done for you, from funnel to follow-up.
             </p>
 
             <div className="mt-10 flex flex-col gap-4">

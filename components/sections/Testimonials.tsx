@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { Play, ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
+import { Play, Pause, ArrowLeft, ArrowRight, Star } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/Section";
-import { Reveal } from "@/components/ui/Reveal";
 import { testimonialVideos } from "@/lib/media";
 import { cn } from "@/lib/utils";
 
@@ -27,6 +27,7 @@ export function Testimonials() {
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.load();
+      setIsPlaying(false);
     }
   }, [currentIndex]);
 
@@ -42,125 +43,146 @@ export function Testimonials() {
   };
 
   return (
-    <Section id="testimonials" className="bg-ink overflow-hidden">
+    <Section id="testimonials" className="relative overflow-hidden bg-[#040c07]">
       <SectionHeading
-        eyebrow="Client testimonials"
+        eyebrow="Client results"
         title={
           <>
             Hear it from{" "}
-            <em className="font-semibold not-italic text-lime">clients who booked out.</em>
+            <em className="font-semibold not-italic text-lime">
+              our clients.
+            </em>
           </>
         }
-        subtitle="Watch real clients walk through the system we installed — the results, the process and what changed for their business."
+        subtitle="Real agency owners sharing their actual results with the QualifiedLeadsX system."
       />
 
-      <Reveal y={40} className="w-full">
-        <div className="relative mx-auto mt-12 w-full max-w-[1100px] rounded-[32px] border border-line bg-panel p-4 sm:p-6 shadow-soft md:p-8">
+      {/* ── Minimalist Testimonial Showcase ── */}
+      <div className="mx-auto mt-8 max-w-5xl">
+        <div className="grid gap-10 lg:grid-cols-[300px_1fr] lg:gap-14 items-center">
           
-          <div className="grid gap-8 lg:grid-cols-[1fr_1.5fr] lg:gap-16 items-center">
-            
-            {/* Left: Video Player */}
-            <div className="relative aspect-[9/16] w-full max-w-[320px] mx-auto overflow-hidden rounded-[24px] border border-line-strong bg-black shadow-2xl group cursor-pointer" onClick={togglePlay}>
-              <video
-                ref={videoRef}
-                src={currentVideo.src}
-                poster={currentVideo.poster}
-                playsInline
-                controls={isPlaying}
-                className={cn(
-                  "h-full w-full object-cover transition-opacity duration-700",
-                  isPlaying ? "opacity-100" : "opacity-80 group-hover:opacity-100"
-                )}
-                onPlay={() => setIsPlaying(true)}
-                onPause={() => setIsPlaying(false)}
-                onEnded={() => setIsPlaying(false)}
-              />
-              
-              {!isPlaying && (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-ink transition-transform duration-300 group-hover:scale-110 shadow-xl pl-1">
-                    <Play className="h-7 w-7 fill-current" />
-                  </div>
-                </div>
+          {/* Left: Minimal Video Frame */}
+          <div 
+            className="group relative aspect-[9/16] w-full max-w-[300px] mx-auto overflow-hidden rounded-3xl border border-white/10 bg-black cursor-pointer shadow-2xl transition-all duration-500 hover:border-lime/40"
+            onClick={togglePlay}
+          >
+            <video
+              ref={videoRef}
+              src={`${currentVideo.src}#t=0.001`}
+              preload="metadata"
+              playsInline
+              className={cn(
+                "h-full w-full object-cover transition-opacity duration-500",
+                isPlaying ? "opacity-100" : "opacity-85 group-hover:opacity-100"
               )}
+              onPlay={() => setIsPlaying(true)}
+              onPause={() => setIsPlaying(false)}
+              onEnded={() => setIsPlaying(false)}
+            />
 
-              {!isPlaying && currentVideo.duration && (
-                <div className="absolute bottom-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-black/70 px-3 py-1.5 text-[11px] font-medium text-white backdrop-blur-md">
-                  Watch the story · {currentVideo.duration}
+            {!isPlaying && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black/30 backdrop-blur-[2px] transition-all duration-300 group-hover:bg-black/10">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white backdrop-blur-md transition-transform duration-300 group-hover:scale-110 group-hover:bg-lime group-hover:text-black group-hover:border-lime pl-0.5">
+                  <Play className="h-6 w-6 fill-current" />
                 </div>
-              )}
-            </div>
+              </div>
+            )}
 
-            {/* Right: Testimonial Details */}
-            <div className="flex flex-col justify-center text-left py-4 sm:py-8">
-              <span className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-lime">
-                — Featured Testimonial
+            {isPlaying && (
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-black/70 text-white backdrop-blur-md">
+                  <Pause className="h-5 w-5" />
+                </div>
+              </div>
+            )}
+
+            {/* Bottom duration label */}
+            <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[11px] font-mono font-medium text-white/80">
+              <span className="rounded-full bg-black/60 px-3 py-1 backdrop-blur-md border border-white/10">
+                {currentVideo.name}
               </span>
-              
-              <h3 className="mt-8 text-[clamp(1.4rem,3vw,2.2rem)] leading-[1.3] text-fog font-medium italic">
-                {currentVideo.quote}
-              </h3>
+              <span className="rounded-full bg-lime/20 text-lime px-2.5 py-1 backdrop-blur-md border border-lime/30 font-bold">
+                {currentVideo.duration}
+              </span>
+            </div>
+          </div>
 
-              <div className="mt-10 flex flex-col gap-6 sm:flex-row sm:items-center justify-between border-t border-line/50 pt-8">
-                <div>
-                  <div className="flex items-center gap-1 text-amber">
+          {/* Right: Minimalist Typography & Controls */}
+          <div className="flex flex-col justify-between min-h-[320px]">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentIndex}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+                className="space-y-6"
+              >
+                {/* Monospace Indicator */}
+                <div className="flex items-center gap-2 font-mono text-xs text-lime">
+                  <span className="font-bold">0{currentIndex + 1}</span>
+                  <span className="text-white/30">/</span>
+                  <span className="text-white/40">0{testimonialVideos.length}</span>
+                </div>
+
+                {/* Quote */}
+                <p className="text-2xl sm:text-3xl font-medium leading-snug tracking-tight text-white text-pretty">
+                  {currentVideo.quote}
+                </p>
+
+                {/* Stars + Name + Role */}
+                <div className="pt-4 space-y-2">
+                  <div className="flex items-center gap-1 text-lime">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <Star key={i} className="h-4 w-4 fill-current" />
                     ))}
-                    <span className="ml-1.5 font-mono text-xs font-bold text-fog">5.0</span>
                   </div>
-                  <div className="mt-4 text-lg font-bold text-fog">{currentVideo.name}</div>
-                  <div className="mt-1 text-sm text-dim">{currentVideo.role}</div>
+                  <h4 className="text-xl font-bold text-white tracking-tight">{currentVideo.name}</h4>
+                  <p className="text-sm text-mist">{currentVideo.role}</p>
                 </div>
+              </motion.div>
+            </AnimatePresence>
 
-                <div className="flex items-center gap-3 self-start sm:self-auto">
+            {/* Minimal Nav Controls */}
+            <div className="mt-8 flex items-center justify-between border-t border-white/10 pt-6">
+              <div className="flex gap-2">
+                {testimonialVideos.map((_, idx) => (
                   <button
-                    onClick={goPrev}
-                    aria-label="Previous testimonial"
-                    className="flex h-12 w-12 items-center justify-center rounded-full border border-line bg-ink text-fog transition-all hover:border-lime hover:text-lime"
-                  >
-                    <ChevronLeft className="h-5 w-5" />
-                  </button>
-                  <button
-                    onClick={goNext}
-                    aria-label="Next testimonial"
-                    className="flex h-12 w-12 items-center justify-center rounded-full border border-line bg-ink text-fog transition-all hover:border-lime hover:text-lime"
-                  >
-                    <ChevronRight className="h-5 w-5" />
-                  </button>
-                </div>
+                    key={idx}
+                    onClick={() => {
+                      setCurrentIndex(idx);
+                      setIsPlaying(false);
+                    }}
+                    className={cn(
+                      "h-1 rounded-full transition-all duration-300",
+                      idx === currentIndex ? "w-8 bg-lime" : "w-3 bg-white/20 hover:bg-white/40"
+                    )}
+                    aria-label={`Go to slide ${idx + 1}`}
+                  />
+                ))}
+              </div>
+
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={goPrev}
+                  aria-label="Previous testimonial"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white transition-all hover:border-lime hover:bg-lime hover:text-black"
+                >
+                  <ArrowLeft className="h-5 w-5" />
+                </button>
+                <button
+                  onClick={goNext}
+                  aria-label="Next testimonial"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white transition-all hover:border-lime hover:bg-lime hover:text-black"
+                >
+                  <ArrowRight className="h-5 w-5" />
+                </button>
               </div>
             </div>
-            
-          </div>
-          
-          {/* Progress Indicators */}
-          <div className="mt-6 flex justify-center gap-2 sm:mt-10">
-            {testimonialVideos.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => {
-                  setCurrentIndex(idx);
-                  setIsPlaying(false);
-                }}
-                className={cn(
-                  "h-1.5 rounded-full transition-all duration-500",
-                  idx === currentIndex ? "w-8 bg-lime" : "w-2 bg-line-strong hover:bg-mist"
-                )}
-                aria-label={`Go to slide ${idx + 1}`}
-              />
-            ))}
           </div>
 
         </div>
-      </Reveal>
-      
-      <Reveal delay={0.2}>
-        <p className="mx-auto mt-12 max-w-2xl text-center text-sm leading-relaxed text-dim">
-          Every result above is from a real engagement. Your results depend on your offer, market
-          and follow-through — which is exactly what we run for you.
-        </p>
-      </Reveal>
+      </div>
     </Section>
   );
 }

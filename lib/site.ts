@@ -14,7 +14,7 @@ export const site = {
     addressCountry: "US",
   },
   description:
-    "QualifiedLeadsX™ installs a done-for-you client acquisition funnel system for high-ticket coaches, consultants and service providers — generating $100K+ months of qualified sales calls on your calendar.",
+    "QualifiedLeadsX™ installs a done-for-you client acquisition funnel system for high-ticket coaches, consultants and service providers - generating $100K+ months of qualified sales calls on your calendar.",
   socials: [
     { label: "Facebook", href: "https://www.facebook.com/qualifiedleadsx/" },
     { label: "Instagram", href: "https://www.instagram.com/qualifiedleadsx/" },

@@ -128,7 +128,7 @@ export function Training() {
 
       <Reveal delay={0.2}>
         <p className="mx-auto mt-8 max-w-2xl text-center text-sm leading-relaxed text-dim">
-          Training is included with every install — new lessons added as we roll out upgrades to
+          Training is included with every install - new lessons added as we roll out upgrades to
           the system.
         </p>
       </Reveal>

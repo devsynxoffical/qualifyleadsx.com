@@ -52,7 +52,7 @@ function hexToVec3(hex: string) {
 }
 
 /* ============================================================
-   Shared GLSL — 3D Simplex noise
+   Shared GLSL - 3D Simplex noise
    ============================================================ */
 const SNOISE = /* glsl */ `
 vec4 permute(vec4 x){return mod(((x*34.0)+1.0)*x, 289.0);}
@@ -593,21 +593,21 @@ export function FlowWave() {
             <div ref={headlineWrapRef}>
               <h1 className="max-w-4xl text-balance font-semibold tracking-[-0.03em] text-fog">
                 <span className="block text-[clamp(1.2rem,2.4vw,1.9rem)] leading-[1.22]">
-                  We will install our proprietary{" "}
-                  <em className="text-gradient-lime not-italic">QualifiedLeadsX™</em> client
-                  acquisition system into your business.
+                  We Will Install Our Proprietary{" "}
+                  <em className="text-gradient-lime not-italic">QualifiedLeadsX™</em> Client
+                  Acquisition System Into Your Business.
                 </span>
                 <span className="mt-2 block text-gradient-lime text-[clamp(1.9rem,5.6vw,4.8rem)] font-bold leading-[1.02]">
-                  Double your revenue within the next 90 days
+                  Double Your Revenue Within The Next 90 Days
                 </span>
                 <span className="mt-3 block text-[clamp(0.95rem,1.6vw,1.25rem)] font-medium leading-[1.35] text-fog drop-shadow-md">
-                  Or we&apos;ll continue working for you at{" "}
-                  <em className="text-lime not-italic drop-shadow-[0_0_8px_rgba(201,242,107,0.5)]">no management fee</em> until we
-                  do.
+                  Or We&apos;ll Continue Working For You At{" "}
+                  <em className="text-lime not-italic drop-shadow-[0_0_8px_rgba(201,242,107,0.5)]">No Management Fee</em> Until We
+                  Do.
                 </span>
               </h1>
               <p className="mx-auto mt-4 max-w-xl text-pretty text-sm font-medium leading-relaxed text-fog drop-shadow-md sm:text-[1rem]">
-                Done-for-you client acquisition from Meta Ads to the booked call.
+                Done-For-You Client Acquisition From Meta Ads To The Booked Call.
               </p>
             </div>
 
@@ -622,7 +622,7 @@ export function FlowWave() {
               <div className="pointer-events-auto inline-flex items-center gap-2.5 rounded-full border border-lime/25 bg-ink/70 px-5 py-3.5 backdrop-blur-sm">
                 <ShieldCheck className="h-4 w-4 shrink-0 text-mint" />
                 <span className="text-xs font-medium text-mist sm:text-[13px]">
-                  Backed by a <span className="text-fog">written agreement</span>
+                  Backed By A <span className="text-fog">Written Agreement</span>
                 </span>
               </div>
             </div>
@@ -631,14 +631,14 @@ export function FlowWave() {
               ref={statRef}
               className="mt-4 font-mono text-[9px] uppercase tracking-[0.28em] text-mint/80 sm:mt-6 sm:text-[11px]"
             >
-              Free 30-minute strategy call · No pressure · No obligation
+              Free 30-Minute Strategy Call · No Pressure · No Obligation
             </div>
           </div>
 
           <div className="h-10" />
         </div>
 
-        {/* stage 2 — the system */}
+        {/* stage 2 - the system */}
         <div
           ref={p2WrapRef}
           className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center"
@@ -653,8 +653,8 @@ export function FlowWave() {
               className="mx-auto mt-2.5 max-w-4xl text-balance text-[clamp(1.6rem,4.8vw,4.2rem)] font-bold leading-[1.04] tracking-[-0.03em] text-fog sm:mt-4"
               style={{ opacity: 0 }}
             >
-              The done-for-you{" "}
-              <em className="text-gradient-lime not-italic">client acquisition system</em>
+              The Done-For-You{" "}
+              <em className="text-gradient-lime not-italic">Client Acquisition System</em>
             </h2>
 
             <p
@@ -662,8 +662,8 @@ export function FlowWave() {
               className="mx-auto mt-2.5 max-w-2xl text-pretty text-sm text-fog sm:mt-4 sm:text-[1.05rem]"
               style={{ opacity: 0 }}
             >
-              We design, run and optimize the entire acquisition engine for you, from Meta Ads
-              to the booked call. You just take the calls.
+              We Design, Run And Optimize The Entire Acquisition Engine For You, From Meta Ads
+              To The Booked Call. You Just Take The Calls.
             </p>
 
             <div
@@ -697,7 +697,7 @@ export function FlowWave() {
                   className="group flex flex-col items-center justify-center rounded-2xl border border-lime/25 bg-[#07120a]/90 p-5 text-center shadow-[0_10px_30px_-10px_rgba(0,0,0,0.9)] backdrop-blur-md transition-all duration-300 hover:border-lime/50 hover:bg-[#0a1a0e]/95 sm:p-6"
                 >
                   <span className="inline-flex items-center rounded-full border border-lime/30 bg-lime/10 px-3 py-1 font-mono text-xs font-bold tracking-widest text-lime shadow-[0_0_12px_rgba(201,242,107,0.2)]">
-                    0{i + 1} — {s.title}
+                    0{i + 1} - {s.title}
                   </span>
                   <div className="mt-3 text-sm font-semibold leading-relaxed text-fog sm:text-[15px]">
                     {s.desc}

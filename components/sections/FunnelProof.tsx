@@ -168,11 +168,6 @@ export function FunnelProof() {
                     background: `linear-gradient(to top, rgba(2,22,12,0.85), transparent 45%)`,
                   }}
                 />
-                <span className="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full border border-line-strong bg-ink/70 px-2.5 py-1 font-mono text-[9px] uppercase tracking-widest text-fog backdrop-blur-md">
-                  <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: p.color }} />
-                  {p.niche}
-                </span>
-                
                 {/* Zoom Icon overlay */}
                 <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-ink/20 backdrop-blur-[1px]">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-lime text-ink shadow-[0_0_20px_rgba(201,242,107,0.4)]">

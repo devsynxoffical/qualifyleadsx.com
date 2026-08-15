@@ -36,6 +36,23 @@ const mastermindStats = [
   { value: "100%", label: "Direct Access to Growth Engineers" },
 ];
 
+const privateMasterminds = [
+  {
+    tag: "Audience Segmentation",
+    title: "Higher-Quality Calls at Lower CPL",
+    description: "The exact audience segmentation & qualification structure engineered to eliminate tire-kickers, lower cost per lead, and drive high-intent decision-makers to your calendar.",
+    url: "/mastermind/audience-segmentation",
+    badge: "Private Mastermind #01",
+  },
+  {
+    tag: "Hidden Facebook Interest",
+    title: "The Framework Behind 300–500 Qualified Calls",
+    description: "Deep dive into hidden Facebook interest targeting, ad creative rotation strategies, and direct-response offer angles that scaled client accounts to 300–500 booked strategy calls.",
+    url: "/mastermind/hidden-facebook-interest",
+    badge: "Private Mastermind #02",
+  },
+];
+
 const pillars = [
   {
     icon: Video,
@@ -180,6 +197,54 @@ export default function MastermindPage() {
       </section>
 
       <VSL />
+
+      {/* Private Masterminds Section */}
+      <Section id="private-masterminds" className="relative overflow-hidden bg-[#040c07] border-y border-line">
+        <SectionHeading
+          eyebrow="Exclusive case breakdowns"
+          title={
+            <>
+              Featured{" "}
+              <em className="font-semibold not-italic text-lime">Private Masterminds.</em>
+            </>
+          }
+          subtitle="Explore in-depth strategic breakdowns and frameworks shared exclusively inside the QualifiedLeadsX private collective."
+        />
+
+        <div className="mt-12 grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
+          {privateMasterminds.map((item, i) => (
+            <Reveal key={item.title} delay={i * 0.1}>
+              <div className="group relative flex flex-col justify-between h-full rounded-3xl border border-lime/20 bg-[#050e08] p-8 sm:p-10 backdrop-blur-xl shadow-[0_15px_40px_rgba(0,0,0,0.8)] transition-all duration-500 hover:border-lime/40 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(201,242,107,0.15)]">
+                <div>
+                  <div className="flex items-center justify-between">
+                    <span className="inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-3.5 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-lime">
+                      {item.tag}
+                    </span>
+                    <span className="font-mono text-xs text-mist/60 font-semibold">{item.badge}</span>
+                  </div>
+
+                  <h3 className="mt-6 text-2xl font-bold tracking-tight text-white group-hover:text-lime transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-relaxed text-mist">
+                    {item.description}
+                  </p>
+                </div>
+
+                <div className="mt-8 pt-6 border-t border-white/10 flex items-center justify-between">
+                  <a
+                    href={item.url}
+                    className="inline-flex items-center gap-2 font-semibold text-sm text-lime transition-all group-hover:translate-x-1"
+                  >
+                    Access Private Mastermind
+                    <ArrowUpRight className="h-4 w-4" />
+                  </a>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
 
       {/* Pillars Section */}
       <Section id="pillars" className="bg-[#040c07] border-y border-line">

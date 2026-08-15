@@ -15,8 +15,8 @@ export function WhatsAppWidget() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2.5 pointer-events-auto">
       {/* Interactive Tooltip Badge */}
       {showTooltip && (
-        <div className="group relative flex items-center gap-2.5 rounded-2xl border border-[#25D366]/40 bg-ink/90 px-4 py-2.5 shadow-[0_8px_32px_rgba(0,0,0,0.6)] backdrop-blur-xl transition-all duration-300 animate-in fade-in slide-in-from-bottom-3">
-          <div className="relative flex h-2.5 w-2.5">
+        <div className="group relative flex items-center gap-3 rounded-2xl border border-[#25D366]/40 bg-[#050e08]/95 px-4 py-3 shadow-[0_12px_40px_rgba(0,0,0,0.8)] backdrop-blur-xl transition-all duration-300 animate-in fade-in slide-in-from-bottom-3">
+          <div className="relative flex h-2.5 w-2.5 shrink-0">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#25D366] opacity-75" />
             <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#25D366]" />
           </div>
@@ -24,17 +24,22 @@ export function WhatsAppWidget() {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs font-semibold text-fog hover:text-[#25D366] transition-colors"
+            className="flex flex-col text-left"
           >
-            Chat with us on WhatsApp
+            <span className="text-xs font-bold text-white group-hover:text-[#25D366] transition-colors">
+              QualifiedLeadsX™ Support
+            </span>
+            <span className="text-[11px] font-medium text-mist/80">
+              Chat with our Growth Team on WhatsApp
+            </span>
           </a>
           <button
             type="button"
             onClick={() => setShowTooltip(false)}
             aria-label="Close tooltip"
-            className="ml-1 text-dim hover:text-fog transition-colors"
+            className="ml-2 text-mist/60 hover:text-white transition-colors"
           >
-            <X className="h-3.5 w-3.5" />
+            <X className="h-4 w-4" />
           </button>
         </div>
       )}

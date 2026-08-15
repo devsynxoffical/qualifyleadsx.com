@@ -7,6 +7,7 @@ import { NoiseOverlay } from "@/components/ui/NoiseOverlay";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
+import { EmailOptInWidget } from "@/components/ui/EmailOptInWidget";
 import { site } from "@/lib/site";
 
 const inter = Inter({
@@ -106,6 +107,7 @@ export default function RootLayout({
           </div>
         </SmoothScroll>
         <WhatsAppWidget />
+        <EmailOptInWidget />
       </body>
     </html>
   );

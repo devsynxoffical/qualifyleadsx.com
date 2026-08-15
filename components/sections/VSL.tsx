@@ -1,159 +1,129 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { motion } from "motion/react";
-import { Play, Pause, Volume2, VolumeX, Clock } from "lucide-react";
+import { Play, Clock, ShieldCheck, ArrowUpRight } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
 
+const YOUTUBE_ID = "e5za2tPu7ZI";
+
 export function VSL() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [started, setStarted] = useState(false);
-  const [playing, setPlaying] = useState(false);
-  const [muted, setMuted] = useState(true);
-  const [ready, setReady] = useState(false);
-
-  const start = () => {
-    const v = videoRef.current;
-    if (!v) return;
-    setStarted(true);
-    v.muted = true;
-    setMuted(true);
-    void v.play().catch(() => undefined);
-    setPlaying(true);
-  };
-
-  const togglePlay = () => {
-    const v = videoRef.current;
-    if (!v) return;
-    if (v.paused) {
-      void v.play();
-      setPlaying(true);
-    } else {
-      v.pause();
-      setPlaying(false);
-    }
-  };
-
-  const toggleMute = () => {
-    const v = videoRef.current;
-    if (!v) return;
-    v.muted = !v.muted;
-    setMuted(v.muted);
-  };
+  const [isPlaying, setIsPlaying] = useState(true);
 
   return (
-    <Section id="vsl" className="bg-ink">
-      <SectionHeading
-        eyebrow="Watch the system"
-        title={
-          <>
-            See exactly how{" "}
-            <em className="font-semibold not-italic text-lime">we build your pipeline.</em>
-          </>
-        }
-        subtitle="A short walkthrough of the QualifiedLeadsX™ client acquisition system, the exact steps we install for you and what a fully booked calendar looks like."
-      />
+    <Section id="vsl" className="relative overflow-hidden bg-[#040c07]">
+      {/* Background aurora blur */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime/[0.04] blur-[150px]" />
+      </div>
 
-      <Reveal>
-        <div className="group relative mx-auto max-w-5xl overflow-hidden rounded-3xl border border-line bg-panel shadow-soft">
-          <video
-            ref={videoRef}
-            src="/videos/vsl.mp4"
-            loop
-            playsInline
-            preload="auto"
-            className="aspect-video w-full object-cover"
-            onPlay={() => setPlaying(true)}
-            onPause={() => setPlaying(false)}
-            onLoadedData={() => setReady(true)}
-            aria-label="QualifiedLeadsX video sales letter"
-          />
+      <div className="container-x relative z-10">
+        <SectionHeading
+          eyebrow="Watch the system"
+          title={
+            <>
+              See exactly how{" "}
+              <em className="font-semibold not-italic text-lime">we build your pipeline.</em>
+            </>
+          }
+          subtitle="A short breakdown of the QualifiedLeadsX™ client acquisition system, the exact steps we install for you, and what a fully booked calendar looks like."
+        />
 
-          {/* loading shimmer until video ready */}
-          {!ready && (
-            <div className="absolute inset-0 flex items-center justify-center bg-ink">
-              <span className="h-10 w-10 animate-spin rounded-full border-2 border-line-strong border-t-lime" />
-            </div>
-          )}
-
-          {/* bottom fade for controls readability */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-ink/80 to-transparent" />
-
-          {/* poster / click-to-play */}
-          {!started && (
-            <button
-              type="button"
-              onClick={start}
-              aria-label="Play video sales letter"
-              className="absolute inset-0 flex flex-col items-center justify-center gap-5 bg-ink/50 backdrop-blur-[2px] transition-colors hover:bg-ink/40"
-            >
-              <motion.span
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4 }}
-                className="relative flex h-24 w-24 items-center justify-center rounded-full border border-lime/40 bg-lime/10 text-lime"
-              >
-                <span className="absolute inset-0 animate-pulse-ring rounded-full border border-lime/40" />
-                <Play className="ml-1 h-9 w-9 fill-current" />
-              </motion.span>
-              <span className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-ink/70 px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-fog backdrop-blur-md">
-                <Clock className="h-3.5 w-3.5 text-lime" />
-                Watch the full breakdown
+        <Reveal>
+          {/* ── Top VSL Announcement Strip ── */}
+          <div className="mb-6 flex justify-center">
+            <div className="inline-flex items-center gap-2.5 rounded-full border border-lime/30 bg-lime/10 px-5 py-2 font-mono text-xs font-bold text-lime shadow-[0_0_20px_rgba(201,242,107,0.15)]">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime opacity-75" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-lime" />
               </span>
-            </button>
-          )}
-
-          {/* centre play / pause */}
-          {started && (
-            <button
-              type="button"
-              onClick={togglePlay}
-              aria-label={playing ? "Pause video" : "Play video"}
-              className="absolute inset-0 flex items-center justify-center bg-transparent"
-            >
-              <motion.span
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: playing ? 0 : 1, scale: playing ? 0.9 : 1 }}
-                transition={{ duration: 0.25 }}
-                className="flex h-20 w-20 items-center justify-center rounded-full border border-line-strong bg-ink/60 text-fog backdrop-blur-md transition-colors hover:text-lime"
-              >
-                {playing ? <Pause className="h-7 w-7" /> : <Play className="ml-1 h-7 w-7" />}
-              </motion.span>
-            </button>
-          )}
-
-          {/* controls bar */}
-          {started && (
-            <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-4 px-5 py-4">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-lime">
-                Video sales letter
-              </span>
-              <button
-                type="button"
-                onClick={toggleMute}
-                aria-label={muted ? "Unmute video" : "Mute video"}
-                className="pointer-events-auto flex h-9 w-9 items-center justify-center rounded-full border border-line-strong bg-ink/60 text-mist backdrop-blur-md transition-colors hover:text-lime"
-              >
-                {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
-              </button>
+              VSL SYSTEM BREAKDOWN · 100% FREE MASTERCLASS
             </div>
-          )}
-        </div>
-      </Reveal>
+          </div>
 
-      <Reveal delay={0.12}>
-        <div className="mx-auto mt-9 flex max-w-2xl flex-col items-center gap-4 text-center">
-          <p className="text-sm leading-relaxed text-dim">
-            Still have questions after watching? Get every answer on a free strategy call.
-          </p>
-          <Button href={site.bookCallUrl} icon="up-right" ariaLabel="Book a free strategy call after watching the VSL">
-            Book Your Free Strategy Call
-          </Button>
-        </div>
-      </Reveal>
+          {/* ── Video Player Frame ── */}
+          <div className="group relative mx-auto max-w-5xl overflow-hidden rounded-[28px] border border-lime/20 bg-[#050e08] shadow-[0_20px_60px_rgba(0,0,0,0.8)]">
+            
+            {/* Top Masking Strip — Hides YouTube Title & Channel Bar */}
+            <div className="pointer-events-none absolute top-0 inset-x-0 z-20 h-16 sm:h-20 bg-gradient-to-b from-[#040c07] via-[#040c07]/95 to-transparent flex items-start justify-between px-6 pt-4">
+              <div className="flex items-center gap-2 font-mono text-[11px] font-bold text-lime">
+                <ShieldCheck className="h-4 w-4 text-lime" />
+                QualifiedLeadsX™ System Breakdown
+              </div>
+              <span className="rounded-full bg-lime/10 border border-lime/30 px-3 py-1 font-mono text-[10px] font-bold uppercase text-lime">
+                Official VSL
+              </span>
+            </div>
+
+            {/* YouTube Embed Container — Natural fit without zoom distortion */}
+            <div className="relative aspect-video w-full overflow-hidden bg-black">
+              {isPlaying ? (
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${YOUTUBE_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_ID}&rel=0&modestbranding=1&controls=1&showinfo=0&iv_load_policy=3&disablekb=0&enablejsapi=1`}
+                  title="QualifiedLeadsX Video Sales Letter"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="h-full w-full border-0"
+                />
+              ) : (
+                /* Click-to-Play Cover Overlay */
+                <div className="relative h-full w-full">
+                  <img
+                    src={`https://img.youtube.com/vi/${YOUTUBE_ID}/maxresdefault.jpg`}
+                    alt="QualifiedLeadsX VSL Cover"
+                    className="h-full w-full object-cover brightness-90 transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px] transition-colors duration-300 group-hover:bg-black/25" />
+
+                  <button
+                    type="button"
+                    onClick={() => setIsPlaying(true)}
+                    aria-label="Play video sales letter"
+                    className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-5 cursor-pointer"
+                  >
+                    <motion.span
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.4 }}
+                      className="relative flex h-20 w-20 items-center justify-center rounded-full border border-lime/40 bg-lime/20 text-lime shadow-[0_0_40px_rgba(201,242,107,0.4)] backdrop-blur-md transition-transform duration-300 group-hover:scale-110 sm:h-24 sm:w-24"
+                    >
+                      <span className="absolute inset-0 animate-ping rounded-full bg-lime/30 [animation-duration:2.5s]" />
+                      <Play className="ml-1 h-9 w-9 fill-current" />
+                    </motion.span>
+
+                    <span className="inline-flex items-center gap-2 rounded-full border border-lime/30 bg-black/80 px-5 py-2.5 font-mono text-xs font-bold uppercase tracking-widest text-white backdrop-blur-md transition-colors hover:border-lime hover:text-lime">
+                      <Clock className="h-4 w-4 text-lime" />
+                      Watch Full System Breakdown
+                    </span>
+                  </button>
+                </div>
+              )}
+            </div>
+
+            {/* Bottom Accent Shine */}
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-lime/50 to-transparent" />
+          </div>
+        </Reveal>
+
+        {/* ── Call to Action below Video ── */}
+        <Reveal delay={0.12}>
+          <div className="mx-auto mt-10 flex max-w-2xl flex-col items-center gap-4 text-center">
+            <p className="text-sm leading-relaxed text-mist">
+              Still have questions after watching? Get every answer on a free strategy call.
+            </p>
+            <a
+              href={site.bookCallUrl}
+              className="group inline-flex items-center gap-2 rounded-full bg-lime px-8 py-4 text-sm font-semibold text-ink shadow-[0_0_40px_-10px_var(--color-lime)] transition-all duration-300 hover:scale-105 hover:bg-lime-soft"
+            >
+              Book Your Free Strategy Call
+              <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+            </a>
+          </div>
+        </Reveal>
+      </div>
     </Section>
   );
 }

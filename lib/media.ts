@@ -10,12 +10,14 @@ export type TestimonialVideo = {
 };
 
 export type TrainingVideo = {
-  src: string;
-  poster: string;
+  src?: string;
+  youtubeId?: string;
+  poster?: string;
   title: string;
   label: string;
   description: string;
-  duration: string;
+  duration?: string;
+  link?: string;
 };
 
 const REVIEW_CDN =
@@ -56,27 +58,30 @@ export const testimonialVideos: TestimonialVideo[] = [
 
 export const trainingVideos: TrainingVideo[] = [
   {
-    src: "/training/DPHgI7fEuIA.mp4",
-    poster: "/training/DPHgI7fEuIA-poster.jpg",
-    title: "Training 01",
-    label: "Module 01",
-    description: "Placeholder description - replace with the training topic.",
-    duration: "7:51",
+    youtubeId: "Hy1M7WbookU",
+    poster: "https://img.youtube.com/vi/Hy1M7WbookU/maxresdefault.jpg",
+    title: "7 Days Paid Trial",
+    label: "Paid Trial Playbook",
+    description: "How to engineer a self-liquidating 7 Days Paid Trial front-end offer that converts cold traffic into high-ticket clients.",
+    duration: "Mastermind",
+    link: "/mastermind/7-days-paid-trial",
   },
   {
-    src: "/training/DQXUnRNkjR3.mp4",
-    poster: "/training/DQXUnRNkjR3-poster.jpg",
-    title: "Training 02",
-    label: "Module 02",
-    description: "Placeholder description - replace with the training topic.",
-    duration: "14:29",
+    youtubeId: "jjq9-FSD4iA",
+    poster: "https://img.youtube.com/vi/jjq9-FSD4iA/maxresdefault.jpg",
+    title: "Hidden Facebook Interest",
+    label: "300–500 Calls Framework",
+    description: "Uncovering uncompetitive interest pockets and deploying creative rotation to generate 300–500 pre-qualified calls.",
+    duration: "Mastermind",
+    link: "/mastermind/hidden-facebook-interest",
   },
   {
-    src: "/training/DVjcGrUEr1Y.mp4",
-    poster: "/training/DVjcGrUEr1Y-poster.jpg",
-    title: "Training 03",
-    label: "Module 03",
-    description: "Placeholder description - replace with the training topic.",
-    duration: "4:49",
+    youtubeId: "Nr1WIDiWPNA",
+    poster: "https://img.youtube.com/vi/Nr1WIDiWPNA/maxresdefault.jpg",
+    title: "Scaled LTO Funnel to $847K",
+    label: "$255K Spend to Near $1M Sales",
+    description: "Case study breakdown on scaling a Low-Ticket Offer (LTO) funnel to $847K in revenue with $255K in Meta ad spend.",
+    duration: "Case Study",
+    link: "/mastermind/lto-funnel-scale",
   },
 ];

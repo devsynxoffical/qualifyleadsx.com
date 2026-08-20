@@ -1,15 +1,15 @@
 import { Metadata } from "next";
 import {
   ArrowUpRight,
-  ShieldCheck,
   Target,
   Lock,
-  TrendingUp,
-  Zap,
+  Sparkles,
+  Layers,
+  DollarSign,
   HelpCircle,
   BarChart3,
-  Cpu,
-  RefreshCw,
+  Rocket,
+  ShieldCheck,
 } from "lucide-react";
 import { site } from "@/lib/site";
 import { Nav } from "@/components/layout/Nav";
@@ -19,100 +19,100 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
-  title: "Hidden Facebook Interest Mastermind | QualifiedLeadsX™",
+  title: "7 Days Paid Trial Mastermind | QualifiedLeadsX™",
   description:
-    "Private Mastermind Breakdown: The framework behind scaling to 300–500 qualified sales calls using hidden Facebook interest targeting and creative rotation.",
+    "Private Mastermind Breakdown: How to engineer a 7 Days Paid Trial front-end offer that converts cold Meta Ads traffic into paying users and high-ticket clients.",
 };
 
 const stats = [
-  { value: "500+", label: "Qualified Calls / Mo", sub: "Generated for high-ticket clients" },
-  { value: "3.2x", label: "Lower Cost Per Lead", sub: "Compared to broad interest ads" },
-  { value: "100+", label: "Ad Variations / Quarter", sub: "Automated creative engine" },
-  { value: "$250K+", label: "Monthly Ad Budget", sub: "Managed with zero bans/limits" },
+  { value: "112%", label: "Ad Spend Recoup (Day 1)", sub: "Self-liquidating front end" },
+  { value: "$19", label: "Optimal Trial Price Point", sub: "Low friction, high commitment" },
+  { value: "38%", label: "Trial to High-Ticket Upgrade", sub: "Backend conversion rate" },
+  { value: "$420K", label: "Front-End & Backend Sales", sub: "Generated across trial funnels" },
 ];
 
 const pillars = [
   {
-    icon: Target,
+    icon: DollarSign,
     number: "01",
-    title: "Graph API Hidden Interest Mining",
-    body: "Meta's standard Ads Manager interface displays only a fraction of targetable interests. We query Meta's hidden Graph API endpoints to extract thousands of uncompetitive interest categories where high-ticket buyers congregate.",
+    title: "Low-Friction Trial Offer Architecture",
+    body: "By packaging your high-value core methodology into a $7–$29 7-day trial, you drastically lower customer acquisition friction while guaranteeing that every lead has active credit card purchasing power.",
   },
   {
-    icon: RefreshCw,
+    icon: Target,
     number: "02",
-    title: "Dynamic Creative Rotation Engine",
-    body: "Ad fatigue kills high-ticket campaigns. Our creative rotation system deploys 40–100+ direct-response video hooks, headlines, and static angles to ensure prospects never see the same ad twice.",
+    title: "Instant Self-Liquidating Ad Spend",
+    body: "Front-end trial checkout fees immediately offset 80% to 150% of your daily Meta ad spend. This enables you to acquire paid leads and strategy calls at zero net customer acquisition cost.",
   },
   {
-    icon: TrendingUp,
+    icon: Layers,
     number: "03",
-    title: "Automated Spend Escalation Rules",
-    body: "We implement custom automated scaling rules that increase daily budgets in calculated micro-bursts based on CPA and ROAS performance—allowing rapid scaling without destroying campaign efficiency.",
+    title: "Trial-to-High-Ticket Conversion Runway",
+    body: "During the 7-day trial period, automated onboarding emails, SMS micro-doses, and value milestones walk trial users straight toward booking a $3,000–$10,000 high-ticket strategy session.",
+  },
+  {
+    icon: Sparkles,
+    number: "04",
+    title: "Algorithmic Buyer Pixel Training",
+    body: "Free lead opt-ins teach Meta&apos;s pixel to look for freebie seekers. By optimizing for credit card purchase events on trial signups, Meta&apos;s algorithm finds prospects with proven disposable income.",
+  },
+  {
+    icon: Rocket,
+    number: "05",
+    title: "Rapid Time-to-Value Micro-Doses",
+    body: "Trial users must experience a quick win within 24 hours of signup. We structure the trial environment to deliver instant value, building massive trust prior to the backend sales call.",
   },
   {
     icon: ShieldCheck,
-    number: "04",
-    title: "Whitelisted Enterprise Infrastructure",
-    body: "Eliminate spending limits and unexpected account bans. We run all client campaigns through enterprise agency ad accounts with direct Meta rep whitelisting and priority support.",
-  },
-  {
-    icon: Zap,
-    number: "05",
-    title: "Multi-Hook Direct-Response Framing",
-    body: "Different buyers respond to different triggers. We test 10+ unique hook variations (e.g. Pain-Point, Case Study, System Breakdown, Counter-Intuitive Statement) to capture broad audience attention.",
-  },
-  {
-    icon: Cpu,
     number: "06",
-    title: "Algorithmic Pixel Convergence",
-    body: "We combine custom event tracking with high-volume interest data to force Meta's algorithm to converge rapidly on high-ticket decision-makers with proven purchasing power.",
+    title: "High-Urgency Upgrade Triggers",
+    body: "As the 7-day trial approaches expiration, automated scarcity & bonus upgrade triggers incentivize users to transition seamlessly into monthly recurring memberships or core high-ticket programs.",
   },
 ];
 
 const implementationSteps = [
   {
     phase: "Phase 1",
-    title: "Hidden API Interest Extraction",
-    desc: "We extract hyper-targeted, uncompetitive interest pools using custom Meta Graph API queries tailored to your high-ticket avatar.",
+    title: "Paid Trial Offer Packaging",
+    desc: "We extract a high-impact fragment of your core system and package it into an irresistible $7–$29 7-day trial offer.",
   },
   {
     phase: "Phase 2",
-    title: "Creative Engine Production",
-    desc: "Our copywriters and designers produce 20–40 high-converting video scripts, static banners, and hook variations built for high ROAS.",
+    title: "2-Step Checkout Funnel Build",
+    desc: "We build a lightning-fast 2-step order page with order bumps and 1-click upsells to maximize immediate front-end revenue.",
   },
   {
     phase: "Phase 3",
-    title: "Whitelisted Account Setup & Testing",
-    desc: "Campaigns are deployed inside enterprise agency accounts with automated scaling triggers and CAPI server-side tracking.",
+    title: "Automated Onboarding & Trial Nurture",
+    desc: "We install automated 7-day email and SMS workflows that guide trial users through quick wins and nudge them to book a strategy call.",
   },
   {
     phase: "Phase 4",
-    title: "Aggressive Budget Scaling",
-    desc: "As winning interest & creative combinations emerge, we scale daily ad spend past $1,000–$5,000+/day while maintaining strict CPA targets.",
+    title: "Meta Ads Launch & ROAS Scaling",
+    desc: "Campaigns launch optimized for Purchase events, self-liquidating ad spend while feeding your high-ticket sales calendar continuously.",
   },
 ];
 
 const faqs = [
   {
-    q: "What is Meta Graph API interest mining?",
-    a: "Meta Ads Manager only shows ~25 interest suggestions per search. By querying Meta&apos;s underlying Graph API, we uncover thousands of hidden, uncompetitive interests that standard advertisers never find.",
+    q: "Why is a 7-day paid trial better than a free trial or free VSL?",
+    a: "Free trials attract low-intent opt-ins who rarely convert. A paid trial ($7–$29) forces financial commitment, filters out freebie seekers, and trains Meta&apos;s algorithm to target buyers with active credit cards.",
   },
   {
-    q: "How do you prevent ad fatigue when scaling spend?",
-    a: "We deploy an automated creative rotation matrix. By swapping out video hooks and visual assets weekly while preserving winning post IDs, ad fatigue is virtually eliminated.",
+    q: "How does a paid trial self-liquidate ad spend?",
+    a: "If your customer acquisition cost (CAC) per trial user is $15 and your trial price is $19, your ad spend is 100%+ self-liquidated before a single high-ticket sale is made.",
   },
   {
-    q: "Why use whitelisted agency ad accounts instead of personal ad accounts?",
-    a: "Agency accounts carry unlimited daily ad spend limits from day one, higher trust scores with Meta&apos;s algorithm, and direct rep protection against automated suspensions.",
+    q: "What percentage of paid trial users convert to high-ticket clients?",
+    a: "Across our client base, 25% to 45% of active trial users book a strategy session and transition into core $3,000–$10,000 backend programs.",
   },
   {
-    q: "What return on ad spend (ROAS) can we expect?",
-    a: "Our clients typically achieve a blended 3.5x–6.0x ROAS when combining hidden interest targeting with our friction qualification funnel.",
+    q: "What software is needed to run a 7-day paid trial funnel?",
+    a: "We set up and integrate everything inside standard platforms like GoHighLevel, Stripe, ClickFunnels, or custom Next.js checkout builds.",
   },
 ];
 
-export default function HiddenFacebookInterestPage() {
+export default function SevenDaysPaidTrialPage() {
   return (
     <main id="main" className="flex min-h-screen flex-col bg-[#040c07] text-white selection:bg-lime/30 selection:text-lime">
       <Nav />
@@ -127,22 +127,22 @@ export default function HiddenFacebookInterestPage() {
           <Reveal>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.2em] text-lime shadow-[0_0_20px_rgba(201,242,107,0.2)]">
               <Lock className="h-3.5 w-3.5" />
-              Private Mastermind Breakdown #02
+              Private Mastermind Breakdown #03
             </div>
           </Reveal>
 
           <Reveal delay={0.05}>
             <h1 className="mx-auto max-w-4xl text-balance text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Hidden Facebook Interest:{" "}
+              7 Days Paid Trial:{" "}
               <em className="font-bold not-italic text-lime drop-shadow-[0_0_25px_rgba(201,242,107,0.3)]">
-                The Framework Behind 300–500 Calls
+                The Self-Liquidating Meta Ads Playbook
               </em>
             </h1>
           </Reveal>
 
           <Reveal delay={0.1}>
             <p className="mx-auto mt-6 max-w-2xl text-pretty text-base leading-relaxed text-mist sm:text-xl">
-              Learn the exact interest targeting, ad creative rotation, and campaign scaling framework that generated 300–500 pre-qualified sales calls for our high-ticket clients.
+              Learn how to launch and scale a 7-day paid trial offer that liquidates your ad spend instantly while populating your sales pipeline with hyper-qualified buyers.
             </p>
           </Reveal>
 
@@ -179,15 +179,15 @@ export default function HiddenFacebookInterestPage() {
 
       {/* VSL Section */}
       <VSL
-        videoId="jjq9-FSD4iA"
-        eyebrow="Private Mastermind Breakdown #02"
+        videoId="Hy1M7WbookU"
+        eyebrow="Private Mastermind Breakdown #03"
         title={
           <>
-            Hidden Facebook Interest:{" "}
-            <em className="font-semibold not-italic text-lime">The 300–500 Calls Framework.</em>
+            7 Days Paid Trial:{" "}
+            <em className="font-semibold not-italic text-lime">High-Converting Funnel Architecture.</em>
           </>
         }
-        subtitle="Watch the private mastermind video breakdown on hidden interest targeting, ad creative rotation engines, and campaign scaling triggers."
+        subtitle="Watch the full video breakdown on how to turn cold social traffic into paying trial users and upgrade them to premium clients."
       />
 
       {/* Deep-Dive Overview */}
@@ -197,16 +197,16 @@ export default function HiddenFacebookInterestPage() {
             <div className="rounded-3xl border border-lime/20 bg-lime/[0.02] p-8 sm:p-12 backdrop-blur-xl">
               <span className="inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-lime">
                 <BarChart3 className="h-4 w-4 text-lime" />
-                Strategic Context & Competitive Advantage
+                Strategic Context & Economics
               </span>
               <h2 className="mt-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
-                Bypassing Ad Saturation With Meta Graph API Targeting
+                Zero-Net CAC Acquisition via Self-Liquidating Front Ends
               </h2>
               <p className="mt-4 text-base leading-relaxed text-mist">
-                Over 95% of advertisers use the standard Facebook Ads Manager dropdown, bidding against thousands of competitors for identical interest keywords. This drives CPMs through the roof and degrades lead quality.
+                High-ticket ad spend often creates cash-flow bottlenecks while waiting for sales cycles to complete. A 7-day paid trial front-end solves this problem by collecting immediate credit card revenue upon user opt-in.
               </p>
               <p className="mt-4 text-base leading-relaxed text-mist">
-                By leveraging Meta&apos;s underlying Graph API, we extract thousands of hidden, uncompetitive interest categories. Combined with our automated creative rotation matrix, we keep CPMs low, prevent ad fatigue, and consistently book 300–500 strategy calls per month.
+                Because Meta optimizes for credit card buyers rather than free leads, your ad account acquires a list of verified customers. As trial users experience rapid time-to-value, automated workflows convert 25%–45% of them directly into your core $3K–$10K backend offers.
               </p>
             </div>
           </Reveal>
@@ -216,14 +216,14 @@ export default function HiddenFacebookInterestPage() {
       {/* Core Pillars Section */}
       <Section className="bg-[#050e08] border-t border-line">
         <SectionHeading
-          eyebrow="Targeting Pillars"
+          eyebrow="Offer Architecture"
           title={
             <>
               Six Pillars of{" "}
-              <em className="font-semibold not-italic text-lime">Hidden Interest Scaling.</em>
+              <em className="font-semibold not-italic text-lime">Self-Liquidating Paid Trials.</em>
             </>
           }
-          subtitle="Advanced Facebook interest targeting and campaign scaling tactics used by top 1% media buyers."
+          subtitle="How high-ticket businesses acquire clients at zero net ad cost using paid micro-trials."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
@@ -257,11 +257,11 @@ export default function HiddenFacebookInterestPage() {
           eyebrow="Execution Plan"
           title={
             <>
-              Four Phases To{" "}
-              <em className="font-semibold not-italic text-lime">Scaling 300–500 Calls.</em>
+              Four Steps To{" "}
+              <em className="font-semibold not-italic text-lime">Deploying Your Paid Trial.</em>
             </>
           }
-          subtitle="How we deploy and scale hidden interest campaigns step-by-step."
+          subtitle="Our proven roadmap to launch a self-liquidating paid trial funnel."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
@@ -286,10 +286,10 @@ export default function HiddenFacebookInterestPage() {
           title={
             <>
               Everything You Need To Know About{" "}
-              <em className="font-semibold not-italic text-lime">Hidden Interest Ads.</em>
+              <em className="font-semibold not-italic text-lime">Paid Trial Funnels.</em>
             </>
           }
-          subtitle="Common questions about our Graph API interest extraction & scaling strategy."
+          subtitle="Common questions about our self-liquidating paid trial architecture."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 max-w-5xl mx-auto">
@@ -312,11 +312,11 @@ export default function HiddenFacebookInterestPage() {
         <div className="container-x relative z-10 text-center">
           <Reveal>
             <h2 className="mx-auto max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-5xl">
-              Want Us to Scale Your Ads to{" "}
-              <span className="text-lime">300+ Calls?</span>
+              Ready to Launch Your Own{" "}
+              <span className="text-lime">7 Days Paid Trial Funnel?</span>
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-base text-mist sm:text-lg">
-              We install every piece — offer positioning, Meta Ads, creatives, landing pages, CRM, AI automations, and follow-up.
+              We engineer, build, and optimize your entire paid trial acquisition ecosystem for predictable growth.
             </p>
             <div className="mt-10 flex justify-center">
               <a

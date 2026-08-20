@@ -38,18 +38,25 @@ const mastermindStats = [
 
 const privateMasterminds = [
   {
-    tag: "Audience Segmentation",
-    title: "Higher-Quality Calls at Lower CPL",
-    description: "The exact audience segmentation & qualification structure engineered to eliminate tire-kickers, lower cost per lead, and drive high-intent decision-makers to your calendar.",
-    url: "/mastermind/audience-segmentation",
-    badge: "Private Mastermind #01",
-  },
-  {
     tag: "Hidden Facebook Interest",
     title: "The Framework Behind 300–500 Qualified Calls",
     description: "Deep dive into hidden Facebook interest targeting, ad creative rotation strategies, and direct-response offer angles that scaled client accounts to 300–500 booked strategy calls.",
     url: "/mastermind/hidden-facebook-interest",
+    badge: "Private Mastermind #01",
+  },
+  {
+    tag: "7 Days Paid Trial",
+    title: "Self-Liquidating Meta Ads Playbook",
+    description: "How to engineer a $7–$29 paid trial front-end offer that converts cold traffic into paid trial users and self-liquidates Meta ad spend.",
+    url: "/mastermind/7-days-paid-trial",
     badge: "Private Mastermind #02",
+  },
+  {
+    tag: "LTO Funnel $847K Scale",
+    title: "$255K Ad Spend Nearly $1M Sales Meta Ads",
+    description: "Case study breakdown on scaling a Low-Ticket Offer (LTO) funnel to $847K in revenue with $255K in ad spend using high-volume Meta Ads.",
+    url: "/mastermind/lto-funnel-scale",
+    badge: "Case Study #03",
   },
 ];
 

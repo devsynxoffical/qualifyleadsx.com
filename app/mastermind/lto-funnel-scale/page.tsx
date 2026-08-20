@@ -1,15 +1,14 @@
 import { Metadata } from "next";
 import {
   ArrowUpRight,
-  ShieldCheck,
-  Target,
   Lock,
-  TrendingUp,
-  Zap,
-  HelpCircle,
+  DollarSign,
   BarChart3,
-  Cpu,
-  RefreshCw,
+  Rocket,
+  HelpCircle,
+  Layers,
+  ShoppingBag,
+  Zap,
 } from "lucide-react";
 import { site } from "@/lib/site";
 import { Nav } from "@/components/layout/Nav";
@@ -19,100 +18,100 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
-  title: "Hidden Facebook Interest Mastermind | QualifiedLeadsX™",
+  title: "How We Scaled an LTO Funnel to $847K | QualifiedLeadsX™",
   description:
-    "Private Mastermind Breakdown: The framework behind scaling to 300–500 qualified sales calls using hidden Facebook interest targeting and creative rotation.",
+    "Case Study & Mastermind Breakdown: How we scaled a Low-Ticket Offer (LTO) funnel to $847K in revenue with $255K ad spend using Meta Ads.",
 };
 
 const stats = [
-  { value: "500+", label: "Qualified Calls / Mo", sub: "Generated for high-ticket clients" },
-  { value: "3.2x", label: "Lower Cost Per Lead", sub: "Compared to broad interest ads" },
-  { value: "100+", label: "Ad Variations / Quarter", sub: "Automated creative engine" },
-  { value: "$250K+", label: "Monthly Ad Budget", sub: "Managed with zero bans/limits" },
+  { value: "$847,290", label: "Gross Revenue Generated", sub: "Front-end & backend sales" },
+  { value: "$255,140", label: "Total Meta Ad Spend", sub: "Managed over campaign scale" },
+  { value: "3.32x", label: "Blended Return on Ad Spend", sub: "Net ROAS across funnel" },
+  { value: "14,200+", label: "Buyers Acquired", sub: "High-ticket backend prospects" },
 ];
 
 const pillars = [
   {
-    icon: Target,
+    icon: DollarSign,
     number: "01",
-    title: "Graph API Hidden Interest Mining",
-    body: "Meta's standard Ads Manager interface displays only a fraction of targetable interests. We query Meta's hidden Graph API endpoints to extract thousands of uncompetitive interest categories where high-ticket buyers congregate.",
+    title: "$847K Gross Revenue Architecture",
+    body: "By positioning a high-value Low-Ticket Offer (LTO) on the front end, we created a massive buyer acquisition pipeline that systematically upsells clients into $3,000–$15,000 high-ticket retainers.",
   },
   {
-    icon: RefreshCw,
+    icon: BarChart3,
     number: "02",
-    title: "Dynamic Creative Rotation Engine",
-    body: "Ad fatigue kills high-ticket campaigns. Our creative rotation system deploys 40–100+ direct-response video hooks, headlines, and static angles to ensure prospects never see the same ad twice.",
+    title: "$255K Ad Spend Scaling Dynamics",
+    body: "Scaling daily budgets past $3,000/day requires sophisticated campaign architecture. We utilized dynamic CBO campaigns, interest stacking, and automated bid caps to prevent CPA spikes.",
   },
   {
-    icon: TrendingUp,
+    icon: ShoppingBag,
     number: "03",
-    title: "Automated Spend Escalation Rules",
-    body: "We implement custom automated scaling rules that increase daily budgets in calculated micro-bursts based on CPA and ROAS performance—allowing rapid scaling without destroying campaign efficiency.",
+    title: "Order Bumps & 1-Click Upsell Maximizers",
+    body: "Front-end offers alone are rarely enough at scale. Adding strategic order bumps ($17–$37) and 1-click post-purchase upsells ($97–$297) lifted our Average Order Value (AOV) from $27 to $84.",
   },
   {
-    icon: ShieldCheck,
+    icon: Rocket,
     number: "04",
-    title: "Whitelisted Enterprise Infrastructure",
-    body: "Eliminate spending limits and unexpected account bans. We run all client campaigns through enterprise agency ad accounts with direct Meta rep whitelisting and priority support.",
+    title: "High-Ticket Backend Escalation Workflows",
+    body: "Every LTO buyer is immediately funneled into an automated high-ticket nurture sequence. Over 18% of front-end buyers booked a strategy session and upgraded to core agency services.",
   },
   {
     icon: Zap,
     number: "05",
-    title: "Multi-Hook Direct-Response Framing",
-    body: "Different buyers respond to different triggers. We test 10+ unique hook variations (e.g. Pain-Point, Case Study, System Breakdown, Counter-Intuitive Statement) to capture broad audience attention.",
+    title: "Creative Volatility & Fatigue Suppression",
+    body: "To sustain $255K+ in spend, our media team launched 15–20 new ad variations weekly. Hook variations, UGC teardowns, and visual proof ads kept frequency low and click-through rates high.",
   },
   {
-    icon: Cpu,
+    icon: Layers,
     number: "06",
-    title: "Algorithmic Pixel Convergence",
-    body: "We combine custom event tracking with high-volume interest data to force Meta's algorithm to converge rapidly on high-ticket decision-makers with proven purchasing power.",
+    title: "Server-Side CAPI & Multi-Touch Attribution",
+    body: "We configured custom server-side CAPI event tracking to feed exact revenue data back to Meta&apos;s algorithm, allowing machine learning to bid aggressively on high-LTV buyer personas.",
   },
 ];
 
 const implementationSteps = [
   {
     phase: "Phase 1",
-    title: "Hidden API Interest Extraction",
-    desc: "We extract hyper-targeted, uncompetitive interest pools using custom Meta Graph API queries tailored to your high-ticket avatar.",
+    title: "LTO & Upsell Stack Engineering",
+    desc: "We construct the core $27–$37 front-end offer, order bump, and 1-click upsell sequence designed for maximum AOV.",
   },
   {
     phase: "Phase 2",
-    title: "Creative Engine Production",
-    desc: "Our copywriters and designers produce 20–40 high-converting video scripts, static banners, and hook variations built for high ROAS.",
+    title: "High-Velocity Creative Batching",
+    desc: "Our creative team produces 30+ direct-response ad variations focused on high-converting problem-aware angles.",
   },
   {
     phase: "Phase 3",
-    title: "Whitelisted Account Setup & Testing",
-    desc: "Campaigns are deployed inside enterprise agency accounts with automated scaling triggers and CAPI server-side tracking.",
+    title: "Meta CBO & Automated Bidding Launch",
+    desc: "We launch dynamic CBO structures with Meta Conversions API (CAPI) and automated bid scaling rules.",
   },
   {
     phase: "Phase 4",
-    title: "Aggressive Budget Scaling",
-    desc: "As winning interest & creative combinations emerge, we scale daily ad spend past $1,000–$5,000+/day while maintaining strict CPA targets.",
+    title: "Backend High-Ticket Retainer Upsell",
+    desc: "Automated CRM sequences and phone sales teams transition front-end buyers into $3,000–$15,000 high-ticket clients.",
   },
 ];
 
 const faqs = [
   {
-    q: "What is Meta Graph API interest mining?",
-    a: "Meta Ads Manager only shows ~25 interest suggestions per search. By querying Meta&apos;s underlying Graph API, we uncover thousands of hidden, uncompetitive interests that standard advertisers never find.",
+    q: "What is an LTO (Low-Ticket Offer) funnel?",
+    a: "An LTO funnel sells a low-friction front-end product ($27–$47) with order bumps and upsells to acquire customers at profit, before pitching high-ticket backend programs ($3K–$15K).",
   },
   {
-    q: "How do you prevent ad fatigue when scaling spend?",
-    a: "We deploy an automated creative rotation matrix. By swapping out video hooks and visual assets weekly while preserving winning post IDs, ad fatigue is virtually eliminated.",
+    q: "How did you scale ad spend to $255K without ROAS dropping?",
+    a: "By combining high-velocity creative testing (15–20 new ads per week) with dynamic CBO budget allocation and custom server-side CAPI conversion signals.",
   },
   {
-    q: "Why use whitelisted agency ad accounts instead of personal ad accounts?",
-    a: "Agency accounts carry unlimited daily ad spend limits from day one, higher trust scores with Meta&apos;s algorithm, and direct rep protection against automated suspensions.",
+    q: "Why are order bumps and 1-click upsells essential for LTO scaling?",
+    a: "Order bumps and 1-click upsells increase Average Order Value (AOV) instantly. A higher AOV allows you to bid significantly more than competitors on Meta Ads while remaining highly profitable.",
   },
   {
-    q: "What return on ad spend (ROAS) can we expect?",
-    a: "Our clients typically achieve a blended 3.5x–6.0x ROAS when combining hidden interest targeting with our friction qualification funnel.",
+    q: "How long did it take to reach $847K in sales?",
+    a: "The campaign was scaled from $100/day to $3,000+/day over an 8-month period, generating over $847K in total blended revenue.",
   },
 ];
 
-export default function HiddenFacebookInterestPage() {
+export default function LTOFunnelScalePage() {
   return (
     <main id="main" className="flex min-h-screen flex-col bg-[#040c07] text-white selection:bg-lime/30 selection:text-lime">
       <Nav />
@@ -127,22 +126,22 @@ export default function HiddenFacebookInterestPage() {
           <Reveal>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.2em] text-lime shadow-[0_0_20px_rgba(201,242,107,0.2)]">
               <Lock className="h-3.5 w-3.5" />
-              Private Mastermind Breakdown #02
+              Private Mastermind Case Study #04
             </div>
           </Reveal>
 
           <Reveal delay={0.05}>
-            <h1 className="mx-auto max-w-4xl text-balance text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Hidden Facebook Interest:{" "}
+            <h1 className="mx-auto max-w-5xl text-balance text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
+              Scaled LTO Funnel to $847K:{" "}
               <em className="font-bold not-italic text-lime drop-shadow-[0_0_25px_rgba(201,242,107,0.3)]">
-                The Framework Behind 300–500 Calls
+                $255K Spend to Near $1M Sales
               </em>
             </h1>
           </Reveal>
 
           <Reveal delay={0.1}>
             <p className="mx-auto mt-6 max-w-2xl text-pretty text-base leading-relaxed text-mist sm:text-xl">
-              Learn the exact interest targeting, ad creative rotation, and campaign scaling framework that generated 300–500 pre-qualified sales calls for our high-ticket clients.
+              An in-depth video breakdown of how we scaled an LTO funnel to $847,000 in revenue with $255,000 in Meta ad spend using Meta Ads.
             </p>
           </Reveal>
 
@@ -179,15 +178,15 @@ export default function HiddenFacebookInterestPage() {
 
       {/* VSL Section */}
       <VSL
-        videoId="jjq9-FSD4iA"
-        eyebrow="Private Mastermind Breakdown #02"
+        videoId="Nr1WIDiWPNA"
+        eyebrow="Private Mastermind Breakdown #04"
         title={
           <>
-            Hidden Facebook Interest:{" "}
-            <em className="font-semibold not-italic text-lime">The 300–500 Calls Framework.</em>
+            Scaling LTO Funnels to $847K+:{" "}
+            <em className="font-semibold not-italic text-lime">Meta Ads Breakdown.</em>
           </>
         }
-        subtitle="Watch the private mastermind video breakdown on hidden interest targeting, ad creative rotation engines, and campaign scaling triggers."
+        subtitle="Watch the step-by-step case study breakdown on scaling low-ticket acquisition funnels using high-volume Meta Ads."
       />
 
       {/* Deep-Dive Overview */}
@@ -197,16 +196,16 @@ export default function HiddenFacebookInterestPage() {
             <div className="rounded-3xl border border-lime/20 bg-lime/[0.02] p-8 sm:p-12 backdrop-blur-xl">
               <span className="inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-lime">
                 <BarChart3 className="h-4 w-4 text-lime" />
-                Strategic Context & Competitive Advantage
+                Case Study Overview & Economics
               </span>
               <h2 className="mt-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
-                Bypassing Ad Saturation With Meta Graph API Targeting
+                How We Scaled From $100/Day to $3,000+/Day Spend
               </h2>
               <p className="mt-4 text-base leading-relaxed text-mist">
-                Over 95% of advertisers use the standard Facebook Ads Manager dropdown, bidding against thousands of competitors for identical interest keywords. This drives CPMs through the roof and degrades lead quality.
+                Most businesses struggle to scale Meta ad spend past $500/day because customer acquisition costs spike as target audiences saturate. By engineering an LTO front-end with order bumps and 1-click upsells, we raised Average Order Value (AOV) to $84.
               </p>
               <p className="mt-4 text-base leading-relaxed text-mist">
-                By leveraging Meta&apos;s underlying Graph API, we extract thousands of hidden, uncompetitive interest categories. Combined with our automated creative rotation matrix, we keep CPMs low, prevent ad fatigue, and consistently book 300–500 strategy calls per month.
+                This high AOV allowed us to spend $255,140 profitably, acquiring 14,200+ buyers. The backend automation sequence then funneled these warm buyers directly into high-ticket retainer offers, unlocking $847,290 in gross revenue.
               </p>
             </div>
           </Reveal>
@@ -216,14 +215,14 @@ export default function HiddenFacebookInterestPage() {
       {/* Core Pillars Section */}
       <Section className="bg-[#050e08] border-t border-line">
         <SectionHeading
-          eyebrow="Targeting Pillars"
+          eyebrow="Scaling Architecture"
           title={
             <>
               Six Pillars of{" "}
-              <em className="font-semibold not-italic text-lime">Hidden Interest Scaling.</em>
+              <em className="font-semibold not-italic text-lime">$847K LTO Funnel Scaling.</em>
             </>
           }
-          subtitle="Advanced Facebook interest targeting and campaign scaling tactics used by top 1% media buyers."
+          subtitle="The numbers, funnel economics, and creative frameworks that unlocked near 7-figure revenue."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
@@ -254,14 +253,14 @@ export default function HiddenFacebookInterestPage() {
       {/* Implementation Roadmap */}
       <Section className="bg-[#040c07] border-t border-line">
         <SectionHeading
-          eyebrow="Execution Plan"
+          eyebrow="Execution Roadmap"
           title={
             <>
               Four Phases To{" "}
-              <em className="font-semibold not-italic text-lime">Scaling 300–500 Calls.</em>
+              <em className="font-semibold not-italic text-lime">Scaling Near 7-Figures.</em>
             </>
           }
-          subtitle="How we deploy and scale hidden interest campaigns step-by-step."
+          subtitle="How we structure and launch LTO scaling funnels step-by-step."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
@@ -286,10 +285,10 @@ export default function HiddenFacebookInterestPage() {
           title={
             <>
               Everything You Need To Know About{" "}
-              <em className="font-semibold not-italic text-lime">Hidden Interest Ads.</em>
+              <em className="font-semibold not-italic text-lime">Scaling LTO Funnels.</em>
             </>
           }
-          subtitle="Common questions about our Graph API interest extraction & scaling strategy."
+          subtitle="Common questions about our high-volume Meta ad scaling strategy."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 max-w-5xl mx-auto">
@@ -312,11 +311,11 @@ export default function HiddenFacebookInterestPage() {
         <div className="container-x relative z-10 text-center">
           <Reveal>
             <h2 className="mx-auto max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-5xl">
-              Want Us to Scale Your Ads to{" "}
-              <span className="text-lime">300+ Calls?</span>
+              Want Us to Scale Your Funnel to{" "}
+              <span className="text-lime">$500K–$1M+?</span>
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-base text-mist sm:text-lg">
-              We install every piece — offer positioning, Meta Ads, creatives, landing pages, CRM, AI automations, and follow-up.
+              We engineer high-converting sales funnels, ad creatives, automations, and scaling systems for high-growth founders.
             </p>
             <div className="mt-10 flex justify-center">
               <a

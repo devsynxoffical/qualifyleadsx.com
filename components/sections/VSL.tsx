@@ -5,12 +5,26 @@ import { motion } from "motion/react";
 import { Play, Clock, ShieldCheck, ArrowUpRight } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
-import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
 
-const YOUTUBE_ID = "e5za2tPu7ZI";
+interface VSLProps {
+  videoId?: string;
+  eyebrow?: string;
+  title?: React.ReactNode;
+  subtitle?: string;
+}
 
-export function VSL() {
+export function VSL({
+  videoId = "e5za2tPu7ZI",
+  eyebrow = "Watch the system",
+  title = (
+    <>
+      See exactly how{" "}
+      <em className="font-semibold not-italic text-lime">we build your pipeline.</em>
+    </>
+  ),
+  subtitle = "A short breakdown of the QualifiedLeadsX™ client acquisition system, the exact steps we install for you, and what a fully booked calendar looks like.",
+}: VSLProps) {
   const [isPlaying, setIsPlaying] = useState(true);
 
   return (
@@ -22,14 +36,9 @@ export function VSL() {
 
       <div className="container-x relative z-10">
         <SectionHeading
-          eyebrow="Watch the system"
-          title={
-            <>
-              See exactly how{" "}
-              <em className="font-semibold not-italic text-lime">we build your pipeline.</em>
-            </>
-          }
-          subtitle="A short breakdown of the QualifiedLeadsX™ client acquisition system, the exact steps we install for you, and what a fully booked calendar looks like."
+          eyebrow={eyebrow}
+          title={title}
+          subtitle={subtitle}
         />
 
         <Reveal>
@@ -53,16 +62,13 @@ export function VSL() {
                 <ShieldCheck className="h-4 w-4 text-lime" />
                 QualifiedLeadsX™ System Breakdown
               </div>
-              <span className="rounded-full bg-lime/10 border border-lime/30 px-3 py-1 font-mono text-[10px] font-bold uppercase text-lime">
-                Official VSL
-              </span>
             </div>
 
             {/* YouTube Embed Container — Natural fit without zoom distortion */}
             <div className="relative aspect-video w-full overflow-hidden bg-black">
               {isPlaying ? (
                 <iframe
-                  src={`https://www.youtube-nocookie.com/embed/${YOUTUBE_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_ID}&rel=0&modestbranding=1&controls=1&showinfo=0&iv_load_policy=3&disablekb=0&enablejsapi=1`}
+                  src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&rel=0&modestbranding=1&controls=1&showinfo=0&iv_load_policy=3&disablekb=0&enablejsapi=1`}
                   title="QualifiedLeadsX Video Sales Letter"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -72,7 +78,7 @@ export function VSL() {
                 /* Click-to-Play Cover Overlay */
                 <div className="relative h-full w-full">
                   <img
-                    src={`https://img.youtube.com/vi/${YOUTUBE_ID}/maxresdefault.jpg`}
+                    src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
                     alt="QualifiedLeadsX VSL Cover"
                     className="h-full w-full object-cover brightness-90 transition-transform duration-700 group-hover:scale-105"
                   />

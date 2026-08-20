@@ -14,19 +14,25 @@ const mastermindSublinks = [
     title: "Mastermind Hub",
     desc: "8-Figure private collective & membership",
     href: "/mastermind",
-    isExternal: false,
-  },
-  {
-    title: "Audience Segmentation",
-    desc: "Higher-quality calls at lower CPL",
-    href: "/mastermind/audience-segmentation",
-    isExternal: false,
+    badge: "Main Hub",
   },
   {
     title: "Hidden Facebook Interest",
     desc: "The framework behind 300–500 calls",
     href: "/mastermind/hidden-facebook-interest",
-    isExternal: false,
+    badge: "Mastermind #01",
+  },
+  {
+    title: "7 Days Paid Trial",
+    desc: "Self-liquidating Meta Ads playbook",
+    href: "/mastermind/7-days-paid-trial",
+    badge: "Mastermind #02",
+  },
+  {
+    title: "LTO Funnel $847K Scale",
+    desc: "$255K spend to near $1M sales Meta Ads",
+    href: "/mastermind/lto-funnel-scale",
+    badge: "Case Study #03",
   },
 ];
 
@@ -135,7 +141,7 @@ export function Nav() {
                     {/* Mastermind Dropdown Menu */}
                     <div
                       className={cn(
-                        "absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 transition-all duration-300 z-50",
+                        "absolute top-full left-1/2 -translate-x-1/2 pt-2 w-80 transition-all duration-300 z-50",
                         mastermindDropdown
                           ? "pointer-events-auto opacity-100 translate-y-0"
                           : "pointer-events-none opacity-0 translate-y-2"
@@ -143,25 +149,30 @@ export function Nav() {
                     >
                       {/* Invisible hover bridge to prevent cursor gap */}
                       <div className="relative rounded-2xl border border-lime/20 bg-[#050e08]/95 p-3 backdrop-blur-xl shadow-[0_15px_40px_rgba(0,0,0,0.9)] before:absolute before:inset-x-0 before:-top-3 before:h-3">
-                      <div className="space-y-1">
-                        {mastermindSublinks.map((sub) => (
-                          <a
-                            key={sub.title}
-                            href={sub.href}
-                            target={sub.isExternal ? "_blank" : undefined}
-                            rel={sub.isExternal ? "noopener noreferrer" : undefined}
-                            className="group/sub flex flex-col rounded-xl p-3 text-left transition-colors hover:bg-lime/10"
-                          >
-                            <div className="flex items-center justify-between text-xs font-bold text-white group-hover/sub:text-lime">
-                              <span>{sub.title}</span>
-                              <ArrowUpRight className="h-3.5 w-3.5 text-lime opacity-70 group-hover/sub:opacity-100 group-hover/sub:translate-x-0.5" />
-                            </div>
-                            <span className="mt-1 text-[11px] text-mist/70 leading-snug">{sub.desc}</span>
-                          </a>
-                        ))}
+                        <div className="space-y-1">
+                          {mastermindSublinks.map((sub) => (
+                            <a
+                              key={sub.title}
+                              href={sub.href}
+                              className="group/sub flex flex-col rounded-xl p-3 text-left transition-colors hover:bg-lime/10"
+                            >
+                              <div className="flex items-center justify-between text-xs font-bold text-white group-hover/sub:text-lime">
+                                <span className="flex items-center gap-2">
+                                  {sub.title}
+                                  {sub.badge && (
+                                    <span className="rounded-full bg-lime/10 border border-lime/30 px-2 py-0.5 font-mono text-[9px] font-bold text-lime">
+                                      {sub.badge}
+                                    </span>
+                                  )}
+                                </span>
+                                <ArrowUpRight className="h-3.5 w-3.5 text-lime opacity-70 group-hover/sub:opacity-100 group-hover/sub:translate-x-0.5" />
+                              </div>
+                              <span className="mt-1 text-[11px] text-mist/70 leading-snug">{sub.desc}</span>
+                            </a>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                  </div>
                 </li>
                 );
               }
@@ -235,11 +246,16 @@ export function Nav() {
                       <a
                         key={sub.title}
                         href={sub.href}
-                        target={sub.isExternal ? "_blank" : undefined}
-                        rel={sub.isExternal ? "noopener noreferrer" : undefined}
-                        className="flex items-center justify-between text-sm text-mist hover:text-lime py-1"
+                        className="flex items-center justify-between text-sm text-mist hover:text-lime py-1.5"
                       >
-                        <span>{sub.title}</span>
+                        <span className="flex items-center gap-2">
+                          <span>{sub.title}</span>
+                          {sub.badge && (
+                            <span className="rounded-full bg-lime/10 border border-lime/30 px-2 py-0.5 font-mono text-[9px] font-bold text-lime">
+                              {sub.badge}
+                            </span>
+                          )}
+                        </span>
                         <ArrowUpRight className="h-3.5 w-3.5 text-lime" />
                       </a>
                     ))}

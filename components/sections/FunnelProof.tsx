@@ -19,81 +19,81 @@ type FunnelProof = {
 const funnelProofs: FunnelProof[] = [
   {
     name: "Charles",
-    niche: "Coaching",
-    result: "$46K in 5 months",
-    costPerAppt: "$12",
+    niche: "Solar & Home Services",
+    result: "$18K Cash (14X ROI)",
+    costPerAppt: "7 New Deals Closed",
     src: "/images/screenshots/Charles.webp",
     color: "#c9f26b",
   },
   {
     name: "Daniel",
-    niche: "Coaching",
-    result: "$38K in 4 months",
-    costPerAppt: "$9",
+    niche: "Solar Installation",
+    result: "Calendar Fully Booked",
+    costPerAppt: "$1.28 CPL",
     src: "/images/screenshots/Daniel.webp",
     color: "#ff7a90",
   },
   {
     name: "Alexander",
-    niche: "Consulting",
-    result: "$25K+ in new clients",
-    costPerAppt: "$11",
+    niche: "Agency Growth",
+    result: "$16.5K in Single Day",
+    costPerAppt: "8 Sales in 24 Hours",
     src: "/images/screenshots/Alexander-scaled.webp",
     color: "#9b8bff",
   },
   {
     name: "Henry",
-    niche: "Finance",
-    result: "31 qualified calls",
-    costPerAppt: "$9",
+    niche: "High-Ticket B2B",
+    result: "$105,000 Month",
+    costPerAppt: "$80K Cash Collected",
     src: "/images/screenshots/Henry-scaled.webp",
     color: "#5ef2c2",
   },
   {
     name: "Mateo",
-    niche: "Real Estate",
-    result: "11 deals in 90 days",
-    costPerAppt: "$8",
+    niche: "Sales & Closers",
+    result: "$51.2K Cash Collected",
+    costPerAppt: "15 New Customers",
     src: "/images/screenshots/Mateo-scaled.webp",
     color: "#ffc857",
   },
   {
     name: "Jason",
-    niche: "Healthcare",
-    result: "$18K in new patients",
-    costPerAppt: "$6",
+    niche: "Roofing Ads",
+    result: "725 Qualified Leads",
+    costPerAppt: "$18.10 CPL ($13.1K Spend)",
     src: "/images/screenshots/Jason-scaled.webp",
     color: "#ff7a90",
   },
   {
     name: "Justin",
-    niche: "Education",
-    result: "$12K in course sales",
-    costPerAppt: "$10",
+    niche: "Roofing Installs",
+    result: "$127,500 Revenue",
+    costPerAppt: "63 Days Scale",
     src: "/images/screenshots/Justin-scaled.webp",
     color: "#c9f26b",
   },
   {
     name: "Parker",
-    niche: "Agencies",
-    result: "$32K retainer MRR",
-    costPerAppt: "$13",
+    niche: "Meta Ads Scaling",
+    result: "295 Verified Leads",
+    costPerAppt: "$4.77 CPL",
     src: "/images/screenshots/Parker-scaled.webp",
     color: "#9b8bff",
   },
   {
     name: "Stan",
-    niche: "Healthcare",
-    result: "$21K new revenue",
-    costPerAppt: "$8",
+    niche: "Roofing Agency",
+    result: "152 Deals Closed",
+    costPerAppt: "$546.1K Pipeline",
     src: "/images/screenshots/Stan-scaled.webp",
     color: "#5ef2c2",
   },
   {
     name: "Adam",
-    niche: "Insurance",
-    result: "22 qualified calls",
-    costPerAppt: "$7",
+    niche: "Home Services",
+    result: "260 Qualified Leads",
+    costPerAppt: "$8.44 CPL (15 Days)",
     src: "/images/screenshots/Adam-scaled.webp",
     color: "#ffc857",
   },
@@ -106,6 +106,8 @@ export function FunnelProof() {
   const lightboxItems: LightboxItem[] = funnelProofs.map((p) => ({
     src: p.src,
     title: `${p.name} - ${p.niche}`,
+    subtitle: `${p.result} · ${p.costPerAppt}`,
+    badge: "Verified Client Output",
     w: 800,
     h: 1689,
   }));
@@ -187,8 +189,8 @@ export function FunnelProof() {
                   {p.result}
                 </p>
                 <p className="mt-2 flex items-center gap-1.5 text-[11px] text-dim">
-                  <TrendingUp className="h-3 w-3" />
-                  {p.costPerAppt} / booked appt
+                  <TrendingUp className="h-3 w-3 text-lime" />
+                  {p.costPerAppt}
                 </p>
               </figcaption>
             </figure>

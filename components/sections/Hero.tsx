@@ -398,7 +398,7 @@ export function Hero() {
 
               <VSLPlayer />
 
-              <FloatingCard className="-left-4 top-14 w-[11.5rem] sm:-left-10" depth={0.03}>
+              <FloatingCard className="hidden sm:block -left-4 top-14 w-[11.5rem] sm:-left-10" depth={0.03}>
                 <div className="flex items-center gap-3">
                   <span className="flex h-9 w-9 items-center justify-center rounded-full bg-violet/20 text-violet">
                     <TrendingUp className="h-4 w-4" />
@@ -411,7 +411,7 @@ export function Hero() {
                 <GrowthChart />
               </FloatingCard>
 
-              <FloatingCard className="-right-3 top-40 w-44 sm:-right-8" depth={0.045}>
+              <FloatingCard className="hidden sm:block -right-3 top-40 w-44 sm:-right-8" depth={0.045}>
                 <div className="flex items-start gap-2.5">
                   <CalendarCheck2 className="mt-0.5 h-4 w-4 shrink-0 text-mint" />
                   <div>
@@ -427,7 +427,7 @@ export function Hero() {
                 </div>
               </FloatingCard>
 
-              <FloatingCard className="-left-2 bottom-10 w-44 sm:-left-8" depth={0.06}>
+              <FloatingCard className="hidden sm:block -left-2 bottom-10 w-44 sm:-left-8" depth={0.06}>
                 <div className="flex items-center gap-2.5">
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-lime/15 text-lime">
                     <TrendingUp className="h-3.5 w-3.5" />

@@ -52,6 +52,7 @@ export function Nav() {
   const [open, setOpen] = useState(false);
   const [barDismissed, setBarDismissed] = useState(false);
   const [mastermindDropdown, setMastermindDropdown] = useState(false);
+  const [mobileMastermindOpen, setMobileMastermindOpen] = useState(true);
   const pathname = usePathname();
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -185,22 +186,23 @@ export function Nav() {
               );
             })}
           </ul>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <a
               href={navCta.href}
               onClick={(e) => go(e, navCta.href)}
-              className="group relative hidden items-center gap-2 overflow-hidden rounded-full bg-lime px-5 py-2.5 text-sm font-semibold text-ink transition-all duration-300 hover:shadow-[0_0_40px_-8px_var(--color-lime)] sm:inline-flex"
+              className="group relative inline-flex items-center gap-1.5 overflow-hidden rounded-full bg-lime px-3.5 py-2 text-xs font-bold text-ink transition-all duration-300 hover:shadow-[0_0_30px_-5px_var(--color-lime)] sm:px-5 sm:py-2.5 sm:text-sm sm:font-semibold"
               data-cursor="book"
             >
-              {navCta.label}
-              <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <span className="hidden xs:inline sm:inline">{navCta.label}</span>
+              <span className="xs:hidden sm:hidden">Book Call</span>
+              <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 sm:h-4 sm:w-4" />
             </a>
             <button
               type="button"
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-line-strong text-fog lg:hidden"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-line-strong text-fog lg:hidden sm:h-10 sm:w-10"
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
@@ -219,44 +221,78 @@ export function Nav() {
       >
         <div className="mt-24 flex flex-1 flex-col justify-between px-6 pb-10 overflow-y-auto">
           <ul className="flex flex-col gap-1">
-            {nav.map((item, i) => (
-              <li key={item.href} className="overflow-hidden">
-                <a
-                  href={item.href}
-                  onClick={(e) => go(e, item.href)}
-                  className={cn(
-                    "block border-b border-line py-3 text-3xl font-semibold tracking-tight text-fog transition-all duration-700 hover:text-lime",
-                    open ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-                  )}
-                  style={{ transitionDelay: open ? `${100 + i * 60}ms` : "0ms" }}
-                >
-                  {item.label}
-                </a>
-
-                {/* Mobile Mastermind Sublinks */}
-                {item.label === "Mastermind" && (
-                  <div className="pl-4 py-2 space-y-2 border-b border-line">
-                    {mastermindSublinks.map((sub) => (
+            {nav.map((item, i) => {
+              if (item.label === "Mastermind") {
+                return (
+                  <li key={item.href} className="border-b border-line py-2">
+                    <div className="flex items-center justify-between py-1">
                       <a
-                        key={sub.title}
-                        href={sub.href}
-                        className="flex items-center justify-between text-sm text-mist hover:text-lime py-1.5"
+                        href={item.href}
+                        onClick={(e) => go(e, item.href)}
+                        className="text-2xl font-bold tracking-tight text-fog hover:text-lime"
                       >
-                        <span className="flex items-center gap-2">
-                          <span>{sub.title}</span>
-                          {sub.badge && (
-                            <span className="rounded-full bg-lime/10 border border-lime/30 px-2 py-0.5 font-mono text-[9px] font-bold text-lime">
-                              {sub.badge}
-                            </span>
-                          )}
-                        </span>
-                        <ArrowUpRight className="h-3.5 w-3.5 text-lime" />
+                        {item.label}
                       </a>
-                    ))}
-                  </div>
-                )}
-              </li>
-            ))}
+                      <button
+                        type="button"
+                        onClick={() => setMobileMastermindOpen((v) => !v)}
+                        className="flex h-9 w-9 items-center justify-center rounded-full border border-lime/30 bg-lime/10 text-lime"
+                        aria-label="Toggle Mastermind sublinks"
+                      >
+                        <ChevronDown
+                          className={cn(
+                            "h-4 w-4 transition-transform duration-300",
+                            mobileMastermindOpen && "rotate-180"
+                          )}
+                        />
+                      </button>
+                    </div>
+
+                    {/* Expandable Mobile Sublinks */}
+                    {mobileMastermindOpen && (
+                      <div className="mt-2 space-y-2 pl-3 border-l-2 border-lime/30 py-1">
+                        {mastermindSublinks.map((sub) => (
+                          <a
+                            key={sub.title}
+                            href={sub.href}
+                            className="flex flex-col rounded-xl bg-white/[0.03] p-2.5 border border-white/5 hover:border-lime/40"
+                          >
+                            <div className="flex items-center justify-between text-xs font-bold text-white">
+                              <span className="flex items-center gap-1.5">
+                                <span>{sub.title}</span>
+                                {sub.badge && (
+                                  <span className="rounded-full bg-lime/15 border border-lime/30 px-1.5 py-0.5 font-mono text-[8px] font-bold text-lime">
+                                    {sub.badge}
+                                  </span>
+                                )}
+                              </span>
+                              <ArrowUpRight className="h-3.5 w-3.5 text-lime" />
+                            </div>
+                            <span className="mt-1 text-[10px] text-mist">{sub.desc}</span>
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </li>
+                );
+              }
+
+              return (
+                <li key={item.href} className="overflow-hidden">
+                  <a
+                    href={item.href}
+                    onClick={(e) => go(e, item.href)}
+                    className={cn(
+                      "block border-b border-line py-3 text-2xl font-semibold tracking-tight text-fog transition-all duration-700 hover:text-lime",
+                      open ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                    )}
+                    style={{ transitionDelay: open ? `${100 + i * 60}ms` : "0ms" }}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
           <div
             className={cn(

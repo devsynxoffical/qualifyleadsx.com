@@ -13,8 +13,8 @@ export function LogoBar() {
   return (
     <section className="relative overflow-hidden border-y border-line bg-ink py-12">
       {/* left / right fade masks */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32 bg-gradient-to-r from-ink via-ink/80 to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-gradient-to-l from-ink via-ink/80 to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-ink via-ink/80 to-transparent sm:w-32" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-ink via-ink/80 to-transparent sm:w-32" />
 
       {/* label */}
       <p className="mb-8 text-center font-mono text-xs font-semibold uppercase tracking-[0.24em] text-mist">

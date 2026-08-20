@@ -11,12 +11,6 @@ import { cn } from "@/lib/utils";
 
 const mastermindSublinks = [
   {
-    title: "Mastermind Hub",
-    desc: "8-Figure private collective & membership",
-    href: "/mastermind",
-    badge: "Main Hub",
-  },
-  {
     title: "Hidden Facebook Interest",
     desc: "The framework behind 300–500 calls",
     href: "/mastermind/hidden-facebook-interest",

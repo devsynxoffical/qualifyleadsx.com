@@ -130,7 +130,7 @@ export default function SevenDaysPaidTrialPage() {
           <Reveal>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.2em] text-lime shadow-[0_0_20px_rgba(201,242,107,0.2)]">
               <Lock className="h-3.5 w-3.5" />
-              Private Mastermind Breakdown #03
+              Private Mastermind Breakdown #02
             </div>
           </Reveal>
 

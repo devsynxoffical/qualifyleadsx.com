@@ -153,16 +153,16 @@ export function FunnelProof() {
         {funnelProofs.map((p, i) => (
           <Reveal key={p.name} delay={(i % 5) * 0.06} y={40}>
             <figure
-              className="group relative overflow-hidden rounded-2xl border border-line bg-panel transition-colors duration-500 hover:border-line-strong sm:rounded-3xl cursor-pointer"
+              className="group relative overflow-hidden rounded-3xl border border-lime/20 bg-[#06140b] p-2.5 sm:p-3 transition-all duration-500 hover:border-lime/60 hover:shadow-[0_15px_40px_rgba(201,242,107,0.2)] hover:-translate-y-1.5 cursor-pointer"
               onClick={() => openLightbox(i)}
             >
-              <div className="relative aspect-[9/19] overflow-hidden bg-ink">
+              <div className="relative aspect-[9/18] w-full overflow-hidden rounded-2xl border border-white/10 bg-black">
                 <Image
                   src={p.src}
                   alt={`${p.name} - ${p.niche} funnel screenshot`}
                   fill
                   sizes="(min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"
-                  className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
+                  className="object-contain object-top transition-transform duration-700 group-hover:scale-[1.03]"
                 />
                 <div
                   className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
@@ -171,13 +171,13 @@ export function FunnelProof() {
                   }}
                 />
                 {/* Zoom Icon overlay */}
-                <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-ink/20 backdrop-blur-[1px]">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-lime text-ink shadow-[0_0_20px_rgba(201,242,107,0.4)]">
+                <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-ink/30 backdrop-blur-[2px]">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-lime text-ink shadow-[0_0_25px_rgba(201,242,107,0.5)] transition-transform duration-300 group-hover:scale-110">
                     <ZoomIn className="h-5 w-5" />
                   </div>
                 </div>
               </div>
-              <figcaption className="p-4 sm:p-5">
+              <figcaption className="p-3 pt-4 sm:p-4 sm:pt-4">
                 <div className="flex items-center justify-between gap-2">
                   <p className="text-sm font-semibold text-fog">{p.name}</p>
                   <span className="inline-flex items-center gap-1 font-mono text-[10px] text-lime">

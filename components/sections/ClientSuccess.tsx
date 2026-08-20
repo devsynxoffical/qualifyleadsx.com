@@ -114,12 +114,12 @@ export function ClientSuccess() {
           subtitle="Booked calendars, paid invoices, closed deals. Every screenshot below is real client output - not marketing mockups."
         />
 
-        {/* Masonry Grid - Box size matches picture dimensions */}
-        <div className="mt-12 columns-2 gap-4 sm:columns-3 md:columns-4 lg:columns-5 sm:gap-5 [&>*]:mb-4 sm:[&>*]:mb-5">
+        {/* Larger Masonry Grid (3 Columns on Desktop for Bigger Boxes) */}
+        <div className="mt-12 columns-1 gap-6 sm:columns-2 lg:columns-3 sm:gap-6 [&>*]:mb-6">
           {displayedItems.map((shot, i) => (
-            <Reveal key={shot.src} delay={(i % 5) * 0.04} y={30} className="break-inside-avoid">
+            <Reveal key={shot.src} delay={(i % 3) * 0.05} y={30} className="break-inside-avoid">
               <div
-                className="group relative overflow-hidden rounded-3xl border border-lime/25 bg-[#06140b] p-2 sm:p-2.5 shadow-[0_10px_30px_rgba(0,0,0,0.7)] transition-all duration-500 hover:border-lime/60 hover:shadow-[0_15px_40px_rgba(201,242,107,0.2)] hover:-translate-y-1.5 cursor-pointer"
+                className="group relative overflow-hidden rounded-3xl border border-lime/25 bg-[#06140b] p-3 sm:p-4 shadow-[0_10px_30px_rgba(0,0,0,0.7)] transition-all duration-500 hover:border-lime/60 hover:shadow-[0_15px_40px_rgba(201,242,107,0.2)] hover:-translate-y-1.5 cursor-pointer"
                 onClick={() => openLightbox(i)}
               >
                 <div className="relative w-full overflow-hidden rounded-2xl border border-white/10 bg-black">
@@ -132,8 +132,8 @@ export function ClientSuccess() {
 
                   {/* Clean Hover Zoom Overlay */}
                   <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-black/40 backdrop-blur-[2px]">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-lime text-ink shadow-[0_0_25px_rgba(201,242,107,0.5)] transition-transform duration-300 group-hover:scale-110">
-                      <ZoomIn className="h-6 w-6" />
+                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-lime text-ink shadow-[0_0_30px_rgba(201,242,107,0.5)] transition-transform duration-300 group-hover:scale-110">
+                      <ZoomIn className="h-7 w-7" />
                     </div>
                   </div>
                 </div>
@@ -151,7 +151,7 @@ export function ClientSuccess() {
                 onClick={() => setVisibleCount((prev) => Math.min(prev + 15, workProofs.length))}
                 className="group inline-flex items-center gap-2 rounded-full border border-lime/40 bg-lime/10 px-8 py-4 font-mono text-xs font-bold text-lime shadow-[0_0_30px_rgba(201,242,107,0.15)] transition-all hover:border-lime hover:bg-lime hover:text-ink hover:shadow-[0_0_40px_rgba(201,242,107,0.4)]"
               >
-                Load More Client Output ({workProofs.length - visibleCount} Remaining)
+                Load More Client Output
                 <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
               </button>
             </div>

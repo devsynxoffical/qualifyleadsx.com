@@ -16,10 +16,6 @@ function TrainingCard({ video, index }: { video: CardProps; index: number }) {
   const [ready, setReady] = useState(false);
 
   const togglePlay = () => {
-    if (video.youtubeId) {
-      setPlaying(true);
-      return;
-    }
     const v = videoRef.current;
     if (!v) return;
     if (v.paused) {
@@ -42,86 +38,54 @@ function TrainingCard({ video, index }: { video: CardProps; index: number }) {
     <Reveal y={36} delay={index * 0.08}>
       <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-panel transition-colors duration-500 hover:border-line-strong">
         <div className="relative aspect-video overflow-hidden bg-ink">
-          {video.youtubeId ? (
-            playing ? (
-              <iframe
-                src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?autoplay=1&rel=0&modestbranding=1`}
-                title={`${video.title} training video`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="h-full w-full border-0"
-              />
-            ) : (
-              <div className="relative h-full w-full">
-                <img
-                  src={video.poster || `https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg`}
-                  alt={`${video.title} cover`}
-                  className="h-full w-full object-cover brightness-90 transition-transform duration-700 group-hover:scale-105"
-                />
-                <button
-                  type="button"
-                  onClick={togglePlay}
-                  aria-label={`Play ${video.title} video`}
-                  className="absolute inset-0 flex items-center justify-center bg-ink/30 backdrop-blur-[1px] transition-all group-hover:bg-ink/10"
-                >
-                  <span className="flex h-14 w-14 items-center justify-center rounded-full border border-lime/40 bg-lime/20 text-lime shadow-[0_0_20px_rgba(201,242,107,0.3)] backdrop-blur-md transition-transform duration-300 group-hover:scale-110">
-                    <Play className="ml-0.5 h-6 w-6 fill-current" />
-                  </span>
-                </button>
-              </div>
-            )
-          ) : (
-            <>
-              <video
-                ref={videoRef}
-                src={video.src}
-                poster={video.poster}
-                loop
-                playsInline
-                preload="none"
-                className="h-full w-full object-cover"
-                onPlay={() => setPlaying(true)}
-                onPause={() => setPlaying(false)}
-                onLoadedData={() => setReady(true)}
-                aria-label={`${video.title} training video`}
-              />
+          <video
+            ref={videoRef}
+            src={video.src}
+            poster={video.poster}
+            loop
+            playsInline
+            preload="none"
+            className="h-full w-full object-cover"
+            onPlay={() => setPlaying(true)}
+            onPause={() => setPlaying(false)}
+            onLoadedData={() => setReady(true)}
+            aria-label={`${video.title} training video`}
+          />
 
-              {!ready && (
-                <div className="absolute inset-0 flex items-center justify-center bg-ink/40">
-                  <span className="h-8 w-8 animate-spin rounded-full border-2 border-line-strong border-t-lime" />
-                </div>
-              )}
-
-              {/* bottom fade for controls readability */}
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink/80 to-transparent" />
-
-              {/* play / pause overlay */}
-              <button
-                type="button"
-                onClick={togglePlay}
-                aria-label={playing ? "Pause video" : "Play video"}
-                className="absolute inset-0 flex items-center justify-center"
-              >
-                <span
-                  className={`flex h-14 w-14 items-center justify-center rounded-full border border-line-strong bg-ink/60 text-fog backdrop-blur-md transition-all duration-300 hover:text-lime ${
-                    playing ? "scale-90 opacity-0" : "scale-100 opacity-100"
-                  }`}
-                >
-                  <Play className="ml-0.5 h-6 w-6" />
-                </span>
-              </button>
-
-              {/* mute toggle */}
-              <button
-                type="button"
-                onClick={toggleMute}
-                aria-label={muted ? "Unmute video" : "Mute video"}
-                className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full border border-line-strong bg-ink/60 text-mist backdrop-blur-md transition-colors hover:text-lime"
-              >
-                {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
-              </button>
-            </>
+          {!ready && (
+            <div className="absolute inset-0 flex items-center justify-center bg-ink/40">
+              <span className="h-8 w-8 animate-spin rounded-full border-2 border-line-strong border-t-lime" />
+            </div>
           )}
+
+          {/* bottom fade for controls readability */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink/80 to-transparent" />
+
+          {/* play / pause overlay */}
+          <button
+            type="button"
+            onClick={togglePlay}
+            aria-label={playing ? "Pause video" : "Play video"}
+            className="absolute inset-0 flex items-center justify-center"
+          >
+            <span
+              className={`flex h-14 w-14 items-center justify-center rounded-full border border-lime/40 bg-lime/20 text-lime shadow-[0_0_20px_rgba(201,242,107,0.3)] backdrop-blur-md transition-all duration-300 hover:scale-110 hover:text-lime ${
+                playing ? "scale-90 opacity-0" : "scale-100 opacity-100"
+              }`}
+            >
+              <Play className="ml-0.5 h-6 w-6 fill-current" />
+            </span>
+          </button>
+
+          {/* mute toggle */}
+          <button
+            type="button"
+            onClick={toggleMute}
+            aria-label={muted ? "Unmute video" : "Mute video"}
+            className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full border border-line-strong bg-ink/60 text-mist backdrop-blur-md transition-colors hover:text-lime"
+          >
+            {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
+          </button>
 
           {/* duration chip */}
           {video.duration && (
@@ -175,7 +139,7 @@ export function Training() {
 
       <div className="grid gap-5 md:grid-cols-3">
         {trainingVideos.map((v, i) => (
-          <TrainingCard key={v.youtubeId || v.src} video={v} index={i} />
+          <TrainingCard key={v.src} video={v} index={i} />
         ))}
       </div>
 
@@ -188,4 +152,3 @@ export function Training() {
     </Section>
   );
 }
-

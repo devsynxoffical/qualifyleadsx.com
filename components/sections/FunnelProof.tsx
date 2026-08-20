@@ -74,7 +74,7 @@ const funnelProofs: FunnelProof[] = [
     color: "#c9f26b",
   },
   {
-    name: "Parker",
+    name: "Aiden",
     niche: "Meta Ads Scaling",
     result: "295 Verified Leads",
     costPerAppt: "$4.77 CPL",

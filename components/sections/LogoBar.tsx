@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 
-const logos = Array.from({ length: 22 }, (_, i) => ({
-  src: `/logos/logo-${String(i + 1).padStart(2, "0")}.png`,
-  alt: `Client logo ${i + 1}`,
+const existingLogoIndices = [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22];
+
+const logos = existingLogoIndices.map((num) => ({
+  src: `/logos/logo-${String(num).padStart(2, "0")}.png`,
+  alt: `Client logo ${num}`,
 }));
 
 export function LogoBar() {

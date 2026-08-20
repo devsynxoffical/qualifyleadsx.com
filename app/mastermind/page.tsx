@@ -22,6 +22,9 @@ import { Nav } from "@/components/layout/Nav";
 import { VSL } from "@/components/sections/VSL";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
+import { ClientSuccess } from "@/components/sections/ClientSuccess";
+import { Training } from "@/components/sections/Training";
+import { Testimonials } from "@/components/sections/Testimonials";
 
 export const metadata: Metadata = {
   title: "8-Figure Mastermind | QualifiedLeadsX™",
@@ -376,6 +379,11 @@ export default function MastermindPage() {
           ))}
         </div>
       </Section>
+
+      {/* Real Client Proof, Training & Testimonials */}
+      <ClientSuccess />
+      <Training />
+      <Testimonials />
 
       {/* Final CTA Banner */}
       <section className="relative overflow-hidden bg-ink py-24 sm:py-32">

@@ -111,7 +111,11 @@ const faqs = [
   },
 ];
 
-export default function LTOFunnelScalePage() {
+import { ClientSuccess } from "@/components/sections/ClientSuccess";
+import { Training } from "@/components/sections/Training";
+import { Testimonials } from "@/components/sections/Testimonials";
+
+export default function LtoFunnelScalePage() {
   return (
     <main id="main" className="flex min-h-screen flex-col bg-[#040c07] text-white selection:bg-lime/30 selection:text-lime">
       <Nav />
@@ -305,6 +309,11 @@ export default function LTOFunnelScalePage() {
           ))}
         </div>
       </Section>
+
+      {/* Real Client Proof, Training & Testimonials */}
+      <ClientSuccess />
+      <Training />
+      <Testimonials />
 
       {/* CTA Footer Banner */}
       <section className="relative overflow-hidden bg-[#040c07] py-24 border-t border-line">

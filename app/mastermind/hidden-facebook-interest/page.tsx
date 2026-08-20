@@ -113,7 +113,6 @@ const faqs = [
 ];
 
 import { ClientSuccess } from "@/components/sections/ClientSuccess";
-import { Training } from "@/components/sections/Training";
 import { Testimonials } from "@/components/sections/Testimonials";
 
 export default function HiddenFacebookInterestPage() {
@@ -184,14 +183,7 @@ export default function HiddenFacebookInterestPage() {
       {/* VSL Section */}
       <VSL
         videoId="jjq9-FSD4iA"
-        eyebrow="Private Mastermind Breakdown #02"
-        title={
-          <>
-            Hidden Facebook Interest:{" "}
-            <em className="font-semibold not-italic text-lime">The 300–500 Calls Framework.</em>
-          </>
-        }
-        subtitle="Watch the private mastermind video breakdown on hidden interest targeting, ad creative rotation engines, and campaign scaling triggers."
+        hideHeading
       />
 
       {/* Deep-Dive Overview */}
@@ -311,9 +303,8 @@ export default function HiddenFacebookInterestPage() {
         </div>
       </Section>
 
-      {/* Real Client Proof, Training & Testimonials */}
+      {/* Real Client Proof & Testimonials */}
       <ClientSuccess />
-      <Training />
       <Testimonials />
 
       {/* CTA Footer Banner */}

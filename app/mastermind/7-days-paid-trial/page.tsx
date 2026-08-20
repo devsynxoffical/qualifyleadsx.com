@@ -113,7 +113,6 @@ const faqs = [
 ];
 
 import { ClientSuccess } from "@/components/sections/ClientSuccess";
-import { Training } from "@/components/sections/Training";
 import { Testimonials } from "@/components/sections/Testimonials";
 
 export default function SevenDaysPaidTrialPage() {
@@ -184,14 +183,7 @@ export default function SevenDaysPaidTrialPage() {
       {/* VSL Section */}
       <VSL
         videoId="Hy1M7WbookU"
-        eyebrow="Private Mastermind Breakdown #03"
-        title={
-          <>
-            7 Days Paid Trial:{" "}
-            <em className="font-semibold not-italic text-lime">High-Converting Funnel Architecture.</em>
-          </>
-        }
-        subtitle="Watch the full video breakdown on how to turn cold social traffic into paying trial users and upgrade them to premium clients."
+        hideHeading
       />
 
       {/* Deep-Dive Overview */}
@@ -311,9 +303,8 @@ export default function SevenDaysPaidTrialPage() {
         </div>
       </Section>
 
-      {/* Real Client Proof, Training & Testimonials */}
+      {/* Real Client Proof & Testimonials */}
       <ClientSuccess />
-      <Training />
       <Testimonials />
 
       {/* CTA Footer Banner */}

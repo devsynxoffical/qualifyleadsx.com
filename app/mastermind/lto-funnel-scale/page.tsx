@@ -112,7 +112,6 @@ const faqs = [
 ];
 
 import { ClientSuccess } from "@/components/sections/ClientSuccess";
-import { Training } from "@/components/sections/Training";
 import { Testimonials } from "@/components/sections/Testimonials";
 
 export default function LtoFunnelScalePage() {
@@ -183,14 +182,7 @@ export default function LtoFunnelScalePage() {
       {/* VSL Section */}
       <VSL
         videoId="Nr1WIDiWPNA"
-        eyebrow="Private Mastermind Breakdown #04"
-        title={
-          <>
-            Scaling LTO Funnels to $847K+:{" "}
-            <em className="font-semibold not-italic text-lime">Meta Ads Breakdown.</em>
-          </>
-        }
-        subtitle="Watch the step-by-step case study breakdown on scaling low-ticket acquisition funnels using high-volume Meta Ads."
+        hideHeading
       />
 
       {/* Deep-Dive Overview */}
@@ -310,9 +302,8 @@ export default function LtoFunnelScalePage() {
         </div>
       </Section>
 
-      {/* Real Client Proof, Training & Testimonials */}
+      {/* Real Client Proof & Testimonials */}
       <ClientSuccess />
-      <Training />
       <Testimonials />
 
       {/* CTA Footer Banner */}

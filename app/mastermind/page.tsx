@@ -23,7 +23,6 @@ import { VSL } from "@/components/sections/VSL";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { ClientSuccess } from "@/components/sections/ClientSuccess";
-import { Training } from "@/components/sections/Training";
 import { Testimonials } from "@/components/sections/Testimonials";
 
 export const metadata: Metadata = {
@@ -206,7 +205,7 @@ export default function MastermindPage() {
         </div>
       </section>
 
-      <VSL />
+      <VSL hideHeading />
 
       {/* Private Masterminds Section */}
       <Section id="private-masterminds" className="relative overflow-hidden bg-[#040c07] border-y border-line">
@@ -380,9 +379,8 @@ export default function MastermindPage() {
         </div>
       </Section>
 
-      {/* Real Client Proof, Training & Testimonials */}
+      {/* Real Client Proof & Testimonials */}
       <ClientSuccess />
-      <Training />
       <Testimonials />
 
       {/* Final CTA Banner */}

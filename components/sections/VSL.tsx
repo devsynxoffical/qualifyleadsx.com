@@ -12,6 +12,7 @@ interface VSLProps {
   eyebrow?: string;
   title?: React.ReactNode;
   subtitle?: string;
+  hideHeading?: boolean;
 }
 
 export function VSL({
@@ -24,6 +25,7 @@ export function VSL({
     </>
   ),
   subtitle = "A short breakdown of the QualifiedLeadsX™ client acquisition system, the exact steps we install for you, and what a fully booked calendar looks like.",
+  hideHeading = false,
 }: VSLProps) {
   const [isPlaying, setIsPlaying] = useState(true);
 
@@ -35,11 +37,13 @@ export function VSL({
       </div>
 
       <div className="container-x relative z-10">
-        <SectionHeading
-          eyebrow={eyebrow}
-          title={title}
-          subtitle={subtitle}
-        />
+        {!hideHeading && (
+          <SectionHeading
+            eyebrow={eyebrow}
+            title={title}
+            subtitle={subtitle}
+          />
+        )}
 
         <Reveal>
           {/* ── Top VSL Announcement Strip ── */}

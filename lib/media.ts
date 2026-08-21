@@ -27,11 +27,11 @@ export const testimonialVideos: TestimonialVideo[] = [
   {
     src: `${REVIEW_CDN}/69624f63f8a93b76e0751a55.mp4`,
     poster: "/training/DPHgI7fEuIA-poster.jpg",
-    name: "Edgar & Jeremi",
-    role: "Co-Founders · High-Ticket Funnel System",
-    result: "$120K+ Cash Generated",
-    quote: "“How Edgar & Jeremi Are Getting High-Ticket Clients Using Our QualifiedLeadsX™ System”",
-    duration: "0:45",
+    name: "Edgar",
+    role: "Founder · QualifiedLeadsX",
+    result: "$4,500 Contract ($1.5K MRR)",
+    quote: "“Edgar Landed A New Agency Client At A $1500/ Month MRR Deal For 3 Months ($4,500) At A $7 Lead Cost”",
+    duration: "2:04",
     stars: 5,
   },
   {
@@ -47,11 +47,11 @@ export const testimonialVideos: TestimonialVideo[] = [
   {
     src: `${REVIEW_CDN}/6978f116d560857126a4804c.mp4`,
     poster: "/training/DVjcGrUEr1Y-poster.jpg",
-    name: "Edgar",
-    role: "Founder · QualifiedLeadsX",
-    result: "$4,500 Contract ($1.5K MRR)",
-    quote: "“Edgar Landed A New Agency Client At A $1500/ Month MRR Deal For 3 Months ($4,500) At A $7 Lead Cost”",
-    duration: "2:04",
+    name: "Edgar & Jeremi",
+    role: "Co-Founders · High-Ticket Funnel System",
+    result: "$120K+ Cash Generated",
+    quote: "“How Edgar & Jeremi Are Getting High-Ticket Clients Using Our QualifiedLeadsX™ System”",
+    duration: "0:45",
     stars: 5,
   },
 ];

@@ -1,6 +1,5 @@
 export const FB_PIXEL_IDS = [
   "474182998516134", // Qualified leads X
-  "1692483945176511", // Seven Figure Studio
 ];
 
 declare global {

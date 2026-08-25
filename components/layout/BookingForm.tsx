@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useState, useEffect, type FormEvent } from "react";
 import { ArrowUpRight, CheckCircle2, Loader2, RefreshCw } from "lucide-react";
 import { site } from "@/lib/site";
+import { fbqTrack } from "@/lib/pixel";
 
 const ENDPOINT = `https://formsubmit.co/ajax/${site.email}`;
 
@@ -15,6 +16,10 @@ type Status = "idle" | "sending" | "success" | "error";
 
 export function BookingForm() {
   const [status, setStatus] = useState<Status>("idle");
+
+  useEffect(() => {
+    fbqTrack("Schedule");
+  }, []);
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -45,6 +50,7 @@ export function BookingForm() {
       const data = (await res.json()) as { success?: string };
       if (data.success === "true") {
         setStatus("success");
+        fbqTrack("CompleteRegistration");
         form.reset();
       } else {
         setStatus("error");

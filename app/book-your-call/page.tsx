@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { CalendarDays, ShieldCheck, Sparkles, Timer } from "lucide-react";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -79,6 +80,13 @@ export default function BookYourCallPage() {
         </section>
       </main>
       <Footer />
+      <Script
+        id="meta-pixel-schedule-event"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `if(typeof fbq === 'function') { fbq('track', 'Schedule'); }`,
+        }}
+      />
     </>
   );
 }

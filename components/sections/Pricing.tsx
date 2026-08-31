@@ -11,10 +11,10 @@ const plans = [
     id: "meta-ads",
     badge: "Ads Scaling",
     name: "Meta Ads Management",
-    price: "$849",
-    period: "/month",
+    pricingLabel: "Custom Quote",
+    pricingSub: "/ tailored to your scope",
     tagline: "For clients who want us to produce high-converting ad creatives, write direct-response copy, and scale their Meta Ads daily.",
-    cta: "Book Free Strategy Call",
+    cta: "Get Your Quote",
     featured: true,
     features: [
       "Full Meta Ads Campaign Management",
@@ -30,10 +30,10 @@ const plans = [
     id: "full-service",
     badge: "Most Popular",
     name: "Full-Service Growth",
-    price: "$2,499",
-    period: "/month",
+    pricingLabel: "Custom Quote",
+    pricingSub: "/ tailored to your scale",
     tagline: "For clients who want us to build, launch, and scale the complete done-for-you client acquisition ecosystem.",
-    cta: "Book Free Strategy Call",
+    cta: "Get Your Quote",
     featured: true,
     features: [
       "Everything in Meta Ads Management",
@@ -59,14 +59,14 @@ export function Pricing() {
 
       <div className="relative z-10">
         <SectionHeading
-          eyebrow="Simple, transparent pricing"
+          eyebrow="Flexible Engagement Models"
           title={
             <>
               Two ways to{" "}
               <em className="font-semibold not-italic text-lime">plug into the system.</em>
             </>
           }
-          subtitle="No hidden fees. No long-term lock-ins. Pick the plan that matches where you are right now."
+          subtitle="No hidden fees. No long-term lock-ins. Pick the plan that matches where you are right now and get your custom quote."
         />
 
         <Reveal y={36} className="mt-14">
@@ -104,16 +104,16 @@ export function Pricing() {
                 {/* Price block */}
                 <div className="px-8 pt-6">
                   <h3 className="text-xl font-bold tracking-tight text-white">{plan.name}</h3>
-                  <div className="mt-4 flex items-end gap-1">
+                  <div className="mt-4 flex items-baseline gap-2">
                     <span
                       className={cn(
-                        "text-5xl font-bold tracking-tight",
-                        plan.featured ? "text-lime" : "text-fog"
+                        "text-3xl font-bold tracking-tight sm:text-4xl",
+                        plan.featured ? "text-lime" : "text-white"
                       )}
                     >
-                      {plan.price}
+                      {plan.pricingLabel}
                     </span>
-                    <span className="mb-2 text-base font-medium text-dim">{plan.period}</span>
+                    <span className="text-xs font-medium text-dim">{plan.pricingSub}</span>
                   </div>
                   <p className="mt-3 text-[13px] leading-relaxed text-mist/80">{plan.tagline}</p>
                 </div>

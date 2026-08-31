@@ -17,6 +17,7 @@ import { FlowWave } from "@/components/sections/FlowWave";
 import { Industries } from "@/components/sections/Industries";
 import { Guarantee } from "@/components/sections/Guarantee";
 import { FAQ } from "@/components/sections/FAQ";
+import { Pricing } from "@/components/sections/Pricing";
 import { Community } from "@/components/sections/Community";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 
@@ -60,6 +61,7 @@ export default function Home() {
       />
       <Testimonials />
       <FAQ />
+      <Pricing />
       <Community />
       <FinalCTA />
       <Footer />

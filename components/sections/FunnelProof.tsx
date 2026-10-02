@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { BadgeCheck, TrendingUp, ZoomIn } from "lucide-react";
+import Link from "next/link";
+import { BadgeCheck, TrendingUp, ZoomIn, ArrowUpRight, Sparkles } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { LightboxModal, LightboxItem } from "@/components/ui/LightboxModal";
@@ -206,11 +207,28 @@ export function FunnelProof() {
         onNavigate={setLightboxIndex}
       />
 
-      {/* Footnote */}
+      {/* Explore All Case Studies CTA */}
       <Reveal delay={0.1}>
-        <p className="mx-auto mt-10 max-w-xl text-center text-xs leading-relaxed text-dim">
+        <div className="mt-12 flex flex-col items-center justify-center text-center">
+          <Link
+            href="/case-studies"
+            className="group inline-flex items-center gap-2.5 rounded-full border border-lime/40 bg-panel px-7 py-3.5 text-sm font-bold text-lime transition-all hover:bg-lime hover:text-ink hover:shadow-[0_0_35px_rgba(201,242,107,0.4)] hover:scale-105"
+          >
+            <Sparkles className="h-4 w-4" />
+            <span>Explore All 125+ Video & Image Case Studies</span>
+            <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </Link>
+          <p className="mt-3 text-xs font-mono text-dim">
+            Includes 69 live video breakdowns, Meta Ads account screenshots & verified breakdowns across 30+ niches
+          </p>
+        </div>
+      </Reveal>
+
+      {/* Footnote */}
+      <Reveal delay={0.15}>
+        <p className="mx-auto mt-8 max-w-xl text-center text-xs leading-relaxed text-dim">
           Screenshots are from real client funnels installed by QualifiedLeadsX™. Individual results
-          vary - every funnel below uses the exact same system we would install for you.
+          vary - every funnel uses the exact same system we install for you.
         </p>
       </Reveal>
     </Section>

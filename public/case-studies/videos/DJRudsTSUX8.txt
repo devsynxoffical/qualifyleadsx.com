@@ -1,0 +1,53 @@
+🔍 Our Step-by-Step Process to Verify Pre-Qualified Leads for Our HVAC Client
+
+In the last 5 days, we generated 55 qualified leads for a new HVAC client with just $606 in ad spend — achieving a CPL of $11.02.
+
+Here’s the exact process we used to filter and verify those pre-qualified leads:
+
+✅ Step 1: Ad Targeting Setup
+Narrow geo-targeting to serviceable zip codes.
+
+Demographic filters: Homeowners, 30–65 age group.
+
+Interest-based targeting: Home improvement, energy efficiency, HVAC systems. ( I will share the exact targeting sheet with you guys if you need )
+
+✅ Step 2: Pre-Qualification Form Filters (Lead Form)
+Added qualifying questions within the lead form:
+
+“Do you own the property?” (Must answer YES)
+
+“What’s the age of your current HVAC system?”
+
+“Are you looking to replace or repair in the next 30 days?” (Intent)
+
+“Is financing a consideration for you?” (Budget filter)
+
+✅ Step 3: Auto-Tagging & Lead Routing
+
+Based on form answers, leads were auto-tagged (e.g., high-intent, low-budget).
+
+Only high-intent, qualified responses were routed immediately to the sales team.
+
+Others were added to a nurture list for retargeting.
+
+✅ Step 4: Manual Spot-Check (Quality Control)
+
+Daily review of 10–20% of incoming leads for consistency.
+
+Verified contact info accuracy and logical answers to qualification questions.
+
+✅ Step 5: Follow-Up System
+
+Verified leads received a call/text/email within 10 minutes.
+
+CRM tracking to monitor conversion activity and disqualify any missed filters.
+
+🎯 Result?
+
+55 verified, qualified leads.
+
+No wasted sales time on renters, tire-kickers, or unqualified traffic.
+
+Strong ROI and a very happy client in just 5 days.
+
+#HVAC #leads #leadgeneration #mediabuying #facebookadscampaigns

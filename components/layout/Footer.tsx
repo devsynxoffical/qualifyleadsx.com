@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail, Phone } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { site } from "@/lib/site";
@@ -8,6 +8,7 @@ const footerColumns = [
     title: "Explore",
     links: [
       { label: "The System", href: "#different" },
+      { label: "Case Studies", href: "/case-studies" },
       { label: "Client Results", href: "#results" },
       { label: "Client Success", href: "#success" },
       { label: "Mastermind", href: "/mastermind" },

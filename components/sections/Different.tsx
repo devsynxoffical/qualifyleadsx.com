@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion } from "motion/react";
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { differentiators } from "@/lib/data";
 import { cn } from "@/lib/utils";

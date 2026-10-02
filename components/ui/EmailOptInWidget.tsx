@@ -3,7 +3,6 @@
 import { useState, type FormEvent } from "react";
 import { X, ArrowUpRight, CheckCircle2, Loader2, Lock, ShieldCheck, Mail } from "lucide-react";
 import { site } from "@/lib/site";
-import { cn } from "@/lib/utils";
 
 const ENDPOINT = `https://formsubmit.co/ajax/${site.email}`;
 

@@ -2,10 +2,6 @@ import { Metadata } from "next";
 import {
   ArrowUpRight,
   ShieldCheck,
-  Zap,
-  Users,
-  TrendingUp,
-  Sparkles,
   Lock,
   CheckCircle2,
   XCircle,
@@ -14,7 +10,6 @@ import {
   MessageSquare,
   Award,
   BarChart3,
-  Calendar,
 } from "lucide-react";
 import { site } from "@/lib/site";
 import { Footer } from "@/components/layout/Footer";

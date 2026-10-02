@@ -255,14 +255,25 @@ export function CaseStudyModal({
         <div className="flex-1 flex flex-col justify-between overflow-y-auto p-5 sm:p-8 max-h-[45vh] lg:max-h-[80vh] bg-panel">
           <div>
             {/* Category & Verified Badge */}
-            <div className="flex flex-wrap items-center gap-2 mb-3">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
               <span className="rounded-full bg-lime/10 border border-lime/30 px-3 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider text-lime">
                 {item.category}
               </span>
-              <span className="inline-flex items-center gap-1 font-mono text-[10px] text-mist/70">
-                <BadgeCheck className="h-3.5 w-3.5 text-lime" />
+              <span className="inline-flex items-center gap-1 font-mono text-[10px] text-lime">
+                <BadgeCheck className="h-3.5 w-3.5" />
                 Live Client Output
               </span>
+            </div>
+
+            {/* BIG NUMBER HERO STAT */}
+            <div className="mb-4 rounded-2xl border border-lime/30 bg-gradient-to-r from-[#07190e] via-[#0b2616] to-[#07190e] p-4 sm:p-5 shadow-lg">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-mist/70 font-semibold flex items-center gap-1">
+                <Sparkles className="h-3.5 w-3.5 text-lime" />
+                {item.bigNumberLabel || "Verified Output"}
+              </span>
+              <div className="font-mono text-3xl sm:text-4xl lg:text-5xl font-black text-lime tracking-tight drop-shadow-[0_0_25px_rgba(201,242,107,0.45)] mt-1">
+                {item.bigNumber}
+              </div>
             </div>
 
             {/* Title / Headline */}

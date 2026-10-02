@@ -13,6 +13,9 @@ import {
   ArrowUpRight,
   Layers,
   X,
+  TrendingUp,
+  DollarSign,
+  Users,
 } from "lucide-react";
 import { caseStudiesData } from "@/lib/case-studies-data";
 import { CaseStudyModal } from "@/components/ui/CaseStudyModal";
@@ -31,17 +34,20 @@ const CATEGORIES = [
   "Solar & Energy",
 ] as const;
 
+type SortOption = "impact" | "spend" | "volume" | "cpl";
+
 export function CaseStudiesGallery() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [mediaTypeFilter, setMediaTypeFilter] = useState<"all" | "video" | "image">("all");
+  const [sortBy, setSortBy] = useState<SortOption>("impact");
   const [visibleCount, setVisibleCount] = useState<number>(18);
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [modalIndex, setModalIndex] = useState<number>(0);
 
-  // Filtered case studies
+  // Filtered and Sorted case studies (Big Numbers First by default)
   const filteredItems = useMemo(() => {
-    return caseStudiesData.filter((item) => {
+    const list = caseStudiesData.filter((item) => {
       // Media type filter
       if (mediaTypeFilter === "video" && item.type !== "video") return false;
       if (mediaTypeFilter === "image" && item.type !== "image") return false;
@@ -65,15 +71,39 @@ export function CaseStudiesGallery() {
         const matchSubtitle = item.subtitle.toLowerCase().includes(q);
         const matchDesc = item.description.toLowerCase().includes(q);
         const matchCategory = item.category.toLowerCase().includes(q);
+        const matchBigNum = item.bigNumber.toLowerCase().includes(q);
         const matchTags = item.tags.some((t) => t.toLowerCase().includes(q));
-        if (!matchTitle && !matchSubtitle && !matchDesc && !matchCategory && !matchTags) {
+        if (!matchTitle && !matchSubtitle && !matchDesc && !matchCategory && !matchBigNum && !matchTags) {
           return false;
         }
       }
 
       return true;
     });
-  }, [selectedCategory, searchQuery, mediaTypeFilter]);
+
+    // Apply sorting
+    if (sortBy === "impact") {
+      return [...list].sort((a, b) => (b.impactScore || 0) - (a.impactScore || 0));
+    } else if (sortBy === "spend") {
+      return [...list].sort((a, b) => {
+        const aHasDollar = a.bigNumber.includes("$");
+        const bHasDollar = b.bigNumber.includes("$");
+        if (aHasDollar && !bHasDollar) return -1;
+        if (!aHasDollar && bHasDollar) return 1;
+        return (b.impactScore || 0) - (a.impactScore || 0);
+      });
+    } else if (sortBy === "volume") {
+      return [...list].sort((a, b) => {
+        const aHasNum = /^\d/.test(a.bigNumber);
+        const bHasNum = /^\d/.test(b.bigNumber);
+        if (aHasNum && !bHasNum) return -1;
+        if (!aHasNum && bHasNum) return 1;
+        return (b.impactScore || 0) - (a.impactScore || 0);
+      });
+    }
+
+    return list;
+  }, [selectedCategory, searchQuery, mediaTypeFilter, sortBy]);
 
   const displayedItems = useMemo(() => {
     return filteredItems.slice(0, visibleCount);
@@ -88,7 +118,7 @@ export function CaseStudiesGallery() {
     <div className="w-full">
       {/* Search & Filter Controls Bar */}
       <div className="mb-10 space-y-6">
-        <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
+        <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
           {/* Search Input */}
           <div className="relative flex-1 max-w-xl">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-mist/70" />
@@ -99,7 +129,7 @@ export function CaseStudiesGallery() {
                 setSearchQuery(e.target.value);
                 setVisibleCount(18);
               }}
-              placeholder="Search by niche, metric (e.g. $125k, CPL, roofing, MVA, agency)..."
+              placeholder="Search big numbers (e.g. $125k, $639k, 15,958, CPL, roofing, MVA)..."
               className="w-full rounded-2xl border border-line bg-panel/80 pl-11 pr-10 py-3 text-sm text-fog placeholder:text-mist/50 backdrop-blur-md focus:border-lime focus:outline-none focus:ring-1 focus:ring-lime transition-all"
             />
             {searchQuery && (
@@ -113,53 +143,97 @@ export function CaseStudiesGallery() {
             )}
           </div>
 
-          {/* Quick Media Type Pills */}
-          <div className="flex items-center gap-1.5 p-1 rounded-2xl border border-line bg-panel/60 backdrop-blur-md self-start md:self-auto">
-            <button
-              type="button"
-              onClick={() => {
-                setMediaTypeFilter("all");
-                setVisibleCount(18);
-              }}
-              className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl font-mono text-xs font-semibold transition-all ${
-                mediaTypeFilter === "all"
-                  ? "bg-lime text-ink shadow-[0_0_15px_rgba(201,242,107,0.3)]"
-                  : "text-mist hover:text-fog"
-              }`}
-            >
-              <Sparkles className="h-3.5 w-3.5" />
-              All ({caseStudiesData.length})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setMediaTypeFilter("video");
-                setVisibleCount(18);
-              }}
-              className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl font-mono text-xs font-semibold transition-all ${
-                mediaTypeFilter === "video"
-                  ? "bg-lime text-ink shadow-[0_0_15px_rgba(201,242,107,0.3)]"
-                  : "text-mist hover:text-fog"
-              }`}
-            >
-              <Video className="h-3.5 w-3.5" />
-              Reels ({caseStudiesData.filter((i) => i.type === "video").length})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setMediaTypeFilter("image");
-                setVisibleCount(18);
-              }}
-              className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl font-mono text-xs font-semibold transition-all ${
-                mediaTypeFilter === "image"
-                  ? "bg-lime text-ink shadow-[0_0_15px_rgba(201,242,107,0.3)]"
-                  : "text-mist hover:text-fog"
-              }`}
-            >
-              <ImageIcon className="h-3.5 w-3.5" />
-              Data Proof ({caseStudiesData.filter((i) => i.type === "image").length})
-            </button>
+          {/* Quick Sort & Filter Controls */}
+          <div className="flex flex-wrap items-center gap-2">
+            {/* Sort Toggle (Big Numbers First!) */}
+            <div className="flex items-center gap-1 p-1 rounded-2xl border border-lime/30 bg-lime/5 backdrop-blur-md">
+              <button
+                type="button"
+                onClick={() => setSortBy("impact")}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-mono text-xs font-bold transition-all ${
+                  sortBy === "impact"
+                    ? "bg-lime text-ink shadow-[0_0_15px_rgba(201,242,107,0.4)]"
+                    : "text-mist hover:text-fog"
+                }`}
+                title="Sort by Biggest Numbers & Highest Revenue/Volume first"
+              >
+                <TrendingUp className="h-3.5 w-3.5" />
+                <span>Big Numbers First</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setSortBy("spend")}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-mono text-xs font-bold transition-all ${
+                  sortBy === "spend"
+                    ? "bg-lime text-ink shadow-[0_0_15px_rgba(201,242,107,0.4)]"
+                    : "text-mist hover:text-fog"
+                }`}
+              >
+                <DollarSign className="h-3.5 w-3.5" />
+                <span>Revenue/Spend</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setSortBy("volume")}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-mono text-xs font-bold transition-all ${
+                  sortBy === "volume"
+                    ? "bg-lime text-ink shadow-[0_0_15px_rgba(201,242,107,0.4)]"
+                    : "text-mist hover:text-fog"
+                }`}
+              >
+                <Users className="h-3.5 w-3.5" />
+                <span>Lead Volume</span>
+              </button>
+            </div>
+
+            {/* Media Type Toggle */}
+            <div className="flex items-center gap-1 p-1 rounded-2xl border border-line bg-panel/60 backdrop-blur-md">
+              <button
+                type="button"
+                onClick={() => {
+                  setMediaTypeFilter("all");
+                  setVisibleCount(18);
+                }}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-mono text-xs font-semibold transition-all ${
+                  mediaTypeFilter === "all"
+                    ? "bg-white/15 text-fog font-bold"
+                    : "text-mist hover:text-fog"
+                }`}
+              >
+                <Sparkles className="h-3.5 w-3.5 text-lime" />
+                All ({caseStudiesData.length})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setMediaTypeFilter("video");
+                  setVisibleCount(18);
+                }}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-mono text-xs font-semibold transition-all ${
+                  mediaTypeFilter === "video"
+                    ? "bg-white/15 text-fog font-bold"
+                    : "text-mist hover:text-fog"
+                }`}
+              >
+                <Video className="h-3.5 w-3.5 text-lime" />
+                Reels ({caseStudiesData.filter((i) => i.type === "video").length})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setMediaTypeFilter("image");
+                  setVisibleCount(18);
+                }}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-mono text-xs font-semibold transition-all ${
+                  mediaTypeFilter === "image"
+                    ? "bg-white/15 text-fog font-bold"
+                    : "text-mist hover:text-fog"
+                }`}
+              >
+                <ImageIcon className="h-3.5 w-3.5 text-lime" />
+                Data ({caseStudiesData.filter((i) => i.type === "image").length})
+              </button>
+            </div>
           </div>
         </div>
 
@@ -189,9 +263,14 @@ export function CaseStudiesGallery() {
 
         {/* Results Counter */}
         <div className="flex items-center justify-between text-xs font-mono text-dim border-b border-line/50 pb-3">
-          <span>
-            Showing <strong className="text-lime">{displayedItems.length}</strong> of{" "}
-            <strong>{filteredItems.length}</strong> verified case studies
+          <span className="flex items-center gap-2">
+            <span>
+              Showing <strong className="text-lime">{displayedItems.length}</strong> of{" "}
+              <strong>{filteredItems.length}</strong> case studies
+            </span>
+            <span className="inline-flex items-center gap-1 rounded-full bg-lime/10 border border-lime/20 px-2 py-0.5 text-[10px] text-lime">
+              ⚡ Sorted by Biggest Numbers First
+            </span>
           </span>
           {searchQuery && (
             <button
@@ -216,6 +295,7 @@ export function CaseStudiesGallery() {
               setSearchQuery("");
               setSelectedCategory("All");
               setMediaTypeFilter("all");
+              setSortBy("impact");
             }}
             className="mt-5 inline-flex items-center gap-2 rounded-full bg-lime px-5 py-2 text-xs font-bold text-ink hover:bg-lime-soft"
           >
@@ -231,8 +311,33 @@ export function CaseStudiesGallery() {
               <article
                 key={item.id}
                 onClick={() => openModal(index)}
-                className="group relative flex flex-col overflow-hidden rounded-3xl border border-line bg-panel transition-all duration-500 hover:border-lime/60 hover:shadow-[0_15px_45px_rgba(201,242,107,0.15)] hover:-translate-y-1.5 cursor-pointer"
+                className="group relative flex flex-col overflow-hidden rounded-3xl border border-line bg-panel transition-all duration-500 hover:border-lime/60 hover:shadow-[0_20px_50px_rgba(201,242,107,0.18)] hover:-translate-y-2 cursor-pointer"
               >
+                {/* 🌟 BIG NUMBERS FIRST HEADER STRIP 🌟 */}
+                <div className="relative z-10 border-b border-lime/20 bg-gradient-to-r from-[#07190e] via-[#0b2616] to-[#07190e] p-4 sm:p-5 flex items-center justify-between gap-3">
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-mist/70 font-semibold flex items-center gap-1">
+                      <Sparkles className="h-3 w-3 text-lime" />
+                      {item.bigNumberLabel || "Verified Output"}
+                    </span>
+                    <span className="font-mono text-2xl sm:text-3xl lg:text-4xl font-black text-lime tracking-tight drop-shadow-[0_0_20px_rgba(201,242,107,0.4)]">
+                      {item.bigNumber}
+                    </span>
+                  </div>
+                  
+                  {/* Secondary metric tag if present */}
+                  {item.metrics && item.metrics.length > 1 && (
+                    <div className="text-right flex flex-col items-end">
+                      <span className="text-[9px] font-mono uppercase tracking-wider text-dim">
+                        {item.metrics[1].label}
+                      </span>
+                      <span className="font-mono text-sm sm:text-base font-bold text-fog">
+                        {item.metrics[1].value}
+                      </span>
+                    </div>
+                  )}
+                </div>
+
                 {/* Media Preview Container */}
                 <div className="relative aspect-[16/11] w-full overflow-hidden bg-ink border-b border-line">
                   {isVideo ? (
@@ -257,7 +362,7 @@ export function CaseStudiesGallery() {
                         </div>
                       </div>
                       {/* Video Tag */}
-                      <div className="absolute top-3 left-3 flex items-center gap-1.5 rounded-full border border-lime/30 bg-ink/80 px-2.5 py-1 font-mono text-[9px] font-bold uppercase tracking-wider text-lime backdrop-blur-md">
+                      <div className="absolute top-3 left-3 flex items-center gap-1.5 rounded-full border border-lime/30 bg-ink/85 px-2.5 py-1 font-mono text-[9px] font-bold uppercase tracking-wider text-lime backdrop-blur-md">
                         <Video className="h-3 w-3" />
                         Reel Breakdown
                       </div>
@@ -279,15 +384,15 @@ export function CaseStudiesGallery() {
                       </div>
                       {/* Multi-image indicator if carousel */}
                       {item.mediaFiles && item.mediaFiles.length > 1 && (
-                        <div className="absolute top-3 right-3 flex items-center gap-1 rounded-full border border-white/20 bg-ink/80 px-2 py-0.5 font-mono text-[9px] font-bold text-fog backdrop-blur-md">
+                        <div className="absolute top-3 right-3 flex items-center gap-1 rounded-full border border-white/20 bg-ink/85 px-2 py-0.5 font-mono text-[9px] font-bold text-fog backdrop-blur-md">
                           <Layers className="h-3 w-3 text-lime" />
                           {item.mediaFiles.length} slides
                         </div>
                       )}
                       {/* Data Proof Tag */}
-                      <div className="absolute top-3 left-3 flex items-center gap-1.5 rounded-full border border-white/20 bg-ink/80 px-2.5 py-1 font-mono text-[9px] font-bold uppercase tracking-wider text-fog backdrop-blur-md">
+                      <div className="absolute top-3 left-3 flex items-center gap-1.5 rounded-full border border-white/20 bg-ink/85 px-2.5 py-1 font-mono text-[9px] font-bold uppercase tracking-wider text-fog backdrop-blur-md">
                         <ImageIcon className="h-3 w-3 text-lime" />
-                        Live Data
+                        Live Data Proof
                       </div>
                     </div>
                   )}
@@ -307,7 +412,7 @@ export function CaseStudiesGallery() {
                     <div className="flex items-center justify-between gap-2 mb-2">
                       <span className="inline-flex items-center gap-1 font-mono text-[10px] text-lime font-bold">
                         <BadgeCheck className="h-3.5 w-3.5" />
-                        Verified Install
+                        Verified Case Study
                       </span>
                       <span className="font-mono text-[10px] text-dim uppercase">
                         {isVideo ? "Video" : "Screenshot"}
@@ -319,22 +424,6 @@ export function CaseStudiesGallery() {
                       {item.title}
                     </h3>
 
-                    {/* Key Metrics Strip */}
-                    {item.metrics && item.metrics.length > 0 && (
-                      <div className="mt-3 grid grid-cols-2 gap-2 rounded-xl border border-lime/20 bg-[#06140b] p-2.5">
-                        {item.metrics.slice(0, 2).map((m, idx) => (
-                          <div key={idx} className="flex flex-col">
-                            <span className="text-[9px] uppercase font-mono text-mist/70 truncate">
-                              {m.label}
-                            </span>
-                            <span className="font-mono text-xs sm:text-sm font-bold text-lime truncate">
-                              {m.value}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-
                     {/* Description Snippet */}
                     <p className="mt-3 text-xs leading-relaxed text-mist line-clamp-3">
                       {item.description}
@@ -344,7 +433,7 @@ export function CaseStudiesGallery() {
                   {/* Read / Watch CTA footer */}
                   <div className="mt-4 pt-3 border-t border-line flex items-center justify-between text-xs font-semibold text-fog group-hover:text-lime transition-colors">
                     <span className="inline-flex items-center gap-1">
-                      {isVideo ? "Watch Breakdown & Case Study" : "View Full Results & Breakdown"}
+                      {isVideo ? "Watch Reel & Full Breakdown" : "View Full Results & Breakdown"}
                     </span>
                     <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-lime" />
                   </div>
@@ -361,7 +450,7 @@ export function CaseStudiesGallery() {
           <button
             type="button"
             onClick={() => setVisibleCount((prev) => prev + 18)}
-            className="group relative inline-flex items-center gap-2 rounded-full border border-lime/40 bg-panel px-8 py-3.5 text-sm font-bold text-lime transition-all hover:bg-lime hover:text-ink hover:shadow-[0_0_30px_rgba(201,242,107,0.35)]"
+            className="group relative inline-flex items-center gap-2 rounded-full border border-lime/40 bg-panel px-8 py-3.5 text-sm font-bold text-lime transition-all hover:bg-lime hover:text-ink hover:shadow-[0_0_30px_rgba(201,242,107,0.35)] hover:scale-105"
           >
             <span>Load More Case Studies</span>
             <span className="rounded-full bg-lime/15 px-2 py-0.5 font-mono text-xs group-hover:bg-ink/20">

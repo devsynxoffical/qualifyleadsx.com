@@ -42,7 +42,6 @@ export const metadata: Metadata = {
 };
 
 export default function BlogHubPage() {
-  const featuredPost = blogPosts[0];
   const gridPosts = blogPosts;
 
   const jsonLd = {
@@ -134,82 +133,6 @@ export default function BlogHubPage() {
               <strong>QualifiedLeadsX™ Insights</strong> provides actionable educational blueprints for coaches, consultants, and agencies seeking predictable $100K+/month customer acquisition. Core focus areas include modern 12-minute VSL funnels, broad Meta ad creative targeting, and automated conditional lead qualification.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* Featured Pillar Article */}
-      <section className="py-12 bg-base/50 border-t border-line">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-6 flex items-center justify-between">
-            <h2 className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-semibold">
-              FEATURED PILLAR BLUEPRINT
-            </h2>
-          </div>
-
-          <Link
-            href={`/blog/${featuredPost.slug}`}
-            className="group relative block overflow-hidden rounded-3xl border border-line-strong bg-panel transition-all duration-300 hover:border-lime/60 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.85),0_0_40px_-10px_rgba(201,242,107,0.2)]"
-          >
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
-              {/* Featured Image */}
-              <div className="relative aspect-[16/10] lg:aspect-auto lg:col-span-5 overflow-hidden bg-ink min-h-[260px] sm:min-h-[340px]">
-                <Image
-                  src={featuredPost.coverImage}
-                  alt={featuredPost.title}
-                  fill
-                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-panel via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-panel opacity-80" />
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-semibold uppercase tracking-wider bg-ink/80 backdrop-blur-md border border-lime/30 text-lime shadow-md">
-                    {featuredPost.category}
-                  </span>
-                </div>
-              </div>
-
-              {/* Featured Content */}
-              <div className="lg:col-span-7 p-6 sm:p-10 lg:p-12 flex flex-col justify-between">
-                <div>
-                  <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-dim mb-4">
-                    <span className="flex items-center gap-1.5">
-                      <Clock className="w-3.5 h-3.5 text-lime" />
-                      {featuredPost.readTime}
-                    </span>
-                    <span>•</span>
-                    <span className="flex items-center gap-1.5">
-                      <Calendar className="w-3.5 h-3.5 text-dim" />
-                      {featuredPost.publishedAt}
-                    </span>
-                  </div>
-
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-fog group-hover:text-lime transition-colors duration-300 leading-tight">
-                    {featuredPost.title}
-                  </h3>
-
-                  <p className="mt-4 text-sm sm:text-base text-mist leading-relaxed line-clamp-3">
-                    {featuredPost.description}
-                  </p>
-                </div>
-
-                <div className="mt-8 pt-6 border-t border-line/60 flex items-center justify-between">
-                  <div className="flex items-center gap-2.5">
-                    <div className="h-7 w-7 rounded-full bg-lime/10 border border-lime/30 flex items-center justify-center font-mono font-bold text-lime text-xs">
-                      QLX
-                    </div>
-                    <span className="text-xs font-mono text-fog font-medium">
-                      {featuredPost.author.name}
-                    </span>
-                  </div>
-
-                  <div className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-lime group-hover:gap-3 transition-all duration-300">
-                    <span>Read Full Blueprint</span>
-                    <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
         </div>
       </section>
 

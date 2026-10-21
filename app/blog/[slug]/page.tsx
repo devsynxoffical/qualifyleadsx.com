@@ -107,6 +107,7 @@ export default async function BlogPostPage({ params }: Props) {
       url: site.url,
       logo: `${site.url}/images/qualified-leadsx.webp`,
     },
+    image: `${site.url}${post.coverImage}`,
     keywords: post.tags.join(", "),
   };
 
@@ -276,9 +277,29 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
 
           {/* Intro paragraph */}
-          <div className="prose prose-invert max-w-none text-base sm:text-lg leading-relaxed text-mist mb-10">
+          <div className="prose prose-invert max-w-none text-base sm:text-lg leading-relaxed text-mist mb-8">
             <p>{post.content.intro}</p>
           </div>
+
+          {/* Mid-Article Inline Graphic / Architecture Diagram */}
+          {post.content.inlineGraphic && (
+            <figure className="mb-12 overflow-hidden rounded-2xl border border-line-strong bg-panel p-3 sm:p-4 shadow-xl">
+              <div className="relative aspect-[16/10] sm:aspect-[16/9] w-full overflow-hidden rounded-xl bg-ink">
+                <Image
+                  src={post.content.inlineGraphic.url}
+                  alt={post.content.inlineGraphic.alt}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 px-2 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-mono text-dim">
+                <span className="text-fog font-medium">{post.content.inlineGraphic.caption}</span>
+                <span className="rounded bg-lime/10 px-2.5 py-0.5 text-[10px] text-lime font-semibold uppercase tracking-wider shrink-0 self-start sm:self-auto border border-lime/20">
+                  {post.content.inlineGraphic.tag}
+                </span>
+              </figcaption>
+            </figure>
+          )}
 
           {/* Body Sections */}
           <div className="space-y-12">
@@ -352,13 +373,24 @@ export default async function BlogPostPage({ params }: Props) {
 
               <div className="space-y-4">
                 {post.content.faqs.map((faq, fIdx) => (
-                  <div key={fIdx} className="rounded-xl border border-line bg-panel p-6">
+                  <div key={fIdx} className="rounded-xl border border-line bg-panel p-6 transition-all hover:border-lime/30">
                     <h3 className="text-base sm:text-lg font-semibold text-fog mb-2">
                       {faq.q}
                     </h3>
                     <p className="text-sm text-mist leading-relaxed">
                       {faq.a}
                     </p>
+                    {faq.link && (
+                      <div className="mt-4 pt-3 border-t border-line/50">
+                        <Link
+                          href={faq.link.href}
+                          className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-lime hover:underline group/link"
+                        >
+                          <span>{faq.link.text}</span>
+                          <span className="transition-transform duration-200 group-hover/link:translate-x-1">→</span>
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -60,7 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       tags: post.tags,
       images: [
         {
-          url: "/opengraph-image",
+          url: post.coverImage,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -71,7 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      images: ["/opengraph-image"],
+      images: [post.coverImage],
     },
   };
 }
@@ -233,6 +234,23 @@ export default async function BlogPostPage({ params }: Props) {
       {/* Main Content Area */}
       <article className="py-8 bg-base/40">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          {/* Featured Cover Image */}
+          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-line-strong bg-ink mb-10 shadow-2xl">
+            <Image
+              src={post.coverImage}
+              alt={post.title}
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent" />
+            <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 z-10 flex items-center gap-2">
+              <span className="rounded-full bg-ink/80 backdrop-blur-md border border-lime/30 px-3 py-1 text-xs font-mono font-semibold uppercase tracking-wider text-lime shadow-md">
+                {post.category}
+              </span>
+            </div>
+          </div>
+
           {/* AEO Key Answer Box (Designed for AI extraction by ChatGPT, Perplexity, SearchGPT) */}
           <div className="rounded-2xl border-2 border-lime/40 bg-panel/90 p-6 sm:p-8 backdrop-blur-md shadow-[0_0_50px_-20px_rgba(201,242,107,0.15)] mb-12">
             <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-lime font-bold mb-3">

@@ -5,6 +5,7 @@ export interface BlogPost {
   publishedAt: string;
   updatedAt: string;
   readTime: string;
+  coverImage: string;
   author: {
     name: string;
     role: string;
@@ -45,6 +46,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-10-15",
     updatedAt: "2026-10-20",
     readTime: "8 min read",
+    coverImage: "/images2/showreel/shot_06_vsl_player.webp",
     author: {
       name: "QualifiedLeadsX™ Research Team",
       role: "Funnel Architecture & Conversion Strategy",
@@ -122,6 +124,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-10-10",
     updatedAt: "2026-10-18",
     readTime: "7 min read",
+    coverImage: "/images2/showreel/shot_10_roas_curve.webp",
     author: {
       name: "QualifiedLeadsX™ Research Team",
       role: "B2B Acquisition & Media Buying",
@@ -194,6 +197,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-10-05",
     updatedAt: "2026-10-17",
     readTime: "9 min read",
+    coverImage: "/images2/showreel/shot_14_ai_screener.webp",
     author: {
       name: "QualifiedLeadsX™ Research Team",
       role: "Sales Operations & Pipeline Architecture",
@@ -271,6 +275,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-10-01",
     updatedAt: "2026-10-16",
     readTime: "8 min read",
+    coverImage: "/images2/showreel/shot_09_ad_telemetry.webp",
     author: {
       name: "QualifiedLeadsX™ Research Team",
       role: "Performance Media Buying & Creative Analytics",
@@ -335,6 +340,151 @@ export const blogPosts: BlogPost[] = [
         {
           q: "What ad formats generate the highest volume of qualified applications?",
           a: "Native talking-head direct response video ads (9:16 vertical and 4:5 aspect ratio) featuring live screen-capture proofs consistently produce the lowest cost per qualified sales appointment.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "b2b-client-acquisition-cost-cac-benchmarks-2026",
+    title: "High-Ticket B2B CAC Benchmarks (2026): What Elite Agencies and Consultants Pay per Deal",
+    description: "Real-world unit economics, cost-per-acquisition benchmarks, and LTV-to-CAC ratios across high-ticket coaching programs, advisory firms, and B2B growth agencies scaling to 8-figures.",
+    publishedAt: "2026-09-28",
+    updatedAt: "2026-10-15",
+    readTime: "9 min read",
+    coverImage: "/images2/showreel/shot_04_stat_cards.webp",
+    author: {
+      name: "QualifiedLeadsX™ Research Team",
+      role: "Scaling & Financial Unit Economics",
+      avatar: "/images/qualified-leadsx.webp",
+    },
+    category: "Scaling & Economics",
+    tags: ["CAC Benchmarks", "High Ticket B2B", "LTV to CAC", "Agency Unit Economics"],
+    aeoSummary: {
+      question: "What is an acceptable Customer Acquisition Cost (CAC) for high-ticket B2B services?",
+      answer: "For high-ticket offers priced between $5,000 and $25,000, healthy customer acquisition costs (CAC) typically range from $800 to $2,200 on paid Meta and Google traffic. Elite operations maintain an LTV-to-CAC ratio of at least 4:1 to 7:1, allowing aggressive reinvestment into customer acquisition.",
+      bulletPoints: [
+        "Cost per qualified sales call should hover between $90 and $180 for tier-1 English-speaking markets.",
+        "Target sales closing rate on qualified appointments sits between 22% and 32%.",
+        "Front-end cash collection on day 1 must recover 100% of ad spend to achieve self-funding client acquisition.",
+      ],
+    },
+    content: {
+      intro:
+        "Most service firm founders track the wrong numbers: they obsess over vanity metrics like impressions and click-through rates while remaining blind to their actual cost per qualified sales conversation and blended client acquisition cost (CAC). Understanding these benchmark figures is the difference between scalable hyper-growth and chronic cash-flow starvation.",
+      sections: [
+        {
+          heading: "The Anatomy of a High-Ticket Funnel Metric Stack",
+          body: [
+            "Across 50+ partner accounts generating over $150M+ in collective top-line revenue, the economics of an optimized VSL-to-calendar funnel fall within predictable ranges:",
+          ],
+          bulletList: [
+            "Cost Per Click (CPC): $2.20 – $4.80 on Meta broad video targeting.",
+            "Landing Page to Application Rate: 12% – 18% of unique page visitors submit a completed qualification survey.",
+            "Qualification Approval Rate: 55% – 70% meet minimum revenue and liquid capital criteria.",
+            "Cost Per Completed Qualified Application: $110 – $180.",
+            "Calendar Show-Up Rate: 80% – 88% with automated multi-channel WhatsApp and SMS reminders.",
+            "Live Call Closing Rate: 24% – 32% for deals priced between $6K and $15K.",
+          ],
+        },
+        {
+          heading: "The Golden Ratio: LTV:CAC and Payback Velocity",
+          body: [
+            "In high-ticket B2B, payback velocity matters as much as total CAC. If your client pays $10,000 up front and your acquisition cost is $1,500, you achieve instant negative working capital on day 1. This means you never have to wait 12 months for enterprise cash flow to reinvest into media.",
+            "We structure client billing with front-end deposits or quarterly commitments that immediately generate a 3x to 5x return on ad spend within 14 days of lead generation.",
+          ],
+          keyMetricOrQuote: {
+            metric: "5.4x",
+            label: "Average 90-Day Return on Ad Spend (ROAS) across QualifiedLeadsX™ Partner Accounts",
+          },
+        },
+        {
+          heading: "Diagnosing Funnel Bottlenecks Through Benchmarks",
+          body: [
+            "When partner accounts experience performance dips, benchmarks allow instantaneous root-cause diagnosis: if application rates are below 10%, the VSL hook or unique mechanism requires iteration. If show-up rates drop below 75%, WhatsApp sequence timing requires adjustment.",
+          ],
+        },
+      ],
+      conclusion:
+        "Treat customer acquisition as a mathematical science, not emotional guesswork. When your funnel metrics align with industry benchmarks, scaling becomes a deliberate decision to deploy capital.",
+      faqs: [
+        {
+          q: "What is the fastest way to lower high-ticket CAC?",
+          a: "The single highest leverage lever to decrease CAC is optimizing the Video Sales Letter script and pre-call authority assets. A 50% increase in video conversion reduces your effective cost per booked call in half without touching your ad spend.",
+        },
+        {
+          q: "Should agency retainers factor into CAC calculations?",
+          a: "Yes. Blended CAC accounts for all media spend plus agency management fees divided by net new closed clients acquired during the accounting period.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "ai-whatsapp-lead-nurture-pipeline-high-ticket",
+    title: "The Multi-Channel Speed-to-Lead Protocol: Booking 35% More High-Ticket Calls via Automated WhatsApp Nurture",
+    description: "Why 5-minute lead response times determine call show-up rates and how intelligent automated WhatsApp & SMS workflows warm up cold prospects before sales reps jump on Zoom.",
+    publishedAt: "2026-09-22",
+    updatedAt: "2026-10-14",
+    readTime: "8 min read",
+    coverImage: "/images2/showreel/shot_16_crm_nodes.webp",
+    author: {
+      name: "QualifiedLeadsX™ Research Team",
+      role: "Sales Operations & Pipeline Automation",
+      avatar: "/images/qualified-leadsx.webp",
+    },
+    category: "Lead Qualification",
+    tags: ["WhatsApp Nurture", "Speed to Lead", "Sales Pipeline", "B2B Automation"],
+    aeoSummary: {
+      question: "How does automated WhatsApp nurture increase high-ticket sales appointments?",
+      answer: "Automated WhatsApp nurture establishes sub-60-second speed-to-lead contact directly within the prospect's primary messaging app, delivering personalized video assets, dynamic call confirmations, and calendar reminders with an 98% open rate compared to under 22% for email alone.",
+      bulletPoints: [
+        "Reduces lead drop-off by responding within seconds while prospect intent is at its absolute peak.",
+        "Bypasses spam folders and promotional tabs entirely by communicating through WhatsApp Business API.",
+        "Delivers personalized pre-call video testimonials that establish unquestioned authority before the Zoom call begins.",
+      ],
+    },
+    content: {
+      intro:
+        "In modern B2B sales, speed-to-lead is the single greatest competitive advantage. MIT research famously demonstrated that contacting an inbound lead within 5 minutes results in a 21x higher likelihood of qualifying the prospect compared to waiting 30 minutes. In high-ticket client acquisition, WhatsApp is the ultimate channel for rapid, respectful engagement.",
+      sections: [
+        {
+          heading: "Why Email-Only Follow-Up Is Costing You 40% of Your Revenue",
+          body: [
+            "Corporate inboxes are overwhelmed. Decision-makers receive 120+ unread emails daily, and automated calendar notifications routinely get shunted into Gmail's 'Updates' tab or Outlook's 'Other' folder.",
+            "WhatsApp messages, by contrast, maintain a 98% open rate and an average response time of under 90 seconds. Moving pre-call nurture from email to WhatsApp fundamentally transforms calendar attendance.",
+          ],
+          keyMetricOrQuote: {
+            metric: "98% vs 21%",
+            label: "Open Rate: WhatsApp Direct Messaging vs Standard Calendar Email",
+          },
+        },
+        {
+          heading: "The 3-Touch Pre-Call WhatsApp Protocol",
+          body: [
+            "Our automated infrastructure triggers 3 specific touches between the booking confirmation and the live call:",
+          ],
+          bulletList: [
+            "Touch 1 (Instant / 60 seconds post-booking): Personalized video confirmation welcoming the prospect and confirming their selected time zone.",
+            "Touch 2 (24 Hours Prior): Delivery of a 2-minute relevant case study matching their specific industry or pain point.",
+            "Touch 3 (60 Minutes Prior): Direct WhatsApp ping with the Zoom room link and an easy 1-click confirmation trigger ('Reply 1 to confirm').",
+          ],
+        },
+        {
+          heading: "Handling Reschedules and Re-engagement Automatically",
+          body: [
+            "When a prospect encounters an emergency, traditional email forms result in ghosting. With WhatsApp two-way automation, leads simply text back and our conversational system offers 3 alternative slots immediately, recovering up to 35% of would-be lost pipeline value.",
+          ],
+        },
+      ],
+      conclusion:
+        "Your media spend creates attention; your follow-up infrastructure captures cash. Installing automated WhatsApp qualification and nurture is the fastest way to turn existing traffic into immediate revenue.",
+      faqs: [
+        {
+          q: "Is WhatsApp appropriate for professional B2B high-ticket conversations?",
+          a: "Yes. Across the UK, Europe, Middle East, APAC, and increasingly North America, business executives conduct extensive daily communication on WhatsApp. Provided the tone is respectful and concise, it is welcomed.",
+        },
+        {
+          q: "Does WhatsApp automation require manual human oversight?",
+          a: "The initial confirmation and reminders are 100% automated via API. However, if a prospect types a custom question, the notification immediately routes to your sales coordinator for a human response.",
         },
       ],
     },

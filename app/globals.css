@@ -346,3 +346,16 @@ h1, h2, h3, h4, .font-heading {
   will-change: transform;
 }
 
+
+/* ============================================================
+   Guaranteed High-Contrast Text Utilities (Dark Theme Default)
+   ============================================================ */
+.text-fog {
+  color: #ffffff !important;
+}
+.text-mist {
+  color: #cbd5e1 !important;
+}
+.text-dim {
+  color: #94a3b8 !important;
+}

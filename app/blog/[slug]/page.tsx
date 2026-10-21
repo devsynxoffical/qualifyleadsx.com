@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       url: postUrl,
       type: "article",
-      publishedTime: post.publishedAt,
+      publishedTime: post.publishedAt === "21-10-2026" ? "2026-10-21" : post.publishedAt,
       modifiedTime: post.updatedAt,
       authors: [post.author.name],
       tags: post.tags,
@@ -100,7 +100,7 @@ export default async function BlogPostPage({ params }: Props) {
     headline: post.title,
     description: post.description,
     url: postUrl,
-    datePublished: post.publishedAt,
+    datePublished: post.publishedAt === "21-10-2026" ? "2026-10-21" : post.publishedAt,
     dateModified: post.updatedAt,
     mainEntityOfPage: postUrl,
     author: {
@@ -211,11 +211,11 @@ export default async function BlogPostPage({ params }: Props) {
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold font-heading text-fog leading-[1.12] tracking-tight max-w-5xl">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold font-heading text-white leading-[1.12] tracking-tight max-w-5xl" style={{ color: "#ffffff" }}>
             {post.title}
           </h1>
 
-          <p className="mt-6 text-lg sm:text-xl text-mist leading-relaxed max-w-4xl font-normal">
+          <p className="mt-6 text-lg sm:text-xl text-slate-200 leading-relaxed max-w-4xl font-normal" style={{ color: "#e2e8f0" }}>
             {post.description}
           </p>
 
@@ -269,16 +269,16 @@ export default async function BlogPostPage({ params }: Props) {
                   <span className="h-2 w-2 rounded-full bg-lime animate-pulse" />
                   <span>AI Fast Answer & Direct Summary (AEO / GEO)</span>
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold font-heading text-fog mb-3">
+                <h2 className="text-xl sm:text-2xl font-bold font-heading text-fog mb-3" style={{ color: "#ffffff" }}>
                   {post.aeoSummary.question}
                 </h2>
-                <p className="text-base text-mist leading-relaxed font-normal">
+                <p className="text-base text-slate-200 leading-relaxed font-normal" style={{ color: "#e2e8f0" }}>
                   {post.aeoSummary.answer}
                 </p>
                 {post.aeoSummary.bulletPoints && (
                   <ul className="mt-5 space-y-2.5 border-t border-line/60 pt-4">
                     {post.aeoSummary.bulletPoints.map((bp, i) => (
-                      <li key={i} className="flex items-start gap-2.5 text-sm text-fog">
+                      <li key={i} className="flex items-start gap-2.5 text-sm text-slate-200" style={{ color: "#e2e8f0" }}>
                         <CheckCircle2 className="w-4 h-4 text-lime shrink-0 mt-0.5" />
                         <span>{bp}</span>
                       </li>
@@ -288,7 +288,7 @@ export default async function BlogPostPage({ params }: Props) {
               </div>
 
               {/* Lead Intro Paragraph */}
-              <div className="prose prose-invert max-w-none text-lg sm:text-xl leading-relaxed text-fog font-normal mb-10 border-l-2 border-lime/50 pl-5">
+              <div className="max-w-none text-lg sm:text-xl leading-relaxed font-normal mb-10 border-l-2 border-lime/50 pl-5 text-slate-100" style={{ color: "#f1f5f9" }}>
                 <p>{post.content.intro}</p>
               </div>
 
@@ -320,7 +320,7 @@ export default async function BlogPostPage({ params }: Props) {
                     id={`section-${idx}`}
                     className="border-t border-line/60 pt-10 scroll-mt-28"
                   >
-                    <h2 className="text-2xl sm:text-3xl font-bold font-heading text-fog tracking-tight">
+                    <h2 className="text-2xl sm:text-3xl font-bold font-heading text-white tracking-tight" style={{ color: "#ffffff" }}>
                       {section.heading}
                     </h2>
                     {section.subheading && (
@@ -329,7 +329,7 @@ export default async function BlogPostPage({ params }: Props) {
                       </p>
                     )}
 
-                    <div className="mt-5 space-y-4 text-base sm:text-lg leading-relaxed text-mist font-normal">
+                    <div className="mt-5 space-y-4 text-base sm:text-lg leading-relaxed text-slate-200 font-normal" style={{ color: "#e2e8f0" }}>
                       {section.body.map((para, pIdx) => (
                         <p key={pIdx}>{para}</p>
                       ))}
@@ -341,7 +341,7 @@ export default async function BlogPostPage({ params }: Props) {
                         <div className="font-heading font-bold text-lime text-base mb-2">
                           {section.calloutBox.title}
                         </div>
-                        <p className="text-sm sm:text-base text-fog leading-relaxed">
+                        <p className="text-sm sm:text-base text-slate-200 leading-relaxed font-normal" style={{ color: "#e2e8f0" }}>
                           {section.calloutBox.content}
                         </p>
                       </div>
@@ -351,7 +351,7 @@ export default async function BlogPostPage({ params }: Props) {
                     {section.bulletList && (
                       <ul className="mt-6 space-y-3.5 rounded-2xl border border-line bg-panel p-6 sm:p-7">
                         {section.bulletList.map((item, bIdx) => (
-                          <li key={bIdx} className="flex items-start gap-3 text-sm sm:text-base text-fog leading-relaxed">
+                          <li key={bIdx} className="flex items-start gap-3 text-sm sm:text-base text-slate-200 leading-relaxed font-normal" style={{ color: "#e2e8f0" }}>
                             <CheckCircle2 className="w-5 h-5 text-lime shrink-0 mt-0.5" />
                             <span>{item}</span>
                           </li>
@@ -365,7 +365,7 @@ export default async function BlogPostPage({ params }: Props) {
                         <div className="font-mono text-3xl sm:text-5xl font-bold text-lime shrink-0">
                           {section.keyMetricOrQuote.metric}
                         </div>
-                        <div className="text-sm sm:text-base text-fog font-medium leading-snug">
+                        <div className="text-sm sm:text-base text-slate-200 font-medium leading-snug" style={{ color: "#e2e8f0" }}>
                           {section.keyMetricOrQuote.label}
                         </div>
                       </div>
@@ -377,17 +377,17 @@ export default async function BlogPostPage({ params }: Props) {
               {/* Strategic Conclusion */}
               <div className="mt-14 rounded-3xl border border-line bg-panel p-8 sm:p-10 relative overflow-hidden">
                 <div className="pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-lime/10 blur-3xl" />
-                <h3 className="text-2xl font-bold font-heading text-fog mb-4">
+                <h3 className="text-2xl font-bold font-heading text-white mb-4" style={{ color: "#ffffff" }}>
                   Strategic Conclusion
                 </h3>
-                <p className="text-base text-mist leading-relaxed font-normal">
+                <p className="text-base text-slate-200 leading-relaxed font-normal" style={{ color: "#e2e8f0" }}>
                   {post.content.conclusion}
                 </p>
                 <div className="mt-8 flex flex-wrap items-center gap-4">
                   <Button href="/book-your-call" variant="primary" size="lg">
                     Schedule Architecture Walkthrough
                   </Button>
-                  <Button href="/case-studies" variant="secondary" size="lg">
+                  <Button href="/case-studies" variant="outline" size="lg">
                     View Verified Case Studies
                   </Button>
                 </div>
@@ -400,7 +400,7 @@ export default async function BlogPostPage({ params }: Props) {
                     <HelpCircle className="w-4 h-4 text-lime" />
                     <span>Frequently Asked Questions</span>
                   </div>
-                  <h2 className="text-2xl sm:text-4xl font-bold font-heading text-fog mb-6 tracking-tight">
+                  <h2 className="text-2xl sm:text-4xl font-bold font-heading text-white mb-6 tracking-tight" style={{ color: "#ffffff" }}>
                     Common Questions Answered
                   </h2>
 
@@ -410,10 +410,10 @@ export default async function BlogPostPage({ params }: Props) {
                         key={fIdx}
                         className="rounded-2xl border border-line bg-panel p-6 sm:p-7 transition-all hover:border-lime/40"
                       >
-                        <h3 className="text-lg font-bold font-heading text-fog mb-2.5">
+                        <h3 className="text-lg font-bold font-heading text-white mb-2.5" style={{ color: "#ffffff" }}>
                           {faq.q}
                         </h3>
-                        <p className="text-sm sm:text-base text-mist leading-relaxed">
+                        <p className="text-sm sm:text-base text-slate-200 leading-relaxed" style={{ color: "#e2e8f0" }}>
                           {faq.a}
                         </p>
                         {faq.link && (
@@ -441,11 +441,11 @@ export default async function BlogPostPage({ params }: Props) {
                   QLX
                 </div>
                 <div>
-                  <div className="text-base font-bold text-fog">{post.author.name}</div>
+                  <div className="text-base font-bold text-white" style={{ color: "#ffffff" }}>{post.author.name}</div>
                   <div className="text-xs font-mono text-lime font-medium mt-0.5 mb-2.5">
                     {post.author.role}
                   </div>
-                  <p className="text-xs sm:text-sm text-mist leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed" style={{ color: "#cbd5e1" }}>
                     QualifiedLeadsX™ Research Team builds and scales customer acquisition funnels for elite high-ticket coaches, consultants, and growth agencies. Over $150M+ in client revenue scaled across North America, Europe, and the Middle East.
                   </p>
                 </div>
@@ -478,7 +478,7 @@ export default async function BlogPostPage({ params }: Props) {
                     <a
                       key={sIdx}
                       href={`#section-${sIdx}`}
-                      className="block text-mist hover:text-lime transition-colors leading-relaxed line-clamp-1 py-1 border-l-2 border-transparent hover:border-lime pl-2.5"
+                      className="block text-slate-300 hover:text-lime transition-colors leading-relaxed line-clamp-1 py-1 border-l-2 border-transparent hover:border-lime pl-2.5" style={{ color: "#cbd5e1" }}
                     >
                       {sec.heading}
                     </a>
@@ -493,13 +493,13 @@ export default async function BlogPostPage({ params }: Props) {
                   <Zap className="w-3 h-3 text-lime" />
                   <span>Done-For-You Architecture</span>
                 </span>
-                <h4 className="text-lg font-bold font-heading text-fog mb-2">
+                <h4 className="text-lg font-bold font-heading text-white mb-2" style={{ color: "#ffffff" }}>
                   Want This Exact Funnel Installed in Your Business?
                 </h4>
-                <p className="text-xs text-mist leading-relaxed mb-4">
+                <p className="text-xs text-slate-200 leading-relaxed mb-4" style={{ color: "#e2e8f0" }}>
                   We write the 12-minute script, build the 4-tier qualification survey, configure WhatsApp speed-to-lead nodes, and launch profitable broad Meta ad campaigns.
                 </p>
-                <Button href="/book-your-call" variant="primary" size="sm" className="w-full">
+                <Button href="/book-your-call" variant="primary" size="md" className="w-full">
                   Book Free Architecture Call
                 </Button>
               </div>
@@ -512,24 +512,24 @@ export default async function BlogPostPage({ params }: Props) {
                 </div>
                 <div className="space-y-3 text-xs font-mono">
                   <div className="flex items-center justify-between border-b border-line/40 pb-2">
-                    <span className="text-mist">Video Duration:</span>
-                    <span className="text-fog font-bold">10–14 Minutes</span>
+                    <span className="text-slate-300" style={{ color: "#cbd5e1" }}>Video Duration:</span>
+                    <span className="text-white font-bold" style={{ color: "#ffffff" }}>10–14 Minutes</span>
                   </div>
                   <div className="flex items-center justify-between border-b border-line/40 pb-2">
-                    <span className="text-mist">View Completion:</span>
+                    <span className="text-slate-300" style={{ color: "#cbd5e1" }}>View Completion:</span>
                     <span className="text-lime font-bold">58%+</span>
                   </div>
                   <div className="flex items-center justify-between border-b border-line/40 pb-2">
-                    <span className="text-mist">Target CVR:</span>
-                    <span className="text-fog font-bold">14% – 18%</span>
+                    <span className="text-slate-300" style={{ color: "#cbd5e1" }}>Target CVR:</span>
+                    <span className="text-white font-bold" style={{ color: "#ffffff" }}>14% – 18%</span>
                   </div>
                   <div className="flex items-center justify-between border-b border-line/40 pb-2">
-                    <span className="text-mist">Show-Up Rate:</span>
+                    <span className="text-slate-300" style={{ color: "#cbd5e1" }}>Show-Up Rate:</span>
                     <span className="text-lime font-bold">85%+</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-mist">Blended CAC:</span>
-                    <span className="text-fog font-bold">$90 – $160 / call</span>
+                    <span className="text-slate-300" style={{ color: "#cbd5e1" }}>Blended CAC:</span>
+                    <span className="text-white font-bold" style={{ color: "#ffffff" }}>$90 – $160 / call</span>
                   </div>
                 </div>
               </div>

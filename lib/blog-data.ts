@@ -62,7 +62,7 @@ export const blogPosts: BlogPost[] = [
     slug: "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition",
     title: "The 2026 VSL Funnel Blueprint: How High-Ticket Offers Book 50+ Qualified Calls a Month",
     description: "Discover why traditional 90-minute webinars are dead and how concise 12-minute Video Sales Letter (VSL) funnels with automated qualification filters convert at 14–18% into booked sales appointments.",
-    publishedAt: "2026-10-15",
+    publishedAt: "21-10-2026",
     updatedAt: "2026-10-21",
     readTime: "12 min read",
     coverImage: "/images/blog/vsl-funnel-blueprint.jpg",
@@ -232,12 +232,11 @@ export const blogPosts: BlogPost[] = [
         },
       ],
     },
-  },
+  }
 ];
 
-// Scheduled for Daily Releases (Day 2 to Day 6) - Ready to publish one by one
-export const scheduledDailyPosts: BlogPost[] = [
-  {
+export const archivedBlogPosts: BlogPost[] = [
+{
     slug: "cold-outreach-vs-paid-traffic-high-ticket-b2b",
     title: "Cold Outreach vs. Paid Traffic: Which Scales Faster for $50K+/Month B2B Service Providers?",
     description: "An empirical comparison between outbound cold email/LinkedIn messaging and inbound Meta paid traffic funnels for scaling high-ticket consulting and agency offers to $100K+ monthly recurring revenue.",
@@ -751,6 +750,10 @@ export const scheduledDailyPosts: BlogPost[] = [
   },
 ];
 
+
 export function getBlogPost(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
 }
+
+
+export const scheduledDailyPosts: BlogPost[] = blogPosts.slice(1);

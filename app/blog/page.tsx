@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 
 export default function BlogHubPage() {
   const featuredPost = blogPosts[0];
-  const gridPosts = blogPosts.slice(1);
+  const gridPosts = blogPosts;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -311,6 +311,28 @@ export default function BlogHubPage() {
                 </div>
               </article>
             ))}
+
+            {/* Teaser card for Daily Series */}
+            <div className="flex flex-col justify-between rounded-2xl bg-panel/50 border border-dashed border-lime/30 p-8 backdrop-blur-sm relative overflow-hidden">
+              <div className="pointer-events-none absolute -top-16 -right-16 h-36 w-36 rounded-full bg-lime/10 blur-2xl" />
+              <div>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-semibold uppercase tracking-wider bg-lime/10 border border-lime/30 text-lime mb-4">
+                  <span className="h-1.5 w-1.5 rounded-full bg-lime animate-ping" />
+                  <span>Daily Release Series</span>
+                </div>
+                <h3 className="text-xl font-bold font-heading text-fog mb-3">
+                  Next Blueprint Unlocking in 24 Hours
+                </h3>
+                <p className="text-sm text-mist leading-relaxed">
+                  We publish 1 battle-tested high-ticket acquisition guide daily. Tomorrow&apos;s drop breaks down algorithmic media buying, Meta Advantage+ broad targeting, and lead qualification screening.
+                </p>
+              </div>
+
+              <div className="mt-8 pt-4 border-t border-line/40 flex items-center justify-between text-xs font-mono text-dim">
+                <span>Daily Drops • 09:00 AM</span>
+                <span className="text-lime font-medium">Coming Tomorrow →</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

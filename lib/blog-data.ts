@@ -160,6 +160,10 @@ export const blogPosts: BlogPost[] = [
       ],
     },
   },
+];
+
+// Scheduled for Daily Releases (Day 2 to Day 6) - Ready to publish one by one
+export const scheduledDailyPosts: BlogPost[] = [
   {
     slug: "cold-outreach-vs-paid-traffic-high-ticket-b2b",
     title: "Cold Outreach vs. Paid Traffic: Which Scales Faster for $50K+/Month B2B Service Providers?",

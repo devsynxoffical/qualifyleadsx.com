@@ -1,0 +1,359 @@
+import { Metadata } from "next";
+import {
+  ArrowUpRight,
+  Lock,
+  DollarSign,
+  BarChart3,
+  Rocket,
+  HelpCircle,
+  Layers,
+  ShoppingBag,
+  Zap,
+} from "lucide-react";
+import { site } from "@/lib/site";
+import { Nav } from "@/components/layout/Nav";
+import { Footer } from "@/components/layout/Footer";
+import { VSL } from "@/components/sections/VSL";
+import { Section, SectionHeading } from "@/components/ui/Section";
+import { Reveal } from "@/components/ui/Reveal";
+
+export const metadata: Metadata = {
+  title: "How We Scaled an LTO Funnel to $847K | Mastermind",
+  description:
+    "Case Study & Mastermind Breakdown: How we scaled a Low-Ticket Offer (LTO) funnel to $847K in revenue with $255K ad spend using Meta Ads.",
+  keywords: [
+    "lto funnel case study",
+    "low ticket offer scale",
+    "meta ads scaling case study",
+    "funnel roas breakdown",
+    "high ticket acquisition funnel",
+  ],
+  alternates: {
+    canonical: "/mastermind/lto-funnel-scale",
+  },
+  openGraph: {
+    title: "How We Scaled an LTO Funnel to $847K | QualifiedLeadsX™",
+    description:
+      "Deep dive breakdown: scaling a Low-Ticket Offer funnel to $847,290 revenue at 3.32x net ROAS with Meta Ads.",
+    url: "/mastermind/lto-funnel-scale",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How We Scaled an LTO Funnel to $847K | QualifiedLeadsX™",
+    description:
+      "Scaling an LTO funnel to $847K at 3.32x ROAS with Meta Ads.",
+  },
+};
+
+const stats = [
+  { value: "$847,290", label: "Gross Revenue Generated", sub: "Front-end & backend sales" },
+  { value: "$255,140", label: "Total Meta Ad Spend", sub: "Managed over campaign scale" },
+  { value: "3.32x", label: "Blended Return on Ad Spend", sub: "Net ROAS across funnel" },
+  { value: "14,200+", label: "Buyers Acquired", sub: "High-ticket backend prospects" },
+];
+
+const pillars = [
+  {
+    icon: DollarSign,
+    number: "01",
+    title: "$847K Gross Revenue Architecture",
+    body: "By positioning a high-value Low-Ticket Offer (LTO) on the front end, we created a massive buyer acquisition pipeline that systematically upsells clients into $3,000–$15,000 high-ticket retainers.",
+  },
+  {
+    icon: BarChart3,
+    number: "02",
+    title: "$255K Ad Spend Scaling Dynamics",
+    body: "Scaling daily budgets past $3,000/day requires sophisticated campaign architecture. We utilized dynamic CBO campaigns, interest stacking, and automated bid caps to prevent CPA spikes.",
+  },
+  {
+    icon: ShoppingBag,
+    number: "03",
+    title: "Order Bumps & 1-Click Upsell Maximizers",
+    body: "Front-end offers alone are rarely enough at scale. Adding strategic order bumps ($17–$37) and 1-click post-purchase upsells ($97–$297) lifted our Average Order Value (AOV) from $27 to $84.",
+  },
+  {
+    icon: Rocket,
+    number: "04",
+    title: "High-Ticket Backend Escalation Workflows",
+    body: "Every LTO buyer is immediately funneled into an automated high-ticket nurture sequence. Over 18% of front-end buyers booked a strategy session and upgraded to core agency services.",
+  },
+  {
+    icon: Zap,
+    number: "05",
+    title: "Creative Volatility & Fatigue Suppression",
+    body: "To sustain $255K+ in spend, our media team launched 15–20 new ad variations weekly. Hook variations, UGC teardowns, and visual proof ads kept frequency low and click-through rates high.",
+  },
+  {
+    icon: Layers,
+    number: "06",
+    title: "Server-Side CAPI & Multi-Touch Attribution",
+    body: "We configured custom server-side CAPI event tracking to feed exact revenue data back to Meta&apos;s algorithm, allowing machine learning to bid aggressively on high-LTV buyer personas.",
+  },
+];
+
+const implementationSteps = [
+  {
+    phase: "Phase 1",
+    title: "LTO & Upsell Stack Engineering",
+    desc: "We construct the core $27–$37 front-end offer, order bump, and 1-click upsell sequence designed for maximum AOV.",
+  },
+  {
+    phase: "Phase 2",
+    title: "High-Velocity Creative Batching",
+    desc: "Our creative team produces 30+ direct-response ad variations focused on high-converting problem-aware angles.",
+  },
+  {
+    phase: "Phase 3",
+    title: "Meta CBO & Automated Bidding Launch",
+    desc: "We launch dynamic CBO structures with Meta Conversions API (CAPI) and automated bid scaling rules.",
+  },
+  {
+    phase: "Phase 4",
+    title: "Backend High-Ticket Retainer Upsell",
+    desc: "Automated CRM sequences and phone sales teams transition front-end buyers into $3,000–$15,000 high-ticket clients.",
+  },
+];
+
+const faqs = [
+  {
+    q: "What is an LTO (Low-Ticket Offer) funnel?",
+    a: "An LTO funnel sells a low-friction front-end product ($27–$47) with order bumps and upsells to acquire customers at profit, before pitching high-ticket backend programs ($3K–$15K).",
+  },
+  {
+    q: "How did you scale ad spend to $255K without ROAS dropping?",
+    a: "By combining high-velocity creative testing (15–20 new ads per week) with dynamic CBO budget allocation and custom server-side CAPI conversion signals.",
+  },
+  {
+    q: "Why are order bumps and 1-click upsells essential for LTO scaling?",
+    a: "Order bumps and 1-click upsells increase Average Order Value (AOV) instantly. A higher AOV allows you to bid significantly more than competitors on Meta Ads while remaining highly profitable.",
+  },
+  {
+    q: "How long did it take to reach $847K in sales?",
+    a: "The campaign was scaled from $100/day to $3,000+/day over an 8-month period, generating over $847K in total blended revenue.",
+  },
+];
+
+import { ClientSuccess } from "@/components/sections/ClientSuccess";
+import { Testimonials } from "@/components/sections/Testimonials";
+
+export default function LtoFunnelScalePage() {
+  return (
+    <main id="main" className="flex min-h-screen flex-col bg-[#040c07] text-white selection:bg-lime/30 selection:text-lime">
+      <Nav />
+
+      {/* Hero Header */}
+      <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[600px] rounded-full bg-lime/[0.08] blur-[160px]" />
+        </div>
+
+        <div className="container-x relative z-10 text-center">
+          <Reveal>
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.2em] text-lime shadow-[0_0_20px_rgba(201,242,107,0.2)]">
+              <Lock className="h-3.5 w-3.5" />
+              Case Study Breakdown #03
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.05}>
+            <h1 className="mx-auto max-w-5xl text-balance text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
+              Scaled LTO Funnel to $847K:{" "}
+              <em className="font-bold not-italic text-lime drop-shadow-[0_0_25px_rgba(201,242,107,0.3)]">
+                $255K Spend to Near $1M Sales
+              </em>
+            </h1>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <p className="mx-auto mt-6 max-w-2xl text-pretty text-base leading-relaxed text-mist sm:text-xl">
+              An in-depth video breakdown of how we scaled an LTO funnel to $847,000 in revenue with $255,000 in Meta ad spend using Meta Ads.
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.15}>
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <a
+                href={site.bookCallUrl}
+                className="group inline-flex items-center gap-2 rounded-full bg-lime px-9 py-4 text-sm font-semibold text-ink shadow-[0_0_50px_-12px_rgba(201,242,107,0.6)] transition-all hover:scale-105 hover:bg-lime-soft"
+              >
+                Book Free Strategy Call
+                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </a>
+            </div>
+          </Reveal>
+
+          {/* Stats Bar */}
+          <Reveal delay={0.2}>
+            <div className="mx-auto mt-16 grid max-w-4xl grid-cols-2 gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-4 shadow-2xl">
+              {stats.map((stat) => (
+                <div key={stat.label} className="bg-[#07120a] p-6 text-center">
+                  <div className="text-2xl font-extrabold text-lime sm:text-3xl drop-shadow-[0_0_12px_rgba(201,242,107,0.3)]">
+                    {stat.value}
+                  </div>
+                  <div className="mt-1.5 text-[11px] font-semibold uppercase tracking-widest text-mist">
+                    {stat.label}
+                  </div>
+                  <div className="mt-1 text-[10px] text-mist/60">{stat.sub}</div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* VSL Section */}
+      <VSL
+        videoId="Nr1WIDiWPNA"
+        hideHeading
+      />
+
+      {/* Deep-Dive Overview */}
+      <Section className="bg-[#040c07] border-t border-line">
+        <div className="mx-auto max-w-4xl">
+          <Reveal>
+            <div className="rounded-3xl border border-lime/20 bg-lime/[0.02] p-8 sm:p-12 backdrop-blur-xl">
+              <span className="inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-lime">
+                <BarChart3 className="h-4 w-4 text-lime" />
+                Case Study Overview & Economics
+              </span>
+              <h2 className="mt-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
+                How We Scaled From $100/Day to $3,000+/Day Spend
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-mist">
+                Most businesses struggle to scale Meta ad spend past $500/day because customer acquisition costs spike as target audiences saturate. By engineering an LTO front-end with order bumps and 1-click upsells, we raised Average Order Value (AOV) to $84.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-mist">
+                This high AOV allowed us to spend $255,140 profitably, acquiring 14,200+ buyers. The backend automation sequence then funneled these warm buyers directly into high-ticket retainer offers, unlocking $847,290 in gross revenue.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </Section>
+
+      {/* Core Pillars Section */}
+      <Section className="bg-[#050e08] border-t border-line">
+        <SectionHeading
+          eyebrow="Scaling Architecture"
+          title={
+            <>
+              Six Pillars of{" "}
+              <em className="font-semibold not-italic text-lime">$847K LTO Funnel Scaling.</em>
+            </>
+          }
+          subtitle="The numbers, funnel economics, and creative frameworks that unlocked near 7-figure revenue."
+        />
+
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+          {pillars.map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <Reveal key={item.title} delay={i * 0.06}>
+                <div className="group relative flex flex-col justify-between h-full rounded-3xl border border-lime/20 bg-black/60 p-8 backdrop-blur-md transition-all duration-300 hover:border-lime/40 hover:bg-[#07170c]">
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-lime/30 bg-lime/10 text-lime">
+                        <Icon className="h-6 w-6" />
+                      </div>
+                      <span className="font-mono text-xs font-bold text-lime/70 tracking-widest">
+                        {item.number}
+                      </span>
+                    </div>
+                    <h3 className="mt-6 text-xl font-bold text-white">{item.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-mist">{item.body}</p>
+                  </div>
+                </div>
+              </Reveal>
+            );
+          })}
+        </div>
+      </Section>
+
+      {/* Implementation Roadmap */}
+      <Section className="bg-[#040c07] border-t border-line">
+        <SectionHeading
+          eyebrow="Execution Roadmap"
+          title={
+            <>
+              Four Phases To{" "}
+              <em className="font-semibold not-italic text-lime">Scaling Near 7-Figures.</em>
+            </>
+          }
+          subtitle="How we structure and launch LTO scaling funnels step-by-step."
+        />
+
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+          {implementationSteps.map((step, i) => (
+            <Reveal key={step.phase} delay={i * 0.08}>
+              <div className="relative flex flex-col h-full rounded-3xl border border-white/10 bg-[#07120a] p-6 sm:p-8">
+                <span className="inline-flex w-fit rounded-full border border-lime/30 bg-lime/10 px-3 py-1 font-mono text-xs font-bold text-lime">
+                  {step.phase}
+                </span>
+                <h3 className="mt-5 text-lg font-bold text-white">{step.title}</h3>
+                <p className="mt-2.5 text-sm leading-relaxed text-mist">{step.desc}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
+      {/* FAQ Section */}
+      <Section className="bg-[#050e08] border-t border-line">
+        <SectionHeading
+          eyebrow="Frequently Asked Questions"
+          title={
+            <>
+              Everything You Need To Know About{" "}
+              <em className="font-semibold not-italic text-lime">Scaling LTO Funnels.</em>
+            </>
+          }
+          subtitle="Common questions about our high-volume Meta ad scaling strategy."
+        />
+
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 max-w-5xl mx-auto">
+          {faqs.map((faq, i) => (
+            <Reveal key={faq.q} delay={i * 0.08}>
+              <div className="h-full rounded-3xl border border-line bg-black/40 p-8 backdrop-blur-md">
+                <div className="flex items-center gap-3">
+                  <HelpCircle className="h-5 w-5 text-lime shrink-0" />
+                  <h3 className="text-base font-bold text-white">{faq.q}</h3>
+                </div>
+                <p className="mt-4 text-sm leading-relaxed text-mist">{faq.a}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
+      {/* Real Client Proof & Testimonials */}
+      <ClientSuccess />
+      <Testimonials />
+
+      {/* CTA Footer Banner */}
+      <section className="relative overflow-hidden bg-[#040c07] py-24 border-t border-line">
+        <div className="container-x relative z-10 text-center">
+          <Reveal>
+            <h2 className="mx-auto max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-5xl">
+              Want Us to Scale Your Funnel to{" "}
+              <span className="text-lime">$500K–$1M+?</span>
+            </h2>
+            <p className="mx-auto mt-6 max-w-xl text-base text-mist sm:text-lg">
+              We engineer high-converting sales funnels, ad creatives, automations, and scaling systems for high-growth founders.
+            </p>
+            <div className="mt-10 flex justify-center">
+              <a
+                href={site.bookCallUrl}
+                className="group inline-flex items-center gap-2 rounded-full bg-lime px-10 py-4 text-sm font-semibold text-ink shadow-[0_0_50px_-12px_rgba(201,242,107,0.6)] transition-all hover:scale-105 hover:bg-lime-soft"
+              >
+                Book Your Free Strategy Call
+                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  );
+}

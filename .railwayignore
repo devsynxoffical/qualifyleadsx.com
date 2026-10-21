@@ -1,0 +1,8 @@
+node_modules
+.next
+web
+.git
+sea-storm.mp4
+public/videos
+*.log
+audit.cjs

@@ -5,22 +5,23 @@ import { site } from "@/lib/site";
 
 const footerColumns = [
   {
-    title: "Explore",
+    title: "Solutions",
     links: [
-      { label: "The System", href: "#different" },
-      { label: "Case Studies", href: "/case-studies" },
-      { label: "Client Results", href: "#results" },
-      { label: "Client Success", href: "#success" },
-      { label: "Mastermind", href: "/mastermind" },
-      { label: "Industries", href: "#industries" },
-      { label: "Guarantee", href: "#guarantee" },
+      { label: "For Coaches", href: "/for/coaches" },
+      { label: "For Consultants", href: "/for/consultants" },
+      { label: "For Agencies", href: "/for/agencies" },
+      { label: "Case Studies (125+)", href: "/case-studies" },
+      { label: "Mastermind Hub", href: "/mastermind" },
+      { label: "Growth Guides & Blog", href: "/blog" },
     ],
   },
   {
     title: "Company",
     links: [
-      { label: "Book Your Call", href: site.bookCallUrl },
-      { label: "FAQ", href: "#faq" },
+      { label: "Book Strategy Call", href: site.bookCallUrl },
+      { label: "Client Results", href: "/#results" },
+      { label: "Guarantee", href: "/#guarantee" },
+      { label: "FAQ", href: "/#faq" },
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Terms of Service", href: "/terms" },
       { label: "Disclaimer", href: "/disclaimer" },

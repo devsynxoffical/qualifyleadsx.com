@@ -1,9 +1,11 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
+import { blogPosts } from "@/lib/blog-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  return [
+
+  const coreRoutes: MetadataRoute.Sitemap = [
     {
       url: site.url,
       lastModified: now,
@@ -22,6 +24,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    // Industry Landing Pages (Phase 2)
+    {
+      url: `${site.url}/for/coaches`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/consultants`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/agencies`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    // Blog Hub (Phase 3)
+    {
+      url: `${site.url}/blog`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.88,
+    },
+    // Mastermind pages
     {
       url: `${site.url}/mastermind`,
       lastModified: now,
@@ -46,6 +75,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    // Legal & compliance
     {
       url: `${site.url}/privacy`,
       lastModified: now,
@@ -65,4 +95,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.3,
     },
   ];
+
+  // Dynamic Blog Posts with their specific modification dates and high priority
+  const blogRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${site.url}/blog/${post.slug}`,
+    lastModified: new Date(post.updatedAt),
+    changeFrequency: "weekly",
+    priority: 0.85,
+  }));
+
+  return [...coreRoutes, ...blogRoutes];
 }

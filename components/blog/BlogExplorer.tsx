@@ -98,22 +98,20 @@ export function BlogExplorer({ initialPosts }: BlogExplorerProps) {
       <section className="pt-8 pb-16 sm:pt-10 sm:pb-20 bg-ink border-t border-line">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
-          <div className="mb-10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-            <div>
-              <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold">
-                KNOWLEDGE VAULT
-              </span>
-              <h2 className="mt-2 text-2xl sm:text-4xl font-bold font-heading text-fog tracking-tight">
-                LET&apos;S FIND OUT OUR LATEST ARTICLES
-              </h2>
-              <p className="mt-3 text-sm sm:text-base text-mist max-w-2xl">
-                Deep dives into customer acquisition economics, automated qualification architectures, and performance media buying.
-              </p>
-            </div>
+          <div className="mb-12 flex flex-col items-center text-center max-w-3xl mx-auto">
+            <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold inline-block">
+              KNOWLEDGE VAULT
+            </span>
+            <h2 className="mt-2.5 text-2xl sm:text-4xl font-bold font-heading text-fog tracking-tight">
+              LET&apos;S FIND OUT OUR LATEST ARTICLES
+            </h2>
+            <p className="mt-3 text-sm sm:text-base text-mist max-w-2xl mx-auto">
+              Deep dives into customer acquisition economics, automated qualification architectures, and performance media buying.
+            </p>
 
             {/* Current Active Category Pill indicator */}
             {selectedCategory !== "All Articles" && (
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono bg-panel border border-lime/30 text-lime shrink-0">
+              <div className="mt-5 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono bg-panel border border-lime/30 text-lime shadow-sm">
                 <Filter className="w-3.5 h-3.5" />
                 <span>Category: <strong>{selectedCategory}</strong></span>
                 <button
@@ -129,7 +127,13 @@ export function BlogExplorer({ initialPosts }: BlogExplorerProps) {
 
           {/* Cards Display / Empty State */}
           {filteredPosts.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className={
+              filteredPosts.length === 1
+                ? "flex justify-center max-w-lg mx-auto"
+                : filteredPosts.length === 2
+                ? "grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
+                : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            }>
               {filteredPosts.map((post) => (
                 <article
                   key={post.slug}

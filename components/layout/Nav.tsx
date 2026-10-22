@@ -108,10 +108,17 @@ export function Nav() {
   }, []);
 
   const go = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href.startsWith("#")) {
-      e.preventDefault();
+    if (href.startsWith("#") || href.startsWith("/#")) {
+      const hash = href.startsWith("/#") ? href.slice(1) : href;
+      if (pathname === "/") {
+        e.preventDefault();
+        setOpen(false);
+        scrollToId(hash);
+      } else {
+        setOpen(false);
+      }
+    } else {
       setOpen(false);
-      scrollToId(href);
     }
   };
 

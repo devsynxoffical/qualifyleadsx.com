@@ -178,12 +178,12 @@ export default function AppointmentSettingPage() {
           </div>
 
           {/* Primary Keyword H1 */}
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-white max-w-5xl mx-auto leading-[1.08]" style={{ color: "#ffffff" }}>
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-white max-w-5xl mx-auto leading-[1.08]">
             Automated <span className="text-lime">Appointment Setting</span> With Sub-5-Minute Speed To Lead
           </h1>
 
           {/* Subtitle with Secondary Keyword */}
-          <p className="mt-6 text-lg sm:text-2xl text-slate-200 max-w-3xl mx-auto leading-relaxed font-normal" style={{ color: "#e2e8f0" }}>
+          <p className="mt-6 text-lg sm:text-2xl text-mist max-w-3xl mx-auto leading-relaxed font-normal">
             Replace unreliable human setter teams with an automated pipeline that engages inquiries in under 3 minutes, qualifies liquid capital, and books 30–50 ready-to-close sales calls every month.
           </p>
 
@@ -204,8 +204,8 @@ export default function AppointmentSettingPage() {
               <span className="h-2.5 w-2.5 rounded-full bg-lime animate-pulse" />
               <span>AEO Executive Summary: How It Works</span>
             </div>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-200" style={{ color: "#e2e8f0" }}>
-              <strong style={{ color: "#ffffff" }}>QualifiedLeadsX™</strong> installs an automated B2B <strong style={{ color: "#ffffff" }}>appointment setting</strong> infrastructure engineered for high-ticket coaches, consultants, and growth agencies. Combining 4-tier conditional qualification surveys with sub-5-minute multichannel <strong style={{ color: "#ffffff" }}>speed to lead</strong> across WhatsApp, SMS, and email, our system eliminates tire-kickers and books 30–50 sales-ready appointments every month with an 88%+ show-up rate.
+            <p className="text-sm sm:text-base leading-relaxed text-mist">
+              <strong>QualifiedLeadsX™</strong> installs an automated B2B <strong>appointment setting</strong> infrastructure engineered for high-ticket coaches, consultants, and growth agencies. Combining 4-tier conditional qualification surveys with sub-5-minute multichannel <strong>speed to lead</strong> across WhatsApp, SMS, and email, our system eliminates tire-kickers and books 30–50 sales-ready appointments every month with an 88%+ show-up rate.
             </p>
           </div>
         </div>
@@ -217,19 +217,19 @@ export default function AppointmentSettingPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="p-4 rounded-xl bg-ink/40 border border-line/40">
               <div className="font-mono text-2xl sm:text-3xl font-bold text-lime">&lt; 3 Min</div>
-              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-slate-300" style={{ color: "#cbd5e1" }}>Average Speed to Lead</div>
+              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-mist">Average Speed to Lead</div>
             </div>
             <div className="p-4 rounded-xl bg-ink/40 border border-line/40">
               <div className="font-mono text-2xl sm:text-3xl font-bold text-lime">88.3%</div>
-              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-slate-300" style={{ color: "#cbd5e1" }}>Call Show-Up Rate</div>
+              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-mist">Call Show-Up Rate</div>
             </div>
             <div className="p-4 rounded-xl bg-ink/40 border border-line/40">
               <div className="font-mono text-2xl sm:text-3xl font-bold text-lime">58.1%</div>
-              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-slate-300" style={{ color: "#cbd5e1" }}>Lead Qualification Rate</div>
+              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-mist">Lead Qualification Rate</div>
             </div>
             <div className="p-4 rounded-xl bg-ink/40 border border-line/40">
               <div className="font-mono text-2xl sm:text-3xl font-bold text-lime">$0</div>
-              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-slate-300" style={{ color: "#cbd5e1" }}>Human Setter Overhead</div>
+              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-mist">Human Setter Overhead</div>
             </div>
           </div>
         </div>
@@ -242,10 +242,10 @@ export default function AppointmentSettingPage() {
             <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold">
               THE MATHEMATICS OF CONVERSION
             </span>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight" style={{ color: "#ffffff" }}>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight">
               Why 5 Minutes Decides A $10,000+ High-Ticket Deal
             </h2>
-            <p className="mt-3 text-base text-slate-200" style={{ color: "#e2e8f0" }}>
+            <p className="mt-3 text-base text-mist">
               Every minute of delay after an inbound inquiry is submitted drastically reduces your conversion velocity.
             </p>
           </div>
@@ -256,10 +256,10 @@ export default function AppointmentSettingPage() {
                 <div className="h-10 w-10 rounded-xl bg-lime/10 border border-lime/30 flex items-center justify-center text-lime font-mono font-bold text-base mb-4">
                   21x
                 </div>
-                <h3 className="text-lg font-bold font-heading text-white mb-2" style={{ color: "#ffffff" }}>
+                <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Qualification Multiplier
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-normal" style={{ color: "#cbd5e1" }}>
+                <p className="text-sm text-mist leading-relaxed font-normal">
                   Contacting a prospect within 5 minutes results in a 21x increase in lead qualification compared to waiting 30 minutes.
                 </p>
               </div>
@@ -273,10 +273,10 @@ export default function AppointmentSettingPage() {
                 <div className="h-10 w-10 rounded-xl bg-lime/10 border border-lime/30 flex items-center justify-center text-lime font-mono font-bold text-base mb-4">
                   391%
                 </div>
-                <h3 className="text-lg font-bold font-heading text-white mb-2" style={{ color: "#ffffff" }}>
+                <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Conversion Lift
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-normal" style={{ color: "#cbd5e1" }}>
+                <p className="text-sm text-mist leading-relaxed font-normal">
                   Immediate sub-3-minute omnichannel follow-up delivers a 391% higher close rate compared to standard industry 24-hour response lag.
                 </p>
               </div>
@@ -290,10 +290,10 @@ export default function AppointmentSettingPage() {
                 <div className="h-10 w-10 rounded-xl bg-lime/10 border border-lime/30 flex items-center justify-center text-lime font-mono font-bold text-base mb-4">
                   88%+
                 </div>
-                <h3 className="text-lg font-bold font-heading text-white mb-2" style={{ color: "#ffffff" }}>
+                <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Show-Up Rate Lock
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-normal" style={{ color: "#cbd5e1" }}>
+                <p className="text-sm text-mist leading-relaxed font-normal">
                   Our automated WhatsApp speed-to-lead protocol secures instant calendar confirmation, slashing sales call no-shows to under 12%.
                 </p>
               </div>
@@ -312,10 +312,10 @@ export default function AppointmentSettingPage() {
             <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold">
               THE TIRE-KICKER ELIMINATOR
             </span>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight" style={{ color: "#ffffff" }}>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight">
               The 4-Tier Conditional Lead Qualification Gate
             </h2>
-            <p className="mt-3 text-base text-slate-200" style={{ color: "#e2e8f0" }}>
+            <p className="mt-3 text-base text-mist">
               How our appointment setting architecture protects your calendar from unqualified leads.
             </p>
           </div>
@@ -324,14 +324,14 @@ export default function AppointmentSettingPage() {
             <div className="rounded-2xl border border-line bg-ink/60 p-6 flex flex-col justify-between">
               <div>
                 <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-2">Gate 01</div>
-                <h3 className="text-lg font-bold font-heading text-white mb-2" style={{ color: "#ffffff" }}>
+                <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Revenue Threshold
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-normal" style={{ color: "#cbd5e1" }}>
+                <p className="text-sm text-mist leading-relaxed font-normal">
                   Filters by current monthly revenue brackets (&lt;$10K, $10K–$30K, $30K–$100K+). Businesses below minimum threshold are filtered out.
                 </p>
               </div>
-              <div className="mt-4 pt-3 border-t border-line/50 text-xs font-mono text-slate-400">
+              <div className="mt-4 pt-3 border-t border-line/50 text-xs font-mono text-dim">
                 Eliminates Hobbyists
               </div>
             </div>
@@ -339,14 +339,14 @@ export default function AppointmentSettingPage() {
             <div className="rounded-2xl border border-line bg-ink/60 p-6 flex flex-col justify-between">
               <div>
                 <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-2">Gate 02</div>
-                <h3 className="text-lg font-bold font-heading text-white mb-2" style={{ color: "#ffffff" }}>
+                <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Bottleneck Audit
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-normal" style={{ color: "#cbd5e1" }}>
+                <p className="text-sm text-mist leading-relaxed font-normal">
                   Pinpoints the exact pain point (Lead Volume, Qualification, Closing Rate, or Team Capacity) before the prospect speaks with your closer.
                 </p>
               </div>
-              <div className="mt-4 pt-3 border-t border-line/50 text-xs font-mono text-slate-400">
+              <div className="mt-4 pt-3 border-t border-line/50 text-xs font-mono text-dim">
                 Pre-Call Intelligence
               </div>
             </div>
@@ -354,14 +354,14 @@ export default function AppointmentSettingPage() {
             <div className="rounded-2xl border border-line bg-ink/60 p-6 flex flex-col justify-between">
               <div>
                 <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-2">Gate 03</div>
-                <h3 className="text-lg font-bold font-heading text-white mb-2" style={{ color: "#ffffff" }}>
+                <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Liquid Capital Gate
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-normal" style={{ color: "#cbd5e1" }}>
+                <p className="text-sm text-mist leading-relaxed font-normal">
                   Explicit confirmation that the prospect has minimum investment capital ($5,000+) ready to deploy within 14 days of the strategy session.
                 </p>
               </div>
-              <div className="mt-4 pt-3 border-t border-line/50 text-xs font-mono text-slate-400">
+              <div className="mt-4 pt-3 border-t border-line/50 text-xs font-mono text-dim">
                 Capital Verification
               </div>
             </div>
@@ -369,14 +369,14 @@ export default function AppointmentSettingPage() {
             <div className="rounded-2xl border border-line bg-ink/60 p-6 flex flex-col justify-between">
               <div>
                 <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-2">Gate 04</div>
-                <h3 className="text-lg font-bold font-heading text-white mb-2" style={{ color: "#ffffff" }}>
+                <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Dynamic Routing
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-normal" style={{ color: "#cbd5e1" }}>
+                <p className="text-sm text-mist leading-relaxed font-normal">
                   Qualified buyers unlock VIP closer calendar slots. Unqualified inquiries are redirected to self-paced low-ticket training materials.
                 </p>
               </div>
-              <div className="mt-4 pt-3 border-t border-line/50 text-xs font-mono text-slate-400">
+              <div className="mt-4 pt-3 border-t border-line/50 text-xs font-mono text-dim">
                 Automatic Segmentation
               </div>
             </div>
@@ -392,10 +392,10 @@ export default function AppointmentSettingPage() {
               <span className="text-xs font-mono uppercase tracking-wider text-lime font-bold">
                 COMPATIBLE SERVICE
               </span>
-              <h3 className="text-xl sm:text-2xl font-bold font-heading text-white mt-1" style={{ color: "#ffffff" }}>
+              <h3 className="text-xl sm:text-2xl font-bold font-heading text-white mt-1">
                 Pair With Our Performance Meta Ads Agency Service
               </h3>
-              <p className="text-sm text-slate-300 mt-2 max-w-2xl" style={{ color: "#cbd5e1" }}>
+              <p className="text-sm text-mist mt-2 max-w-2xl">
                 Drive high-intent executive traffic into your automated appointment setting engine with our broad Meta creative buying machine.
               </p>
             </div>
@@ -418,10 +418,10 @@ export default function AppointmentSettingPage() {
               <HelpCircle className="w-4 h-4 text-lime" />
               <span>Questions & Answers</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight" style={{ color: "#ffffff" }}>
+            <h2 className="text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight">
               Frequently Asked Questions About Appointment Setting
             </h2>
-            <p className="mt-3 text-base text-slate-200" style={{ color: "#e2e8f0" }}>
+            <p className="mt-3 text-base text-mist">
               Insights into our speed-to-lead automation, qualification surveys, and calendar integration.
             </p>
           </div>
@@ -432,10 +432,10 @@ export default function AppointmentSettingPage() {
                 key={i}
                 className="rounded-2xl border border-line bg-panel p-6 sm:p-7 transition-colors hover:border-lime/40"
               >
-                <h3 className="text-lg font-bold font-heading text-white mb-2.5" style={{ color: "#ffffff" }}>
+                <h3 className="text-lg font-bold font-heading text-white mb-2.5">
                   {faq.q}
                 </h3>
-                <p className="text-sm sm:text-base text-slate-200 leading-relaxed font-normal" style={{ color: "#e2e8f0" }}>
+                <p className="text-sm sm:text-base text-mist leading-relaxed font-normal">
                   {faq.a}
                 </p>
               </div>

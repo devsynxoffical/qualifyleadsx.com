@@ -87,8 +87,8 @@ export function BlogExplorer({ initialPosts }: BlogExplorerProps) {
               <span className="h-2 w-2 rounded-full bg-lime animate-pulse" />
               <span>AEO Executive Summary</span>
             </div>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-200" style={{ color: "#e2e8f0" }}>
-              <strong style={{ color: "#ffffff" }}>QualifiedLeadsX™ Insights</strong> provides actionable educational blueprints for coaches, consultants, and agencies seeking predictable $100K+/month customer acquisition. Core focus areas include modern 12-minute VSL funnels, broad Meta ad creative targeting, and automated conditional lead qualification.
+            <p className="text-sm sm:text-base leading-relaxed text-mist">
+              <strong>QualifiedLeadsX™ Insights</strong> provides actionable educational blueprints for coaches, consultants, and agencies seeking predictable $100K+/month customer acquisition. Core focus areas include modern 12-minute VSL funnels, broad Meta ad creative targeting, and automated conditional lead qualification.
             </p>
           </div>
         </div>
@@ -231,7 +231,7 @@ export function BlogExplorer({ initialPosts }: BlogExplorerProps) {
               <h3 className="text-xl sm:text-2xl font-bold font-heading text-fog">
                 No articles in &ldquo;{selectedCategory}&rdquo; yet
               </h3>
-              <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed" style={{ color: "#cbd5e1" }}>
+              <p className="mt-3 text-sm sm:text-base text-mist leading-relaxed">
                 Our growth team publishes new deep-dive blueprints weekly. This category will unlock shortly.
               </p>
               <button

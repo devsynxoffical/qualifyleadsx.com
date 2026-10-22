@@ -28,7 +28,21 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
     gsap.ticker.add(raf);
     gsap.ticker.lagSmoothing(0);
 
+    const scrollToHash = () => {
+      if (typeof window !== "undefined" && window.location.hash) {
+        scrollToId(window.location.hash);
+      }
+    };
+
+    if (typeof window !== "undefined" && window.location.hash) {
+      setTimeout(scrollToHash, 300);
+      setTimeout(scrollToHash, 800);
+    }
+
+    window.addEventListener("hashchange", scrollToHash);
+
     return () => {
+      window.removeEventListener("hashchange", scrollToHash);
       gsap.ticker.remove(raf);
       lenis.destroy();
       (window as unknown as { __lenis?: Lenis }).__lenis = undefined;

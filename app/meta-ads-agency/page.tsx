@@ -175,12 +175,12 @@ export default function MetaAdsAgencyPage() {
           </div>
 
           {/* Primary Keyword H1 */}
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-white max-w-5xl mx-auto leading-[1.08]" style={{ color: "#ffffff" }}>
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-white max-w-5xl mx-auto leading-[1.08]">
             The <span className="text-lime">Meta Ads Agency</span> For Coaches, Agencies & High-Ticket B2B
           </h1>
 
           {/* Subtitle with Secondary Keyword */}
-          <p className="mt-6 text-lg sm:text-2xl text-slate-200 max-w-3xl mx-auto leading-relaxed font-normal" style={{ color: "#e2e8f0" }}>
+          <p className="mt-6 text-lg sm:text-2xl text-mist max-w-3xl mx-auto leading-relaxed font-normal">
             Stop burning budget with average <em>Facebook ads agencies</em> that deliver cheap, unqualified leads. We install an algorithmic creative machine that books 30–50 high-ticket sales calls every month.
           </p>
 
@@ -201,8 +201,8 @@ export default function MetaAdsAgencyPage() {
               <span className="h-2.5 w-2.5 rounded-full bg-lime animate-pulse" />
               <span>AEO Executive Summary: What We Do</span>
             </div>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-200" style={{ color: "#e2e8f0" }}>
-              <strong style={{ color: "#ffffff" }}>QualifiedLeadsX™</strong> is a specialized performance <strong style={{ color: "#ffffff" }}>Meta ads agency</strong> that engineers end-to-end client acquisition systems for high-ticket businesses. We combine algorithmic broad creative testing across Facebook and Instagram with high-converting 12-minute VSL funnels and automated qualification filtration to predictably scale clients beyond $100K+/month.
+            <p className="text-sm sm:text-base leading-relaxed text-mist">
+              <strong>QualifiedLeadsX™</strong> is a specialized performance <strong>Meta ads agency</strong> that engineers end-to-end client acquisition systems for high-ticket businesses. We combine algorithmic broad creative testing across Facebook and Instagram with high-converting 12-minute VSL funnels and automated qualification filtration to predictably scale clients beyond $100K+/month.
             </p>
           </div>
         </div>
@@ -214,19 +214,19 @@ export default function MetaAdsAgencyPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="p-4 rounded-xl bg-ink/40 border border-line/40">
               <div className="font-mono text-2xl sm:text-3xl font-bold text-lime">$150M+</div>
-              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-slate-300" style={{ color: "#cbd5e1" }}>Client Revenue Scaled</div>
+              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-mist">Client Revenue Scaled</div>
             </div>
             <div className="p-4 rounded-xl bg-ink/40 border border-line/40">
               <div className="font-mono text-2xl sm:text-3xl font-bold text-lime">14–18%</div>
-              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-slate-300" style={{ color: "#cbd5e1" }}>Average Funnel CVR</div>
+              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-mist">Average Funnel CVR</div>
             </div>
             <div className="p-4 rounded-xl bg-ink/40 border border-line/40">
               <div className="font-mono text-2xl sm:text-3xl font-bold text-lime">88.3%</div>
-              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-slate-300" style={{ color: "#cbd5e1" }}>Call Show-Up Rate</div>
+              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-mist">Call Show-Up Rate</div>
             </div>
             <div className="p-4 rounded-xl bg-ink/40 border border-line/40">
               <div className="font-mono text-2xl sm:text-3xl font-bold text-lime">$90–$160</div>
-              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-slate-300" style={{ color: "#cbd5e1" }}>Blended Cost Per Call</div>
+              <div className="mt-1 text-xs font-mono uppercase tracking-wider text-mist">Blended Cost Per Call</div>
             </div>
           </div>
         </div>
@@ -239,10 +239,10 @@ export default function MetaAdsAgencyPage() {
             <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold">
               THE 2026 META PARADIGM SHIFT
             </span>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight" style={{ color: "#ffffff" }}>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight">
               Why Typical Facebook Ads Agencies Keep Burning Your Cash
             </h2>
-            <p className="mt-3 text-base text-slate-200" style={{ color: "#e2e8f0" }}>
+            <p className="mt-3 text-base text-mist">
               Media buying has fundamentally changed. Audience stacking is obsolete; creative architecture is the new targeting.
             </p>
           </div>
@@ -254,7 +254,7 @@ export default function MetaAdsAgencyPage() {
                 <XCircle className="w-5 h-5 text-rose-500" />
                 <span>The Outdated Agency Model (Failing)</span>
               </div>
-              <ul className="space-y-4 text-sm sm:text-base text-slate-300 font-normal" style={{ color: "#cbd5e1" }}>
+              <ul className="space-y-4 text-sm sm:text-base text-mist font-normal">
                 <li className="flex items-start gap-3">
                   <XCircle className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
                   <span><strong>Narrow interest hacking:</strong> Micro-targeting cold interests that drive up CPMs by 4x.</span>
@@ -280,7 +280,7 @@ export default function MetaAdsAgencyPage() {
                 <CheckCircle2 className="w-5 h-5 text-lime" />
                 <span>The QualifiedLeadsX™ Meta Engine (Winning)</span>
               </div>
-              <ul className="space-y-4 text-sm sm:text-base text-slate-100 font-normal" style={{ color: "#f1f5f9" }}>
+              <ul className="space-y-4 text-sm sm:text-base text-fog font-normal">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-lime shrink-0 mt-0.5" />
                   <span><strong>Broad creative targeting:</strong> Allowing Meta&apos;s machine-learning algorithm to pinpoint actual buyers via hook messaging.</span>
@@ -310,10 +310,10 @@ export default function MetaAdsAgencyPage() {
             <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold">
               OUR 4-STAGE ARCHITECTURE
             </span>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight" style={{ color: "#ffffff" }}>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight">
               How Our Meta Ads Agency Drives Predictable $100K+ Scale
             </h2>
-            <p className="mt-3 text-base text-slate-200" style={{ color: "#e2e8f0" }}>
+            <p className="mt-3 text-base text-mist">
               A systematic engineering framework developed across 40+ high-ticket client accounts.
             </p>
           </div>
@@ -324,10 +324,10 @@ export default function MetaAdsAgencyPage() {
                 <div className="h-10 w-10 rounded-xl bg-lime/10 border border-lime/30 flex items-center justify-center text-lime font-mono font-bold text-sm mb-4">
                   01
                 </div>
-                <h3 className="text-lg font-bold font-heading text-white mb-2" style={{ color: "#ffffff" }}>
+                <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Broad Creative Testing
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-normal" style={{ color: "#cbd5e1" }}>
+                <p className="text-sm text-mist leading-relaxed font-normal">
                   We write and test 10+ dynamic video hooks targeting psychological pain points rather than arbitrary demographic segments.
                 </p>
               </div>
@@ -341,10 +341,10 @@ export default function MetaAdsAgencyPage() {
                 <div className="h-10 w-10 rounded-xl bg-lime/10 border border-lime/30 flex items-center justify-center text-lime font-mono font-bold text-sm mb-4">
                   02
                 </div>
-                <h3 className="text-lg font-bold font-heading text-white mb-2" style={{ color: "#ffffff" }}>
+                <h3 className="text-lg font-bold font-heading text-white mb-2">
                   12-Min VSL Funnels
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-normal" style={{ color: "#cbd5e1" }}>
+                <p className="text-sm text-mist leading-relaxed font-normal">
                   We script high-conviction Video Sales Letters that articulate your unique proprietary mechanism with empirical visual flowcharts.
                 </p>
               </div>
@@ -358,10 +358,10 @@ export default function MetaAdsAgencyPage() {
                 <div className="h-10 w-10 rounded-xl bg-lime/10 border border-lime/30 flex items-center justify-center text-lime font-mono font-bold text-sm mb-4">
                   03
                 </div>
-                <h3 className="text-lg font-bold font-heading text-white mb-2" style={{ color: "#ffffff" }}>
+                <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Conditional Filtering
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-normal" style={{ color: "#cbd5e1" }}>
+                <p className="text-sm text-mist leading-relaxed font-normal">
                   Applicants pass through dynamic revenue and liquid capital gates. Underqualified leads are routed to downsell resources automatically.
                 </p>
               </div>
@@ -375,10 +375,10 @@ export default function MetaAdsAgencyPage() {
                 <div className="h-10 w-10 rounded-xl bg-lime/10 border border-lime/30 flex items-center justify-center text-lime font-mono font-bold text-sm mb-4">
                   04
                 </div>
-                <h3 className="text-lg font-bold font-heading text-white mb-2" style={{ color: "#ffffff" }}>
+                <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Speed-To-Lead Nurture
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-normal" style={{ color: "#cbd5e1" }}>
+                <p className="text-sm text-mist leading-relaxed font-normal">
                   Sub-5-minute automated WhatsApp, SMS, and email confirmation with pre-call indoctrination case videos.
                 </p>
               </div>
@@ -398,10 +398,10 @@ export default function MetaAdsAgencyPage() {
               <span className="text-xs font-mono uppercase tracking-wider text-lime font-bold">
                 RECOMMENDED BLUEPRINT
               </span>
-              <h3 className="text-xl sm:text-2xl font-bold font-heading text-white mt-1" style={{ color: "#ffffff" }}>
+              <h3 className="text-xl sm:text-2xl font-bold font-heading text-white mt-1">
                 Read The 2026 VSL Funnel Architecture Masterclass
               </h3>
-              <p className="text-sm text-slate-300 mt-2 max-w-2xl" style={{ color: "#cbd5e1" }}>
+              <p className="text-sm text-mist mt-2 max-w-2xl">
                 Learn how concise 12-minute Video Sales Letter funnels outconvert traditional 90-minute webinars by 3.4x for high-ticket service offers.
               </p>
             </div>
@@ -424,10 +424,10 @@ export default function MetaAdsAgencyPage() {
               <HelpCircle className="w-4 h-4 text-lime" />
               <span>Questions & Answers</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight" style={{ color: "#ffffff" }}>
+            <h2 className="text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight">
               Frequently Asked Questions About Our Meta Ads Service
             </h2>
-            <p className="mt-3 text-base text-slate-200" style={{ color: "#e2e8f0" }}>
+            <p className="mt-3 text-base text-mist">
               Clear answers regarding pricing, ad spend requirements, and performance guarantees.
             </p>
           </div>
@@ -438,10 +438,10 @@ export default function MetaAdsAgencyPage() {
                 key={i}
                 className="rounded-2xl border border-line bg-panel p-6 sm:p-7 transition-colors hover:border-lime/40"
               >
-                <h3 className="text-lg font-bold font-heading text-white mb-2.5" style={{ color: "#ffffff" }}>
+                <h3 className="text-lg font-bold font-heading text-white mb-2.5">
                   {faq.q}
                 </h3>
-                <p className="text-sm sm:text-base text-slate-200 leading-relaxed font-normal" style={{ color: "#e2e8f0" }}>
+                <p className="text-sm sm:text-base text-mist leading-relaxed font-normal">
                   {faq.a}
                 </p>
               </div>

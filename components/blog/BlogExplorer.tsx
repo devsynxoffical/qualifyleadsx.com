@@ -46,21 +46,21 @@ export function BlogExplorer({ initialPosts }: BlogExplorerProps) {
       <section className="relative pt-32 pb-6 sm:pt-40 sm:pb-8 overflow-hidden bg-ink">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(201,242,107,0.12),rgba(255,255,255,0))]" />
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono uppercase tracking-widest text-lime bg-lime/10 border border-lime/30 mb-6">
+        <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono uppercase tracking-widest text-lime bg-lime/10 border border-lime/30 mb-6">
             <Sparkles className="w-4 h-4 text-lime" />
             <span>Research & Blueprints</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl font-bold font-heading tracking-tight text-fog max-w-4xl leading-[1.1]">
+          <h1 className="text-4xl sm:text-6xl font-bold font-heading tracking-tight text-fog max-w-4xl leading-[1.1] mx-auto text-balance">
             Our <span className="text-lime">Blogs</span> & Scaling Guides
           </h1>
-          <p className="mt-5 text-lg sm:text-xl text-mist max-w-2xl leading-relaxed">
+          <p className="mt-5 text-lg sm:text-xl text-mist max-w-2xl mx-auto leading-relaxed text-balance">
             Unfiltered frameworks, proven conversion economics, and operational playbooks derived from scaling over $150M+ in high-ticket client revenue.
           </p>
 
-          {/* Clickable Interactive Category Buttons */}
-          <div className="mt-8 flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
+          {/* Clickable Interactive Category Buttons - Perfectly Centered */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-2.5 max-w-3xl mx-auto">
             {categories.map((cat) => {
               const isActive = selectedCategory === cat;
               return (
@@ -81,8 +81,8 @@ export function BlogExplorer({ initialPosts }: BlogExplorerProps) {
             })}
           </div>
 
-          {/* AEO Fast Answer / Overview Card with guaranteed high-contrast styling */}
-          <div className="mt-8 rounded-2xl border border-lime/30 bg-panel/80 p-6 backdrop-blur-md max-w-3xl">
+          {/* AEO Fast Answer / Overview Card - Centered with balanced margins */}
+          <div className="mt-8 rounded-2xl border border-lime/30 bg-panel/80 p-6 sm:p-7 backdrop-blur-md max-w-3xl mx-auto text-left shadow-xl shadow-black/40">
             <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-lime font-bold mb-2">
               <span className="h-2 w-2 rounded-full bg-lime animate-pulse" />
               <span>AEO Executive Summary</span>

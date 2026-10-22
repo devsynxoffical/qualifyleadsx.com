@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -21,6 +22,49 @@ import { Pricing } from "@/components/sections/Pricing";
 import { Community } from "@/components/sections/Community";
 import { UFSquareMarquee } from "@/components/sections/UFSquareMarquee";
 import { FinalCTA } from "@/components/sections/FinalCTA";
+import { site } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Lead Generation Agency for High-Ticket Offers - QualifiedLeadsX",
+  description:
+    "B2B lead generation agency scaling high ticket sales for agencies and coaches. Get predictable booked calls with our AI acquisition engine. Book your call.",
+  keywords: [
+    "lead generation agency",
+    "high ticket sales",
+    "b2b lead generation",
+    "appointment setting",
+    "high ticket client acquisition",
+    "meta ads agency",
+    "speed to lead",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Lead Generation Agency for High-Ticket Offers - QualifiedLeadsX",
+    description:
+      "B2B lead generation agency scaling high ticket sales for agencies and coaches. Get predictable booked calls with our AI acquisition engine.",
+    url: site.url,
+    siteName: "QualifiedLeadsX™",
+    images: [
+      {
+        url: `${site.url}/og.png`,
+        width: 1200,
+        height: 630,
+        alt: "Lead Generation Agency for High-Ticket Offers - QualifiedLeadsX",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lead Generation Agency for High-Ticket Offers - QualifiedLeadsX",
+    description:
+      "B2B lead generation agency scaling high ticket sales for agencies and coaches. Get predictable booked calls with our AI acquisition engine.",
+    images: [`${site.url}/og.png`],
+  },
+};
 
 export default function Home() {
   return (
@@ -70,4 +114,3 @@ export default function Home() {
     </main>
   );
 }
-

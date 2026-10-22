@@ -19,9 +19,9 @@ export function WhyScale() {
             as="h2"
             className="mt-5 text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-fog sm:text-5xl lg:text-6xl"
           >
-            Most businesses don&apos;t have a lead problem... they have a{" "}
+            Why most lead generation agencies fail{" "}
             <em className="font-semibold not-italic text-lime">
-              client acquisition system problem.
+              high-ticket offers.
             </em>
           </SplitReveal>
           <Reveal delay={0.15}>

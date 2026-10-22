@@ -4,7 +4,14 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Earnings Disclaimer",
-  description: "Earnings disclaimer for QualifiedLeadsX™ results.",
+  description: "Earnings disclaimer for QualifiedLeadsX results.",
+  alternates: {
+    canonical: "/disclaimer",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function DisclaimerPage() {

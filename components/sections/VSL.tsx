@@ -20,14 +20,15 @@ export function VSL({
   eyebrow = "Watch the system",
   title = (
     <>
-      See exactly how{" "}
-      <em className="font-semibold not-italic text-lime">we build your pipeline.</em>
+      Watch the system:{" "}
+      <em className="font-semibold not-italic text-lime">how we build your pipeline.</em>
     </>
   ),
   subtitle = "A short breakdown of the QualifiedLeadsX™ client acquisition system, the exact steps we install for you, and what a fully booked calendar looks like.",
   hideHeading = false,
 }: VSLProps) {
-  const [isPlaying, setIsPlaying] = useState(true);
+  // Mobile performance facade: click to play avoids heavy upfront iframe scripts
+  const [isPlaying, setIsPlaying] = useState(false);
 
   return (
     <Section id="vsl" className="relative overflow-hidden bg-[#040c07]">
@@ -72,7 +73,7 @@ export function VSL({
             <div className="relative aspect-video w-full overflow-hidden bg-black">
               {isPlaying ? (
                 <iframe
-                  src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&rel=0&modestbranding=1&controls=1&showinfo=0&iv_load_policy=3&disablekb=0&enablejsapi=1`}
+                  src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=0&loop=1&playlist=${videoId}&rel=0&modestbranding=1&controls=1&showinfo=0&iv_load_policy=3&disablekb=0&enablejsapi=1`}
                   title="QualifiedLeadsX Video Sales Letter"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -83,7 +84,7 @@ export function VSL({
                 <div className="relative h-full w-full">
                   <img
                     src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
-                    alt="QualifiedLeadsX VSL Cover"
+                    alt="QualifiedLeadsX VSL System Walkthrough Video Cover"
                     className="h-full w-full object-cover brightness-90 transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px] transition-colors duration-300 group-hover:bg-black/25" />
@@ -118,9 +119,19 @@ export function VSL({
           </div>
         </Reveal>
 
+        {/* ── 3-Line Text Summary for Crawlers and Users (PDF Section 6 Spec) ── */}
+        <Reveal delay={0.08}>
+          <div className="mx-auto mt-6 max-w-3xl rounded-2xl border border-line bg-panel/70 p-5 text-center text-sm leading-relaxed text-slate-300 backdrop-blur-sm">
+            <p className="font-semibold text-white mb-1">System Walkthrough Summary:</p>
+            <p>
+              In this video breakdown, we show how the QualifiedLeadsX 8-step acquisition system bridges the gap from paid Meta traffic to closed high-ticket clients. By installing high-converting VSL funnels, automated CRM workflows, and sub-5-minute AI follow-up, we consistently scale agency owners and coaches past $100K/month with milestone-backed performance guarantees.
+            </p>
+          </div>
+        </Reveal>
+
         {/* ── Call to Action below Video ── */}
         <Reveal delay={0.12}>
-          <div className="mx-auto mt-10 flex max-w-2xl flex-col items-center gap-4 text-center">
+          <div className="mx-auto mt-8 flex max-w-2xl flex-col items-center gap-4 text-center">
             <p className="text-sm leading-relaxed text-mist">
               Still have questions after watching? Get every answer on a free strategy call.
             </p>

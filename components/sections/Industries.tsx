@@ -12,8 +12,8 @@ export function Industries() {
         eyebrow="Proven across niches"
         title={
           <>
-            Industries we&apos;ve{" "}
-            <em className="font-semibold not-italic text-lime">worked with.</em>
+            Lead generation agency for service based businesses:{" "}
+            <em className="font-semibold not-italic text-lime">industries we work with.</em>
           </>
         }
         subtitle="The QualifiedLeadsX™ system is engineered per niche - same engine, different fuel. These are just some of the industries we've scaled."

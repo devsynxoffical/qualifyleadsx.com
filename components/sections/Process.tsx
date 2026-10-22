@@ -12,7 +12,7 @@ export function Process() {
         title={
           <>
             Our 8-step{" "}
-            <em className="font-semibold not-italic text-lime">client acquisition process.</em>
+            <em className="font-semibold not-italic text-lime">lead generation process.</em>
           </>
         }
         subtitle="One complete system. Eight proven steps - from market research to premium clients on your calendar. Everything handled for you."
@@ -20,11 +20,12 @@ export function Process() {
 
       <div className="relative">
         <div className="pointer-events-none absolute left-[10%] right-[10%] top-14 hidden h-px bg-gradient-to-r from-transparent via-lime/30 to-transparent lg:block" />
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 list-none p-0 m-0">
           {acquisitionSteps.map((s, i) => {
             const Icon = s.icon;
             return (
-              <Reveal key={s.title} delay={(i % 4) * 0.06} y={32}>
+              <li key={s.title} className="h-full">
+                <Reveal delay={(i % 4) * 0.06} y={32} className="h-full">
                 <article className="group relative h-full overflow-hidden rounded-3xl border border-line bg-panel p-7 transition-all duration-500 hover:border-lime/30 hover:bg-elevated">
                   <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-lime/[0.06] blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                   <div className="flex items-start justify-between">
@@ -41,10 +42,11 @@ export function Process() {
                   <p className="mt-2.5 text-sm leading-relaxed text-mist">{s.body}</p>
                   <span className="pointer-events-none absolute inset-x-6 bottom-0 h-px origin-left scale-x-0 bg-gradient-to-r from-lime/70 to-transparent transition-transform duration-500 group-hover:scale-x-100" />
                 </article>
-              </Reveal>
+                </Reveal>
+              </li>
             );
           })}
-        </div>
+        </ol>
       </div>
     </Section>
   );

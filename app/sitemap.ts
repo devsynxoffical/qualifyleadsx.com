@@ -24,6 +24,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    // Service Pages (Month 1 Core SEO Plan)
+    {
+      url: `${site.url}/meta-ads-agency`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/appointment-setting`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
     // Industry Landing Pages (Phase 2)
     {
       url: `${site.url}/for/coaches`,
@@ -74,6 +87,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
+    },
+    // Entity & Company
+    {
+      url: `${site.url}/about`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
     },
     // Legal & compliance
     {

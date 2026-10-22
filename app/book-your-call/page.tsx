@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Book a free 30-minute strategy call with QualifiedLeadsX. Get an audit of your offer and the exact funnel you need to fill your calendar with qualified sales calls.",
   alternates: {
-    canonical: "/book-your-call/",
+    canonical: "/book-your-call",
   },
 };
 

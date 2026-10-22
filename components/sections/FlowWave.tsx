@@ -593,9 +593,7 @@ export function FlowWave() {
             <div ref={headlineWrapRef}>
               <h1 className="max-w-4xl text-balance font-semibold tracking-[-0.03em] text-fog">
                 <span className="block text-[clamp(1.2rem,2.4vw,1.9rem)] leading-[1.22]">
-                  We Will Install Our Proprietary{" "}
-                  <em className="text-gradient-lime not-italic">QualifiedLeadsX™</em> Client
-                  Acquisition System Into Your Business.
+                  <em className="text-gradient-lime not-italic">Lead Generation Agency</em> for High-Ticket Offers: From Meta Ads to Booked Calls
                 </span>
                 <span className="mt-2 block text-gradient-lime text-[clamp(1.9rem,5.6vw,4.8rem)] font-bold leading-[1.02]">
                   Double Your Revenue Within The Next 90 Days

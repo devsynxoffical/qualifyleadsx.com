@@ -4,7 +4,14 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How QualifiedLeadsX™ collects, uses and protects your data.",
+  description: "How QualifiedLeadsX collects, uses and protects your data.",
+  alternates: {
+    canonical: "/privacy",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function PrivacyPage() {

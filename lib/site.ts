@@ -1,16 +1,18 @@
 export const site = {
-  name: "QualifiedLeadsX™",
-  legalName: "Ecom Expertz LLC®",
+  name: "QualifiedLeadsX",
+  legalName: "Ecom Expertz LLC",
   legalAddress: "1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801",
   url: "https://www.qualifiedleadsx.com",
-  bookCallUrl: "/book-your-call/",
+  bookCallUrl: "/book-your-call",
   email: "hello@qualifiedleadsx.com",
-  phone: "+1 (800) 555-0148",
+  phone: "",
   whatsappNumber: "919582296172",
   founded: 2022,
   location: {
-    addressLocality: "Austin",
-    addressRegion: "TX",
+    streetAddress: "1309 Coffeen Avenue STE 1200",
+    addressLocality: "Sheridan",
+    addressRegion: "WY",
+    postalCode: "82801",
     addressCountry: "US",
   },
   description:
@@ -23,13 +25,12 @@ export const site = {
 } as const;
 
 export const nav = [
+  { label: "Services", href: "/meta-ads-agency" },
   { label: "System", href: "#different" },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
-  { label: "Results", href: "#results" },
   { label: "Mastermind", href: "/mastermind" },
-  { label: "Industries", href: "#industries" },
-  { label: "Guarantee", href: "#guarantee" },
   { label: "FAQ", href: "#faq" },
 ] as const;
 

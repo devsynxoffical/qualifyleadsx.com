@@ -93,9 +93,9 @@ export function Different() {
           eyebrow="What makes us different"
           title={
             <>
-              We don&apos;t just generate leads… we build a{" "}
+              What makes QualifiedLeadsX different from a{" "}
               <em className="font-semibold not-italic text-lime">
-                complete client acquisition ecosystem.
+                typical lead generation agency.
               </em>
             </>
           }

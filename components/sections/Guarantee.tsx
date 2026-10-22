@@ -150,8 +150,8 @@ export function Guarantee() {
               as="h2"
               className="mt-5 text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-fog sm:text-5xl lg:text-6xl"
             >
-              We take the risk...{" "}
-              <em className="font-semibold not-italic text-lime">not you.</em>
+              The 90-day written guarantee:{" "}
+              <em className="font-semibold not-italic text-lime">we take the risk.</em>
             </SplitReveal>
             <Reveal delay={0.15}>
               <p className="mt-6 max-w-lg text-pretty text-lg leading-relaxed text-mist">

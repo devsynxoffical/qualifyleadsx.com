@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Inter_Tight, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
 import { CustomCursor } from "@/components/providers/CustomCursor";
@@ -11,32 +10,18 @@ import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
 import { EmailOptInWidget } from "@/components/ui/EmailOptInWidget";
 import { site } from "@/lib/site";
 
-const inter = Inter({
-  variable: "--font-sans-stack",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const interTight = Inter_Tight({
-  variable: "--font-heading-stack",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-mono-stack",
-  subsets: ["latin"],
-  display: "swap",
-});
+const inter = { variable: "font-sans" };
+const interTight = { variable: "font-heading" };
+const geistMono = { variable: "font-mono" };
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "QualifiedLeadsX™ - High-Ticket Client Acquisition Funnel System",
+    default: "Lead Generation Agency for High-Ticket Offers - QualifiedLeadsX",
     template: "%s | QualifiedLeadsX™",
   },
   description:
-    "Done-for-you client acquisition funnel systems for agency owners, high-ticket coaches & B2B service providers. Scale to $100K+ months with predictable qualified sales calls on your calendar.",
+    "B2B lead generation agency scaling high ticket sales for agencies and coaches. Get predictable booked calls with our AI acquisition engine. Book your call.",
   keywords: [
     "high ticket lead generation",
     "client acquisition system",

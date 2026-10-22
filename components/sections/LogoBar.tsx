@@ -6,7 +6,7 @@ const existingLogoIndices = [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 15, 16, 17,
 
 const logos = existingLogoIndices.map((num) => ({
   src: `/logos/logo-${String(num).padStart(2, "0")}.png`,
-  alt: `Client logo ${num}`,
+  alt: `QualifiedLeadsX high-ticket client brand logo #${num}`,
 }));
 
 export function LogoBar() {

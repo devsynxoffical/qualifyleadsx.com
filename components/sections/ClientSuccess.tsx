@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { ShieldCheck, BadgeCheck, CalendarCheck2, ZoomIn, ChevronDown } from "lucide-react";
+import Link from "next/link";
+import { ShieldCheck, BadgeCheck, CalendarCheck2, ZoomIn, ChevronDown, ArrowUpRight } from "lucide-react";
+
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { LightboxModal, LightboxItem } from "@/components/ui/LightboxModal";
@@ -107,8 +109,8 @@ export function ClientSuccess() {
           eyebrow="Recognised by client results"
           title={
             <>
-              We are recognised by{" "}
-              <em className="font-semibold not-italic text-lime">the success of our clients.</em>
+              Lead generation results:{" "}
+              <em className="font-semibold not-italic text-lime">real client numbers.</em>
             </>
           }
           subtitle="Booked calendars, paid invoices, closed deals. Every screenshot below is real client output - not marketing mockups."
@@ -165,6 +167,17 @@ export function ClientSuccess() {
           currentIndex={lightboxIndex}
           onNavigate={setLightboxIndex}
         />
+
+                {/* Explore all 125+ case studies CTA */}
+        <Reveal delay={0.08} className="mt-10 text-center">
+          <Link
+            href="/case-studies"
+            className="group inline-flex items-center gap-2 rounded-full border border-lime/40 bg-lime/10 px-8 py-3.5 text-sm font-bold text-lime transition-all duration-300 hover:border-lime/60 hover:bg-lime/20 hover:shadow-[0_0_30px_-5px_rgba(201,242,107,0.3)]"
+          >
+            Explore all 125+ verified case studies
+            <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </Link>
+        </Reveal>
 
         {/* Trust strip */}
         <Reveal delay={0.1}>

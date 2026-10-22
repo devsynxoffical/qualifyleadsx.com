@@ -4,7 +4,14 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "Terms governing the use of QualifiedLeadsX™ services.",
+  description: "Terms governing the use of QualifiedLeadsX services.",
+  alternates: {
+    canonical: "/terms",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function TermsPage() {

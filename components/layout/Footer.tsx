@@ -7,6 +7,8 @@ const footerColumns = [
   {
     title: "Solutions",
     links: [
+      { label: "Meta Ads Agency", href: "/meta-ads-agency" },
+      { label: "Appointment Setting", href: "/appointment-setting" },
       { label: "For Coaches", href: "/for/coaches" },
       { label: "For Consultants", href: "/for/consultants" },
       { label: "For Agencies", href: "/for/agencies" },
@@ -18,6 +20,7 @@ const footerColumns = [
   {
     title: "Company",
     links: [
+      { label: "About QualifiedLeadsX", href: "/about" },
       { label: "Book Strategy Call", href: site.bookCallUrl },
       { label: "Client Results", href: "/#results" },
       { label: "Guarantee", href: "/#guarantee" },
@@ -162,7 +165,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-4 border-t border-line py-8 text-center sm:text-left sm:flex-row">
           <div>
             <p className="text-xs font-medium text-fog">
-              Copyright © 2025 Ecom Expertz LLC®. All rights reserved.
+              Copyright © 2026 Ecom Expertz LLC®. All rights reserved.
             </p>
             <p className="mt-1 text-xs text-mist">
               1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801

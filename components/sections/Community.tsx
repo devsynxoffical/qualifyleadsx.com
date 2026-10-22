@@ -31,8 +31,8 @@ export function Community() {
           eyebrow="Private community"
           title={
             <>
-              See What&apos;s Working.{" "}
-              <em className="font-semibold not-italic text-lime">In Real Time.</em>
+              Join the free QualifiedLeadsX community:{" "}
+              <em className="font-semibold not-italic text-lime">350+ agency & coach leaders.</em>
             </>
           }
           subtitle="Join the private QualifiedLeadsX Community for Agency Owners, High-Ticket Coaches & Service Providers where we share real campaigns, client wins, strategies, tests, and what's working right now."

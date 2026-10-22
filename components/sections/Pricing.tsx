@@ -62,11 +62,11 @@ export function Pricing() {
           eyebrow="Flexible Engagement Models"
           title={
             <>
-              Two ways to{" "}
-              <em className="font-semibold not-italic text-lime">plug into the system.</em>
+              Two ways to work with us:{" "}
+              <em className="font-semibold not-italic text-lime">Meta Ads Management & Full-Service Growth.</em>
             </>
           }
-          subtitle="No hidden fees. No long-term lock-ins. Pick the plan that matches where you are right now and get your custom quote."
+          subtitle="Every engagement is custom-quoted based on your niche, monthly ad budget, funnel scope, and number of active offers. Zero management fee after day 90 if agreed milestones are not met."
         />
 
         <Reveal y={36} className="mt-14">

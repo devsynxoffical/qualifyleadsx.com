@@ -37,8 +37,8 @@ export const whyNotScale = [
   {
     title: "Copy, but no follow-up",
     body: "Great copy can't qualify, nurture or book. Follow-up is where the deals are won - and in the fragmented way, it never happens.",
-    stat: "80%",
-    statLabel: "Of sales need 5+ follow-ups",
+    stat: "$846K",
+    statLabel: "Recorded from 235 clients, most closed after follow-up",
   },
   {
     title: "No one owns the journey",
@@ -254,7 +254,7 @@ export const comparisonRows: {
 /* ============================================================
    FAQ
    ============================================================ */
-export const faqCategories = ["All", "The System", "Ownership", "Onboarding"] as const;
+export const faqCategories = ["All", "The System", "Pricing", "Ownership", "Onboarding"] as const;
 
 export const faqs: {
   q: string;
@@ -299,6 +299,31 @@ export const faqs: {
   {
     q: "What's included?",
     a: "Offer positioning, messaging, Meta Ads, creatives, landing pages, complete sales funnel, CRM, AI automations, email sequences, SMS follow-up, appointment reminders, lead qualification, calendar booking and ongoing optimisation.",
+    category: "The System",
+  },
+  {
+    q: "How much does a lead generation agency cost?",
+    a: "Most agencies charge a monthly management fee, a fee per lead or call, or a mix, plus your own ad spend. QualifiedLeadsX quotes each engagement after the strategy call, based on your niche, ad budget and funnel scope, and charges no management fee after day 90 if the agreed milestones are not met.",
+    category: "Pricing",
+  },
+  {
+    q: "Are lead generation companies worth it?",
+    a: "They are worth it when you can close the calls and your offer is priced high enough to cover the cost of acquisition. That is why we only work with businesses already doing $10,000+ a month.",
+    category: "The System",
+  },
+  {
+    q: "What does a lead generation agency do?",
+    a: "It finds, attracts and qualifies potential buyers for you. We go further than leads: we build the offer, the Meta ads, the funnel, the CRM and the AI follow-up, and we deliver booked, qualified sales calls.",
+    category: "The System",
+  },
+  {
+    q: "Do you work with B2B companies?",
+    a: "Yes. B2B service companies, consultants and agencies are a core group. We use Meta ads with B2B-specific qualification questions and calendar booking instead of cold outreach.",
+    category: "The System",
+  },
+  {
+    q: "Do you run Google ads or LinkedIn ads?",
+    a: "Our system is built on Meta ads (Facebook and Instagram) because that is where we have managed $50M+ in spend. We tell you on the strategy call if your offer needs a different channel.",
     category: "The System",
   },
 ] as const;

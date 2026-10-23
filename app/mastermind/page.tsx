@@ -12,6 +12,7 @@ import {
   BarChart3,
 } from "lucide-react";
 import { site } from "@/lib/site";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { Footer } from "@/components/layout/Footer";
 import { Nav } from "@/components/layout/Nav";
 import { VSL } from "@/components/sections/VSL";
@@ -154,6 +155,9 @@ const steps = [
 export default function MastermindPage() {
   return (
     <main id="main" className="flex min-h-screen flex-col bg-ink selection:bg-lime/30 selection:text-lime">
+      <BreadcrumbJsonLd
+        items={[{ name: "Mastermind", url: "/mastermind" }]}
+      />
       <Nav />
 
       {/* Hero Section */}

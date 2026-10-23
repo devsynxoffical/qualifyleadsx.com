@@ -9,6 +9,8 @@ import { CTABanner } from "@/components/ui/CTABanner";
 import { Guarantee } from "@/components/sections/Guarantee";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { ShieldCheck, TrendingUp, Users, Video } from "lucide-react";
+import { site } from "@/lib/site";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "125+ Real Client Case Studies & Scaling Proof",
@@ -48,8 +50,30 @@ const caseStudiesStats = [
 ];
 
 export default function CaseStudiesPage() {
+  const collectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "125+ Real Client Case Studies & Scaling Proof",
+    description:
+      "Explore 125+ verified scaling case studies, video breakdowns, Meta Ads ad account dashboards, and client revenue proof across 30+ high-ticket industries.",
+    url: `${site.url}/case-studies`,
+    publisher: {
+      "@type": "Organization",
+      name: site.name,
+      url: site.url,
+      logo: `${site.url}/icon.png`,
+    },
+  };
+
   return (
     <main id="main" className="min-h-screen bg-ink text-fog">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+      />
+      <BreadcrumbJsonLd
+        items={[{ name: "Case Studies", url: "/case-studies" }]}
+      />
       <AnnouncementBar />
       <Nav />
 

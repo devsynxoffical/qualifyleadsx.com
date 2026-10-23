@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import {
   CheckCircle2,
   XCircle,
@@ -157,6 +158,12 @@ export default function MetaAdsAgencyPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Services", url: "/meta-ads-agency" },
+          { name: "Meta Ads Agency", url: "/meta-ads-agency" },
+        ]}
       />
 
       <AnnouncementBar />

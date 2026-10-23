@@ -232,11 +232,8 @@ export const blogPosts: BlogPost[] = [
         },
       ],
     },
-  }
-];
-
-export const archivedBlogPosts: BlogPost[] = [
-{
+  },
+  {
     slug: "cold-outreach-vs-paid-traffic-high-ticket-b2b",
     title: "Cold Outreach vs. Paid Traffic: Which Scales Faster for $50K+/Month B2B Service Providers?",
     description: "An empirical comparison between outbound cold email/LinkedIn messaging and inbound Meta paid traffic funnels for scaling high-ticket consulting and agency offers to $100K+ monthly recurring revenue.",
@@ -757,3 +754,4 @@ export function getBlogPost(slug: string): BlogPost | undefined {
 
 
 export const scheduledDailyPosts: BlogPost[] = blogPosts.slice(1);
+export const archivedBlogPosts: BlogPost[] = [];

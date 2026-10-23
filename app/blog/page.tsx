@@ -6,6 +6,7 @@ import { CTABanner } from "@/components/ui/CTABanner";
 import { blogPosts } from "@/lib/blog-data";
 import { BlogExplorer } from "@/components/blog/BlogExplorer";
 import { site } from "@/lib/site";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Client Acquisition, VSL Funnels & Meta Ads Insights",
@@ -73,6 +74,9 @@ export default function BlogHubPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <BreadcrumbJsonLd
+        items={[{ name: "Blog", url: "/blog" }]}
       />
       <AnnouncementBar />
       <Nav />

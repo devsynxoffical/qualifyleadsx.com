@@ -13,18 +13,13 @@ import {
   Clock,
   Calendar,
   ChevronRight,
-  Sparkles,
   CheckCircle2,
-  Share2,
   ArrowLeft,
   ArrowRight,
   HelpCircle,
   Bookmark,
   TrendingUp,
-  ShieldCheck,
   Zap,
-  Target,
-  FileText,
 } from "lucide-react";
 
 interface Props {

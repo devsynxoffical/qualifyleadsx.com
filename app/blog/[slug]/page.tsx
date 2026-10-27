@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const postUrl = `${site.url}/blog/${post.slug}`;
 
   return {
-    title: `${post.title} | QualifiedLeadsX™`,
+    title: { absolute: `${post.seoTitle ?? post.title} | QualifiedLeadsX™` },
     description: post.description,
     keywords: post.tags,
     authors: [{ name: post.author.name, url: site.url }],
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       url: postUrl,
       type: "article",
-      publishedTime: post.publishedAt === "21-10-2026" ? "2026-10-21" : post.publishedAt,
+      publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt,
       authors: [post.author.name],
       tags: post.tags,
@@ -89,13 +89,21 @@ export default async function BlogPostPage({ params }: Props) {
 
   const postUrl = `${site.url}/blog/${post.slug}`;
 
+  const relatedPosts = [
+    ...blogPosts.filter((p) => p.slug !== post.slug && p.category === post.category),
+    ...blogPosts.filter((p) => p.slug !== post.slug && p.category !== post.category),
+  ].slice(0, 3);
+
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
+    "@id": `${postUrl}#article`,
     headline: post.title,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${site.url}/blog#blog` },
     description: post.description,
     url: postUrl,
-    datePublished: post.publishedAt === "21-10-2026" ? "2026-10-21" : post.publishedAt,
+    datePublished: post.publishedAt,
     dateModified: post.updatedAt,
     mainEntityOfPage: postUrl,
     author: {
@@ -105,11 +113,24 @@ export default async function BlogPostPage({ params }: Props) {
     },
     publisher: {
       "@type": "Organization",
+      "@id": `${site.url}/#organization`,
       name: site.name,
       url: site.url,
-      logo: `${site.url}/images/qualified-leadsx.webp`,
+      logo: {
+        "@type": "ImageObject",
+        url: `${site.url}/images/qualified-leadsx.webp`,
+      },
     },
     image: `${site.url}${post.coverImage}`,
+    articleSection: post.category,
+    wordCount: [
+      post.content.intro,
+      ...post.content.sections.flatMap((sec) => [sec.heading, ...sec.body, ...(sec.bulletList ?? [])]),
+      post.content.conclusion,
+    ]
+      .join(" ")
+      .split(/\s+/)
+      .filter(Boolean).length,
     keywords: post.tags.join(", "),
   };
 
@@ -562,6 +583,53 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </div>
       </article>
+
+      {/* Related Guides (internal linking) */}
+      {relatedPosts.length > 0 && (
+        <section aria-labelledby="related-guides" className="border-t border-line bg-ink py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-wrap items-end justify-between gap-4 mb-8">
+              <div>
+                <p className="text-xs font-mono uppercase tracking-wider text-lime mb-2">Keep Reading</p>
+                <h2 id="related-guides" className="text-2xl sm:text-3xl font-bold font-heading text-white tracking-tight">
+                  Related Growth Guides
+                </h2>
+              </div>
+              <Link href="/blog" className="inline-flex items-center gap-1.5 text-xs font-mono text-mist hover:text-lime transition-colors">
+                <span>All guides</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedPosts.map((rp) => (
+                <Link
+                  key={rp.slug}
+                  href={`/blog/${rp.slug}`}
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-panel transition-colors hover:border-lime/40"
+                >
+                  <div className="relative aspect-[16/10] w-full overflow-hidden bg-ink">
+                    <Image
+                      src={rp.coverImage}
+                      alt={rp.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col p-5">
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-lime">{rp.category}</span>
+                    <h3 className="mt-2 text-base font-bold font-heading text-white leading-snug line-clamp-3 group-hover:text-lime transition-colors">
+                      {rp.seoTitle ?? rp.title}
+                    </h3>
+                    <p className="mt-2 text-xs text-mist leading-relaxed line-clamp-2">{rp.description}</p>
+                    <span className="mt-4 text-[11px] font-mono text-dim">{rp.readTime}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <CTABanner
         eyebrow="Direct Implementation"

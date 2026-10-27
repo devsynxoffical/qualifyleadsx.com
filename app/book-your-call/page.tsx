@@ -4,6 +4,7 @@ import { CalendarDays, ShieldCheck, Sparkles, Timer } from "lucide-react";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { BookingForm } from "@/components/layout/BookingForm";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Book Your Free Strategy Call",
@@ -35,6 +36,7 @@ const points = [
 export default function BookYourCallPage() {
   return (
     <>
+      <BreadcrumbJsonLd items={[{ name: "Book Your Free Strategy Call", url: "/book-your-call" }]} />
       <Nav />
       <main id="main" className="pt-40">
         <section className="container-x grid gap-14 pb-24 lg:grid-cols-[1fr_1.05fr] lg:gap-20">

@@ -136,11 +136,18 @@ const faqs = [
 
 import { ClientSuccess } from "@/components/sections/ClientSuccess";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export default function LtoFunnelScalePage() {
   return (
     <main id="main" className="flex min-h-screen flex-col bg-[#040c07] text-white selection:bg-lime/30 selection:text-lime">
       <Nav />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Mastermind", url: "/mastermind" },
+          { name: "LTO Funnel Scale Case Study", url: "/mastermind/lto-funnel-scale" },
+        ]}
+      />
 
       {/* Hero Header */}
       <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">

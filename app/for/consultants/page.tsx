@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Client Acquisition Pipeline for B2B Consultants | QualifiedLeadsX™",
+  title: "Client Acquisition Pipeline for B2B Consultants",
   description:
     "Predictable B2B sales pipeline for strategy, operations, and management consultants. Book 20–40 vetted discovery meetings with C-level executives every month.",
   keywords: [

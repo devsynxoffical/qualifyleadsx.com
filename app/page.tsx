@@ -23,6 +23,7 @@ import { Community } from "@/components/sections/Community";
 import { UFSquareMarquee } from "@/components/sections/UFSquareMarquee";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { site } from "@/lib/site";
+import { faqs } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Lead Generation Agency for High-Ticket Offers - QualifiedLeadsX",
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "QualifiedLeadsX™",
     images: [
       {
-        url: `${site.url}/og.png`,
+        url: `${site.url}/opengraph-image`,
         width: 1200,
         height: 630,
         alt: "Lead Generation Agency for High-Ticket Offers - QualifiedLeadsX",
@@ -62,13 +63,29 @@ export const metadata: Metadata = {
     title: "Lead Generation Agency for High-Ticket Offers - QualifiedLeadsX",
     description:
       "B2B lead generation agency scaling high ticket sales for agencies and coaches. Get predictable booked calls with our AI acquisition engine.",
-    images: [`${site.url}/og.png`],
+    images: [`${site.url}/opengraph-image`],
   },
 };
 
 export default function Home() {
+  // FAQPage schema lives here (not in the root layout) so it only appears on the page
+  // where the FAQ content is actually visible.
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <main id="main">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <AnnouncementBar />
       <Nav />
       <FlowWave />

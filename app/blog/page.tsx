@@ -44,6 +44,8 @@ export default function BlogHubPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Blog",
+    "@id": `${site.url}/blog#blog`,
+    inLanguage: "en-US",
     name: "QualifiedLeadsX™ Growth & Client Acquisition Blog",
     url: `${site.url}/blog`,
     description:
@@ -60,7 +62,7 @@ export default function BlogHubPage() {
       description: post.description,
       image: `${site.url}${post.coverImage}`,
       url: `${site.url}/blog/${post.slug}`,
-      datePublished: post.publishedAt === "21-10-2026" ? "2026-10-21" : post.publishedAt,
+      datePublished: post.publishedAt,
       dateModified: post.updatedAt,
       author: {
         "@type": "Organization",

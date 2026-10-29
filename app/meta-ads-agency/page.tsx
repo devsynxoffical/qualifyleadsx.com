@@ -398,26 +398,88 @@ export default function MetaAdsAgencyPage() {
       </section>
 
       {/* Deep-Dive Editorial Guide Interlink */}
-      <section className="py-12 bg-ink border-t border-line">
+      <section className="py-16 sm:py-20 bg-ink border-t border-line">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-lime/30 bg-panel/70 p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
             <div>
               <span className="text-xs font-mono uppercase tracking-wider text-lime font-bold">
-                RECOMMENDED BLUEPRINT
+                MEDIA BUYING & PRICING INTELLIGENCE
               </span>
-              <h3 className="text-xl sm:text-2xl font-bold font-heading text-white mt-1">
-                Read The 2026 VSL Funnel Architecture Masterclass
-              </h3>
-              <p className="text-sm text-mist mt-2 max-w-2xl">
-                Learn how concise 12-minute Video Sales Letter funnels outconvert traditional 90-minute webinars by 3.4x for high-ticket service offers.
-              </p>
+              <h2 className="text-2xl sm:text-3xl font-bold font-heading text-white mt-1.5 tracking-tight">
+                Recommended Meta Ads Blueprints & Benchmarks
+              </h2>
             </div>
             <Link
-              href="/blog/the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-mono font-bold uppercase tracking-wider bg-lime text-ink hover:brightness-110 transition-all shrink-0 shadow-[0_0_20px_rgba(201,242,107,0.3)]"
+              href="/blog"
+              className="inline-flex items-center gap-2 text-xs font-mono text-mist hover:text-lime transition-colors shrink-0"
             >
-              <span>Read Blueprint</span>
+              <span>Explore All Guides</span>
               <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            <Link
+              href="/blog/how-much-does-a-lead-generation-agency-cost"
+              className="group flex flex-col justify-between rounded-2xl border border-line bg-panel p-6 transition-all duration-300 hover:border-lime/40 hover:bg-elevated hover:-translate-y-1"
+            >
+              <div>
+                <span className="text-[10px] font-mono uppercase tracking-wider text-lime font-semibold">
+                  Commercial Pricing
+                </span>
+                <h3 className="text-base font-bold font-heading text-white mt-2 group-hover:text-lime transition-colors leading-snug">
+                  How Much Does a Lead Generation Agency Cost in 2026?
+                </h3>
+                <p className="text-xs text-mist mt-2 leading-relaxed line-clamp-3">
+                  Monthly retainers, pay-per-appointment economics and real cost benchmarks for high-ticket service offers.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-line/40 flex items-center justify-between text-xs font-mono text-lime">
+                <span>Read Benchmark</span>
+                <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+              </div>
+            </Link>
+
+            <Link
+              href="/blog/facebook-ads-agency-vs-in-house-media-buyer"
+              className="group flex flex-col justify-between rounded-2xl border border-line bg-panel p-6 transition-all duration-300 hover:border-lime/40 hover:bg-elevated hover:-translate-y-1"
+            >
+              <div>
+                <span className="text-[10px] font-mono uppercase tracking-wider text-lime font-semibold">
+                  Team Architecture
+                </span>
+                <h3 className="text-base font-bold font-heading text-white mt-2 group-hover:text-lime transition-colors leading-snug">
+                  Facebook Ads Agency vs In-House Media Buyer
+                </h3>
+                <p className="text-xs text-mist mt-2 leading-relaxed line-clamp-3">
+                  Compare true costs, ramp-up speed, creative testing bandwidth and performance risks for $50K+/mo businesses.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-line/40 flex items-center justify-between text-xs font-mono text-lime">
+                <span>Read Comparison</span>
+                <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+              </div>
+            </Link>
+
+            <Link
+              href="/blog/meta-ads-for-high-ticket-b2b-broad-targeting"
+              className="group flex flex-col justify-between rounded-2xl border border-line bg-panel p-6 transition-all duration-300 hover:border-lime/40 hover:bg-elevated hover:-translate-y-1"
+            >
+              <div>
+                <span className="text-[10px] font-mono uppercase tracking-wider text-lime font-semibold">
+                  Algorithm Strategy
+                </span>
+                <h3 className="text-base font-bold font-heading text-white mt-2 group-hover:text-lime transition-colors leading-snug">
+                  Why Broad Creative Targeting Outperforms Lookalikes
+                </h3>
+                <p className="text-xs text-mist mt-2 leading-relaxed line-clamp-3">
+                  How modern AI machine-learning algorithms on Meta have transformed B2B ad buying and enterprise lead generation.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-line/40 flex items-center justify-between text-xs font-mono text-lime">
+                <span>Read Strategy</span>
+                <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+              </div>
             </Link>
           </div>
         </div>

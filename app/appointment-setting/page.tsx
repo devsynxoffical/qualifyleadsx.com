@@ -417,6 +417,94 @@ export default function AppointmentSettingPage() {
         </div>
       </section>
 
+      {/* Related Speed-to-Lead & Qualification Blueprints */}
+      <section className="py-16 sm:py-20 bg-ink border-t border-line">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+            <div>
+              <span className="text-xs font-mono uppercase tracking-wider text-lime font-bold">
+                AUTOMATION & CLOSING BLUEPRINTS
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-bold font-heading text-white mt-1.5 tracking-tight">
+                Recommended Qualification & Speed-to-Lead Guides
+              </h2>
+            </div>
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 text-xs font-mono text-mist hover:text-lime transition-colors shrink-0"
+            >
+              <span>Explore All Guides</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            <Link
+              href="/blog/ai-whatsapp-lead-nurture-pipeline-high-ticket"
+              className="group flex flex-col justify-between rounded-2xl border border-line bg-panel p-6 transition-all duration-300 hover:border-lime/40 hover:bg-elevated hover:-translate-y-1"
+            >
+              <div>
+                <span className="text-[10px] font-mono uppercase tracking-wider text-lime font-semibold">
+                  Speed-To-Lead Architecture
+                </span>
+                <h3 className="text-base font-bold font-heading text-white mt-2 group-hover:text-lime transition-colors leading-snug">
+                  Automated WhatsApp Nurture & Sub-60s Follow-Up
+                </h3>
+                <p className="text-xs text-mist mt-2 leading-relaxed line-clamp-3">
+                  Why 98% open rates on WhatsApp outperform email follow-up and how automated touchpoints guarantee 85%+ show-up rates.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-line/40 flex items-center justify-between text-xs font-mono text-lime">
+                <span>Read Protocol</span>
+                <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+              </div>
+            </Link>
+
+            <Link
+              href="/blog/automated-lead-qualification-system-high-ticket"
+              className="group flex flex-col justify-between rounded-2xl border border-line bg-panel p-6 transition-all duration-300 hover:border-lime/40 hover:bg-elevated hover:-translate-y-1"
+            >
+              <div>
+                <span className="text-[10px] font-mono uppercase tracking-wider text-lime font-semibold">
+                  Lead Filtration
+                </span>
+                <h3 className="text-base font-bold font-heading text-white mt-2 group-hover:text-lime transition-colors leading-snug">
+                  Automated Filters to Eliminate Unqualified Sales Calls
+                </h3>
+                <p className="text-xs text-mist mt-2 leading-relaxed line-clamp-3">
+                  The exact conditional logic questions, deposit mechanisms, and pre-call sequences that protect your sales closers.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-line/40 flex items-center justify-between text-xs font-mono text-lime">
+                <span>Read Blueprint</span>
+                <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+              </div>
+            </Link>
+
+            <Link
+              href="/blog/high-ticket-sales-training-framework"
+              className="group flex flex-col justify-between rounded-2xl border border-line bg-panel p-6 transition-all duration-300 hover:border-lime/40 hover:bg-elevated hover:-translate-y-1"
+            >
+              <div>
+                <span className="text-[10px] font-mono uppercase tracking-wider text-lime font-semibold">
+                  Sales Conversion
+                </span>
+                <h3 className="text-base font-bold font-heading text-white mt-2 group-hover:text-lime transition-colors leading-snug">
+                  The Closer & Qualification Framework That Doubles Win Rates
+                </h3>
+                <p className="text-xs text-mist mt-2 leading-relaxed line-clamp-3">
+                  Discover the pre-call indoctrination architecture and objection handling matrix that turns booked calls into closed revenue.
+                </p>
+              </div>
+              <div className="mt-5 pt-4 border-t border-line/40 flex items-center justify-between text-xs font-mono text-lime">
+                <span>Read Framework</span>
+                <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-16 sm:py-24 bg-ink border-t border-line">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

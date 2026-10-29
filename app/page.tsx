@@ -20,6 +20,7 @@ import { Guarantee } from "@/components/sections/Guarantee";
 import { FAQ } from "@/components/sections/FAQ";
 import { Pricing } from "@/components/sections/Pricing";
 import { Community } from "@/components/sections/Community";
+import { FeaturedInsights } from "@/components/sections/FeaturedInsights";
 import { UFSquareMarquee } from "@/components/sections/UFSquareMarquee";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { site } from "@/lib/site";
@@ -125,6 +126,7 @@ export default function Home() {
       <FAQ />
       <Pricing />
       <Community />
+      <FeaturedInsights />
       <UFSquareMarquee />
       <FinalCTA />
       <Footer />

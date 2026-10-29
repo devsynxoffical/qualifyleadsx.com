@@ -69,7 +69,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-10-29",
     updatedAt: "2026-10-29",
     readTime: "12 min read",
-    coverImage: "/images2/showreel/shot_05_ad_spend.webp",
+    coverImage: "/images/blog/b2b-sdr-vs-appointment-setting.jpg",
     author: {
       name: "QualifiedLeadsX™ Research Team",
       role: "Sales Architecture & B2B Pipeline Economics",

@@ -98,7 +98,7 @@ export function Footer() {
             
             <a
               href={`https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(
-                "Hi Ecom Expertz! I'd like to chat about your services."
+                "Hi QualifiedLeadsX! I'd like to chat about your services."
               )}`}
               target="_blank"
               rel="noopener noreferrer"

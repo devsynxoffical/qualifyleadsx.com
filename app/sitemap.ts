@@ -3,7 +3,9 @@ import { site } from "@/lib/site";
 import { blogPosts } from "@/lib/blog-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  // Fixed dates so lastmod only changes when content actually changes.
+  const now = new Date("2026-10-27");
+  const legalUpdated = new Date("2026-01-15");
 
   const coreRoutes: MetadataRoute.Sitemap = [
     {
@@ -98,19 +100,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Legal & compliance
     {
       url: `${site.url}/privacy`,
-      lastModified: now,
+      lastModified: legalUpdated,
       changeFrequency: "yearly",
       priority: 0.3,
     },
     {
       url: `${site.url}/terms`,
-      lastModified: now,
+      lastModified: legalUpdated,
       changeFrequency: "yearly",
       priority: 0.3,
     },
     {
       url: `${site.url}/disclaimer`,
-      lastModified: now,
+      lastModified: legalUpdated,
       changeFrequency: "yearly",
       priority: 0.3,
     },
@@ -122,6 +124,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(post.updatedAt),
     changeFrequency: "weekly",
     priority: 0.85,
+    images: [`${site.url}${post.coverImage}`],
   }));
 
   return [...coreRoutes, ...blogRoutes];

@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Client Acquisition Funnels for High-Ticket Coaches | QualifiedLeadsX™",
+  title: "Client Acquisition Funnels for High-Ticket Coaches",
   description:
     "Done-for-you client acquisition system for business, executive, and fitness coaches. Get 30–50 qualified sales calls every month from ready-to-invest buyers.",
   keywords: [

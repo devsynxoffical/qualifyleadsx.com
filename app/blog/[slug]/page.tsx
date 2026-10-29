@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const postUrl = `${site.url}/blog/${post.slug}`;
 
   return {
-    title: `${post.title} | QualifiedLeadsX™`,
+    title: post.title,
     description: post.description,
     keywords: post.tags,
     authors: [{ name: post.author.name, url: site.url }],

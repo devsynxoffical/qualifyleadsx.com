@@ -118,7 +118,7 @@ export default function UFSquareMarquee() {
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={p.src}
-                      alt={copy === 0 ? p.alt : ""}
+                      alt={p.alt}
                       className="h-full w-full object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105"
                       loading="lazy"
                       decoding="async"

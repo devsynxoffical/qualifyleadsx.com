@@ -80,6 +80,58 @@ export default function BookYourCallPage() {
             <BookingForm />
           </div>
         </section>
+
+        {/* What to Expect On the Strategy Call & Consultation FAQs */}
+        <section className="border-t border-line bg-panel/60 py-20">
+          <div className="container-x max-w-4xl">
+            <div className="text-center mb-12">
+              <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold">
+                CLARITY & ZERO RISK
+              </span>
+              <h2 className="mt-3 text-3xl font-bold font-heading text-fog tracking-tight">
+                Frequently Asked Questions About The Strategy Session
+              </h2>
+            </div>
+
+            <div className="space-y-4">
+              <div className="p-6 rounded-2xl bg-ink/70 border border-line">
+                <h3 className="text-lg font-bold text-fog mb-2">
+                  Is this a high-pressure sales pitch?
+                </h3>
+                <p className="text-sm text-mist leading-relaxed">
+                  No. This is an objective 30-minute operational audit of your offer economics, current media spend, and conversion bottleneck. If our done-for-you acquisition system is not the right fit for your current stage, we will transparently tell you and outline alternative growth steps.
+                </p>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-ink/70 border border-line">
+                <h3 className="text-lg font-bold text-fog mb-2">
+                  What preparation is required before joining the call?
+                </h3>
+                <p className="text-sm text-mist leading-relaxed">
+                  Have your core numbers handy: your current monthly recurring revenue, your offer price point ($3,000 to $25,000+), your historical close rate, and your monthly advertising budget allocation (minimum $2,000/mo recommended).
+                </p>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-ink/70 border border-line">
+                <h3 className="text-lg font-bold text-fog mb-2">
+                  What actionable roadmap do I receive during the walkthrough?
+                </h3>
+                <p className="text-sm text-mist leading-relaxed">
+                  We walk through the exact funnel architecture, VSL script framework, conditional qualification gate, and speed-to-lead automation sequences engineered specifically for your high-ticket niche.
+                </p>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-ink/70 border border-line">
+                <h3 className="text-lg font-bold text-fog mb-2">
+                  How quickly can we launch after the strategy session?
+                </h3>
+                <p className="text-sm text-mist leading-relaxed">
+                  If both parties agree there is a strong operational fit, our sprint installation takes 14 to 21 business days from kickoff to live ad delivery and qualified appointment generation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
       <Script

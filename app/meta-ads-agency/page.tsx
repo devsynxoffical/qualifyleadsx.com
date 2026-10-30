@@ -90,6 +90,18 @@ const metaAgencyFaqs = [
     q: "Do you offer performance guarantees on Meta ad campaigns?",
     a: "Yes. We back our acquisition system with a clear performance guarantee: if we do not hit your agreed qualified call benchmarks within the initial engagement timeline, our team continues working at zero management fee until the goal is achieved.",
   },
+  {
+    q: "What is the typical Customer Acquisition Cost (CAC) and Cost Per Booked Call on Meta for B2B?",
+    a: "Across our managed high-ticket client accounts ($5K–$25K offers), the average Cost Per Qualified Booked Call ranges from $140 to $260. Because our speed-to-lead and nurture protocols produce an 88%+ show-up rate and a 25% average close rate, typical customer acquisition costs sit between $900 and $1,800—delivering an immediate front-end ROAS of 3.8x to 6.2x.",
+  },
+  {
+    q: "How does broad targeting work on Meta without wasting budget on irrelevant consumers?",
+    a: "Broad targeting uses your creative asset—specifically your video hooks, problem-agitation scripts, and qualifying terminology—as the primary targeting mechanism. Consumer audiences scroll past within 3 seconds, while founders and high-net-worth operators stop and watch. Meta's auction AI identifies these engagement patterns and continuously optimizes delivery to lookalike decision-maker cohorts at the lowest possible CPMs.",
+  },
+  {
+    q: "Why do you recommend a 12-minute VSL over standard direct-booking or lead form ads?",
+    a: "Direct-to-calendar ads book defensive prospects who have no context on your methodology and cancel 50% of the time. Native lead forms produce low-intent form fills. A 12-minute VSL educates your buyer on your proprietary framework, showcases real proof, answers core objections, and positions your agency as the definitive authority before they ever apply.",
+  },
 ];
 
 export default function MetaAdsAgencyPage() {

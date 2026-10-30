@@ -410,6 +410,56 @@ export default function AboutPage() {
               </div>
             </div>
           </section>
+
+          {/* E-E-A-T Authority & Methodology FAQs */}
+          <section className="mb-20">
+            <div className="text-center max-w-3xl mx-auto mb-10">
+              <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold">
+                OPERATIONAL METHODOLOGY & TRUST
+              </span>
+              <h2 className="mt-3 text-3xl font-bold font-heading text-fog tracking-tight">
+                Frequently Asked Questions About QualifiedLeadsX™
+              </h2>
+            </div>
+
+            <div className="space-y-4 max-w-4xl mx-auto">
+              <div className="p-6 rounded-2xl bg-panel border border-line">
+                <h3 className="text-lg font-bold text-fog mb-2">
+                  What makes QualifiedLeadsX™ different from a traditional marketing agency?
+                </h3>
+                <p className="text-sm text-mist leading-relaxed">
+                  Most agencies simply run ad campaigns inside Meta Ads Manager and invoice you regardless of closed revenue. QualifiedLeadsX™ acts as an end-to-end growth partner: we script your 12-minute VSL, build custom qualification funnels, deploy sub-5-minute speed-to-lead automation, and back our delivery with a 90-day written performance milestone guarantee.
+                </p>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-panel border border-line">
+                <h3 className="text-lg font-bold text-fog mb-2">
+                  What types of businesses do you work with?
+                </h3>
+                <p className="text-sm text-mist leading-relaxed">
+                  We specialize exclusively in high-ticket B2B service providers, executive and business coaches, consulting firms, and growth marketing agencies selling offers priced between $3,000 and $25,000+. We require clients to have an established offer generating at least $10,000/month in baseline revenue.
+                </p>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-panel border border-line">
+                <h3 className="text-lg font-bold text-fog mb-2">
+                  How does the 90-Day Written Guarantee work?
+                </h3>
+                <p className="text-sm text-mist leading-relaxed">
+                  Every engagement includes concrete, written pipeline benchmarks agreed upon during your strategy walkthrough. If our installed client acquisition system does not achieve your designated qualified sales call milestones, our team continues operating and optimizing your campaigns at zero agency management fee until the target is met.
+                </p>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-panel border border-line">
+                <h3 className="text-lg font-bold text-fog mb-2">
+                  Who manages the campaigns and creative production?
+                </h3>
+                <p className="text-sm text-mist leading-relaxed">
+                  All campaign architecture, media buying, copy scripting, and technical automations are handled in-house by Gaurav and our specialized growth engineering team. We never outsource client accounts to inexperienced junior freelancers.
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
 
         {/* Canonical CTABanner matching homepage & case studies */}

@@ -326,6 +326,26 @@ export const faqs: {
     a: "Our system is built on Meta ads (Facebook and Instagram) because that is where we have managed $50M+ in spend. We tell you on the strategy call if your offer needs a different channel.",
     category: "The System",
   },
+  {
+    q: "What is a healthy benchmark ROAS for B2B appointment generation on Meta?",
+    a: "For high-ticket offers priced between $3,000 and $25,000+, a healthy front-end benchmark ROAS is between 3.5x and 7.0x. High-converting pipelines maintain an average Cost Per Qualified Call (CPQC) between $140 and $260 and convert 20% to 35% of held discovery sessions into closed revenue.",
+    category: "Pricing",
+  },
+  {
+    q: "How does sub-5-minute speed to lead improve call show-up rates?",
+    a: "Contacting inbound prospects via automated WhatsApp and SMS confirmation within 180 seconds increases conversion rates by up to 391% compared to waiting 30+ minutes. Instant engagement locks in calendar commitment and elevates show-up rates above 88%.",
+    category: "The System",
+  },
+  {
+    q: "Why does broad creative targeting outperform narrow lookalike audiences on Meta in 2026?",
+    a: "Meta's Andromeda machine-learning algorithm uses your video sales letter script, audio transcript, and on-screen text as the targeting filter. Broad audiences prevent audience fatigue, lower CPM costs by 30–50%, and allow the AI algorithm to pinpoint solvent enterprise decision-makers across Facebook and Instagram.",
+    category: "The System",
+  },
+  {
+    q: "What is the difference between simple lead generation and qualified appointment setting?",
+    a: "Simple lead generation captures cheap, unvetted contact information (name and email) resulting in high no-show rates. Qualified appointment setting enforces multi-tier conditional friction gates—verifying liquid capital ($5,000+), company revenue, and purchasing authority—so your closers only speak with pre-framed buyers.",
+    category: "The System",
+  },
 ] as const;
 
 /* ============================================================

@@ -3,8 +3,8 @@ import { site } from "@/lib/site";
 import { blogPosts } from "@/lib/blog-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Fixed dates so lastmod only changes when content actually changes.
-  const now = new Date("2026-10-27");
+  // Use today's date for freshly updated pages to notify Googlebot of new content/visuals
+  const now = new Date("2026-10-30");
   const legalUpdated = new Date("2026-01-15");
 
   const coreRoutes: MetadataRoute.Sitemap = [

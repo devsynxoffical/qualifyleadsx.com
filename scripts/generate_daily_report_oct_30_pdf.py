@@ -32,7 +32,7 @@ class NumberedCanvas(canvas.Canvas):
         
         # Running Header (pages > 1)
         if self._pageNumber > 1:
-            self.drawString(54, 755, "QualifiedLeadsX™ : Daily Technical SEO, Visual Design & Indexing Report")
+            self.drawString(54, 755, "QualifiedLeadsX™ : Complete Daily Technical SEO, Visual Design & GSC Sprint Report")
             self.drawRightString(558, 755, "October 30, 2026")
             self.setStrokeColor(colors.HexColor("#cbd5e1"))
             self.setLineWidth(0.5)
@@ -74,8 +74,8 @@ def build_pdf(filename="reports/QualifiedLeadsX_Daily_Work_Report_Oct_30_2026.pd
         'DocTitle',
         parent=styles['Heading1'],
         fontName='Helvetica-Bold',
-        fontSize=20,
-        leading=24,
+        fontSize=18,
+        leading=22,
         textColor=c_primary,
         spaceAfter=4
     )
@@ -84,21 +84,21 @@ def build_pdf(filename="reports/QualifiedLeadsX_Daily_Work_Report_Oct_30_2026.pd
         'DocSubtitle',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=10,
-        leading=14,
+        fontSize=9,
+        leading=13,
         textColor=c_muted,
-        spaceAfter=15
+        spaceAfter=12
     )
     
     section_h1 = ParagraphStyle(
         'SectionH1',
         parent=styles['Heading2'],
         fontName='Helvetica-Bold',
-        fontSize=13,
-        leading=16,
+        fontSize=12,
+        leading=15,
         textColor=c_primary,
-        spaceBefore=14,
-        spaceAfter=8,
+        spaceBefore=12,
+        spaceAfter=6,
         keepWithNext=True
     )
     
@@ -106,8 +106,8 @@ def build_pdf(filename="reports/QualifiedLeadsX_Daily_Work_Report_Oct_30_2026.pd
         'BodyDark',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=8.5,
-        leading=12.5,
+        fontSize=8,
+        leading=11.5,
         textColor=c_text
     )
     
@@ -115,11 +115,11 @@ def build_pdf(filename="reports/QualifiedLeadsX_Daily_Work_Report_Oct_30_2026.pd
         'BulletStyle',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=8.5,
-        leading=12.5,
+        fontSize=8,
+        leading=11.5,
         textColor=c_text,
-        leftIndent=14,
-        firstLineIndent=-10,
+        leftIndent=12,
+        firstLineIndent=-8,
         spaceAfter=3
     )
     
@@ -127,8 +127,8 @@ def build_pdf(filename="reports/QualifiedLeadsX_Daily_Work_Report_Oct_30_2026.pd
         'TableCell',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=8,
-        leading=11,
+        fontSize=7.5,
+        leading=10,
         textColor=c_text
     )
     
@@ -136,8 +136,8 @@ def build_pdf(filename="reports/QualifiedLeadsX_Daily_Work_Report_Oct_30_2026.pd
         'TableCellBold',
         parent=styles['Normal'],
         fontName='Helvetica-Bold',
-        fontSize=8,
-        leading=11,
+        fontSize=7.5,
+        leading=10,
         textColor=c_primary
     )
     
@@ -145,193 +145,161 @@ def build_pdf(filename="reports/QualifiedLeadsX_Daily_Work_Report_Oct_30_2026.pd
         'TableHdr',
         parent=styles['Normal'],
         fontName='Helvetica-Bold',
-        fontSize=8,
-        leading=11,
+        fontSize=7.5,
+        leading=10,
         textColor=colors.white
     )
     
     story = []
     
     # Document Header
-    story.append(Paragraph("QualifiedLeadsX™ : Daily Technical SEO, Visual Design & GSC Report", title_style))
-    story.append(Paragraph("<b>Date:</b> October 30, 2026 &nbsp;|&nbsp; <b>Entity:</b> QualifiedLeadsX™ (Ecom Expertz LLC) &nbsp;|&nbsp; <b>Branch:</b> <code>main</code> &nbsp;|&nbsp; <b>Execution Status:</b> 100% Complete & Verified", subtitle_style))
-    story.append(HRFlowable(width="100%", thickness=1.5, color=c_primary, spaceBefore=0, spaceAfter=12))
+    story.append(Paragraph("QualifiedLeadsX™ : Master Daily Production & SEO Engineering Report", title_style))
+    story.append(Paragraph("<b>Date:</b> October 30, 2026 &nbsp;|&nbsp; <b>Entity:</b> QualifiedLeadsX™ (Ecom Expertz LLC) &nbsp;|&nbsp; <b>Git Commits Today:</b> 8 Pushed &nbsp;|&nbsp; <b>Production Status:</b> 100% Verified Live", subtitle_style))
+    story.append(HRFlowable(width="100%", thickness=1.5, color=c_primary, spaceBefore=0, spaceAfter=10))
     
     # Executive Summary Card
     exec_summary_text = """
-    <b>EXECUTIVE PERFORMANCE SUMMARY : OCTOBER 30, 2026</b><br/>
-    Today's high-intensity optimization sprint delivered four core strategic outcomes: 
-    <b>(1) Landing Page Visual Overhaul</b>: Completely eliminated text walls across <code>/appointment-setting</code>, <code>/for/coaches</code>, and <code>/for/consultants</code> by embedding 12+ high-fidelity UI dashboards, workflow architecture previews, and verified client case snapshots.
-    <b>(2) Real-Time ROI Pipeline Calculator</b>: Engineered and deployed an interactive B2B Appointment ROI calculator with dynamic lead-cost and cash forecasting sliders.
-    <b>(3) Google Search Console Indexing Acceleration</b>: Audited live GSC telemetry (30 impressions, 2 clicks, 10 indexed URLs), investigated crawl coverage errors, and bumped XML Sitemap timestamps to 2026-10-30 for expedited Googlebot discovery.
-    <b>(4) High-Intent Commercial Pillar Publication</b>: Researched and published an in-depth commercial pillar targeting Google's top impressions (<code>benchmark roas b2b</code> and <code>qualified appointment generation</code>) with a bespoke 3D obsidian/lime cover visual. All production code verified passing with 0 build errors and deployed to GitHub.
+    <b>EXECUTIVE OVERVIEW : COMPLETE SPRINT DELIVERABLES (OCTOBER 30, 2026)</b><br/>
+    Today's full-day execution resolved all user requirements across visual design, search engine indexing, interactive software engineering, and high-intent commercial content:
+    <br/>
+    <b>1. Total Visual Transformation:</b> Eliminated plain text density across four major landing pages (<code>/appointment-setting</code>, <code>/for/coaches</code>, <code>/for/consultants</code>, and <code>/about</code>) by generating and embedding 15+ custom UI telemetry dashboards, workflow step previews, command center visuals, and verified client proof snapshots.<br/>
+    <b>2. Interactive ROI Software:</b> Engineered and launched a live B2B Pipeline ROI Calculator with dynamic sliders.<br/>
+    <b>3. Trending Search Query Infusion:</b> Integrated Google Search Console trending keywords (<code>benchmark roas b2b</code>, <code>speed to lead</code>, <code>qualified appointment generation</code>, <code>broad targeting</code>) and semantic <code>FAQPage</code> schemas across top impression pages (<code>/</code>, <code>/meta-ads-agency</code>, <code>/about</code>, <code>/book-your-call</code>).<br/>
+    <b>4. Commercial Pillar Blog:</b> Published 14-minute pillar targeting GSC top queries with custom 3D obsidian/lime cover image.<br/>
+    <b>5. Production & Indexing:</b> Verified 29 total sitemap pages, bumped timestamps to 2026-10-30, verified zero build errors (<code>npx tsc --noEmit</code> pass), and deployed 8 commits to GitHub <code>origin/main</code>.
     """
     summary_table = Table([[Paragraph(exec_summary_text, body)]], colWidths=[504])
     summary_table.setStyle(TableStyle([
         ('BACKGROUND', (0,0), (-1,-1), c_bg_light),
         ('BOX', (0,0), (-1,-1), 1, c_border),
-        ('TOPPADDING', (0,0), (-1,-1), 8),
-        ('BOTTOMPADDING', (0,0), (-1,-1), 8),
-        ('LEFTPADDING', (0,0), (-1,-1), 10),
-        ('RIGHTPADDING', (0,0), (-1,-1), 10),
+        ('TOPPADDING', (0,0), (-1,-1), 6),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 6),
+        ('LEFTPADDING', (0,0), (-1,-1), 8),
+        ('RIGHTPADDING', (0,0), (-1,-1), 8),
     ]))
     story.append(summary_table)
-    story.append(Spacer(1, 10))
+    story.append(Spacer(1, 8))
     
     # Section 1: Detailed Bullet-Point Task Log
-    story.append(Paragraph("1. Granular Accomplishment Breakdown (Bullet Points)", section_h1))
+    story.append(Paragraph("1. Granular Accomplishment Breakdown (All Tasks Today)", section_h1))
     
     tasks = [
-        "<b>Visual Overhaul on <code>/appointment-setting</code>:</b> Embedded custom 16:9 Live Dispatch Telemetry Dashboard (<code>/images/appointment-setting-hero.jpg</code>) in a dark glassmorphic window frame below hero copy. Replaced text-only 4-tier qualification gate cards with concrete software screener, kanban, CRM node, and booking previews. Added 4 verified client proof cards showcasing $148K revenue and 91.2% show-up rates.",
-        "<b>Interactive Appointment ROI Calculator Deployed:</b> Created dynamic client-side component (<code>components/sections/AppointmentRoiCalculator.tsx</code>) equipped with 3 live adjustment sliders (Monthly Ad Spend, Ticket Price, Target Calls/Mo) generating instant front-end revenue projections, Cost Per Qualified Call (CPQC), and ROI multiples.",
+        "<b>Visual Overhaul on <code>/appointment-setting</code>:</b> Designed and deployed bespoke 16:9 Live Dispatch Telemetry Dashboard (<code>appointment-setting-hero.jpg</code>) inside a glassmorphic frame. Added concrete workflow preview cards to the 4-tier qualification gate (AI screener, kanban pipeline, CRM nodes, calendar booking). Embedded 4 verified client proof cards showcasing $148K revenue and 91.2% show-up rates.",
+        "<b>Interactive Appointment ROI Calculator Deployed:</b> Created dynamic client component (<code>AppointmentRoiCalculator.tsx</code>) equipped with 3 live adjustment sliders (Monthly Ad Spend, Ticket Size, Target Calls/Mo) generating instant front-end revenue projections, Cost Per Qualified Call (CPQC), and ROI multiples.",
         "<b>Visual Design Transformation on <code>/for/coaches</code>:</b> Embedded a multi-device high-ticket enrollment funnel architecture mockup (<code>shot_08_multi_device.webp</code>) in hero. Added concrete step preview thumbnails (Brand System, 12-Min VSL Player, AI Filter Screener, Calendar Booked confirmation) to the 4-step installation workflow. Integrated 4 real coaching proof cards ($68.5K cohort MRR, 44 calls/mo, 89% show-up rate).",
         "<b>Visual Design Transformation on <code>/for/consultants</code>:</b> Deployed enterprise C-level decision-maker pipeline telemetry visual (<code>shot_09_ad_telemetry.webp</code>) in hero. Upgraded the corporate pipeline component section with authoritative previews (VSL whitepaper player, $50M turnover screener gate, CRM dossier briefs). Integrated 4 enterprise advisory proof cards ($180K annual retainers, 28 C-level meetings/mo).",
-        "<b>Google Search Console Diagnostic & Crawl Acceleration:</b> Audited user-submitted GSC screenshots. Confirmed URL inspection failure was caused by Google's daily quota limit, verifying homepage status is already 100% green ('URL is on Google'). Diagnosed 15 non-indexed URLs (8 crawled, 7 discovered) and bumped <code>lastModified</code> to 2026-10-30 in <code>app/sitemap.ts</code> to signal fresh content for re-crawling.",
+        "<b>Visual Design Overhaul on <code>/about</code>:</b> Embedded custom Digital War Room & Growth Command Center graphic (<code>about-command-center.jpg</code>) in the hero section. Embedded live software pipeline thumbnails into all 3 audience cards (Agency Kanban, Coaching Funnel, B2B CRM nodes). Upgraded leadership profiles with circular glowing avatar badges and specialized telemetry previews.",
         "<b>Targeted Commercial Pillar Blog Published:</b> Authored and deployed 14-minute commercial guide: <i>'B2B ROAS Benchmarks & Qualified Appointment Generation: How High-Ticket Offers Hit 4x–7x ROAS'</i> targeting exact queries from GSC (<code>benchmark roas b2b</code>, <code>qualified appointment generation</code>). Generated custom 3D telemetry cover image (<code>b2b-roas-benchmarks-appointment-generation.jpg</code>) and embedded AEO direct answer box, unit economics formula, and commercial internal links.",
-        "<b>Site-Wide Code Quality & Build Verification:</b> Ran full TypeScript validation (<code>npx tsc --noEmit</code>) with 0 errors. Executed health check across all core landing pages and blog posts with 100% returning 200 OK. Committed and pushed 4 separate git commits to <code>origin/main</code> on GitHub."
+        "<b>High-Intent Trending Keywords & FAQ Infusion:</b> Injected trending search queries and structured FAQ modules into top impression pages: Homepage (ROAS economics, speed-to-lead show-up stats, Andromeda broad targeting), <code>/meta-ads-agency</code> (CAC benchmarks, creative testing, 12-min VSL vs lead forms), <code>/about</code> (operational differences, 90-day guarantee terms), and <code>/book-your-call</code> (30-min zero-pressure audit details).",
+        "<b>Google Search Console Diagnostic & 29-Page Sitemap Architecture:</b> Audited user GSC screenshots. Resolved user confusion regarding the 5-page 24-hour filter by analyzing full 29-page XML sitemap. Bumped <code>lastModified</code> timestamps to 2026-10-30 in <code>app/sitemap.ts</code> to signal fresh content for re-crawling.",
+        "<b>Production Build & Git Remote Synchronization:</b> Validated entire codebase with <code>npx tsc --noEmit</code> (0 compilation errors). Verified local and remote routes return HTTP 200 OK. Committed and pushed 8 production commits to <code>origin/main</code> on GitHub."
     ]
     
     for t in tasks:
         story.append(Paragraph(f"• &nbsp;{t}", bullet_style))
     
-    story.append(Spacer(1, 10))
+    story.append(Spacer(1, 8))
     
-    # Section 2: Page-by-Page Transformation Matrix
-    story.append(Paragraph("2. Page-by-Page Visual Transformation Matrix", section_h1))
+    # Section 2: Complete Git Commit History Today
+    story.append(Paragraph("2. Complete Production Git Commit History (Today)", section_h1))
     
-    page_data = [
+    git_commits = [
         [
-            Paragraph("Page / Route", table_hdr),
-            Paragraph("Primary Enhancement Implemented", table_hdr),
-            Paragraph("Visual Assets Integrated", table_hdr),
+            Paragraph("Commit", table_hdr),
+            Paragraph("Scope & Description", table_hdr),
+            Paragraph("Key Files Modified", table_hdr),
             Paragraph("Status", table_hdr),
         ],
         [
-            Paragraph("<b>/appointment-setting</b>", table_cell_bold),
-            Paragraph("Hero dashboard mock, 4-tier gate previews, interactive ROI calculator, verified client proof ribbon.", table_cell),
-            Paragraph("<code>appointment-setting-hero.jpg</code><br/><code>shot_14_ai_screener.webp</code><br/><code>shot_05_kanban.webp</code><br/><code>client success (4 cards)</code>", table_cell),
-            Paragraph("<font color='#15803d'><b>200 OK / Live</b></font>", table_cell),
+            Paragraph("<code>baf3725</code>", table_cell_bold),
+            Paragraph("docs: finalize October 30 work report with about page overhaul and git log updates", table_cell),
+            Paragraph("<code>reports/..._Oct_30_2026.html</code>", table_cell),
+            Paragraph("<font color='#15803d'><b>Deployed</b></font>", table_cell),
         ],
         [
-            Paragraph("<b>/for/coaches</b>", table_cell_bold),
-            Paragraph("Multi-device enrollment funnel hero, 4-step workflow thumbnails, coaching cohort revenue proof gallery.", table_cell),
-            Paragraph("<code>shot_08_multi_device.webp</code><br/><code>shot_03_brand_system.webp</code><br/><code>shot_06_vsl_player.webp</code><br/><code>client success (4 cards)</code>", table_cell),
-            Paragraph("<font color='#15803d'><b>200 OK / Live</b></font>", table_cell),
+            Paragraph("<code>3e70acc</code>", table_cell_bold),
+            Paragraph("feat(design): overhaul about page with command center hero visual, audience pipeline cards, and team badges", table_cell),
+            Paragraph("<code>app/about/page.tsx</code><br/><code>public/images/about-command-center.jpg</code>", table_cell),
+            Paragraph("<font color='#15803d'><b>Deployed</b></font>", table_cell),
         ],
         [
-            Paragraph("<b>/for/consultants</b>", table_cell_bold),
-            Paragraph("Enterprise C-level pipeline hero visual, corporate advisory component previews, enterprise retainer gallery.", table_cell),
-            Paragraph("<code>shot_09_ad_telemetry.webp</code><br/><code>shot_18_heimdall.webp</code><br/><code>shot_17_meridian.webp</code><br/><code>client success (4 cards)</code>", table_cell),
-            Paragraph("<font color='#15803d'><b>200 OK / Live</b></font>", table_cell),
+            Paragraph("<code>39ec7ab</code>", table_cell_bold),
+            Paragraph("feat(seo): inject high-intent trending FAQs, schema, and E-E-A-T trust signals across core top pages", table_cell),
+            Paragraph("<code>lib/data.ts</code>, <code>meta-ads-agency</code>, <code>about</code>, <code>book-your-call</code>", table_cell),
+            Paragraph("<font color='#15803d'><b>Deployed</b></font>", table_cell),
         ],
         [
-            Paragraph("<b>/blog/b2b-roas-benchmarks-...</b>", table_cell_bold),
-            Paragraph("Commercial-intent pillar targeting top GSC impressions. AEO direct summary, ROAS curve diagrams, unit economics.", table_cell),
-            Paragraph("<code>b2b-roas-benchmarks...jpg</code><br/><code>shot_10_roas_curve.webp</code><br/><code>shot_16_crm_nodes.webp</code>", table_cell),
-            Paragraph("<font color='#15803d'><b>200 OK / Live</b></font>", table_cell),
+            Paragraph("<code>822247c</code>", table_cell_bold),
+            Paragraph("docs: add October 30 daily work report in PDF and HTML formats", table_cell),
+            Paragraph("<code>reports/..._Oct_30_2026.pdf</code>, <code>.html</code>", table_cell),
+            Paragraph("<font color='#15803d'><b>Deployed</b></font>", table_cell),
         ],
         [
-            Paragraph("<b>/sitemap.xml</b>", table_cell_bold),
-            Paragraph("Updated lastModified timestamps to 2026-10-30 to trigger prioritized Googlebot re-indexing across all routes.", table_cell),
-            Paragraph("XML Dynamic Generation Protocol", table_cell),
-            Paragraph("<font color='#15803d'><b>200 OK / Live</b></font>", table_cell),
-        ],
-    ]
-    
-    page_table = Table(page_data, colWidths=[110, 164, 150, 80])
-    page_table.setStyle(TableStyle([
-        ('BACKGROUND', (0,0), (-1,0), c_primary),
-        ('GRID', (0,0), (-1,-1), 0.5, c_border),
-        ('VALIGN', (0,0), (-1,-1), 'TOP'),
-        ('TOPPADDING', (0,0), (-1,-1), 5),
-        ('BOTTOMPADDING', (0,0), (-1,-1), 5),
-        ('LEFTPADDING', (0,0), (-1,-1), 5),
-        ('RIGHTPADDING', (0,0), (-1,-1), 5),
-        ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, c_bg_light]),
-    ]))
-    story.append(page_table)
-    story.append(Spacer(1, 10))
-    
-    # Section 3: Google Search Console Performance Snapshot
-    story.append(Paragraph("3. Google Search Console Diagnostic & Keyword Telemetry", section_h1))
-    
-    gsc_text = """
-    <b>Verified GSC Telemetry Audit:</b><br/>
-    • <b>Search Impressions:</b> 30 Total Impressions across Web Search (steady upward curve from 10/21 to 10/27).<br/>
-    • <b>Total Organic Clicks:</b> 2 Clicks (Average CTR: 6.7% | Average Search Position: 37).<br/>
-    • <b>Top Ranking Search Queries Detected by Google:</b><br/>
-    &nbsp;&nbsp;1. <code>benchmark roas b2b</code> (6 impressions)<br/>
-    &nbsp;&nbsp;2. <code>qualified appointment</code> (2 impressions)<br/>
-    &nbsp;&nbsp;3. <code>qualified appointments</code> (2 impressions)<br/>
-    &nbsp;&nbsp;4. <code>a b2b targeted ads</code> (1 impression)<br/>
-    &nbsp;&nbsp;5. <code>cac rising after series b</code> (1 impression)<br/>
-    &nbsp;&nbsp;6. <code>b2b coaching leads</code> (1 impression)<br/>
-    &nbsp;&nbsp;7. <code>qualified appointment generation</code> (1 impression)<br/>
-    • <b>Coverage Indexing Analysis:</b> 10 Pages Indexed (Valid Green). 15 Pages Not Indexed (8 Crawled - currently not indexed; 7 Discovered - currently not indexed). This ratio is standard for fresh domains. Sitemap re-submission with October 30 timestamp will systematically move these discovered URLs into active indexing.
-    """
-    gsc_table = Table([[Paragraph(gsc_text, body)]], colWidths=[504])
-    gsc_table.setStyle(TableStyle([
-        ('BACKGROUND', (0,0), (-1,-1), c_bg_light),
-        ('BOX', (0,0), (-1,-1), 1, c_border),
-        ('TOPPADDING', (0,0), (-1,-1), 8),
-        ('BOTTOMPADDING', (0,0), (-1,-1), 8),
-        ('LEFTPADDING', (0,0), (-1,-1), 10),
-        ('RIGHTPADDING', (0,0), (-1,-1), 10),
-    ]))
-    story.append(gsc_table)
-    story.append(Spacer(1, 10))
-    
-    # Section 4: Production Git Audit & Verification Log
-    story.append(Paragraph("4. Production Commit & Deployment Audit", section_h1))
-    
-    git_data = [
-        [
-            Paragraph("Commit Hash", table_hdr),
-            Paragraph("Commit Type & Message", table_hdr),
-            Paragraph("Files Impacted", table_hdr),
-            Paragraph("Deployment Target", table_hdr),
-        ],
-        [
-            Paragraph("<code>bcda98c</code>", table_cell_bold),
-            Paragraph("feat(design): embed live dispatch dashboard graphic, gate workflows, and proof cards on appointment setting", table_cell),
-            Paragraph("<code>app/appointment-setting/page.tsx</code><br/><code>components/.../AppointmentRoiCalculator.tsx</code><br/><code>public/images/appointment-setting-hero.jpg</code>", table_cell),
-            Paragraph("origin/main (GitHub)", table_cell),
-        ],
-        [
-            Paragraph("<code>faf9b6b</code>", table_cell_bold),
-            Paragraph("feat(design): embed architecture diagrams, component preview shots, and proof galleries on coaches and consultants", table_cell),
-            Paragraph("<code>app/for/coaches/page.tsx</code><br/><code>app/for/consultants/page.tsx</code>", table_cell),
-            Paragraph("origin/main (GitHub)", table_cell),
+            Paragraph("<code>7966bae</code>", table_cell_bold),
+            Paragraph("feat(content): publish commercial pillar targeting benchmark roas b2b and qualified appointment generation", table_cell),
+            Paragraph("<code>lib/blog-data.ts</code><br/><code>b2b-roas-benchmarks...jpg</code>", table_cell),
+            Paragraph("<font color='#15803d'><b>Deployed</b></font>", table_cell),
         ],
         [
             Paragraph("<code>64cc814</code>", table_cell_bold),
             Paragraph("chore(seo): bump sitemap lastModified dates to Oct 30 2026 to accelerate google re-crawling", table_cell),
             Paragraph("<code>app/sitemap.ts</code>", table_cell),
-            Paragraph("origin/main (GitHub)", table_cell),
+            Paragraph("<font color='#15803d'><b>Deployed</b></font>", table_cell),
         ],
         [
-            Paragraph("<code>7966bae</code>", table_cell_bold),
-            Paragraph("feat(content): publish commercial pillar targeting benchmark roas b2b and qualified appointment generation", table_cell),
-            Paragraph("<code>lib/blog-data.ts</code><br/><code>public/images/blog/b2b-roas-...jpg</code>", table_cell),
-            Paragraph("origin/main (GitHub)", table_cell),
+            Paragraph("<code>faf9b6b</code>", table_cell_bold),
+            Paragraph("feat(design): embed architecture diagrams, component preview shots, and proof galleries on coaches and consultants", table_cell),
+            Paragraph("<code>app/for/coaches/page.tsx</code><br/><code>app/for/consultants/page.tsx</code>", table_cell),
+            Paragraph("<font color='#15803d'><b>Deployed</b></font>", table_cell),
+        ],
+        [
+            Paragraph("<code>bcda98c</code>", table_cell_bold),
+            Paragraph("feat(design): embed live dispatch dashboard graphic, gate workflows, and proof cards on appointment setting", table_cell),
+            Paragraph("<code>app/appointment-setting/page.tsx</code><br/><code>AppointmentRoiCalculator.tsx</code>", table_cell),
+            Paragraph("<font color='#15803d'><b>Deployed</b></font>", table_cell),
         ],
     ]
     
-    git_table = Table(git_data, colWidths=[65, 195, 144, 100])
-    git_table.setStyle(TableStyle([
+    commit_table = Table(git_commits, colWidths=[60, 194, 170, 80])
+    commit_table.setStyle(TableStyle([
         ('BACKGROUND', (0,0), (-1,0), c_primary),
         ('GRID', (0,0), (-1,-1), 0.5, c_border),
         ('VALIGN', (0,0), (-1,-1), 'TOP'),
-        ('TOPPADDING', (0,0), (-1,-1), 5),
-        ('BOTTOMPADDING', (0,0), (-1,-1), 5),
+        ('TOPPADDING', (0,0), (-1,-1), 4),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 4),
         ('LEFTPADDING', (0,0), (-1,-1), 5),
         ('RIGHTPADDING', (0,0), (-1,-1), 5),
         ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, c_bg_light]),
     ]))
-    story.append(git_table)
+    story.append(commit_table)
+    story.append(Spacer(1, 8))
+    
+    # Section 3: Priority Indexing Action Plan
+    story.append(Paragraph("3. Immediate Google Search Console Fast-Track Indexing Protocol", section_h1))
+    
+    gsc_plan = """
+    <b>Priority Action Plan for GSC Submission:</b><br/>
+    1. <b>Sitemap Submission (Covers All 29 Pages):</b> Re-submit <code>https://www.qualifiedleadsx.com/sitemap.xml</code> in GSC Sitemaps menu. This signals Googlebot to crawl the full directory with fresh 2026-10-30 timestamps.<br/>
+    2. <b>Manual Live URL Inspections (Top 4 Priority URLs):</b><br/>
+    &nbsp;&nbsp;• <code>https://www.qualifiedleadsx.com/</code> (Homepage with expanded FAQ schema)<br/>
+    &nbsp;&nbsp;• <code>https://www.qualifiedleadsx.com/meta-ads-agency</code> (CAC benchmarks and Andromeda FAQs)<br/>
+    &nbsp;&nbsp;• <code>https://www.qualifiedleadsx.com/about</code> (Command center visual & E-E-A-T trust FAQs)<br/>
+    &nbsp;&nbsp;• <code>https://www.qualifiedleadsx.com/blog/b2b-roas-benchmarks-qualified-appointment-generation</code> (New commercial pillar)<br/>
+    &nbsp;&nbsp;<i>Procedure:</i> Paste URL in top search bar &rarr; Click <b>'TEST LIVE URL'</b> &rarr; Click <b>'REQUEST INDEXING'</b>. Limit to 3–4 URLs daily to avoid quota errors.
+    """
+    gsc_table = Table([[Paragraph(gsc_plan, body)]], colWidths=[504])
+    gsc_table.setStyle(TableStyle([
+        ('BACKGROUND', (0,0), (-1,-1), c_bg_light),
+        ('BOX', (0,0), (-1,-1), 1, c_border),
+        ('TOPPADDING', (0,0), (-1,-1), 6),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 6),
+        ('LEFTPADDING', (0,0), (-1,-1), 8),
+        ('RIGHTPADDING', (0,0), (-1,-1), 8),
+    ]))
+    story.append(gsc_table)
     
     doc.build(story, canvasmaker=NumberedCanvas)
-    print(f"PDF built successfully at: {filename}")
+    print(f"Master PDF built successfully at: {filename}")
 
 if __name__ == "__main__":
     build_pdf()

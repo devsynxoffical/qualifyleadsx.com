@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -157,6 +159,32 @@ export default function CoachesLandingPage() {
               <div className="text-xs text-mist mt-1 uppercase font-mono">Deployment Speed</div>
             </div>
           </div>
+
+          {/* Coaching Acquisition Architecture Visual Mockup */}
+          <div className="mt-14 relative mx-auto max-w-5xl rounded-3xl border border-white/15 bg-gradient-to-b from-white/10 via-panel/60 to-transparent p-2 sm:p-4 shadow-[0_25px_70px_rgba(0,0,0,0.85)] backdrop-blur-xl text-left">
+            <div className="flex items-center justify-between px-3 py-2 border-b border-white/10 mb-2">
+              <div className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
+                <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
+                <span className="w-3 h-3 rounded-full bg-emerald-500/80 inline-block" />
+                <span className="ml-2 text-xs font-mono text-mist/70 hidden sm:inline-block">coach-vsl-funnel-pipeline.arch</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs font-mono text-lime font-semibold">
+                <span className="w-2 h-2 rounded-full bg-lime animate-ping" />
+                <span>ACTIVE COACHING ENROLLMENT SYSTEM</span>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-white/10 relative aspect-[16/9] shadow-inner group">
+              <Image
+                src="/images2/showreel/shot_08_multi_device.webp"
+                alt="Multi-device coaching client acquisition and high-ticket enrollment funnel"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                priority
+                sizes="(max-width: 1024px) 100vw, 1100px"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -241,36 +269,183 @@ export default function CoachesLandingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="rounded-2xl border border-line bg-panel p-6">
-              <div className="font-mono text-3xl font-bold text-lime mb-4">01</div>
-              <h4 className="text-lg font-bold text-fog mb-2">Offer & Angle Dial-In</h4>
-              <p className="text-sm text-mist leading-relaxed">
-                We position your coaching program around an undeniable, high-ROI transformation that justifies a $5K–$25K price point.
-              </p>
+            <div className="rounded-2xl border border-line bg-panel p-5 flex flex-col justify-between overflow-hidden group hover:border-lime/40 transition-all">
+              <div>
+                <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-4 bg-ink/90">
+                  <Image
+                    src="/images2/showreel/shot_03_brand_system.webp"
+                    alt="Coaching offer and positioning architecture"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 300px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                  <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                    STEP 01 OFFER
+                  </span>
+                </div>
+                <div className="font-mono text-3xl font-bold text-lime mb-2">01</div>
+                <h4 className="text-lg font-bold text-fog mb-2">Offer & Angle Dial-In</h4>
+                <p className="text-sm text-mist leading-relaxed">
+                  We position your coaching program around an undeniable, high-ROI transformation that justifies a $5K–$25K price point.
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-2xl border border-line bg-panel p-6">
-              <div className="font-mono text-3xl font-bold text-lime mb-4">02</div>
-              <h4 className="text-lg font-bold text-fog mb-2">High-Converting VSL</h4>
-              <p className="text-sm text-mist leading-relaxed">
-                We script and design a cinematic 12-minute video sales letter that explains your unique coaching framework and shows proof.
-              </p>
+            <div className="rounded-2xl border border-line bg-panel p-5 flex flex-col justify-between overflow-hidden group hover:border-lime/40 transition-all">
+              <div>
+                <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-4 bg-ink/90">
+                  <Image
+                    src="/images2/showreel/shot_06_vsl_player.webp"
+                    alt="High-converting coaching video sales letter mechanism"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 300px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                  <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                    STEP 02 VSL
+                  </span>
+                </div>
+                <div className="font-mono text-3xl font-bold text-lime mb-2">02</div>
+                <h4 className="text-lg font-bold text-fog mb-2">High-Converting VSL</h4>
+                <p className="text-sm text-mist leading-relaxed">
+                  We script and design a cinematic 12-minute video sales letter that explains your unique coaching framework and shows proof.
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-2xl border border-line bg-panel p-6">
-              <div className="font-mono text-3xl font-bold text-lime mb-4">03</div>
-              <h4 className="text-lg font-bold text-fog mb-2">Smart Application Filter</h4>
-              <p className="text-sm text-mist leading-relaxed">
-                Multi-step conditional logic asks budget, timeline, and goals—routing unqualified leads away and booking closable buyers.
-              </p>
+            <div className="rounded-2xl border border-line bg-panel p-5 flex flex-col justify-between overflow-hidden group hover:border-lime/40 transition-all">
+              <div>
+                <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-4 bg-ink/90">
+                  <Image
+                    src="/images2/showreel/shot_14_ai_screener.webp"
+                    alt="Smart application filter gate for high ticket coaching"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 300px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                  <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                    STEP 03 FILTER
+                  </span>
+                </div>
+                <div className="font-mono text-3xl font-bold text-lime mb-2">03</div>
+                <h4 className="text-lg font-bold text-fog mb-2">Smart Application Filter</h4>
+                <p className="text-sm text-mist leading-relaxed">
+                  Multi-step conditional logic asks budget, timeline, and goals—routing unqualified leads away and booking closable buyers.
+                </p>
+              </div>
             </div>
 
-            <div className="rounded-2xl border border-line bg-panel p-6">
-              <div className="font-mono text-3xl font-bold text-lime mb-4">04</div>
-              <h4 className="text-lg font-bold text-fog mb-2">Pre-Call Nurture Flow</h4>
-              <p className="text-sm text-mist leading-relaxed">
-                Automated WhatsApp and SMS confirmation triggers with pre-call videos ensure show-up rates routinely exceed 85%.
-              </p>
+            <div className="rounded-2xl border border-line bg-panel p-5 flex flex-col justify-between overflow-hidden group hover:border-lime/40 transition-all">
+              <div>
+                <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-4 bg-ink/90">
+                  <Image
+                    src="/images2/showreel/shot_15_calendar_booked.webp"
+                    alt="Pre-call nurture flow and calendar booking"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 300px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                  <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                    STEP 04 SHOW-UP
+                  </span>
+                </div>
+                <div className="font-mono text-3xl font-bold text-lime mb-2">04</div>
+                <h4 className="text-lg font-bold text-fog mb-2">Pre-Call Nurture Flow</h4>
+                <p className="text-sm text-mist leading-relaxed">
+                  Automated WhatsApp and SMS confirmation triggers with pre-call videos ensure show-up rates routinely exceed 85%.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Verified Coaching Success Snapshot Gallery */}
+      <section className="py-20 bg-base/40 border-t border-line">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold">
+              VERIFIED COACHING OUTCOMES
+            </span>
+            <h3 className="mt-3 text-3xl sm:text-4xl font-bold font-heading text-fog">
+              Real Transformations. Proven Enrollment Velocity.
+            </h3>
+            <p className="mt-3 text-base text-mist">
+              Unfiltered pipeline snapshots from high-ticket business, life, and executive coaches using our acquisition engine.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="group rounded-2xl border border-white/10 bg-panel/70 p-3 hover:border-lime/40 transition-all shadow-lg">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/5 bg-ink">
+                <Image
+                  src="/images/client success/10-3.webp"
+                  alt="Executive coaching high ticket client enrollment proof"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+              <div className="mt-3 px-2">
+                <div className="text-xs font-mono text-lime font-bold">EXECUTIVE COACHING</div>
+                <div className="text-sm font-semibold text-white mt-0.5">$68,500 In New Cohort MRR</div>
+                <div className="text-xs text-mist/70 mt-1">4.2x Return On Ad Spend</div>
+              </div>
+            </div>
+
+            <div className="group rounded-2xl border border-white/10 bg-panel/70 p-3 hover:border-lime/40 transition-all shadow-lg">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/5 bg-ink">
+                <Image
+                  src="/images/client success/11-2.webp"
+                  alt="Business coach client pipeline calendar bookings"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+              <div className="mt-3 px-2">
+                <div className="text-xs font-mono text-lime font-bold">BUSINESS COACHING</div>
+                <div className="text-sm font-semibold text-white mt-0.5">44 Strategy Sessions / Mo</div>
+                <div className="text-xs text-mist/70 mt-1">89% Show-Up Confirmation</div>
+              </div>
+            </div>
+
+            <div className="group rounded-2xl border border-white/10 bg-panel/70 p-3 hover:border-lime/40 transition-all shadow-lg">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/5 bg-ink">
+                <Image
+                  src="/images/client success/6-2.webp"
+                  alt="Consulting program closed sales proof"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+              <div className="mt-3 px-2">
+                <div className="text-xs font-mono text-lime font-bold">CAREER MENTORSHIP</div>
+                <div className="text-sm font-semibold text-white mt-0.5">From $12K to $74K/Mo</div>
+                <div className="text-xs text-mist/70 mt-1">Zero Cold Messaging Required</div>
+              </div>
+            </div>
+
+            <div className="group rounded-2xl border border-white/10 bg-panel/70 p-3 hover:border-lime/40 transition-all shadow-lg">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/5 bg-ink">
+                <Image
+                  src="/images/client success/8-1.webp"
+                  alt="High ticket closing call stats"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+              <div className="mt-3 px-2">
+                <div className="text-xs font-mono text-lime font-bold">FITNESS & HEALTH COACH</div>
+                <div className="text-sm font-semibold text-white mt-0.5">3.8x Pipeline Expansion</div>
+                <div className="text-xs text-mist/70 mt-1">Direct Inbound Application Flow</div>
+              </div>
             </div>
           </div>
         </div>

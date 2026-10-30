@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -156,6 +158,32 @@ export default function ConsultantsLandingPage() {
               <div className="text-xs text-mist mt-1 uppercase font-mono">100% Inbound Intent</div>
             </div>
           </div>
+
+          {/* Enterprise Consulting Funnel Architecture Visual */}
+          <div className="mt-14 relative mx-auto max-w-5xl rounded-3xl border border-white/15 bg-gradient-to-b from-white/10 via-panel/60 to-transparent p-2 sm:p-4 shadow-[0_25px_70px_rgba(0,0,0,0.85)] backdrop-blur-xl text-left">
+            <div className="flex items-center justify-between px-3 py-2 border-b border-white/10 mb-2">
+              <div className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
+                <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
+                <span className="w-3 h-3 rounded-full bg-emerald-500/80 inline-block" />
+                <span className="ml-2 text-xs font-mono text-mist/70 hidden sm:inline-block">b2b-enterprise-consulting-dossier.v2</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs font-mono text-lime font-semibold">
+                <span className="w-2 h-2 rounded-full bg-lime animate-ping" />
+                <span>C-LEVEL PIPELINE ACTIVE</span>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-white/10 relative aspect-[16/9] shadow-inner group">
+              <Image
+                src="/images2/showreel/shot_09_ad_telemetry.webp"
+                alt="B2B consulting client acquisition telemetry and enterprise decision-maker pipeline"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                priority
+                sizes="(max-width: 1024px) 100vw, 1100px"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -238,28 +266,154 @@ export default function ConsultantsLandingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="rounded-2xl border border-line bg-panel p-8">
-              <BarChart3 className="w-8 h-8 text-lime mb-4" />
+            <div className="rounded-2xl border border-line bg-panel p-6 overflow-hidden group hover:border-lime/40 transition-all">
+              <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-5 bg-ink/90">
+                <Image
+                  src="/images2/showreel/shot_06_vsl_player.webp"
+                  alt="Enterprise authority video presentation and whitepaper"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 400px"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                  AUTHORITY ASSET
+                </span>
+              </div>
+              <BarChart3 className="w-7 h-7 text-lime mb-3" />
               <h4 className="text-xl font-bold text-fog mb-2">Authority VSL & Whitepaper</h4>
               <p className="text-sm text-mist leading-relaxed">
                 We craft an executive-grade 12-minute strategic presentation that breaks down your proprietary corporate solution and financial impact.
               </p>
             </div>
 
-            <div className="rounded-2xl border border-line bg-panel p-8">
-              <ShieldCheck className="w-8 h-8 text-lime mb-4" />
+            <div className="rounded-2xl border border-line bg-panel p-6 overflow-hidden group hover:border-lime/40 transition-all">
+              <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-5 bg-ink/90">
+                <Image
+                  src="/images2/showreel/shot_18_heimdall.webp"
+                  alt="Enterprise lead screening gate"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 400px"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                  DECISION-MAKER GATE
+                </span>
+              </div>
+              <ShieldCheck className="w-7 h-7 text-lime mb-3" />
               <h4 className="text-xl font-bold text-fog mb-2">Enterprise Lead Gate</h4>
               <p className="text-sm text-mist leading-relaxed">
                 Filter applicants by annual turnover ($1M–$50M+), team size, and immediate readiness to deploy advisory budgets.
               </p>
             </div>
 
-            <div className="rounded-2xl border border-line bg-panel p-8">
-              <TrendingUp className="w-8 h-8 text-lime mb-4" />
+            <div className="rounded-2xl border border-line bg-panel p-6 overflow-hidden group hover:border-lime/40 transition-all">
+              <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-5 bg-ink/90">
+                <Image
+                  src="/images2/showreel/shot_17_meridian.webp"
+                  alt="Pre-call proof dossier and CRM synchronization"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 400px"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                  PROOF DOSSIER
+                </span>
+              </div>
+              <TrendingUp className="w-7 h-7 text-lime mb-3" />
               <h4 className="text-xl font-bold text-fog mb-2">Pre-Call Proof Dossier</h4>
               <p className="text-sm text-mist leading-relaxed">
                 Automated multi-channel briefings sent via WhatsApp and email that educate stakeholders and compress the sales cycle from months to days.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Verified Enterprise Consulting Pipeline Snapshot Gallery */}
+      <section className="py-20 bg-base/40 border-t border-line">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold">
+              VERIFIED ENTERPRISE ENGAGEMENTS
+            </span>
+            <h3 className="mt-3 text-3xl sm:text-4xl font-bold font-heading text-fog">
+              Real Advisory Pipelines. Measurable Enterprise Retainers.
+            </h3>
+            <p className="mt-3 text-base text-mist">
+              Direct pipeline snapshots from management, operations, and financial consultants scaling with QualifiedLeadsX™.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="group rounded-2xl border border-white/10 bg-panel/70 p-3 hover:border-lime/40 transition-all shadow-lg">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/5 bg-ink">
+                <Image
+                  src="/images/client success/15-1.webp"
+                  alt="Enterprise consulting high ticket contract acquisition"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+              <div className="mt-3 px-2">
+                <div className="text-xs font-mono text-lime font-bold">STRATEGY ADVISORY</div>
+                <div className="text-sm font-semibold text-white mt-0.5">$180,000 Annual Retainer</div>
+                <div className="text-xs text-mist/70 mt-1">Direct Enterprise Inbound Call</div>
+              </div>
+            </div>
+
+            <div className="group rounded-2xl border border-white/10 bg-panel/70 p-3 hover:border-lime/40 transition-all shadow-lg">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/5 bg-ink">
+                <Image
+                  src="/images/client success/17.webp"
+                  alt="Operations consulting pipeline booking confirmation"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+              <div className="mt-3 px-2">
+                <div className="text-xs font-mono text-lime font-bold">OPERATIONS CONSULTING</div>
+                <div className="text-sm font-semibold text-white mt-0.5">28 C-Level Meetings / Mo</div>
+                <div className="text-xs text-mist/70 mt-1">Screened for $5M+ Revenue</div>
+              </div>
+            </div>
+
+            <div className="group rounded-2xl border border-white/10 bg-panel/70 p-3 hover:border-lime/40 transition-all shadow-lg">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/5 bg-ink">
+                <Image
+                  src="/images/client success/20.webp"
+                  alt="B2B marketing consulting closed sales proof"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+              <div className="mt-3 px-2">
+                <div className="text-xs font-mono text-lime font-bold">TECH CONSULTING</div>
+                <div className="text-sm font-semibold text-white mt-0.5">34% Discovery Close Rate</div>
+                <div className="text-xs text-mist/70 mt-1">Pre-Framed Methodology via VSL</div>
+              </div>
+            </div>
+
+            <div className="group rounded-2xl border border-white/10 bg-panel/70 p-3 hover:border-lime/40 transition-all shadow-lg">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/5 bg-ink">
+                <Image
+                  src="/images/client success/12-1.webp"
+                  alt="Corporate advisory high ticket client growth"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+              <div className="mt-3 px-2">
+                <div className="text-xs font-mono text-lime font-bold">FINANCIAL ADVISORY</div>
+                <div className="text-sm font-semibold text-white mt-0.5">5.1x ROI on Media Spend</div>
+                <div className="text-xs text-mist/70 mt-1">Zero Cold Outreach Dependence</div>
+              </div>
             </div>
           </div>
         </div>

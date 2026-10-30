@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -27,6 +28,7 @@ import {
   PhoneCall,
   Flame,
 } from "lucide-react";
+import { AppointmentRoiCalculator } from "@/components/sections/AppointmentRoiCalculator";
 
 export const metadata: Metadata = {
   title: {
@@ -215,6 +217,32 @@ export default function AppointmentSettingPage() {
               <strong>QualifiedLeadsX™</strong> installs an automated B2B <strong>appointment setting</strong> infrastructure engineered for high-ticket coaches, consultants, and growth agencies. Combining 4-tier conditional qualification surveys with sub-5-minute multichannel <strong>speed to lead</strong> across WhatsApp, SMS, and email, our system eliminates tire-kickers and books 30–50 sales-ready appointments every month with an 88%+ show-up rate.
             </p>
           </div>
+
+          {/* Visual Showcase: Real-Time Appointment Pipeline Dashboard */}
+          <div className="mt-14 relative mx-auto max-w-5xl rounded-3xl border border-white/15 bg-gradient-to-b from-white/10 via-panel/60 to-transparent p-2 sm:p-4 shadow-[0_25px_70px_rgba(0,0,0,0.85)] backdrop-blur-xl">
+            <div className="flex items-center justify-between px-3 py-2 border-b border-white/10 mb-2">
+              <div className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
+                <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
+                <span className="w-3 h-3 rounded-full bg-emerald-500/80 inline-block" />
+                <span className="ml-2 text-xs font-mono text-mist/70 hidden sm:inline-block">qlx-pipeline-telemetry.system v4.2</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs font-mono text-lime font-semibold">
+                <span className="w-2 h-2 rounded-full bg-lime animate-ping" />
+                <span>LIVE DISPATCH ENGINE</span>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-white/10 relative aspect-[16/9] shadow-inner group">
+              <Image
+                src="/images/appointment-setting-hero.jpg"
+                alt="QualifiedLeadsX Automated Speed to Lead Appointment Setting Dashboard"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                priority
+                sizes="(max-width: 1024px) 100vw, 1100px"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -328,8 +356,21 @@ export default function AppointmentSettingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="rounded-2xl border border-line bg-ink/60 p-6 flex flex-col justify-between">
+            <div className="rounded-2xl border border-line bg-ink/60 p-5 flex flex-col justify-between overflow-hidden group hover:border-lime/40 transition-all">
               <div>
+                <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-4 bg-ink/90">
+                  <Image
+                    src="/images2/showreel/shot_14_ai_screener.webp"
+                    alt="Tier 1 AI Revenue screener filter gate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 300px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                  <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                    GATE 01 SCREENER
+                  </span>
+                </div>
                 <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-2">Gate 01</div>
                 <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Revenue Threshold
@@ -343,8 +384,21 @@ export default function AppointmentSettingPage() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-line bg-ink/60 p-6 flex flex-col justify-between">
+            <div className="rounded-2xl border border-line bg-ink/60 p-5 flex flex-col justify-between overflow-hidden group hover:border-lime/40 transition-all">
               <div>
+                <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-4 bg-ink/90">
+                  <Image
+                    src="/images2/showreel/shot_05_kanban.webp"
+                    alt="Tier 2 Pipeline bottleneck audit gate"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 300px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                  <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                    GATE 02 AUDIT
+                  </span>
+                </div>
                 <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-2">Gate 02</div>
                 <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Bottleneck Audit
@@ -358,8 +412,21 @@ export default function AppointmentSettingPage() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-line bg-ink/60 p-6 flex flex-col justify-between">
+            <div className="rounded-2xl border border-line bg-ink/60 p-5 flex flex-col justify-between overflow-hidden group hover:border-lime/40 transition-all">
               <div>
+                <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-4 bg-ink/90">
+                  <Image
+                    src="/images2/showreel/shot_16_crm_nodes.webp"
+                    alt="Tier 3 Liquid capital verification protocol"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 300px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                  <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                    GATE 03 CAPITAL
+                  </span>
+                </div>
                 <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-2">Gate 03</div>
                 <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Liquid Capital Gate
@@ -373,8 +440,21 @@ export default function AppointmentSettingPage() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-line bg-ink/60 p-6 flex flex-col justify-between">
+            <div className="rounded-2xl border border-line bg-ink/60 p-5 flex flex-col justify-between overflow-hidden group hover:border-lime/40 transition-all">
               <div>
+                <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-4 bg-ink/90">
+                  <Image
+                    src="/images2/showreel/shot_15_calendar_booked.webp"
+                    alt="Tier 4 Automated calendar routing protocol"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 300px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                  <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                    GATE 04 ROUTING
+                  </span>
+                </div>
                 <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-2">Gate 04</div>
                 <h3 className="text-lg font-bold font-heading text-white mb-2">
                   Dynamic Routing
@@ -385,6 +465,96 @@ export default function AppointmentSettingPage() {
               </div>
               <div className="mt-4 pt-3 border-t border-line/50 text-xs font-mono text-dim">
                 Automatic Segmentation
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Interactive Pipeline ROI Calculator */}
+      <AppointmentRoiCalculator />
+
+      {/* Visual Proof Section: Verified Booking Pipeline Telemetry */}
+      <section className="py-16 sm:py-20 bg-ink border-t border-line">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold">
+              VERIFIED CONVERSION METRICS
+            </span>
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight">
+              Real Client Calendars. Real Pipeline Velocity.
+            </h2>
+            <p className="mt-3 text-base text-mist">
+              Actual calendar telemetry and closed-won pipelines powered by our automated speed-to-lead architecture.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="group rounded-2xl border border-white/10 bg-panel/70 p-3 hover:border-lime/40 transition-all shadow-lg hover:shadow-lime/5">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/5 bg-ink">
+                <Image
+                  src="/images/client success/1-1-1-scaled.webp"
+                  alt="Verified high ticket sales call calendar bookings"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+              <div className="mt-3 px-2">
+                <div className="text-xs font-mono text-lime font-bold">B2B CONSULTING FIRM</div>
+                <div className="text-sm font-semibold text-white mt-0.5">38 Qualified Meetings / Mo</div>
+                <div className="text-xs text-mist/70 mt-1">91.2% Show-Up Rate Via WhatsApp SMS</div>
+              </div>
+            </div>
+
+            <div className="group rounded-2xl border border-white/10 bg-panel/70 p-3 hover:border-lime/40 transition-all shadow-lg hover:shadow-lime/5">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/5 bg-ink">
+                <Image
+                  src="/images/client success/2.webp"
+                  alt="Automated inbound lead qualification and CRM sync"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+              <div className="mt-3 px-2">
+                <div className="text-xs font-mono text-lime font-bold">HIGH-TICKET MENTORSHIP</div>
+                <div className="text-sm font-semibold text-white mt-0.5">52 Booked Strategy Sessions</div>
+                <div className="text-xs text-mist/70 mt-1">Under 2.8 Min Response Time</div>
+              </div>
+            </div>
+
+            <div className="group rounded-2xl border border-white/10 bg-panel/70 p-3 hover:border-lime/40 transition-all shadow-lg hover:shadow-lime/5">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/5 bg-ink">
+                <Image
+                  src="/images/client success/16.webp"
+                  alt="Client acquisition revenue and closed won deal metrics"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+              <div className="mt-3 px-2">
+                <div className="text-xs font-mono text-lime font-bold">GROWTH MARKETING AGENCY</div>
+                <div className="text-sm font-semibold text-white mt-0.5">$148,000 In Closed Revenue</div>
+                <div className="text-xs text-mist/70 mt-1">Zero Manual Cold Dialing Required</div>
+              </div>
+            </div>
+
+            <div className="group rounded-2xl border border-white/10 bg-panel/70 p-3 hover:border-lime/40 transition-all shadow-lg hover:shadow-lime/5">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/5 bg-ink">
+                <Image
+                  src="/images/client success/5.webp"
+                  alt="High volume appointment qualification pipeline"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+              <div className="mt-3 px-2">
+                <div className="text-xs font-mono text-lime font-bold">SAAS ENTERPRISE</div>
+                <div className="text-sm font-semibold text-white mt-0.5">4.3x Pipeline Expansion</div>
+                <div className="text-xs text-mist/70 mt-1">Automated Two-Way Scheduling</div>
               </div>
             </div>
           </div>

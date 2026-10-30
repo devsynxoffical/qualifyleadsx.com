@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   ShieldCheck,
   TrendingUp,
@@ -159,6 +160,32 @@ export default function AboutPage() {
             <p className="text-base sm:text-lg text-mist leading-relaxed">
               We started QualifiedLeadsX to fix a broken industry reality: founders are forced to manage fragmented vendors—an ad agency that does not understand landing pages, a copywriter who has never looked at CRM analytics, and appointment setters who let warm leads go cold. We eliminate vendor finger-pointing by engineering, managing, and guaranteeing your entire acquisition system under one roof.
             </p>
+
+            {/* Visual Showcase: Command Center & Architecture */}
+            <div className="mt-10 relative rounded-3xl border border-white/15 bg-gradient-to-b from-white/10 via-panel/60 to-transparent p-2 sm:p-4 shadow-[0_25px_70px_rgba(0,0,0,0.85)] backdrop-blur-xl">
+              <div className="flex items-center justify-between px-3 py-2 border-b border-white/10 mb-2">
+                <div className="flex items-center gap-2">
+                  <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
+                  <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
+                  <span className="w-3 h-3 rounded-full bg-emerald-500/80 inline-block" />
+                  <span className="ml-2 text-xs font-mono text-mist/70 hidden sm:inline-block">qlx-global-command-center.production</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs font-mono text-lime font-semibold">
+                  <span className="w-2 h-2 rounded-full bg-lime animate-ping" />
+                  <span>WAR ROOM ACTIVE</span>
+                </div>
+              </div>
+              <div className="overflow-hidden rounded-2xl border border-white/10 relative aspect-[16/9] shadow-inner group">
+                <Image
+                  src="/images/about-command-center.jpg"
+                  alt="QualifiedLeadsX Digital War Room and B2B Client Acquisition Command Center"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                  priority
+                  sizes="(max-width: 1200px) 100vw, 1100px"
+                />
+              </div>
+            </div>
           </header>
 
           {/* Numbers Grid */}
@@ -209,7 +236,20 @@ export default function AboutPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 sm:p-7 rounded-2xl bg-panel border border-line hover:border-lime/40 transition-colors">
+              <div className="p-6 sm:p-7 rounded-2xl bg-panel border border-line hover:border-lime/40 transition-all group overflow-hidden">
+                <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-5 bg-ink/90">
+                  <Image
+                    src="/images2/showreel/shot_05_kanban.webp"
+                    alt="Agency sales pipeline and deal flow architecture"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 350px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                  <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                    AGENCY PIPELINE
+                  </span>
+                </div>
                 <div className="w-10 h-10 rounded-xl bg-lime/10 border border-lime/30 flex items-center justify-center text-lime font-mono font-bold mb-4">
                   01
                 </div>
@@ -219,7 +259,20 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="p-6 sm:p-7 rounded-2xl bg-panel border border-line hover:border-lime/40 transition-colors">
+              <div className="p-6 sm:p-7 rounded-2xl bg-panel border border-line hover:border-lime/40 transition-all group overflow-hidden">
+                <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-5 bg-ink/90">
+                  <Image
+                    src="/images2/showreel/shot_08_multi_device.webp"
+                    alt="High ticket coaching funnel and client acquisition system"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 350px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                  <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                    COACHING ENROLLMENT
+                  </span>
+                </div>
                 <div className="w-10 h-10 rounded-xl bg-lime/10 border border-lime/30 flex items-center justify-center text-lime font-mono font-bold mb-4">
                   02
                 </div>
@@ -229,7 +282,20 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="p-6 sm:p-7 rounded-2xl bg-panel border border-line hover:border-lime/40 transition-colors">
+              <div className="p-6 sm:p-7 rounded-2xl bg-panel border border-line hover:border-lime/40 transition-all group overflow-hidden">
+                <div className="relative aspect-video rounded-xl overflow-hidden border border-line/60 mb-5 bg-ink/90">
+                  <Image
+                    src="/images2/showreel/shot_16_crm_nodes.webp"
+                    alt="B2B service provider qualification CRM pipeline"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 350px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
+                  <span className="absolute bottom-2 left-2 text-[10px] font-mono text-lime font-bold px-2 py-0.5 rounded bg-ink/80 border border-lime/30">
+                    B2B PIPELINE
+                  </span>
+                </div>
                 <div className="w-10 h-10 rounded-xl bg-lime/10 border border-lime/30 flex items-center justify-center text-lime font-mono font-bold mb-4">
                   03
                 </div>
@@ -341,29 +407,50 @@ export default function AboutPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {leadershipRoles.map((member) => (
+              {leadershipRoles.map((member, idx) => (
                 <div
                   key={member.name}
-                  className="p-6 sm:p-8 rounded-2xl bg-panel border border-line hover:border-lime/40 transition-colors flex flex-col justify-between"
+                  className="p-6 sm:p-8 rounded-2xl bg-panel border border-line hover:border-lime/40 transition-all flex flex-col justify-between group"
                 >
                   <div>
-                    <div className="flex items-start justify-between gap-4 mb-2">
-                      <div>
-                        <h3 className="text-xl font-bold font-heading text-fog">{member.name}</h3>
-                        <p className="text-sm text-lime font-mono font-medium">{member.role}</p>
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-lime/40 bg-ink shrink-0 shadow-[0_0_20px_rgba(201,242,107,0.15)]">
+                        <Image
+                          src={
+                            idx === 0
+                              ? "/images/screenshots/Alexander.webp"
+                              : idx === 1
+                              ? "/images2/showreel/shot_09_ad_telemetry.webp"
+                              : idx === 2
+                              ? "/images2/showreel/shot_06_vsl_player.webp"
+                              : "/images2/showreel/shot_16_crm_nodes.webp"
+                          }
+                          alt={member.name}
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-500"
+                          sizes="64px"
+                        />
                       </div>
-                      {member.linkedin && (
-                        <a
-                          href={member.linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-elevated border border-line hover:border-lime/40 text-mist hover:text-lime text-xs font-mono font-medium transition-colors"
-                        >
-                          LinkedIn <ExternalLink className="w-3 h-3" />
-                        </a>
-                      )}
+                      <div className="flex-1">
+                        <div className="flex items-start justify-between gap-2">
+                          <div>
+                            <h3 className="text-xl font-bold font-heading text-fog">{member.name}</h3>
+                            <p className="text-sm text-lime font-mono font-medium">{member.role}</p>
+                          </div>
+                          {member.linkedin && (
+                            <a
+                              href={member.linkedin}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-elevated border border-line hover:border-lime/40 text-mist hover:text-lime text-xs font-mono font-medium transition-colors"
+                            >
+                              LinkedIn <ExternalLink className="w-3 h-3" />
+                            </a>
+                          )}
+                        </div>
+                      </div>
                     </div>
-                    <p className="text-sm text-mist leading-relaxed mt-4">{member.bio}</p>
+                    <p className="text-sm text-mist leading-relaxed mt-2">{member.bio}</p>
                   </div>
                 </div>
               ))}

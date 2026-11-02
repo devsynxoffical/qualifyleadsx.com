@@ -6,6 +6,21 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "qualifiedleadsx.com",
+          },
+        ],
+        destination: "https://www.qualifiedleadsx.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

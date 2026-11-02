@@ -19,9 +19,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Client Acquisition System for Digital & Marketing Agencies",
+  title: "Client Acquisition for Digital & Marketing Agencies",
   description:
-    "Scale your agency past $100K/month with predictable inbound sales calls. We install a done-for-you VSL funnel and Meta ads machine to book high-ticket agency retainers.",
+    "Scale your agency past $100K/month with predictable inbound sales calls. We install a done-for-you VSL funnel and Meta ads machine to book retainers.",
   keywords: [
     "client acquisition for agencies",
     "agency lead generation system",

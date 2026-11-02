@@ -27,9 +27,9 @@ import { site } from "@/lib/site";
 import { faqs } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Lead Generation Agency for High-Ticket Offers - QualifiedLeadsX",
+  title: "Lead Generation Agency for High-Ticket B2B",
   description:
-    "B2B lead generation agency scaling high ticket sales for agencies and coaches. Get predictable booked calls with our AI acquisition engine. Book your call.",
+    "B2B lead generation agency scaling high ticket sales for agencies and coaches. Get 30-50 predictable booked calls with our AI acquisition engine.",
   keywords: [
     "lead generation agency",
     "high ticket sales",

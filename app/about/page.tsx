@@ -21,9 +21,9 @@ import { CTABanner } from "@/components/ui/CTABanner";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "About QualifiedLeadsX - Done-For-You Client Acquisition Agency" },
+  title: { absolute: "About QualifiedLeadsX Client Acquisition Agency" },
   description:
-    "Learn about QualifiedLeadsX: $50M+ in Meta ads managed, 125+ case studies, and the 8-step client acquisition system founded by Gaurav. Operated by Ecom Expertz LLC.",
+    "QualifiedLeadsX has managed $50M+ in Meta ads with 125+ case studies, scaling high-ticket coaches, consultants, and B2B agencies.",
   alternates: {
     canonical: "/about",
   },

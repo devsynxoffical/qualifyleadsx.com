@@ -19,9 +19,9 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
-  title: "Hidden Facebook Interest Targeting Breakdown | Mastermind",
+  title: "Hidden Facebook Interest Targeting Breakdown",
   description:
-    "Private Mastermind Breakdown: The framework behind scaling to 300–500 qualified sales calls using hidden Facebook interest targeting and creative rotation.",
+    "Mastermind Breakdown: Scale to 300–500 qualified sales calls using hidden Facebook interest targeting and creative rotation.",
   keywords: [
     "hidden facebook interests",
     "facebook ad targeting strategy",

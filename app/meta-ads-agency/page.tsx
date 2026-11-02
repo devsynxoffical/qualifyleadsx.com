@@ -27,10 +27,10 @@ import {
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Meta Ads Agency for Coaches, Agencies and B2B - QualifiedLeadsX",
+    absolute: "Meta Ads Agency for B2B & High-Ticket Offers",
   },
   description:
-    "Elite Meta ads agency scaling high-ticket coaches, consultants, and B2B agencies to $100K+/month. Automated qualification & guaranteed booked calls.",
+    "Performance Meta ads agency scaling high-ticket coaches, consultants, and B2B agencies to $100K+/month with guaranteed booked calls.",
   keywords: [
     "meta ads agency",
     "facebook ads agency",

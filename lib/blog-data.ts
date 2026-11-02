@@ -63,9 +63,9 @@ export const blogPosts: BlogPost[] = [
   // 30 OCT 2026 — commercial-intent pillar: "benchmark roas b2b & qualified appointment generation" (GSC top query target)
   {
     slug: "b2b-roas-benchmarks-qualified-appointment-generation",
-    seoTitle: "B2B ROAS Benchmarks & Appointment Economics (2026)",
+    seoTitle: "B2B ROAS Benchmarks & Appointment Economics",
     title: "B2B ROAS Benchmarks & Qualified Appointment Generation: How High-Ticket Offers Hit 4x–7x ROAS",
-    description: "Discover real B2B ROAS benchmarks for high-ticket coaching, consulting, and SaaS. Learn how to calculate customer acquisition costs, shorten sales cycles, and scale qualified appointment generation.",
+    description: "Real B2B ROAS benchmarks for coaching, consulting, and SaaS. Master customer acquisition costs, shorten sales cycles, and scale to 50+ booked calls.",
     publishedAt: "2026-10-30",
     updatedAt: "2026-10-30",
     readTime: "14 min read",
@@ -196,9 +196,9 @@ export const blogPosts: BlogPost[] = [
   // 29 OCT 2026 — commercial-intent pillar: "b2b appointment setting vs in-house sdr"
   {
     slug: "b2b-appointment-setting-vs-in-house-sdr-teams",
-    seoTitle: "B2B Appointment Setting vs In-House SDR Teams (2026 Guide)",
+    seoTitle: "B2B Appointment Setting vs In-House SDR Teams",
     title: "B2B Appointment Setting vs In-House SDR Teams: The 2026 Cost, Performance & ROI Breakdown",
-    description: "Should you hire a B2B appointment setting agency or build an in-house SDR sales team? Compare fully loaded salaries, ramp time, tech stack costs, speed-to-lead and ROI for high-ticket growth.",
+    description: "Compare fully loaded SDR salaries ($85K-$120K) vs done-for-you appointment setting. Review ramp time, tech stack costs, and pipeline ROI.",
     publishedAt: "2026-10-29",
     updatedAt: "2026-10-29",
     readTime: "12 min read",
@@ -347,9 +347,9 @@ export const blogPosts: BlogPost[] = [
   // 27 OCT 2026 — commercial-intent pillar: "lead generation agency cost"
   {
     slug: "how-much-does-a-lead-generation-agency-cost",
-    seoTitle: "How Much Does a Lead Generation Agency Cost in 2026?",
+    seoTitle: "How Much Does a Lead Gen Agency Cost in 2026?",
     title: "How Much Does a Lead Generation Agency Cost in 2026? Pricing Models, Benchmarks & What You Actually Get",
-    description: "Lead generation agency pricing explained: monthly retainers, pay-per-lead, pay-per-appointment and performance models, with real 2026 cost benchmarks for high-ticket coaches, consultants and B2B agencies.",
+    description: "Lead generation agency pricing explained: retainers, pay-per-call, and performance models with real 2026 benchmarks for high-ticket businesses.",
     publishedAt: "2026-10-27",
     updatedAt: "2026-10-27",
     readTime: "11 min read",
@@ -532,9 +532,9 @@ export const blogPosts: BlogPost[] = [
   // 27 OCT 2026 — commercial-intent pillar: "facebook ads agency"
   {
     slug: "facebook-ads-agency-vs-in-house-media-buyer",
-    seoTitle: "Facebook Ads Agency vs In-House Media Buyer (2026 Guide)",
+    seoTitle: "Facebook Ads Agency vs In-House Media Buyer",
     title: "Facebook Ads Agency vs In-House Media Buyer: Which Is Right for a High-Ticket Business in 2026?",
-    description: "Should you hire a Facebook ads agency or an in-house media buyer? Compare true costs, speed to results, creative capacity and risk for high-ticket coaches, consultants and B2B agencies.",
+    description: "Hire a Facebook ads agency or in-house media buyer? Compare true costs ($90K-$150K salary), speed to results, and creative capacity for B2B offers.",
     publishedAt: "2026-10-27",
     updatedAt: "2026-10-27",
     readTime: "10 min read",
@@ -697,9 +697,9 @@ export const blogPosts: BlogPost[] = [
   // 1) 26 OCT 2026
   {
     slug: "high-ticket-sales-how-to-get-high-ticket-clients",
-    seoTitle: "High Ticket Sales: How to Get High-Ticket Clients (2026)",
+    seoTitle: "High Ticket Sales: How to Get Clients",
     title: "High Ticket Sales: How to Get High-Ticket Clients in 2026 (The Complete Funnel & Meta Ads Playbook)",
-    description: "Master high ticket sales in 2026: how to attract and close $3,000–$25,000 clients using targeted Meta ads, automated qualification funnels, and speed-to-lead nurture.",
+    description: "Master high ticket sales: attract and close $3,000–$25,000 clients using targeted Meta ads, automated qualification funnels, and speed-to-lead nurture.",
     publishedAt: "2026-10-26",
     updatedAt: "2026-10-26",
     readTime: "15 min read",
@@ -924,9 +924,9 @@ export const blogPosts: BlogPost[] = [
   // 2) 23 OCT 2026
   {
     slug: "meta-ads-for-high-ticket-b2b-broad-targeting",
-    seoTitle: "Meta Ads for High-Ticket B2B: Broad vs Lookalike Targeting",
+    seoTitle: "Meta Ads for High-Ticket B2B: Broad Targeting",
     title: "Meta Ads for High-Ticket B2B: Why Broad Creative Targeting Outperforms Lookalikes",
-    description: "How modern AI machine-learning algorithms on Meta have transformed B2B ad buying: why narrow lookalike audiences fail and how creative-as-targeting attracts enterprise decision-makers.",
+    description: "Modern AI machine learning on Meta: why lookalikes fail and how broad creative-as-targeting attracts enterprise decision-makers at lower CPMs.",
     publishedAt: "2026-10-23",
     updatedAt: "2026-10-23",
     readTime: "10 min read",
@@ -1051,9 +1051,9 @@ export const blogPosts: BlogPost[] = [
   // 3) 21 OCT 2026
   {
     slug: "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition",
-    seoTitle: "VSL Funnel Blueprint 2026: Book 50+ Qualified Calls a Month",
+    seoTitle: "VSL Funnel Blueprint 2026: Book 50+ Calls",
     title: "The 2026 VSL Funnel Blueprint: How High-Ticket Offers Book 50+ Qualified Calls a Month",
-    description: "Discover why traditional 90-minute webinars are dead and how concise 12-minute Video Sales Letter (VSL) funnels with automated qualification filters convert at 14–18% into booked sales appointments.",
+    description: "Replace 90-minute webinars with concise 12-minute VSL funnels and qualification filters converting at 14–18% into booked sales appointments.",
     publishedAt: "2026-10-21",
     updatedAt: "2026-10-21",
     readTime: "12 min read",
@@ -1170,9 +1170,9 @@ export const blogPosts: BlogPost[] = [
   // 4) 19 OCT 2026
   {
     slug: "high-ticket-sales-training-framework",
-    seoTitle: "High Ticket Sales Training: Closer & Qualification Framework",
+    seoTitle: "High Ticket Sales Training & Framework",
     title: "High Ticket Sales Training: The Closer & Qualification Framework That Doubles Win Rates",
-    description: "Elite high ticket sales training for agency owners and B2B closers: discover the pre-call indoctrination architecture, objection handling matrix, and qualification scripts that double call-to-close rates.",
+    description: "Elite sales training for B2B closers: discover the pre-call indoctrination architecture, objection matrix, and scripts that double win rates to 25–35%.",
     publishedAt: "2026-10-19",
     updatedAt: "2026-10-19",
     readTime: "14 min read",
@@ -1308,9 +1308,9 @@ export const blogPosts: BlogPost[] = [
   // Restored evergreen guides (originally published Sep–Oct 2026)
   {
     slug: "cold-outreach-vs-paid-traffic-high-ticket-b2b",
-    seoTitle: "Cold Outreach vs Paid Traffic for High-Ticket B2B Offers",
+    seoTitle: "Cold Outreach vs Paid Traffic for B2B",
     title: "Cold Outreach vs. Paid Traffic: Which Scales Faster for $50K+/Month B2B Service Providers?",
-    description: "An empirical comparison between outbound cold email/LinkedIn messaging and inbound Meta paid traffic funnels for scaling high-ticket consulting and agency offers to $100K+ monthly recurring revenue.",
+    description: "Compare outbound cold email vs inbound Meta paid traffic funnels for scaling high-ticket consulting and agency offers to $100K+ monthly revenue.",
     publishedAt: "2026-10-10",
     updatedAt: "2026-10-21",
     readTime: "7 min read",
@@ -1410,9 +1410,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "automated-lead-qualification-system-high-ticket",
-    seoTitle: "Automated Lead Qualification System for High-Ticket Offers",
+    seoTitle: "Automated Lead Qualification System for B2B",
     title: "How to Build an Automated Lead Qualification Filter to Eliminate Unqualified Calls",
-    description: "Learn the exact conditional logic questions, deposit mechanisms, and pre-call authority sequences that filter out freebie-seekers and boost sales call show-up rates to over 85%.",
+    description: "Build conditional logic questions, deposit mechanisms, and pre-call sequences that filter freebie-seekers and boost show-up rates past 85%.",
     publishedAt: "2026-10-05",
     updatedAt: "2026-10-21",
     readTime: "9 min read",
@@ -1517,9 +1517,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "b2b-client-acquisition-cost-cac-benchmarks-2026",
-    seoTitle: "B2B Client Acquisition Cost (CAC) Benchmarks for 2026",
+    seoTitle: "B2B Client Acquisition Cost (CAC) Benchmarks",
     title: "High-Ticket B2B CAC Benchmarks (2026): What Elite Agencies and Consultants Pay per Deal",
-    description: "Real-world unit economics, cost-per-acquisition benchmarks, and LTV-to-CAC ratios across high-ticket coaching programs, advisory firms, and B2B growth agencies scaling to 8-figures.",
+    description: "Real-world unit economics, CAC benchmarks, and LTV-to-CAC ratios across high-ticket coaching programs and B2B growth agencies scaling to 8-figures.",
     publishedAt: "2026-09-28",
     updatedAt: "2026-10-21",
     readTime: "9 min read",
@@ -1620,9 +1620,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ai-whatsapp-lead-nurture-pipeline-high-ticket",
-    seoTitle: "AI WhatsApp Lead Nurture Pipeline for High-Ticket Offers",
+    seoTitle: "AI WhatsApp Lead Nurture for High-Ticket Offers",
     title: "The Multi-Channel Speed-to-Lead Protocol: Booking 35% More High-Ticket Calls via Automated WhatsApp Nurture",
-    description: "Why 5-minute lead response times determine call show-up rates and how intelligent automated WhatsApp & SMS workflows warm up cold prospects before sales reps jump on Zoom.",
+    description: "Discover why sub-5-minute lead response times boost call show-up rates to 88%+ using automated WhatsApp and SMS workflows for B2B offers.",
     publishedAt: "2026-09-22",
     updatedAt: "2026-10-21",
     readTime: "8 min read",

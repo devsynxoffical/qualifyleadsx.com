@@ -7,7 +7,9 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
-import { blogPosts, getBlogPost } from "@/lib/blog-data";
+import { blogPosts, getBlogPost, categorySlug } from "@/lib/blog-data";
+import { RichText, plainText } from "@/components/blog/RichText";
+import { founder, publisherOrg, imageObject, readTimeToIso, breadcrumbList, WEBSITE_ID } from "@/lib/schema";
 import { site } from "@/lib/site";
 import {
   Clock,
@@ -94,74 +96,76 @@ export default async function BlogPostPage({ params }: Props) {
     ...blogPosts.filter((p) => p.slug !== post.slug && p.category !== post.category),
   ].slice(0, 3);
 
+  const coverImage = imageObject(post.coverImage, `${postUrl}#primaryimage`);
+  const bodyText = [
+    post.content.intro,
+    ...post.content.sections.flatMap((sec) => [sec.heading, ...sec.body, ...(sec.bulletList ?? [])]),
+    post.content.conclusion,
+  ]
+    .map(plainText)
+    .join(" ");
+
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": postUrl,
+    url: postUrl,
+    name: post.seoTitle ?? post.title,
+    description: post.description,
+    inLanguage: "en-US",
+    isPartOf: { "@id": WEBSITE_ID },
+    primaryImageOfPage: { "@id": `${postUrl}#primaryimage` },
+    breadcrumb: { "@id": `${postUrl}#breadcrumb` },
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt,
+    potentialAction: { "@type": "ReadAction", target: [postUrl] },
+  };
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "@id": `${postUrl}#article`,
-    headline: post.title,
+    headline: post.seoTitle ?? post.title,
+    alternativeHeadline: post.title,
     inLanguage: "en-US",
     isPartOf: { "@id": `${site.url}/blog#blog` },
     description: post.description,
     url: postUrl,
     datePublished: post.publishedAt,
     dateModified: post.updatedAt,
-    mainEntityOfPage: postUrl,
-    author: {
-      "@type": "Organization",
-      name: post.author.name,
-      url: site.url,
-    },
-    publisher: {
-      "@type": "Organization",
-      "@id": `${site.url}/#organization`,
-      name: site.name,
-      url: site.url,
-      logo: {
-        "@type": "ImageObject",
-        url: `${site.url}/images/qualified-leadsx.webp`,
-      },
-    },
-    image: `${site.url}${post.coverImage}`,
-    articleSection: post.category,
-    wordCount: [
-      post.content.intro,
-      ...post.content.sections.flatMap((sec) => [sec.heading, ...sec.body, ...(sec.bulletList ?? [])]),
-      post.content.conclusion,
-    ]
-      .join(" ")
-      .split(/\s+/)
-      .filter(Boolean).length,
-    keywords: post.tags.join(", "),
-  };
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
+    mainEntityOfPage: { "@id": postUrl },
+    author: [
+      founder,
       {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: site.url,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Blog",
-        item: `${site.url}/blog`,
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: post.title,
-        item: postUrl,
+        "@type": "Organization",
+        name: post.author.name,
+        url: site.url,
       },
     ],
+    publisher: publisherOrg,
+    image: [coverImage, imageObject("/opengraph-image")],
+    thumbnailUrl: coverImage.url,
+    articleSection: post.category,
+    keywords: post.tags.join(", "),
+    about: post.tags.slice(0, 4).map((t) => ({ "@type": "Thing", name: t })),
+    timeRequired: readTimeToIso(post.readTime),
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".aeo-question", ".aeo-answer"],
+    },
+    wordCount: bodyText.split(/\s+/).filter(Boolean).length,
   };
+
+  const breadcrumbSchema = breadcrumbList(`${postUrl}#breadcrumb`, [
+    { name: "Blog", url: "/blog" },
+    { name: post.category, url: `/blog/category/${categorySlug(post.category)}` },
+    { name: post.seoTitle ?? post.title, url: postUrl },
+  ]);
 
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${postUrl}#faq`,
     mainEntity: post.content.faqs.map((faq) => ({
       "@type": "Question",
       name: faq.q,
@@ -174,6 +178,10 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <main id="main" className="min-h-screen bg-ink text-fog">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -206,9 +214,12 @@ export default async function BlogPostPage({ params }: Props) {
               Blog
             </Link>
             <ChevronRight className="w-3.5 h-3.5" />
-            <span className="text-mist truncate max-w-[200px] sm:max-w-none">
+            <Link
+              href={`/blog/category/${categorySlug(post.category)}`}
+              className="text-mist truncate max-w-[200px] sm:max-w-none hover:text-lime transition-colors"
+            >
               {post.category}
-            </span>
+            </Link>
           </nav>
 
           {/* Meta details */}
@@ -285,10 +296,10 @@ export default async function BlogPostPage({ params }: Props) {
                   <span className="h-2 w-2 rounded-full bg-lime animate-pulse" />
                   <span>AI Fast Answer & Direct Summary (AEO / GEO)</span>
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold font-heading text-fog mb-3">
+                <h2 className="aeo-question text-xl sm:text-2xl font-bold font-heading text-fog mb-3">
                   {post.aeoSummary.question}
                 </h2>
-                <p className="text-base text-mist leading-relaxed font-normal">
+                <p className="aeo-answer text-base text-mist leading-relaxed font-normal">
                   {post.aeoSummary.answer}
                 </p>
                 {post.aeoSummary.bulletPoints && (
@@ -305,7 +316,7 @@ export default async function BlogPostPage({ params }: Props) {
 
               {/* Lead Intro Paragraph */}
               <div className="max-w-none text-lg sm:text-xl leading-relaxed font-normal mb-10 border-l-2 border-lime/50 pl-5 text-fog">
-                <p>{post.content.intro}</p>
+                <p><RichText text={post.content.intro} /></p>
               </div>
 
               {/* Mid-Article Architecture Diagram Graphic */}
@@ -347,7 +358,7 @@ export default async function BlogPostPage({ params }: Props) {
 
                     <div className="mt-5 space-y-4 text-base sm:text-lg leading-relaxed text-mist font-normal">
                       {section.body.map((para, pIdx) => (
-                        <p key={pIdx}>{para}</p>
+                        <p key={pIdx}><RichText text={para} /></p>
                       ))}
                     </div>
 
@@ -358,7 +369,7 @@ export default async function BlogPostPage({ params }: Props) {
                           {section.calloutBox.title}
                         </div>
                         <p className="text-sm sm:text-base text-mist leading-relaxed font-normal">
-                          {section.calloutBox.content}
+                          <RichText text={section.calloutBox.content} />
                         </p>
                       </div>
                     )}
@@ -369,7 +380,7 @@ export default async function BlogPostPage({ params }: Props) {
                         {section.bulletList.map((item, bIdx) => (
                           <li key={bIdx} className="flex items-start gap-3 text-sm sm:text-base text-mist leading-relaxed font-normal">
                             <CheckCircle2 className="w-5 h-5 text-lime shrink-0 mt-0.5" />
-                            <span>{item}</span>
+                            <span><RichText text={item} /></span>
                           </li>
                         ))}
                       </ul>
@@ -397,7 +408,7 @@ export default async function BlogPostPage({ params }: Props) {
                   Strategic Conclusion
                 </h3>
                 <p className="text-base text-mist leading-relaxed font-normal">
-                  {post.content.conclusion}
+                  <RichText text={post.content.conclusion} />
                 </p>
                 <div className="mt-8 flex flex-wrap items-center gap-4">
                   <Button href="/book-your-call" variant="primary" size="lg">

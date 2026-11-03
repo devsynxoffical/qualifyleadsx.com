@@ -12,6 +12,7 @@ import {
   RefreshCw,
 } from "lucide-react";
 import { site } from "@/lib/site";
+import { founder, publisherOrg, imageObject, youtubeVideo, faqPage, webPageNode, CONTENT_LAUNCH_DATE, SITE_LAST_MODIFIED, WEBSITE_ID } from "@/lib/schema";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { VSL } from "@/components/sections/VSL";
@@ -140,9 +141,52 @@ import { Testimonials } from "@/components/sections/Testimonials";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export default function HiddenFacebookInterestPage() {
+  const pageUrl = `${site.url}/mastermind/hidden-facebook-interest`;
+  const breakdownWebPage = webPageNode({
+    path: "/mastermind/hidden-facebook-interest",
+    name: "Hidden Facebook Interest Targeting Breakdown",
+    description: "The hidden Graph API interest mining, creative rotation and spend escalation framework behind 300 to 500 booked strategy calls.",
+    dateModified: SITE_LAST_MODIFIED,
+  });
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${pageUrl}#article`,
+    headline: "Hidden Facebook Interest Targeting Breakdown",
+    description: "The hidden Graph API interest mining, creative rotation and spend escalation framework behind 300 to 500 booked strategy calls.",
+    url: pageUrl,
+    mainEntityOfPage: { "@id": `${pageUrl}#webpage` },
+    isPartOf: { "@id": WEBSITE_ID },
+    inLanguage: "en-US",
+    articleSection: "Mastermind Case Study Breakdown",
+    datePublished: CONTENT_LAUNCH_DATE,
+    dateModified: SITE_LAST_MODIFIED,
+    author: founder,
+    publisher: publisherOrg,
+    image: [imageObject("/opengraph-image")],
+    video: youtubeVideo({
+      videoId: "jjq9-FSD4iA",
+      name: "Hidden Facebook Interest Targeting Breakdown",
+      description: "The hidden Graph API interest mining, creative rotation and spend escalation framework behind 300 to 500 booked strategy calls.",
+      pageUrl,
+    }),
+  };
+
   return (
     <main id="main" className="flex min-h-screen flex-col bg-[#040c07] text-white selection:bg-lime/30 selection:text-lime">
       <Nav />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breakdownWebPage) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage(`${pageUrl}#faq`, faqs)) }}
+      />
       <BreadcrumbJsonLd
         items={[
           { name: "Mastermind", url: "/mastermind" },

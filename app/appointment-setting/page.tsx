@@ -4,9 +4,11 @@ import Image from "next/image";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
+import { FurtherReading } from "@/components/sections/FurtherReading";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
+import { orgRef, serviceExtras, webPageNode } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import {
   CheckCircle2,
@@ -101,40 +103,46 @@ export default function AppointmentSettingPage() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    ...serviceExtras("/appointment-setting", "Sales teams that want qualified, pre-booked strategy calls with sub-5-minute follow-up instead of raw leads."),
     name: "Automated B2B Appointment Setting & Speed-to-Lead Follow-Up",
-    provider: {
-      "@type": "Organization",
-      name: site.name,
-      url: site.url,
-      logo: `${site.url}/icon.png`,
-    },
     serviceType: "B2B Appointment Setting & Automated Qualification",
     description:
       "Done-for-you automated appointment setting engine with sub-5-minute speed to lead, conditional qualification filtration, and pre-call video indoctrination.",
-    areaServed: ["United States", "United Kingdom", "Canada", "Australia"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "High-Ticket Appointment Setting Infrastructure",
       itemListElement: [
         {
           "@type": "Offer",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          url: `${site.url}/book-your-call`,
           itemOffered: {
             "@type": "Service",
             name: "Sub-5-Minute Speed-to-Lead Automated Workflow",
+            provider: orgRef,
           },
         },
         {
           "@type": "Offer",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          url: `${site.url}/book-your-call`,
           itemOffered: {
             "@type": "Service",
             name: "4-Tier Conditional Lead Qualification Gate",
+            provider: orgRef,
           },
         },
         {
           "@type": "Offer",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          url: `${site.url}/book-your-call`,
           itemOffered: {
             "@type": "Service",
             name: "Omnichannel WhatsApp & SMS Indoctrination Architecture",
+            provider: orgRef,
           },
         },
       ],
@@ -159,6 +167,19 @@ export default function AppointmentSettingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            webPageNode({
+              path: "/appointment-setting",
+              name: serviceSchema.name,
+              description: serviceSchema.description,
+              speakable: true,
+            })
+          ),
+        }}
       />
       <script
         type="application/ld+json"
@@ -213,7 +234,7 @@ export default function AppointmentSettingPage() {
               <span className="h-2.5 w-2.5 rounded-full bg-lime animate-pulse" />
               <span>AEO Executive Summary: How It Works</span>
             </div>
-            <p className="text-sm sm:text-base leading-relaxed text-mist">
+            <p className="aeo-answer text-sm sm:text-base leading-relaxed text-mist">
               <strong>QualifiedLeadsX™</strong> installs an automated B2B <strong>appointment setting</strong> infrastructure engineered for high-ticket coaches, consultants, and growth agencies. Combining 4-tier conditional qualification surveys with sub-5-minute multichannel <strong>speed to lead</strong> across WhatsApp, SMS, and email, our system eliminates tire-kickers and books 30–50 sales-ready appointments every month with an 88%+ show-up rate.
             </p>
           </div>
@@ -710,6 +731,10 @@ export default function AppointmentSettingPage() {
       </section>
 
       {/* Bottom CTA Banner */}
+      <FurtherReading
+        title="Appointment setting and qualification guides"
+        slugs={["b2b-appointment-setting-vs-in-house-sdr-teams", "ai-whatsapp-lead-nurture-pipeline-high-ticket", "automated-lead-qualification-system-high-ticket", "high-ticket-sales-training-framework"]}
+      />
       <CTABanner
         eyebrow="Done-For-You Appointment Setting Installation"
         title={

@@ -4,9 +4,11 @@ import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
+import { FurtherReading } from "@/components/sections/FurtherReading";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
+import { serviceExtras, webPageNode } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import {
   CheckCircle2,
@@ -66,16 +68,11 @@ export default function CoachesLandingPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
+    ...serviceExtras("/for/coaches", "High-ticket coaches selling $3,000 to $25,000 programs who want a predictable flow of qualified calls."),
     name: "High-Ticket Coaching Client Acquisition System",
-    provider: {
-      "@type": "Organization",
-      name: site.name,
-      url: site.url,
-    },
     serviceType: "Lead Generation & Client Acquisition Funnels",
     description:
       "Done-for-you client acquisition funnel installation for high-ticket coaches scaling past $50K–$100K/month.",
-    areaServed: "Global",
   };
 
   const faqSchema = {
@@ -96,6 +93,14 @@ export default function CoachesLandingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            webPageNode({ path: "/for/coaches", name: jsonLd.name, description: jsonLd.description })
+          ),
+        }}
       />
       <script
         type="application/ld+json"
@@ -475,6 +480,10 @@ export default function CoachesLandingPage() {
         </div>
       </section>
 
+      <FurtherReading
+        title="Guides for high-ticket coaches"
+        slugs={["high-ticket-sales-how-to-get-high-ticket-clients", "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition", "how-much-does-a-lead-generation-agency-cost", "automated-lead-qualification-system-high-ticket"]}
+      />
       <CTABanner
         eyebrow="Coaching Growth Guarantee"
         title={

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
+import { FurtherReading } from "@/components/sections/FurtherReading";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { CaseStudiesGallery } from "@/components/sections/CaseStudiesGallery";
@@ -10,6 +11,8 @@ import { Guarantee } from "@/components/sections/Guarantee";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { ShieldCheck, TrendingUp, Users, Video } from "lucide-react";
 import { site } from "@/lib/site";
+import { caseStudiesData } from "@/lib/case-studies-data";
+import { hostedVideo, publisherOrg, WEBSITE_ID } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
@@ -57,11 +60,28 @@ export default function CaseStudiesPage() {
     description:
       "Explore 125+ verified scaling case studies, video breakdowns, Meta Ads ad account dashboards, and client revenue proof across 30+ high-ticket industries.",
     url: `${site.url}/case-studies`,
-    publisher: {
-      "@type": "Organization",
-      name: site.name,
-      url: site.url,
-      logo: `${site.url}/icon.png`,
+    "@id": `${site.url}/case-studies`,
+    inLanguage: "en-US",
+    isPartOf: { "@id": WEBSITE_ID },
+    breadcrumb: { "@id": `${site.url}/case-studies#breadcrumb` },
+    publisher: publisherOrg,
+    mainEntity: {
+      "@type": "ItemList",
+      name: "Client case study video breakdowns",
+      numberOfItems: caseStudiesData.filter((c) => c.type === "video" && c.thumbnailSrc).length,
+      itemListElement: caseStudiesData
+        .filter((c) => c.type === "video" && c.thumbnailSrc)
+        .map((c, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          item: hostedVideo({
+            name: `${c.bigNumber} ${c.bigNumberLabel}: ${c.category}`,
+            description: c.description.replace(/\s+/g, " ").trim().slice(0, 300),
+            contentUrl: c.mediaSrc,
+            thumbnailUrl: c.thumbnailSrc as string,
+            pageUrl: `${site.url}/case-studies#${c.id}`,
+          }),
+        })),
     },
   };
 
@@ -139,6 +159,10 @@ export default function CaseStudiesPage() {
       </Section>
 
       {/* Bottom CTA Banner */}
+      <FurtherReading
+        title="The playbooks behind these results"
+        slugs={["b2b-roas-benchmarks-qualified-appointment-generation", "b2b-client-acquisition-cost-cac-benchmarks-2026", "high-ticket-sales-how-to-get-high-ticket-clients", "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition"]}
+      />
       <CTABanner
         compact={false}
         eyebrow="Scale Your Acquisition"

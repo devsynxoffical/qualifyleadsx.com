@@ -19,6 +19,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { site } from "@/lib/site";
+import { founder, imageObject, FOUNDER_ID, ORG_ID, WEBSITE_ID } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: { absolute: "About QualifiedLeadsX Client Acquisition Agency" },
@@ -82,16 +83,21 @@ const leadershipRoles = [
 export default function AboutPage() {
   const personJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": `${site.url}/about#founder`,
-    name: "Gaurav",
-    jobTitle: "Founder",
-    worksFor: { "@id": `${site.url}/#organization` },
+    ...founder,
+  };
+
+  const profilePageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${site.url}/about`,
     url: `${site.url}/about`,
-    image: `${site.url}/og.png`,
-    description: "Founder of QualifiedLeadsX with 12+ years in paid acquisition and $50M+ in Meta ads managed.",
-    knowsAbout: ["Meta ads", "Client acquisition", "High ticket sales", "Agency growth"],
-    sameAs: ["https://www.linkedin.com/in/gauravecom/"],
+    name: "About QualifiedLeadsX",
+    inLanguage: "en-US",
+    isPartOf: { "@id": WEBSITE_ID },
+    mainEntity: { "@id": FOUNDER_ID },
+    about: { "@id": ORG_ID },
+    dateModified: "2026-10-30",
+    primaryImageOfPage: imageObject("/images/about-command-center.jpg"),
   };
 
   const breadcrumbJsonLd = {
@@ -118,6 +124,10 @@ export default function AboutPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }}
       />
       <script
         type="application/ld+json"

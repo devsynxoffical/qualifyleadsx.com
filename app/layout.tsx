@@ -40,6 +40,9 @@ export const metadata: Metadata = {
   publisher: "Ecom Expertz LLC®",
   alternates: {
     canonical: "/",
+    types: {
+      "application/rss+xml": [{ url: "/feed.xml", title: "QualifiedLeadsX Blog RSS" }],
+    },
   },
   openGraph: {
     type: "website",
@@ -98,6 +101,12 @@ export default function RootLayout({
         className={`${inter.variable} ${interTight.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="QualifiedLeadsX Blog RSS"
+          href={`${site.url}/feed.xml`}
+        />
         <a href="#main" className="skip-link">
           Skip to content
         </a>

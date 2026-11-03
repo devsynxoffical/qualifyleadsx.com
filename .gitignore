@@ -49,3 +49,7 @@ firebase-debug.log
 # Documentation & PDF plans
 *.pdf
 !reports/*.pdf
+
+# Google service account keys (never commit)
+*service-account*.json
+*google-indexer*.json

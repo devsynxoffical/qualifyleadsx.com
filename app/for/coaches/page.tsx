@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
+import { FurtherReading } from "@/components/sections/FurtherReading";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
@@ -475,6 +476,10 @@ export default function CoachesLandingPage() {
         </div>
       </section>
 
+      <FurtherReading
+        title="Guides for high-ticket coaches"
+        slugs={["high-ticket-sales-how-to-get-high-ticket-clients", "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition", "how-much-does-a-lead-generation-agency-cost", "automated-lead-qualification-system-high-ticket"]}
+      />
       <CTABanner
         eyebrow="Coaching Growth Guarantee"
         title={

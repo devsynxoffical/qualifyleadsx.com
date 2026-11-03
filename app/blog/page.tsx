@@ -3,7 +3,7 @@ import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
-import { blogPosts } from "@/lib/blog-data";
+import { blogPosts, blogCategories } from "@/lib/blog-data";
 import { BlogExplorer } from "@/components/blog/BlogExplorer";
 import { site } from "@/lib/site";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
@@ -56,6 +56,12 @@ export default function BlogHubPage() {
       url: site.url,
       logo: `${site.url}/images/qualified-leadsx.webp`,
     },
+    hasPart: blogCategories.map((c) => ({
+      "@type": "CollectionPage",
+      "@id": `${site.url}/blog/category/${c.slug}`,
+      name: c.title,
+      url: `${site.url}/blog/category/${c.slug}`,
+    })),
     blogPost: blogPosts.map((post) => ({
       "@type": "BlogPosting",
       headline: post.title,
@@ -84,7 +90,10 @@ export default function BlogHubPage() {
       <Nav />
 
       {/* Interactive Category Filter & Articles Explorer */}
-      <BlogExplorer initialPosts={blogPosts} />
+      <BlogExplorer
+        initialPosts={blogPosts}
+        categoryLinks={blogCategories.map((c) => ({ name: c.name, slug: c.slug }))}
+      />
 
       <CTABanner
         eyebrow="Done-For-You Acquisition Architecture"

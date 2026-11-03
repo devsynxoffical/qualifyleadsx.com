@@ -8,6 +8,7 @@ import { Clock, Calendar, Sparkles, BookOpen, Filter, ArrowRight } from "lucide-
 
 interface BlogExplorerProps {
   initialPosts: BlogPost[];
+  categoryLinks?: { name: string; slug: string }[];
 }
 
 const FIXED_CATEGORIES = [
@@ -18,7 +19,7 @@ const FIXED_CATEGORIES = [
   "Scaling & Economics",
 ];
 
-export function BlogExplorer({ initialPosts }: BlogExplorerProps) {
+export function BlogExplorer({ initialPosts, categoryLinks = [] }: BlogExplorerProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>("All Articles");
 
   // Dynamically include any new categories added to future blogs while preserving standard order
@@ -80,6 +81,20 @@ export function BlogExplorer({ initialPosts }: BlogExplorerProps) {
               );
             })}
           </div>
+
+          {categoryLinks.length > 0 && (
+            <nav aria-label="Browse by category" className="mt-4 text-[11px] font-mono text-dim">
+              <span className="mr-2">Browse by category:</span>
+              {categoryLinks.map((c, i) => (
+                <span key={c.slug}>
+                  <Link href={`/blog/category/${c.slug}`} className="text-mist underline-offset-4 hover:text-lime hover:underline">
+                    {c.name}
+                  </Link>
+                  {i < categoryLinks.length - 1 && <span className="mx-1.5">·</span>}
+                </span>
+              ))}
+            </nav>
+          )}
 
           {/* AEO Fast Answer / Overview Card - Centered with balanced margins */}
           <div className="mt-8 rounded-2xl border border-lime/30 bg-panel/80 p-6 sm:p-7 backdrop-blur-md max-w-3xl mx-auto text-left shadow-xl shadow-black/40">

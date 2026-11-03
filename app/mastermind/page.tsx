@@ -14,6 +14,7 @@ import {
 import { site } from "@/lib/site";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { Footer } from "@/components/layout/Footer";
+import { FurtherReading } from "@/components/sections/FurtherReading";
 import { Nav } from "@/components/layout/Nav";
 import { VSL } from "@/components/sections/VSL";
 import { Section, SectionHeading } from "@/components/ui/Section";
@@ -432,6 +433,10 @@ export default function MastermindPage() {
         </div>
       </section>
 
+      <FurtherReading
+        title="Free guides before you join"
+        slugs={["meta-ads-for-high-ticket-b2b-broad-targeting", "b2b-roas-benchmarks-qualified-appointment-generation", "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition", "high-ticket-sales-training-framework"]}
+      />
       <Footer />
     </main>
   );

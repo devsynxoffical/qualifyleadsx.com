@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
-import { blogPosts } from "@/lib/blog-data";
+import { blogPosts, blogCategories, getPostsByCategory } from "@/lib/blog-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Use today's date for freshly updated pages to notify Googlebot of new content/visuals
@@ -127,5 +127,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     images: [`${site.url}${post.coverImage}`],
   }));
 
-  return [...coreRoutes, ...blogRoutes];
+  const categoryRoutes: MetadataRoute.Sitemap = blogCategories.map((c) => {
+    const newest = getPostsByCategory(c.name)
+      .map((p) => p.updatedAt)
+      .sort()
+      .pop();
+    return {
+      url: `${site.url}/blog/category/${c.slug}`,
+      lastModified: newest ? new Date(newest) : now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    };
+  });
+
+  return [...coreRoutes, ...categoryRoutes, ...blogRoutes];
 }

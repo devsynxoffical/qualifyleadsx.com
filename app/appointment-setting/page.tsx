@@ -4,6 +4,7 @@ import Image from "next/image";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
+import { FurtherReading } from "@/components/sections/FurtherReading";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
@@ -106,7 +107,12 @@ export default function AppointmentSettingPage() {
       "@type": "Organization",
       name: site.name,
       url: site.url,
-      logo: `${site.url}/icon.png`,
+      logo: {
+        "@type": "ImageObject",
+        url: `${site.url}/images/qualified-leadsx.webp`,
+        width: 1000,
+        height: 444,
+      },
     },
     serviceType: "B2B Appointment Setting & Automated Qualification",
     description:
@@ -710,6 +716,10 @@ export default function AppointmentSettingPage() {
       </section>
 
       {/* Bottom CTA Banner */}
+      <FurtherReading
+        title="Appointment setting and qualification guides"
+        slugs={["b2b-appointment-setting-vs-in-house-sdr-teams", "ai-whatsapp-lead-nurture-pipeline-high-ticket", "automated-lead-qualification-system-high-ticket", "high-ticket-sales-training-framework"]}
+      />
       <CTABanner
         eyebrow="Done-For-You Appointment Setting Installation"
         title={

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
+import { FurtherReading } from "@/components/sections/FurtherReading";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { CaseStudiesGallery } from "@/components/sections/CaseStudiesGallery";
@@ -61,7 +62,12 @@ export default function CaseStudiesPage() {
       "@type": "Organization",
       name: site.name,
       url: site.url,
-      logo: `${site.url}/icon.png`,
+      logo: {
+        "@type": "ImageObject",
+        url: `${site.url}/images/qualified-leadsx.webp`,
+        width: 1000,
+        height: 444,
+      },
     },
   };
 
@@ -139,6 +145,10 @@ export default function CaseStudiesPage() {
       </Section>
 
       {/* Bottom CTA Banner */}
+      <FurtherReading
+        title="The playbooks behind these results"
+        slugs={["b2b-roas-benchmarks-qualified-appointment-generation", "b2b-client-acquisition-cost-cac-benchmarks-2026", "high-ticket-sales-how-to-get-high-ticket-clients", "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition"]}
+      />
       <CTABanner
         compact={false}
         eyebrow="Scale Your Acquisition"

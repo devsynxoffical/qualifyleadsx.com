@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
+import { FurtherReading } from "@/components/sections/FurtherReading";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
@@ -289,6 +290,10 @@ export default function AgenciesLandingPage() {
         </div>
       </section>
 
+      <FurtherReading
+        title="Guides for agency owners"
+        slugs={["facebook-ads-agency-vs-in-house-media-buyer", "meta-ads-for-high-ticket-b2b-broad-targeting", "b2b-roas-benchmarks-qualified-appointment-generation", "b2b-client-acquisition-cost-cac-benchmarks-2026"]}
+      />
       <CTABanner
         eyebrow="Scale Your Agency"
         title={

@@ -35,6 +35,8 @@ export function JsonLd() {
       addressCountry: "US",
     },
     areaServed: ["US", "GB", "CA", "AU"],
+    slogan: "Done-for-you client acquisition for high-ticket offers",
+    serviceType: ["Lead Generation", "Meta Ads Management", "Appointment Setting", "Sales Funnel Development"],
     knowsAbout: [
       "Meta ads",
       "Facebook ads",

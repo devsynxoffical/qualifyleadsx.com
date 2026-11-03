@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
+import { FurtherReading } from "@/components/sections/FurtherReading";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
@@ -443,6 +444,10 @@ export default function ConsultantsLandingPage() {
         </div>
       </section>
 
+      <FurtherReading
+        title="Guides for B2B consultants"
+        slugs={["cold-outreach-vs-paid-traffic-high-ticket-b2b", "b2b-client-acquisition-cost-cac-benchmarks-2026", "b2b-appointment-setting-vs-in-house-sdr-teams", "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition"]}
+      />
       <CTABanner
         eyebrow="Consulting Growth Engine"
         title={

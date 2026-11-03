@@ -8,6 +8,7 @@ import { FurtherReading } from "@/components/sections/FurtherReading";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
+import { serviceExtras, webPageNode } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import {
   CheckCircle2,
@@ -67,16 +68,11 @@ export default function ConsultantsLandingPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
+    ...serviceExtras("/for/consultants", "B2B consultants and advisory firms replacing referrals and cold outreach with inbound qualified pipeline."),
     name: "B2B Consulting Client Acquisition System",
-    provider: {
-      "@type": "Organization",
-      name: site.name,
-      url: site.url,
-    },
     serviceType: "B2B Pipeline & Client Acquisition Funnels",
     description:
       "Automated client acquisition funnels and executive appointment booking for high-ticket consultants and advisory firms.",
-    areaServed: "Global",
   };
 
   const faqSchema = {
@@ -97,6 +93,14 @@ export default function ConsultantsLandingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            webPageNode({ path: "/for/consultants", name: jsonLd.name, description: jsonLd.description })
+          ),
+        }}
       />
       <script
         type="application/ld+json"

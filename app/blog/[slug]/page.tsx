@@ -143,7 +143,7 @@ export default async function BlogPostPage({ params }: Props) {
       },
     ],
     publisher: publisherOrg,
-    image: coverImage,
+    image: [coverImage, imageObject("/opengraph-image")],
     thumbnailUrl: coverImage.url,
     articleSection: post.category,
     keywords: post.tags.join(", "),

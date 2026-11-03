@@ -6,6 +6,7 @@ import { FurtherReading } from "@/components/sections/FurtherReading";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
+import { serviceExtras, webPageNode } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import {
   CheckCircle2,
@@ -65,16 +66,11 @@ export default function AgenciesLandingPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
+    ...serviceExtras("/for/agencies", "Marketing, creative and growth agencies scaling retainers past $50K to $100K per month."),
     name: "Agency Client Acquisition System",
-    provider: {
-      "@type": "Organization",
-      name: site.name,
-      url: site.url,
-    },
     serviceType: "Digital Agency Growth & Client Acquisition",
     description:
       "Done-for-you client acquisition funnels and appointment generation for digital, marketing, software, and creative agencies.",
-    areaServed: "Global",
   };
 
   const faqSchema = {
@@ -95,6 +91,14 @@ export default function AgenciesLandingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            webPageNode({ path: "/for/agencies", name: jsonLd.name, description: jsonLd.description })
+          ),
+        }}
       />
       <script
         type="application/ld+json"

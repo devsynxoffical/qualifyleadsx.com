@@ -8,6 +8,7 @@ import { FurtherReading } from "@/components/sections/FurtherReading";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
+import { serviceExtras, webPageNode } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import {
   CheckCircle2,
@@ -67,16 +68,11 @@ export default function CoachesLandingPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
+    ...serviceExtras("/for/coaches", "High-ticket coaches selling $3,000 to $25,000 programs who want a predictable flow of qualified calls."),
     name: "High-Ticket Coaching Client Acquisition System",
-    provider: {
-      "@type": "Organization",
-      name: site.name,
-      url: site.url,
-    },
     serviceType: "Lead Generation & Client Acquisition Funnels",
     description:
       "Done-for-you client acquisition funnel installation for high-ticket coaches scaling past $50K–$100K/month.",
-    areaServed: "Global",
   };
 
   const faqSchema = {
@@ -97,6 +93,14 @@ export default function CoachesLandingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            webPageNode({ path: "/for/coaches", name: jsonLd.name, description: jsonLd.description })
+          ),
+        }}
       />
       <script
         type="application/ld+json"

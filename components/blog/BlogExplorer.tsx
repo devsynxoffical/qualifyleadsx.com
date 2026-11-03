@@ -102,7 +102,7 @@ export function BlogExplorer({ initialPosts, categoryLinks = [] }: BlogExplorerP
               <span className="h-2 w-2 rounded-full bg-lime animate-pulse" />
               <span>AEO Executive Summary</span>
             </div>
-            <p className="text-sm sm:text-base leading-relaxed text-mist">
+            <p className="aeo-answer text-sm sm:text-base leading-relaxed text-mist">
               <strong>QualifiedLeadsX™ Insights</strong> provides actionable educational blueprints for coaches, consultants, and agencies seeking predictable $100K+/month customer acquisition. Core focus areas include modern 12-minute VSL funnels, broad Meta ad creative targeting, and automated conditional lead qualification.
             </p>
           </div>

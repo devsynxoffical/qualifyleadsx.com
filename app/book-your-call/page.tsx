@@ -5,6 +5,8 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { BookingForm } from "@/components/layout/BookingForm";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { site } from "@/lib/site";
+import { webPageNode, orgRef, TIER1_MARKETS } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Book Your Free Strategy Call",
@@ -34,8 +36,60 @@ const points = [
 ];
 
 export default function BookYourCallPage() {
+  const pageUrl = `${site.url}/book-your-call`;
+  const callSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${pageUrl}#service`,
+    name: "Free 30-Minute Strategy Call",
+    serviceType: "Client acquisition strategy consultation",
+    description:
+      "A free 30-minute audit of your offer, traffic and sales process. You leave with the exact funnel and follow-up system QualifiedLeadsX would install to fill your calendar with qualified sales calls.",
+    url: pageUrl,
+    provider: orgRef,
+    areaServed: TIER1_MARKETS.map((name) => ({ "@type": "Country", name })),
+    offers: {
+      "@type": "Offer",
+      name: "Free strategy call",
+      price: "0",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      url: pageUrl,
+      seller: orgRef,
+    },
+    potentialAction: {
+      "@type": "ReserveAction",
+      name: "Book a free strategy call",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: pageUrl,
+        actionPlatform: [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform",
+        ],
+      },
+      result: { "@type": "Reservation", name: "30-minute strategy call" },
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(callSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            webPageNode({
+              path: "/book-your-call",
+              name: "Book Your Free Strategy Call",
+              description: callSchema.description,
+            })
+          ),
+        }}
+      />
       <BreadcrumbJsonLd items={[{ name: "Book Your Free Strategy Call", url: "/book-your-call" }]} />
       <Nav />
       <main id="main" className="pt-40">

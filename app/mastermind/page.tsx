@@ -12,6 +12,7 @@ import {
   BarChart3,
 } from "lucide-react";
 import { site } from "@/lib/site";
+import { serviceExtras, webPageNode, youtubeVideo } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { Footer } from "@/components/layout/Footer";
 import { FurtherReading } from "@/components/sections/FurtherReading";
@@ -153,9 +154,66 @@ const steps = [
   },
 ];
 
+const breakdownPages = [
+  { path: "/mastermind/lto-funnel-scale", name: "How We Scaled an LTO Funnel to $847K", videoId: "Nr1WIDiWPNA" },
+  { path: "/mastermind/hidden-facebook-interest", name: "Hidden Facebook Interest Targeting Breakdown", videoId: "jjq9-FSD4iA" },
+  { path: "/mastermind/7-days-paid-trial", name: "7 Days Paid Trial Funnel Breakdown", videoId: "Hy1M7WbookU" },
+];
+
 export default function MastermindPage() {
+  const mastermindSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    ...serviceExtras("/mastermind", "Founders, agency owners and coaches already past $100K/month who want peer access, live ad account audits and scaling roadmaps."),
+    name: "QualifiedLeadsX 8-Figure Mastermind",
+    serviceType: "Business growth mastermind membership",
+    description:
+      "Private collective capped at 50 active members: bi-weekly live ad account audits, an 8-figure asset vault of VSL scripts and ad frameworks, a 24/7 operator channel, quarterly executive summits and a dedicated 1-on-1 scaling roadmap.",
+    isRelatedTo: breakdownPages.map((b) => ({ "@type": "WebPage", "@id": `${site.url}${b.path}#webpage`, url: `${site.url}${b.path}`, name: b.name })),
+    video: youtubeVideo({
+      videoId: "e5za2tPu7ZI",
+      name: "Inside the QualifiedLeadsX 8-Figure Mastermind",
+      description: "How the mastermind runs: live account audits, asset vault, operator channel and scaling roadmaps for founders past $100K/month.",
+      pageUrl: `${site.url}/mastermind`,
+    }),
+  };
+
+  const breakdownListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${site.url}/mastermind#breakdowns`,
+    name: "Mastermind case study breakdowns",
+    itemListElement: breakdownPages.map((b, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: b.name,
+      url: `${site.url}${b.path}`,
+    })),
+  };
+
   return (
     <main id="main" className="flex min-h-screen flex-col bg-ink selection:bg-lime/30 selection:text-lime">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(mastermindSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breakdownListSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            webPageNode({
+              path: "/mastermind",
+              name: "8-Figure Mastermind for Agency Owners & Coaches",
+              description:
+                "A private collective of high-ticket coaches, agency owners and B2B founders scaling past $100K to $500K+ per month, with live ad account audits, an asset vault and 1-on-1 scaling roadmaps.",
+            })
+          ),
+        }}
+      />
       <BreadcrumbJsonLd
         items={[{ name: "Mastermind", url: "/mastermind" }]}
       />

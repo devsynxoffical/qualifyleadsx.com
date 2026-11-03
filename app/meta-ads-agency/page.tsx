@@ -7,6 +7,7 @@ import { FurtherReading } from "@/components/sections/FurtherReading";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
+import { orgRef, serviceExtras, webPageNode } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import {
   CheckCircle2,
@@ -109,45 +110,46 @@ export default function MetaAdsAgencyPage() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    ...serviceExtras("/meta-ads-agency", "Businesses selling $3,000+ offers that want Meta and Instagram ads run as part of a complete acquisition system."),
     name: "Performance Meta Ads Agency for High-Ticket B2B & Coaches",
-    provider: {
-      "@type": "Organization",
-      name: site.name,
-      url: site.url,
-      logo: {
-        "@type": "ImageObject",
-        url: `${site.url}/images/qualified-leadsx.webp`,
-        width: 1000,
-        height: 444,
-      },
-    },
     serviceType: "Meta Ads Agency & Paid Social Media Buying",
     description:
       "Full-service Meta ads agency specializing in high-ticket client acquisition, VSL funnels, broad creative testing, and automated lead qualification.",
-    areaServed: ["United States", "United Kingdom", "Canada", "Australia"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Meta Advertising & Client Acquisition Solutions",
       itemListElement: [
         {
           "@type": "Offer",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          url: `${site.url}/book-your-call`,
           itemOffered: {
             "@type": "Service",
             name: "Broad Creative Meta Ads Architecture",
+            provider: orgRef,
           },
         },
         {
           "@type": "Offer",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          url: `${site.url}/book-your-call`,
           itemOffered: {
             "@type": "Service",
             name: "12-Minute VSL Funnel Production & Deployment",
+            provider: orgRef,
           },
         },
         {
           "@type": "Offer",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          url: `${site.url}/book-your-call`,
           itemOffered: {
             "@type": "Service",
             name: "Automated Lead Qualification & CRM Booking Pipeline",
+            provider: orgRef,
           },
         },
       ],
@@ -172,6 +174,19 @@ export default function MetaAdsAgencyPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            webPageNode({
+              path: "/meta-ads-agency",
+              name: serviceSchema.name,
+              description: serviceSchema.description,
+              speakable: true,
+            })
+          ),
+        }}
       />
       <script
         type="application/ld+json"
@@ -226,7 +241,7 @@ export default function MetaAdsAgencyPage() {
               <span className="h-2.5 w-2.5 rounded-full bg-lime animate-pulse" />
               <span>AEO Executive Summary: What We Do</span>
             </div>
-            <p className="text-sm sm:text-base leading-relaxed text-mist">
+            <p className="aeo-answer text-sm sm:text-base leading-relaxed text-mist">
               <strong>QualifiedLeadsX™</strong> is a specialized performance <strong>Meta ads agency</strong> that engineers end-to-end client acquisition systems for high-ticket businesses. We combine algorithmic broad creative testing across Facebook and Instagram with high-converting 12-minute VSL funnels and automated qualification filtration to predictably scale clients beyond $100K+/month.
             </p>
           </div>

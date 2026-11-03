@@ -25,8 +25,8 @@ import { UFSquareMarquee } from "@/components/sections/UFSquareMarquee";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { site } from "@/lib/site";
 import { faqs } from "@/lib/data";
-import { trainingVideos } from "@/lib/media";
-import { isoDuration, imageObject, WEBSITE_ID, ORG_ID } from "@/lib/schema";
+import { trainingVideos, testimonialVideos } from "@/lib/media";
+import { isoDuration, imageObject, hostedVideo, WEBSITE_ID, ORG_ID } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Lead Generation Agency for High-Ticket B2B",
@@ -128,6 +128,25 @@ export default function Home() {
     })),
   };
 
+  const testimonialVideoSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${site.url}/#testimonial-videos`,
+    name: "QualifiedLeadsX client video testimonials",
+    itemListElement: testimonialVideos.map((v, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: hostedVideo({
+        name: `${v.name}: ${v.result}`,
+        description: `${v.quote.replace(/[“”]/g, "")} (${v.role})`,
+        contentUrl: v.src,
+        thumbnailUrl: v.poster,
+        duration: v.duration,
+        pageUrl: `${site.url}/#testimonials`,
+      }),
+    })),
+  };
+
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -155,6 +174,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(trainingVideoSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(testimonialVideoSchema) }}
       />
       <script
         type="application/ld+json"

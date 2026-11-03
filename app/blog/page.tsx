@@ -6,6 +6,7 @@ import { CTABanner } from "@/components/ui/CTABanner";
 import { blogPosts, blogCategories } from "@/lib/blog-data";
 import { BlogExplorer } from "@/components/blog/BlogExplorer";
 import { site } from "@/lib/site";
+import { founder, imageObject, publisherOrg, webPageNode } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
@@ -50,30 +51,28 @@ export default function BlogHubPage() {
     url: `${site.url}/blog`,
     description:
       "Authoritative guides, VSL funnel breakdowns, and performance marketing strategies for high-ticket B2B businesses.",
-    publisher: {
-      "@type": "Organization",
-      name: site.name,
-      url: site.url,
-      logo: `${site.url}/images/qualified-leadsx.webp`,
-    },
+    publisher: publisherOrg,
     hasPart: blogCategories.map((c) => ({
       "@type": "CollectionPage",
       "@id": `${site.url}/blog/category/${c.slug}`,
       name: c.title,
+      description: c.description,
       url: `${site.url}/blog/category/${c.slug}`,
     })),
     blogPost: blogPosts.map((post) => ({
       "@type": "BlogPosting",
-      headline: post.title,
+      "@id": `${site.url}/blog/${post.slug}#article`,
+      headline: post.seoTitle ?? post.title,
       description: post.description,
-      image: `${site.url}${post.coverImage}`,
+      image: imageObject(post.coverImage),
       url: `${site.url}/blog/${post.slug}`,
+      mainEntityOfPage: { "@id": `${site.url}/blog/${post.slug}` },
       datePublished: post.publishedAt,
       dateModified: post.updatedAt,
-      author: {
-        "@type": "Organization",
-        name: post.author.name,
-      },
+      articleSection: post.category,
+      keywords: post.tags.join(", "),
+      author: { "@id": founder["@id"] },
+      publisher: publisherOrg,
     })),
   };
 
@@ -82,6 +81,20 @@ export default function BlogHubPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            webPageNode({
+              path: "/blog",
+              name: "Client Acquisition, VSL Funnels & Meta Ads Insights",
+              description: jsonLd.description,
+              speakable: true,
+              primaryImage: "/images/blog/vsl-funnel-blueprint.jpg",
+            })
+          ),
+        }}
       />
       <BreadcrumbJsonLd
         items={[{ name: "Blog", url: "/blog" }]}

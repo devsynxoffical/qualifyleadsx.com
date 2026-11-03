@@ -1,4 +1,5 @@
-import { site } from "@/lib/site";
+import { site, nav } from "@/lib/site";
+import { siteNavigation, TIER1_MARKETS, orgRef } from "@/lib/schema";
 
 export function JsonLd() {
   const organization = {
@@ -34,8 +35,35 @@ export function JsonLd() {
       postalCode: "82801",
       addressCountry: "US",
     },
-    areaServed: ["US", "GB", "CA", "AU"],
+    areaServed: TIER1_MARKETS.map((name) => ({ "@type": "Country", name })),
     slogan: "Done-for-you client acquisition for high-ticket offers",
+    numberOfEmployees: { "@type": "QuantitativeValue", minValue: 10, maxValue: 50 },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "QualifiedLeadsX service plans",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          name: "Meta Ads Management",
+          description:
+            "Full Meta ads campaign management: ad creative production, direct-response copy, audience segmentation, daily creative testing and ROAS optimization. Custom quote.",
+          url: `${site.url}/meta-ads-agency`,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          itemOffered: { "@type": "Service", name: "Meta Ads Management", url: `${site.url}/meta-ads-agency`, provider: orgRef },
+        },
+        {
+          "@type": "Offer",
+          name: "Full-Service Growth",
+          description:
+            "Everything in Meta Ads Management plus a custom 3 to 5 page funnel, 40 to 100+ creatives, AI follow-up, email and SMS nurture, lead qualification, CRM and calendar booking. Custom quote.",
+          url: `${site.url}/appointment-setting`,
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          itemOffered: { "@type": "Service", name: "Full-Service Client Acquisition System", url: `${site.url}/appointment-setting`, provider: orgRef },
+        },
+      ],
+    },
     serviceType: ["Lead Generation", "Meta Ads Management", "Appointment Setting", "Sales Funnel Development"],
     knowsAbout: [
       "Meta ads",
@@ -67,11 +95,17 @@ export function JsonLd() {
     inLanguage: "en-US",
   };
 
+  const navigation = siteNavigation([...nav, { label: "Book Free Strategy Call", href: "/book-your-call" }]);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(navigation) }}
       />
       <script
         type="application/ld+json"

@@ -12,6 +12,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { site } from "@/lib/site";
+import { founder, publisherOrg, imageObject, youtubeVideo, faqPage, webPageNode, CONTENT_LAUNCH_DATE, SITE_LAST_MODIFIED, WEBSITE_ID } from "@/lib/schema";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { VSL } from "@/components/sections/VSL";
@@ -140,9 +141,52 @@ import { Testimonials } from "@/components/sections/Testimonials";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export default function SevenDaysPaidTrialPage() {
+  const pageUrl = `${site.url}/mastermind/7-days-paid-trial`;
+  const breakdownWebPage = webPageNode({
+    path: "/mastermind/7-days-paid-trial",
+    name: "7 Days Paid Trial Funnel Breakdown",
+    description: "How to engineer a self-liquidating 7-day paid trial front-end offer that converts cold Meta ads traffic into paying users and high-ticket clients.",
+    dateModified: SITE_LAST_MODIFIED,
+  });
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${pageUrl}#article`,
+    headline: "7 Days Paid Trial Funnel Breakdown",
+    description: "How to engineer a self-liquidating 7-day paid trial front-end offer that converts cold Meta ads traffic into paying users and high-ticket clients.",
+    url: pageUrl,
+    mainEntityOfPage: { "@id": `${pageUrl}#webpage` },
+    isPartOf: { "@id": WEBSITE_ID },
+    inLanguage: "en-US",
+    articleSection: "Mastermind Case Study Breakdown",
+    datePublished: CONTENT_LAUNCH_DATE,
+    dateModified: SITE_LAST_MODIFIED,
+    author: founder,
+    publisher: publisherOrg,
+    image: [imageObject("/opengraph-image")],
+    video: youtubeVideo({
+      videoId: "Hy1M7WbookU",
+      name: "7 Days Paid Trial Funnel Breakdown",
+      description: "How to engineer a self-liquidating 7-day paid trial front-end offer that converts cold Meta ads traffic into paying users and high-ticket clients.",
+      pageUrl,
+    }),
+  };
+
   return (
     <main id="main" className="flex min-h-screen flex-col bg-[#040c07] text-white selection:bg-lime/30 selection:text-lime">
       <Nav />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breakdownWebPage) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage(`${pageUrl}#faq`, faqs)) }}
+      />
       <BreadcrumbJsonLd
         items={[
           { name: "Mastermind", url: "/mastermind" },

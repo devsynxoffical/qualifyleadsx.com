@@ -100,6 +100,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${site.url}/benchmarks/cost-per-lead-by-industry`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/benchmarks/meta-ads-cpm`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/benchmarks/close-rate`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     // Service Pages (Month 1 Core SEO Plan)
     {
       url: `${site.url}/lead-generation-agency`,
@@ -121,6 +139,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${site.url}/vsl-funnels`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/whatsapp-lead-nurture`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/crm-automation`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/outsourced-sales-closers`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.95,
@@ -169,6 +205,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${site.url}/for/business-coaches`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/executive-coaches`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/fitness-coaches`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/course-creators`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/insurance-agencies`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/real-estate-investors`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: `${site.url}/for/coaches`,
       lastModified: now,
       changeFrequency: "weekly",
@@ -185,6 +257,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    // Comparisons
+    {
+      url: `${site.url}/compare/meta-ads-vs-google-ads-high-ticket`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/compare/done-for-you-vs-done-with-you-lead-generation`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/compare/appointment-setter-vs-va`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/compare/qualifiedleadsx-alternatives`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
     },
     // Blog Hub (Phase 3)
     {

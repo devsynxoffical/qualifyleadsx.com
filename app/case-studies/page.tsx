@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -9,7 +10,7 @@ import { CaseStudiesGallery } from "@/components/sections/CaseStudiesGallery";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Guarantee } from "@/components/sections/Guarantee";
 import { Testimonials } from "@/components/sections/Testimonials";
-import { ShieldCheck, TrendingUp, Users, Video } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, ShieldCheck, TrendingUp, Users, Video } from "lucide-react";
 import { site } from "@/lib/site";
 import { caseStudiesData } from "@/lib/case-studies-data";
 import { hostedVideo, publisherOrg, WEBSITE_ID } from "@/lib/schema";
@@ -50,6 +51,129 @@ const caseStudiesStats = [
   { value: "125+", label: "Documented Case Studies", icon: ShieldCheck },
   { value: "69", label: "Live Video Breakdowns", icon: Video },
   { value: "30+", label: "Industries & Niches Proven", icon: Users },
+];
+
+const mostCitedResults = [
+  {
+    rank: 1,
+    id: "DS5sAimEqsT",
+    clientNiche: "B2B Agency & Service Scaling",
+    offerType: "$3,600 Avg Contract",
+    system: "Meta Ads + VSL Funnel",
+    systemLink: "/meta-ads-agency",
+    revenue: "$846,000",
+    keyMetric: "235 Clients Closed",
+    targetAudience: "Agencies",
+    audienceLink: "/for/agencies",
+  },
+  {
+    rank: 2,
+    id: "DZc5twGlC0M",
+    clientNiche: "MedSpa Marketing Agency",
+    offerType: "High-Ticket Retainer",
+    system: "Broad Meta Ads + Speed-to-Lead",
+    systemLink: "/appointment-setting",
+    revenue: "$639,000",
+    keyMetric: "178 Clients in 60 Days",
+    targetAudience: "Agencies",
+    audienceLink: "/for/agencies",
+  },
+  {
+    rank: 3,
+    id: "DUsaqlQEsYB",
+    clientNiche: "High-Ticket Coaching & Training",
+    offerType: "$5,000 Program",
+    system: "Speed-to-Lead Appointment Setting",
+    systemLink: "/appointment-setting",
+    revenue: "$203,941",
+    keyMetric: "11 Days Cash Collected",
+    targetAudience: "Coaches",
+    audienceLink: "/for/coaches",
+  },
+  {
+    rank: 4,
+    id: "DQ91hXmEoIm",
+    clientNiche: "Digital Growth & Media Agency",
+    offerType: "$4,500/mo Retainer",
+    system: "Broad Targeting Meta Ads",
+    systemLink: "/meta-ads-agency",
+    revenue: "$157,184",
+    keyMetric: "Direct Cash Collected",
+    targetAudience: "Agencies",
+    audienceLink: "/for/agencies",
+  },
+  {
+    rank: 5,
+    id: "DQsBVdEkxYc",
+    clientNiche: "B2B Executive Consulting",
+    offerType: "$7,500 Engagement",
+    system: "Qualification Filter + VSL Funnel",
+    systemLink: "/appointment-setting",
+    revenue: "$150,348",
+    keyMetric: "Consistent Pipeline Scaled",
+    targetAudience: "Consultants",
+    audienceLink: "/for/consultants",
+  },
+  {
+    rank: 6,
+    id: "DSkbQyzkvbL",
+    clientNiche: "Specialized Commercial Services",
+    offerType: "$10,000+ Contract",
+    system: "Algorithmic Meta Ads Buying",
+    systemLink: "/meta-ads-agency",
+    revenue: "$86,275",
+    keyMetric: "Net Cash Collected",
+    targetAudience: "Consultants",
+    audienceLink: "/for/consultants",
+  },
+  {
+    rank: 7,
+    id: "DM3mUZsSNEJ",
+    clientNiche: "Agency Backend Continuity",
+    offerType: "Monthly Subscription Engine",
+    system: "Automated Lead Routing",
+    systemLink: "/appointment-setting",
+    revenue: "$86,000",
+    keyMetric: "Recurring Pipeline Run-Rate",
+    targetAudience: "Agencies",
+    audienceLink: "/for/agencies",
+  },
+  {
+    rank: 8,
+    id: "DMgZ9YRSuz5",
+    clientNiche: "Done-With-You Strategic Consulting",
+    offerType: "$6,000 Offer",
+    system: "Meta Broad Targeting Media Buying",
+    systemLink: "/meta-ads-agency",
+    revenue: "$85,000",
+    keyMetric: "Immediate Cash Inflow",
+    targetAudience: "Consultants",
+    audienceLink: "/for/consultants",
+  },
+  {
+    rank: 9,
+    id: "DU71t8DER0c",
+    clientNiche: "High-Ticket Funnel Acceleration",
+    offerType: "Front-End Offer to Backend Close",
+    system: "VSL Funnel + Speed-to-Lead",
+    systemLink: "/appointment-setting",
+    revenue: "$79,070",
+    keyMetric: "17 Days Revenue Sprint",
+    targetAudience: "Coaches",
+    audienceLink: "/for/coaches",
+  },
+  {
+    rank: 10,
+    id: "DT4yHdFkXhM",
+    clientNiche: "B2B Technology & AI Agency",
+    offerType: "$8,000 High-Ticket Deal",
+    system: "Performance Meta Media Buying",
+    systemLink: "/meta-ads-agency",
+    revenue: "$71,934",
+    keyMetric: "High-Intent B2B Deals",
+    targetAudience: "Agencies",
+    audienceLink: "/for/agencies",
+  },
 ];
 
 export default function CaseStudiesPage() {
@@ -148,6 +272,121 @@ export default function CaseStudiesPage() {
                   </div>
                 );
               })}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Most Cited Results & 150-Word Authority Intro (Per Master Plan) */}
+      <section className="border-t border-line bg-panel/30 py-16 sm:py-20">
+        <div className="container-x max-w-6xl">
+          <Reveal>
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-3.5 py-1 text-xs font-mono uppercase tracking-widest text-lime font-bold">
+              <CheckCircle2 className="h-3.5 w-3.5" />
+              Verified Performance Ledger
+            </div>
+            <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight text-fog">
+              Most Cited High-Ticket Client Results & Scaling Benchmarks
+            </h2>
+          </Reveal>
+
+          {/* 150-Word Authority Intro with 3 Headline Numbers & 5 Internal Links */}
+          <Reveal delay={0.1}>
+            <div className="mt-6 rounded-2xl border border-line bg-ink/70 p-6 sm:p-8 backdrop-blur-md">
+              <p className="text-base sm:text-[17px] leading-relaxed text-mist font-sans">
+                Every high-ticket business eventually hits a plateau when relying solely on organic referrals or disjointed cold outreach. At QualifiedLeadsX™, our proven client acquisition engine bridges the gap between scalable traffic and qualified pipeline. Across more than <strong className="text-fog">125+ documented case studies</strong> and 30+ B2B industries, our proprietary media buying and speed-to-lead infrastructure has generated over <strong className="text-lime">$150M+ in collective client revenue</strong>. We engineer direct-response systems tailored specifically for high-ticket service offers ranging from <strong className="text-fog">$3,000 to $25,000+</strong>. By coupling algorithmic creative-led campaigns through our dedicated <Link href="/meta-ads-agency" className="text-lime underline hover:text-mint font-semibold">Meta Ads Agency</Link> with rapid sub-5-minute <Link href="/appointment-setting" className="text-lime underline hover:text-mint font-semibold">Appointment Setting</Link> workflows, we eliminate unqualified tire-kickers before they ever reach your sales calendar. Whether installing conversion engines for <Link href="/for/coaches" className="text-lime underline hover:text-mint font-semibold">high-ticket coaches</Link>, scaling specialized <Link href="/for/consultants" className="text-lime underline hover:text-mint font-semibold">B2B consultants</Link>, or building predictable outbound pipelines for growing <Link href="/for/agencies" className="text-lime underline hover:text-mint font-semibold">digital agencies</Link>, the performance benchmarks below document verified ad account spends, recorded cash collections, and live client dashboards from our most cited client engagements.
+              </p>
+
+              {/* 3 Headline Numbers Summary */}
+              <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-line/60 pt-6">
+                <div className="flex items-center gap-3">
+                  <span className="font-mono text-2xl font-bold text-lime">$150M+</span>
+                  <span className="text-xs uppercase tracking-wider text-mist">Verified Client Revenue</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="font-mono text-2xl font-bold text-lime">125+</span>
+                  <span className="text-xs uppercase tracking-wider text-mist">Documented Case Studies</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="font-mono text-2xl font-bold text-lime">$3K–$25K</span>
+                  <span className="text-xs uppercase tracking-wider text-mist">High-Ticket Offer Range</span>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+
+          {/* Top 10 Most Cited Results Table */}
+          <Reveal delay={0.2}>
+            <div className="mt-10 overflow-hidden rounded-2xl border border-line bg-ink/80 shadow-2xl">
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-sm">
+                  <thead className="border-b border-line bg-panel/90 text-xs font-mono uppercase tracking-wider text-fog">
+                    <tr>
+                      <th className="px-4 py-4 sm:px-6">#</th>
+                      <th className="px-4 py-4 sm:px-6">Client & Industry</th>
+                      <th className="px-4 py-4 sm:px-6">Core Offer</th>
+                      <th className="px-4 py-4 sm:px-6">Engine Deployed</th>
+                      <th className="px-4 py-4 sm:px-6">Verified Revenue</th>
+                      <th className="px-4 py-4 sm:px-6">Key Metric</th>
+                      <th className="px-4 py-4 sm:px-6">Target Niche</th>
+                      <th className="px-4 py-4 sm:px-6">Proof</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-line/60 font-sans">
+                    {mostCitedResults.map((item) => (
+                      <tr
+                        key={item.id}
+                        className="transition-colors hover:bg-elevated/40"
+                      >
+                        <td className="px-4 py-4 sm:px-6 font-mono font-bold text-mist text-xs">
+                          0{item.rank}
+                        </td>
+                        <td className="px-4 py-4 sm:px-6 font-semibold text-fog">
+                          {item.clientNiche}
+                        </td>
+                        <td className="px-4 py-4 sm:px-6 font-mono text-xs text-mist">
+                          {item.offerType}
+                        </td>
+                        <td className="px-4 py-4 sm:px-6">
+                          <Link
+                            href={item.systemLink}
+                            className="inline-flex items-center gap-1 font-medium text-xs text-lime hover:underline"
+                          >
+                            {item.system}
+                            <ArrowUpRight className="h-3 w-3" />
+                          </Link>
+                        </td>
+                        <td className="px-4 py-4 sm:px-6 font-mono font-bold text-lime text-base">
+                          {item.revenue}
+                        </td>
+                        <td className="px-4 py-4 sm:px-6 text-xs text-mist">
+                          {item.keyMetric}
+                        </td>
+                        <td className="px-4 py-4 sm:px-6">
+                          <Link
+                            href={item.audienceLink}
+                            className="inline-block rounded-full border border-line bg-panel/60 px-2.5 py-1 text-xs font-medium text-fog hover:border-lime/50"
+                          >
+                            {item.targetAudience}
+                          </Link>
+                        </td>
+                        <td className="px-4 py-4 sm:px-6">
+                          <a
+                            href={`#${item.id}`}
+                            className="inline-flex items-center gap-1 text-xs font-mono text-fog underline hover:text-lime"
+                          >
+                            View Case
+                          </a>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <div className="border-t border-line/60 bg-panel/40 px-6 py-3 text-xs text-mist flex flex-col sm:flex-row justify-between items-center gap-2">
+                <span>Data Source: Verified Stripe, Meta Ads Manager, and Wise collection records.</span>
+                <span className="font-mono text-lime font-medium">All 10 cases documented in gallery below</span>
+              </div>
             </div>
           </Reveal>
         </div>

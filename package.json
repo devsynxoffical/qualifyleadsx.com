@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "index:google": "node scripts/request-indexing.mjs",
+    "index:now": "node scripts/submit-indexnow.mjs",
     "seo:validate": "node scripts/validate-schema.mjs"
   },
   "dependencies": {

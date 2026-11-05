@@ -4,7 +4,7 @@ import { blogPosts, blogCategories, getPostsByCategory } from "@/lib/blog-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Use today's date for freshly updated pages to notify Googlebot of new content/visuals
-  const now = new Date("2026-10-30");
+  const now = new Date("2026-11-05");
   const legalUpdated = new Date("2026-01-15");
 
   const coreRoutes: MetadataRoute.Sitemap = [

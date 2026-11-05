@@ -468,5 +468,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  return [...coreRoutes, ...categoryRoutes, ...blogRoutes];
+  const caseStudySlugs = [
+    "b2b-agency-scaling-846k",
+    "med-spa-marketing-agency-639k",
+    "high-ticket-coaching-203k",
+    "digital-media-agency-157k",
+    "executive-consulting-150k",
+    "commercial-services-86k",
+    "agency-backend-continuity-86k",
+    "strategic-consulting-85k",
+    "high-ticket-funnel-79k",
+    "b2b-technology-agency-71k",
+  ];
+
+  const caseStudyRoutes: MetadataRoute.Sitemap = caseStudySlugs.map((slug) => ({
+    url: `${site.url}/case-studies/${slug}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.9,
+  }));
+
+  return [...coreRoutes, ...categoryRoutes, ...blogRoutes, ...caseStudyRoutes];
 }

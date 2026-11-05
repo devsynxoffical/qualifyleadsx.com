@@ -138,6 +138,26 @@ export default function BookYourCallPage() {
         {/* What to Expect On the Strategy Call & Consultation FAQs */}
         <section className="border-t border-line bg-panel/60 py-20">
           <div className="container-x max-w-4xl">
+            {/* Authority Proof Numbers */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+              <div className="border border-line rounded-xl p-5 bg-ink/80 text-center">
+                <div className="text-3xl font-bold font-mono text-lime">$150M+</div>
+                <div className="text-xs text-fog mt-1">Client Revenue Generated</div>
+              </div>
+              <div className="border border-line rounded-xl p-5 bg-ink/80 text-center">
+                <div className="text-3xl font-bold font-mono text-fog">125+</div>
+                <div className="text-xs text-fog mt-1">Documented Case Studies</div>
+              </div>
+              <div className="border border-line rounded-xl p-5 bg-ink/80 text-center">
+                <div className="text-3xl font-bold font-mono text-lime">&lt;5 Mins</div>
+                <div className="text-xs text-fog mt-1">Speed-to-Lead Response</div>
+              </div>
+              <div className="border border-line rounded-xl p-5 bg-ink/80 text-center">
+                <div className="text-3xl font-bold font-mono text-fog">82.4%</div>
+                <div className="text-xs text-fog mt-1">Average Show-Up Rate</div>
+              </div>
+            </div>
+
             <div className="text-center mb-12">
               <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold">
                 CLARITY & ZERO RISK
@@ -181,6 +201,24 @@ export default function BookYourCallPage() {
                 </h3>
                 <p className="text-sm text-mist leading-relaxed">
                   If both parties agree there is a strong operational fit, our sprint installation takes 14 to 21 business days from kickoff to live ad delivery and qualified appointment generation.
+                </p>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-ink/70 border border-line">
+                <h3 className="text-lg font-bold text-fog mb-2">
+                  What industries and business models do you accept?
+                </h3>
+                <p className="text-sm text-mist leading-relaxed">
+                  We specialize in B2B service agencies, high-ticket coaching programs, executive consulting, B2B SaaS, med spas, real estate acquisitions, financial advisory, and commercial contractors selling $3,000 to $25,000+ deals.
+                </p>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-ink/70 border border-line">
+                <h3 className="text-lg font-bold text-fog mb-2">
+                  Who will I actually speak with on the strategy call?
+                </h3>
+                <p className="text-sm text-mist leading-relaxed">
+                  You will speak directly with a senior client acquisition strategist who manages 6-figure monthly ad spend, not a junior junior appointment screener.
                 </p>
               </div>
             </div>

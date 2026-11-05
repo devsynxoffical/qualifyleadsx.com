@@ -75,7 +75,23 @@ const URLS = [
   `https://${HOST}/blog/category/funnel-strategy`,
   `https://${HOST}/blog/category/paid-advertising`,
   `https://${HOST}/blog/category/lead-qualification`,
-  `https://${HOST}/blog/category/scaling-economics`
+  `https://${HOST}/blog/category/scaling-economics`,
+  `https://${HOST}/blog/how-much-does-meta-ads-cost`,
+  `https://${HOST}/blog/speed-to-lead`,
+  `https://${HOST}/blog/high-ticket-funnel-examples`,
+  `https://${HOST}/blog/how-to-qualify-leads`,
+  `https://${HOST}/blog/how-to-increase-show-rate`,
+  `https://${HOST}/blog/meta-ads-for-coaches-guide`,
+  `https://${HOST}/case-studies/b2b-agency-scaling-846k`,
+  `https://${HOST}/case-studies/med-spa-marketing-agency-639k`,
+  `https://${HOST}/case-studies/high-ticket-coaching-203k`,
+  `https://${HOST}/case-studies/digital-media-agency-157k`,
+  `https://${HOST}/case-studies/executive-consulting-150k`,
+  `https://${HOST}/case-studies/commercial-services-86k`,
+  `https://${HOST}/case-studies/agency-backend-continuity-86k`,
+  `https://${HOST}/case-studies/strategic-consulting-85k`,
+  `https://${HOST}/case-studies/high-ticket-funnel-79k`,
+  `https://${HOST}/case-studies/b2b-technology-agency-71k`
 ];
 
 async function submitIndexNow() {

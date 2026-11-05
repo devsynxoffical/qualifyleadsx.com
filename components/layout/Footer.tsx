@@ -5,33 +5,64 @@ import { site } from "@/lib/site";
 
 const footerColumns = [
   {
-    title: "Services & Solutions",
+    title: "Core Services",
     links: [
-      { label: "All Services Directory", href: "/services" },
+      { label: "Services Hub Directory", href: "/services" },
       { label: "Lead Generation Agency", href: "/lead-generation-agency" },
+      { label: "High-Ticket Lead Generation", href: "/high-ticket-lead-generation" },
+      { label: "AI Speed to Lead", href: "/speed-to-lead" },
+      { label: "VSL Funnel Agency", href: "/vsl-funnels" },
+      { label: "WhatsApp Lead Nurture", href: "/whatsapp-lead-nurture" },
+      { label: "CRM Automation", href: "/crm-automation" },
+      { label: "Outsourced Sales Closers", href: "/outsourced-sales-closers" },
       { label: "Meta Ads Agency", href: "/meta-ads-agency" },
       { label: "Appointment Setting", href: "/appointment-setting" },
-      { label: "Industries Directory", href: "/for" },
-      { label: "For B2B Services", href: "/for/b2b-services" },
-      { label: "For Coaches", href: "/for/coaches" },
-      { label: "For Consultants", href: "/for/consultants" },
-      { label: "For Agencies", href: "/for/agencies" },
-      { label: "Case Studies (125+)", href: "/case-studies" },
     ],
   },
   {
-    title: "Data & Calculators",
+    title: "Industries & Solutions",
     links: [
-      { label: "2026 Marketing Benchmarks", href: "/benchmarks" },
-      { label: "Free Calculators Suite", href: "/tools" },
+      { label: "Industries Hub Directory", href: "/for" },
+      { label: "For High-Ticket Coaches", href: "/for/coaches" },
+      { label: "For B2B Consultants", href: "/for/consultants" },
+      { label: "For Growth Agencies", href: "/for/agencies" },
+      { label: "For B2B SaaS", href: "/for/saas" },
+      { label: "For B2B Services", href: "/for/b2b-services" },
+      { label: "For Medical Spas", href: "/for/med-spas" },
+      { label: "For Financial Advisors", href: "/for/financial-advisors" },
+      { label: "For Real Estate Investors", href: "/for/real-estate-investors" },
+      { label: "For Law Firms", href: "/for/law-firms" },
+    ],
+  },
+  {
+    title: "Calculators & Benchmarks",
+    links: [
+      { label: "Free Tools & Calculators Hub", href: "/tools" },
       { label: "CAC Calculator", href: "/tools/cac-calculator" },
-      { label: "ROAS Calculator", href: "/tools/roas-calculator" },
+      { label: "ROAS & Break-Even Calculator", href: "/tools/roas-calculator" },
+      { label: "Cost Per Booked Call Calculator", href: "/tools/cost-per-booked-call-calculator" },
+      { label: "Show-Up Rate Calculator", href: "/tools/show-rate-calculator" },
+      { label: "LTV to CAC Calculator", href: "/tools/ltv-cac-calculator" },
+      { label: "Lead Scoring Template", href: "/tools/lead-scoring-template" },
+      { label: "2026 Marketing Benchmarks Hub", href: "/benchmarks" },
+      { label: "Cost Per Lead by Industry", href: "/benchmarks/cost-per-lead-by-industry" },
+      { label: "Meta Ads CPM Benchmarks", href: "/benchmarks/meta-ads-cpm" },
+      { label: "Close Rate Benchmarks", href: "/benchmarks/close-rate" },
+    ],
+  },
+  {
+    title: "Proof & Comparisons",
+    links: [
+      { label: "125+ Verified Case Studies", href: "/case-studies" },
+      { label: "$846K B2B Agency Case", href: "/case-studies/b2b-agency-scaling-846k" },
+      { label: "$639K Med Spa Case", href: "/case-studies/med-spa-marketing-agency-639k" },
+      { label: "$203K Coaching Case", href: "/case-studies/high-ticket-coaching-203k" },
+      { label: "Meta Ads vs Google Ads", href: "/compare/meta-ads-vs-google-ads-high-ticket" },
+      { label: "DFY vs DWY Lead Gen", href: "/compare/done-for-you-vs-done-with-you-lead-generation" },
+      { label: "Appointment Setter vs VA", href: "/compare/appointment-setter-vs-va" },
+      { label: "QualifiedLeadsX Alternatives", href: "/compare/qualifiedleadsx-alternatives" },
       { label: "Growth Guides & Blog", href: "/blog" },
-      { label: "Mastermind Hub", href: "/mastermind" },
-      { label: "About QualifiedLeadsX", href: "/about" },
-      { label: "Book Strategy Call", href: site.bookCallUrl },
-      { label: "Privacy Policy", href: "/privacy" },
-      { label: "Terms of Service", href: "/terms" },
+      { label: "Book Strategy Call", href: "/book-your-call" },
     ],
   },
 ];
@@ -41,7 +72,7 @@ export function Footer() {
     <footer className="relative border-t border-line bg-ink" id="footer">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-lime/30 to-transparent" />
       <div className="container-x">
-        <div className="grid gap-14 py-16 sm:py-20 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
+        <div className="grid gap-10 py-16 sm:py-20 sm:grid-cols-2 lg:grid-cols-5">
           {/* Brand */}
           <div>
             <Link href="/" className="group flex items-center" aria-label="QualifiedLeadsX home">
@@ -99,7 +130,7 @@ export function Footer() {
                 </svg>
               </a>
             </div>
-            
+
             <a
               href={`https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(
                 "Hi QualifiedLeadsX! I'd like to chat about your services."
@@ -124,15 +155,24 @@ export function Footer() {
               <ul className="mt-5 space-y-3">
                 {col.links.map((l) => (
                   <li key={l.label}>
-                    <a
-                      href={l.href}
-                      className="group inline-flex items-center gap-1.5 text-sm text-mist transition-colors hover:text-fog"
-                    >
-                      {l.label}
-                      {l.href.startsWith("http") && (
+                    {l.href.startsWith("http") ? (
+                      <a
+                        href={l.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-center gap-1.5 text-sm text-mist transition-colors hover:text-fog"
+                      >
+                        {l.label}
                         <ArrowUpRight className="h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" />
-                      )}
-                    </a>
+                      </a>
+                    ) : (
+                      <Link
+                        href={l.href}
+                        className="group inline-flex items-center gap-1.5 text-sm text-mist transition-colors hover:text-lime"
+                      >
+                        {l.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

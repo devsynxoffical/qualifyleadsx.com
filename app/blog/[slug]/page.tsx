@@ -563,29 +563,151 @@ export default async function BlogPostPage({ params }: Props) {
 
               {/* Industry Playbook Links */}
               <div className="rounded-2xl border border-line bg-panel p-6">
-                <div className="text-xs font-mono uppercase tracking-wider text-dim mb-3">
-                  Industry Playbooks
+                <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-3 flex items-center justify-between">
+                  <span>Industry Playbooks</span>
+                  <Link href="/for" className="text-[11px] text-mist hover:text-lime">View All (16) →</Link>
                 </div>
                 <div className="space-y-2">
                   <Link
                     href="/for/coaches"
-                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-3 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
                   >
-                    <span>For High-Ticket Coaches</span>
+                    <span>High-Ticket Coaches</span>
                     <ArrowRight className="w-3.5 h-3.5 text-lime" />
                   </Link>
                   <Link
                     href="/for/consultants"
-                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-3 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
                   >
-                    <span>For B2B Consultants</span>
+                    <span>B2B Consultants</span>
                     <ArrowRight className="w-3.5 h-3.5 text-lime" />
                   </Link>
                   <Link
                     href="/for/agencies"
-                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-3 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
                   >
-                    <span>For Growth Agencies</span>
+                    <span>Growth Agencies</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-lime" />
+                  </Link>
+                  <Link
+                    href="/for/saas"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                  >
+                    <span>SaaS Founders</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-lime" />
+                  </Link>
+                </div>
+              </div>
+
+              {/* Free ROI Calculators */}
+              <div className="rounded-2xl border border-line bg-panel p-6">
+                <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-3 flex items-center justify-between">
+                  <span>Interactive Calculators</span>
+                  <Link href="/tools" className="text-[11px] text-mist hover:text-lime">View All (7) →</Link>
+                </div>
+                <div className="space-y-2">
+                  <Link
+                    href="/tools/roas-calculator"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                  >
+                    <span>ROAS & Break-Even Calculator</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-lime" />
+                  </Link>
+                  <Link
+                    href="/tools/cac-calculator"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                  >
+                    <span>Customer Acquisition Cost (CAC)</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-lime" />
+                  </Link>
+                  <Link
+                    href="/tools/cost-per-booked-call-calculator"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                  >
+                    <span>Cost Per Booked Call Calculator</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-lime" />
+                  </Link>
+                  <Link
+                    href="/tools/show-rate-calculator"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                  >
+                    <span>Show Rate & Lost Revenue Tool</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-lime" />
+                  </Link>
+                </div>
+              </div>
+
+              {/* Empirical Benchmarks */}
+              <div className="rounded-2xl border border-line bg-panel p-6">
+                <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-3 flex items-center justify-between">
+                  <span>Industry Benchmarks</span>
+                  <Link href="/benchmarks" className="text-[11px] text-mist hover:text-lime">View All (6) →</Link>
+                </div>
+                <div className="space-y-2">
+                  <Link
+                    href="/benchmarks/cost-per-lead-by-industry"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                  >
+                    <span>Cost Per Lead by Industry</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-lime" />
+                  </Link>
+                  <Link
+                    href="/benchmarks/show-rate"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                  >
+                    <span>Appointment Show Rates</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-lime" />
+                  </Link>
+                  <Link
+                    href="/benchmarks/meta-ads-cpm"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                  >
+                    <span>Meta Ads CPM Trends 2026</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-lime" />
+                  </Link>
+                  <Link
+                    href="/benchmarks/close-rate"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                  >
+                    <span>High-Ticket Close Rates</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-lime" />
+                  </Link>
+                </div>
+              </div>
+
+              {/* Core Acquisition Systems */}
+              <div className="rounded-2xl border border-line bg-panel p-6">
+                <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-3 flex items-center justify-between">
+                  <span>Core Services</span>
+                  <Link href="/services" className="text-[11px] text-mist hover:text-lime">All Services →</Link>
+                </div>
+                <div className="space-y-2">
+                  <Link
+                    href="/meta-ads-agency"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                  >
+                    <span>Meta Ads Agency</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-lime" />
+                  </Link>
+                  <Link
+                    href="/appointment-setting"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                  >
+                    <span>Appointment Setting</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-lime" />
+                  </Link>
+                  <Link
+                    href="/speed-to-lead"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                  >
+                    <span>Speed-to-Lead Systems</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-lime" />
+                  </Link>
+                  <Link
+                    href="/vsl-funnels"
+                    className="flex items-center justify-between rounded-xl bg-white/[0.02] border border-line p-2.5 text-xs font-medium text-fog hover:border-lime/40 hover:text-lime transition-all"
+                  >
+                    <span>VSL Funnel Architecture</span>
                     <ArrowRight className="w-3.5 h-3.5 text-lime" />
                   </Link>
                 </div>
@@ -594,6 +716,187 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </div>
       </article>
+
+      {/* Internal Linking Architecture Hub across the entire platform */}
+      <section aria-labelledby="internal-ecosystem" className="border-t border-line bg-panel/30 py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="text-xs font-mono uppercase tracking-[0.2em] text-lime font-bold">
+              EXPLORE OUR PERFORMANCE ECOSYSTEM
+            </span>
+            <h2 id="internal-ecosystem" className="mt-2 text-2xl sm:text-3xl font-bold font-heading text-white tracking-tight">
+              Calculators, Datasets & Client Acquisition Infrastructure
+            </h2>
+            <p className="mt-3 text-sm text-mist leading-relaxed">
+              Every system and benchmark referenced in our research guides is backed by proprietary tools, live client telemetry, and operational execution.
+            </p>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {/* Column 1: Calculators */}
+            <div className="rounded-2xl border border-line bg-panel p-6 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-lime">01 / Calculators</span>
+                  <Link href="/tools" className="text-xs font-mono text-mist hover:text-lime">View All (7) →</Link>
+                </div>
+                <h3 className="text-base font-bold font-heading text-white mb-3">Interactive Planning Tools</h3>
+                <ul className="space-y-2.5 text-xs font-mono">
+                  <li>
+                    <Link href="/tools/cac-calculator" className="text-mist hover:text-lime transition-colors block">
+                      → CAC Calculator & Payback
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/tools/roas-calculator" className="text-mist hover:text-lime transition-colors block">
+                      → ROAS & Break-Even Tool
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/tools/cost-per-booked-call-calculator" className="text-mist hover:text-lime transition-colors block">
+                      → Cost Per Booked Call
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/tools/show-rate-calculator" className="text-mist hover:text-lime transition-colors block">
+                      → Show Rate & Lost Revenue
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/tools/ltv-cac-calculator" className="text-mist hover:text-lime transition-colors block">
+                      → LTV to CAC Ratio Tool
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/tools/lead-scoring-template" className="text-mist hover:text-lime transition-colors block">
+                      → Lead Scoring Template
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Column 2: Benchmarks */}
+            <div className="rounded-2xl border border-line bg-panel p-6 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-lime">02 / Benchmarks</span>
+                  <Link href="/benchmarks" className="text-xs font-mono text-mist hover:text-lime">View All (6) →</Link>
+                </div>
+                <h3 className="text-base font-bold font-heading text-white mb-3">Empirical Datasets</h3>
+                <ul className="space-y-2.5 text-xs font-mono">
+                  <li>
+                    <Link href="/benchmarks/cost-per-lead-by-industry" className="text-mist hover:text-lime transition-colors block">
+                      → Cost Per Lead by Industry
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/benchmarks/show-rate" className="text-mist hover:text-lime transition-colors block">
+                      → Appointment Show Rate Data
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/benchmarks/meta-ads-cpm" className="text-mist hover:text-lime transition-colors block">
+                      → Meta Ads CPM Trends 2026
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/benchmarks/cost-per-booked-call" className="text-mist hover:text-lime transition-colors block">
+                      → Cost Per Booked Call Data
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/benchmarks/close-rate" className="text-mist hover:text-lime transition-colors block">
+                      → High-Ticket Close Rates
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Column 3: Core Services */}
+            <div className="rounded-2xl border border-line bg-panel p-6 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-lime">03 / Services</span>
+                  <Link href="/services" className="text-xs font-mono text-mist hover:text-lime">All Services →</Link>
+                </div>
+                <h3 className="text-base font-bold font-heading text-white mb-3">Done-For-You Architecture</h3>
+                <ul className="space-y-2.5 text-xs font-mono">
+                  <li>
+                    <Link href="/lead-generation-agency" className="text-mist hover:text-lime transition-colors block">
+                      → Lead Generation Agency
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/meta-ads-agency" className="text-mist hover:text-lime transition-colors block">
+                      → Meta Ads Management
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/appointment-setting" className="text-mist hover:text-lime transition-colors block">
+                      → Done-For-You Appointment Setting
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/speed-to-lead" className="text-mist hover:text-lime transition-colors block">
+                      → Sub-5-Min Speed to Lead
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/vsl-funnels" className="text-mist hover:text-lime transition-colors block">
+                      → 12-Minute VSL Funnels
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/whatsapp-lead-nurture" className="text-mist hover:text-lime transition-colors block">
+                      → WhatsApp Nurture Systems
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Column 4: Strategic Comparisons & Proof */}
+            <div className="rounded-2xl border border-line bg-panel p-6 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-lime">04 / Proof & Models</span>
+                  <Link href="/case-studies" className="text-xs font-mono text-mist hover:text-lime">125+ Cases →</Link>
+                </div>
+                <h3 className="text-base font-bold font-heading text-white mb-3">Comparisons & Case Studies</h3>
+                <ul className="space-y-2.5 text-xs font-mono">
+                  <li>
+                    <Link href="/case-studies" className="text-mist hover:text-lime transition-colors block">
+                      → Verified Client Case Studies
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/compare/meta-ads-vs-google-ads-high-ticket" className="text-mist hover:text-lime transition-colors block">
+                      → Meta vs Google Ads Analysis
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/compare/done-for-you-vs-done-with-you-lead-generation" className="text-mist hover:text-lime transition-colors block">
+                      → DFY vs DWY Agency Models
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/compare/appointment-setter-vs-va" className="text-mist hover:text-lime transition-colors block">
+                      → Appointment Setter vs VA
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/compare/qualifiedleadsx-alternatives" className="text-mist hover:text-lime transition-colors block">
+                      → Top Agency Alternatives
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Related Guides (internal linking) */}
       {relatedPosts.length > 0 && (

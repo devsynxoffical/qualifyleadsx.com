@@ -301,6 +301,62 @@ export default async function IndividualCaseStudyPage({ params }: PageProps) {
           </div>
         </section>
 
+        {/* Related Acquisition Systems & Growth Blueprints */}
+        <section className="py-16 border-t border-line bg-panel/30">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="text-center max-w-3xl mx-auto mb-10">
+              <span className="text-xs font-mono uppercase tracking-[0.2em] text-lime font-bold">
+                REPLICATE THESE RESULTS
+              </span>
+              <h2 className="mt-2 text-2xl sm:text-3xl font-bold font-heading text-white">
+                Systems & Benchmarks Used in This Case
+              </h2>
+            </div>
+
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="rounded-xl border border-line bg-panel p-5">
+                <span className="text-xs font-mono font-bold text-lime block mb-2">SERVICES</span>
+                <h4 className="text-sm font-bold text-white mb-2">Core Funnel Delivery</h4>
+                <ul className="space-y-1.5 text-xs font-mono text-mist">
+                  <li><Link href="/meta-ads-agency" className="hover:text-lime block">→ Meta Ads Management</Link></li>
+                  <li><Link href="/appointment-setting" className="hover:text-lime block">→ Appointment Setting</Link></li>
+                  <li><Link href="/vsl-funnels" className="hover:text-lime block">→ VSL Funnel Architecture</Link></li>
+                </ul>
+              </div>
+
+              <div className="rounded-xl border border-line bg-panel p-5">
+                <span className="text-xs font-mono font-bold text-lime block mb-2">BENCHMARKS</span>
+                <h4 className="text-sm font-bold text-white mb-2">Empirical Datasets</h4>
+                <ul className="space-y-1.5 text-xs font-mono text-mist">
+                  <li><Link href="/benchmarks/cost-per-lead-by-industry" className="hover:text-lime block">→ Cost Per Lead Data</Link></li>
+                  <li><Link href="/benchmarks/show-rate" className="hover:text-lime block">→ Appointment Show Rates</Link></li>
+                  <li><Link href="/benchmarks/close-rate" className="hover:text-lime block">→ High-Ticket Close Rates</Link></li>
+                </ul>
+              </div>
+
+              <div className="rounded-xl border border-line bg-panel p-5">
+                <span className="text-xs font-mono font-bold text-lime block mb-2">CALCULATORS</span>
+                <h4 className="text-sm font-bold text-white mb-2">Model Your Offer</h4>
+                <ul className="space-y-1.5 text-xs font-mono text-mist">
+                  <li><Link href="/tools/cac-calculator" className="hover:text-lime block">→ CAC & Payback Tool</Link></li>
+                  <li><Link href="/tools/roas-calculator" className="hover:text-lime block">→ ROAS & Break-Even</Link></li>
+                  <li><Link href="/tools/show-rate-calculator" className="hover:text-lime block">→ Show Rate Calculator</Link></li>
+                </ul>
+              </div>
+
+              <div className="rounded-xl border border-line bg-panel p-5">
+                <span className="text-xs font-mono font-bold text-lime block mb-2">EXPLORE MORE</span>
+                <h4 className="text-sm font-bold text-white mb-2">Proof Archive</h4>
+                <ul className="space-y-1.5 text-xs font-mono text-mist">
+                  <li><Link href="/case-studies" className="hover:text-lime block">→ All 125+ Case Studies</Link></li>
+                  <li><Link href="/for" className="hover:text-lime block">→ Lead Gen by Industry</Link></li>
+                  <li><Link href="/blog" className="hover:text-lime block">→ Growth Guides & Playbooks</Link></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* FAQs */}
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">

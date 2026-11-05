@@ -9,6 +9,14 @@ const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 
 const URLS = [
   `https://${HOST}/`,
+  `https://${HOST}/services`,
+  `https://${HOST}/for`,
+  `https://${HOST}/benchmarks`,
+  `https://${HOST}/tools`,
+  `https://${HOST}/tools/cac-calculator`,
+  `https://${HOST}/tools/roas-calculator`,
+  `https://${HOST}/lead-generation-agency`,
+  `https://${HOST}/for/b2b-services`,
   `https://${HOST}/case-studies`,
   `https://${HOST}/book-your-call`,
   `https://${HOST}/meta-ads-agency`,
@@ -54,3 +62,4 @@ async function submitIndexNow() {
 }
 
 submitIndexNow();
+

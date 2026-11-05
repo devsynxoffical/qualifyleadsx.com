@@ -26,7 +26,50 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    // Core Hubs & Architecture
+    {
+      url: `${site.url}/services`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/for`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/benchmarks`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/tools`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/tools/cac-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/tools/roas-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
     // Service Pages (Month 1 Core SEO Plan)
+    {
+      url: `${site.url}/lead-generation-agency`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
     {
       url: `${site.url}/meta-ads-agency`,
       lastModified: now,
@@ -40,6 +83,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     // Industry Landing Pages (Phase 2)
+    {
+      url: `${site.url}/for/b2b-services`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
     {
       url: `${site.url}/for/coaches`,
       lastModified: now,

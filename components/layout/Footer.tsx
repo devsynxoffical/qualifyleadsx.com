@@ -5,29 +5,33 @@ import { site } from "@/lib/site";
 
 const footerColumns = [
   {
-    title: "Solutions",
+    title: "Services & Solutions",
     links: [
+      { label: "All Services Directory", href: "/services" },
+      { label: "Lead Generation Agency", href: "/lead-generation-agency" },
       { label: "Meta Ads Agency", href: "/meta-ads-agency" },
       { label: "Appointment Setting", href: "/appointment-setting" },
+      { label: "Industries Directory", href: "/for" },
+      { label: "For B2B Services", href: "/for/b2b-services" },
       { label: "For Coaches", href: "/for/coaches" },
       { label: "For Consultants", href: "/for/consultants" },
       { label: "For Agencies", href: "/for/agencies" },
       { label: "Case Studies (125+)", href: "/case-studies" },
-      { label: "Mastermind Hub", href: "/mastermind" },
-      { label: "Growth Guides & Blog", href: "/blog" },
     ],
   },
   {
-    title: "Company",
+    title: "Data & Calculators",
     links: [
+      { label: "2026 Marketing Benchmarks", href: "/benchmarks" },
+      { label: "Free Calculators Suite", href: "/tools" },
+      { label: "CAC Calculator", href: "/tools/cac-calculator" },
+      { label: "ROAS Calculator", href: "/tools/roas-calculator" },
+      { label: "Growth Guides & Blog", href: "/blog" },
+      { label: "Mastermind Hub", href: "/mastermind" },
       { label: "About QualifiedLeadsX", href: "/about" },
       { label: "Book Strategy Call", href: site.bookCallUrl },
-      { label: "Client Results", href: "/#results" },
-      { label: "Guarantee", href: "/#guarantee" },
-      { label: "FAQ", href: "/#faq" },
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Terms of Service", href: "/terms" },
-      { label: "Disclaimer", href: "/disclaimer" },
     ],
   },
 ];

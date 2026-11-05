@@ -25,13 +25,14 @@ export const site = {
 } as const;
 
 export const nav = [
-  { label: "Services", href: "/meta-ads-agency" },
-  { label: "System", href: "/#different" },
+  { label: "Services", href: "/services" },
+  { label: "Industries", href: "/for" },
+  { label: "Benchmarks", href: "/benchmarks" },
+  { label: "Tools", href: "/tools" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "Mastermind", href: "/mastermind" },
-  { label: "FAQ", href: "/#faq" },
 ] as const;
 
 export const navCta = {

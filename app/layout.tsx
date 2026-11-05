@@ -17,8 +17,8 @@ const geistMono = { variable: "font-mono" };
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Lead Generation Agency for High-Ticket Offers - QualifiedLeadsX",
-    template: "%s | QualifiedLeadsX™",
+    default: "Lead Generation Agency for High-Ticket B2B - QualifiedLeadsX",
+    template: "%s",
   },
   description:
     "B2B lead generation agency scaling high ticket sales for agencies and coaches. Get predictable booked calls with our AI acquisition engine. Book your call.",

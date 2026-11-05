@@ -8,9 +8,9 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { CheckCircle2, TrendingUp, ShieldCheck, ArrowRight, Play, ExternalLink } from "lucide-react";
+import { ShieldCheck, ExternalLink } from "lucide-react";
 
-export const topCaseStudySlugs: Record<string, string> = {
+const topCaseStudySlugs: Record<string, string> = {
   "b2b-agency-scaling-846k": "DS5sAimEqsT",
   "med-spa-marketing-agency-639k": "DZc5twGlC0M",
   "high-ticket-coaching-203k": "DUsaqlQEsYB",
@@ -32,7 +32,7 @@ const idToSlugMap: Record<string, string> = Object.entries(topCaseStudySlugs).re
   {} as Record<string, string>
 );
 
-export function getCaseStudy(slugOrId: string): CaseStudyItem | undefined {
+function getCaseStudy(slugOrId: string): CaseStudyItem | undefined {
   const targetId = topCaseStudySlugs[slugOrId] || slugOrId;
   return caseStudiesData.find((item) => item.id === targetId);
 }

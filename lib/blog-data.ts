@@ -1726,7 +1726,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "9 min read",
-    coverImage: "/blog/meta-cost-guide.jpg",
+    coverImage: "/images2/showreel/shot_09_ad_telemetry.webp",
     author: {
       name: "Strategy Team",
       role: "Media Buying Lead",
@@ -1795,7 +1795,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "8 min read",
-    coverImage: "/blog/speed-to-lead-guide.jpg",
+    coverImage: "/images2/showreel/shot_15_calendar_booked.webp",
     author: {
       name: "Operations Team",
       role: "Pipeline Specialist",
@@ -1853,7 +1853,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "11 min read",
-    coverImage: "/blog/funnel-examples.jpg",
+    coverImage: "/images2/showreel/shot_06_vsl_player.webp",
     author: {
       name: "Funnel Engineering Team",
       role: "Conversion Architect",
@@ -1909,7 +1909,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "9 min read",
-    coverImage: "/blog/lead-qualification.jpg",
+    coverImage: "/images2/showreel/shot_14_ai_screener.webp",
     author: {
       name: "Sales Leadership",
       role: "Senior Closer Coach",
@@ -1965,7 +1965,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "8 min read",
-    coverImage: "/blog/show-rate-guide.jpg",
+    coverImage: "/images2/showreel/shot_16_crm_nodes.webp",
     author: {
       name: "Strategy Team",
       role: "Client Success Director",
@@ -2021,7 +2021,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "12 min read",
-    coverImage: "/blog/coaches-guide.jpg",
+    coverImage: "/images2/showreel/shot_10_roas_curve.webp",
     author: {
       name: "Strategy Team",
       role: "Media Buying Lead",
@@ -2077,7 +2077,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "11 min read",
-    coverImage: "/blog/lead-gen-strategies.jpg",
+    coverImage: "/images2/showreel/shot_05_kanban.webp",
     author: {
       name: "Strategy Team",
       role: "Client Acquisition Director",
@@ -2133,7 +2133,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "10 min read",
-    coverImage: "/blog/vsl-template.jpg",
+    coverImage: "/images2/showreel/shot_08_multi_device.webp",
     author: {
       name: "Copywriting Team",
       role: "Head of Copy",
@@ -2192,7 +2192,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "9 min read",
-    coverImage: "/blog/setter-comp.jpg",
+    coverImage: "/images2/showreel/shot_12_revenue_ticker.webp",
     author: {
       name: "Sales Leadership",
       role: "VP of Sales Operations",
@@ -2248,7 +2248,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "8 min read",
-    coverImage: "/blog/advantage-plus-b2b.jpg",
+    coverImage: "/images2/showreel/shot_13_ai_chip.webp",
     author: {
       name: "Strategy Team",
       role: "Media Buying Lead",
@@ -2304,7 +2304,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "9 min read",
-    coverImage: "/blog/why-leads-ghost.jpg",
+    coverImage: "/images2/showreel/shot_18_heimdall.webp",
     author: {
       name: "Sales Leadership",
       role: "Senior Closer Coach",
@@ -2359,7 +2359,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "8 min read",
-    coverImage: "/blog/cpa-vs-cpl.jpg",
+    coverImage: "/images2/showreel/shot_20_growth_proof.webp",
     author: {
       name: "Operations Team",
       role: "Growth Economics Analyst",
@@ -2415,7 +2415,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "9 min read",
-    coverImage: "/blog/closer-job-desc.jpg",
+    coverImage: "/images2/showreel/shot_03_brand_system.webp",
     author: {
       name: "Sales Leadership",
       role: "VP of Sales Operations",
@@ -2471,7 +2471,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "8 min read",
-    coverImage: "/blog/whatsapp-consultants.jpg",
+    coverImage: "/images2/showreel/shot_11_global_heatmap.webp",
     author: {
       name: "Operations Team",
       role: "Automation Architect",
@@ -2528,7 +2528,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "13 min read",
-    coverImage: "/blog/scale-coaching-500k.jpg",
+    coverImage: "/images2/showreel/shot_21_diamond.webp",
     author: {
       name: "Strategy Team",
       role: "Client Acquisition Director",

@@ -90,9 +90,12 @@ export function BlogExplorer({ initialPosts, categoryLinks = [] }: BlogExplorerP
                   <Link href={`/blog/category/${c.slug}`} className="text-mist underline-offset-4 hover:text-lime hover:underline">
                     {c.name}
                   </Link>
-                  {i < categoryLinks.length - 1 && <span className="mx-1.5">·</span>}
+                  <span className="mx-1.5">·</span>
                 </span>
               ))}
+              <Link href="/glossary" className="text-mist underline-offset-4 hover:text-lime hover:underline">
+                Glossary
+              </Link>
             </nav>
           )}
 

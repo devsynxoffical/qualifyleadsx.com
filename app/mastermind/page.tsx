@@ -493,7 +493,7 @@ export default function MastermindPage() {
 
       <FurtherReading
         title="Free guides before you join"
-        slugs={["meta-ads-for-high-ticket-b2b-broad-targeting", "b2b-roas-benchmarks-qualified-appointment-generation", "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition", "high-ticket-sales-training-framework"]}
+        slugs={["meta-ads-for-high-ticket-b2b-broad-targeting", "b2b-roas-benchmarks-qualified-appointment-generation", "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition", "how-to-write-a-vsl-script-12-minute-structure"]}
       />
       <Footer />
     </main>

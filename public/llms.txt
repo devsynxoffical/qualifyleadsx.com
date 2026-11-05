@@ -21,6 +21,9 @@ Key facts:
 - [Hidden Facebook interest framework](https://www.qualifiedleadsx.com/mastermind/hidden-facebook-interest): the framework behind 300 to 500 booked calls
 - [7 days paid trial playbook](https://www.qualifiedleadsx.com/mastermind/7-days-paid-trial): self-liquidating Meta ads front-end offer
 
+## Glossary
+- [Client acquisition glossary](https://www.qualifiedleadsx.com/glossary): 29 plain-English definitions (speed to lead, VSL funnel, blended CAC, ROAS, lead qualification, appointment setting…) each linked to an in-depth guide
+
 ## Blog categories
 - [Funnel Strategy](https://www.qualifiedleadsx.com/blog/category/funnel-strategy)
 - [Paid Advertising](https://www.qualifiedleadsx.com/blog/category/paid-advertising)
@@ -29,6 +32,8 @@ Key facts:
 - RSS feed: https://www.qualifiedleadsx.com/feed.xml
 
 ## Guides
+- [Speed to Lead Statistics 2026](https://www.qualifiedleadsx.com/blog/speed-to-lead-statistics-response-time): why the first 5 minutes decide whether a high-ticket lead books, with the 60-second automated follow-up stack (Published: Nov 4, 2026)
+- [How to Write a VSL Script: 12-Minute Structure](https://www.qualifiedleadsx.com/blog/how-to-write-a-vsl-script-12-minute-structure): six-act script structure with timing, examples and the mistakes that kill conversion (Published: Nov 4, 2026)
 - [B2B Appointment Setting vs In-House SDR Teams](https://www.qualifiedleadsx.com/blog/b2b-appointment-setting-vs-in-house-sdr-teams): fully loaded costs, ramp velocity, speed-to-lead and ROI comparison for high-ticket businesses (Published: Oct 29, 2026)
 - [How Much Does a Lead Generation Agency Cost in 2026?](https://www.qualifiedleadsx.com/blog/how-much-does-a-lead-generation-agency-cost): retainer, pay-per-lead, pay-per-appointment and performance pricing models with real cost benchmarks (Published: Oct 27, 2026)
 - [Facebook Ads Agency vs In-House Media Buyer](https://www.qualifiedleadsx.com/blog/facebook-ads-agency-vs-in-house-media-buyer): true costs, creative velocity, speed to results and a decision framework by spend level (Published: Oct 27, 2026)

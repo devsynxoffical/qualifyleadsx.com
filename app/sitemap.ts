@@ -58,6 +58,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    // Glossary hub (definitional queries + internal linking)
+    {
+      url: `${site.url}/glossary`,
+      lastModified: new Date("2026-11-04"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
     // Blog Hub (Phase 3)
     {
       url: `${site.url}/blog`,

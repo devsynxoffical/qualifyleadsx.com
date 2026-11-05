@@ -606,10 +606,15 @@ export default async function BlogPostPage({ params }: Props) {
                   Related Growth Guides
                 </h2>
               </div>
-              <Link href="/blog" className="inline-flex items-center gap-1.5 text-xs font-mono text-mist hover:text-lime transition-colors">
-                <span>All guides</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
+              <div className="flex items-center gap-4">
+                <Link href="/glossary" className="inline-flex items-center gap-1.5 text-xs font-mono text-mist hover:text-lime transition-colors">
+                  <span>Glossary</span>
+                </Link>
+                <Link href="/blog" className="inline-flex items-center gap-1.5 text-xs font-mono text-mist hover:text-lime transition-colors">
+                  <span>All guides</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
             </div>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {relatedPosts.map((rp) => (

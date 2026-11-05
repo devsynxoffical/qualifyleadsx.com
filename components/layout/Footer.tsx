@@ -18,6 +18,17 @@ const footerColumns = [
     ],
   },
   {
+    title: "Guides by Topic",
+    links: [
+      { label: "Funnel Strategy", href: "/blog/category/funnel-strategy" },
+      { label: "Paid Advertising", href: "/blog/category/paid-advertising" },
+      { label: "Lead Qualification", href: "/blog/category/lead-qualification" },
+      { label: "Scaling & Economics", href: "/blog/category/scaling-economics" },
+      { label: "Client Acquisition Glossary", href: "/glossary" },
+      { label: "RSS Feed", href: "/feed.xml" },
+    ],
+  },
+  {
     title: "Company",
     links: [
       { label: "About QualifiedLeadsX", href: "/about" },
@@ -37,7 +48,7 @@ export function Footer() {
     <footer className="relative border-t border-line bg-ink" id="footer">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-lime/30 to-transparent" />
       <div className="container-x">
-        <div className="grid gap-14 py-16 sm:py-20 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
+        <div className="grid gap-14 py-16 sm:py-20 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1.2fr]">
           {/* Brand */}
           <div>
             <Link href="/" className="group flex items-center" aria-label="QualifiedLeadsX home">

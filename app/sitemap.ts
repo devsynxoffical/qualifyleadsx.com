@@ -241,6 +241,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${site.url}/for/law-firms`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/home-improvement`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/solar-companies`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/recruitment-agencies`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/online-education`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: `${site.url}/for/coaches`,
       lastModified: now,
       changeFrequency: "weekly",
@@ -257,6 +287,79 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    // Service × Industry Combinations
+    {
+      url: `${site.url}/meta-ads-for-coaches`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-consultants`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-financial-advisors`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-med-spas`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-real-estate-investors`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-course-creators`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-saas`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-law-firms`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/appointment-setting-for-agencies`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/appointment-setting-for-saas`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/appointment-setting-for-coaches`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/appointment-setting-for-consultants`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
     },
     // Comparisons
     {

@@ -63,9 +63,70 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.88,
     },
+    {
+      url: `${site.url}/tools/cost-per-booked-call-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/tools/show-rate-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/tools/ltv-cac-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/tools/lead-scoring-template`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    // Benchmarks Datasets
+    {
+      url: `${site.url}/benchmarks/cost-per-booked-call`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/benchmarks/show-rate`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     // Service Pages (Month 1 Core SEO Plan)
     {
       url: `${site.url}/lead-generation-agency`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/high-ticket-lead-generation`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/speed-to-lead`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/vsl-funnels`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/b2b-lead-generation`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.95,
@@ -85,6 +146,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Industry Landing Pages (Phase 2)
     {
       url: `${site.url}/for/b2b-services`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/saas`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/med-spas`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/financial-advisors`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,

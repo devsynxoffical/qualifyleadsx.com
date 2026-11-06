@@ -3,7 +3,7 @@ export const site = {
   legalName: "Ecom Expertz LLC",
   legalAddress: "1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801",
   url: "https://www.qualifiedleadsx.com",
-  bookCallUrl: "/book-your-call",
+  bookCallUrl: "/book-your-call#book",
   email: "hello@qualifiedleadsx.com",
   phone: "",
   whatsappNumber: "919625695456",

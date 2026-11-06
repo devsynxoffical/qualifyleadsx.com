@@ -39,7 +39,7 @@ export default function NotFound() {
             <Button href="/" variant="primary" size="lg">
               Back to Home
             </Button>
-            <Button href="/book-your-call" variant="outline" size="lg">
+            <Button href="/book-your-call#book" variant="outline" size="lg">
               Book Free Strategy Call
             </Button>
           </div>

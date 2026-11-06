@@ -252,7 +252,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     definition:
       "A strategy call is a consultative sales conversation, usually 30 to 60 minutes, where a qualified prospect's situation is diagnosed and a solution is proposed. It replaces the pitch-heavy demo in high-ticket selling.",
     guides: ["high-ticket-sales-training-framework", "high-ticket-sales-how-to-get-high-ticket-clients"],
-    service: { label: "Book a free strategy call", href: "/book-your-call" },
+    service: { label: "Book a free strategy call", href: "/book-your-call#book" },
     related: ["close-rate", "high-ticket-sales"],
   },
   {

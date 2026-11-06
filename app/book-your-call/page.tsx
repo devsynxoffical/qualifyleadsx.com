@@ -94,8 +94,13 @@ export default function BookYourCallPage() {
       <BreadcrumbJsonLd items={[{ name: "Book Your Free Strategy Call", url: "/book-your-call" }]} />
       <Nav />
       <main id="main" className="pt-40">
-        <section className="container-x grid gap-14 pb-24 lg:grid-cols-[1fr_1.05fr] lg:gap-20">
-          <div>
+        {/*
+          Mobile order: heading -> booking card -> benefits, so visitors who tap
+          "Book Call" reach the form without scrolling past the benefit cards.
+          Desktop keeps heading + benefits on the left and the card on the right.
+        */}
+        <section className="container-x grid gap-10 pb-24 lg:grid-cols-[1fr_1.05fr] lg:gap-x-20 lg:gap-y-10">
+          <div className="lg:col-start-1 lg:row-start-1">
             <p className="eyebrow">Free Strategy Call</p>
             <h1 className="mt-5 text-4xl font-semibold tracking-tight text-fog sm:text-5xl">
               Let&apos;s build the funnel that fills your{" "}
@@ -107,8 +112,14 @@ export default function BookYourCallPage() {
               <span className="font-semibold text-fog">$100K+ months</span> across different
               niches - done for you, from funnel to follow-up.
             </p>
+          </div>
 
-            <div className="mt-10 flex flex-col gap-4">
+          <div id="book" className="scroll-mt-28 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:self-start">
+            <BookingForm />
+          </div>
+
+          <div className="lg:col-start-1 lg:row-start-2">
+            <div className="flex flex-col gap-4">
               {points.map(({ icon: Icon, title, text }) => (
                 <div
                   key={title}
@@ -131,10 +142,6 @@ export default function BookYourCallPage() {
                 ? "Pick your time instantly after the short form"
                 : "Average response time: under one business day"}
             </div>
-          </div>
-
-          <div>
-            <BookingForm />
           </div>
         </section>
 

@@ -275,7 +275,7 @@ export default function LtvCacCalculatorPage() {
 
               <div className="mt-8 pt-5 border-t border-line/60">
                 <Link
-                  href="/book-your-call"
+                  href="/book-your-call#book"
                   className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-lime py-3 px-4 text-sm font-bold text-ink hover:bg-mint transition-colors"
                 >
                   Scale My Acquisition Engine

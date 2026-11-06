@@ -411,7 +411,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <RichText text={post.content.conclusion} />
                 </p>
                 <div className="mt-8 flex flex-wrap items-center gap-4">
-                  <Button href="/book-your-call" variant="primary" size="lg">
+                  <Button href="/book-your-call#book" variant="primary" size="lg">
                     Schedule Architecture Walkthrough
                   </Button>
                   <Button href="/case-studies" variant="outline" size="lg">
@@ -526,7 +526,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <p className="text-xs text-mist leading-relaxed mb-4">
                   We write the 12-minute script, build the 4-tier qualification survey, configure WhatsApp speed-to-lead nodes, and launch profitable broad Meta ad campaigns.
                 </p>
-                <Button href="/book-your-call" variant="primary" size="md" className="w-full">
+                <Button href="/book-your-call#book" variant="primary" size="md" className="w-full">
                   Book Free Architecture Call
                 </Button>
               </div>

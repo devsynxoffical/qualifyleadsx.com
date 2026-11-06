@@ -205,7 +205,7 @@ export default async function IndividualCaseStudyPage({ params }: PageProps) {
 
             <div className="flex flex-wrap gap-4 mt-8">
               <Link
-                href="/book-your-call"
+                href="/book-your-call#book"
                 className="bg-lime text-ink font-semibold px-6 py-3 rounded-lg hover:bg-lime/90 transition"
               >
                 Replicate These Results
@@ -290,7 +290,7 @@ export default async function IndividualCaseStudyPage({ params }: PageProps) {
                   </div>
 
                   <Link
-                    href="/book-your-call"
+                    href="/book-your-call#book"
                     className="w-full mt-6 block text-center bg-lime text-ink font-semibold py-2.5 rounded-lg hover:bg-lime/90 transition text-sm"
                   >
                     Get A Custom Growth Plan

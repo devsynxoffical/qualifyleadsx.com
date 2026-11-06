@@ -72,7 +72,7 @@ const footerColumns = [
       { label: "Appointment Setter vs VA", href: "/compare/appointment-setter-vs-va" },
       { label: "QualifiedLeadsX Alternatives", href: "/compare/qualifiedleadsx-alternatives" },
       { label: "Growth Guides & Blog", href: "/blog" },
-      { label: "Book Strategy Call", href: "/book-your-call" },
+      { label: "Book Strategy Call", href: "/book-your-call#book" },
     ],
   },
 ];

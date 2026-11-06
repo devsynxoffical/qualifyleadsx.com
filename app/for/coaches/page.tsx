@@ -137,7 +137,7 @@ export default function CoachesLandingPage() {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button href="/book-your-call" variant="primary" size="xl">
+            <Button href="/book-your-call#book" variant="primary" size="xl">
               Book Your Free Scaling Walkthrough
             </Button>
             <Button href="/case-studies" variant="outline" size="xl">

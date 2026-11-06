@@ -11,6 +11,18 @@ import { cn } from "@/lib/utils";
 
 const servicesSublinks = [
   {
+    title: "All Services Directory",
+    desc: "Complete done-for-you acquisition services",
+    href: "/services",
+    badge: "Hub",
+  },
+  {
+    title: "Lead Generation Agency",
+    desc: "Full-funnel client acquisition & pipeline",
+    href: "/lead-generation-agency",
+    badge: "Full-Funnel",
+  },
+  {
     title: "Meta Ads Agency",
     desc: "Facebook & Instagram ads for high-ticket offers",
     href: "/meta-ads-agency",

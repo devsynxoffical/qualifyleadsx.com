@@ -26,7 +26,147 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    // Core Hubs & Architecture
+    {
+      url: `${site.url}/services`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/for`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/benchmarks`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/tools`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/tools/cac-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/tools/roas-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/tools/cost-per-booked-call-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/tools/show-rate-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/tools/ltv-cac-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/tools/lead-scoring-template`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    // Benchmarks Datasets
+    {
+      url: `${site.url}/benchmarks/cost-per-booked-call`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/benchmarks/show-rate`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/benchmarks/cost-per-lead-by-industry`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/benchmarks/meta-ads-cpm`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/benchmarks/close-rate`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     // Service Pages (Month 1 Core SEO Plan)
+    {
+      url: `${site.url}/lead-generation-agency`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/high-ticket-lead-generation`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/speed-to-lead`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/vsl-funnels`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/whatsapp-lead-nurture`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/crm-automation`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/outsourced-sales-closers`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/b2b-lead-generation`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
     {
       url: `${site.url}/meta-ads-agency`,
       lastModified: now,
@@ -40,6 +180,96 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     // Industry Landing Pages (Phase 2)
+    {
+      url: `${site.url}/for/b2b-services`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/saas`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/med-spas`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/financial-advisors`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/business-coaches`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/executive-coaches`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/fitness-coaches`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/course-creators`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/insurance-agencies`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/real-estate-investors`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/law-firms`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/home-improvement`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/solar-companies`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/recruitment-agencies`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${site.url}/for/online-education`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
     {
       url: `${site.url}/for/coaches`,
       lastModified: now,
@@ -64,6 +294,104 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date("2026-11-04"),
       changeFrequency: "weekly",
       priority: 0.85,
+    },
+    // Service × Industry Combinations
+    {
+      url: `${site.url}/meta-ads-for-coaches`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-consultants`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-financial-advisors`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-med-spas`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-real-estate-investors`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-course-creators`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-saas`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/meta-ads-for-law-firms`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/appointment-setting-for-agencies`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/appointment-setting-for-saas`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/appointment-setting-for-coaches`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/appointment-setting-for-consultants`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    // Comparisons
+    {
+      url: `${site.url}/compare/meta-ads-vs-google-ads-high-ticket`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/compare/done-for-you-vs-done-with-you-lead-generation`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/compare/appointment-setter-vs-va`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/compare/qualifiedleadsx-alternatives`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
     },
     // Blog Hub (Phase 3)
     {
@@ -147,5 +475,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  return [...coreRoutes, ...categoryRoutes, ...blogRoutes];
+  const caseStudySlugs = [
+    "b2b-agency-scaling-846k",
+    "med-spa-marketing-agency-639k",
+    "high-ticket-coaching-203k",
+    "digital-media-agency-157k",
+    "executive-consulting-150k",
+    "commercial-services-86k",
+    "agency-backend-continuity-86k",
+    "strategic-consulting-85k",
+    "high-ticket-funnel-79k",
+    "b2b-technology-agency-71k",
+  ];
+
+  const caseStudyRoutes: MetadataRoute.Sitemap = caseStudySlugs.map((slug) => ({
+    url: `${site.url}/case-studies/${slug}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.9,
+  }));
+
+  return [...coreRoutes, ...categoryRoutes, ...blogRoutes, ...caseStudyRoutes];
 }

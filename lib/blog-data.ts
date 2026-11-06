@@ -855,7 +855,7 @@ export const blogPosts: BlogPost[] = [
           a: "Expect 2 to 4 weeks for funnel build and launch, then 30 to 60 days of optimization to reach stable cost per qualified call. A credible agency will show you leading indicators (CPM, click-through rate, VSL watch time, application rate) within the first two weeks, and booked calls from week two or three onward.",
           link: {
             text: "Book a free strategy call",
-            href: "/book-your-call",
+            href: "/book-your-call#book",
           },
         },
       ],
@@ -1021,7 +1021,7 @@ export const blogPosts: BlogPost[] = [
           a: "With an existing offer and proof assets, expect funnel build and launch within 2 to 4 weeks and booked calls from week two or three after launch. Reaching a stable cost per qualified call typically takes 30 to 60 days of creative and audience optimization.",
           link: {
             text: "Book a free strategy call",
-            href: "/book-your-call",
+            href: "/book-your-call#book",
           },
         },
       ],
@@ -1247,7 +1247,7 @@ export const blogPosts: BlogPost[] = [
           a: "High ticket sales is a legitimate and foundational business model that has powered professional services, B2B consulting, legal practices, and marketing agencies for decades. While social media courses hype 'remote closing', legitimate high-ticket sales is simply the process of selling valuable, premium solutions through consultative conversations.",
           link: {
             text: "Book a Free 30-Minute Architecture Call",
-            href: "/book-your-call",
+            href: "/book-your-call#book",
           },
         },
       ],
@@ -1374,7 +1374,7 @@ export const blogPosts: BlogPost[] = [
           a: "A healthy testing budget starts at $50 to $100 per day to provide Meta's pixel and Conversions API enough event volume to exit the learning phase within 7 to 14 days.",
           link: {
             text: "Book a Strategy Call for Custom Budget Modeling",
-            href: "/book-your-call",
+            href: "/book-your-call#book",
           },
         },
       ],
@@ -1493,7 +1493,7 @@ export const blogPosts: BlogPost[] = [
           a: "Our done-for-you agency infrastructure deploys the full architecture—from scripting and editing to landing page build, CRM setup, and live ad launch—within 14 operational days.",
           link: {
             text: "Schedule an Architecture Walkthrough for Your Business",
-            href: "/book-your-call",
+            href: "/book-your-call#book",
           },
         },
       ],
@@ -1631,7 +1631,7 @@ export const blogPosts: BlogPost[] = [
           a: "No. While AI excels at speed-to-lead follow-up, SMS scheduling, and initial qualification, human decision-makers investing $5,000 to $25,000 require human empathy, nuance, and consultative trust before signing.",
           link: {
             text: "Schedule a Strategy Call with Our Team",
-            href: "/book-your-call",
+            href: "/book-your-call#book",
           },
         },
       ],
@@ -1735,7 +1735,7 @@ export const blogPosts: BlogPost[] = [
           a: "We recommend a minimum starting testing budget of $2,500 to $4,000 per month. This allows the algorithmic bidding engine to gather sufficient conversion data within 14–21 days.",
           link: {
             text: "Schedule an Ad Spend & Unit Economics Audit",
-            href: "/book-your-call",
+            href: "/book-your-call#book",
           },
         },
       ],
@@ -1842,7 +1842,7 @@ export const blogPosts: BlogPost[] = [
           a: "For offers priced over $10,000, a $50–$100 refundable calendar deposit can increase show-up rates to 95%+, though rigorous conditional application forms usually achieve identical outcomes without checkout friction.",
           link: {
             text: "Apply to Install This Qualification System",
-            href: "/book-your-call",
+            href: "/book-your-call#book",
           },
         },
       ],
@@ -3084,7 +3084,7 @@ export const blogPosts: BlogPost[] = [
           a: "Hiring sales closers before your appointment setting and lead qualification infrastructure is properly stabilized.",
           link: {
             text: "Book a 1-on-1 Growth Architecture Call",
-            href: "/book-your-call",
+            href: "/book-your-call#book",
           },
         },
       ],

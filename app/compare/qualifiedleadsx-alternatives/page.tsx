@@ -157,7 +157,7 @@ export default function QualifiedLeadsXAlternativesPage() {
 
             <div className="flex flex-wrap gap-4 mt-8">
               <Link
-                href="/book-your-call"
+                href="/book-your-call#book"
                 className="bg-lime text-ink font-semibold px-6 py-3 rounded-lg hover:bg-lime/90 transition"
               >
                 Schedule Strategy Evaluation

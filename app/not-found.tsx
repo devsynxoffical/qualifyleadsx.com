@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 const links = [
+  { label: "Pick a Call Time", href: "/book-your-call/schedule#calendar" },
   { label: "Meta Ads Agency", href: "/meta-ads-agency" },
   { label: "Appointment Setting", href: "/appointment-setting" },
   { label: "Case Studies", href: "/case-studies" },
@@ -39,7 +40,7 @@ export default function NotFound() {
             <Button href="/" variant="primary" size="lg">
               Back to Home
             </Button>
-            <Button href="/book-your-call" variant="outline" size="lg">
+            <Button href="/book-your-call#book" variant="outline" size="lg">
               Book Free Strategy Call
             </Button>
           </div>

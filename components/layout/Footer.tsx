@@ -72,7 +72,7 @@ const footerColumns = [
       { label: "Appointment Setter vs VA", href: "/compare/appointment-setter-vs-va" },
       { label: "QualifiedLeadsX Alternatives", href: "/compare/qualifiedleadsx-alternatives" },
       { label: "Growth Guides & Blog", href: "/blog" },
-      { label: "Book Strategy Call", href: "/book-your-call" },
+      { label: "Book Strategy Call", href: "/book-your-call#book" },
     ],
   },
 ];
@@ -208,6 +208,12 @@ export function Footer() {
               Book Free Strategy Call
               <ArrowUpRight className="h-4 w-4" />
             </a>
+            <Link
+              href="/book-your-call/schedule#calendar"
+              className="mt-3 block text-sm text-mist transition-colors hover:text-lime"
+            >
+              Or pick a time on our calendar
+            </Link>
           </div>
         </div>
 

@@ -39,6 +39,7 @@ const INDUSTRY: Record<string, string> = {
 const EXACT: Record<string, string> = {
   "/": "I'm on your website and want to scale my client acquisition. Can we talk about how your system would work for my business?",
   "/book-your-call": "I'm on your booking page and have a quick question before booking my free strategy call.",
+  "/book-your-call/schedule": "I'm looking at your calendar to book a strategy call and have a quick question first.",
   "/meta-ads-agency": "I'm interested in your Meta ads management for my business. Can you tell me more?",
   "/appointment-setting": "I'm interested in your appointment setting system and want more qualified calls on my calendar.",
   "/lead-generation-agency": "I'm looking for a lead generation agency and would like to know how you work.",

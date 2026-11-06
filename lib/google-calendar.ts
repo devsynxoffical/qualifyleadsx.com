@@ -11,7 +11,10 @@
  *
  * Leave both empty to keep the old behaviour (form only, team replies by email).
  */
-const BOOKING_SOURCE = "";
+// Client's "Free 30-Minute Strategy Call" appointment schedule (connected 6 Nov 2026).
+// Short share link for reference: https://calendar.app.google/fLvA5ecUYM6L4LW68
+const BOOKING_SOURCE =
+  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2Yw3LMRWWBOizNlobvc58M8NBhLjWzfrHnj0FS0Rfegx_vV9Z6V3D7j0OlJbFwUSKGDg90xGBN?gv=true";
 
 export interface GoogleCalendarBooking {
   /** URL safe to load in an <iframe> (Google's inline schedule view). */

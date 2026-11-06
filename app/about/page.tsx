@@ -19,6 +19,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { site } from "@/lib/site";
+import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
 import { founder, imageObject, FOUNDER_ID, ORG_ID, WEBSITE_ID } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -484,7 +485,14 @@ export default function AboutPage() {
               </div>
               <div>
                 <span className="text-dim block mb-1 font-mono text-xs uppercase tracking-wider">Direct Contact</span>
-                <span className="text-mist">hello@qualifiedleadsx.com<br />WhatsApp: +91 95822 96172</span>
+                <span className="text-mist">
+                  hello@qualifiedleadsx.com
+                  <br />
+                  WhatsApp:{" "}
+                  <WhatsAppLink placement="about_contact" className="text-lime hover:underline">
+                    {site.whatsappDisplay}
+                  </WhatsAppLink>
+                </span>
               </div>
               <div>
                 <span className="text-dim block mb-1 font-mono text-xs uppercase tracking-wider">Official Channels</span>

@@ -6,6 +6,7 @@ import { site } from "@/lib/site";
 import { fbqTrack } from "@/lib/pixel";
 import { googleCalendarBooking } from "@/lib/google-calendar";
 import { GoogleCalendarEmbed } from "@/components/booking/GoogleCalendarEmbed";
+import { BookingSteps } from "@/components/booking/BookingSteps";
 
 const ENDPOINT = `https://formsubmit.co/ajax/${site.email}`;
 
@@ -20,6 +21,7 @@ export function BookingForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [firstName, setFirstName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
 
   useEffect(() => {
     fbqTrack("Schedule");
@@ -55,6 +57,7 @@ export function BookingForm() {
       const data = (await res.json()) as { success?: string | boolean; message?: string };
       if (data.success === "true" || data.success === true) {
         setFirstName(String(fd.get("name") || "").trim().split(/\s+/)[0] || "");
+        setEmail(String(fd.get("email") || "").trim());
         setStatus("success");
         fbqTrack("CompleteRegistration");
         form.reset();
@@ -69,7 +72,7 @@ export function BookingForm() {
   }
 
   if (status === "success" && googleCalendarBooking) {
-    return <GoogleCalendarEmbed booking={googleCalendarBooking} firstName={firstName} />;
+    return <GoogleCalendarEmbed booking={googleCalendarBooking} firstName={firstName} email={email} />;
   }
 
   if (status === "success") {
@@ -104,6 +107,12 @@ export function BookingForm() {
       data-cursor="text"
     >
       <input type="text" name="_honey" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
+
+      {googleCalendarBooking && (
+        <div className="mb-7 border-b border-line pb-6">
+          <BookingSteps current={1} />
+        </div>
+      )}
 
       <div className="grid gap-5 sm:grid-cols-2">
         <div>

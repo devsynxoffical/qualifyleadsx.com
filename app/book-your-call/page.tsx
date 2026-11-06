@@ -4,6 +4,7 @@ import { CalendarDays, ShieldCheck, Sparkles, Timer } from "lucide-react";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { BookingForm } from "@/components/layout/BookingForm";
+import { googleCalendarBooking } from "@/lib/google-calendar";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { site } from "@/lib/site";
 import { webPageNode, orgRef, TIER1_MARKETS } from "@/lib/schema";
@@ -126,7 +127,9 @@ export default function BookYourCallPage() {
 
             <div className="mt-8 flex items-center gap-2 text-xs text-dim">
               <CalendarDays className="h-4 w-4 text-lime" />
-              Average response time: under one business day
+              {googleCalendarBooking
+                ? "Pick your time instantly after the short form"
+                : "Average response time: under one business day"}
             </div>
           </div>
 

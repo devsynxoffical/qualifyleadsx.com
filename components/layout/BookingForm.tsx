@@ -4,6 +4,8 @@ import { useState, useEffect, type FormEvent } from "react";
 import { ArrowUpRight, CheckCircle2, Loader2, RefreshCw } from "lucide-react";
 import { site } from "@/lib/site";
 import { fbqTrack } from "@/lib/pixel";
+import { googleCalendarBooking } from "@/lib/google-calendar";
+import { GoogleCalendarEmbed } from "@/components/booking/GoogleCalendarEmbed";
 
 const ENDPOINT = `https://formsubmit.co/ajax/${site.email}`;
 
@@ -17,6 +19,7 @@ type Status = "idle" | "sending" | "success" | "error";
 export function BookingForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
+  const [firstName, setFirstName] = useState<string>("");
 
   useEffect(() => {
     fbqTrack("Schedule");
@@ -51,6 +54,7 @@ export function BookingForm() {
       });
       const data = (await res.json()) as { success?: string | boolean; message?: string };
       if (data.success === "true" || data.success === true) {
+        setFirstName(String(fd.get("name") || "").trim().split(/\s+/)[0] || "");
         setStatus("success");
         fbqTrack("CompleteRegistration");
         form.reset();
@@ -62,6 +66,10 @@ export function BookingForm() {
       setStatus("error");
       setErrorMessage(err instanceof Error ? err.message : "");
     }
+  }
+
+  if (status === "success" && googleCalendarBooking) {
+    return <GoogleCalendarEmbed booking={googleCalendarBooking} firstName={firstName} />;
   }
 
   if (status === "success") {
@@ -214,14 +222,16 @@ export function BookingForm() {
           </>
         ) : (
           <>
-            Request My Free Strategy Call
+            {googleCalendarBooking ? "Continue to Pick a Time" : "Request My Free Strategy Call"}
             <ArrowUpRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </>
         )}
       </button>
 
       <p className="mt-4 text-center text-xs text-dim">
-        Free 30-minute call · No pressure, no obligation. Your details stay private.
+        {googleCalendarBooking
+          ? "Step 1 of 2 · Free 30-minute call · Pick your time on the next step."
+          : "Free 30-minute call · No pressure, no obligation. Your details stay private."}
       </p>
     </form>
   );

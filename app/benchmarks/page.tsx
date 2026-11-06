@@ -17,6 +17,7 @@ import {
   Timer,
   CheckCircle2,
 } from "lucide-react";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
   title: "High Ticket Marketing Benchmarks 2026 - QualifiedLeadsX",
@@ -304,6 +305,8 @@ export default function BenchmarksHubPage() {
           </div>
         </div>
       </section>
+
+      <ProofStack variant="compact" />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

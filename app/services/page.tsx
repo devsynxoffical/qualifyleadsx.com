@@ -21,6 +21,7 @@ import {
   Users2,
   Target,
 } from "lucide-react";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
   title: "High Ticket Lead Generation Services - QualifiedLeadsX",
@@ -352,6 +353,8 @@ export default function ServicesHubPage() {
           </div>
         </div>
       </section>
+
+      <ProofStack variant="compact" />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

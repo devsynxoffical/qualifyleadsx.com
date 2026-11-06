@@ -17,6 +17,7 @@ import {
   CheckCircle2,
   PhoneOff,
 } from "lucide-react";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export default function ShowRateCalculatorPage() {
   const [bookedCalls, setBookedCalls] = useState<number>(40);
@@ -271,6 +272,8 @@ export default function ShowRateCalculatorPage() {
           </div>
         </div>
       </section>
+
+      <ProofStack variant="compact" />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

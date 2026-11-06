@@ -17,6 +17,7 @@ import {
   AlertCircle,
   HelpCircle,
 } from "lucide-react";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
   title: "High-Ticket Lead Scoring Template & Intake Rubric",
@@ -224,6 +225,8 @@ export default function LeadScoringTemplatePage() {
           </div>
         </div>
       </section>
+
+      <ProofStack variant="compact" />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

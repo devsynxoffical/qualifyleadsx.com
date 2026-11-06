@@ -16,6 +16,7 @@ import {
   PieChart,
   Percent,
 } from "lucide-react";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export default function RoasCalculatorPage() {
   const [adSpend, setAdSpend] = useState<number>(5000);
@@ -287,6 +288,8 @@ export default function RoasCalculatorPage() {
           </div>
         </div>
       </section>
+
+      <ProofStack variant="compact" />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

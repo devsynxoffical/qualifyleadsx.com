@@ -17,6 +17,7 @@ import {
   CheckCircle2,
   DollarSign,
 } from "lucide-react";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export default function LtvCacCalculatorPage() {
   const [initialDeal, setInitialDeal] = useState<number>(4500);
@@ -291,6 +292,8 @@ export default function LtvCacCalculatorPage() {
           </div>
         </div>
       </section>
+
+      <ProofStack variant="compact" />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

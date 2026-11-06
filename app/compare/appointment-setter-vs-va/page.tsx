@@ -6,6 +6,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
   title: "Appointment Setter vs Virtual Assistant | QLX",
@@ -189,6 +190,8 @@ export default function AppointmentSetterVsVaPage() {
             </div>
           </div>
         </section>
+
+        <ProofStack variant="full" />
 
         {/* FAQs */}
         <section className="py-16">

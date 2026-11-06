@@ -16,6 +16,7 @@ import {
   Percent,
   CheckCircle2,
 } from "lucide-react";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export default function CostPerBookedCallCalculatorPage() {
   const [offerPrice, setOfferPrice] = useState<number>(5000);
@@ -257,6 +258,8 @@ export default function CostPerBookedCallCalculatorPage() {
           </div>
         </div>
       </section>
+
+      <ProofStack variant="compact" />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

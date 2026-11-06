@@ -288,6 +288,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    // Glossary hub (definitional queries + internal linking)
+    {
+      url: `${site.url}/glossary`,
+      lastModified: new Date("2026-11-04"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
     // Service × Industry Combinations
     {
       url: `${site.url}/meta-ads-for-coaches`,

@@ -733,7 +733,7 @@ export default function AppointmentSettingPage() {
       {/* Bottom CTA Banner */}
       <FurtherReading
         title="Appointment setting and qualification guides"
-        slugs={["b2b-appointment-setting-vs-in-house-sdr-teams", "ai-whatsapp-lead-nurture-pipeline-high-ticket", "automated-lead-qualification-system-high-ticket", "high-ticket-sales-training-framework"]}
+        slugs={["b2b-appointment-setting-vs-in-house-sdr-teams", "ai-whatsapp-lead-nurture-pipeline-high-ticket", "automated-lead-qualification-system-high-ticket", "speed-to-lead-statistics-response-time"]}
       />
       <CTABanner
         eyebrow="Done-For-You Appointment Setting Installation"

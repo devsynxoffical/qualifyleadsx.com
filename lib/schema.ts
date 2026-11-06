@@ -111,7 +111,7 @@ export function breadcrumbList(id: string, items: { name: string; url: string }[
  * Update this if the assets are re-published.
  */
 export const CONTENT_LAUNCH_DATE = "2026-09-15";
-export const SITE_LAST_MODIFIED = "2026-11-03";
+export const SITE_LAST_MODIFIED = "2026-11-04";
 
 export const TIER1_MARKETS = ["United States", "United Kingdom", "Canada", "Australia"] as const;
 

@@ -482,7 +482,7 @@ export default function CoachesLandingPage() {
 
       <FurtherReading
         title="Guides for high-ticket coaches"
-        slugs={["high-ticket-sales-how-to-get-high-ticket-clients", "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition", "how-much-does-a-lead-generation-agency-cost", "automated-lead-qualification-system-high-ticket"]}
+        slugs={["high-ticket-sales-how-to-get-high-ticket-clients", "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition", "how-to-write-a-vsl-script-12-minute-structure", "automated-lead-qualification-system-high-ticket"]}
       />
       <CTABanner
         eyebrow="Coaching Growth Guarantee"

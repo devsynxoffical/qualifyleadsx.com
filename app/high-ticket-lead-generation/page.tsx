@@ -19,6 +19,7 @@ import {
   DollarSign,
   Filter,
 } from "lucide-react";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
   title: "High Ticket Lead Generation for $3K–$25K Offers",
@@ -250,6 +251,8 @@ export default function HighTicketLeadGenPage() {
           </div>
         </div>
       </section>
+
+      <ProofStack variant="full" />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

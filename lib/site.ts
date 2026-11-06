@@ -6,7 +6,8 @@ export const site = {
   bookCallUrl: "/book-your-call",
   email: "hello@qualifiedleadsx.com",
   phone: "",
-  whatsappNumber: "919582296172",
+  whatsappNumber: "919625695456",
+  whatsappDisplay: "+91 96256 95456",
   founded: 2022,
   location: {
     streetAddress: "1309 Coffeen Avenue STE 1200",

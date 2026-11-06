@@ -21,6 +21,7 @@ import {
   Laptop,
   CheckCircle2,
 } from "lucide-react";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
   title: "Lead Generation by Industry - QualifiedLeadsX",
@@ -341,6 +342,8 @@ export default function IndustryHubPage() {
           </div>
         </div>
       </section>
+
+      <ProofStack variant="compact" />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

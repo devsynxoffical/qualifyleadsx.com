@@ -19,6 +19,7 @@ import {
   Bot,
   Activity,
 } from "lucide-react";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
   title: "AI Speed to Lead: Sub-5-Minute Appointment Setting",
@@ -266,6 +267,8 @@ export default function SpeedToLeadPage() {
           </div>
         </div>
       </section>
+
+      <ProofStack variant="full" />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

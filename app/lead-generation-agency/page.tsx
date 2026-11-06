@@ -19,6 +19,7 @@ import {
   BarChart3,
   Layers,
 } from "lucide-react";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
   title: "Lead Generation Agency for High-Ticket B2B & Coaches",
@@ -258,6 +259,8 @@ export default function LeadGenAgencyPage() {
           </div>
         </div>
       </section>
+
+      <ProofStack variant="full" />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

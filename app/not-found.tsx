@@ -16,6 +16,7 @@ const links = [
   { label: "Appointment Setting", href: "/appointment-setting" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Growth Guides & Blog", href: "/blog" },
+  { label: "Glossary", href: "/glossary" },
   { label: "About QualifiedLeadsX", href: "/about" },
 ];
 

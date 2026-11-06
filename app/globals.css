@@ -16,6 +16,8 @@
   --color-fog: #ffffff;
   --color-mist: #ffffff;
   --color-dim: #f1f5f9;
+  /* "paper" = primary text/surface tint used by service, industry and tool pages */
+  --color-paper: #ffffff;
 
   /* ---- Accents ---- */
   --color-lime: #c9f26b;
@@ -313,6 +315,7 @@ h1, h2, h3, h4, .font-heading {
   --color-fog: #0c1117;
   --color-mist: #47515d;
   --color-dim: #737d88;
+  --color-paper: #0c1117;
   --color-lime: #4f7a1e;
   --color-lime-soft: #eef4dd;
   color-scheme: light;

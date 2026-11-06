@@ -137,7 +137,7 @@ export function Testimonials() {
                       <Star key={i} className="h-4 w-4 fill-current" />
                     ))}
                   </div>
-                  <h4 className="text-xl font-bold text-white tracking-tight">{currentVideo.name}</h4>
+                  <h3 className="text-xl font-bold text-white tracking-tight">{currentVideo.name}</h3>
                   <p className="text-sm text-mist">{currentVideo.role}</p>
                 </div>
               </motion.div>

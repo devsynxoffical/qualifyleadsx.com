@@ -1,12 +1,14 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { usePathname } from "next/navigation";
 import { X, ArrowUpRight, CheckCircle2, Loader2, Lock, ShieldCheck, Mail } from "lucide-react";
 import { site } from "@/lib/site";
 
 const ENDPOINT = `https://formsubmit.co/ajax/${site.email}`;
 
 export function EmailOptInWidget() {
+  const pathname = usePathname() || "/";
   const [isOpen, setIsOpen] = useState(false);
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
@@ -45,6 +47,9 @@ export function EmailOptInWidget() {
       setStatus("error");
     }
   }
+
+  // On the booking page this pill would cover the calendar, and the visitor is already converting.
+  if (pathname.startsWith("/book-your-call")) return null;
 
   return (
     <>

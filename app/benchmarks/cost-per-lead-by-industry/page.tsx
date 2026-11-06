@@ -6,6 +6,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
   title: "Cost Per Lead by Industry 2026 Benchmarks | QLX",
@@ -170,6 +171,8 @@ export default function CplByIndustryPage() {
             </div>
           </div>
         </section>
+
+        <ProofStack variant="compact" />
 
         {/* FAQs */}
         <section className="py-16">

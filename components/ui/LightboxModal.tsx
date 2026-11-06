@@ -70,7 +70,7 @@ export function LightboxModal({
             {currentItem.badge || "Verified Client Proof"}
           </span>
           <div className="hidden sm:block">
-            <h4 className="text-sm font-semibold text-fog">{currentItem.title}</h4>
+            <h3 className="text-sm font-semibold text-fog">{currentItem.title}</h3>
             {currentItem.subtitle && (
               <p className="text-xs text-mist">{currentItem.subtitle}</p>
             )}
@@ -136,7 +136,7 @@ export function LightboxModal({
         />
         {currentItem.subtitle && (
           <div className="border-t border-line bg-panel/90 p-4 text-center sm:hidden">
-            <h4 className="text-sm font-semibold text-fog">{currentItem.title}</h4>
+            <h3 className="text-sm font-semibold text-fog">{currentItem.title}</h3>
             <p className="text-xs text-mist">{currentItem.subtitle}</p>
           </div>
         )}

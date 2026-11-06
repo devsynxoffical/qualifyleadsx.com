@@ -19,6 +19,7 @@ import {
   Layers,
   FileCheck,
 } from "lucide-react";
+import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
   title: "B2B Service Lead Generation for High-Ticket Contracts",
@@ -250,6 +251,8 @@ export default function B2bServicesPage() {
           </div>
         </div>
       </section>
+
+      <ProofStack variant="full" />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

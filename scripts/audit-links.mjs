@@ -20,7 +20,7 @@ import { join, relative } from "node:path";
 const ROOT = ".next/server/app";
 const SITE = "https://www.qualifiedleadsx.com";
 const MIN_INBOUND = 3;
-const NOINDEX = new Set(["/privacy", "/terms", "/disclaimer", "/_not-found"]);
+const NOINDEX = new Set(["/privacy", "/terms", "/disclaimer", "/_not-found", "/book-your-call/schedule"]);
 
 function* walk(dir) {
   for (const e of readdirSync(dir)) {

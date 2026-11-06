@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 const links = [
+  { label: "Pick a Call Time", href: "/book-your-call/schedule#calendar" },
   { label: "Meta Ads Agency", href: "/meta-ads-agency" },
   { label: "Appointment Setting", href: "/appointment-setting" },
   { label: "Case Studies", href: "/case-studies" },

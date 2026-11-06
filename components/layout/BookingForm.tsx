@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, type FormEvent } from "react";
+import Link from "next/link";
 import { ArrowUpRight, CheckCircle2, Loader2, RefreshCw } from "lucide-react";
 import { site } from "@/lib/site";
 import { fbqTrack } from "@/lib/pixel";
@@ -16,6 +17,26 @@ const inputCls =
 const labelCls = "mb-1.5 block text-xs font-medium uppercase tracking-wider text-mist";
 
 type Status = "idle" | "sending" | "success" | "error";
+
+const NOTIFY_TIMEOUT_MS = 12000;
+
+/** Email the booking details via FormSubmit, giving up after 12 seconds. */
+async function sendNotification(payload: Record<string, unknown>) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), NOTIFY_TIMEOUT_MS);
+  try {
+    const res = await fetch(ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(payload),
+      keepalive: true,
+      signal: controller.signal,
+    });
+    return (await res.json()) as { success?: string | boolean; message?: string };
+  } finally {
+    clearTimeout(timer);
+  }
+}
 
 export function BookingForm() {
   const [status, setStatus] = useState<Status>("idle");
@@ -46,18 +67,30 @@ export function BookingForm() {
       message: fd.get("message"),
     };
 
+    const firstName = String(fd.get("name") || "").trim().split(/\s+/)[0] || "";
+    const emailValue = String(fd.get("email") || "").trim();
+
+    // With a calendar connected, booking must never wait on the email
+    // notification: show step 2 immediately and send the details in the
+    // background. keepalive lets the request finish even if the page changes.
+    if (googleCalendarBooking) {
+      setFirstName(firstName);
+      setEmail(emailValue);
+      setStatus("success");
+      fbqTrack("CompleteRegistration");
+      void sendNotification(payload).catch(() => {
+        /* the visitor still books on the calendar; nothing to show them */
+      });
+      return;
+    }
+
     setStatus("sending");
     setErrorMessage("");
     try {
-      const res = await fetch(ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(payload),
-      });
-      const data = (await res.json()) as { success?: string | boolean; message?: string };
+      const data = await sendNotification(payload);
       if (data.success === "true" || data.success === true) {
-        setFirstName(String(fd.get("name") || "").trim().split(/\s+/)[0] || "");
-        setEmail(String(fd.get("email") || "").trim());
+        setFirstName(firstName);
+        setEmail(emailValue);
         setStatus("success");
         fbqTrack("CompleteRegistration");
         form.reset();
@@ -67,7 +100,11 @@ export function BookingForm() {
       }
     } catch (err: unknown) {
       setStatus("error");
-      setErrorMessage(err instanceof Error ? err.message : "");
+      setErrorMessage(
+        err instanceof Error && err.name === "AbortError"
+          ? "This is taking longer than expected."
+          : ""
+      );
     }
   }
 
@@ -242,6 +279,19 @@ export function BookingForm() {
           ? "Step 1 of 2 · Free 30-minute call · Pick your time on the next step."
           : "Free 30-minute call · No pressure, no obligation. Your details stay private."}
       </p>
+
+      {googleCalendarBooking && (
+        <div className="mt-5 flex flex-col items-center gap-1 border-t border-line pt-5 text-center sm:flex-row sm:justify-center sm:gap-2">
+          <span className="text-sm text-mist">Already know you want to talk?</span>
+          <Link
+            href="/book-your-call/schedule#calendar"
+            className="inline-flex items-center gap-1 text-sm font-semibold text-lime underline-offset-4 hover:underline"
+          >
+            Skip the form and pick a time
+            <ArrowUpRight className="h-4 w-4" />
+          </Link>
+        </div>
+      )}
     </form>
   );
 }

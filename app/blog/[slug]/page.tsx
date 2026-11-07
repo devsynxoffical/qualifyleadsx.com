@@ -47,7 +47,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const postUrl = `${site.url}/blog/${post.slug}`;
 
   return {
-    title: { absolute: `${post.seoTitle ?? post.title} | QualifiedLeadsX™` },
+    // Keep the search phrase visible: add the brand suffix only when the full
+    // title still fits in Google's ~60-character display.
+    title: {
+      absolute:
+        (post.seoTitle ?? post.title).length + " | QualifiedLeadsX™".length <= 62
+          ? `${post.seoTitle ?? post.title} | QualifiedLeadsX™`
+          : (post.seoTitle ?? post.title),
+    },
     description: post.description,
     keywords: post.tags,
     authors: [{ name: post.author.name, url: site.url }],

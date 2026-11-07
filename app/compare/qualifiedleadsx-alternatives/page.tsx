@@ -9,14 +9,14 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "QualifiedLeadsX Alternatives & Comparison | QLX",
+  title: "QualifiedLeadsX Alternatives & Comparison",
   description:
     "Honest comparison of QualifiedLeadsX alternatives for high-ticket lead generation. Compare against traditional agencies, cold email shops, and internal hiring.",
   alternates: {
     canonical: `${site.url}/compare/qualifiedleadsx-alternatives`,
   },
   openGraph: {
-    title: "QualifiedLeadsX Alternatives & Comparison | QLX",
+    title: "QualifiedLeadsX Alternatives & Comparison",
     description:
       "Honest comparison of QualifiedLeadsX alternatives for high-ticket lead generation. Traditional agencies vs QLX.",
     url: `${site.url}/compare/qualifiedleadsx-alternatives`,

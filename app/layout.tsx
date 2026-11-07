@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     "appointment setting system",
     "facebook ads for high ticket",
   ],
-  authors: [{ name: "Qualified LeadsX", url: site.url }],
-  creator: "Qualified LeadsX",
+  authors: [{ name: "QualifiedLeadsX", url: site.url }],
+  creator: "QualifiedLeadsX",
   publisher: "Ecom Expertz LLC®",
   alternates: {
     canonical: "/",

@@ -9,14 +9,14 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Done For You vs Done With You Lead Gen | QLX",
+  title: "Done For You vs Done With You Lead Gen | QualifiedLeadsX",
   description:
     "Compare Done-For-You (DFY) vs Done-With-You (DWY) lead generation. Economics, time investment, execution risk, and which model scales faster.",
   alternates: {
     canonical: `${site.url}/compare/done-for-you-vs-done-with-you-lead-generation`,
   },
   openGraph: {
-    title: "Done For You vs Done With You Lead Gen | QLX",
+    title: "Done For You vs Done With You Lead Gen | QualifiedLeadsX",
     description:
       "Compare Done-For-You (DFY) vs Done-With-You (DWY) lead generation. Economics and execution risk.",
     url: `${site.url}/compare/done-for-you-vs-done-with-you-lead-generation`,

@@ -865,9 +865,9 @@ export const blogPosts: BlogPost[] = [
   // 27 OCT 2026 — commercial-intent pillar: "facebook ads agency"
   {
     slug: "facebook-ads-agency-vs-in-house-media-buyer",
-    seoTitle: "Facebook Ads Agency vs In-House Media Buyer",
+    seoTitle: "Facebook Ads Agency vs Hiring an In-House Media Buyer",
     title: "Facebook Ads Agency vs In-House Media Buyer: Which Is Right for a High-Ticket Business in 2026?",
-    description: "Hire a Facebook ads agency or in-house media buyer? Compare true costs ($90K-$150K salary), speed to results, and creative capacity for B2B offers.",
+    description: "Agency fees run $2K–$7.5K a month; an in-house media buyer costs $90K–$150K a year fully loaded. Compare cost, creative output, speed and risk.",
     publishedAt: "2026-10-27",
     updatedAt: "2026-10-27",
     readTime: "10 min read",
@@ -1257,9 +1257,9 @@ export const blogPosts: BlogPost[] = [
   // 2) 23 OCT 2026
   {
     slug: "meta-ads-for-high-ticket-b2b-broad-targeting",
-    seoTitle: "Meta Ads for High-Ticket B2B: Broad Targeting",
+    seoTitle: "Facebook Ads Targeting for High-Ticket B2B Offers",
     title: "Meta Ads for High-Ticket B2B: Why Broad Creative Targeting Outperforms Lookalikes",
-    description: "Modern AI machine learning on Meta: why lookalikes fail and how broad creative-as-targeting attracts enterprise decision-makers at lower CPMs.",
+    description: "How to target Facebook and Instagram ads for high-ticket B2B offers: why broad targeting beats lookalikes and how ad creative selects the right buyers.",
     publishedAt: "2026-10-23",
     updatedAt: "2026-10-23",
     readTime: "10 min read",
@@ -1850,7 +1850,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "b2b-client-acquisition-cost-cac-benchmarks-2026",
-    seoTitle: "B2B Client Acquisition Cost (CAC) Benchmarks",
+    seoTitle: "B2B CAC Benchmarks 2026: Cost to Acquire a Client",
     title: "High-Ticket B2B CAC Benchmarks (2026): What Elite Agencies and Consultants Pay per Deal",
     description: "Real-world unit economics, CAC benchmarks, and LTV-to-CAC ratios across high-ticket coaching programs and B2B growth agencies scaling to 8-figures.",
     publishedAt: "2026-09-28",

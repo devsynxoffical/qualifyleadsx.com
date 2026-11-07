@@ -9,14 +9,14 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Appointment Setting for Consultants | QLX",
+  title: "Appointment Setting for Consultants | QualifiedLeadsX",
   description:
     "High-touch appointment setting for management & B2B consultants. Book C-suite decision-makers for $15K–$50K+ advisory engagements with 85%+ show rates.",
   alternates: {
     canonical: `${site.url}/appointment-setting-for-consultants`,
   },
   openGraph: {
-    title: "Appointment Setting for Consultants | QLX",
+    title: "Appointment Setting for Consultants | QualifiedLeadsX",
     description:
       "High-touch appointment setting for management & B2B consultants. Book C-suite decision-makers for $15K–$50K+ engagements.",
     url: `${site.url}/appointment-setting-for-consultants`,

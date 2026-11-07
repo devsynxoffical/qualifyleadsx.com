@@ -24,9 +24,11 @@ import {
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "High Ticket Lead Generation Services - QualifiedLeadsX",
+  // Hub page: targets "client acquisition services" so it no longer competes with
+  // /high-ticket-lead-generation for "high ticket lead generation".
+  title: { absolute: "Client Acquisition Services: Meta Ads, VSL & Setters" },
   description:
-    "Explore done-for-you high ticket lead generation services. From Meta ads to speed-to-lead appointment setting, scale past $100K+/mo with 30-50 booked calls.",
+    "Every QualifiedLeadsX service in one place: Meta ads, VSL funnels, AI speed to lead, WhatsApp nurture, CRM automation, appointment setting and closers.",
   keywords: [
     "high ticket lead generation services",
     "b2b lead generation services",
@@ -39,9 +41,9 @@ export const metadata: Metadata = {
     canonical: "/services",
   },
   openGraph: {
-    title: "High Ticket Lead Generation Services - QualifiedLeadsX",
+    title: "Client Acquisition Services | QualifiedLeadsX",
     description:
-      "Explore done-for-you high ticket lead generation services. Meta ads, VSL funnels, and sub-5-minute AI appointment setting.",
+      "Meta ads, VSL funnels, AI speed to lead, WhatsApp nurture, CRM automation, appointment setting and sales closers for high-ticket businesses.",
     url: `${site.url}/services`,
     type: "website",
   },

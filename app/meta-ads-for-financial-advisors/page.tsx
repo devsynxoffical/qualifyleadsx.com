@@ -9,14 +9,14 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Facebook Ads for Financial Advisors | QLX",
+  title: "Facebook Ads for Financial Advisors | QualifiedLeadsX",
   description:
     "FINRA & SEC compliant Facebook and Instagram ads for wealth managers and RIAs. Attract pre-retirees and HNW clients with $500K+ investable assets.",
   alternates: {
     canonical: `${site.url}/meta-ads-for-financial-advisors`,
   },
   openGraph: {
-    title: "Facebook Ads for Financial Advisors | QLX",
+    title: "Facebook Ads for Financial Advisors | QualifiedLeadsX",
     description:
       "Compliant Facebook and Instagram ads for wealth managers and RIAs. Attract clients with $500K+ investable assets.",
     url: `${site.url}/meta-ads-for-financial-advisors`,

@@ -9,14 +9,14 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Appointment Setter vs Virtual Assistant | QLX",
+  title: "Appointment Setter vs Virtual Assistant | QualifiedLeadsX",
   description:
     "Appointment setter vs virtual assistant (VA): compare conversion rates, compensation, qualification skills, and sales impact for high-ticket offers.",
   alternates: {
     canonical: `${site.url}/compare/appointment-setter-vs-va`,
   },
   openGraph: {
-    title: "Appointment Setter vs Virtual Assistant | QLX",
+    title: "Appointment Setter vs Virtual Assistant | QualifiedLeadsX",
     description:
       "Appointment setter vs virtual assistant: compare conversion rates, compensation, and sales impact.",
     url: `${site.url}/compare/appointment-setter-vs-va`,

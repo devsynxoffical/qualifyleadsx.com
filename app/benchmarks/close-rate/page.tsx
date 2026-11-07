@@ -9,14 +9,14 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "High Ticket Close Rate Benchmarks 2026 | QLX",
+  title: "High Ticket Close Rate Benchmarks 2026 | QualifiedLeadsX",
   description:
     "High-ticket close rate benchmarks for 2026. Real data comparing cold inbound vs setter-qualified calls across $3K, $10K, and $25K+ offers.",
   alternates: {
     canonical: `${site.url}/benchmarks/close-rate`,
   },
   openGraph: {
-    title: "High Ticket Close Rate Benchmarks 2026 | QLX",
+    title: "High Ticket Close Rate Benchmarks 2026 | QualifiedLeadsX",
     description:
       "High-ticket close rate benchmarks for 2026 across $3K, $10K, and $25K+ offers from 125+ client accounts.",
     url: `${site.url}/benchmarks/close-rate`,

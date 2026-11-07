@@ -9,14 +9,14 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Cost Per Lead by Industry 2026 Benchmarks | QLX",
+  title: "Cost Per Lead by Industry 2026 Benchmarks | QualifiedLeadsX",
   description:
     "Cost per lead by industry in 2026. Real CPL benchmarks across B2B SaaS, med spas, real estate, financial advising, and coaching based on $50M+ ad spend.",
   alternates: {
     canonical: `${site.url}/benchmarks/cost-per-lead-by-industry`,
   },
   openGraph: {
-    title: "Cost Per Lead by Industry 2026 Benchmarks | QLX",
+    title: "Cost Per Lead by Industry 2026 Benchmarks | QualifiedLeadsX",
     description:
       "Real CPL benchmarks across B2B SaaS, med spas, real estate, and high-ticket coaching based on $50M+ spend.",
     url: `${site.url}/benchmarks/cost-per-lead-by-industry`,

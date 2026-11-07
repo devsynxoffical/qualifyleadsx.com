@@ -9,14 +9,14 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Meta Ads vs Google Ads for High-Ticket Offers | QLX",
+  title: "Meta Ads vs Google Ads for High-Ticket Offers",
   description:
     "Meta Ads vs Google Ads for coaches & consultants. Compare CAC, intent vs disruption, volume, and how to scale $5K+ offers in 2026.",
   alternates: {
     canonical: `${site.url}/compare/meta-ads-vs-google-ads-high-ticket`,
   },
   openGraph: {
-    title: "Meta Ads vs Google Ads for High-Ticket Offers | QLX",
+    title: "Meta Ads vs Google Ads for High-Ticket Offers",
     description:
       "Meta Ads vs Google Ads for coaches & consultants. Compare CAC, intent vs disruption, and volume.",
     url: `${site.url}/compare/meta-ads-vs-google-ads-high-ticket`,

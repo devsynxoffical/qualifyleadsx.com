@@ -9,14 +9,14 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Facebook Ads for Course Creators | QLX",
+  title: "Facebook Ads for Course Creators | QualifiedLeadsX",
   description:
     "Scale premium online courses and masterminds ($2K–$10K). High-converting VSL funnels, webinar remarketing, and phone setters with 4.5x+ ROAS.",
   alternates: {
     canonical: `${site.url}/meta-ads-for-course-creators`,
   },
   openGraph: {
-    title: "Facebook Ads for Course Creators | QLX",
+    title: "Facebook Ads for Course Creators | QualifiedLeadsX",
     description:
       "Scale premium online courses and masterminds ($2K–$10K). High-converting VSL funnels with 4.5x+ ROAS.",
     url: `${site.url}/meta-ads-for-course-creators`,

@@ -4,6 +4,8 @@ import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { FurtherReading } from "@/components/sections/FurtherReading";
+import { LinkGroups } from "@/components/sections/LinkGroups";
+import { metaAdsIndustryLinks, industryPages } from "@/lib/industry-links";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
@@ -553,6 +555,12 @@ export default function MetaAdsAgencyPage() {
       </section>
 
       {/* Bottom CTA Banner */}
+      <LinkGroups
+        id="by-industry"
+        eyebrow="By industry"
+        title="Meta ads programs built for your industry"
+        groups={[{ title: "Meta ads by industry", links: metaAdsIndustryLinks }, { title: "Lead generation by industry", links: industryPages.slice(0, 8).map((p) => ({ href: `/for/${p.slug}`, label: p.label })) }]}
+      />
       <FurtherReading
         title="Meta ads guides from the research team"
         slugs={["facebook-ads-agency-vs-in-house-media-buyer", "meta-ads-for-high-ticket-b2b-broad-targeting", "b2b-roas-benchmarks-qualified-appointment-generation", "how-much-does-a-lead-generation-agency-cost"]}

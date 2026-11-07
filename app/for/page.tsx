@@ -22,6 +22,8 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { LinkGroups } from "@/components/sections/LinkGroups";
+import { industryPages, metaAdsIndustryLinks, appointmentSettingIndustryLinks } from "@/lib/industry-links";
 
 export const metadata: Metadata = {
   title: "Lead Generation by Industry - QualifiedLeadsX",
@@ -343,6 +345,15 @@ export default function IndustryHubPage() {
         </div>
       </section>
 
+      <LinkGroups
+        id="all-industries"
+        eyebrow="Every industry page"
+        title="Find the playbook for your industry"
+        groups={[
+          { title: "Lead generation by industry", links: industryPages.map((p) => ({ href: `/for/${p.slug}`, label: p.label })) },
+          { title: "By service", links: [...metaAdsIndustryLinks, ...appointmentSettingIndustryLinks] },
+        ]}
+      />
       <ProofStack variant="compact" />
 
       {/* Frequently Asked Questions */}

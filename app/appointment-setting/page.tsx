@@ -5,6 +5,8 @@ import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { FurtherReading } from "@/components/sections/FurtherReading";
+import { LinkGroups } from "@/components/sections/LinkGroups";
+import { appointmentSettingIndustryLinks, industryPages } from "@/lib/industry-links";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
@@ -731,6 +733,12 @@ export default function AppointmentSettingPage() {
       </section>
 
       {/* Bottom CTA Banner */}
+      <LinkGroups
+        id="by-industry"
+        eyebrow="By industry"
+        title="Appointment setting tuned to your industry"
+        groups={[{ title: "Appointment setting by industry", links: appointmentSettingIndustryLinks }, { title: "Lead generation by industry", links: industryPages.slice(0, 8).map((p) => ({ href: `/for/${p.slug}`, label: p.label })) }]}
+      />
       <FurtherReading
         title="Appointment setting and qualification guides"
         slugs={["b2b-appointment-setting-vs-in-house-sdr-teams", "ai-whatsapp-lead-nurture-pipeline-high-ticket", "automated-lead-qualification-system-high-ticket", "speed-to-lead-statistics-response-time"]}

@@ -4,6 +4,8 @@ import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { FurtherReading } from "@/components/sections/FurtherReading";
+import { LinkGroups } from "@/components/sections/LinkGroups";
+import { caseStudyLinks } from "@/lib/case-study-meta";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { CaseStudiesGallery } from "@/components/sections/CaseStudiesGallery";
@@ -398,6 +400,15 @@ export default function CaseStudiesPage() {
       </Section>
 
       {/* Bottom CTA Banner */}
+      <LinkGroups
+        id="case-study-breakdowns"
+        eyebrow="Full breakdowns"
+        title="Read the full case study breakdowns"
+        groups={[
+          { title: "Largest results", links: caseStudyLinks.slice(0, 5) },
+          { title: "More breakdowns", links: caseStudyLinks.slice(5) },
+        ]}
+      />
       <FurtherReading
         title="The playbooks behind these results"
         slugs={["b2b-roas-benchmarks-qualified-appointment-generation", "b2b-client-acquisition-cost-cac-benchmarks-2026", "high-ticket-sales-how-to-get-high-ticket-clients", "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition"]}

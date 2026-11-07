@@ -3,6 +3,7 @@ import { LogoBar } from "@/components/sections/LogoBar";
 import { Process } from "@/components/sections/Process";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Guarantee } from "@/components/sections/Guarantee";
+import { RelatedIndustryLinks } from "@/components/sections/RelatedIndustryLinks";
 
 /**
  * The homepage's proof sections, reused on service, industry, comparison,
@@ -32,6 +33,7 @@ export function ProofStack({ variant = "full" }: { variant?: "full" | "compact" 
       <Process />
       <Testimonials />
       <Guarantee />
+      <RelatedIndustryLinks />
     </>
   );
 }

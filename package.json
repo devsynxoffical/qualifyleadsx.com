@@ -10,7 +10,8 @@
     "index:google": "node scripts/request-indexing.mjs",
     "index:now": "node scripts/submit-indexnow.mjs",
     "seo:validate": "node scripts/validate-schema.mjs",
-    "seo:links": "node scripts/audit-links.mjs"
+    "seo:links": "node scripts/audit-links.mjs",
+    "seo:lastmod": "node scripts/build-lastmod.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

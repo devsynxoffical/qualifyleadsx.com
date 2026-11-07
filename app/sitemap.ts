@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
+import routeLastmod from "@/lib/route-lastmod.json";
 import { blogPosts, blogCategories, getPostsByCategory } from "@/lib/blog-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -495,5 +496,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...coreRoutes, ...categoryRoutes, ...blogRoutes, ...caseStudyRoutes];
+  // Pages that carry a noindex robots tag must not be listed in the sitemap.
+  const NOINDEX_PATHS = new Set(["/privacy", "/terms", "/disclaimer"]);
+
+  // Honest lastmod: the date each route's source last changed in git
+  // (lib/route-lastmod.json, refreshed with `npm run seo:lastmod`). Blog posts
+  // keep their own updatedAt. Falls back to the entry's value.
+  const lastmod = routeLastmod as Record<string, string>;
+  const withRealDates = (entry: MetadataRoute.Sitemap[number]) => {
+    const path = entry.url.replace(site.url, "") || "/";
+    if (path.startsWith("/blog/") && !path.startsWith("/blog/category/")) return entry;
+    const date = lastmod[path] ?? (path.startsWith("/case-studies/") ? lastmod["/case-studies/*"] : undefined);
+    return date ? { ...entry, lastModified: new Date(date) } : entry;
+  };
+
+  return [...coreRoutes, ...categoryRoutes, ...blogRoutes, ...caseStudyRoutes]
+    .filter((entry) => !NOINDEX_PATHS.has(entry.url.replace(site.url, "")))
+    .map(withRealDates);
 }

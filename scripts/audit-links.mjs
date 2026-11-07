@@ -38,6 +38,16 @@ for (const f of walk(ROOT)) {
 }
 const routes = new Set(pages.keys());
 
+// Pages that opt out of the index (robots noindex) or consolidate into another
+// URL (canonical points elsewhere) are not expected to have inbound links.
+for (const [route, html] of pages) {
+  const head = html.split("</head>")[0];
+  const noindex = /<meta name="robots" content="[^"]*noindex/.test(head);
+  const canon = head.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
+  const self = SITE + (route === "/" ? "" : route);
+  if (noindex || (canon && canon !== self && canon !== self + "/")) NOINDEX.add(route);
+}
+
 const norm = (href) => {
   let h = href.trim();
   if (h.startsWith(SITE)) h = h.slice(SITE.length) || "/";

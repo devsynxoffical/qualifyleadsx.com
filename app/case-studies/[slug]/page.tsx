@@ -8,6 +8,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { caseStudyMeta } from "@/lib/case-study-meta";
 import { ShieldCheck, ExternalLink } from "lucide-react";
 
 const topCaseStudySlugs: Record<string, string> = {
@@ -22,6 +23,7 @@ const topCaseStudySlugs: Record<string, string> = {
   "high-ticket-funnel-79k": "DU71t8DER0c",
   "b2b-technology-agency-71k": "DT4yHdFkXhM",
 };
+
 
 // Reverse lookup map
 const idToSlugMap: Record<string, string> = Object.entries(topCaseStudySlugs).reduce(
@@ -57,19 +59,27 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  const cleanTitle = `${item.category}: ${item.bigNumber} Revenue Scaling Case Study`;
-  const cleanDesc = `How this ${item.category} business generated ${item.bigNumber} in revenue with Meta Ads and appointment setting. Real data, systems, and metrics.`;
+  // Instagram-ID URLs that duplicate a named case study point their canonical
+  // at the named URL. Instagram-ID URLs with no named version are unlinked,
+  // caption-only pages kept out of the index (noindex, follow).
+  const primarySlug = idToSlugMap[item.id] || item.id;
+  const isNamed = primarySlug in topCaseStudySlugs;
+  const curated = caseStudyMeta[primarySlug];
+  const title = curated?.title ?? `${item.bigNumber} Client Results Case Study`;
+  const description =
+    curated?.description ??
+    `How this client generated ${item.bigNumber} with Meta ads, funnels and follow-up. Real numbers from a QualifiedLeadsX engagement.`;
+  const canonical = `${site.url}/case-studies/${primarySlug}`;
 
   return {
-    title: cleanTitle.length > 58 ? cleanTitle.slice(0, 55) + "..." : cleanTitle,
-    description: cleanDesc.length > 155 ? cleanDesc.slice(0, 150) + "..." : cleanDesc,
-    alternates: {
-      canonical: `${site.url}/case-studies/${slug}`,
-    },
+    title,
+    description,
+    alternates: { canonical },
+    ...(isNamed ? {} : { robots: { index: false, follow: true } }),
     openGraph: {
-      title: cleanTitle,
-      description: cleanDesc,
-      url: `${site.url}/case-studies/${slug}`,
+      title,
+      description,
+      url: canonical,
       siteName: site.name,
       type: "article",
     },
@@ -168,7 +178,7 @@ export default async function IndividualCaseStudyPage({ params }: PageProps) {
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-paper mt-2 mb-6">
-              {item.category}: {item.bigNumber} Revenue Scaling Case Study
+              {caseStudyMeta[primarySlug]?.h1 ?? `${item.bigNumber} Client Results Case Study`}
             </h1>
 
             {/* AEO Direct Answer */}
@@ -316,7 +326,7 @@ export default async function IndividualCaseStudyPage({ params }: PageProps) {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               <div className="rounded-xl border border-line bg-panel p-5">
                 <span className="text-xs font-mono font-bold text-lime block mb-2">SERVICES</span>
-                <h4 className="text-sm font-bold text-white mb-2">Core Funnel Delivery</h4>
+                <h3 className="text-sm font-bold text-white mb-2">Core Funnel Delivery</h3>
                 <ul className="space-y-1.5 text-xs font-mono text-mist">
                   <li><Link href="/meta-ads-agency" className="hover:text-lime block">→ Meta Ads Management</Link></li>
                   <li><Link href="/appointment-setting" className="hover:text-lime block">→ Appointment Setting</Link></li>
@@ -326,7 +336,7 @@ export default async function IndividualCaseStudyPage({ params }: PageProps) {
 
               <div className="rounded-xl border border-line bg-panel p-5">
                 <span className="text-xs font-mono font-bold text-lime block mb-2">BENCHMARKS</span>
-                <h4 className="text-sm font-bold text-white mb-2">Empirical Datasets</h4>
+                <h3 className="text-sm font-bold text-white mb-2">Empirical Datasets</h3>
                 <ul className="space-y-1.5 text-xs font-mono text-mist">
                   <li><Link href="/benchmarks/cost-per-lead-by-industry" className="hover:text-lime block">→ Cost Per Lead Data</Link></li>
                   <li><Link href="/benchmarks/show-rate" className="hover:text-lime block">→ Appointment Show Rates</Link></li>
@@ -336,7 +346,7 @@ export default async function IndividualCaseStudyPage({ params }: PageProps) {
 
               <div className="rounded-xl border border-line bg-panel p-5">
                 <span className="text-xs font-mono font-bold text-lime block mb-2">CALCULATORS</span>
-                <h4 className="text-sm font-bold text-white mb-2">Model Your Offer</h4>
+                <h3 className="text-sm font-bold text-white mb-2">Model Your Offer</h3>
                 <ul className="space-y-1.5 text-xs font-mono text-mist">
                   <li><Link href="/tools/cac-calculator" className="hover:text-lime block">→ CAC & Payback Tool</Link></li>
                   <li><Link href="/tools/roas-calculator" className="hover:text-lime block">→ ROAS & Break-Even</Link></li>
@@ -346,7 +356,7 @@ export default async function IndividualCaseStudyPage({ params }: PageProps) {
 
               <div className="rounded-xl border border-line bg-panel p-5">
                 <span className="text-xs font-mono font-bold text-lime block mb-2">EXPLORE MORE</span>
-                <h4 className="text-sm font-bold text-white mb-2">Proof Archive</h4>
+                <h3 className="text-sm font-bold text-white mb-2">Proof Archive</h3>
                 <ul className="space-y-1.5 text-xs font-mono text-mist">
                   <li><Link href="/case-studies" className="hover:text-lime block">→ All 125+ Case Studies</Link></li>
                   <li><Link href="/for" className="hover:text-lime block">→ Lead Gen by Industry</Link></li>

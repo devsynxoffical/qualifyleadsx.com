@@ -1,13 +1,9 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import * as THREE from "three";
-import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer";
-import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
-import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass";
-import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass";
-import { GammaCorrectionShader } from "three/examples/jsm/shaders/GammaCorrectionShader";
-import { CopyShader } from "three/examples/jsm/shaders/CopyShader";
+// three.js (~430 KB) is loaded on demand inside the effect, after first paint,
+// so it is no longer parsed during the homepage's initial load.
+import type * as ThreeTypes from "three";
 import { ArrowUpRight, ShieldCheck } from "lucide-react";
 import { site } from "@/lib/site";
 
@@ -46,9 +42,9 @@ const LAYERS = { NONE: 0, TORUS_SCENE: 1, BLOOM_SCENE: 2, ENTIRE_SCENE: 3 };
 
 const Lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 const clamp = (v: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, v));
-function hexToVec3(hex: string) {
+function hexToRgb(hex: string): [number, number, number] {
   const n = parseInt(hex.slice(1), 16);
-  return new THREE.Vector3(((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255);
+  return [((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255];
 }
 
 /* ============================================================
@@ -205,13 +201,42 @@ export function FlowWave() {
   ];
 
   useEffect(() => {
+    // Performance: the WebGL hero is the heaviest work on the site. Build it
+    // only once the browser is idle (after first paint and hydration), use a
+    // lighter scene on phones and low-core devices, and pause rendering while
+    // the hero is off screen. The text overlay is server-rendered and visible
+    // without it.
+    const setup = async (): Promise<(() => void) | undefined> => {
+    const [
+      THREE,
+      { EffectComposer },
+      { RenderPass },
+      { UnrealBloomPass },
+      { ShaderPass },
+      { GammaCorrectionShader },
+      { CopyShader },
+    ] = await Promise.all([
+      import("three"),
+      import("three/examples/jsm/postprocessing/EffectComposer"),
+      import("three/examples/jsm/postprocessing/RenderPass"),
+      import("three/examples/jsm/postprocessing/UnrealBloomPass"),
+      import("three/examples/jsm/postprocessing/ShaderPass"),
+      import("three/examples/jsm/shaders/GammaCorrectionShader"),
+      import("three/examples/jsm/shaders/CopyShader"),
+    ]);
+    const hexToVec3 = (hex: string) => new THREE.Vector3(...hexToRgb(hex));
     const canvas = canvasRef.current;
     const sectionEl = sectionRef.current;
     if (!canvas || !sectionEl) return;
 
+    const lowPower =
+      window.matchMedia("(max-width: 767px)").matches || (navigator.hardwareConcurrency ?? 8) <= 4;
+    const dprCap = lowPower ? 1.5 : 2;
+    const pixelRatio = () => Math.min(window.devicePixelRatio || 1, dprCap);
+
     /* ------------------------------ scene ------------------------------ */
-    const renderer = new THREE.WebGL1Renderer({ canvas, antialias: true });
-    renderer.setPixelRatio(window.devicePixelRatio);
+    const renderer = new THREE.WebGL1Renderer({ canvas, antialias: !lowPower });
+    renderer.setPixelRatio(pixelRatio());
     renderer.setSize(window.innerWidth, window.innerHeight, false);
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.VSMShadowMap;
@@ -228,10 +253,11 @@ export function FlowWave() {
     scene.add(camera);
 
     /* --------------------------- points sheet --------------------------- */
-    const geo = new THREE.SphereGeometry(4.2, 200, 600);
+    // 120k points on desktop; ~24k on phones (same look, a fifth of the GPU/CPU work)
+    const geo = lowPower ? new THREE.SphereGeometry(4.2, 90, 270) : new THREE.SphereGeometry(4.2, 200, 600);
     (geo as unknown as { frustumCulled: boolean }).frustumCulled = false;
 
-    const uniforms: Record<string, THREE.IUniform> = {
+    const uniforms: Record<string, ThreeTypes.IUniform> = {
       uTime: { value: 0 },
       uStream: { value: 0 },
       uAppear: { value: 0 },
@@ -334,8 +360,8 @@ export function FlowWave() {
         uColor: { value: hexToVec3(atmoColor) },
         uRes: {
           value: new THREE.Vector2(
-            window.innerWidth * window.devicePixelRatio,
-            window.innerHeight * window.devicePixelRatio
+            window.innerWidth * pixelRatio(),
+            window.innerHeight * pixelRatio()
           ),
         },
       },
@@ -513,17 +539,32 @@ export function FlowWave() {
           console.warn("hero overlay failed", err);
         }
       }
-      raf = requestAnimationFrame(loop);
+      if (running) raf = requestAnimationFrame(loop);
     };
+
+    let running = true;
+    const visibility = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !running) {
+          running = true;
+          raf = requestAnimationFrame(loop);
+        } else if (!entry.isIntersecting && running) {
+          running = false;
+          cancelAnimationFrame(raf);
+        }
+      },
+      { rootMargin: "120px" }
+    );
+    visibility.observe(sectionEl);
 
     const onResize = () => {
       const w = window.innerWidth;
       const h = window.innerHeight;
-      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.setPixelRatio(pixelRatio());
       renderer.setSize(w, h, false);
       camera.aspect = w / h;
       camera.updateProjectionMatrix();
-      const dpr = window.devicePixelRatio;
+      const dpr = pixelRatio();
       torusComposer.setPixelRatio(dpr);
       torusComposer.setSize(w, h);
       bloomComposer.setPixelRatio(dpr);
@@ -540,6 +581,8 @@ export function FlowWave() {
     raf = requestAnimationFrame(loop);
 
     return () => {
+      running = false;
+      visibility.disconnect();
       cancelAnimationFrame(raf);
       window.removeEventListener("resize", onResize);
       window.removeEventListener("mousemove", onPointerMove);
@@ -549,6 +592,29 @@ export function FlowWave() {
       atmoGeo.dispose();
       atmoMat.dispose();
       renderer.dispose();
+    };
+    };
+
+    let cleanup: (() => void) | undefined;
+    let cancelled = false;
+    const start = () => {
+      if (cancelled) return;
+      setup()
+        .then((dispose) => {
+          if (cancelled) dispose?.();
+          else cleanup = dispose;
+        })
+        .catch((err) => console.warn("hero init skipped", err));
+    };
+    // Safari has no requestIdleCallback; fall back to a short timeout there.
+    const hasIdle = "requestIdleCallback" in window;
+    const handle = hasIdle ? window.requestIdleCallback(start, { timeout: 1500 }) : window.setTimeout(start, 400);
+
+    return () => {
+      cancelled = true;
+      if (hasIdle) window.cancelIdleCallback(handle);
+      else window.clearTimeout(handle);
+      cleanup?.();
     };
   }, []);
 

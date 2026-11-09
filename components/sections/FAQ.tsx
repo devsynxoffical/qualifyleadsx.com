@@ -200,3 +200,45 @@ export function FAQ() {
     </Section>
   );
 }
+
+/**
+ * The same FAQ accordion as the homepage, for any page with its own questions.
+ * Answers stay in the server HTML (collapsed with CSS), so they remain crawlable.
+ * The page renders its own FAQPage schema from the same `items`.
+ */
+export function FaqAccordion({
+  items,
+  eyebrow = "Questions, answered",
+  title,
+  subtitle,
+  ctaLabel = "Ask us on a free strategy call",
+  ctaHref = site.bookCallUrl,
+}: {
+  items: { q: string; a: string }[];
+  eyebrow?: string;
+  title: React.ReactNode;
+  subtitle?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
+}) {
+  const [active, setActive] = useState<number | null>(0);
+  return (
+    <Section id="faq" className="relative overflow-hidden bg-ink py-20 sm:py-28">
+      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[550px] w-[850px] rounded-full bg-lime/[0.06] blur-[150px]" />
+      <SectionHeading eyebrow={eyebrow} title={title} subtitle={subtitle} />
+      <div className="mx-auto max-w-3xl space-y-3.5">
+        {items.map((f, i) => (
+          <FaqItem key={f.q} q={f.q} a={f.a} index={i} open={active === i} onToggle={() => setActive(active === i ? null : i)} />
+        ))}
+      </div>
+      <Reveal delay={0.2}>
+        <div className="mx-auto mt-14 flex max-w-3xl flex-col items-center gap-4 text-center">
+          <p className="text-xs font-mono uppercase tracking-widest text-dim font-bold">Still have questions?</p>
+          <Button href={ctaHref} variant="primary" size="lg" icon="up-right" ariaLabel={ctaLabel} className="shadow-[0_0_35px_rgba(201,242,107,0.3)]">
+            {ctaLabel}
+          </Button>
+        </div>
+      </Reveal>
+    </Section>
+  );
+}

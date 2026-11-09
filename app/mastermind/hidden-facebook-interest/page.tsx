@@ -19,8 +19,24 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { VSL } from "@/components/sections/VSL";
 import { Testimonials } from "@/components/sections/Testimonials";
-import { ClientSuccess } from "@/components/sections/ClientSuccess";
+import { FaqAccordion } from "@/components/sections/FAQ";
 import { caseStudyMeta } from "@/lib/case-study-meta";
+import { caseStudiesData } from "@/lib/case-studies-data";
+
+/** Named case studies shown as results, with the same image used on each case study page. */
+const resultCaseStudies: [string, string][] = [
+  ["b2b-agency-scaling-846k", "DS5sAimEqsT"],
+  ["med-spa-marketing-agency-639k", "DZc5twGlC0M"],
+  ["high-ticket-coaching-203k", "DUsaqlQEsYB"],
+  ["digital-media-agency-157k", "DQ91hXmEoIm"],
+  ["executive-consulting-150k", "DQsBVdEkxYc"],
+  ["commercial-services-86k", "DSkbQyzkvbL"],
+];
+const results = resultCaseStudies.map(([slug, id]) => {
+  const item = caseStudiesData.find((c) => c.id === id);
+  const image = item ? item.thumbnailSrc ?? (item.type === "image" ? item.mediaSrc : undefined) : undefined;
+  return { slug, ...caseStudyMeta[slug], image };
+});
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 const PATH = "/mastermind/hidden-facebook-interest";
@@ -635,21 +651,17 @@ export default function AiClientAcquisitionMastermindPage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="border-t border-white/10 py-20">
-        <div className="container-x max-w-4xl">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-amber">FAQ</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Questions about the mastermind</h2>
-          <div className="mt-10 space-y-4">
-            {faqs.map((f) => (
-              <div key={f.q} className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-                <h3 className="text-lg font-semibold">{f.q}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/70 sm:text-base">{f.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FaqAccordion
+        items={faqs}
+        eyebrow="Questions, answered"
+        title={
+          <>
+            AI Client Acquisition Mastermind <em className="font-semibold not-italic text-lime">FAQ.</em>
+          </>
+        }
+        subtitle="Straight answers about the program. If your question isn't here, apply and ask us directly on the call."
+        ctaLabel="Apply for the Mastermind"
+      />
 
       {/* Results */}
       <section id="results" className="border-t border-white/10 bg-[#0a0a0a] py-20">
@@ -660,21 +672,33 @@ export default function AiClientAcquisitionMastermindPage() {
             Documented client results from the same Meta ads, qualification, tracking and scaling methods covered in the 12 classes. Each one links to the full case study.
           </p>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {Object.entries(caseStudyMeta)
-              .slice(0, 6)
-              .map(([slug, c]) => (
-                <Link
-                  key={slug}
-                  href={`/case-studies/${slug}`}
-                  className="group flex flex-col rounded-2xl border border-white/10 bg-black p-6 transition-colors hover:border-amber/60"
-                >
+            {results.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/case-studies/${c.slug}`}
+                className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-black transition-colors hover:border-amber/60"
+              >
+                {c.image && (
+                  <div className="relative aspect-[4/5] overflow-hidden bg-white/[0.03]">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={c.image}
+                      alt={`${c.title}: client result screenshot`}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                )}
+                <div className="flex flex-1 flex-col p-6">
                   <h3 className="text-lg font-bold text-amber">{c.title}</h3>
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-white/70">{c.description}</p>
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-white group-hover:text-amber">
                     Read the case study <ArrowUpRight className="h-4 w-4" />
                   </span>
-                </Link>
-              ))}
+                </div>
+              </Link>
+            ))}
           </div>
           <div className="mt-8 text-center">
             <Link href="/case-studies" className="text-sm font-semibold text-amber underline underline-offset-4">
@@ -683,7 +707,6 @@ export default function AiClientAcquisitionMastermindPage() {
           </div>
         </div>
       </section>
-      <ClientSuccess />
       <Testimonials />
 
       {/* Final CTA */}

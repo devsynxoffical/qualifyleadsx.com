@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { site } from "@/lib/site";
 import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
+import { RelatedLinks } from "@/components/sections/RelatedLinks";
 
 const topicLinks = [
   { label: "Funnel Strategy", href: "/blog/category/funnel-strategy" },
@@ -79,6 +80,8 @@ const footerColumns = [
 
 export function Footer() {
   return (
+    <>
+    <RelatedLinks />
     <footer className="relative border-t border-line bg-ink" id="footer">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-lime/30 to-transparent" />
       <div className="container-x">
@@ -251,5 +254,6 @@ export function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }

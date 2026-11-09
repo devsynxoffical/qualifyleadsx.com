@@ -22,7 +22,7 @@ import {
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Lead Generation Agency for High-Ticket B2B & Coaches",
+  title: "Done-for-You Lead Generation Agency: How It Works",
   description:
     "Premier lead generation agency installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. Get 30–50 qualified calls guaranteed.",
   keywords: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     canonical: "/lead-generation-agency",
   },
   openGraph: {
-    title: "Lead Generation Agency for High-Ticket B2B & Coaches",
+    title: "Done-for-You Lead Generation Agency: How It Works",
     description:
       "Premier lead generation agency installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. 30–50 qualified calls monthly.",
     url: `${site.url}/lead-generation-agency`,

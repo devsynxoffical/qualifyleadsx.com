@@ -3,8 +3,15 @@ import { site } from "@/lib/site";
 import routeLastmod from "@/lib/route-lastmod.json";
 import { blogPosts, blogCategories, getPostsByCategory } from "@/lib/blog-data";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  // Use today's date for freshly updated pages to notify Googlebot of new content/visuals
+/**
+ * Every indexable URL for the sitemaps (Site Growth Playbook, STEP 5).
+ * Only 200, self-canonical, indexable pages belong here: noindex pages and
+ * case-study ID URLs that canonicalise elsewhere are left out.
+ * Served split by page type through lib/sitemap-xml.ts and the
+ * app/sitemap*.xml route handlers.
+ */
+export function allSitemapEntries(): MetadataRoute.Sitemap {
+  // Fallback only; real dates come from lib/route-lastmod.json below.
   const now = new Date("2026-11-06");
   const legalUpdated = new Date("2026-01-15");
 

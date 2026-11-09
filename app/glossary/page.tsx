@@ -15,7 +15,7 @@ const DESCRIPTION =
   "Plain-English definitions of speed to lead, VSL funnel, blended CAC, ROAS, lead qualification, appointment setting and 20+ more, each linked to a full guide.";
 
 export const metadata: Metadata = {
-  title: { absolute: `${TITLE} | QualifiedLeadsX™` },
+  title: { absolute: "Client Acquisition Glossary (29 Terms) | QualifiedLeadsX™" },
   description: DESCRIPTION,
   alternates: { canonical: "/glossary" },
   openGraph: {

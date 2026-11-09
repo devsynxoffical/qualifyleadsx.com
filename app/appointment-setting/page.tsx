@@ -36,7 +36,7 @@ import { AppointmentRoiCalculator } from "@/components/sections/AppointmentRoiCa
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Appointment Setting With AI Speed to Lead",
+    absolute: "Appointment Setting Agency: Qualified Sales Calls Booked",
   },
   description:
     "Automated appointment setting system with sub-5-minute speed to lead. Turn cold inquiries into 30-50 qualified sales calls every month.",

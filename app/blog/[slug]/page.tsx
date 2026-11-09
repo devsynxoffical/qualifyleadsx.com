@@ -48,10 +48,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     // Keep the search phrase visible: add the brand suffix only when the full
-    // title still fits in Google's ~60-character display.
+    // title stays within 60 characters (playbook rule).
     title: {
       absolute:
-        (post.seoTitle ?? post.title).length + " | QualifiedLeadsX™".length <= 62
+        (post.seoTitle ?? post.title).length + " | QualifiedLeadsX™".length <= 60
           ? `${post.seoTitle ?? post.title} | QualifiedLeadsX™`
           : (post.seoTitle ?? post.title),
     },

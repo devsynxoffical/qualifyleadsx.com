@@ -64,25 +64,3 @@ export function industryFromPath(pathname: string): string | null {
     p.match(/^\/appointment-setting-for-([a-z0-9-]+)$/);
   return m ? m[1] : null;
 }
-
-/** Related pages for an industry: its other service variants plus sibling industries. */
-export function relatedIndustryLinks(pathname: string) {
-  const slug = industryFromPath(pathname);
-  if (!slug) return null;
-  const same: { href: string; label: string }[] = [];
-  if (LABEL[slug]) same.push({ href: `/for/${slug}`, label: `Lead Generation for ${industryLabel(slug)}` });
-  if ((metaAdsIndustrySlugs as readonly string[]).includes(slug))
-    same.push({ href: `/meta-ads-for-${slug}`, label: `Meta Ads for ${industryLabel(slug)}` });
-  if ((appointmentSettingIndustrySlugs as readonly string[]).includes(slug))
-    same.push({ href: `/appointment-setting-for-${slug}`, label: `Appointment Setting for ${industryLabel(slug)}` });
-  const here = pathname.replace(/\/+$/, "");
-  const sameFiltered = same.filter((l) => l.href !== here);
-
-  // Five sibling industries, rotated by position so every industry page gets inbound links.
-  const idx = Math.max(0, industryPages.findIndex((p) => p.slug === slug));
-  const siblings = Array.from({ length: 5 }, (_, i) => industryPages[(idx + 1 + i) % industryPages.length])
-    .filter((p) => p.slug !== slug)
-    .map((p) => ({ href: `/for/${p.slug}`, label: p.label }));
-
-  return { industry: industryLabel(slug), same: sameFiltered, siblings };
-}

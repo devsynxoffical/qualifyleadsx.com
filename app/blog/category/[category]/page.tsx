@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!cat) return { title: "Category Not Found" };
   const url = `/blog/category/${cat.slug}`;
   return {
-    title: { absolute: `${cat.title} | QualifiedLeadsX™` },
+    title: { absolute: (cat.title + " | QualifiedLeadsX™").length <= 60 ? `${cat.title} | QualifiedLeadsX™` : cat.title },
     description: cat.description,
     alternates: { canonical: url },
     openGraph: {

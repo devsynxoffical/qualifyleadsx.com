@@ -22,7 +22,7 @@ import {
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "AI Speed to Lead: Sub-5-Minute Appointment Setting",
+  title: "AI Speed to Lead: Reply to Every Lead in Under 5 Minutes",
   description:
     "Increase sales call booking rates by 391% with AI speed to lead. Sub-5-minute automated SMS, WhatsApp, and setter response for high-ticket funnels.",
   keywords: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     canonical: "/speed-to-lead",
   },
   openGraph: {
-    title: "AI Speed to Lead: Sub-5-Minute Appointment Setting",
+    title: "AI Speed to Lead: Reply to Every Lead in Under 5 Minutes",
     description:
       "Engage inbound high-ticket inquiries within 180 seconds. Lift appointment show rates to 88%+ with automated multi-channel speed to lead.",
     url: `${site.url}/speed-to-lead`,

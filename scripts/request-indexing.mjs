@@ -78,11 +78,14 @@ async function getAccessToken(creds) {
   return data.access_token;
 }
 
-async function urlsFromSitemap() {
-  const res = await fetch(`${SITE}/sitemap.xml`);
-  if (!res.ok) throw new Error(`Could not fetch sitemap: ${res.status}`);
+async function urlsFromSitemap(url = `${SITE}/sitemap.xml`) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Could not fetch sitemap ${url}: ${res.status}`);
   const xml = await res.text();
-  return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim());
+  const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim());
+  // A sitemap index lists child sitemaps: read each one.
+  if (xml.includes("<sitemapindex")) return (await Promise.all(locs.map((l) => urlsFromSitemap(l)))).flat();
+  return locs;
 }
 
 async function main() {

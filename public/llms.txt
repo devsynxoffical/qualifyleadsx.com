@@ -24,12 +24,20 @@ Key facts:
 - [CRM automation](https://www.qualifiedleadsx.com/crm-automation): pipeline, booking and follow-up automation
 - [Outsourced sales closers](https://www.qualifiedleadsx.com/outsourced-sales-closers): closers for qualified strategy calls
 
-## Industries
-- [Industries hub](https://www.qualifiedleadsx.com/for): 18 industry pages, including coaches, consultants, agencies, B2B SaaS, med spas, law firms, financial advisors, real estate investors and home improvement
+## Who it serves
+- Agency owners, high-ticket coaches and consultants, B2B service firms and B2B SaaS selling offers of roughly $3,000 to $25,000 and doing $10,000+ a month
+- Industry pages: https://www.qualifiedleadsx.com/for (18 industries, plus Meta ads and appointment setting pages for specific industries)
+- Countries: United States, United Kingdom, Canada and Australia, served remotely. There is no local office in these markets; the registered address is in Sheridan, Wyoming, USA.
 
-## Free tools and benchmarks
-- [Calculators](https://www.qualifiedleadsx.com/tools): CAC, ROAS and break-even ROAS, cost per booked call, show-up rate, LTV:CAC and a lead scoring template
+## Hub pages
+- [Services](https://www.qualifiedleadsx.com/services): every service
+- [Industries](https://www.qualifiedleadsx.com/for): every industry page, e.g. [coaches](https://www.qualifiedleadsx.com/for/coaches), [consultants](https://www.qualifiedleadsx.com/for/consultants), [agencies](https://www.qualifiedleadsx.com/for/agencies), [B2B SaaS](https://www.qualifiedleadsx.com/for/saas), [med spas](https://www.qualifiedleadsx.com/for/med-spas), [law firms](https://www.qualifiedleadsx.com/for/law-firms), [financial advisors](https://www.qualifiedleadsx.com/for/financial-advisors)
+- [Free tools](https://www.qualifiedleadsx.com/tools): CAC, ROAS and break-even ROAS, cost per booked call, show-up rate and LTV:CAC calculators, plus a lead scoring template
 - [Benchmarks](https://www.qualifiedleadsx.com/benchmarks): 2026 benchmarks for cost per lead by industry, Meta ads CPM, close rate, show rate and cost per booked call
+- [Blog](https://www.qualifiedleadsx.com/blog): guides on paid acquisition, funnels, lead qualification and scaling (RSS: https://www.qualifiedleadsx.com/feed.xml)
+- [Glossary](https://www.qualifiedleadsx.com/glossary): 29 client acquisition terms defined
+- [Case studies](https://www.qualifiedleadsx.com/case-studies): documented client results with ad spend, cost per lead and revenue
+- Locations: no location pages yet
 
 ## Comparisons
 - [Meta ads vs Google ads for high-ticket offers](https://www.qualifiedleadsx.com/compare/meta-ads-vs-google-ads-high-ticket)
@@ -37,40 +45,16 @@ Key facts:
 - [Appointment setter vs virtual assistant](https://www.qualifiedleadsx.com/compare/appointment-setter-vs-va)
 - [QualifiedLeadsX alternatives](https://www.qualifiedleadsx.com/compare/qualifiedleadsx-alternatives)
 
-## Proof
-- [Case studies](https://www.qualifiedleadsx.com/case-studies): 125+ results with ad spend, cost per lead and revenue
-- [LTO funnel case study](https://www.qualifiedleadsx.com/mastermind/lto-funnel-scale): $255K ad spend to $847K revenue
-- [Hidden Facebook interest framework](https://www.qualifiedleadsx.com/mastermind/hidden-facebook-interest): the framework behind 300 to 500 booked calls
-- [7 days paid trial playbook](https://www.qualifiedleadsx.com/mastermind/7-days-paid-trial): self-liquidating Meta ads front-end offer
+## Most important guides
+- [Facebook ads agency vs in-house media buyer](https://www.qualifiedleadsx.com/blog/facebook-ads-agency-vs-in-house-media-buyer): true costs, creative velocity and a decision framework by spend level
+- [How much does a lead generation agency cost in 2026?](https://www.qualifiedleadsx.com/blog/how-much-does-a-lead-generation-agency-cost): retainer, pay-per-lead, pay-per-appointment and performance pricing compared
+- [B2B ROAS benchmarks and appointment math](https://www.qualifiedleadsx.com/blog/b2b-roas-benchmarks-qualified-appointment-generation): what return to expect from paid traffic that books sales calls
+- [Speed to lead statistics 2026](https://www.qualifiedleadsx.com/blog/speed-to-lead-statistics-response-time): why the first 5 minutes decide whether a lead books
+- [High-ticket sales: how to get high-ticket clients](https://www.qualifiedleadsx.com/blog/high-ticket-sales-how-to-get-high-ticket-clients): attracting and closing $3,000 to $25,000 clients with Meta ads, VSL funnels and follow-up
 
-## Glossary
-- [Client acquisition glossary](https://www.qualifiedleadsx.com/glossary): 29 plain-English definitions (speed to lead, VSL funnel, blended CAC, ROAS, lead qualification, appointment setting…) each linked to an in-depth guide
-
-## Blog categories
-- [Funnel Strategy](https://www.qualifiedleadsx.com/blog/category/funnel-strategy)
-- [Paid Advertising](https://www.qualifiedleadsx.com/blog/category/paid-advertising)
-- [Lead Qualification](https://www.qualifiedleadsx.com/blog/category/lead-qualification)
-- [Scaling & Economics](https://www.qualifiedleadsx.com/blog/category/scaling-economics)
-- RSS feed: https://www.qualifiedleadsx.com/feed.xml
-
-## Guides
-- [Speed to Lead Statistics 2026](https://www.qualifiedleadsx.com/blog/speed-to-lead-statistics-response-time): why the first 5 minutes decide whether a high-ticket lead books, with the 60-second automated follow-up stack (Published: Nov 4, 2026)
-- [How to Write a VSL Script: 12-Minute Structure](https://www.qualifiedleadsx.com/blog/how-to-write-a-vsl-script-12-minute-structure): six-act script structure with timing, examples and the mistakes that kill conversion (Published: Nov 4, 2026)
-- [B2B Appointment Setting vs In-House SDR Teams](https://www.qualifiedleadsx.com/blog/b2b-appointment-setting-vs-in-house-sdr-teams): fully loaded costs, ramp velocity, speed-to-lead and ROI comparison for high-ticket businesses (Published: Oct 29, 2026)
-- [How Much Does a Lead Generation Agency Cost in 2026?](https://www.qualifiedleadsx.com/blog/how-much-does-a-lead-generation-agency-cost): retainer, pay-per-lead, pay-per-appointment and performance pricing models with real cost benchmarks (Published: Oct 27, 2026)
-- [Facebook Ads Agency vs In-House Media Buyer](https://www.qualifiedleadsx.com/blog/facebook-ads-agency-vs-in-house-media-buyer): true costs, creative velocity, speed to results and a decision framework by spend level (Published: Oct 27, 2026)
-- [High Ticket Sales Playbook (2026)](https://www.qualifiedleadsx.com/blog/high-ticket-sales-how-to-get-high-ticket-clients): how to attract and close $3,000 to $25,000 clients with Meta ads, VSL funnels and speed-to-lead nurture (Published: Oct 26, 2026)
-- [Meta Ads for High-Ticket B2B Broad Targeting](https://www.qualifiedleadsx.com/blog/meta-ads-for-high-ticket-b2b-broad-targeting): why algorithmic broad creative targeting outperforms lookalikes (Published: Oct 23, 2026)
-- [The 2026 VSL Funnel Blueprint](https://www.qualifiedleadsx.com/blog/the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition): high-ticket client acquisition funnel architecture and qualification filters (Published: Oct 21, 2026)
-- [High Ticket Sales Training: Closer & Qualification Framework](https://www.qualifiedleadsx.com/blog/high-ticket-sales-training-framework): elite B2B sales closer training, objection handling matrix, and qualification scripts (Published: Oct 19, 2026)
-
-- [Cold Outreach vs Paid Traffic for High-Ticket B2B](https://www.qualifiedleadsx.com/blog/cold-outreach-vs-paid-traffic-high-ticket-b2b): why paid direct response beats cold email and DM prospecting for high-ticket offers (Published: Oct 10, 2026)
-- [Automated Lead Qualification System](https://www.qualifiedleadsx.com/blog/automated-lead-qualification-system-high-ticket): multi-tier application filters that keep unqualified leads off the calendar (Published: Oct 5, 2026)
-- [B2B Client Acquisition Cost (CAC) Benchmarks 2026](https://www.qualifiedleadsx.com/blog/b2b-client-acquisition-cost-cac-benchmarks-2026): cost per qualified call, close rates and LTV-to-CAC ratios for high-ticket offers (Published: Sep 28, 2026)
-- [AI WhatsApp Lead Nurture Pipeline](https://www.qualifiedleadsx.com/blog/ai-whatsapp-lead-nurture-pipeline-high-ticket): speed-to-lead and automated multi-channel follow-up for booked calls (Published: Sep 22, 2026)
-
-## Company
-- [About](https://www.qualifiedleadsx.com/about): founder, team and how the company works
-- [Book a free strategy call](https://www.qualifiedleadsx.com/book-your-call): short form, then pick a time on the live calendar
-- [YouTube @QualifiedLeadsX](https://www.youtube.com/@QualifiedLeadsX): live ad account breakdowns and case studies
-- [Earnings disclaimer](https://www.qualifiedleadsx.com/disclaimer)
+## Contact
+- Email: hello@qualifiedleadsx.com
+- Book a free 30-minute strategy call: https://www.qualifiedleadsx.com/book-your-call
+- [About the company](https://www.qualifiedleadsx.com/about)
+- [YouTube @QualifiedLeadsX](https://www.youtube.com/@QualifiedLeadsX): ad account breakdowns and case studies
+- Sitemap: https://www.qualifiedleadsx.com/sitemap.xml

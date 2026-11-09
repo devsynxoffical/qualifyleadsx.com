@@ -5,6 +5,8 @@ import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { FurtherReading } from "@/components/sections/FurtherReading";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { consultantsDeepDive } from "@/lib/deep-dive-content";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
@@ -62,6 +64,7 @@ const consultantFaqs = [
     q: "What retainer or project size does this system best support?",
     a: "The QualifiedLeadsX™ consulting engine is engineered for advisory retainers and project engagements ranging from $10,000 to $100,000+.",
   },
+  ...consultantsDeepDive.faqs,
 ];
 
 export default function ConsultantsLandingPage() {
@@ -127,8 +130,8 @@ export default function ConsultantsLandingPage() {
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-fog max-w-4xl mx-auto leading-[1.1]">
-            Turn Corporate Consulting Into a{" "}
-            <span className="text-gradient-lime font-extrabold">Predictable Client Machine</span>
+            Client Acquisition for Consultants:{" "}
+            <span className="text-gradient-lime font-extrabold">A Predictable Pipeline of Decision-Makers</span>
           </h1>
 
           <p className="mt-6 text-lg sm:text-2xl text-mist max-w-3xl mx-auto leading-relaxed">
@@ -423,6 +426,8 @@ export default function ConsultantsLandingPage() {
           </div>
         </div>
       </section>
+
+      <DeepDive content={consultantsDeepDive} />
 
       {/* FAQ */}
       <section className="py-20 bg-base/50 border-t border-line">

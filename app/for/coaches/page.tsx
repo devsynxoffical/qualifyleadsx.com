@@ -5,6 +5,8 @@ import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { FurtherReading } from "@/components/sections/FurtherReading";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { coachesDeepDive } from "@/lib/deep-dive-content";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
@@ -62,6 +64,7 @@ const coachFaqs = [
     q: "How fast can the funnel be launched and start booking calls?",
     a: "Our done-for-you installation sprint takes approximately 14 to 21 business days, including offer positioning, VSL scripting, landing page development, tracking pixels, and Meta ads launch.",
   },
+  ...coachesDeepDive.faqs,
 ];
 
 export default function CoachesLandingPage() {
@@ -127,8 +130,8 @@ export default function CoachesLandingPage() {
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-fog max-w-4xl mx-auto leading-[1.1]">
-            Fill Your Calendar With{" "}
-            <span className="text-gradient-lime font-extrabold">30–50 Qualified Coaching Clients</span>{" "}
+            Client Acquisition for Coaches:{" "}
+            <span className="text-gradient-lime font-extrabold">30–50 Qualified Sales Calls</span>{" "}
             Every Month
           </h1>
 
@@ -455,6 +458,8 @@ export default function CoachesLandingPage() {
           </div>
         </div>
       </section>
+
+      <DeepDive content={coachesDeepDive} />
 
       {/* FAQ Section */}
       <section className="py-20 bg-base/50 border-t border-line">

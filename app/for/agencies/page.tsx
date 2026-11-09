@@ -3,6 +3,8 @@ import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { FurtherReading } from "@/components/sections/FurtherReading";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { agenciesDeepDive } from "@/lib/deep-dive-content";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
@@ -60,6 +62,7 @@ const agencyFaqs = [
     q: "What monthly retainer size does this system best support?",
     a: "The system is optimized for monthly agency retainers ranging from $3,000/mo to $25,000/mo+, as well as enterprise project fees exceeding $15,000.",
   },
+  ...agenciesDeepDive.faqs,
 ];
 
 export default function AgenciesLandingPage() {
@@ -125,7 +128,7 @@ export default function AgenciesLandingPage() {
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-fog max-w-4xl mx-auto leading-[1.1]">
-            Scale Your Agency Retainers Past{" "}
+            Client Acquisition for Agencies: Scale Retainers Past{" "}
             <span className="text-gradient-lime font-extrabold">$100K/Month Predictably</span>
           </h1>
 
@@ -269,6 +272,8 @@ export default function AgenciesLandingPage() {
           </div>
         </div>
       </section>
+
+      <DeepDive content={agenciesDeepDive} />
 
       {/* FAQs */}
       <section className="py-20 bg-base/50 border-t border-line">

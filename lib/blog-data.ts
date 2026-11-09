@@ -400,7 +400,7 @@ export const blogPosts: BlogPost[] = [
     title: "B2B ROAS Benchmarks & Qualified Appointment Generation: How High-Ticket Offers Hit 4x–7x ROAS",
     description: "Real B2B ROAS benchmarks for coaching, consulting, and SaaS. Master customer acquisition costs, shorten sales cycles, and scale to 50+ booked calls.",
     publishedAt: "2026-10-30",
-    updatedAt: "2026-10-30",
+    updatedAt: "2026-11-09",
     readTime: "14 min read",
     coverImage: "/images/blog/b2b-roas-benchmarks-appointment-generation.jpg",
     author: {
@@ -437,6 +437,18 @@ export const blogPosts: BlogPost[] = [
         tag: "DATA INTELLIGENCE",
       },
       sections: [
+        {
+          "heading": "What Is a Good B2B ROAS? The Short Answer",
+          "body": [
+            "A good B2B ROAS for high-ticket services sold through booked sales calls is 3.5x to 7x front-end return: every $1 in ad spend returns $3.50 to $7.00 in cash collected. Established offers usually land at 3.5x to 5.2x; optimized VSL funnels with backend continuity can reach 6x to 8.5x.",
+            "B2B ROAS is calculated differently from ecommerce ROAS. Because the sale happens on a call days or weeks after the click, measure it as cash collected from paid-traffic clients ÷ ad spend for the same cohort of leads, and check it alongside CAC, not instead of it."
+          ],
+          "bulletList": [
+            "ROAS = revenue (or cash collected) from ad-sourced clients ÷ ad spend",
+            "Break-even ROAS = 1 ÷ gross margin. At a 60% margin you need 1.67x just to break even",
+            "Check your numbers with the [ROAS and break-even calculator](/tools/roas-calculator)"
+          ]
+        },
         {
           heading: "The 2026 B2B ROAS Reality: Front-End vs. Lifetime Economics",
           subheading: "Why B2B Return On Ad Spend Requires a Two-Stage Valuation Model",
@@ -498,6 +510,13 @@ export const blogPosts: BlogPost[] = [
             content: "Tracking your pipeline velocity ratio (Days from Click to Cash Collected) is critical. While outbound enterprise sales takes 60–120 days, an automated inbound VSL appointment funnel compresses time-to-close to 5–9 days, drastically accelerating your cash flow reinvestment cycle.",
           },
         },
+        {
+          "heading": "ROAS vs CAC: Which Should a B2B Company Track?",
+          "body": [
+            "Track both, because they answer different questions. ROAS tells you whether ad spend returns more than it costs in the period you measure. CAC tells you how much it costs to win one customer, including fees and sales costs if you calculate it fully loaded.",
+            "For high-ticket B2B, CAC compared with lifetime value (LTV:CAC) is the better decision metric, because front-end ROAS ignores renewals, upsells and referrals. Use ROAS to manage campaigns week to week and LTV:CAC to decide how much to invest. See our [B2B CAC benchmarks](/blog/b2b-client-acquisition-cost-cac-benchmarks-2026)."
+          ]
+        }
       ],
       conclusion:
         "Scaling past $100K/month does not require burning out your team with hundreds of cold outreach messages. By mastering the core B2B ROAS benchmarks and installing an automated, high-converting qualified appointment generation infrastructure, you turn client acquisition into an engineered financial machine. To push ROAS toward the top of these ranges, fix the two most common leaks first: the [VSL script](/blog/how-to-write-a-vsl-script-12-minute-structure) that fails to pre-sell, and [response times](/blog/speed-to-lead-statistics-response-time) measured in hours instead of seconds. Definitions for every metric above are in the [glossary](/glossary).",
@@ -522,6 +541,14 @@ export const blogPosts: BlogPost[] = [
           q: "What is the difference between lead generation and qualified appointment generation?",
           a: "Lead generation simply collects contact details (name and email), resulting in low intent and high no-show rates. Qualified appointment generation conditions, screens, and verifies capital before booking a pre-framed decision-maker directly into your closer's calendar.",
         },
+        {
+          "q": "What is ROAS in B2B?",
+          "a": "In B2B, ROAS (return on ad spend) is the revenue or cash collected from customers who came from paid ads, divided by the ad spend that produced them. Because B2B sales close on calls after the click, it is measured per lead cohort rather than per day."
+        },
+        {
+          "q": "Is ROAS or CAC more important for B2B?",
+          "a": "Both matter. ROAS is the better week-to-week campaign metric; CAC compared with customer lifetime value (LTV:CAC) is the better metric for deciding how much to invest, because it includes sales costs and repeat revenue."
+        }
       ],
     },
   },
@@ -865,11 +892,11 @@ export const blogPosts: BlogPost[] = [
   // 27 OCT 2026 — commercial-intent pillar: "facebook ads agency"
   {
     slug: "facebook-ads-agency-vs-in-house-media-buyer",
-    seoTitle: "Facebook Ads Agency vs Hiring an In-House Media Buyer",
+    seoTitle: "Facebook Ads Agency vs Hiring an In-House Media Buyer (2026)",
     title: "Facebook Ads Agency vs In-House Media Buyer: Which Is Right for a High-Ticket Business in 2026?",
     description: "Agency fees run $2K–$7.5K a month; an in-house media buyer costs $90K–$150K a year fully loaded. Compare cost, creative output, speed and risk.",
     publishedAt: "2026-10-27",
-    updatedAt: "2026-10-27",
+    updatedAt: "2026-11-09",
     readTime: "10 min read",
     coverImage: "/images2/showreel/shot_04_stat_cards.webp",
     author: {
@@ -1261,7 +1288,7 @@ export const blogPosts: BlogPost[] = [
     title: "Meta Ads for High-Ticket B2B: Why Broad Creative Targeting Outperforms Lookalikes",
     description: "How to target Facebook and Instagram ads for high-ticket B2B offers: why broad targeting beats lookalikes and how ad creative selects the right buyers.",
     publishedAt: "2026-10-23",
-    updatedAt: "2026-10-23",
+    updatedAt: "2026-11-09",
     readTime: "10 min read",
     coverImage: "/images/blog/meta-ads-broad-targeting.jpg",
     author: {
@@ -1341,6 +1368,33 @@ export const blogPosts: BlogPost[] = [
             "By deploying 5 to 10 net-new creative variations weekly, you feed Meta's machine learning engine the raw material it needs to discover distinct buyer segments across the feed.",
           ],
         },
+        {
+          "heading": "Facebook Ads Targeting for High-Ticket Products: The Settings We Use",
+          "subheading": "A practical setup for offers priced at $3,000 and above",
+          "body": [
+            "If you sell a high-ticket product or service, the targeting decisions that matter most are not interests. They are the conversion event you optimize for, the countries you include, and how much qualifying language your creative carries. This is the setup we start most high-ticket accounts with, then adjust from data."
+          ],
+          "bulletList": [
+            "Optimize for a qualified event, not a click: a submitted application or a booked call, passed back with the Conversions API.",
+            "Start broad: Advantage+ audience with only legal and country constraints. Let the creative do the filtering.",
+            "Choose countries by deal economics: tier-1 markets (US, UK, Canada, Australia) cost more per impression, around $24.50 CPM on average in 2026, but usually produce buyers who can afford the offer. See [Meta ads CPM benchmarks](/benchmarks/meta-ads-cpm).",
+            "Write the price and the buyer into the ad: naming the audience (\"for agency owners doing $30K+ a month\") and hinting at the investment repels people who can't buy.",
+            "Exclude existing customers and recent applicants with custom audiences, and retarget video viewers separately.",
+            "Give each new ad set enough budget to collect data. Use the [ROAS calculator](/tools/roas-calculator) to check what a sale has to return."
+          ]
+        },
+        {
+          "heading": "Meta vs X (Twitter) vs LinkedIn for B2B Targeted Ads",
+          "body": [
+            "B2B advertisers often ask whether X (formerly Twitter) or LinkedIn targeting is better than Meta for reaching business buyers. Each platform has a place:",
+            "Our default for high-ticket offers sold to owner-led businesses is Meta first, because the feedback loop is fastest at the lowest cost per booked call. For a broader comparison of paid channels see [Meta ads vs Google ads for high-ticket offers](/compare/meta-ads-vs-google-ads-high-ticket)."
+          ],
+          "bulletList": [
+            "Meta: the largest reach and the strongest delivery algorithm. Best for owner-led businesses, coaches, consultants and agencies, where the buyer is the person scrolling.",
+            "LinkedIn: precise job-title and company-size targeting, at a much higher cost per click. Best for enterprise deals with committees, where the title matters more than the cost.",
+            "X: useful for reaching niche professional communities that are active there (for example tech, crypto and media), with interest, keyword and follower-lookalike targeting. Reach for most traditional B2B buyers is smaller than on Meta."
+          ]
+        }
       ],
       conclusion:
         "Relying on manual targeting stacks on Meta in 2026 is like driving with the handbrake engaged. By embracing broad creative-as-targeting, high-ticket agencies and consultants tap into Meta's full computational power, securing cheaper CPMs, eliminating ad fatigue, and filling calendars with qualified buyers. Pair broad targeting with a [12-minute VSL funnel](/blog/the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition), an [automated qualification filter](/blog/automated-lead-qualification-system-high-ticket) and [sub-5-minute WhatsApp follow-up](/blog/ai-whatsapp-lead-nurture-pipeline-high-ticket), and benchmark the result against our [B2B CAC data](/blog/b2b-client-acquisition-cost-cac-benchmarks-2026). Once the creative is doing the targeting, make sure the [VSL script](/blog/how-to-write-a-vsl-script-12-minute-structure) it lands on carries the same qualifying language, and that [follow-up fires within 60 seconds](/blog/speed-to-lead-statistics-response-time) of the application.",
@@ -1377,6 +1431,14 @@ export const blogPosts: BlogPost[] = [
             href: "/book-your-call#book",
           },
         },
+        {
+          "q": "What is the best Facebook ads targeting for high-ticket products?",
+          "a": "For most high-ticket offers, broad targeting (Advantage+ audience with only country limits) combined with creative that names the buyer and the investment outperforms narrow interest stacks. Optimize for a qualified event such as an application or booked call, not for clicks or cheap leads."
+        },
+        {
+          "q": "Are X (Twitter) ads good for B2B targeting?",
+          "a": "X can work for B2B audiences that are active on the platform, such as tech and media, using keyword and follower-lookalike targeting. For most owner-led B2B buyers, Meta reaches more of them at a lower cost, and LinkedIn offers the most precise job-title targeting at a higher price."
+        }
       ],
     },
   },
@@ -1388,7 +1450,7 @@ export const blogPosts: BlogPost[] = [
     title: "The 2026 VSL Funnel Blueprint: How High-Ticket Offers Book 50+ Qualified Calls a Month",
     description: "Replace 90-minute webinars with concise 12-minute VSL funnels and qualification filters converting at 14–18% into booked sales appointments.",
     publishedAt: "2026-10-21",
-    updatedAt: "2026-10-21",
+    updatedAt: "2026-11-09",
     readTime: "12 min read",
     coverImage: "/images/blog/vsl-funnel-blueprint.jpg",
     author: {
@@ -1468,6 +1530,21 @@ export const blogPosts: BlogPost[] = [
             "Leads who fail qualification thresholds are automatically redirected to free training resources, saving hundreds of hours of closer time while preserving calendar slots for qualified buyers.",
           ],
         },
+        {
+          "heading": "VSL Funnel Example: Page-by-Page Structure",
+          "subheading": "What each page must do, and what to measure",
+          "body": [
+            "Here is the page structure we build for most high-ticket VSL funnels, with the one number to watch on each page. If a number is low, fix that page before buying more traffic."
+          ],
+          "bulletList": [
+            "Ad → VSL page: a headline that names the buyer and the outcome, the video above the fold, and one call to action. Measure the share of visitors who watch at least half the video.",
+            "VSL page → application: 4 to 8 questions covering situation, goal, budget, timeline and decision-maker. Measure application completion rate.",
+            "Application → booking page: only qualified applicants see the calendar; others go to a nurture sequence. Measure booking rate among qualified applicants.",
+            "Booking → confirmation page: a short welcome video, case studies and what to prepare. Measure the share who confirm by SMS or WhatsApp.",
+            "Confirmation → call: reminders at 24 hours, 1 hour and 10 minutes. Measure show rate against the 58.2% email-only baseline ([show rate benchmarks](/benchmarks/show-rate)).",
+            "Script the video with our [12-minute VSL structure](/blog/how-to-write-a-vsl-script-12-minute-structure), and see real builds in [high-ticket funnel examples](/blog/high-ticket-funnel-examples)."
+          ]
+        }
       ],
       conclusion:
         "The modern high-ticket client acquisition landscape rewards speed, transparency, and engineered filtration. By replacing bloated webinars with a concise 12-minute VSL funnel, high-ticket providers establish immediate authority, eliminate unqualified call volume, and scale with mathematical predictability.",
@@ -1496,6 +1573,14 @@ export const blogPosts: BlogPost[] = [
             href: "/book-your-call#book",
           },
         },
+        {
+          "q": "What is a VSL funnel?",
+          "a": "A VSL (video sales letter) funnel is a short sequence of pages built around one sales video: an ad sends people to the video, interested viewers fill in an application, and qualified applicants book a sales call. It replaces long webinars with a 8 to 14 minute video and filters leads before they reach the calendar."
+        },
+        {
+          "q": "What should a VSL funnel include?",
+          "a": "At minimum: a video page with one call to action, a qualification application, a booking page shown only to qualified applicants, and a confirmation page with reminders. Add retargeting ads and SMS or WhatsApp follow-up to lift show rates."
+        }
       ],
     },
   },
@@ -1507,7 +1592,7 @@ export const blogPosts: BlogPost[] = [
     title: "High Ticket Sales Training: The Closer & Qualification Framework That Doubles Win Rates",
     description: "Elite sales training for B2B closers: discover the pre-call indoctrination architecture, objection matrix, and scripts that double win rates to 25–35%.",
     publishedAt: "2026-10-19",
-    updatedAt: "2026-10-19",
+    updatedAt: "2026-11-09",
     readTime: "14 min read",
     coverImage: "/images/blog/high-ticket-sales-training.jpg",
     author: {
@@ -1598,6 +1683,22 @@ export const blogPosts: BlogPost[] = [
             label: "Verified Client Sales Performance with QualifiedLeadsX Pipeline Infrastructure",
           },
         },
+        {
+          "heading": "How to Evaluate a High-Ticket Closer Training Program",
+          "subheading": "Seven checks before you trust any review",
+          "body": [
+            "If you are reading reviews of a closer training program, whether that is The Closer Matrix or any other course, the reviews tell you how students felt. They don't always tell you whether the training will work for your offer. These seven checks do. We don't sell closer training, so this is a neutral checklist rather than a comparison."
+          ],
+          "bulletList": [
+            "Verifiable outcomes: ask for named graduates and the offers they close, not just screenshots of commission.",
+            "Live call review: good programs review real recorded calls, not only scripts and theory.",
+            "Qualification, not just closing: training that ignores pre-call qualification produces closers who burn out on bad calls. Setter-qualified calls close at 24–31% on $5K–$10K offers versus 9–14% for unvetted bookings ([close rate benchmarks](/benchmarks/close-rate)).",
+            "Ethics and compliance: avoid programs that teach pressure tactics, false scarcity or income claims; they damage refund rates and reputations.",
+            "Role-play volume: closing is a skill built by repetition. Look for weekly role-play with feedback.",
+            "Placement promises: be careful with guaranteed job placement. Ask how many graduates are placed and how long they stay.",
+            "Refund terms in writing: read them before you pay."
+          ]
+        }
       ],
       conclusion:
         "High ticket sales training is not about memorizing manipulative closing scripts. It is the disciplined mastery of consultative discovery, pre-call qualification, and peer-to-peer diagnosis. When backed by an acquisition system that delivers pre-indoctrinated buyers, closing high-ticket deals becomes a calm, predictable, and highly profitable process.",
@@ -1634,6 +1735,10 @@ export const blogPosts: BlogPost[] = [
             href: "/book-your-call#book",
           },
         },
+        {
+          "q": "Are closer training programs like The Closer Matrix worth it?",
+          "a": "It depends on the program and on you. Judge any closer training on verifiable graduate outcomes, live call reviews, how much it teaches qualification as well as closing, its ethics, and its refund terms. Reviews are useful, but check them against those criteria rather than relying on star ratings alone."
+        }
       ],
     },
   },
@@ -1854,7 +1959,7 @@ export const blogPosts: BlogPost[] = [
     title: "High-Ticket B2B CAC Benchmarks (2026): What Elite Agencies and Consultants Pay per Deal",
     description: "Real-world unit economics, CAC benchmarks, and LTV-to-CAC ratios across high-ticket coaching programs and B2B growth agencies scaling to 8-figures.",
     publishedAt: "2026-09-28",
-    updatedAt: "2026-10-21",
+    updatedAt: "2026-11-09",
     readTime: "9 min read",
     coverImage: "/images/blog/cac-benchmarks-economics.jpg",
     author: {
@@ -1920,6 +2025,41 @@ export const blogPosts: BlogPost[] = [
             "When partner accounts experience performance dips, benchmarks allow instantaneous root-cause diagnosis: if application rates are below 10%, the [VSL](/blog/the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition) hook or unique mechanism requires iteration. If show-up rates drop below 75%, WhatsApp sequence timing requires adjustment.",
           ],
         },
+        {
+          "heading": "B2B CAC Benchmarks by Offer Size (2026)",
+          "subheading": "Ad-spend CAC derived from our booked-call and close-rate data",
+          "body": [
+            "The quickest way to benchmark B2B CAC is to build it from two numbers you can measure every week: cost per attended sales call and close rate. Ad-spend CAC = cost per attended call ÷ close rate. The table below applies that formula to our 2026 [cost per booked call](/benchmarks/cost-per-booked-call) and [close rate](/benchmarks/close-rate) benchmarks for setter-qualified calls.",
+            "These are ad-spend-only figures. Fully loaded CAC adds agency or media-buyer fees, setter and closer commission, software and the founder's time, which is why the fully loaded range in the summary above ($800 to $2,200 for $5,000 to $25,000 offers) is higher."
+          ],
+          "bulletList": [
+            "~$3,000 offers: $95–$130 per attended call ÷ 28–36% close rate = roughly $260–$460 ad-spend CAC",
+            "~$5,000 offers: $120–$160 per attended call ÷ 24–31% close rate = roughly $390–$670 ad-spend CAC",
+            "$10,000+ offers: $180–$280 per attended call ÷ 19–26% close rate = roughly $690–$1,470 ad-spend CAC",
+            "Unvetted bookings close at roughly a third to a half of those rates, so the same ad spend produces a CAC two to three times higher"
+          ]
+        },
+        {
+          "heading": "Why CAC Rises After Series B (and After Any Growth Spurt)",
+          "subheading": "Five causes, and what to do about each",
+          "body": [
+            "Founders often see CAC climb after a funding round or a big growth push, even when nothing in the funnel looks broken. It is rarely one cause. Usually several of these stack up at once:"
+          ],
+          "bulletList": [
+            "Audience saturation: the most responsive buyers were reached first. Fix it with new angles and offers rather than higher budgets on the same creative.",
+            "Budget scaled faster than creative: spend doubles but the ad library doesn't, so frequency rises and CPMs follow. Scale creative volume with budget.",
+            "Headcount lands in the CAC formula: new SDRs, managers and tools are added before they are productive. Track ramped and unramped cost separately.",
+            "Moving up-market lengthens the sales cycle: bigger deals take longer, so CAC per month looks worse before revenue catches up. Measure CAC by cohort, not by calendar month.",
+            "Weaker qualification at higher volume: more leads reach closers who were never a fit, and close rate falls. Tighten the application and speed-to-lead process first. See [automated lead qualification](/blog/automated-lead-qualification-system-high-ticket)."
+          ]
+        },
+        {
+          "heading": "How to Calculate B2B CAC: Formula and Worked Example",
+          "body": [
+            "Blended CAC = (ad spend + sales and marketing salaries and commission + agency and tool costs) ÷ new customers in the same period. Paid CAC uses only the costs and customers attributable to paid channels.",
+            "Worked example: $12,000 in Meta spend, $6,000 in agency fees and $4,000 in closer commission in a month that produced 10 new clients gives a paid CAC of ($12,000 + $6,000 + $4,000) ÷ 10 = $2,200. If each client is worth $9,000 in gross profit over their lifetime, LTV:CAC is about 4.1:1, inside the healthy 4:1 to 7:1 range. Run your own numbers with the [CAC calculator](/tools/cac-calculator) and the [LTV to CAC calculator](/tools/ltv-cac-calculator)."
+          ]
+        }
       ],
       conclusion:
         "Treat customer acquisition as a mathematical science, not emotional guesswork. When your funnel metrics align with industry benchmarks, scaling becomes a deliberate decision to deploy capital. Two levers move these numbers fastest: a tighter [VSL script](/blog/how-to-write-a-vsl-script-12-minute-structure) that lifts application rate, and [faster lead response](/blog/speed-to-lead-statistics-response-time) that converts more applications into booked calls from the same spend.",
@@ -1948,6 +2088,14 @@ export const blogPosts: BlogPost[] = [
             href: "/for/consultants",
           },
         },
+        {
+          "q": "What is a good CAC benchmark for B2B services?",
+          "a": "For high-ticket B2B services priced at $5,000 to $25,000, a fully loaded CAC of $800 to $2,200 is healthy on paid traffic, as long as LTV:CAC stays at 4:1 or better. Ad-spend-only CAC is lower: roughly $390 to $670 for ~$5,000 offers in our accounts."
+        },
+        {
+          "q": "Why does CAC go up after a Series B?",
+          "a": "Usually because budget scales faster than creative (raising frequency and CPMs), the most responsive audience has already been reached, new sales headcount is not yet productive, and the company moves up-market into longer sales cycles. Each has a different fix, so measure CAC by channel and by cohort to see which one is driving it."
+        }
       ],
     },
   },

@@ -33,6 +33,8 @@ import {
   Flame,
 } from "lucide-react";
 import { AppointmentRoiCalculator } from "@/components/sections/AppointmentRoiCalculator";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { appointmentSettingDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
   title: {
@@ -99,6 +101,7 @@ const appointmentFaqs = [
     q: "How does this system achieve an 88%+ sales call show-up rate?",
     a: "Most agencies suffer from 40–50% calendar no-shows because they send generic automated emails that go to spam. We deploy an omnichannel pre-call indoctrination sequence via WhatsApp and SMS: prospects receive short video case studies, 1-click attendance confirmation, and an interactive prep workbook that builds authority prior to the call.",
   },
+  ...appointmentSettingDeepDive.faqs,
 ];
 
 export default function AppointmentSettingPage() {
@@ -211,7 +214,7 @@ export default function AppointmentSettingPage() {
 
           {/* Primary Keyword H1 */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-white max-w-5xl mx-auto leading-[1.08]">
-            Automated <span className="text-lime">Appointment Setting</span> With Sub-5-Minute Speed To Lead
+            <span className="text-lime">Appointment Setting</span> Agency With Sub-5-Minute Speed To Lead
           </h1>
 
           {/* Subtitle with Secondary Keyword */}
@@ -697,6 +700,8 @@ export default function AppointmentSettingPage() {
           </div>
         </div>
       </section>
+
+      <DeepDive content={appointmentSettingDeepDive} />
 
       {/* FAQ Section */}
       <section className="py-16 sm:py-24 bg-ink border-t border-line">

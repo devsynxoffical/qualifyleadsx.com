@@ -1,7 +1,7 @@
 URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problems,Action
 /,core,Lead Generation Agency for High-Ticket B2B,2258,2966,145,none,keep
 /about,company/legal,About  Client Acquisition Agency,1032,1065,145,none,keep
-/appointment-setting,core,Appointment Setting Agency: Qualified Sales Calls Booked,892,1272,145,none,keep
+/appointment-setting,core,Appointment Setting Agency: Qualified Sales Calls Booked,1416,1801,145,none,keep
 /appointment-setting-for-agencies,industry,Appointment Setting for Agencies,197,522,6,thin (197 unique words),improve
 /appointment-setting-for-coaches,industry,Appointment Setting for Coaches,231,556,8,thin (231 unique words),improve
 /appointment-setting-for-consultants,industry,Appointment Setting for Consultants,188,513,8,thin (188 unique words),improve
@@ -9,41 +9,41 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /b2b-lead-generation,core,B2B Lead Generation Agency for Service Contracts,470,1050,16,none,keep
 /benchmarks,free tool,High Ticket Marketing Benchmarks 2026,492,811,145,none,keep
 /benchmarks/close-rate,free tool,High Ticket Close Rate Benchmarks 2026,244,343,145,thin (244 unique words),improve
-/benchmarks/cost-per-booked-call,free tool,Cost Per Booked Call Benchmarks 2026,360,714,41,none,keep
+/benchmarks/cost-per-booked-call,free tool,Cost Per Booked Call Benchmarks 2026,360,714,45,none,keep
 /benchmarks/cost-per-lead-by-industry,free tool,Cost Per Lead by Industry 2026 Benchmarks,263,362,145,thin (263 unique words),improve
 /benchmarks/meta-ads-cpm,free tool,Meta Ads CPM Benchmarks 2026,284,383,145,thin (284 unique words),improve
-/benchmarks/show-rate,free tool,Appointment Show Rate Benchmarks 2026,347,705,77,none,keep
+/benchmarks/show-rate,free tool,Appointment Show Rate Benchmarks 2026,347,705,79,none,keep
 /blog,blog,"Client Acquisition, VSL Funnels & Meta Ads Insights",739,1401,145,none,keep
 /blog/ai-whatsapp-lead-nurture-pipeline-high-ticket,blog,AI WhatsApp Lead Nurture for High-Ticket Calls,633,1313,16,none,keep
 /blog/appointment-setter-compensation-models,blog,Appointment Setter Compensation Models Guide,276,957,6,thin (276 unique words),improve
 /blog/automated-lead-qualification-system-high-ticket,blog,Automated Lead Qualification System for B2B,766,1466,17,none,keep
 /blog/b2b-appointment-setting-vs-in-house-sdr-teams,blog,B2B Appointment Setting vs In-House SDR Teams,1412,2114,21,none,keep
-/blog/b2b-client-acquisition-cost-cac-benchmarks-2026,blog,B2B CAC Benchmarks 2026: Cost to Acquire a Client,652,1362,21,none,keep
-/blog/b2b-roas-benchmarks-qualified-appointment-generation,blog,B2B ROAS Benchmarks & Appointment Math 2026,1170,1888,20,none,keep
+/blog/b2b-client-acquisition-cost-cac-benchmarks-2026,blog,B2B CAC Benchmarks 2026: Cost to Acquire a Client,1280,1990,21,none,keep
+/blog/b2b-roas-benchmarks-qualified-appointment-generation,blog,B2B ROAS Benchmarks & Appointment Math 2026,1523,2241,20,none,keep
 /blog/b2b-sales-closer-job-description,blog,High-Ticket Sales Closer Job Description Template,254,935,8,thin (254 unique words),improve
 /blog/category/funnel-strategy,blog,Funnel Strategy Guides for High-Ticket Offers,88,460,145,thin (88 unique words),improve
 /blog/category/lead-qualification,blog,Lead Qualification & Appointment Guides,164,562,145,thin (164 unique words),improve
-/blog/category/paid-advertising,blog,Meta & Facebook Ads Guides for B2B,79,481,145,thin (79 unique words),improve
+/blog/category/paid-advertising,blog,Meta & Facebook Ads Guides for B2B,79,482,145,thin (79 unique words),improve
 /blog/category/scaling-economics,blog,"Scaling, CAC & ROAS Benchmark Guides",101,500,145,thin (101 unique words),improve
-/blog/cold-outreach-vs-paid-traffic-high-ticket-b2b,blog,Cold Outreach vs Paid Traffic for B2B,687,1409,16,none,keep
+/blog/cold-outreach-vs-paid-traffic-high-ticket-b2b,blog,Cold Outreach vs Paid Traffic for B2B,687,1410,17,none,keep
 /blog/cost-per-acquisition-vs-cost-per-lead,blog,CPA vs CPL: Why Cost Per Lead is a Vanity Metric,330,1020,8,none,keep
-/blog/facebook-ads-agency-vs-in-house-media-buyer,blog,Facebook Ads Agency vs Hiring an In-House Media Buyer,1915,2634,12,none,keep
+/blog/facebook-ads-agency-vs-in-house-media-buyer,blog,Facebook Ads Agency vs Hiring an In-House Media Buyer (2026),1915,2634,12,none,keep
 /blog/high-ticket-funnel-examples,blog,High-Ticket Funnel Examples: 5 Proven Blueprints,259,947,51,thin (259 unique words),improve
 /blog/high-ticket-lead-generation-strategies,blog,High-Ticket Lead Generation Strategies (2026),257,949,17,thin (257 unique words),improve
 /blog/high-ticket-sales-how-to-get-high-ticket-clients,blog,High Ticket Sales: How to Get Clients,2544,3260,58,none,keep
-/blog/high-ticket-sales-training-framework,blog,High Ticket Sales Training & Framework,1066,1766,20,none,keep
+/blog/high-ticket-sales-training-framework,blog,High Ticket Sales Training & Framework,1335,2035,20,none,keep
 /blog/how-much-does-a-lead-generation-agency-cost,blog,How Much Does a Lead Gen Agency Cost in 2026?,2045,2759,19,none,keep
-/blog/how-much-does-meta-ads-cost,blog,How Much Does Meta Ads Cost in 2026? Budget Guide,1903,2625,9,none,keep
+/blog/how-much-does-meta-ads-cost,blog,How Much Does Meta Ads Cost in 2026? Budget Guide,1903,2627,9,none,keep
 /blog/how-to-increase-show-rate,blog,How to Increase Show Rate: 80%+ Attendance Guide,272,958,9,thin (272 unique words),improve
-/blog/how-to-qualify-leads,blog,How to Qualify Leads: High-Ticket Framework,264,933,19,thin (264 unique words),improve
+/blog/how-to-qualify-leads,blog,How to Qualify Leads: High-Ticket Framework,264,933,20,thin (264 unique words),improve
 /blog/how-to-write-a-vsl-script-12-minute-structure,blog,How to Write a VSL Script: 12-Minute Structure,2181,2875,20,none,keep
-/blog/meta-ads-for-coaches-guide,blog,Meta Ads for Coaches Guide: Scale to $100K/Mo,265,949,9,thin (265 unique words),improve
-/blog/meta-ads-for-high-ticket-b2b-broad-targeting,blog,Facebook Ads Targeting for High-Ticket B2B Offers,926,1648,15,none,keep
-/blog/meta-advantage-plus-for-b2b,blog,Meta Advantage+ for B2B: Broad Targeting Guide,291,985,17,thin (291 unique words),improve
+/blog/meta-ads-for-coaches-guide,blog,Meta Ads for Coaches Guide: Scale to $100K/Mo,265,951,9,thin (265 unique words),improve
+/blog/meta-ads-for-high-ticket-b2b-broad-targeting,blog,Facebook Ads Targeting for High-Ticket B2B Offers,1425,2148,15,none,keep
+/blog/meta-advantage-plus-for-b2b,blog,Meta Advantage+ for B2B: Broad Targeting Guide,291,987,17,thin (291 unique words),improve
 /blog/scaling-from-100k-to-500k-coaching,blog,Scale Coaching Business: $100K to $500K/Mo,307,997,19,none,keep
 /blog/speed-to-lead,blog,How to Improve Speed to Lead: Sub-5-Minute Playbook,1492,2172,7,none,keep
 /blog/speed-to-lead-statistics-response-time,blog,Speed to Lead Statistics 2026: 5-Minute Rule,1906,2608,19,none,keep
-/blog/the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition,blog,VSL Funnel Blueprint 2026: Book 50+ Calls,948,1636,25,none,keep
+/blog/the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition,blog,VSL Funnel Blueprint 2026: Book 50+ Calls,1246,1934,25,none,keep
 /blog/vsl-script-template-high-ticket,blog,High-Ticket VSL Script Template & Blueprint,298,978,7,thin (298 unique words),improve
 /blog/whatsapp-marketing-for-consultants,blog,WhatsApp Marketing for Consultants (2026),237,907,10,thin (237 unique words),improve
 /blog/why-leads-dont-show-up,blog,Why Leads Don't Show Up: Fix No-Shows (2026),288,963,9,thin (288 unique words),improve
@@ -84,12 +84,12 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /case-studies/b2b-agency-scaling-846k,company/legal (proof),Agency Case Study: $846K and 235 Clients,364,637,145,none,keep
 /case-studies/b2b-technology-agency-71k,company/legal (proof),"AI SaaS Case Study: $71,934 in 24 Days",226,499,5,thin (226 unique words),improve
 /case-studies/commercial-services-86k,company/legal (proof),"Low-Ticket Offer Case Study: $86,275",256,534,5,thin (256 unique words),improve
-/case-studies/digital-media-agency-157k,company/legal (proof),"LTO Funnel Case Study: $157,184 Revenue",206,479,35,thin (206 unique words),improve
+/case-studies/digital-media-agency-157k,company/legal (proof),"LTO Funnel Case Study: $157,184 Revenue",206,479,36,thin (206 unique words),improve
 /case-studies/executive-consulting-150k,company/legal (proof),"$150,348 in 5 Days: LTO to High-Ticket",209,482,5,thin (209 unique words),improve
 /case-studies/high-ticket-coaching-203k,company/legal (proof),"Fitness Funnel: $203,941 in 11 Days",191,469,145,thin (191 unique words),improve
 /case-studies/high-ticket-funnel-79k,company/legal (proof),"$79,070 in 17 Days: Booking Funnel Case",252,525,5,thin (252 unique words),improve
 /case-studies/med-spa-marketing-agency-639k,company/legal (proof),Med Spa Agency: $639K in Two Months,360,633,145,none,keep
-/case-studies/strategic-consulting-85k,company/legal (proof),Agency Client Case Study: $85K Month,190,463,5,thin (190 unique words),improve
+/case-studies/strategic-consulting-85k,company/legal (proof),Agency Client Case Study: $85K Month,190,463,6,thin (190 unique words),improve
 /compare/appointment-setter-vs-va,core,Appointment Setter vs Virtual Assistant,292,617,145,thin (292 unique words),improve
 /compare/done-for-you-vs-done-with-you-lead-generation,core,Done For You vs Done With You Lead Gen,321,646,145,none,keep
 /compare/meta-ads-vs-google-ads-high-ticket,core,Meta Ads vs Google Ads for High-Ticket Offers,310,635,145,none,keep
@@ -97,11 +97,11 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /crm-automation,core,CRM Automation for Coaches,308,633,145,none,keep
 /disclaimer,company/legal,Earnings Disclaimer,104,104,0,noindex,keep (noindex)
 /for,industry,Lead Generation by Industry,771,1090,145,none,keep
-/for/agencies,industry,Client Acquisition for Digital & Marketing Agencies,426,864,145,none,keep
+/for/agencies,industry,Client Acquisition for Digital & Marketing Agencies,1411,1851,145,none,keep
 /for/b2b-services,industry,Lead Generation for Consultancies & B2B Service Firms,497,1085,145,none,keep
 /for/business-coaches,industry,Clients for Business Coaches,307,632,18,none,keep
-/for/coaches,industry,Client Acquisition Funnels for High-Ticket Coaches,509,912,145,none,keep
-/for/consultants,industry,Client Acquisition Pipeline for B2B Consultants,447,867,145,none,keep
+/for/coaches,industry,Client Acquisition Funnels for High-Ticket Coaches,1172,1584,145,none,keep
+/for/consultants,industry,Client Acquisition Pipeline for B2B Consultants,1081,1501,145,none,keep
 /for/course-creators,industry,Course Creator Lead Generation,230,555,11,thin (230 unique words),improve
 /for/executive-coaches,industry,Executive Coaching Clients,205,530,12,thin (205 unique words),improve
 /for/financial-advisors,industry,Financial Advisor Leads & High-Net-Worth Client Funnels,454,1010,145,none,keep
@@ -115,14 +115,14 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /for/recruitment-agencies,industry,Recruitment Agency Leads,217,542,6,thin (217 unique words),improve
 /for/saas,industry,B2B SaaS Lead Generation & Demo Booking Agency,476,1063,145,none,keep
 /for/solar-companies,industry,Solar Appointment Setting,203,528,9,thin (203 unique words),improve
-/glossary,blog,Client Acquisition Glossary (29 Terms),1377,2060,145,none,keep
+/glossary,blog,Client Acquisition Glossary (29 Terms),1377,2065,145,none,keep
 /high-ticket-lead-generation,core,High Ticket Lead Generation for $3K–$25K Offers,541,1107,145,none,keep
 /lead-generation-agency,core,Done-for-You Lead Generation Agency: How It Works,545,1136,145,none,keep
 /mastermind,core,8-Figure Mastermind for Agency Owners & Coaches,499,1040,145,none,keep
 /mastermind/7-days-paid-trial,core,7 Days Paid Trial Funnel Breakdown,638,1065,145,none,keep
 /mastermind/hidden-facebook-interest,core,Hidden Facebook Interest Targeting Breakdown,597,1024,145,none,keep
 /mastermind/lto-funnel-scale,core,How We Scaled an LTO Funnel to $847K,612,1039,145,none,keep
-/meta-ads-agency,core,Meta Ads Agency for B2B & High-Ticket Offers,1029,1446,145,none,keep
+/meta-ads-agency,core,Meta Ads Agency for B2B & High-Ticket Offers,1029,1447,145,none,keep
 /meta-ads-for-coaches,industry,Facebook Ads for Coaches,204,529,12,thin (204 unique words),improve
 /meta-ads-for-consultants,industry,Facebook Ads for Consultants,208,533,11,thin (208 unique words),improve
 /meta-ads-for-course-creators,industry,Facebook Ads for Course Creators,201,526,9,thin (201 unique words),improve

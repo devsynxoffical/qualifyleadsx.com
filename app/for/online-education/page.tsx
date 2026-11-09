@@ -11,7 +11,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "Online Education Lead Generation | QualifiedLeadsX",
   description:
-    "Student acquisition for vocational academies, accredited bootcamps, and certification institutes ($3K–$15K tuitions). Direct enrollment funnels and setters.",
+    "Student acquisition for vocational academies, bootcamps and certification institutes ($3K–$15K tuition): enrollment funnels and setters.",
   alternates: {
     canonical: `${site.url}/for/online-education`,
   },

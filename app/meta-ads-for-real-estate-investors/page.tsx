@@ -11,7 +11,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "Facebook Ads for Real Estate Investors | QualifiedLeadsX",
   description:
-    "Direct-to-seller Facebook ads for real estate wholesalers and flippers. Compliant HEC campaigns, sub-90s triage, and verified off-market purchase contracts.",
+    "Direct-to-seller Facebook ads for real estate wholesalers and flippers. Compliant HEC campaigns, sub-90s triage and off-market purchase contracts.",
   alternates: {
     canonical: `${site.url}/meta-ads-for-real-estate-investors`,
   },

@@ -11,7 +11,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "Insurance Appointment Setting | QualifiedLeadsX",
   description:
-    "Exclusive appointment setting for commercial and high-net-worth insurance agencies. Vetted policy reviews, sub-5-minute speed to lead, and verified show rates.",
+    "Exclusive appointment setting for commercial and high-net-worth insurance agencies. Vetted policy reviews, sub-5-minute speed to lead, real show rates.",
   alternates: {
     canonical: `${site.url}/for/insurance-agencies`,
   },

@@ -11,7 +11,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "QualifiedLeadsX Alternatives & Comparison",
   description:
-    "Honest comparison of QualifiedLeadsX alternatives for high-ticket lead generation. Compare against traditional agencies, cold email shops, and internal hiring.",
+    "An honest comparison of QualifiedLeadsX alternatives for high-ticket lead generation: traditional agencies, cold email shops and in-house hiring.",
   alternates: {
     canonical: `${site.url}/compare/qualifiedleadsx-alternatives`,
   },

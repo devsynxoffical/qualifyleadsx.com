@@ -25,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: "Client Acquisition Pipeline for B2B Consultants",
   description:
-    "Predictable B2B sales pipeline for strategy, operations, and management consultants. Book 20–40 vetted discovery meetings with C-level executives every month.",
+    "Predictable B2B pipeline for strategy, operations and management consultants. Book 20–40 vetted discovery meetings with C-level buyers a month.",
   keywords: [
     "client acquisition for consultants",
     "b2b consulting lead generation",

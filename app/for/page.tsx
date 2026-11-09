@@ -28,7 +28,7 @@ import { industryPages, metaAdsIndustryLinks, appointmentSettingIndustryLinks } 
 export const metadata: Metadata = {
   title: "Lead Generation by Industry - QualifiedLeadsX",
   description:
-    "Done-for-you lead generation by industry. Explore specialized client acquisition funnels and benchmarks for coaches, consultants, agencies, MedSpas, and SaaS.",
+    "Done-for-you lead generation by industry. Client acquisition funnels and benchmarks for coaches, consultants, agencies, med spas and SaaS.",
   keywords: [
     "lead generation by industry",
     "b2b lead generation by industry",

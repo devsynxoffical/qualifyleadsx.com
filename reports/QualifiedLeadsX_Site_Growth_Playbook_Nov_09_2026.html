@@ -1,0 +1,1130 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Site Growth Playbook</title><style>
+:root{--ink:#14161a;--muted:#5b616b;--line:#dfe2e7;--accent:#0b6b4f;--bg:#fff;--soft:#f5f7f9}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:32px 20px}
+header h1{font-size:28px;margin:0 0 4px}.meta{color:var(--muted);margin:0 0 24px}
+h2{font-size:21px;margin:40px 0 12px;padding-top:12px;border-top:2px solid var(--accent)}
+h3{font-size:16px;margin:24px 0 8px}h4,h5,h6{font-size:14px;margin:16px 0 6px}
+table{border-collapse:collapse;width:100%;margin:8px 0 16px;font-size:12.5px}
+th,td{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}
+th{background:var(--soft)}table.small{font-size:11px}
+pre{background:var(--soft);border:1px solid var(--line);padding:12px;overflow-x:auto;font-size:11px;white-space:pre-wrap;word-break:break-word}
+code{font-size:12px}.note{color:var(--muted)}
+.example{border:1px solid var(--line);border-left:4px solid var(--accent);padding:4px 18px 12px;margin:18px 0;background:#fcfdfd}
+blockquote{margin:8px 0;padding:6px 12px;border-left:3px solid #c9a227;background:#fffbea}
+@media print{main{padding:0}h2{break-before:page}header+h2{break-before:auto}table,pre{font-size:9.5px}.example{break-inside:auto}}
+</style></head><body><main>
+<header><h1>Site Growth Playbook: QualifiedLeadsX</h1>
+<p class="meta">qualifiedleadsx.com &middot; Monday, 9 November 2026 &middot; branch claude/qualified-leadx-seo-15g7kc</p></header>
+<h2>Summary</h2>
+<ul>
+<li><b>146 URLs audited</b> from the production build; 112 are indexable. After this week's fixes: <b>0</b> titles over 60 characters, <b>0</b> meta descriptions over 155, <b>0</b> keyword collisions, <b>0</b> pages with fewer than 5 internal links in, 1 H1 on every page, every page within 2 clicks of the home page, all text server-rendered.</li>
+<li>The one remaining audit problem is <b>thin content</b>: 49 indexable pages have under 300 unique words (mostly industry, service-for-industry and case-study pages). Weeks 2 to 5 of the rollout fix these with the templates below.</li>
+<li><b>Built and live on the branch (week 1):</b> sitemap index plus core, industries, locations and content sitemaps; related-links block above the footer on every page; robots.txt naming Googlebot, Bingbot and the AI crawlers; llms.txt rebuilt to the playbook spec; 7 over-length titles shortened, 6 colliding titles rewritten and 18 meta descriptions shortened.</li>
+<li><b>Planned:</b> 120 pages in the plan, including 30 new pages: 1 core (/pricing), a /locations hub plus 4 country pages, 10 service-for-industry pages, 5 tools and 8 blog posts.</li>
+<li><b>Location pages are limited on purpose.</b> QualifiedLeadsX serves the US, UK, Canada and Australia remotely and has no local offices. The plan has 4 country pages; a city page is built only where a real client or result exists. That rule follows the playbook: no pages for places not served, and no fake offices.</li>
+<li><b>Nothing was invented.</b> 23 business facts are marked [fill in] (section 8). The pages that depend on them must not go live until the facts are supplied and a person has edited them.</li>
+</ul>
+<p class="note">Source files: reports/playbook-audit.csv, reports/playbook-page-plan.csv and docs/growth-playbook/. Regenerate the audit after each build with <code>python3 -I scripts/playbook-audit.py</code>, and the plan with <code>python3 -I scripts/playbook-plan.py</code>.</p>
+
+<h2>1. Audit table (STEP 1)</h2>
+<p>Every URL in the production build. Page type follows the playbook, plus "company/legal (proof)" for case studies. Unique words are text blocks that do not repeat on 5 or more pages. "Internal links in" counts other pages linking to the URL. Rows marked "keep (noindex)" or "keep (canonicalised)" are intentional and appear in no sitemap.</p>
+<table class="small"><thead><tr><th>URL</th><th>Page type</th><th>Primary keyword</th><th>Unique words</th><th>Total words</th><th>Internal links in</th><th>Problems</th><th>Action</th></tr></thead><tbody><tr><td>/</td><td>core</td><td>Lead Generation Agency for High-Ticket B2B</td><td>2258</td><td>2966</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/about</td><td>company/legal</td><td>About  Client Acquisition Agency</td><td>1032</td><td>1065</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/appointment-setting</td><td>core</td><td>Appointment Setting Agency: Qualified Sales Calls Booked</td><td>892</td><td>1272</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/appointment-setting-for-agencies</td><td>industry</td><td>Appointment Setting for Agencies</td><td>197</td><td>522</td><td>6</td><td>thin (197 unique words)</td><td>improve</td></tr><tr><td>/appointment-setting-for-coaches</td><td>industry</td><td>Appointment Setting for Coaches</td><td>231</td><td>556</td><td>8</td><td>thin (231 unique words)</td><td>improve</td></tr><tr><td>/appointment-setting-for-consultants</td><td>industry</td><td>Appointment Setting for Consultants</td><td>188</td><td>513</td><td>8</td><td>thin (188 unique words)</td><td>improve</td></tr><tr><td>/appointment-setting-for-saas</td><td>industry</td><td>Appointment Setting for SaaS</td><td>201</td><td>526</td><td>7</td><td>thin (201 unique words)</td><td>improve</td></tr><tr><td>/b2b-lead-generation</td><td>core</td><td>B2B Lead Generation Agency for Service Contracts</td><td>470</td><td>1050</td><td>16</td><td>none</td><td>keep</td></tr><tr><td>/benchmarks</td><td>free tool</td><td>High Ticket Marketing Benchmarks 2026</td><td>492</td><td>811</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/benchmarks/close-rate</td><td>free tool</td><td>High Ticket Close Rate Benchmarks 2026</td><td>244</td><td>343</td><td>145</td><td>thin (244 unique words)</td><td>improve</td></tr><tr><td>/benchmarks/cost-per-booked-call</td><td>free tool</td><td>Cost Per Booked Call Benchmarks 2026</td><td>360</td><td>714</td><td>41</td><td>none</td><td>keep</td></tr><tr><td>/benchmarks/cost-per-lead-by-industry</td><td>free tool</td><td>Cost Per Lead by Industry 2026 Benchmarks</td><td>263</td><td>362</td><td>145</td><td>thin (263 unique words)</td><td>improve</td></tr><tr><td>/benchmarks/meta-ads-cpm</td><td>free tool</td><td>Meta Ads CPM Benchmarks 2026</td><td>284</td><td>383</td><td>145</td><td>thin (284 unique words)</td><td>improve</td></tr><tr><td>/benchmarks/show-rate</td><td>free tool</td><td>Appointment Show Rate Benchmarks 2026</td><td>347</td><td>705</td><td>77</td><td>none</td><td>keep</td></tr><tr><td>/blog</td><td>blog</td><td>Client Acquisition, VSL Funnels &amp; Meta Ads Insights</td><td>739</td><td>1401</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/blog/ai-whatsapp-lead-nurture-pipeline-high-ticket</td><td>blog</td><td>AI WhatsApp Lead Nurture for High-Ticket Calls</td><td>633</td><td>1313</td><td>16</td><td>none</td><td>keep</td></tr><tr><td>/blog/appointment-setter-compensation-models</td><td>blog</td><td>Appointment Setter Compensation Models Guide</td><td>276</td><td>957</td><td>6</td><td>thin (276 unique words)</td><td>improve</td></tr><tr><td>/blog/automated-lead-qualification-system-high-ticket</td><td>blog</td><td>Automated Lead Qualification System for B2B</td><td>766</td><td>1466</td><td>17</td><td>none</td><td>keep</td></tr><tr><td>/blog/b2b-appointment-setting-vs-in-house-sdr-teams</td><td>blog</td><td>B2B Appointment Setting vs In-House SDR Teams</td><td>1412</td><td>2114</td><td>21</td><td>none</td><td>keep</td></tr><tr><td>/blog/b2b-client-acquisition-cost-cac-benchmarks-2026</td><td>blog</td><td>B2B CAC Benchmarks 2026: Cost to Acquire a Client</td><td>652</td><td>1362</td><td>21</td><td>none</td><td>keep</td></tr><tr><td>/blog/b2b-roas-benchmarks-qualified-appointment-generation</td><td>blog</td><td>B2B ROAS Benchmarks &amp; Appointment Math 2026</td><td>1170</td><td>1888</td><td>20</td><td>none</td><td>keep</td></tr><tr><td>/blog/b2b-sales-closer-job-description</td><td>blog</td><td>High-Ticket Sales Closer Job Description Template</td><td>254</td><td>935</td><td>8</td><td>thin (254 unique words)</td><td>improve</td></tr><tr><td>/blog/category/funnel-strategy</td><td>blog</td><td>Funnel Strategy Guides for High-Ticket Offers</td><td>88</td><td>460</td><td>145</td><td>thin (88 unique words)</td><td>improve</td></tr><tr><td>/blog/category/lead-qualification</td><td>blog</td><td>Lead Qualification &amp; Appointment Guides</td><td>164</td><td>562</td><td>145</td><td>thin (164 unique words)</td><td>improve</td></tr><tr><td>/blog/category/paid-advertising</td><td>blog</td><td>Meta &amp; Facebook Ads Guides for B2B</td><td>79</td><td>481</td><td>145</td><td>thin (79 unique words)</td><td>improve</td></tr><tr><td>/blog/category/scaling-economics</td><td>blog</td><td>Scaling, CAC &amp; ROAS Benchmark Guides</td><td>101</td><td>500</td><td>145</td><td>thin (101 unique words)</td><td>improve</td></tr><tr><td>/blog/cold-outreach-vs-paid-traffic-high-ticket-b2b</td><td>blog</td><td>Cold Outreach vs Paid Traffic for B2B</td><td>687</td><td>1409</td><td>16</td><td>none</td><td>keep</td></tr><tr><td>/blog/cost-per-acquisition-vs-cost-per-lead</td><td>blog</td><td>CPA vs CPL: Why Cost Per Lead is a Vanity Metric</td><td>330</td><td>1020</td><td>8</td><td>none</td><td>keep</td></tr><tr><td>/blog/facebook-ads-agency-vs-in-house-media-buyer</td><td>blog</td><td>Facebook Ads Agency vs Hiring an In-House Media Buyer</td><td>1915</td><td>2634</td><td>12</td><td>none</td><td>keep</td></tr><tr><td>/blog/high-ticket-funnel-examples</td><td>blog</td><td>High-Ticket Funnel Examples: 5 Proven Blueprints</td><td>259</td><td>947</td><td>51</td><td>thin (259 unique words)</td><td>improve</td></tr><tr><td>/blog/high-ticket-lead-generation-strategies</td><td>blog</td><td>High-Ticket Lead Generation Strategies (2026)</td><td>257</td><td>949</td><td>17</td><td>thin (257 unique words)</td><td>improve</td></tr><tr><td>/blog/high-ticket-sales-how-to-get-high-ticket-clients</td><td>blog</td><td>High Ticket Sales: How to Get Clients</td><td>2544</td><td>3260</td><td>58</td><td>none</td><td>keep</td></tr><tr><td>/blog/high-ticket-sales-training-framework</td><td>blog</td><td>High Ticket Sales Training &amp; Framework</td><td>1066</td><td>1766</td><td>20</td><td>none</td><td>keep</td></tr><tr><td>/blog/how-much-does-a-lead-generation-agency-cost</td><td>blog</td><td>How Much Does a Lead Gen Agency Cost in 2026?</td><td>2045</td><td>2759</td><td>19</td><td>none</td><td>keep</td></tr><tr><td>/blog/how-much-does-meta-ads-cost</td><td>blog</td><td>How Much Does Meta Ads Cost in 2026? Budget Guide</td><td>1903</td><td>2625</td><td>9</td><td>none</td><td>keep</td></tr><tr><td>/blog/how-to-increase-show-rate</td><td>blog</td><td>How to Increase Show Rate: 80%+ Attendance Guide</td><td>272</td><td>958</td><td>9</td><td>thin (272 unique words)</td><td>improve</td></tr><tr><td>/blog/how-to-qualify-leads</td><td>blog</td><td>How to Qualify Leads: High-Ticket Framework</td><td>264</td><td>933</td><td>19</td><td>thin (264 unique words)</td><td>improve</td></tr><tr><td>/blog/how-to-write-a-vsl-script-12-minute-structure</td><td>blog</td><td>How to Write a VSL Script: 12-Minute Structure</td><td>2181</td><td>2875</td><td>20</td><td>none</td><td>keep</td></tr><tr><td>/blog/meta-ads-for-coaches-guide</td><td>blog</td><td>Meta Ads for Coaches Guide: Scale to $100K/Mo</td><td>265</td><td>949</td><td>9</td><td>thin (265 unique words)</td><td>improve</td></tr><tr><td>/blog/meta-ads-for-high-ticket-b2b-broad-targeting</td><td>blog</td><td>Facebook Ads Targeting for High-Ticket B2B Offers</td><td>926</td><td>1648</td><td>15</td><td>none</td><td>keep</td></tr><tr><td>/blog/meta-advantage-plus-for-b2b</td><td>blog</td><td>Meta Advantage+ for B2B: Broad Targeting Guide</td><td>291</td><td>985</td><td>17</td><td>thin (291 unique words)</td><td>improve</td></tr><tr><td>/blog/scaling-from-100k-to-500k-coaching</td><td>blog</td><td>Scale Coaching Business: $100K to $500K/Mo</td><td>307</td><td>997</td><td>19</td><td>none</td><td>keep</td></tr><tr><td>/blog/speed-to-lead</td><td>blog</td><td>How to Improve Speed to Lead: Sub-5-Minute Playbook</td><td>1492</td><td>2172</td><td>7</td><td>none</td><td>keep</td></tr><tr><td>/blog/speed-to-lead-statistics-response-time</td><td>blog</td><td>Speed to Lead Statistics 2026: 5-Minute Rule</td><td>1906</td><td>2608</td><td>19</td><td>none</td><td>keep</td></tr><tr><td>/blog/the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition</td><td>blog</td><td>VSL Funnel Blueprint 2026: Book 50+ Calls</td><td>948</td><td>1636</td><td>25</td><td>none</td><td>keep</td></tr><tr><td>/blog/vsl-script-template-high-ticket</td><td>blog</td><td>High-Ticket VSL Script Template &amp; Blueprint</td><td>298</td><td>978</td><td>7</td><td>thin (298 unique words)</td><td>improve</td></tr><tr><td>/blog/whatsapp-marketing-for-consultants</td><td>blog</td><td>WhatsApp Marketing for Consultants (2026)</td><td>237</td><td>907</td><td>10</td><td>thin (237 unique words)</td><td>improve</td></tr><tr><td>/blog/why-leads-dont-show-up</td><td>blog</td><td>Why Leads Don&#x27;t Show Up: Fix No-Shows (2026)</td><td>288</td><td>963</td><td>9</td><td>thin (288 unique words)</td><td>improve</td></tr><tr><td>/book-your-call</td><td>company/legal</td><td>Book Your Free Strategy Call</td><td>402</td><td>402</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/book-your-call/schedule</td><td>company/legal</td><td>Pick a Time for Your Free Strategy Call</td><td>147</td><td>147</td><td>145</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies</td><td>company/legal (proof)</td><td>125+ Real Client Case Studies &amp; Scaling Proof</td><td>3838</td><td>4407</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/case-studies/C7v8CbIPJaJ</td><td>company/legal (proof)</td><td>1,956 Client Results Case Study</td><td>230</td><td>504</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/C7v8ZyxNAOa</td><td>company/legal (proof)</td><td>5,628 Client Results Case Study</td><td>319</td><td>593</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/C_IHS-Fy9Pg</td><td>company/legal (proof)</td><td>228 Client Results Case Study</td><td>301</td><td>565</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DK2tpecTDVQ</td><td>company/legal (proof)</td><td>$69,652 Client Results Case Study</td><td>156</td><td>424</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DM3gtB4SCS0</td><td>company/legal (proof)</td><td>$28K Client Results Case Study</td><td>263</td><td>536</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DM3mUZsSNEJ</td><td>company/legal (proof)</td><td>$99/Month Offer: $86K and 810 Members</td><td>199</td><td>472</td><td>0</td><td>canonical points to /case-studies/agency-backend-continuity-86k</td><td>keep (canonicalised)</td></tr><tr><td>/case-studies/DMTbiLhy45r</td><td>company/legal (proof)</td><td>537 Client Results Case Study</td><td>280</td><td>554</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DMd4wfWSKeL</td><td>company/legal (proof)</td><td>$25,183 Client Results Case Study</td><td>196</td><td>469</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DMgZ9YRSuz5</td><td>company/legal (proof)</td><td>Agency Client Case Study: $85K Month</td><td>190</td><td>463</td><td>0</td><td>canonical points to /case-studies/strategic-consulting-85k</td><td>keep (canonicalised)</td></tr><tr><td>/case-studies/DMi-rDJyKfD</td><td>company/legal (proof)</td><td>$42,367.99 Client Results Case Study</td><td>225</td><td>498</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DMoKiPVSxaH</td><td>company/legal (proof)</td><td>$56,645.82 Client Results Case Study</td><td>231</td><td>504</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DPYWdJ9iQPY</td><td>company/legal (proof)</td><td>$24,902 Client Results Case Study</td><td>191</td><td>469</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DPq9gvfkrQp</td><td>company/legal (proof)</td><td>$27,563 Client Results Case Study</td><td>399</td><td>667</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DQ91hXmEoIm</td><td>company/legal (proof)</td><td>LTO Funnel Case Study: $157,184 Revenue</td><td>206</td><td>479</td><td>0</td><td>canonical points to /case-studies/digital-media-agency-157k</td><td>keep (canonicalised)</td></tr><tr><td>/case-studies/DQXO3Y6ksj5</td><td>company/legal (proof)</td><td>537 Client Results Case Study</td><td>271</td><td>540</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DQsBVdEkxYc</td><td>company/legal (proof)</td><td>$150,348 in 5 Days: LTO to High-Ticket</td><td>209</td><td>482</td><td>0</td><td>canonical points to /case-studies/executive-consulting-150k</td><td>keep (canonicalised)</td></tr><tr><td>/case-studies/DRl7D50EX7o</td><td>company/legal (proof)</td><td>$36,198 Client Results Case Study</td><td>207</td><td>480</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DS5sAimEqsT</td><td>company/legal (proof)</td><td>Agency Case Study: $846K and 235 Clients</td><td>364</td><td>637</td><td>0</td><td>canonical points to /case-studies/b2b-agency-scaling-846k</td><td>keep (canonicalised)</td></tr><tr><td>/case-studies/DSkbQyzkvbL</td><td>company/legal (proof)</td><td>Low-Ticket Offer Case Study: $86,275</td><td>256</td><td>534</td><td>0</td><td>canonical points to /case-studies/commercial-services-86k</td><td>keep (canonicalised)</td></tr><tr><td>/case-studies/DT4yHdFkXhM</td><td>company/legal (proof)</td><td>AI SaaS Case Study: $71,934 in 24 Days</td><td>226</td><td>499</td><td>0</td><td>canonical points to /case-studies/b2b-technology-agency-71k</td><td>keep (canonicalised)</td></tr><tr><td>/case-studies/DTLiCG_En3K</td><td>company/legal (proof)</td><td>2,000+ Client Results Case Study</td><td>92</td><td>366</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DTuWQhxEUP4</td><td>company/legal (proof)</td><td>1,865 Client Results Case Study</td><td>177</td><td>441</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DU71t8DER0c</td><td>company/legal (proof)</td><td>$79,070 in 17 Days: Booking Funnel Case</td><td>252</td><td>525</td><td>0</td><td>canonical points to /case-studies/high-ticket-funnel-79k</td><td>keep (canonicalised)</td></tr><tr><td>/case-studies/DUsaqlQEsYB</td><td>company/legal (proof)</td><td>Fitness Funnel: $203,941 in 11 Days</td><td>191</td><td>469</td><td>0</td><td>canonical points to /case-studies/high-ticket-coaching-203k</td><td>keep (canonicalised)</td></tr><tr><td>/case-studies/DXYwphfjq64</td><td>company/legal (proof)</td><td>$54,635 Client Results Case Study</td><td>242</td><td>515</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DZc5twGlC0M</td><td>company/legal (proof)</td><td>Med Spa Agency: $639K in Two Months</td><td>360</td><td>633</td><td>0</td><td>canonical points to /case-studies/med-spa-marketing-agency-639k</td><td>keep (canonicalised)</td></tr><tr><td>/case-studies/Dd9D3rnSCMT</td><td>company/legal (proof)</td><td>2,440 Client Results Case Study</td><td>194</td><td>463</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DdN7bs-xSg7</td><td>company/legal (proof)</td><td>1,890 Client Results Case Study</td><td>279</td><td>553</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/Ddjbsg8SUQv</td><td>company/legal (proof)</td><td>8,810 Client Results Case Study</td><td>221</td><td>485</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/DdrANhmycDu</td><td>company/legal (proof)</td><td>15,958+ Client Results Case Study</td><td>206</td><td>470</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/case-studies/agency-backend-continuity-86k</td><td>company/legal (proof)</td><td>$99/Month Offer: $86K and 810 Members</td><td>199</td><td>472</td><td>5</td><td>thin (199 unique words)</td><td>improve</td></tr><tr><td>/case-studies/b2b-agency-scaling-846k</td><td>company/legal (proof)</td><td>Agency Case Study: $846K and 235 Clients</td><td>364</td><td>637</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/case-studies/b2b-technology-agency-71k</td><td>company/legal (proof)</td><td>AI SaaS Case Study: $71,934 in 24 Days</td><td>226</td><td>499</td><td>5</td><td>thin (226 unique words)</td><td>improve</td></tr><tr><td>/case-studies/commercial-services-86k</td><td>company/legal (proof)</td><td>Low-Ticket Offer Case Study: $86,275</td><td>256</td><td>534</td><td>5</td><td>thin (256 unique words)</td><td>improve</td></tr><tr><td>/case-studies/digital-media-agency-157k</td><td>company/legal (proof)</td><td>LTO Funnel Case Study: $157,184 Revenue</td><td>206</td><td>479</td><td>35</td><td>thin (206 unique words)</td><td>improve</td></tr><tr><td>/case-studies/executive-consulting-150k</td><td>company/legal (proof)</td><td>$150,348 in 5 Days: LTO to High-Ticket</td><td>209</td><td>482</td><td>5</td><td>thin (209 unique words)</td><td>improve</td></tr><tr><td>/case-studies/high-ticket-coaching-203k</td><td>company/legal (proof)</td><td>Fitness Funnel: $203,941 in 11 Days</td><td>191</td><td>469</td><td>145</td><td>thin (191 unique words)</td><td>improve</td></tr><tr><td>/case-studies/high-ticket-funnel-79k</td><td>company/legal (proof)</td><td>$79,070 in 17 Days: Booking Funnel Case</td><td>252</td><td>525</td><td>5</td><td>thin (252 unique words)</td><td>improve</td></tr><tr><td>/case-studies/med-spa-marketing-agency-639k</td><td>company/legal (proof)</td><td>Med Spa Agency: $639K in Two Months</td><td>360</td><td>633</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/case-studies/strategic-consulting-85k</td><td>company/legal (proof)</td><td>Agency Client Case Study: $85K Month</td><td>190</td><td>463</td><td>5</td><td>thin (190 unique words)</td><td>improve</td></tr><tr><td>/compare/appointment-setter-vs-va</td><td>core</td><td>Appointment Setter vs Virtual Assistant</td><td>292</td><td>617</td><td>145</td><td>thin (292 unique words)</td><td>improve</td></tr><tr><td>/compare/done-for-you-vs-done-with-you-lead-generation</td><td>core</td><td>Done For You vs Done With You Lead Gen</td><td>321</td><td>646</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/compare/meta-ads-vs-google-ads-high-ticket</td><td>core</td><td>Meta Ads vs Google Ads for High-Ticket Offers</td><td>310</td><td>635</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/compare/qualifiedleadsx-alternatives</td><td>core</td><td>Alternatives &amp; Comparison</td><td>356</td><td>681</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/crm-automation</td><td>core</td><td>CRM Automation for Coaches</td><td>308</td><td>633</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/disclaimer</td><td>company/legal</td><td>Earnings Disclaimer</td><td>104</td><td>104</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/for</td><td>industry</td><td>Lead Generation by Industry</td><td>771</td><td>1090</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/for/agencies</td><td>industry</td><td>Client Acquisition for Digital &amp; Marketing Agencies</td><td>426</td><td>864</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/for/b2b-services</td><td>industry</td><td>Lead Generation for Consultancies &amp; B2B Service Firms</td><td>497</td><td>1085</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/for/business-coaches</td><td>industry</td><td>Clients for Business Coaches</td><td>307</td><td>632</td><td>18</td><td>none</td><td>keep</td></tr><tr><td>/for/coaches</td><td>industry</td><td>Client Acquisition Funnels for High-Ticket Coaches</td><td>509</td><td>912</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/for/consultants</td><td>industry</td><td>Client Acquisition Pipeline for B2B Consultants</td><td>447</td><td>867</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/for/course-creators</td><td>industry</td><td>Course Creator Lead Generation</td><td>230</td><td>555</td><td>11</td><td>thin (230 unique words)</td><td>improve</td></tr><tr><td>/for/executive-coaches</td><td>industry</td><td>Executive Coaching Clients</td><td>205</td><td>530</td><td>12</td><td>thin (205 unique words)</td><td>improve</td></tr><tr><td>/for/financial-advisors</td><td>industry</td><td>Financial Advisor Leads &amp; High-Net-Worth Client Funnels</td><td>454</td><td>1010</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/for/fitness-coaches</td><td>industry</td><td>Online Fitness Coach Clients</td><td>241</td><td>566</td><td>12</td><td>thin (241 unique words)</td><td>improve</td></tr><tr><td>/for/home-improvement</td><td>industry</td><td>Home Improvement Leads</td><td>193</td><td>518</td><td>9</td><td>thin (193 unique words)</td><td>improve</td></tr><tr><td>/for/insurance-agencies</td><td>industry</td><td>Insurance Appointment Setting</td><td>203</td><td>528</td><td>9</td><td>thin (203 unique words)</td><td>improve</td></tr><tr><td>/for/law-firms</td><td>industry</td><td>Law Firm Lead Generation</td><td>225</td><td>550</td><td>145</td><td>thin (225 unique words)</td><td>improve</td></tr><tr><td>/for/med-spas</td><td>industry</td><td>Med Spa Lead Generation &amp; High-Ticket Booking Agency</td><td>513</td><td>1069</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/for/online-education</td><td>industry</td><td>Online Education Lead Generation</td><td>203</td><td>528</td><td>10</td><td>thin (203 unique words)</td><td>improve</td></tr><tr><td>/for/real-estate-investors</td><td>industry</td><td>Real Estate Investor Leads</td><td>225</td><td>550</td><td>145</td><td>thin (225 unique words)</td><td>improve</td></tr><tr><td>/for/recruitment-agencies</td><td>industry</td><td>Recruitment Agency Leads</td><td>217</td><td>542</td><td>6</td><td>thin (217 unique words)</td><td>improve</td></tr><tr><td>/for/saas</td><td>industry</td><td>B2B SaaS Lead Generation &amp; Demo Booking Agency</td><td>476</td><td>1063</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/for/solar-companies</td><td>industry</td><td>Solar Appointment Setting</td><td>203</td><td>528</td><td>9</td><td>thin (203 unique words)</td><td>improve</td></tr><tr><td>/glossary</td><td>blog</td><td>Client Acquisition Glossary (29 Terms)</td><td>1377</td><td>2060</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/high-ticket-lead-generation</td><td>core</td><td>High Ticket Lead Generation for $3K–$25K Offers</td><td>541</td><td>1107</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/lead-generation-agency</td><td>core</td><td>Done-for-You Lead Generation Agency: How It Works</td><td>545</td><td>1136</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/mastermind</td><td>core</td><td>8-Figure Mastermind for Agency Owners &amp; Coaches</td><td>499</td><td>1040</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/mastermind/7-days-paid-trial</td><td>core</td><td>7 Days Paid Trial Funnel Breakdown</td><td>638</td><td>1065</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/mastermind/hidden-facebook-interest</td><td>core</td><td>Hidden Facebook Interest Targeting Breakdown</td><td>597</td><td>1024</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/mastermind/lto-funnel-scale</td><td>core</td><td>How We Scaled an LTO Funnel to $847K</td><td>612</td><td>1039</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/meta-ads-agency</td><td>core</td><td>Meta Ads Agency for B2B &amp; High-Ticket Offers</td><td>1029</td><td>1446</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/meta-ads-for-coaches</td><td>industry</td><td>Facebook Ads for Coaches</td><td>204</td><td>529</td><td>12</td><td>thin (204 unique words)</td><td>improve</td></tr><tr><td>/meta-ads-for-consultants</td><td>industry</td><td>Facebook Ads for Consultants</td><td>208</td><td>533</td><td>11</td><td>thin (208 unique words)</td><td>improve</td></tr><tr><td>/meta-ads-for-course-creators</td><td>industry</td><td>Facebook Ads for Course Creators</td><td>201</td><td>526</td><td>9</td><td>thin (201 unique words)</td><td>improve</td></tr><tr><td>/meta-ads-for-financial-advisors</td><td>industry</td><td>Facebook Ads for Financial Advisors</td><td>244</td><td>569</td><td>9</td><td>thin (244 unique words)</td><td>improve</td></tr><tr><td>/meta-ads-for-law-firms</td><td>industry</td><td>Facebook Ads for Law Firms</td><td>239</td><td>564</td><td>9</td><td>thin (239 unique words)</td><td>improve</td></tr><tr><td>/meta-ads-for-med-spas</td><td>industry</td><td>Facebook Ads for Med Spas</td><td>230</td><td>555</td><td>9</td><td>thin (230 unique words)</td><td>improve</td></tr><tr><td>/meta-ads-for-real-estate-investors</td><td>industry</td><td>Facebook Ads for Real Estate Investors</td><td>227</td><td>552</td><td>9</td><td>thin (227 unique words)</td><td>improve</td></tr><tr><td>/meta-ads-for-saas</td><td>industry</td><td>Facebook Ads for SaaS</td><td>207</td><td>532</td><td>10</td><td>thin (207 unique words)</td><td>improve</td></tr><tr><td>/outsourced-sales-closers</td><td>core</td><td>Outsourced Sales Closers</td><td>308</td><td>633</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/privacy</td><td>company/legal</td><td>Privacy Policy</td><td>210</td><td>210</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/services</td><td>core</td><td>Client Acquisition Services: Meta Ads, VSL &amp; Setters</td><td>674</td><td>997</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/speed-to-lead</td><td>core</td><td>AI Speed to Lead: Reply to Every Lead in Under 5 Minutes</td><td>479</td><td>1054</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/terms</td><td>company/legal</td><td>Terms of Service</td><td>169</td><td>169</td><td>0</td><td>noindex</td><td>keep (noindex)</td></tr><tr><td>/tools</td><td>free tool</td><td>Free Lead Generation Calculators &amp; Tools</td><td>463</td><td>787</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/tools/cac-calculator</td><td>free tool</td><td>CAC Calculator for High-Ticket Offers</td><td>350</td><td>712</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/tools/cost-per-booked-call-calculator</td><td>free tool</td><td>Cost Per Booked Call Calculator</td><td>339</td><td>693</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/tools/lead-scoring-template</td><td>free tool</td><td>High-Ticket Lead Scoring Template &amp; Intake Rubric</td><td>408</td><td>766</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/tools/ltv-cac-calculator</td><td>free tool</td><td>LTV to CAC Ratio Calculator</td><td>304</td><td>657</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/tools/roas-calculator</td><td>free tool</td><td>ROAS &amp; Break-Even ROAS Calculator</td><td>341</td><td>696</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/tools/show-rate-calculator</td><td>free tool</td><td>Show-Up Rate &amp; No-Show Cost Calculator</td><td>306</td><td>664</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/vsl-funnels</td><td>core</td><td>VSL Funnel Agency for High-Ticket Client Acquisition</td><td>549</td><td>1128</td><td>145</td><td>none</td><td>keep</td></tr><tr><td>/whatsapp-lead-nurture</td><td>core</td><td>WhatsApp Lead Nurturing</td><td>350</td><td>675</td><td>145</td><td>none</td><td>keep</td></tr></tbody></table>
+
+<h2>2. Page plan (STEP 2 and STEP 6)</h2>
+<p>Grouped by page type, in build order. Every title is 60 characters or fewer and every meta description 155 or fewer; the scripts check this. No two pages share a primary keyword. Keywords come from the existing titles and the Search Console queries the site already gets. OpenSEO had no credits for volume data, so check the new-page keywords against Google autocomplete and People Also Ask before building. Hubs: /services, /locations (new), /for (the industries hub; the URL is kept so no redirect is needed), /tools and /blog.</p>
+<h3>Core Service pages (17)</h3><table class="small"><thead><tr><th>URL</th><th>Status</th><th>H1</th><th>Title tag</th><th>Meta description</th><th>Primary keyword</th><th>Secondary keywords</th><th>Hub</th><th>Week</th><th>Action / facts needed</th></tr></thead><tbody><tr><td>/</td><td>existing</td><td>Lead Generation Agency for High-Ticket Offers: From Meta Ads to Booked CallsDouble Your Revenue Within The Next 90 DaysOr We&#x27;ll Continue Working For You At No Management Fee Until We Do.</td><td>Lead Generation Agency for High-Ticket B2B (42)</td><td>B2B lead generation agency scaling high ticket sales for agencies and coaches. Get 30-50 predictable booked calls with our AI acquisition engine. (145)</td><td>high-ticket lead generation agency</td><td>client acquisition agency; done for you lead generation; lead generation for high ticket offers</td><td>-</td><td>1</td><td>keep (home)</td></tr><tr><td>/services</td><td>existing</td><td>High Ticket Lead Generation Services for $3K–$25K Offers</td><td>Client Acquisition Services: Meta Ads, VSL &amp; Setters (52)</td><td>Every QualifiedLeadsX service in one place: Meta ads, VSL funnels, AI speed to lead, WhatsApp nurture, CRM automation, appointment setting and closers. (151)</td><td>lead generation services</td><td>client acquisition services; b2b lead generation services</td><td>-</td><td>1</td><td>keep (hub)</td></tr><tr><td>/lead-generation-agency</td><td>existing</td><td>Lead Generation Agency for High-Ticket B2B &amp; Coaches</td><td>Done-for-You Lead Generation Agency: How It Works (49)</td><td>Premier lead generation agency installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. Get 30–50 qualified calls guaranteed. (143)</td><td>done for you lead generation agency</td><td>lead generation agency; outsourced lead generation; lead gen agency pricing</td><td>/services</td><td>2</td><td>upgrade to core template (1,500+ words)</td></tr><tr><td>/high-ticket-lead-generation</td><td>existing</td><td>High Ticket Lead Generation for $3,000 to $25,000+ Offers</td><td>High Ticket Lead Generation for $3K–$25K Offers (47)</td><td>Done-for-you high ticket lead generation for consultants, coaches, and agencies. Get 30–50 pre-sold, qualified sales calls monthly with verified proof. (151)</td><td>high ticket lead generation</td><td>high ticket leads; high ticket clients; high ticket offer marketing</td><td>/services</td><td>2</td><td>upgrade to core template</td></tr><tr><td>/b2b-lead-generation</td><td>existing</td><td>B2B Lead Generation Agency for High-Ticket Contracts</td><td>B2B Lead Generation Agency for Service Contracts (48)</td><td>Premier B2B lead generation agency building outbound and paid acquisition funnels. Book 30–50 qualified commercial sales appointments every month. (146)</td><td>b2b lead generation agency</td><td>b2b lead generation services; b2b appointment generation; b2b demand generation agency</td><td>/services</td><td>2</td><td>upgrade to core template</td></tr><tr><td>/meta-ads-agency</td><td>existing</td><td>The Meta Ads Agency For Coaches, Agencies &amp; High-Ticket B2B</td><td>Meta Ads Agency for B2B &amp; High-Ticket Offers (44)</td><td>Performance Meta ads agency scaling high-ticket coaches, consultants, and B2B agencies to $100K+/month with guaranteed booked calls. (132)</td><td>meta ads agency</td><td>facebook ads agency; instagram ads agency; facebook ads management</td><td>/services</td><td>2</td><td>add pricing, FAQ to 5-8 (already 1,000+ unique words)</td></tr><tr><td>/appointment-setting</td><td>existing</td><td>Automated Appointment Setting With Sub-5-Minute Speed To Lead</td><td>Appointment Setting Agency: Qualified Sales Calls Booked (56)</td><td>Automated appointment setting system with sub-5-minute speed to lead. Turn cold inquiries into 30-50 qualified sales calls every month. (135)</td><td>appointment setting agency</td><td>appointment setting services; b2b appointment setting; outsourced appointment setters</td><td>/services</td><td>2</td><td>add pricing + industries section</td></tr><tr><td>/speed-to-lead</td><td>existing</td><td>AI Speed to Lead: Engage Inbound Inquiries in Sub-5-Minutes</td><td>AI Speed to Lead: Reply to Every Lead in Under 5 Minutes (56)</td><td>Increase sales call booking rates by 391% with AI speed to lead. Sub-5-minute automated SMS, WhatsApp, and setter response for high-ticket funnels. (147)</td><td>speed to lead</td><td>lead response time; ai lead follow up; speed to lead software</td><td>/services</td><td>2</td><td>upgrade to core template</td></tr><tr><td>/vsl-funnels</td><td>existing</td><td>VSL Funnel Agency: 12-Minute Pre-Selling for $3K–$25K Offers</td><td>VSL Funnel Agency for High-Ticket Client Acquisition (52)</td><td>Premier VSL funnel agency engineering 12-minute video sales letters that pre-sell $3K–$25K offers. Book 30–50 qualified sales calls every month. (144)</td><td>vsl funnel agency</td><td>video sales letter funnel; vsl funnel builder; high ticket vsl</td><td>/services</td><td>2</td><td>upgrade to core template</td></tr><tr><td>/whatsapp-lead-nurture</td><td>existing</td><td>WhatsApp Lead Nurturing</td><td>WhatsApp Lead Nurturing | QualifiedLeadsX (41)</td><td>Convert 42% more booked calls with automated WhatsApp lead nurturing. Sub-60s response times, 98% open rates, and 2-way setter handoff. (135)</td><td>whatsapp lead nurturing</td><td>whatsapp follow up automation; whatsapp appointment reminders</td><td>/services</td><td>2</td><td>thin: upgrade to core template</td></tr><tr><td>/crm-automation</td><td>existing</td><td>CRM Automation for Coaches</td><td>CRM Automation for Coaches | QualifiedLeadsX (44)</td><td>End pipeline drop-off with bespoke CRM automation for high-ticket coaches. Automated reminders, 80%+ show rates, and full attribution tracking. (143)</td><td>crm automation agency</td><td>sales pipeline automation; gohighlevel automation; crm setup for coaches</td><td>/services</td><td>2</td><td>thin: upgrade to core template</td></tr><tr><td>/outsourced-sales-closers</td><td>existing</td><td>Outsourced Sales Closers</td><td>Outsourced Sales Closers | QualifiedLeadsX (42)</td><td>Hire vetted outsourced sales closers for $3K–$25K high-ticket offers. Commission-aligned sales talent, call audits, and consistent 25%+ close rates. (148)</td><td>outsourced sales closers</td><td>remote high ticket closers; commission only closers; sales closer agency</td><td>/services</td><td>2</td><td>thin: upgrade to core template</td></tr><tr><td>/pricing</td><td>new</td><td>Pricing: Meta Ads Management and Full-Service Growth</td><td>Lead Generation Agency Pricing &amp; Plans | QualifiedLeadsX™ (57)</td><td>What our two plans include, what drives the quote and how the 90-day guarantee works. Book a free call for a custom quote. (122)</td><td>lead generation agency pricing</td><td>meta ads management cost; done for you lead generation cost</td><td>/services</td><td>2</td><td>build (custom quotes: show what drives price, ranges only if published) | price ranges [fill in]</td></tr><tr><td>/compare/meta-ads-vs-google-ads-high-ticket</td><td>existing</td><td>Meta Ads vs Google Ads for High-Ticket</td><td>Meta Ads vs Google Ads for High-Ticket Offers (45)</td><td>Meta Ads vs Google Ads for coaches &amp; consultants. Compare CAC, intent vs disruption, volume, and how to scale $5K+ offers in 2026. (130)</td><td>meta ads vs google ads for high ticket</td><td>facebook ads vs google ads b2b</td><td>/services</td><td>2</td><td>keep</td></tr><tr><td>/compare/done-for-you-vs-done-with-you-lead-generation</td><td>existing</td><td>Done For You vs Done With You Lead Generation</td><td>Done For You vs Done With You Lead Gen | QualifiedLeadsX (56)</td><td>Compare Done-For-You (DFY) vs Done-With-You (DWY) lead generation. Economics, time investment, execution risk, and which model scales faster. (141)</td><td>done for you vs done with you</td><td>dfy vs dwy marketing</td><td>/services</td><td>2</td><td>keep</td></tr><tr><td>/compare/appointment-setter-vs-va</td><td>existing</td><td>Appointment Setter vs Virtual Assistant</td><td>Appointment Setter vs Virtual Assistant | QualifiedLeadsX (57)</td><td>Appointment setter vs virtual assistant (VA): compare conversion rates, compensation, qualification skills, and sales impact for high-ticket offers. (148)</td><td>appointment setter vs virtual assistant</td><td>appointment setter vs va</td><td>/services</td><td>2</td><td>keep</td></tr><tr><td>/compare/qualifiedleadsx-alternatives</td><td>existing</td><td>QualifiedLeadsX Alternatives</td><td>QualifiedLeadsX Alternatives &amp; Comparison (41)</td><td>An honest comparison of QualifiedLeadsX alternatives for high-ticket lead generation: traditional agencies, cold email shops and in-house hiring. (145)</td><td>qualifiedleadsx alternatives</td><td>lead generation agency alternatives</td><td>/services</td><td>2</td><td>keep</td></tr></tbody></table><h3>Location pages (6)</h3><table class="small"><thead><tr><th>URL</th><th>Status</th><th>H1</th><th>Title tag</th><th>Meta description</th><th>Primary keyword</th><th>Secondary keywords</th><th>Hub</th><th>Week</th><th>Action / facts needed</th></tr></thead><tbody><tr><td>/locations</td><td>new</td><td>Where We Work: US, UK, Canada and Australia</td><td>Lead Generation Agency Locations We Serve | QualifiedLeadsX™ (60)</td><td>We run Meta ads and appointment setting for clients in the US, UK, Canada and Australia, remotely. See each market and book a call. (131)</td><td>lead generation agency by country</td><td>remote lead generation agency</td><td>-</td><td>3</td><td>build hub (lists only countries served)</td></tr><tr><td>/locations/united-states</td><td>new</td><td>Lead Generation Agency for United States Businesses</td><td>Lead Generation Agency USA | QualifiedLeadsX™ (45)</td><td>Done-for-you Meta ads, funnels and appointment setting for United States coaches, agencies and B2B firms. See results and book a free call. (139)</td><td>lead generation agency usa</td><td>us lead generation agency; american b2b lead generation</td><td>/locations</td><td>3</td><td>build from location template (remote service; no office claim) | local proof, time-zone coverage, currency pricing: [fill in]</td></tr><tr><td>/locations/united-kingdom</td><td>new</td><td>Lead Generation Agency for United Kingdom Businesses</td><td>Lead Generation Agency UK | QualifiedLeadsX™ (44)</td><td>Done-for-you Meta ads, funnels and appointment setting for United Kingdom coaches, agencies and B2B firms. See results and book a free call. (140)</td><td>lead generation agency uk</td><td>uk b2b lead generation; meta ads agency uk</td><td>/locations</td><td>3</td><td>build from location template (remote service; no office claim) | local proof, time-zone coverage, currency pricing: [fill in]</td></tr><tr><td>/locations/canada</td><td>new</td><td>Lead Generation Agency for Canada Businesses</td><td>Lead Generation Agency Canada | QualifiedLeadsX™ (48)</td><td>Done-for-you Meta ads, funnels and appointment setting for Canada coaches, agencies and B2B firms. See results and book a free call. (132)</td><td>lead generation agency canada</td><td>canadian b2b lead generation; meta ads agency canada</td><td>/locations</td><td>3</td><td>build from location template (remote service; no office claim) | local proof, time-zone coverage, currency pricing: [fill in]</td></tr><tr><td>/locations/australia</td><td>new</td><td>Lead Generation Agency for Australia Businesses</td><td>Lead Generation Agency Australia | QualifiedLeadsX™ (51)</td><td>Done-for-you Meta ads, funnels and appointment setting for Australia coaches, agencies and B2B firms. See results and book a free call. (135)</td><td>lead generation agency australia</td><td>australian b2b lead generation; meta ads agency australia</td><td>/locations</td><td>3</td><td>build from location template (remote service; no office claim) | local proof, time-zone coverage, currency pricing: [fill in]</td></tr><tr><td>/locations/[city]</td><td>conditional</td><td>Lead Generation Agency in [City]</td><td>Lead Generation Agency in [City] | QualifiedLeadsX™ (51)</td><td>Done-for-you Meta ads and appointment setting for [City] businesses. Real [City] results, pricing and FAQ. Book a free call. (124)</td><td>[service] in [city]</td><td>[service] near [city]</td><td>/locations/[country]</td><td>4-5</td><td>build ONLY for cities with real clients or results: [fill in] | city list [fill in]</td></tr></tbody></table><h3>Industry pages (41)</h3><table class="small"><thead><tr><th>URL</th><th>Status</th><th>H1</th><th>Title tag</th><th>Meta description</th><th>Primary keyword</th><th>Secondary keywords</th><th>Hub</th><th>Week</th><th>Action / facts needed</th></tr></thead><tbody><tr><td>/for</td><td>existing</td><td>Lead Generation by Industry: Proven Funnels for $3K–$25K Offers</td><td>Lead Generation by Industry - QualifiedLeadsX (45)</td><td>Done-for-you lead generation by industry. Client acquisition funnels and benchmarks for coaches, consultants, agencies, med spas and SaaS. (138)</td><td>lead generation by industry</td><td>industries we serve</td><td>-</td><td>1</td><td>keep (industries hub; URL kept, no redirect)</td></tr><tr><td>/for/coaches</td><td>existing</td><td>Fill Your Calendar With 30–50 Qualified Coaching Clients Every Month</td><td>Client Acquisition Funnels for High-Ticket Coaches (50)</td><td>Done-for-you client acquisition for business, executive and fitness coaches. Get 30–50 qualified sales calls a month from ready-to-invest buyers. (145)</td><td>lead generation for coaches</td><td>coaches leads; how to get coaches clients; coaches marketing agency</td><td>/for</td><td>3</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/consultants</td><td>existing</td><td>Turn Corporate Consulting Into a Predictable Client Machine</td><td>Client Acquisition Pipeline for B2B Consultants (47)</td><td>Predictable B2B pipeline for strategy, operations and management consultants. Book 20–40 vetted discovery meetings with C-level buyers a month. (143)</td><td>lead generation for consultants</td><td>consultants leads; how to get consultants clients; consultants marketing agency</td><td>/for</td><td>3</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/agencies</td><td>existing</td><td>Scale Your Agency Retainers Past $100K/Month Predictably</td><td>Client Acquisition for Digital &amp; Marketing Agencies (51)</td><td>Scale your agency past $100K/month with predictable inbound sales calls. We install a done-for-you VSL funnel and Meta ads machine to book retainers. (149)</td><td>lead generation for agencies</td><td>agencies leads; how to get agencies clients; agencies marketing agency</td><td>/for</td><td>3</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/b2b-services</td><td>existing</td><td>B2B Service Lead Generation for High-Ticket Commercial Contracts</td><td>Lead Generation for Consultancies &amp; B2B Service Firms (53)</td><td>Predictable B2B service lead generation for IT firms, consultancies, and commercial contractors. Book 30–50 qualified high-ticket client calls monthly. (151)</td><td>lead generation for b2b services</td><td>b2b services leads; how to get b2b services clients; b2b services marketing agency</td><td>/for</td><td>3</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/saas</td><td>existing</td><td>B2B SaaS Lead Generation &amp; Enterprise Demo Setting</td><td>B2B SaaS Lead Generation &amp; Demo Booking Agency (46)</td><td>Predictable B2B SaaS lead generation and demo booking funnels for high-ACV software platforms. Book 30–50 qualified sales demos monthly. (136)</td><td>lead generation for saas</td><td>saas leads; how to get saas clients; saas marketing agency</td><td>/for</td><td>3</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/financial-advisors</td><td>existing</td><td>Financial Advisor Leads: Compliant High-Net-Worth Client Acquisition</td><td>Financial Advisor Leads &amp; High-Net-Worth Client Funnels (55)</td><td>Compliant financial advisor lead generation for wealth managers. Book 20–40 high-net-worth consultations ($500K+ investable assets) every month. (144)</td><td>lead generation for financial advisors</td><td>financial advisors leads; how to get financial advisors clients; financial advisors marketing agency</td><td>/for</td><td>3</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/med-spas</td><td>existing</td><td>Med Spa Lead Generation: Predictable High-Ticket Treatment Bookings</td><td>Med Spa Lead Generation &amp; High-Ticket Booking Agency (52)</td><td>Predictable Med Spa lead generation and consultation booking. Fill your treatment calendar with $3K–$10K package clients using Meta Ads and speed to lead. (154)</td><td>lead generation for med spas</td><td>med spas leads; how to get med spas clients; med spas marketing agency</td><td>/for</td><td>3</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/law-firms</td><td>existing</td><td>Law Firm Lead Generation</td><td>Law Firm Lead Generation | QualifiedLeadsX (42)</td><td>High-intent case consultations for personal injury, commercial litigation, and estate planning law firms. Compliant ads and sub-3-minute client intake. (151)</td><td>lead generation for law firms</td><td>law firms leads; how to get law firms clients; law firms marketing agency</td><td>/for</td><td>3</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/real-estate-investors</td><td>existing</td><td>Real Estate Investor Leads</td><td>Real Estate Investor Leads | QualifiedLeadsX (44)</td><td>High-equity off-market real estate investor leads and motivated seller contracts. Hyper-targeted Meta ads, instant phone triage, and verified deal spreads. (155)</td><td>lead generation for real estate investors</td><td>real estate investors leads; how to get real estate investors clients; real estate investors marketing agency</td><td>/for</td><td>3</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/business-coaches</td><td>existing</td><td>Clients for Business Coaches</td><td>Clients for Business Coaches | QualifiedLeadsX (46)</td><td>Predictable client acquisition for business coaches. Book 20–40 qualified founder calls every month with paid Meta ads and 2-way appointment setters. (149)</td><td>lead generation for business coaches</td><td>business coaches leads; how to get business coaches clients; business coaches marketing agency</td><td>/for</td><td>3</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/executive-coaches</td><td>existing</td><td>Executive Coaching Clients</td><td>Executive Coaching Clients | QualifiedLeadsX (44)</td><td>Predictable client acquisition for executive coaches and leadership advisors. Reach C-suite and VP buyers for $10K–$50K engagements. (132)</td><td>lead generation for executive coaches</td><td>executive coaches leads; how to get executive coaches clients; executive coaches marketing agency</td><td>/for</td><td>4</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/fitness-coaches</td><td>existing</td><td>Online Fitness Coach Clients</td><td>Online Fitness Coach Clients | QualifiedLeadsX (46)</td><td>Scale high-ticket online fitness coaching ($2.5K–$6K offers). Book 30–60 qualified transformation clients monthly with Meta ads and automated DM setters. (153)</td><td>lead generation for fitness coaches</td><td>fitness coaches leads; how to get fitness coaches clients; fitness coaches marketing agency</td><td>/for</td><td>4</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/course-creators</td><td>existing</td><td>Course Creator Lead Generation</td><td>Course Creator Lead Generation | QualifiedLeadsX (48)</td><td>Scale premium courses and cohort masterminds ($1.5K–$10K) with VSL funnels, webinar remarketing and phone setters that drive steady enrollments. (144)</td><td>lead generation for course creators</td><td>course creators leads; how to get course creators clients; course creators marketing agency</td><td>/for</td><td>4</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/online-education</td><td>existing</td><td>Online Education Lead Generation</td><td>Online Education Lead Generation | QualifiedLeadsX (50)</td><td>Student acquisition for vocational academies, bootcamps and certification institutes ($3K–$15K tuition): enrollment funnels and setters. (136)</td><td>lead generation for online education</td><td>online education leads; how to get online education clients; online education marketing agency</td><td>/for</td><td>4</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/insurance-agencies</td><td>existing</td><td>Insurance Appointment Setting</td><td>Insurance Appointment Setting | QualifiedLeadsX (47)</td><td>Exclusive appointment setting for commercial and high-net-worth insurance agencies. Vetted policy reviews, sub-5-minute speed to lead, real show rates. (151)</td><td>lead generation for insurance agencies</td><td>insurance agencies leads; how to get insurance agencies clients; insurance agencies marketing agency</td><td>/for</td><td>4</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/recruitment-agencies</td><td>existing</td><td>Recruitment Agency Leads</td><td>Recruitment Agency Leads | QualifiedLeadsX (42)</td><td>Client acquisition for executive search &amp; staffing firms. Book hiring managers and HR directors with open requisitions for $15K–$40K placement contracts. (153)</td><td>lead generation for recruitment agencies</td><td>recruitment agencies leads; how to get recruitment agencies clients; recruitment agencies marketing agency</td><td>/for</td><td>4</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/home-improvement</td><td>existing</td><td>Home Improvement Leads</td><td>Home Improvement Leads | QualifiedLeadsX (40)</td><td>Exclusive homeowner lead generation for roofing, solar, HVAC, and kitchen remodeling contractors. Pre-set in-home estimates with verified property owners. (154)</td><td>lead generation for home improvement</td><td>home improvement leads; how to get home improvement clients; home improvement marketing agency</td><td>/for</td><td>4</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/for/solar-companies</td><td>existing</td><td>Solar Appointment Setting</td><td>Solar Appointment Setting | QualifiedLeadsX (43)</td><td>Exclusive qualified solar appointments with verified homeowners. Credit-checked ($650+ FICO), electric bill qualified ($150+/mo), with 80%+ sit rates. (150)</td><td>lead generation for solar companies</td><td>solar companies leads; how to get solar companies clients; solar companies marketing agency</td><td>/for</td><td>4</td><td>upgrade to industry template (1,000+ words, 40% unique)</td></tr><tr><td>/meta-ads-for-coaches</td><td>existing</td><td>Facebook Ads for Coaches</td><td>Facebook Ads for Coaches | QualifiedLeadsX (42)</td><td>Scale $5K–$25K coaching offers with Facebook and Instagram ads: tested creative frameworks, broad Advantage+ scaling and sub-$180 booked calls. (143)</td><td>meta ads for coaches</td><td>facebook ads for coaches; instagram ads for coaches</td><td>/meta-ads-agency</td><td>4</td><td>thin: upgrade to industry template</td></tr><tr><td>/meta-ads-for-consultants</td><td>existing</td><td>Facebook Ads for Consultants</td><td>Facebook Ads for Consultants | QualifiedLeadsX (46)</td><td>Generate high-fee B2B consulting engagements ($10K–$50K+). Bespoke Meta ad funnels, executive white-paper VSLs, and verified C-suite consultations. (147)</td><td>meta ads for consultants</td><td>facebook ads for consultants; instagram ads for consultants</td><td>/meta-ads-agency</td><td>4</td><td>thin: upgrade to industry template</td></tr><tr><td>/meta-ads-for-financial-advisors</td><td>existing</td><td>Facebook Ads for Financial Advisors</td><td>Facebook Ads for Financial Advisors | QualifiedLeadsX (53)</td><td>FINRA &amp; SEC compliant Facebook and Instagram ads for wealth managers and RIAs. Attract pre-retirees and HNW clients with $500K+ investable assets. (146)</td><td>meta ads for financial advisors</td><td>facebook ads for financial advisors; instagram ads for financial advisors</td><td>/meta-ads-agency</td><td>4</td><td>thin: upgrade to industry template</td></tr><tr><td>/meta-ads-for-med-spas</td><td>existing</td><td>Facebook Ads for Med Spas</td><td>Facebook Ads for Med Spas | QualifiedLeadsX (43)</td><td>High-ticket aesthetic consultations for medical spas &amp; plastic surgeons. Scale injectables, body contouring, and laser packages with sub-45s speed to lead. (155)</td><td>meta ads for med spas</td><td>facebook ads for med spas; instagram ads for med spas</td><td>/meta-ads-agency</td><td>4</td><td>thin: upgrade to industry template</td></tr><tr><td>/meta-ads-for-real-estate-investors</td><td>existing</td><td>Facebook Ads for Real Estate Investors</td><td>Facebook Ads for Real Estate Investors | QualifiedLeadsX (56)</td><td>Direct-to-seller Facebook ads for real estate wholesalers and flippers. Compliant HEC campaigns, sub-90s triage and off-market purchase contracts. (146)</td><td>meta ads for real estate investors</td><td>facebook ads for real estate investors; instagram ads for real estate investors</td><td>/meta-ads-agency</td><td>4</td><td>thin: upgrade to industry template</td></tr><tr><td>/meta-ads-for-course-creators</td><td>existing</td><td>Facebook Ads for Course Creators</td><td>Facebook Ads for Course Creators | QualifiedLeadsX (50)</td><td>Scale premium online courses and masterminds ($2K–$10K). High-converting VSL funnels, webinar remarketing, and phone setters with 4.5x+ ROAS. (141)</td><td>meta ads for course creators</td><td>facebook ads for course creators; instagram ads for course creators</td><td>/meta-ads-agency</td><td>4</td><td>thin: upgrade to industry template</td></tr><tr><td>/meta-ads-for-saas</td><td>existing</td><td>Facebook Ads for SaaS</td><td>Facebook Ads for SaaS | QualifiedLeadsX (39)</td><td>Scale B2B SaaS demo requests with targeted Facebook &amp; Instagram ads. Product-led video walkthroughs, qualification forms, and sub-$240 completed demos. (151)</td><td>meta ads for saas</td><td>facebook ads for saas; instagram ads for saas</td><td>/meta-ads-agency</td><td>4</td><td>thin: upgrade to industry template</td></tr><tr><td>/meta-ads-for-law-firms</td><td>existing</td><td>Facebook Ads for Law Firms</td><td>Facebook Ads for Law Firms | QualifiedLeadsX (44)</td><td>Bar-compliant Facebook &amp; Instagram ads for personal injury, commercial litigation, and estate planning attorneys. Sub-3-minute intake and signed retainers. (155)</td><td>meta ads for law firms</td><td>facebook ads for law firms; instagram ads for law firms</td><td>/meta-ads-agency</td><td>4</td><td>thin: upgrade to industry template</td></tr><tr><td>/appointment-setting-for-agencies</td><td>existing</td><td>Appointment Setting for Agencies</td><td>Appointment Setting for Agencies | QualifiedLeadsX (50)</td><td>Scale agency retainers ($3K–$15K/mo) with dedicated appointment setters. Sub-5-minute speed to lead, qualified discovery calls and 82%+ show rates. (147)</td><td>appointment setting for agencies</td><td>agencies appointment setters; book more calls for agencies</td><td>/appointment-setting</td><td>5</td><td>thin: upgrade to industry template</td></tr><tr><td>/appointment-setting-for-saas</td><td>existing</td><td>Appointment Setting for SaaS</td><td>Appointment Setting for SaaS | QualifiedLeadsX (46)</td><td>Turnkey inbound SDR appointment setting for B2B SaaS. Sub-5-minute demo qualification, CRM routing, and 85%+ show rates for Account Executives. (143)</td><td>appointment setting for saas</td><td>saas appointment setters; book more calls for saas</td><td>/appointment-setting</td><td>5</td><td>thin: upgrade to industry template</td></tr><tr><td>/appointment-setting-for-coaches</td><td>existing</td><td>Appointment Setting for Coaches</td><td>Appointment Setting for Coaches | QualifiedLeadsX (49)</td><td>Fill coaching calendars with qualified high-ticket clients ($5K–$25K). Omnichannel DM &amp; phone setters, 2-way qualification, and 82%+ show rates. (144)</td><td>appointment setting for coaches</td><td>coaches appointment setters; book more calls for coaches</td><td>/appointment-setting</td><td>5</td><td>thin: upgrade to industry template</td></tr><tr><td>/appointment-setting-for-consultants</td><td>existing</td><td>Appointment Setting for Consultants</td><td>Appointment Setting for Consultants | QualifiedLeadsX (53)</td><td>High-touch appointment setting for management &amp; B2B consultants. Book C-suite decision-makers for $15K–$50K+ advisory engagements with 85%+ show rates. (151)</td><td>appointment setting for consultants</td><td>consultants appointment setters; book more calls for consultants</td><td>/appointment-setting</td><td>5</td><td>thin: upgrade to industry template</td></tr><tr><td>/meta-ads-for-agencies</td><td>new</td><td>Meta Ads for Agencies</td><td>Meta Ads for Agencies | QualifiedLeadsX™ (40)</td><td>How we run meta ads for agencies: what works, real results, common mistakes and FAQ. Book a free strategy call. (111)</td><td>meta ads for agencies</td><td>facebook ads for agencies</td><td>/meta-ads-agency</td><td>5</td><td>build from industry template | confirm this industry is served + matching case study [fill in]</td></tr><tr><td>/meta-ads-for-b2b-services</td><td>new</td><td>Meta Ads for B2B Services</td><td>Meta Ads for B2B Services | QualifiedLeadsX™ (44)</td><td>How we run meta ads for b2b services: what works, real results, common mistakes and FAQ. Book a free strategy call. (115)</td><td>meta ads for b2b services</td><td>facebook ads for b2b services</td><td>/meta-ads-agency</td><td>5</td><td>build from industry template | confirm this industry is served + matching case study [fill in]</td></tr><tr><td>/meta-ads-for-business-coaches</td><td>new</td><td>Meta Ads for Business Coaches</td><td>Meta Ads for Business Coaches | QualifiedLeadsX™ (48)</td><td>How we run meta ads for business coaches: what works, real results, common mistakes and FAQ. Book a free strategy call. (119)</td><td>meta ads for business coaches</td><td>facebook ads for business coaches</td><td>/meta-ads-agency</td><td>5</td><td>build from industry template | confirm this industry is served + matching case study [fill in]</td></tr><tr><td>/meta-ads-for-executive-coaches</td><td>new</td><td>Meta Ads for Executive Coaches</td><td>Meta Ads for Executive Coaches | QualifiedLeadsX™ (49)</td><td>How we run meta ads for executive coaches: what works, real results, common mistakes and FAQ. Book a free strategy call. (120)</td><td>meta ads for executive coaches</td><td>facebook ads for executive coaches</td><td>/meta-ads-agency</td><td>5</td><td>build from industry template | confirm this industry is served + matching case study [fill in]</td></tr><tr><td>/meta-ads-for-insurance-agencies</td><td>new</td><td>Meta Ads for Insurance Agencies</td><td>Meta Ads for Insurance Agencies | QualifiedLeadsX™ (50)</td><td>How we run meta ads for insurance agencies: what works, real results, common mistakes and FAQ. Book a free strategy call. (121)</td><td>meta ads for insurance agencies</td><td>facebook ads for insurance agencies</td><td>/meta-ads-agency</td><td>5</td><td>build from industry template | confirm this industry is served + matching case study [fill in]</td></tr><tr><td>/appointment-setting-for-financial-advisors</td><td>new</td><td>Appointment Setting for Financial Advisors</td><td>Appointment Setting for Financial Advisors (42)</td><td>How we run appointment setting for financial advisors: what works, real results, common mistakes and FAQ. Book a free strategy call. (132)</td><td>appointment setting for financial advisors</td><td>appointment setters for financial advisors</td><td>/appointment-setting</td><td>5</td><td>build from industry template | confirm this industry is served + matching case study [fill in]</td></tr><tr><td>/appointment-setting-for-med-spas</td><td>new</td><td>Appointment Setting for Med Spas</td><td>Appointment Setting for Med Spas | QualifiedLeadsX™ (51)</td><td>How we run appointment setting for med spas: what works, real results, common mistakes and FAQ. Book a free strategy call. (122)</td><td>appointment setting for med spas</td><td>appointment setters for med spas</td><td>/appointment-setting</td><td>5</td><td>build from industry template | confirm this industry is served + matching case study [fill in]</td></tr><tr><td>/appointment-setting-for-law-firms</td><td>new</td><td>Appointment Setting for Law Firms</td><td>Appointment Setting for Law Firms | QualifiedLeadsX™ (52)</td><td>How we run appointment setting for law firms: what works, real results, common mistakes and FAQ. Book a free strategy call. (123)</td><td>appointment setting for law firms</td><td>appointment setters for law firms</td><td>/appointment-setting</td><td>5</td><td>build from industry template | confirm this industry is served + matching case study [fill in]</td></tr><tr><td>/appointment-setting-for-real-estate-investors</td><td>new</td><td>Appointment Setting for Real Estate Investors</td><td>Appointment Setting for Real Estate Investors (45)</td><td>How we run appointment setting for real estate investors: what works, real results, common mistakes and FAQ. Book a free strategy call. (135)</td><td>appointment setting for real estate investors</td><td>appointment setters for real estate investors</td><td>/appointment-setting</td><td>5</td><td>build from industry template | confirm this industry is served + matching case study [fill in]</td></tr><tr><td>/appointment-setting-for-b2b-services</td><td>new</td><td>Appointment Setting for B2B Services</td><td>Appointment Setting for B2B Services | QualifiedLeadsX™ (55)</td><td>How we run appointment setting for b2b services: what works, real results, common mistakes and FAQ. Book a free strategy call. (126)</td><td>appointment setting for b2b services</td><td>appointment setters for b2b services</td><td>/appointment-setting</td><td>5</td><td>build from industry template | confirm this industry is served + matching case study [fill in]</td></tr></tbody></table><h3>Free Tool pages (18)</h3><table class="small"><thead><tr><th>URL</th><th>Status</th><th>H1</th><th>Title tag</th><th>Meta description</th><th>Primary keyword</th><th>Secondary keywords</th><th>Hub</th><th>Week</th><th>Action / facts needed</th></tr></thead><tbody><tr><td>/tools</td><td>existing</td><td>Free Lead Generation Calculators &amp; Acquisition Modeling Tools</td><td>Free Lead Generation Calculators &amp; Tools - QualifiedLeadsX (58)</td><td>Free high-ticket lead generation calculators: CAC, ROAS, cost per booked call, show rate and LTV. Model your acquisition pipeline today. (136)</td><td>free marketing calculators</td><td>lead generation calculators</td><td>-</td><td>1</td><td>keep (hub)</td></tr><tr><td>/benchmarks</td><td>existing</td><td>High Ticket Marketing Benchmarks 2026: Cost Per Call, ROAS &amp; CAC</td><td>High Ticket Marketing Benchmarks 2026 - QualifiedLeadsX (55)</td><td>2026 high-ticket marketing benchmarks: cost per lead, cost per booked call, Meta CPMs and show rates across 30+ industries from $50M+ ad spend. (143)</td><td>lead generation benchmarks 2026</td><td>marketing benchmarks</td><td>-</td><td>1</td><td>keep (hub)</td></tr><tr><td>/tools/cac-calculator</td><td>existing</td><td>Customer Acquisition Cost (CAC) Calculator for High-Ticket Offers</td><td>CAC Calculator for High-Ticket Offers | QualifiedLeadsX (55)</td><td>Free customer acquisition cost (CAC) calculator for high-ticket offers. Enter ad spend, team and tool costs to get blended CAC, payback and margin. (147)</td><td>cac calculator</td><td>customer acquisition cost calculator</td><td>/tools</td><td>4</td><td>add how-to-use, results, fix-issues, FAQ sections (600+ words below tool)</td></tr><tr><td>/tools/roas-calculator</td><td>existing</td><td>High-Ticket ROAS &amp; Break-Even Acquisition Calculator</td><td>ROAS &amp; Break-Even ROAS Calculator | QualifiedLeadsX (51)</td><td>Calculate return on ad spend and your break-even ROAS for a high-ticket offer, including front-end cash collected and lifetime revenue per client. (146)</td><td>roas calculator</td><td>break even roas calculator</td><td>/tools</td><td>4</td><td>add how-to-use, results, fix-issues, FAQ sections (600+ words below tool)</td></tr><tr><td>/tools/cost-per-booked-call-calculator</td><td>existing</td><td>Cost Per Booked Call Acquisition Calculator</td><td>Cost Per Booked Call Calculator | QualifiedLeadsX (49)</td><td>Calculate your true cost per booked sales call from ad spend, lead volume, booking rate and show rate, and compare it with 2026 high-ticket benchmarks. (151)</td><td>cost per booked call calculator</td><td>cost per appointment calculator</td><td>/tools</td><td>4</td><td>add how-to-use, results, fix-issues, FAQ sections (600+ words below tool)</td></tr><tr><td>/tools/show-rate-calculator</td><td>existing</td><td>Appointment Show Rate &amp; Lost Revenue Calculator</td><td>Show-Up Rate &amp; No-Show Cost Calculator | QualifiedLeadsX (56)</td><td>Measure your sales call show-up rate and see how much revenue no-shows cost each month, with benchmarks for qualified high-ticket appointments. (143)</td><td>show rate calculator</td><td>no show rate calculator</td><td>/tools</td><td>4</td><td>add how-to-use, results, fix-issues, FAQ sections (600+ words below tool)</td></tr><tr><td>/tools/ltv-cac-calculator</td><td>existing</td><td>LTV to CAC Ratio Acquisition Calculator</td><td>LTV to CAC Ratio Calculator | QualifiedLeadsX (45)</td><td>Free LTV:CAC calculator. Work out customer lifetime value, acquisition cost and the ratio that tells you whether paid acquisition is ready to scale. (148)</td><td>ltv to cac calculator</td><td>ltv cac ratio calculator</td><td>/tools</td><td>4</td><td>add how-to-use, results, fix-issues, FAQ sections (600+ words below tool)</td></tr><tr><td>/tools/lead-scoring-template</td><td>existing</td><td>High-Ticket Lead Scoring Template &amp; Intake Qualification Rubric</td><td>High-Ticket Lead Scoring Template &amp; Intake Rubric (49)</td><td>Download our verified 4-tier high-ticket lead scoring template. Filter tire-kickers, route VIP buyers, and protect your sales calendar automatically. (149)</td><td>lead scoring template</td><td>lead scoring model example</td><td>/tools</td><td>4</td><td>add how-to-use, results, fix-issues, FAQ sections (600+ words below tool)</td></tr><tr><td>/benchmarks/cost-per-lead-by-industry</td><td>existing</td><td>Cost Per Lead by Industry 2026</td><td>Cost Per Lead by Industry 2026 Benchmarks | QualifiedLeadsX (59)</td><td>Cost per lead by industry in 2026. Real CPL benchmarks across B2B SaaS, med spas, real estate, financial advising, and coaching based on $50M+ ad spend. (152)</td><td>cost per lead by industry</td><td>average cost per lead</td><td>/benchmarks</td><td>4</td><td>add how-to-use, results, fix-issues, FAQ sections (600+ words below tool)</td></tr><tr><td>/benchmarks/cost-per-booked-call</td><td>existing</td><td>Cost Per Booked Call Benchmarks 2026: Data by Offer Size</td><td>Cost Per Booked Call Benchmarks 2026 - QualifiedLeadsX (54)</td><td>Verified 2026 cost per booked call benchmarks by offer size ($3K to $25K) from $50M+ in managed Meta ad spend. Compare your acquisition costs today. (148)</td><td>cost per booked call benchmarks</td><td>average cost per appointment</td><td>/benchmarks</td><td>4</td><td>add how-to-use, results, fix-issues, FAQ sections (600+ words below tool)</td></tr><tr><td>/benchmarks/meta-ads-cpm</td><td>existing</td><td>Meta Ads CPM Benchmarks 2026</td><td>Meta Ads CPM Benchmarks 2026 | QualifiedLeadsX (46)</td><td>Facebook &amp; Instagram Ads CPM benchmarks for 2026. Real cost per thousand impressions data across seasons, niches, and creative formats from $50M+ spend. (152)</td><td>meta ads cpm 2026</td><td>facebook ads cpm by industry</td><td>/benchmarks</td><td>4</td><td>add how-to-use, results, fix-issues, FAQ sections (600+ words below tool)</td></tr><tr><td>/benchmarks/close-rate</td><td>existing</td><td>High Ticket Close Rate Benchmarks</td><td>High Ticket Close Rate Benchmarks 2026 | QualifiedLeadsX (56)</td><td>High-ticket close rate benchmarks for 2026. Real data comparing cold inbound vs setter-qualified calls across $3K, $10K, and $25K+ offers. (138)</td><td>average sales close rate</td><td>high ticket close rate</td><td>/benchmarks</td><td>4</td><td>add how-to-use, results, fix-issues, FAQ sections (600+ words below tool)</td></tr><tr><td>/benchmarks/show-rate</td><td>existing</td><td>Appointment Show Rate Benchmarks 2026: Channel &amp; Industry Data</td><td>Appointment Show Rate Benchmarks 2026 - QualifiedLeadsX (55)</td><td>Verified 2026 appointment show rate benchmarks by industry and channel. See how sub-5-minute speed to lead increases show rates to 88%+ consistently. (149)</td><td>average show rate for sales calls</td><td>appointment show up rate</td><td>/benchmarks</td><td>4</td><td>add how-to-use, results, fix-issues, FAQ sections (600+ words below tool)</td></tr><tr><td>/tools/meta-ads-budget-calculator</td><td>new</td><td>Free Meta Ads Budget Calculator</td><td>Meta Ads Budget Calculator (Free) | QualifiedLeadsX™ (52)</td><td>Enter your target calls and close rate to get the monthly Meta ads budget you need. Free, no sign-up. Then book a call to plan it. (130)</td><td>facebook ads budget calculator</td><td>how much to spend on facebook ads</td><td>/tools</td><td>4</td><td>build from tool template</td></tr><tr><td>/tools/close-rate-calculator</td><td>new</td><td>Free Sales Close Rate Calculator</td><td>Sales Close Rate Calculator (Free) | QualifiedLeadsX™ (53)</td><td>Work out your close rate and what it means for cost per client in seconds. Free, no sign-up. Compare it to 2026 benchmarks. (123)</td><td>close rate calculator</td><td>sales close rate formula</td><td>/tools</td><td>4</td><td>build from tool template</td></tr><tr><td>/tools/speed-to-lead-test</td><td>new</td><td>Free Speed to Lead Test</td><td>Speed to Lead Test: How Fast Do You Reply? (42)</td><td>Log how fast your team replies to new leads and see how many booked calls you lose. Free, no sign-up. Fix it with AI follow-up. (127)</td><td>speed to lead test</td><td>lead response time test</td><td>/tools</td><td>6</td><td>build from tool template</td></tr><tr><td>/tools/funnel-conversion-calculator</td><td>new</td><td>Free Funnel Conversion Rate Calculator</td><td>Funnel Conversion Rate Calculator | QualifiedLeadsX™ (52)</td><td>Enter clicks, opt-ins, bookings and sales to find the leak in your funnel. Free, no sign-up. See benchmarks for each step. (122)</td><td>funnel conversion rate calculator</td><td>vsl funnel conversion rate</td><td>/tools</td><td>7</td><td>build from tool template</td></tr><tr><td>/tools/appointment-setter-commission-calculator</td><td>new</td><td>Free Appointment Setter Commission Calculator</td><td>Appointment Setter Commission Calculator | QualifiedLeadsX™ (59)</td><td>Model base pay, per-call and commission plans for appointment setters and see cost per booked call. Free, no sign-up. (117)</td><td>appointment setter commission calculator</td><td>appointment setter pay</td><td>/tools</td><td>8</td><td>build from tool template</td></tr></tbody></table><h3>Blog pages (38)</h3><table class="small"><thead><tr><th>URL</th><th>Status</th><th>H1</th><th>Title tag</th><th>Meta description</th><th>Primary keyword</th><th>Secondary keywords</th><th>Hub</th><th>Week</th><th>Action / facts needed</th></tr></thead><tbody><tr><td>/blog</td><td>existing</td><td>Our Blogs &amp; Scaling Guides</td><td>Client Acquisition, VSL Funnels &amp; Meta Ads Insights (51)</td><td>In-depth blueprints, performance media buying playbooks, and lead qualification frameworks for high-ticket coaches, consultants, and B2B agencies. (146)</td><td>high ticket client acquisition blog</td><td>lead generation blog</td><td>-</td><td>1</td><td>keep (hub)</td></tr><tr><td>/blog/appointment-setter-compensation-models</td><td>existing</td><td>Appointment Setter Compensation Models: Base vs Commission</td><td>Appointment Setter Compensation Models Guide (44)</td><td>The complete guide to structuring compensation for high-ticket appointment setters. Base salary, pay-per-show, commission percentage, and OTE models. (149)</td><td>appointment setter compensation models guide</td><td></td><td>/blog</td><td>6</td><td>thin: expand to 1,200+ words, 40-60 word answer first, 3+ links</td></tr><tr><td>/blog/b2b-sales-closer-job-description</td><td>existing</td><td>High-Ticket Sales Closer Job Description: The 2026 Template</td><td>High-Ticket Sales Closer Job Description Template (49)</td><td>Copy-and-paste job description template for hiring commission-based high-ticket sales closers. Screening questions, KPI scorecards, and comp guidelines. (152)</td><td>high-ticket sales closer job description template</td><td></td><td>/blog</td><td>6</td><td>thin: expand to 1,200+ words, 40-60 word answer first, 3+ links</td></tr><tr><td>/blog/high-ticket-funnel-examples</td><td>existing</td><td>High-Ticket Funnel Examples: 5 Proven Blueprints in 2026</td><td>High-Ticket Funnel Examples: 5 Proven Blueprints (48)</td><td>Inspect 5 proven high-ticket sales funnel examples generating $150M+ in client revenue. VSL funnels, two-step applications, and setter-closers workflows. (153)</td><td>high-ticket funnel examples</td><td></td><td>/blog</td><td>6</td><td>thin: expand to 1,200+ words, 40-60 word answer first, 3+ links</td></tr><tr><td>/blog/high-ticket-lead-generation-strategies</td><td>existing</td><td>High-Ticket Lead Generation Strategies: 7 Scalable Models</td><td>High-Ticket Lead Generation Strategies (2026) (45)</td><td>Discover 7 proven high-ticket lead generation strategies to acquire $5K–$25K clients. Compare paid social, direct VSLs, and speed-to-lead triage. (145)</td><td>high-ticket lead generation strategies</td><td></td><td>/blog</td><td>6</td><td>thin: expand to 1,200+ words, 40-60 word answer first, 3+ links</td></tr><tr><td>/blog/how-to-increase-show-rate</td><td>existing</td><td>How to Increase Show Rate: Tactics for 80%+ Attendance</td><td>How to Increase Show Rate: 80%+ Attendance Guide (48)</td><td>Stop sales call no-shows. Discover the omnichannel reminder workflows, video homework indoctrination, and setter protocols that push show rates past 80%. (153)</td><td>how to increase show rate</td><td></td><td>/blog</td><td>6</td><td>thin: expand to 1,200+ words, 40-60 word answer first, 3+ links</td></tr><tr><td>/blog/how-to-qualify-leads</td><td>existing</td><td>How to Qualify Leads: The High-Ticket Screening Framework</td><td>How to Qualify Leads: High-Ticket Framework (43)</td><td>Learn how to filter out tire-kickers and protect closer calendars. The 5-stage qualification matrix for $5K–$25K high-ticket service offers. (140)</td><td>how to qualify leads</td><td></td><td>/blog</td><td>6</td><td>thin: expand to 1,200+ words, 40-60 word answer first, 3+ links</td></tr><tr><td>/blog/meta-ads-for-coaches-guide</td><td>existing</td><td>Meta Ads for Coaches Guide: From Zero to $100K/Mo in 2026</td><td>Meta Ads for Coaches Guide: Scale to $100K/Mo (45)</td><td>The complete step-by-step Meta Ads guide for high-ticket coaches. Campaign structures, creative formats, budget allocation, and scaling tactics. (144)</td><td>meta ads for coaches guide</td><td></td><td>/blog</td><td>6</td><td>thin: expand to 1,200+ words, 40-60 word answer first, 3+ links</td></tr><tr><td>/blog/meta-advantage-plus-for-b2b</td><td>existing</td><td>Meta Advantage+ for B2B: Why Broad Targeting Wins in 2026</td><td>Meta Advantage+ for B2B: Broad Targeting Guide (46)</td><td>Why micro-targeting is dead. Discover how Meta Advantage+ algorithmic open targeting drives 40% cheaper B2B booked calls using creative as the filter. (150)</td><td>meta advantage+ for b2b</td><td></td><td>/blog</td><td>6</td><td>thin: expand to 1,200+ words, 40-60 word answer first, 3+ links</td></tr><tr><td>/blog/vsl-script-template-high-ticket</td><td>existing</td><td>High-Ticket VSL Script Template: The 5-Part Formula</td><td>High-Ticket VSL Script Template &amp; Blueprint (43)</td><td>Get the exact 5-part high-ticket VSL script template behind $150M+ in client revenue. Step-by-step hook, pain uncovery, mechanism, and call to action. (150)</td><td>high-ticket vsl script template &amp; blueprint</td><td></td><td>/blog</td><td>6</td><td>thin: expand to 1,200+ words, 40-60 word answer first, 3+ links</td></tr><tr><td>/blog/whatsapp-marketing-for-consultants</td><td>existing</td><td>WhatsApp Marketing for Consultants: 2026 Client Playbook</td><td>WhatsApp Marketing for Consultants (2026) | QualifiedLeadsX™ (60)</td><td>How management consultants and advisors use official WhatsApp Business API to nurture leads, book discovery calls, and maintain 98% message open rates. (151)</td><td>whatsapp marketing for consultants</td><td></td><td>/blog</td><td>6</td><td>thin: expand to 1,200+ words, 40-60 word answer first, 3+ links</td></tr><tr><td>/blog/why-leads-dont-show-up</td><td>existing</td><td>Why Leads Don&#x27;t Show Up: The Psychology of Call Ghosting</td><td>Why Leads Don&#x27;t Show Up: Fix No-Shows (2026) (44)</td><td>Analyze the psychological drivers behind sales call no-shows. How buyer remorse, friction deficit, and passive booking cause ghosting—and how to fix it. (152)</td><td>why leads don&#x27;t show up</td><td></td><td>/blog</td><td>6</td><td>thin: expand to 1,200+ words, 40-60 word answer first, 3+ links</td></tr><tr><td>/blog/how-to-hire-an-appointment-setter</td><td>new</td><td>How to Hire an Appointment Setter (2026 Guide)</td><td>How to Hire an Appointment Setter (2026 Guide) (46)</td><td>How to Hire an Appointment Setter (2026 Guide): a direct answer, the numbers, and a step-by-step plan. Read the guide, then book a free strategy call. (150)</td><td>how to hire an appointment setter</td><td></td><td>/blog</td><td>6</td><td>write from blog template (supports: /appointment-setting, /compare/appointment-setter-vs-va) | author, sources and first-hand data [fill in]</td></tr><tr><td>/blog/pay-per-appointment-vs-retainer</td><td>new</td><td>Pay Per Appointment vs Retainer: Which Is Better?</td><td>Pay Per Appointment vs Retainer: Which Is Better? (49)</td><td>Pay Per Appointment vs Retainer: Which Is Better: a direct answer, the numbers, and a step-by-step plan. Read the guide, then book a free strategy call. (152)</td><td>pay per appointment lead generation</td><td></td><td>/blog</td><td>6</td><td>write from blog template (supports: /pricing, /lead-generation-agency) | author, sources and first-hand data [fill in]</td></tr><tr><td>/blog/how-to-get-financial-advisor-clients-online</td><td>new</td><td>How to Get Financial Advisor Clients Online</td><td>How to Get Financial Advisor Clients Online (43)</td><td>How to Get Financial Advisor Clients Online: a direct answer, the numbers, and a step-by-step plan. Read the guide, then book a free strategy call. (147)</td><td>how to get financial advisor clients</td><td></td><td>/blog</td><td>7</td><td>write from blog template (supports: /for/financial-advisors, /meta-ads-for-financial-advisors) | author, sources and first-hand data [fill in]</td></tr><tr><td>/blog/facebook-ad-examples-high-ticket-offers</td><td>new</td><td>Facebook Ad Examples for High-Ticket Offers</td><td>Facebook Ad Examples for High-Ticket Offers (43)</td><td>Facebook Ad Examples for High-Ticket Offers: a direct answer, the numbers, and a step-by-step plan. Read the guide, then book a free strategy call. (147)</td><td>high ticket facebook ad examples</td><td></td><td>/blog</td><td>7</td><td>write from blog template (supports: /meta-ads-agency, /vsl-funnels) | author, sources and first-hand data [fill in]</td></tr><tr><td>/blog/gohighlevel-pipeline-setup-for-coaches</td><td>new</td><td>GoHighLevel Pipeline Setup for Coaches</td><td>GoHighLevel Pipeline Setup for Coaches | QualifiedLeadsX™ (57)</td><td>GoHighLevel Pipeline Setup for Coaches: a direct answer, the numbers, and a step-by-step plan. Read the guide, then book a free strategy call. (142)</td><td>gohighlevel pipeline setup</td><td></td><td>/blog</td><td>8</td><td>write from blog template (supports: /crm-automation, /for/coaches) | author, sources and first-hand data [fill in]</td></tr><tr><td>/blog/in-house-closers-vs-outsourced-sales-team</td><td>new</td><td>In-House Closers vs an Outsourced Sales Team</td><td>In-House Closers vs an Outsourced Sales Team (44)</td><td>In-House Closers vs an Outsourced Sales Team: a direct answer, the numbers, and a step-by-step plan. Read the guide, then book a free strategy call. (148)</td><td>outsourced sales team vs in house</td><td></td><td>/blog</td><td>8</td><td>write from blog template (supports: /outsourced-sales-closers, /benchmarks/close-rate) | author, sources and first-hand data [fill in]</td></tr><tr><td>/blog/how-much-should-a-med-spa-spend-on-ads</td><td>new</td><td>How Much Should a Med Spa Spend on Ads?</td><td>How Much Should a Med Spa Spend on Ads? | QualifiedLeadsX™ (58)</td><td>How Much Should a Med Spa Spend on Ads: a direct answer, the numbers, and a step-by-step plan. Read the guide, then book a free strategy call. (142)</td><td>med spa advertising budget</td><td></td><td>/blog</td><td>9</td><td>write from blog template (supports: /meta-ads-for-med-spas, /tools/meta-ads-budget-calculator) | author, sources and first-hand data [fill in]</td></tr><tr><td>/blog/linkedin-vs-meta-ads-for-consultants</td><td>new</td><td>LinkedIn vs Meta Ads for Consultants</td><td>LinkedIn vs Meta Ads for Consultants | QualifiedLeadsX™ (55)</td><td>LinkedIn vs Meta Ads for Consultants: a direct answer, the numbers, and a step-by-step plan. Read the guide, then book a free strategy call. (140)</td><td>linkedin vs facebook ads for consultants</td><td></td><td>/blog</td><td>9</td><td>write from blog template (supports: /for/consultants, /meta-ads-for-consultants) | author, sources and first-hand data [fill in]</td></tr><tr><td>/blog/ai-whatsapp-lead-nurture-pipeline-high-ticket</td><td>existing</td><td>The Multi-Channel Speed-to-Lead Protocol: Booking 35% More High-Ticket Calls via Automated WhatsApp Nurture</td><td>AI WhatsApp Lead Nurture for High-Ticket Calls (46)</td><td>Discover why sub-5-minute lead response times boost call show-up rates to 88%+ using automated WhatsApp and SMS workflows for B2B offers. (137)</td><td>ai whatsapp lead nurture for high-ticket calls</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/automated-lead-qualification-system-high-ticket</td><td>existing</td><td>How to Build an Automated Lead Qualification Filter to Eliminate Unqualified Calls</td><td>Automated Lead Qualification System for B2B (43)</td><td>Build conditional logic questions, deposit mechanisms, and pre-call sequences that filter freebie-seekers and boost show-up rates past 85%. (139)</td><td>automated lead qualification system for b2b</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/b2b-appointment-setting-vs-in-house-sdr-teams</td><td>existing</td><td>B2B Appointment Setting vs In-House SDR Teams: The 2026 Cost, Performance &amp; ROI Breakdown</td><td>B2B Appointment Setting vs In-House SDR Teams (45)</td><td>Compare fully loaded SDR salaries ($85K-$120K) vs done-for-you appointment setting. Review ramp time, tech stack costs, and pipeline ROI. (137)</td><td>b2b appointment setting vs in-house sdr teams</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/b2b-client-acquisition-cost-cac-benchmarks-2026</td><td>existing</td><td>High-Ticket B2B CAC Benchmarks (2026): What Elite Agencies and Consultants Pay per Deal</td><td>B2B CAC Benchmarks 2026: Cost to Acquire a Client (49)</td><td>Real-world unit economics, CAC benchmarks, and LTV-to-CAC ratios across high-ticket coaching programs and B2B growth agencies scaling to 8-figures. (147)</td><td>b2b cac benchmarks 2026</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/b2b-roas-benchmarks-qualified-appointment-generation</td><td>existing</td><td>B2B ROAS Benchmarks &amp; Qualified Appointment Generation: How High-Ticket Offers Hit 4x–7x ROAS</td><td>B2B ROAS Benchmarks &amp; Appointment Math 2026 (43)</td><td>Real B2B ROAS benchmarks for coaching, consulting, and SaaS. Master customer acquisition costs, shorten sales cycles, and scale to 50+ booked calls. (148)</td><td>b2b roas benchmarks &amp; appointment math 2026</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/cold-outreach-vs-paid-traffic-high-ticket-b2b</td><td>existing</td><td>Cold Outreach vs. Paid Traffic: Which Scales Faster for $50K+/Month B2B Service Providers?</td><td>Cold Outreach vs Paid Traffic for B2B | QualifiedLeadsX™ (56)</td><td>Compare outbound cold email vs inbound Meta paid traffic funnels for scaling high-ticket consulting and agency offers to $100K+ monthly revenue. (144)</td><td>cold outreach vs paid traffic for b2b</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/cost-per-acquisition-vs-cost-per-lead</td><td>existing</td><td>CPA vs CPL: Why Cost Per Lead is a Dangerous Vanity Metric</td><td>CPA vs CPL: Why Cost Per Lead is a Vanity Metric (48)</td><td>The real difference between cost per lead (CPL) and cost per acquisition (CPA), and why optimizing for cheap leads destroys high-ticket margins. (144)</td><td>cpa vs cpl</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/facebook-ads-agency-vs-in-house-media-buyer</td><td>existing</td><td>Facebook Ads Agency vs In-House Media Buyer: Which Is Right for a High-Ticket Business in 2026?</td><td>Facebook Ads Agency vs Hiring an In-House Media Buyer (53)</td><td>Agency fees run $2K–$7.5K a month; an in-house media buyer costs $90K–$150K a year fully loaded. Compare cost, creative output, speed and risk. (143)</td><td>facebook ads agency vs hiring an in-house media buyer</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/high-ticket-sales-how-to-get-high-ticket-clients</td><td>existing</td><td>High Ticket Sales: How to Get High-Ticket Clients in 2026 (The Complete Funnel &amp; Meta Ads Playbook)</td><td>High Ticket Sales: How to Get Clients | QualifiedLeadsX™ (56)</td><td>Master high ticket sales: attract and close $3,000–$25,000 clients using targeted Meta ads, automated qualification funnels, and speed-to-lead nurture. (151)</td><td>high ticket sales</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/high-ticket-sales-training-framework</td><td>existing</td><td>High Ticket Sales Training: The Closer &amp; Qualification Framework That Doubles Win Rates</td><td>High Ticket Sales Training &amp; Framework | QualifiedLeadsX™ (57)</td><td>Elite sales training for B2B closers: discover the pre-call indoctrination architecture, objection matrix, and scripts that double win rates to 25–35%. (151)</td><td>high ticket sales training &amp; framework</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/how-much-does-a-lead-generation-agency-cost</td><td>existing</td><td>How Much Does a Lead Generation Agency Cost in 2026? Pricing Models, Benchmarks &amp; What You Actually Get</td><td>How Much Does a Lead Gen Agency Cost in 2026? (45)</td><td>Lead generation agency pricing explained: retainers, pay-per-call, and performance models with real 2026 benchmarks for high-ticket businesses. (143)</td><td>how much does a lead gen agency cost in 2026?</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/how-much-does-meta-ads-cost</td><td>existing</td><td>How Much Does Meta Ads Cost in 2026? Full Budget Guide</td><td>How Much Does Meta Ads Cost in 2026? Budget Guide (49)</td><td>Detailed breakdown of Meta Ads costs for B2B and high-ticket service businesses. CPM, CPC, cost per booked call, and monthly budget recommendations. (148)</td><td>how much does meta ads cost in 2026? budget guide</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/how-to-write-a-vsl-script-12-minute-structure</td><td>existing</td><td>How to Write a VSL Script: The 12-Minute Structure That Pre-Sells High-Ticket Prospects Before the Call</td><td>How to Write a VSL Script: 12-Minute Structure (46)</td><td>A six-act VSL script structure for high-ticket offers: hook, problem, alternatives, unique mechanism, proof and filtered CTA, with timing and examples. (151)</td><td>how to write a vsl script</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/meta-ads-for-high-ticket-b2b-broad-targeting</td><td>existing</td><td>Meta Ads for High-Ticket B2B: Why Broad Creative Targeting Outperforms Lookalikes</td><td>Facebook Ads Targeting for High-Ticket B2B Offers (49)</td><td>How to target Facebook and Instagram ads for high-ticket B2B offers: why broad targeting beats lookalikes and how ad creative selects the right buyers. (151)</td><td>facebook ads targeting for high-ticket b2b offers</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/scaling-from-100k-to-500k-coaching</td><td>existing</td><td>Scaling from $100K to $500K/Mo: The Coaching Growth Guide</td><td>Scale Coaching Business: $100K to $500K/Mo (42)</td><td>The operational blueprint for scaling a coaching business from $100K to $500K/month. Transitioning from founder sales, broad Meta Ads, and setter pods. (151)</td><td>scale coaching business</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/speed-to-lead</td><td>existing</td><td>How to Improve Speed to Lead: The Sub-5-Minute Response Playbook</td><td>How to Improve Speed to Lead: Sub-5-Minute Playbook (51)</td><td>Why replying to inbound leads in under 5 minutes lifts contact rates by 391%, and how automated omnichannel triage doubles booked call volume. (142)</td><td>how to improve speed to lead</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/speed-to-lead-statistics-response-time</td><td>existing</td><td>Speed to Lead Statistics 2026: Why the First 5 Minutes Decide Whether a High-Ticket Lead Books a Call</td><td>Speed to Lead Statistics 2026: 5-Minute Rule (44)</td><td>Speed to lead statistics for high-ticket offers: how response time changes qualification odds, bookings and no-shows, plus the 60-second follow-up stack. (153)</td><td>speed to lead statistics 2026</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr><tr><td>/blog/the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition</td><td>existing</td><td>The 2026 VSL Funnel Blueprint: How High-Ticket Offers Book 50+ Qualified Calls a Month</td><td>VSL Funnel Blueprint 2026: Book 50+ Calls | QualifiedLeadsX™ (60)</td><td>Replace 90-minute webinars with concise 12-minute VSL funnels and qualification filters converting at 14–18% into booked sales appointments. (140)</td><td>vsl funnel blueprint 2026</td><td></td><td>/blog</td><td>-</td><td>keep</td></tr></tbody></table>
+
+<h2>3. Page templates and example pages (STEP 3)</h2>
+<h3>QualifiedLeadsX page templates (Site Growth Playbook, STEP 3)</h3>
+<p>These are the five page templates filled in for QualifiedLeadsX. Every page built from them must be at least 40% unique. A page that only swaps the city or industry name is a doorway page: do not publish it.</p>
+<p>Facts every template can use (all already on the live site):</p>
+<ul>
+<li>Done-for-you client acquisition: Meta ads, funnels, CRM, AI follow-up and appointment setting</li>
+<li>$50M+ managed in Meta ads, 12+ years of experience, 125+ documented case studies across 30+ niches</li>
+<li>Two plans, both custom quotes: Meta Ads Management, and Full-Service Growth</li>
+<li>90-day written guarantee: if the agreed milestones are not reached in 90 days, work continues with no management fee until they are</li>
+<li>Clients own the ad account, funnels, CRM, automations, creatives and data</li>
+<li>Remote service in the United States, United Kingdom, Canada and Australia</li>
+<li>Registered address: Ecom Expertz LLC, Sheridan, Wyoming. There are no local offices.</li>
+<li>Founder: Gaurav, Founder and Head of Acquisition</li>
+</ul>
+<p>Anything else is written as <strong>[fill in]</strong> and listed in <code>07-fill-in-facts.md</code>.</p>
+<p>Shared rules for every template:</p>
+<ul>
+<li>One H1, which holds the primary keyword</li>
+<li>Title of 60 characters or fewer: keyword first, then " | QualifiedLeadsX™" when it fits</li>
+<li>Meta description of 155 characters or fewer, ending in a call to action</li>
+<li>Text is server-rendered, so it shows with JavaScript off</li>
+<li>The related-links block is added automatically above the footer by <code>lib/related-links.ts</code></li>
+</ul>
+<hr />
+<h4>1. Location page: <code>/locations/[country]</code> (and <code>/locations/[city]</code> only where real)</h4>
+<p><strong>Scope rule.</strong> QualifiedLeadsX works remotely and has no local office anywhere. The four country pages are allowed because the business serves those countries. A city page is allowed only when there is a real client or result from that city <strong>[fill in]</strong>. Never add <code>LocalBusiness</code> schema or an address on these pages.</p>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Content for QualifiedLeadsX</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H1</td>
+<td>Lead Generation Agency for [Country] Businesses</td>
+</tr>
+<tr>
+<td>Opening, 60 to 80 words</td>
+<td>Who does done-for-you lead generation for [country] coaches, agencies and B2B firms, and how it is priced: a custom quote after a free call. Name QualifiedLeadsX.</td>
+</tr>
+<tr>
+<td>H2: Why [Country] businesses choose QualifiedLeadsX</td>
+<td>3 to 4 points, at least one specific to the market: time-zone coverage <strong>[fill in]</strong>, currency and billing <strong>[fill in]</strong>, ad rules (for example UK FCA wording for financial services, Australian AHPRA rules for health clinics), and Meta CPM in that market from <code>/benchmarks/meta-ads-cpm</code></td>
+</tr>
+<tr>
+<td>H2: Lead generation for [Country] industries</td>
+<td>4 to 6 industry pages that are common in that market, each linked</td>
+</tr>
+<tr>
+<td>H2: Results</td>
+<td>A real case study from that country <strong>[fill in]</strong>. Otherwise use the closest case study, labelled "Result from a client outside [country]".</td>
+</tr>
+<tr>
+<td>H2: How we work and pricing</td>
+<td>The 4 steps from the Process section, and the two plans. No price unless one is published <strong>[fill in]</strong>.</td>
+</tr>
+<tr>
+<td>H2: Other markets we serve</td>
+<td>Links to the other three country pages and to <code>/locations</code></td>
+</tr>
+<tr>
+<td>H2: FAQ</td>
+<td>4 to 6 questions, answered in 2 to 3 sentences each</td>
+</tr>
+<tr>
+<td>CTA</td>
+<td>Book a free 30-minute strategy call</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>900 to 1,500 words</td>
+</tr>
+<tr>
+<td>Schema</td>
+<td><code>Service</code> with <code>areaServed</code> set to the country, <code>FAQPage</code>, <code>BreadcrumbList</code></td>
+</tr>
+</tbody>
+</table>
+<h4>2. Industry page: <code>/for/[industry]</code>, <code>/meta-ads-for-[industry]</code>, <code>/appointment-setting-for-[industry]</code></h4>
+<p>The existing URL patterns stay as they are. <code>/for</code> is the industries hub, so there are no redirects.</p>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Content for QualifiedLeadsX</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H1</td>
+<td>[Service] for [Industry], for example "Meta Ads for Agencies"</td>
+</tr>
+<tr>
+<td>Opening, 60 to 80 words</td>
+<td>The main acquisition problem this industry has, and how the service fixes it</td>
+</tr>
+<tr>
+<td>H2: Why [industry] need [service]</td>
+<td>3 to 5 industry-specific reasons. Numbers come from <code>/benchmarks</code> or a named source.</td>
+</tr>
+<tr>
+<td>H2: What we do for [industry]</td>
+<td>The service in 4 to 6 steps, adapted to the industry's sales cycle</td>
+</tr>
+<tr>
+<td>H2: Opportunities [industry] should target</td>
+<td>Offers, angles, audiences and keywords specific to the industry</td>
+</tr>
+<tr>
+<td>H2: Results</td>
+<td>A case study from this industry, or the closest one, clearly labelled</td>
+</tr>
+<tr>
+<td>H2: Mistakes [industry] make</td>
+<td>3 to 5 points</td>
+</tr>
+<tr>
+<td>H2: FAQ</td>
+<td>4 to 6 questions</td>
+</tr>
+<tr>
+<td>CTA plus related links</td>
+<td>Automatic</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>1,000 to 1,800 words</td>
+</tr>
+<tr>
+<td>Schema</td>
+<td><code>Service</code> with <code>audience</code> set to a <code>BusinessAudience</code> for the industry, <code>FAQPage</code>, <code>BreadcrumbList</code></td>
+</tr>
+</tbody>
+</table>
+<h4>3. Core service page: <code>/[service]</code> and <code>/pricing</code></h4>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Content for QualifiedLeadsX</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H1</td>
+<td>Service name with the main keyword, for example "Appointment Setting Agency"</td>
+</tr>
+<tr>
+<td>Opening, under 80 words</td>
+<td>What the service is, who it is for, and the main result</td>
+</tr>
+<tr>
+<td>H2: What's included</td>
+<td>Bullet list of deliverables</td>
+</tr>
+<tr>
+<td>H2: How it works</td>
+<td>Numbered steps: strategy call, build, launch, optimize</td>
+</tr>
+<tr>
+<td>H2: Pricing or packages</td>
+<td>The two plans and what drives the quote. Ranges only if published <strong>[fill in]</strong>.</td>
+</tr>
+<tr>
+<td>H2: Results and case studies</td>
+<td>2 to 3 linked case studies</td>
+</tr>
+<tr>
+<td>H2: Who it's for</td>
+<td>Links to 4 or more industry pages</td>
+</tr>
+<tr>
+<td>H2: Where we work</td>
+<td>The four countries, linked to <code>/locations</code></td>
+</tr>
+<tr>
+<td>H2: FAQ</td>
+<td>5 to 8 questions</td>
+</tr>
+<tr>
+<td>CTA plus related links</td>
+<td>Automatic</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>1,500 to 2,500 words</td>
+</tr>
+<tr>
+<td>Schema</td>
+<td><code>Service</code>, <code>OfferCatalog</code> (the plans, with no price unless one is published), <code>FAQPage</code>, <code>BreadcrumbList</code>. Add <code>AggregateRating</code> only with real, verifiable reviews <strong>[fill in]</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h4>4. Free tool page: <code>/tools/[tool]</code></h4>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Content for QualifiedLeadsX</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H1</td>
+<td>Free [Tool Name]</td>
+</tr>
+<tr>
+<td>Top of page</td>
+<td>The working calculator, with no sign-up. Default values come from the matching benchmark page.</td>
+</tr>
+<tr>
+<td>H2: How to use the [tool]</td>
+<td>3 to 5 steps</td>
+</tr>
+<tr>
+<td>H2: What the results mean</td>
+<td>Ranges compared with <code>/benchmarks</code></td>
+</tr>
+<tr>
+<td>H2: How to fix common issues</td>
+<td>Each fix links to the matching service page</td>
+</tr>
+<tr>
+<td>H2: FAQ</td>
+<td>4 to 6 questions</td>
+</tr>
+<tr>
+<td>CTA plus related links</td>
+<td>Automatic: other tools, 2 services, 2 guides</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>600 to 1,200 words below the tool</td>
+</tr>
+<tr>
+<td>Schema</td>
+<td><code>WebApplication</code> with <code>offers.price</code> set to 0, <code>FAQPage</code>, <code>BreadcrumbList</code></td>
+</tr>
+</tbody>
+</table>
+<h4>5. Blog post: <code>/blog/[topic]</code></h4>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Content for QualifiedLeadsX</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H1</td>
+<td>The question or topic keyword</td>
+</tr>
+<tr>
+<td>First paragraph</td>
+<td>A 40 to 60 word direct answer</td>
+</tr>
+<tr>
+<td>H2s</td>
+<td>One sub-question each, with tables and lists where they help</td>
+</tr>
+<tr>
+<td>Links</td>
+<td>At least 3 descriptive links to core service, industry or tool pages</td>
+</tr>
+<tr>
+<td>End of post</td>
+<td>FAQ, author box (Gaurav, or another real named author <strong>[fill in]</strong>), published and updated dates</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>1,200 to 2,500 words</td>
+</tr>
+<tr>
+<td>Schema</td>
+<td><code>BlogPosting</code>, <code>FAQPage</code>, <code>BreadcrumbList</code> (already generated by <code>app/blog/[slug]/page.tsx</code>)</td>
+</tr>
+<tr>
+<td>Topic rule</td>
+<td>Every post supports at least one page in the plan. The "supports" column in <code>reports/playbook-page-plan.csv</code> names it.</td>
+</tr>
+</tbody>
+</table>
+<h3>Example pages, written in full (drafts, not published)</h3>
+<div class="example"><h4>Example page: location (draft, not published)</h4>
+<ul>
+<li><strong>URL:</strong> /locations/united-states</li>
+<li><strong>Title (45 chars):</strong> Lead Generation Agency USA | QualifiedLeadsX™</li>
+<li><strong>Meta (139 chars):</strong> Done-for-you Meta ads, funnels and appointment setting for United States coaches, agencies and B2B firms. See results and book a free call.</li>
+<li><strong>Primary keyword:</strong> lead generation agency usa</li>
+<li><strong>Secondary keywords:</strong> us lead generation agency, american b2b lead generation</li>
+<li><strong>Hub:</strong> /locations</li>
+<li><strong>Schema:</strong> Service (areaServed: Country "United States"), FAQPage, BreadcrumbList. No LocalBusiness, because there is no US office open to visitors (the Sheridan, Wyoming address is the registered address of Ecom Expertz LLC).</li>
+<li><strong>Publish only after</strong> the [fill in] items are answered and a person has edited and fact-checked the page.</li>
+</ul>
+<hr />
+<h4>Lead Generation Agency for United States Businesses</h4>
+<p>QualifiedLeadsX is a done-for-you lead generation agency for US coaches, consultants, agencies and B2B service firms that sell offers of $3,000 to $25,000. We run the Meta ads, build the funnel, set up the CRM and AI follow-up, and book qualified sales calls on your calendar. We work remotely across all 50 states. Pricing is a custom quote after a free 30-minute strategy call, and every engagement comes with a 90-day written guarantee.</p>
+<h5>Why US businesses choose QualifiedLeadsX</h5>
+<p><strong>We have run US ad accounts for a long time.</strong> QualifiedLeadsX has managed more than $50M in Meta ad spend across 125+ documented client accounts, and much of that spend was in the United States [fill in: share of spend or number of US clients]. US auctions are the most expensive of the four markets we serve, so wasted spend costs more. In 2026 we see tier-1 CPMs average about $24.50, rising to $36.80 to $54.20 in Q4 when ecommerce bidding peaks (<a href="/benchmarks/meta-ads-cpm">Meta ads CPM benchmarks</a>). We plan launches and creative tests around those quarters.</p>
+<p><strong>We cover US hours.</strong> New leads get an automated reply in under 5 minutes, at any hour. Human appointment setters work [fill in: setter coverage hours in ET/PT]. Sales calls are booked into your own calendar in your time zone.</p>
+<p><strong>We know the US compliance rules.</strong> US campaigns for financial services, real estate and some health services fall under Meta's Special Ad Categories. These categories limit targeting by age, gender and postcode. We build creative and qualification steps that work inside those limits, so a <a href="/for/financial-advisors">financial advisor</a> or <a href="/for/real-estate-investors">real estate investor</a> campaign does not get rejected after launch.</p>
+<p><strong>You own everything.</strong> The ad account, funnels, CRM, automations, creatives and data stay in your name. If you stop working with us, you keep the whole system.</p>
+<h5>Lead generation for US industries</h5>
+<p>These are the industries we serve most often in the US. Each page explains how the system changes for that industry.</p>
+<ul>
+<li><a href="/for/coaches">Lead generation for coaches</a>: business, executive and fitness coaches selling programs in the US</li>
+<li><a href="/for/consultants">Lead generation for consultants</a>: strategy, operations and management consultancies</li>
+<li><a href="/for/agencies">Lead generation for agencies</a>: marketing and service agencies selling retainers</li>
+<li><a href="/for/saas">Lead generation for B2B SaaS</a>: demo booking for SaaS with a sales-assisted motion</li>
+<li><a href="/for/med-spas">Lead generation for med spas</a>: aesthetics clinics, inside Meta's health ad policies</li>
+<li><a href="/for/law-firms">Lead generation for law firms</a>: case intake for practice areas where a case is worth the spend</li>
+</ul>
+<h5>Results</h5>
+<blockquote>
+<p><strong>[fill in]: a case study from a US client</strong>, with the client's permission. Include the industry, offer price, ad spend, cost per booked call and revenue.</p>
+</blockquote>
+<p>Until a US case study is approved for this page, use the closest documented result and label it clearly:</p>
+<p><strong>Result from a service agency client</strong> (country not stated in the case study): 235 clients closed at a $3,600 average deal, for $846,000 in 2025, using Meta ads, qualification and structured follow-up. <a href="/case-studies/b2b-agency-scaling-846k">Read the case study</a>.</p>
+<p><strong>Result from an AI SaaS client:</strong> 320 customers and $71,934 in 24 days after the ideal customer profile, ad angles and funnel were rebuilt. <a href="/case-studies/b2b-technology-agency-71k">Read the case study</a>.</p>
+<h5>How we work and pricing</h5>
+<ol>
+<li><strong>Strategy call (30 minutes, free).</strong> We review your offer, unit economics and current funnel, and tell you whether paid acquisition will work for you.</li>
+<li><strong>Build (about [fill in] weeks).</strong> Ad account setup, a 3 to 5 page funnel, 40 to 100+ creatives, CRM pipeline, AI follow-up, and email and SMS nurture.</li>
+<li><strong>Launch and qualify.</strong> Ads go live. Every lead is contacted in under 5 minutes, qualified, and booked into your calendar.</li>
+<li><strong>Optimize weekly.</strong> We review cost per booked call, show rate and close rate, then change creative, audiences and follow-up.</li>
+</ol>
+<p>There are two plans, and both are custom quotes:</p>
+<ul>
+<li><strong>Meta Ads Management</strong>: ads, creative and reporting</li>
+<li><strong>Full-Service Growth</strong>: ads, funnel, creatives, AI follow-up, nurture, lead qualification, CRM and calendar booking</li>
+</ul>
+<p>[fill in: whether to publish a starting price or range for US clients, in USD]</p>
+<p>The 90-day written guarantee: if the growth milestones we agree with you are not reached within 90 days, we keep working with no management fee until they are.</p>
+<h5>Other markets we serve</h5>
+<p>We run the same system for businesses in the <a href="/locations/united-kingdom">United Kingdom</a>, <a href="/locations/canada">Canada</a> and <a href="/locations/australia">Australia</a>. See <a href="/locations">all locations</a>.</p>
+<h5>FAQ</h5>
+<p><strong>Do you have an office in my state?</strong>
+No. QualifiedLeadsX works fully remotely. Our registered business address is in Sheridan, Wyoming, and all client work happens over video calls, shared dashboards and your own ad account.</p>
+<p><strong>How much does it cost to generate a booked sales call in the US?</strong>
+Across our managed accounts, a qualified booked call for a $3,000 to $25,000 offer usually costs $90 to $180. Larger consulting offers often cost $180 to $280 per attended call. See <a href="/benchmarks/cost-per-booked-call">cost per booked call benchmarks</a> for the breakdown by offer size.</p>
+<p><strong>Can you run ads in only a few states or cities?</strong>
+Yes. Meta lets us target states, cities or radius areas. The exception is Special Ad Category campaigns (credit, housing, employment, some financial products), where Meta enforces a minimum radius. We set up the campaign to fit those rules.</p>
+<p><strong>Which time zone are calls booked in?</strong>
+Calls are booked into your calendar in your local time zone. The AI follow-up replies around the clock. Human setters work [fill in].</p>
+<p><strong>How fast can we launch?</strong>
+Most builds take [fill in] weeks from the strategy call to live ads, depending on how much of the funnel and creative already exists.</p>
+<p><strong>Is the 90-day guarantee valid for US clients?</strong>
+Yes. The written guarantee applies to every client, whatever country they are in.</p>
+<p><strong>[Call to action]</strong> Book a free 30-minute strategy call. We will tell you whether paid acquisition makes sense for your offer before you spend anything. → /book-your-call#book</p>
+<p><em>(The related-links block is added automatically: the other 3 countries, 4 industries, 3 core services and 2 guides.)</em></p></div><div class="example"><h4>Example page: industry (draft, not published)</h4>
+<ul>
+<li><strong>URL:</strong> /meta-ads-for-agencies</li>
+<li><strong>Title (40 chars):</strong> Meta Ads for Agencies | QualifiedLeadsX™</li>
+<li><strong>Meta (111 chars):</strong> How we run Meta ads for agencies: what works, real results, common mistakes and FAQ. Book a free strategy call.</li>
+<li><strong>Primary keyword:</strong> meta ads for agencies</li>
+<li><strong>Secondary keywords:</strong> facebook ads for agencies, how to get agency clients with facebook ads, agency client acquisition</li>
+<li><strong>Hub:</strong> /meta-ads-agency (and /for/agencies)</li>
+<li><strong>Schema:</strong> Service (serviceType "Meta ads management", audience BusinessAudience "Marketing and service agencies"), FAQPage, BreadcrumbList</li>
+<li><strong>Does not compete with</strong> /for/agencies, which targets "lead generation for agencies" (the full system). This page targets the Meta ads channel only.</li>
+</ul>
+<hr />
+<h4>Meta Ads for Agencies</h4>
+<p>Most agencies get clients from referrals, and growth stops when the referrals do. Meta ads can replace that with a steady flow of booked calls from business owners who already want help. Running ads for your own agency is different from running them for clients, though. The buyer is skeptical, the offer is intangible, and one closed retainer has to pay for weeks of spend. Below is how we run Meta ads for agencies, and what the results look like.</p>
+<h5>Why agencies need Meta ads for their own growth</h5>
+<p><strong>Referrals do not scale.</strong> A referral pipeline grows with your network, not with your capacity. When you hire, you need new clients on a schedule. Referrals arrive when they arrive.</p>
+<p><strong>Your buyers are on Facebook and Instagram.</strong> The owners of the businesses you serve, such as coaches, clinics, ecommerce brands and local service firms, use Meta every day. Broad targeting with strong creative finds them more cheaply than LinkedIn for most agency offers. In 2026 we see tier-1 CPMs average about $24.50 outside Q4 (<a href="/benchmarks/meta-ads-cpm">Meta ads CPM benchmarks</a>).</p>
+<p><strong>One retainer pays for a lot of testing.</strong> At a $3,000 to $5,000 monthly retainer, a qualified booked call usually costs $95 to $160 in our accounts (<a href="/benchmarks/cost-per-booked-call">cost per booked call benchmarks</a>). A few closed clients a month cover the ad spend many times over.</p>
+<p><strong>Proof is the product.</strong> Agencies sell results, and ads let you show them: case-study creative, client video testimonials and live ad account walkthroughs.</p>
+<h5>What we do for agencies</h5>
+<ol>
+<li><strong>Offer and niche audit.</strong> We check which client niche and offer your case studies can prove. "We help med spa agencies book consults" converts. "Full-service digital marketing" does not.</li>
+<li><strong>Proof-led creative.</strong> We make 40 to 100+ creatives: founder-to-camera videos, client results, screen recordings of real dashboards and objection-handling ads. Most agency ads fail on creative, not targeting.</li>
+<li><strong>Qualifying funnel.</strong> We build a 3 to 5 page funnel with a short VSL, a case-study page and an application form. The form asks about revenue, budget and decision-maker status, so tire-kickers do not reach your calendar.</li>
+<li><strong>Speed to lead and setting.</strong> New applicants get a reply in under 5 minutes by SMS, email and WhatsApp. Qualified applicants are booked straight into your calendar (<a href="/appointment-setting-for-agencies">appointment setting for agencies</a>).</li>
+<li><strong>Weekly optimization.</strong> We track cost per booked call, show rate and close rate. Then we change angles, audiences and follow-up, not just budgets.</li>
+</ol>
+<h5>Opportunities agencies should target</h5>
+<ul>
+<li><strong>Niche-specific angles.</strong> "Patient acquisition for med spas" beats "Facebook ads services".</li>
+<li><strong>Result-led hooks.</strong> Use a specific number from a real client, such as "$639K in two months for a med spa agency", with permission.</li>
+<li><strong>Low-ticket entry offers.</strong> A paid audit, workshop or template can pay back the ad spend before the retainer sale. See our <a href="/case-studies/digital-media-agency-157k">low-ticket offer case studies</a>.</li>
+<li><strong>Retargeting with proof.</strong> Show case-study videos to people who watched 50% of your VSL or started the application.</li>
+<li><strong>Search-intent phrases to support with content:</strong> "how to get clients for my agency", "facebook ads for marketing agencies", "agency lead generation".</li>
+</ul>
+<h5>Results</h5>
+<p><strong>Service agency</strong> (labelled as a general agency result): 235 clients closed at a $3,600 average deal, for $846,000 in 2025, with Meta ads, qualification and structured follow-up. <a href="/case-studies/b2b-agency-scaling-846k">Read the case study</a>.</p>
+<p><strong>Med spa marketing agency:</strong> $639,000 in two months, with 1,116 conversations still open, using Meta ads, qualification and appointment setting. <a href="/case-studies/med-spa-marketing-agency-639k">Read the case study</a>.</p>
+<p><strong>Agency client, retargeting session:</strong> an agency doing $85K a month and tracking toward $95K+, broken down live in Ads Manager. <a href="/case-studies/strategic-consulting-85k">Read the case study</a>.</p>
+<h5>Mistakes agencies make with their own Meta ads</h5>
+<ol>
+<li><strong>Selling services instead of outcomes.</strong> "SEO, ads and web design" gives the buyer nothing to picture. A niche and a result do.</li>
+<li><strong>Sending cold traffic to a calendar.</strong> Without an application step, close rates on unvetted bookings fall to 9% to 14% (<a href="/benchmarks/close-rate">close rate benchmarks</a>).</li>
+<li><strong>Slow follow-up.</strong> An application left for a day is usually lost. Reply in under 5 minutes.</li>
+<li><strong>Too few creatives.</strong> Two or three ads burn out within weeks. Agencies need a steady creative pipeline, just like their clients.</li>
+<li><strong>Judging on cost per lead.</strong> Cheap leads that never book cost more than expensive leads that close. Track cost per booked call and cost per client.</li>
+</ol>
+<h5>FAQ</h5>
+<p><strong>Should an agency run Meta ads or LinkedIn ads to get clients?</strong>
+For agencies that serve owner-led small and mid-size businesses, Meta usually delivers booked calls at a lower cost. LinkedIn can work for enterprise-only agencies with large deal sizes. We test Meta first because the feedback loop is faster.</p>
+<p><strong>How much ad spend does an agency need?</strong>
+It depends on your retainer and close rate. Work backwards from the number of clients you want with the <a href="/tools/cost-per-booked-call-calculator">cost per booked call calculator</a>. [fill in: minimum monthly ad spend QualifiedLeadsX recommends for agencies]</p>
+<p><strong>Will you run ads in my agency's name or yours?</strong>
+In yours. The ad account, pixel, funnel, CRM and creatives belong to you.</p>
+<p><strong>How long until we see booked calls?</strong>
+Most agency campaigns book their first qualified calls within [fill in] of launch. Results become stable after enough creative testing, which usually takes [fill in].</p>
+<p><strong>Can you also handle the sales calls?</strong>
+Yes. We provide <a href="/outsourced-sales-closers">outsourced sales closers</a> for agencies that want the whole pipeline handled.</p>
+<p><strong>[Call to action]</strong> Book a free strategy call. We will review your offer and case studies and tell you whether Meta ads will work for your agency. → /book-your-call#book</p>
+<p><em>(The related-links block is added automatically: other Meta ads industry pages, 3 core services and 2 guides.)</em></p></div><div class="example"><h4>Example page: core service (draft, not published)</h4>
+<ul>
+<li><strong>URL:</strong> /pricing</li>
+<li><strong>Title (57 chars):</strong> Lead Generation Agency Pricing &amp; Plans | QualifiedLeadsX™</li>
+<li><strong>Meta (122 chars):</strong> What our two plans include, what drives the quote and how the 90-day guarantee works. Book a free call for a custom quote.</li>
+<li><strong>Primary keyword:</strong> lead generation agency pricing</li>
+<li><strong>Secondary keywords:</strong> meta ads management cost, done for you lead generation cost, appointment setting pricing</li>
+<li><strong>Hub:</strong> /services</li>
+<li><strong>Schema:</strong> Service, OfferCatalog with the two plans (no <code>price</code> until a price is published), FAQPage, BreadcrumbList. No AggregateRating unless there are real, verifiable reviews [fill in].</li>
+<li><strong>Does not compete with</strong> the blog post /blog/how-much-does-a-lead-generation-agency-cost, which covers market-wide pricing models. This page is about QualifiedLeadsX's own plans.</li>
+</ul>
+<hr />
+<h4>Pricing: Meta Ads Management and Full-Service Growth</h4>
+<p>QualifiedLeadsX has two plans: Meta Ads Management, and Full-Service Growth, which covers ads, funnel, follow-up and booking. Both are priced as a custom quote after a free 30-minute strategy call, because the work depends on your offer, market and current funnel. This page explains what each plan includes, what changes the price, and how the 90-day written guarantee works.</p>
+<h5>What's included</h5>
+<h6>Meta Ads Management</h6>
+<ul>
+<li>Ad account audit and setup, including pixel and Conversions API tracking</li>
+<li>Campaign strategy: offer angles, audiences, budgets</li>
+<li>Creative: [fill in: number of creatives per month on this plan]</li>
+<li>Weekly optimization and reporting on cost per lead, cost per booked call and ROAS</li>
+<li>Monthly strategy call</li>
+</ul>
+<h6>Full-Service Growth</h6>
+<p>Everything in Meta Ads Management, plus:</p>
+<ul>
+<li>A 3 to 5 page funnel: landing page or VSL, application form, booking page and confirmation page</li>
+<li>40 to 100+ creatives</li>
+<li>AI follow-up that replies to every lead in under 5 minutes</li>
+<li>Email and SMS nurture, plus WhatsApp reminders where they are allowed</li>
+<li>Lead qualification, so only buyers who fit reach your calendar</li>
+<li>CRM pipeline and calendar booking setup</li>
+<li>Optional: <a href="/appointment-setting">appointment setters</a> and <a href="/outsourced-sales-closers">outsourced sales closers</a> [fill in: included or priced separately]</li>
+</ul>
+<p>On both plans you own the ad account, funnels, CRM, automations, creatives and data.</p>
+<h5>How it works</h5>
+<ol>
+<li><strong>Free strategy call (30 minutes).</strong> We review your offer, price point, close rate and current lead flow.</li>
+<li><strong>Written proposal.</strong> You get the plan, the scope, the milestones for the 90-day guarantee, and the fee.</li>
+<li><strong>Build.</strong> About [fill in] weeks for Full-Service Growth, less for Meta Ads Management.</li>
+<li><strong>Launch.</strong> Ads go live and leads start flowing into your CRM and calendar.</li>
+<li><strong>Optimize.</strong> We hold weekly reviews of cost per booked call, show rate and close rate.</li>
+</ol>
+<h5>What changes the price</h5>
+<ul>
+<li><strong>Scope.</strong> Ads only, or the full system with funnel, follow-up and booking.</li>
+<li><strong>Creative volume.</strong> How many new ads each month your market needs to avoid creative fatigue.</li>
+<li><strong>Number of offers or markets.</strong> Each extra offer, language or country adds campaigns and funnels.</li>
+<li><strong>Ad spend level.</strong> Higher budgets need more creative and closer management. [fill in: whether the fee is flat, tiered or tied to ad spend]</li>
+<li><strong>Sales support.</strong> Appointment setters and closers add to the fee.</li>
+</ul>
+<p>Ad spend is paid by you, directly to Meta, and is separate from our fee.</p>
+<p>[fill in: starting price or typical range, if QualifiedLeadsX decides to publish one. If it does, add it to the OfferCatalog schema.]</p>
+<h5>The 90-day written guarantee</h5>
+<p>Before launch, we agree on growth milestones with you in writing. If they are not reached within 90 days, we keep working with no management fee until they are. [fill in: exact guarantee terms and exclusions, from the client agreement]</p>
+<h5>Results and case studies</h5>
+<ul>
+<li><strong>Service agency:</strong> 235 clients closed at a $3,600 average deal, $846,000 in 2025. <a href="/case-studies/b2b-agency-scaling-846k">Case study</a></li>
+<li><strong>Med spa marketing agency:</strong> $639,000 in two months. <a href="/case-studies/med-spa-marketing-agency-639k">Case study</a></li>
+<li><strong>AI SaaS:</strong> 320 customers and $71,934 in 24 days. <a href="/case-studies/b2b-technology-agency-71k">Case study</a></li>
+</ul>
+<p><a href="/case-studies">See all case studies</a></p>
+<h5>Who it's for</h5>
+<p>Businesses selling offers of about $3,000 to $25,000 and already doing $10,000+ a month, including:</p>
+<ul>
+<li><a href="/for/coaches">Coaches</a></li>
+<li><a href="/for/consultants">Consultants</a></li>
+<li><a href="/for/agencies">Agencies</a></li>
+<li><a href="/for/b2b-services">B2B service firms</a></li>
+<li><a href="/for/saas">B2B SaaS</a></li>
+<li><a href="/for/med-spas">Med spas</a></li>
+<li><a href="/for/financial-advisors">Financial advisors</a></li>
+</ul>
+<h5>Where we work</h5>
+<p>We serve clients in the United States, United Kingdom, Canada and Australia, remotely. See <a href="/locations">locations</a>.</p>
+<h5>FAQ</h5>
+<p><strong>Why don't you publish a fixed price?</strong>
+The work for a $3,000 coaching offer and a $25,000 consulting engagement is very different. We quote after the strategy call so you pay for the scope you need. [fill in: change this answer if a price is published]</p>
+<p><strong>Is ad spend included?</strong>
+No. Ad spend goes from your card to Meta. Our fee covers strategy, creative, funnel, follow-up and management.</p>
+<p><strong>Is there a minimum contract?</strong>
+[fill in: minimum term, notice period]</p>
+<p><strong>What do I need before we start?</strong>
+An offer that has already sold, a way to deliver it, and someone to take the sales calls, or our closers.</p>
+<p><strong>How do I know what a booked call should cost?</strong>
+For $3,000 to $25,000 offers, a qualified booked call usually costs $90 to $180 in our accounts. Model your own numbers with the <a href="/tools/cost-per-booked-call-calculator">cost per booked call calculator</a>.</p>
+<p><strong>What happens if we stop working together?</strong>
+You keep everything: ad account, funnels, CRM, automations, creatives and data.</p>
+<p><strong>Do you offer a pay-per-appointment model?</strong>
+[fill in: yes or no, and terms]</p>
+<p><strong>[Call to action]</strong> Book a free 30-minute strategy call to get a custom quote. → /book-your-call#book</p></div><div class="example"><h4>Example page: free tool (draft, not published)</h4>
+<ul>
+<li><strong>URL:</strong> /tools/meta-ads-budget-calculator</li>
+<li><strong>Title (52 chars):</strong> Meta Ads Budget Calculator (Free) | QualifiedLeadsX™</li>
+<li><strong>Meta (130 chars):</strong> Enter your target calls and close rate to get the monthly Meta ads budget you need. Free, no sign-up. Then book a call to plan it.</li>
+<li><strong>Primary keyword:</strong> facebook ads budget calculator</li>
+<li><strong>Secondary keywords:</strong> how much to spend on facebook ads, meta ads budget calculator</li>
+<li><strong>Hub:</strong> /tools</li>
+<li><strong>Schema:</strong> WebApplication (applicationCategory "BusinessApplication", offers price 0), FAQPage, BreadcrumbList</li>
+<li><strong>Build:</strong> same pattern as <code>app/tools/cost-per-booked-call-calculator</code> (client component for the calculator, server-rendered text below it, metadata in <code>layout.tsx</code>)</li>
+</ul>
+<h5>Calculator specification</h5>
+<p>Inputs (defaults in brackets, taken from the live benchmark pages):</p>
+<ol>
+<li>New clients wanted per month (4)</li>
+<li>Close rate on booked calls, % (25; setter-qualified calls close at 24% to 31% for $5K to $10K offers)</li>
+<li>Show rate, % (70) [fill in: confirm default against /benchmarks/show-rate]</li>
+<li>Cost per booked call, $ (130; the benchmark is $90 to $180)</li>
+</ol>
+<p>Outputs:</p>
+<ul>
+<li>Calls to book = clients ÷ close rate ÷ show rate</li>
+<li>Monthly ad budget = calls to book × cost per booked call</li>
+<li>Daily budget = monthly ÷ 30.4</li>
+<li>A plain-language line: "To close 4 clients a month you need about 23 booked calls and $2,990 in ad spend."</li>
+</ul>
+<hr />
+<h4>Free Meta Ads Budget Calculator</h4>
+<p><em>[Working calculator here, usable without sign-up]</em></p>
+<h5>How to use the Meta ads budget calculator</h5>
+<ol>
+<li><strong>Enter the number of new clients you want each month.</strong> Use a number your team can actually deliver.</li>
+<li><strong>Enter your close rate on sales calls.</strong> Take it from your CRM: deals won divided by calls held over the last 90 days. If you don't know it, keep the default.</li>
+<li><strong>Enter your show rate.</strong> This is calls held divided by calls booked.</li>
+<li><strong>Enter your cost per booked call.</strong> If you have never run ads, use the default from our <a href="/benchmarks/cost-per-booked-call">cost per booked call benchmarks</a>.</li>
+<li><strong>Read the result.</strong> The calculator shows the calls you need and the monthly and daily Meta budget to get them.</li>
+</ol>
+<h5>What the results mean</h5>
+<p><strong>The budget is a starting point, not a cap.</strong> In the first 2 to 4 weeks, Meta is still learning and your cost per booked call is usually higher than the benchmark. Plan for that.</p>
+<p><strong>Small budgets struggle to exit learning.</strong> Meta needs roughly 50 optimization events per ad set per week to stabilize. If your budget only buys a handful of booked calls a month, optimize for an earlier event, such as a submitted application, and qualify after the lead comes in.</p>
+<p><strong>Close rate moves the budget more than ad costs do.</strong> Going from a 15% to a 30% close rate halves the calls you need, and so halves the budget. That is why qualification and follow-up matter as much as the ads.</p>
+<p><strong>Q4 costs more.</strong> CPMs in October to December run about $36.80 to $54.20, against $18.40 to $24.80 in Q1 (<a href="/benchmarks/meta-ads-cpm">Meta ads CPM benchmarks</a>). Add 30% to 50% to a Q4 budget.</p>
+<h5>How to fix common issues</h5>
+<ul>
+<li><strong>Budget too high for your margins?</strong> Raise your close rate first. Pre-call qualification and a short VSL homework step usually lift it. See <a href="/appointment-setting">appointment setting</a>.</li>
+<li><strong>Cost per booked call above $200?</strong> The funnel is usually the problem, not the ads. Check landing page conversion and application drop-off. See <a href="/vsl-funnels">VSL funnels</a>.</li>
+<li><strong>Lots of bookings, few shows?</strong> Reply in under 5 minutes and send reminders by SMS and WhatsApp. See <a href="/speed-to-lead">speed to lead</a> and the <a href="/tools/show-rate-calculator">show rate calculator</a>.</li>
+<li><strong>Not sure the numbers work at all?</strong> Check your unit economics with the <a href="/tools/ltv-cac-calculator">LTV to CAC calculator</a>.</li>
+</ul>
+<h5>FAQ</h5>
+<p><strong>How much should I spend on Facebook ads per month?</strong>
+Work backwards from the clients you want. With a 25% close rate, a 70% show rate and a $130 cost per booked call, 4 new clients need about 23 booked calls, or roughly $3,000 a month. This calculator does that maths for your numbers.</p>
+<p><strong>What is a good daily budget for Meta ads for a high-ticket offer?</strong>
+Most high-ticket lead generation campaigns need at least $[fill in] a day to collect enough data. Below that, results stay noisy for months.</p>
+<p><strong>Is Facebook ads budget the same as Meta ads budget?</strong>
+Yes. Meta Ads Manager runs Facebook, Instagram, Messenger and Audience Network from one budget.</p>
+<p><strong>Does this calculator include your agency fee?</strong>
+No. It only estimates ad spend, which you pay directly to Meta. See <a href="/pricing">pricing</a> for how our fee works.</p>
+<p><strong>Where do the default numbers come from?</strong>
+From our 2026 benchmarks, which aggregate more than $50M in managed Meta ad spend across 125+ client accounts. Replace them with your own numbers when you have them.</p>
+<p><strong>[Call to action]</strong> Want us to sanity-check your budget? Book a free 30-minute strategy call. → /book-your-call#book</p>
+<p><em>(Related links are added automatically: all other tools, 2 matching services and 2 guides.)</em></p></div><div class="example"><h4>Example page: blog post (draft, not published)</h4>
+<ul>
+<li><strong>URL:</strong> /blog/how-to-hire-an-appointment-setter</li>
+<li><strong>Title (46 chars):</strong> How to Hire an Appointment Setter (2026 Guide)</li>
+<li><strong>Meta (137 chars):</strong> How to hire an appointment setter: a direct answer, the numbers, and a step-by-step plan. Read the guide, then book a free strategy call.</li>
+<li><strong>Primary keyword:</strong> how to hire an appointment setter</li>
+<li><strong>Secondary keywords:</strong> appointment setter job description, where to find appointment setters, appointment setter interview questions</li>
+<li><strong>Hub:</strong> /blog (category: Lead Qualification)</li>
+<li><strong>Supports:</strong> /appointment-setting, /compare/appointment-setter-vs-va, /blog/appointment-setter-compensation-models</li>
+<li><strong>Author:</strong> Gaurav, Founder and Head of Acquisition (or another real named author) [fill in]</li>
+<li><strong>Published / updated:</strong> [fill in on publish]</li>
+<li><strong>Schema:</strong> BlogPosting, FAQPage, BreadcrumbList (generated by app/blog/[slug]/page.tsx when added to lib/blog-data.ts)</li>
+<li><strong>Fact check before publishing:</strong> every number here comes from QualifiedLeadsX's own benchmark pages. Add a source line for any new number.</li>
+</ul>
+<hr />
+<h4>How to Hire an Appointment Setter (2026 Guide)</h4>
+<p>To hire an appointment setter, first decide what the setter will own: inbound follow-up, outbound outreach, or both. Then write a scorecard with measurable targets (speed to lead, booking rate, show rate) and test candidates with a live role-play. Pay a mix of base and per-show commission, and give them a script, a CRM and a 2-week ramp.</p>
+<h5>What does an appointment setter actually do?</h5>
+<p>An appointment setter turns leads into booked, qualified sales calls. In a high-ticket business, that means:</p>
+<ul>
+<li>Replying to new leads within minutes by phone, SMS, WhatsApp or DM</li>
+<li>Asking qualifying questions about budget, timeline, decision-maker status and fit</li>
+<li>Booking qualified leads into the closer's calendar</li>
+<li>Confirming and reminding, so booked calls actually happen</li>
+<li>Logging everything in the CRM</li>
+</ul>
+<p>A setter is not a closer. Setters protect the closer's time, and closers sell. See <a href="/outsourced-sales-closers">outsourced sales closers</a> for the other half of the team.</p>
+<h5>Do you need a setter, a VA or an agency?</h5>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Best when</th>
+<th>Watch out for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>In-house setter</td>
+<td>You have 100+ new leads a month and a sales manager to coach them</td>
+<td>Hiring, training and churn are on you</td>
+</tr>
+<tr>
+<td>Virtual assistant</td>
+<td>You need admin help, not selling</td>
+<td>VAs rarely qualify well. See <a href="/compare/appointment-setter-vs-va">appointment setter vs VA</a></td>
+</tr>
+<tr>
+<td>Appointment setting agency</td>
+<td>You want setters, scripts, CRM and AI follow-up as one system</td>
+<td>Check that you own the CRM and the data</td>
+</tr>
+</tbody>
+</table>
+<p>If you are below about [fill in] leads a month, AI follow-up plus a part-time setter is often enough. See <a href="/appointment-setting">appointment setting</a> for how we run it.</p>
+<h5>Step 1: Write a scorecard before the job ad</h5>
+<p>List the 3 to 5 numbers the setter will be judged on:</p>
+<ul>
+<li><strong>Speed to lead:</strong> first reply in under 5 minutes during working hours</li>
+<li><strong>Contact rate:</strong> share of new leads reached</li>
+<li><strong>Booking rate:</strong> share of contacted leads booked</li>
+<li><strong>Show rate:</strong> share of booked calls that happen. The cross-industry average is 58.2% with email-only confirmations, and much higher with fast SMS and WhatsApp follow-up (<a href="/benchmarks/show-rate">show rate benchmarks</a>).</li>
+<li><strong>Qualified rate:</strong> share of held calls the closer marks as qualified</li>
+</ul>
+<h5>Step 2: Write the job description</h5>
+<p>Include the offer and price point, the lead sources, the hours, the tools (CRM, dialer, WhatsApp) and the pay plan. Be specific: "Call inbound leads from Meta ads for a $5,000 coaching program within 5 minutes" attracts the right people. "Sales role, high earning potential" does not.</p>
+<h5>Step 3: Source candidates</h5>
+<ul>
+<li>Referrals from closers and sales communities</li>
+<li>Job boards for remote sales roles</li>
+<li>Your own customers or community members who already believe in the offer</li>
+</ul>
+<p>[fill in: the sourcing channels QualifiedLeadsX actually uses, if it wants to share them]</p>
+<h5>Step 4: Interview with a role-play</h5>
+<p>Skip the long interview. Run a 10-minute role-play: you play a lead who filled in the form but is hesitant about price. Score the candidate on:</p>
+<ol>
+<li>Did they reply with energy and use the lead's name?</li>
+<li>Did they ask about the problem before the price?</li>
+<li>Did they qualify budget and decision-maker status without sounding scripted?</li>
+<li>Did they book a specific time, or just "send a link"?</li>
+</ol>
+<h5>Step 5: Set the pay plan</h5>
+<p>Common models are base plus per-booked-call, base plus per-show, and commission on closed deals. Paying per show, not per booking, stops calendars filling with no-shows. We compare the models in <a href="/blog/appointment-setter-compensation-models">appointment setter compensation models</a>.</p>
+<h5>Step 6: Ramp them for two weeks</h5>
+<ul>
+<li>Week 1: shadow calls, learn the offer, practise the script, and book with supervision</li>
+<li>Week 2: own a share of inbound leads, with daily call reviews</li>
+<li>Then: weekly scorecard reviews</li>
+</ul>
+<h5>How much does a booked call cost with a setter?</h5>
+<p>It depends on lead cost and setter performance. In our accounts, qualified booked calls for $3,000 to $25,000 offers usually cost $90 to $180 all-in (<a href="/benchmarks/cost-per-booked-call">cost per booked call benchmarks</a>). Model yours with the <a href="/tools/cost-per-booked-call-calculator">cost per booked call calculator</a>.</p>
+<h5>FAQ</h5>
+<p><strong>How many leads can one appointment setter handle?</strong>
+It depends on the channel and lead quality. A full-time inbound setter with AI-assisted follow-up can work [fill in] new leads a month. Track speed to lead: if it slips past 5 minutes, you need more capacity.</p>
+<p><strong>Should an appointment setter be commission only?</strong>
+Commission-only setters tend to leave when leads are slow and to book anyone when they are fast. A small base plus a per-show bonus keeps them steady and honest.</p>
+<p><strong>What skills matter most in an appointment setter?</strong>
+Speed, curiosity and discipline in the CRM. Charisma helps, but a setter who replies in 2 minutes and logs every lead beats a charming setter who replies tomorrow.</p>
+<p><strong>Can AI replace appointment setters?</strong>
+AI handles the first reply, reminders and simple qualification well, and it never sleeps. People still book more high-ticket calls when a lead has questions. Most of our clients use both. See <a href="/speed-to-lead">speed to lead</a>.</p>
+<p><strong>[Author box]</strong> Gaurav, Founder and Head of Acquisition at QualifiedLeadsX. 12+ years in paid media and direct-response client acquisition. [fill in: confirm author and bio]</p>
+<p><strong>[Call to action]</strong> Want setters, scripts and AI follow-up handled for you? Book a free strategy call. → /book-your-call#book</p></div>
+
+<h2>4. Related-links block rules (STEP 4)</h2>
+<p>Implemented in <code>lib/related-links.ts</code> and rendered by <code>components/sections/RelatedLinks.tsx</code> above the footer on every page, in the server HTML. Anchors are descriptive. Result: every indexable page has at least 5 internal links in (<code>npm run seo:links</code>: 0 orphans, 0 low-inbound pages).</p>
+<table class=""><thead><tr><th>Page type</th><th>Playbook rule</th><th>What QualifiedLeadsX shows</th><th>Status</th></tr></thead><tbody><tr><td>Location page</td><td>6 nearby locations, 4 industries, 3 core services, 2 guides</td><td>Other 3 countries + /locations hub, 4 industries common in that market, 3 services, 2 guides</td><td>To add when /locations pages ship (week 3)</td></tr><tr><td>Industry page (/for/x, /meta-ads-for-x, /appointment-setting-for-x)</td><td>6 sibling industries (same sector first), 4 locations, 3 core services, 2 guides</td><td>Services for the industry (other variants of the same industry first), 6 siblings (same service, then same sector: coaching, B2B, professional/local), 2 industry guides. Locations: added in week 3.</td><td>Live</td></tr><tr><td>Core service page</td><td>6 related services, 4 industries, 4 locations, 2 tools</td><td>6 neighbouring services, 4 industries (/meta-ads-agency and /appointment-setting list their own industry pages; others rotate through the /for pages), 2 matching tools, 2 guides. Locations: added in week 3.</td><td>Live</td></tr><tr><td>Tool / benchmark page</td><td>All other tools, 2 matching services, 2 guides</td><td>All other tools (or benchmarks), 3 of the other kind, 2 matching services, 2 guides</td><td>Live</td></tr><tr><td>Blog post</td><td>3 related posts, the pages the post supports</td><td>3 related posts from the same category (rotated), up to 3 services the post supports, matching industries, matching tools</td><td>Live</td></tr><tr><td>Case study</td><td>(not in playbook)</td><td>4 other case studies (rotated), 3 services, 2 guides</td><td>Live</td></tr><tr><td>Comparison / mastermind</td><td>(not in playbook)</td><td>6 core services, 2 tools, 2 guides</td><td>Live</td></tr><tr><td>Home, hubs, legal, booking</td><td>-</td><td>No block: hubs already list every child page</td><td>Live</td></tr></tbody></table>
+
+<h2>5. Sitemap, robots.txt and llms.txt (STEP 5)</h2>
+<p>Next.js route handlers, prerendered as static files: <code>app/sitemap.xml/route.ts</code> (index) and <code>app/sitemap-{core,industries,locations,content}.xml/route.ts</code>. URLs come from <code>lib/sitemap-entries.ts</code>, which lists indexable, self-canonical pages only. Lastmod comes from the git date of each page's source (<code>npm run seo:lastmod</code>), never the build date. Current counts: core 33, industries 31, content 48, locations 0. The locations file stays out of the index until location pages exist. <b>Action:</b> resubmit https://www.qualifiedleadsx.com/sitemap.xml in Search Console and Bing Webmaster Tools after this ships.</p>
+<h3>lib/sitemap-xml.ts</h3><pre>import type { MetadataRoute } from &quot;next&quot;;
+import { site } from &quot;@/lib/site&quot;;
+import { allSitemapEntries } from &quot;@/lib/sitemap-entries&quot;;
+
+/**
+ * Sitemap split by page type (Site Growth Playbook, STEP 5):
+ *   /sitemap.xml            sitemap index
+ *   /sitemap-core.xml       home, services, hubs, comparisons, proof, company
+ *   /sitemap-industries.xml /for/[industry] and /[service]-for-[industry]
+ *   /sitemap-locations.xml  location pages (none yet; listed only when they exist)
+ *   /sitemap-content.xml    blog, glossary, free tools and benchmarks
+ */
+export type SitemapType = &quot;core&quot; | &quot;industries&quot; | &quot;locations&quot; | &quot;content&quot;;
+export const SITEMAP_TYPES: SitemapType[] = [&quot;core&quot;, &quot;industries&quot;, &quot;locations&quot;, &quot;content&quot;];
+
+export function typeOf(path: string): SitemapType {
+  const first = path.split(&quot;/&quot;)[1] ?? &quot;&quot;;
+  if (first === &quot;locations&quot;) return &quot;locations&quot;;
+  if (first === &quot;for&quot; || first.includes(&quot;-for-&quot;)) return &quot;industries&quot;;
+  if ([&quot;blog&quot;, &quot;glossary&quot;, &quot;tools&quot;, &quot;benchmarks&quot;].includes(first)) return &quot;content&quot;;
+  return &quot;core&quot;;
+}
+
+const pathOf = (url: string) =&gt; url.replace(site.url, &quot;&quot;) || &quot;/&quot;;
+
+export function entriesFor(type: SitemapType) {
+  return allSitemapEntries().filter((e) =&gt; typeOf(pathOf(e.url)) === type);
+}
+
+const esc = (v: string) =&gt;
+  v.replace(/&amp;/g, &quot;&amp;amp;&quot;).replace(/&lt;/g, &quot;&amp;lt;&quot;).replace(/&gt;/g, &quot;&amp;gt;&quot;).replace(/&quot;/g, &quot;&amp;quot;&quot;).replace(/&#x27;/g, &quot;&amp;apos;&quot;);
+
+const day = (d: MetadataRoute.Sitemap[number][&quot;lastModified&quot;]) =&gt;
+  d ? new Date(d).toISOString().slice(0, 10) : undefined;
+
+const xmlResponse = (body: string) =&gt;
+  new Response(body, { headers: { &quot;Content-Type&quot;: &quot;application/xml; charset=utf-8&quot; } });
+
+export function urlsetResponse(type: SitemapType) {
+  const urls = entriesFor(type)
+    .map((e) =&gt; {
+      const lm = day(e.lastModified);
+      const imgs = (e.images ?? [])
+        .map((i) =&gt; `&lt;image:image&gt;&lt;image:loc&gt;${esc(i)}&lt;/image:loc&gt;&lt;/image:image&gt;`)
+        .join(&quot;&quot;);
+      return `&lt;url&gt;&lt;loc&gt;${esc(e.url)}&lt;/loc&gt;${lm ? `&lt;lastmod&gt;${lm}&lt;/lastmod&gt;` : &quot;&quot;}${imgs}&lt;/url&gt;`;
+    })
+    .join(&quot;\n&quot;);
+  return xmlResponse(
+    `&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;\n&lt;urlset xmlns=&quot;http://www.sitemaps.org/schemas/sitemap/0.9&quot; xmlns:image=&quot;http://www.google.com/schemas/sitemap-image/1.1&quot;&gt;\n${urls}\n&lt;/urlset&gt;\n`,
+  );
+}
+
+export function indexResponse() {
+  const items = SITEMAP_TYPES.map((type) =&gt; ({ type, entries: entriesFor(type) }))
+    .filter((s) =&gt; s.entries.length &gt; 0)
+    .map(({ type, entries }) =&gt; {
+      const newest = entries.map((e) =&gt; day(e.lastModified)).filter(Boolean).sort().pop();
+      return `&lt;sitemap&gt;&lt;loc&gt;${site.url}/sitemap-${type}.xml&lt;/loc&gt;${newest ? `&lt;lastmod&gt;${newest}&lt;/lastmod&gt;` : &quot;&quot;}&lt;/sitemap&gt;`;
+    })
+    .join(&quot;\n&quot;);
+  return xmlResponse(
+    `&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;\n&lt;sitemapindex xmlns=&quot;http://www.sitemaps.org/schemas/sitemap/0.9&quot;&gt;\n${items}\n&lt;/sitemapindex&gt;\n`,
+  );
+}
+</pre>
+<h3>app/sitemap.xml/route.ts (the four child routes are the same, calling urlsetResponse("core") etc.)</h3><pre>import { indexResponse } from &quot;@/lib/sitemap-xml&quot;;
+
+export const dynamic = &quot;force-static&quot;;
+
+export function GET() {
+  return indexResponse();
+}
+</pre>
+<h3>robots.txt (as served)</h3><pre>User-Agent: *
+Allow: /
+Disallow: /api/
+
+User-Agent: Googlebot
+Allow: /
+Disallow: /api/
+
+User-Agent: Bingbot
+Allow: /
+Disallow: /api/
+
+User-Agent: GPTBot
+Allow: /
+Disallow: /api/
+
+User-Agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+
+User-Agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+
+User-Agent: PerplexityBot
+Allow: /
+Disallow: /api/
+
+User-Agent: ClaudeBot
+Allow: /
+Disallow: /api/
+
+User-Agent: Google-Extended
+Allow: /
+Disallow: /api/
+
+User-Agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+
+Sitemap: https://www.qualifiedleadsx.com/sitemap.xml
+</pre>
+<h3>llms.txt (626 words)</h3><pre># QualifiedLeadsX
+&gt; QualifiedLeadsX is a done-for-you client acquisition agency that builds and runs Meta ads, funnels, CRM and AI follow-up to book qualified sales calls for agency owners, high-ticket coaches and B2B service businesses doing $10,000+ a month. Operated by Ecom Expertz LLC (Sheridan, Wyoming, USA).
+
+Key facts:
+- $50M+ managed in Meta (Facebook and Instagram) ads; 12+ years experience
+- 125+ documented client case studies across 30+ niches, including 69 video breakdowns
+- 90-day written guarantee: if mutually agreed growth milestones are not reached within 90 days, work continues with no management fee until they are
+- Two plans, both custom quotes: Meta Ads Management, and Full-Service Growth (ads, 3 to 5 page funnel, 40 to 100+ creatives, AI follow-up, email and SMS nurture, lead qualification, CRM and calendar booking)
+- Clients own all assets: ad account, funnels, CRM, automations, creatives and data
+- Serves the United States, United Kingdom, Canada and Australia
+- Contact: hello@qualifiedleadsx.com; free 30-minute strategy call at https://www.qualifiedleadsx.com/book-your-call
+
+## Services
+- [Lead generation agency for high-ticket offers](https://www.qualifiedleadsx.com/): the complete done-for-you client acquisition system
+- [Meta ads agency](https://www.qualifiedleadsx.com/meta-ads-agency): Facebook and Instagram ads management for coaches, agencies and B2B
+- [Appointment setting](https://www.qualifiedleadsx.com/appointment-setting): AI follow-up, speed to lead, qualification and calendar booking
+- [All services](https://www.qualifiedleadsx.com/services): overview of every service below
+- [Lead generation agency](https://www.qualifiedleadsx.com/lead-generation-agency): how the done-for-you lead generation engagement works
+- [High-ticket lead generation](https://www.qualifiedleadsx.com/high-ticket-lead-generation): lead generation for $3,000 to $25,000 offers
+- [B2B lead generation](https://www.qualifiedleadsx.com/b2b-lead-generation): pipeline for B2B service contracts
+- [AI speed to lead](https://www.qualifiedleadsx.com/speed-to-lead): automated response to new leads in under 5 minutes
+- [VSL funnels](https://www.qualifiedleadsx.com/vsl-funnels): video sales letter funnel build and testing
+- [WhatsApp lead nurture](https://www.qualifiedleadsx.com/whatsapp-lead-nurture): pre-call WhatsApp follow-up and reminders
+- [CRM automation](https://www.qualifiedleadsx.com/crm-automation): pipeline, booking and follow-up automation
+- [Outsourced sales closers](https://www.qualifiedleadsx.com/outsourced-sales-closers): closers for qualified strategy calls
+
+## Who it serves
+- Agency owners, high-ticket coaches and consultants, B2B service firms and B2B SaaS selling offers of roughly $3,000 to $25,000 and doing $10,000+ a month
+- Industry pages: https://www.qualifiedleadsx.com/for (18 industries, plus Meta ads and appointment setting pages for specific industries)
+- Countries: United States, United Kingdom, Canada and Australia, served remotely. There is no local office in these markets; the registered address is in Sheridan, Wyoming, USA.
+
+## Hub pages
+- [Services](https://www.qualifiedleadsx.com/services): every service
+- [Industries](https://www.qualifiedleadsx.com/for): every industry page, e.g. [coaches](https://www.qualifiedleadsx.com/for/coaches), [consultants](https://www.qualifiedleadsx.com/for/consultants), [agencies](https://www.qualifiedleadsx.com/for/agencies), [B2B SaaS](https://www.qualifiedleadsx.com/for/saas), [med spas](https://www.qualifiedleadsx.com/for/med-spas), [law firms](https://www.qualifiedleadsx.com/for/law-firms), [financial advisors](https://www.qualifiedleadsx.com/for/financial-advisors)
+- [Free tools](https://www.qualifiedleadsx.com/tools): CAC, ROAS and break-even ROAS, cost per booked call, show-up rate and LTV:CAC calculators, plus a lead scoring template
+- [Benchmarks](https://www.qualifiedleadsx.com/benchmarks): 2026 benchmarks for cost per lead by industry, Meta ads CPM, close rate, show rate and cost per booked call
+- [Blog](https://www.qualifiedleadsx.com/blog): guides on paid acquisition, funnels, lead qualification and scaling (RSS: https://www.qualifiedleadsx.com/feed.xml)
+- [Glossary](https://www.qualifiedleadsx.com/glossary): 29 client acquisition terms defined
+- [Case studies](https://www.qualifiedleadsx.com/case-studies): documented client results with ad spend, cost per lead and revenue
+- Locations: no location pages yet
+
+## Comparisons
+- [Meta ads vs Google ads for high-ticket offers](https://www.qualifiedleadsx.com/compare/meta-ads-vs-google-ads-high-ticket)
+- [Done-for-you vs done-with-you lead generation](https://www.qualifiedleadsx.com/compare/done-for-you-vs-done-with-you-lead-generation)
+- [Appointment setter vs virtual assistant](https://www.qualifiedleadsx.com/compare/appointment-setter-vs-va)
+- [QualifiedLeadsX alternatives](https://www.qualifiedleadsx.com/compare/qualifiedleadsx-alternatives)
+
+## Most important guides
+- [Facebook ads agency vs in-house media buyer](https://www.qualifiedleadsx.com/blog/facebook-ads-agency-vs-in-house-media-buyer): true costs, creative velocity and a decision framework by spend level
+- [How much does a lead generation agency cost in 2026?](https://www.qualifiedleadsx.com/blog/how-much-does-a-lead-generation-agency-cost): retainer, pay-per-lead, pay-per-appointment and performance pricing compared
+- [B2B ROAS benchmarks and appointment math](https://www.qualifiedleadsx.com/blog/b2b-roas-benchmarks-qualified-appointment-generation): what return to expect from paid traffic that books sales calls
+- [Speed to lead statistics 2026](https://www.qualifiedleadsx.com/blog/speed-to-lead-statistics-response-time): why the first 5 minutes decide whether a lead books
+- [High-ticket sales: how to get high-ticket clients](https://www.qualifiedleadsx.com/blog/high-ticket-sales-how-to-get-high-ticket-clients): attracting and closing $3,000 to $25,000 clients with Meta ads, VSL funnels and follow-up
+
+## Contact
+- Email: hello@qualifiedleadsx.com
+- Book a free 30-minute strategy call: https://www.qualifiedleadsx.com/book-your-call
+- [About the company](https://www.qualifiedleadsx.com/about)
+- [YouTube @QualifiedLeadsX](https://www.youtube.com/@QualifiedLeadsX): ad account breakdowns and case studies
+- Sitemap: https://www.qualifiedleadsx.com/sitemap.xml
+</pre>
+
+<h2>6. Week-by-week rollout (STEP 6)</h2>
+<p>Weeks run Monday to Friday. Week 1 started on Monday 9 November 2026. The exact pages and URLs for each week are in <code>reports/playbook-page-plan.csv</code>, in the "Build week" column.</p>
+<h3>Week by week</h3>
+<table>
+<thead>
+<tr>
+<th>Week</th>
+<th>Dates</th>
+<th>Build</th>
+<th>Pages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>9 to 13 Nov</td>
+<td><strong>Done:</strong> audit, sitemap split, robots.txt, llms.txt, related-links block on every page, titles under 60 characters, meta descriptions under 155, no keyword collisions, every page with 5+ internal links in</td>
+<td>Foundation</td>
+</tr>
+<tr>
+<td>2</td>
+<td>16 to 20 Nov</td>
+<td>New /pricing. Upgrade the thin core pages to the core template: /crm-automation, /outsourced-sales-closers, /whatsapp-lead-nurture, /speed-to-lead, /lead-generation-agency, /high-ticket-lead-generation, /b2b-lead-generation, /vsl-funnels. Add pricing and industries sections to /meta-ads-agency and /appointment-setting.</td>
+<td>1 new, 10 upgraded</td>
+</tr>
+<tr>
+<td>3</td>
+<td>23 to 27 Nov</td>
+<td>/locations hub and 4 country pages (US, UK, Canada, Australia), once facts 1 to 4 are in. Upgrade the first 10 industry pages: /for/coaches, consultants, agencies, b2b-services, saas, financial-advisors, med-spas, law-firms, real-estate-investors, business-coaches.</td>
+<td>5 new, 10 upgraded</td>
+</tr>
+<tr>
+<td>4</td>
+<td>30 Nov to 4 Dec</td>
+<td>Upgrade the remaining 8 /for pages and the 8 /meta-ads-for pages. Build 2 tools: /tools/meta-ads-budget-calculator and /tools/close-rate-calculator. Expand the existing tools to 600+ words below the calculator. City pages only where fact 5 confirms real clients.</td>
+<td>2 new, 16+ upgraded</td>
+</tr>
+<tr>
+<td>5</td>
+<td>7 to 11 Dec</td>
+<td>Upgrade the 4 /appointment-setting-for pages. Build the 10 new service-for-industry pages, in batches of 5, once fact 16 is confirmed for each.</td>
+<td>10 new, 4 upgraded</td>
+</tr>
+<tr>
+<td>6 onward</td>
+<td>From 14 Dec</td>
+<td>2 blog posts a week (the 8 planned posts first, then expand the thin posts), 2 to 3 tools a month (/tools/speed-to-lead-test, /tools/funnel-conversion-calculator, /tools/appointment-setter-commission-calculator), then expand whichever page type wins in STEP 7</td>
+<td>Ongoing</td>
+</tr>
+</tbody>
+</table>
+<p>Note on the date: weeks 4 to 6 fall in Q4, when Meta CPMs peak. This affects ad clients, not SEO, but holiday weeks slow content approvals. Plan human edits early.</p>
+<h3>Daily routine while pages are going live</h3>
+<ol>
+<li>Publish the day's pages: merge to <code>main</code>, and Hostinger deploys.</li>
+<li>Open each page with JavaScript off (<code>curl -s URL | grep "&lt;h1"</code>, or view source) and check that the full text is in the HTML.</li>
+<li>Request indexing in Search Console. The manual tool has a daily limit, so do hubs and core pages first. Or run <code>npm run index:google -- &lt;urls&gt;</code>; the Indexing API quota is 200 a day and is shared with the other project.</li>
+<li>Ping IndexNow: <code>npm run index:now</code> (add the new URLs to <code>scripts/submit-indexnow.mjs</code>).</li>
+<li>Add the new pages to <code>lib/related-links.ts</code> and to their hub page the same day. Location pages also need a "Where we work" group added to the service rules.</li>
+<li>Log the URLs in the tracker, then run <code>npm run build &amp;&amp; python3 -I scripts/playbook-audit.py &amp;&amp; npm run seo:links</code>. The page must show "keep", with 5+ internal links in.</li>
+</ol>
+
+<h2>7. Weekly measurement checklist (STEP 7)</h2>
+<h3>Weekly measurement checklist (every Monday)</h3>
+<p>In <strong>Search Console, Performance, last 7 days compared with the previous 7</strong>:</p>
+<ul>
+<li>[ ] Filter pages containing <code>/locations/</code>: record impressions, clicks and average position</li>
+<li>[ ] Filter pages containing <code>-for-</code>, and separately <code>/for/</code>: same three numbers (industry pages)</li>
+<li>[ ] Filter pages containing <code>/tools/</code>, and separately <code>/benchmarks/</code>: same three numbers</li>
+<li>[ ] Filter pages containing <code>/blog/</code>: same three numbers</li>
+<li>[ ] Everything else (core): same three numbers</li>
+<li>[ ] Work out <strong>impressions per page</strong> for each type (impressions ÷ number of live pages of that type)</li>
+</ul>
+<p>In <strong>Search Console, Indexing, Pages, filtered by sitemap</strong>:</p>
+<ul>
+<li>[ ] For sitemap-core.xml, sitemap-industries.xml, sitemap-locations.xml and sitemap-content.xml, record indexed vs not indexed</li>
+<li>[ ] If more than 20% of a group is "Crawled, currently not indexed", stop publishing that type. Add unique content to the existing pages first, because they are too similar.</li>
+</ul>
+<p>Decide:</p>
+<ul>
+<li>[ ] <strong>Expansion rule:</strong> the page type with the most impressions per page gets the next batch. If locations win, add cities where fact 5 confirms clients. If industries win, add more service-for-industry pages.</li>
+<li>[ ] <strong>Queries in positions 8 to 20:</strong> in Performance, Queries, filter position &gt; 7.9 and &lt; 20.1. Add each relevant query as an H2 or FAQ question on the page that ranks for it, then request reindexing.</li>
+<li>[ ] <strong>Cannibalisation:</strong> if two URLs get impressions for the same query, pick one primary page and point the other to it with an internal link, or merge the two.</li>
+<li>[ ] Re-run <code>python3 -I scripts/playbook-audit.py</code>: "merge or differentiate", "shorten title", "shorten description" and "add links" must all be 0.</li>
+</ul>
+<p>Track it here (one row per week):</p>
+<table>
+<thead>
+<tr>
+<th>Week</th>
+<th>Type</th>
+<th>Live pages</th>
+<th>Impressions</th>
+<th>Clicks</th>
+<th>Avg position</th>
+<th>Impr per page</th>
+<th>Indexed %</th>
+<th>Crawled not indexed %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2>8. Facts still needed ([fill in])</h2>
+<p>Nothing below has been guessed. Each item blocks the pages named next to it. Do not publish those pages until the item is answered and a person has fact-checked the page.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Fact needed</th>
+<th>Blocks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Share of ad spend or number of clients per country: US, UK, Canada, Australia</td>
+<td>All 4 country location pages</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Case studies where the client's country can be named, with the client's permission</td>
+<td>Location "Results" sections</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Hours human appointment setters cover, and in which time zones</td>
+<td>Location pages, appointment setting pages</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Billing currency per country (USD only, or GBP, CAD and AUD too)</td>
+<td>Location pages, /pricing</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Cities with real clients or results (the only cities allowed to get a /locations/[city] page)</td>
+<td>City location pages (weeks 4 to 5)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Whether to publish a starting price or range, and the fee model (flat, tiered or tied to ad spend)</td>
+<td>/pricing, OfferCatalog schema, location pricing sections</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Number of creatives per month on the Meta Ads Management plan</td>
+<td>/pricing</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Whether appointment setters and closers are included in Full-Service Growth or priced separately</td>
+<td>/pricing, /appointment-setting, /outsourced-sales-closers</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Exact 90-day guarantee terms and exclusions, from the client agreement</td>
+<td>/pricing and every page that mentions the guarantee</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Minimum contract term and notice period</td>
+<td>/pricing FAQ</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Whether a pay-per-appointment model is offered, and on what terms</td>
+<td>/pricing FAQ, blog "pay per appointment vs retainer"</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Typical build time from strategy call to live ads, in weeks</td>
+<td>Location, core and pricing pages</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Minimum recommended monthly or daily ad spend</td>
+<td>/tools/meta-ads-budget-calculator, /meta-ads-for-agencies</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Typical time to first booked calls, and time to stable results</td>
+<td>Industry pages FAQ</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Real, verifiable reviews (Google, Trustpilot, Clutch) with links. Needed before any AggregateRating schema is used.</td>
+<td>Core pages, schema</td>
+</tr>
+<tr>
+<td>16</td>
+<td>For each of the 10 new service-for-industry pages: confirmation that the industry is served, plus a matching case study</td>
+<td>/meta-ads-for-{agencies, b2b-services, business-coaches, executive-coaches, insurance-agencies}, /appointment-setting-for-{financial-advisors, med-spas, law-firms, real-estate-investors, b2b-services}</td>
+</tr>
+<tr>
+<td>17</td>
+<td>The default show rate for the budget calculator (check against /benchmarks/show-rate)</td>
+<td>/tools/meta-ads-budget-calculator</td>
+</tr>
+<tr>
+<td>18</td>
+<td>How many new leads one full-time setter handles a month, and the lead volume where a setter becomes worth hiring</td>
+<td>Blog "how to hire an appointment setter"</td>
+</tr>
+<tr>
+<td>19</td>
+<td>The setter sourcing channels QualifiedLeadsX uses, if it is willing to share them</td>
+<td>Same blog post</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Author for each new blog post (a real named person) and confirmation of Gaurav's bio</td>
+<td>All new blog posts</td>
+</tr>
+<tr>
+<td>21</td>
+<td>First-hand data and sources for each new blog post</td>
+<td>All new blog posts</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Local ad-policy points to cite per country (for example UK FCA rules for financial promotions, Australian AHPRA rules for health advertising), checked by a person</td>
+<td>UK, Canada and Australia location pages</td>
+</tr>
+<tr>
+<td>23</td>
+<td>A public phone number, if one should be shown (site.phone is empty)</td>
+<td>Contact details, llms.txt, location pages</td>
+</tr>
+</tbody>
+</table>
+</main></body></html>

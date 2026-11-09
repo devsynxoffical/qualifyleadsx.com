@@ -11,7 +11,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "Course Creator Lead Generation | QualifiedLeadsX",
   description:
-    "Scale premium courses & cohort masterminds ($1.5K–$10K). High-converting VSL funnels, webinar remarketing, and phone setters that drive consistent enrollments.",
+    "Scale premium courses and cohort masterminds ($1.5K–$10K) with VSL funnels, webinar remarketing and phone setters that drive steady enrollments.",
   alternates: {
     canonical: `${site.url}/for/course-creators`,
   },

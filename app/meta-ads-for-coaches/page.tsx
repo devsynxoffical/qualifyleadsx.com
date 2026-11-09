@@ -11,7 +11,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "Facebook Ads for Coaches | QualifiedLeadsX",
   description:
-    "Scale $5K–$25K coaching offers with high-converting Facebook and Instagram ads. Tested creative frameworks, broad Advantage+ scaling, and sub-$180 booked calls.",
+    "Scale $5K–$25K coaching offers with Facebook and Instagram ads: tested creative frameworks, broad Advantage+ scaling and sub-$180 booked calls.",
   alternates: {
     canonical: `${site.url}/meta-ads-for-coaches`,
   },

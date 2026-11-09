@@ -12,7 +12,7 @@ import { breadcrumbList, webPageNode, ORG_ID } from "@/lib/schema";
 
 const TITLE = "Client Acquisition Glossary: 29 Terms Defined";
 const DESCRIPTION =
-  "Plain-English definitions of speed to lead, VSL funnel, blended CAC, ROAS, lead qualification, appointment setting and 20+ more, each linked to a full guide.";
+  "Plain-English definitions of speed to lead, VSL funnel, blended CAC, ROAS, lead qualification and 20+ more terms, each linked to a full guide.";
 
 export const metadata: Metadata = {
   title: { absolute: "Client Acquisition Glossary (29 Terms) | QualifiedLeadsX™" },

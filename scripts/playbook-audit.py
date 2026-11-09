@@ -146,6 +146,9 @@ for x in rows:
         if not x["desc"]:
             p.append("no meta description")
             act.append("add description")
+        elif len(x["desc"]) > 155:
+            p.append(f"meta description {len(x['desc'])} chars")
+            act.append("shorten description")
         if x["h1"] != 1:
             p.append(f"{x['h1']} H1s")
             act.append("fix H1")
@@ -168,6 +171,6 @@ print(f"wrote {out}: {len(rows)} URLs")
 print("by type:", dict(c))
 idx = [x for x in rows if not x["action"].startswith("keep (")]
 print("indexable:", len(idx), "| keep:", sum(1 for x in idx if x["action"] == "keep"))
-for k in ["improve", "add links", "merge or differentiate", "shorten title", "fix title", "add description", "fix H1"]:
+for k in ["improve", "add links", "merge or differentiate", "shorten title", "fix title", "add description", "shorten description", "fix H1"]:
     print(f"  {k}: {sum(1 for x in idx if k in x['action'])}")
 sys.exit(0)

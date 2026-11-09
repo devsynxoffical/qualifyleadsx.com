@@ -25,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: "Client Acquisition Funnels for High-Ticket Coaches",
   description:
-    "Done-for-you client acquisition system for business, executive, and fitness coaches. Get 30–50 qualified sales calls every month from ready-to-invest buyers.",
+    "Done-for-you client acquisition for business, executive and fitness coaches. Get 30–50 qualified sales calls a month from ready-to-invest buyers.",
   keywords: [
     "client acquisition for coaches",
     "high ticket coaching leads",

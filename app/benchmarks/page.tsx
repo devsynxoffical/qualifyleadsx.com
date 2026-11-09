@@ -22,7 +22,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "High Ticket Marketing Benchmarks 2026 - QualifiedLeadsX",
   description:
-    "Verified 2026 high ticket marketing benchmarks: cost per lead, cost per booked call, Meta CPMs, and show rates across 30+ B2B industries from $50M+ ad spend.",
+    "2026 high-ticket marketing benchmarks: cost per lead, cost per booked call, Meta CPMs and show rates across 30+ industries from $50M+ ad spend.",
   keywords: [
     "high ticket marketing benchmarks",
     "cost per booked call",

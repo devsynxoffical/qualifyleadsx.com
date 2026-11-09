@@ -22,7 +22,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "Free Lead Generation Calculators & Tools - QualifiedLeadsX",
   description:
-    "Free interactive high-ticket lead generation calculators: CAC, ROAS, cost per booked call, show rate, and LTV models. Model your acquisition pipeline today.",
+    "Free high-ticket lead generation calculators: CAC, ROAS, cost per booked call, show rate and LTV. Model your acquisition pipeline today.",
   keywords: [
     "free lead generation calculators",
     "cac calculator",

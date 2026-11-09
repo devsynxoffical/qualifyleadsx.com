@@ -11,7 +11,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "Executive Coaching Clients | QualifiedLeadsX",
   description:
-    "Predictable client acquisition for executive coaches & leadership advisors. Connect with C-suite leaders and enterprise VP buyers for $10K–$50K engagements.",
+    "Predictable client acquisition for executive coaches and leadership advisors. Reach C-suite and VP buyers for $10K–$50K engagements.",
   alternates: {
     canonical: `${site.url}/for/executive-coaches`,
   },

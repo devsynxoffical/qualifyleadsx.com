@@ -11,7 +11,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "Appointment Setting for Agencies | QualifiedLeadsX",
   description:
-    "Scale agency retainers ($3K–$15K/mo) with dedicated appointment setters. Sub-5-minute inbound speed to lead, qualified discovery calls, and 82%+ show rates.",
+    "Scale agency retainers ($3K–$15K/mo) with dedicated appointment setters. Sub-5-minute speed to lead, qualified discovery calls and 82%+ show rates.",
   alternates: {
     canonical: `${site.url}/appointment-setting-for-agencies`,
   },

@@ -22,7 +22,7 @@ import { Reveal } from "@/components/ui/Reveal";
 export const metadata: Metadata = {
   title: "7 Days Paid Trial Funnel Breakdown | Mastermind",
   description:
-    "Private Mastermind Breakdown: How to engineer a 7 Days Paid Trial front-end offer that converts cold Meta Ads traffic into paying users and high-ticket clients.",
+    "Mastermind breakdown: how to build a 7 days paid trial front-end offer that turns cold Meta ads traffic into paying users and high-ticket clients.",
   keywords: [
     "7 days paid trial",
     "paid trial funnel",

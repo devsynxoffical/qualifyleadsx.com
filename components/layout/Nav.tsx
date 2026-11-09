@@ -38,8 +38,8 @@ const servicesSublinks = [
 
 const mastermindSublinks = [
   {
-    title: "Hidden Facebook Interest",
-    desc: "The framework behind 300–500 calls",
+    title: "AI Client Acquisition Mastermind",
+    desc: "6-week Meta ads & AI program",
     href: "/mastermind/hidden-facebook-interest",
     badge: "Mastermind #01",
   },

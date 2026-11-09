@@ -39,6 +39,9 @@ Key facts:
 - [Case studies](https://www.qualifiedleadsx.com/case-studies): documented client results with ad spend, cost per lead and revenue
 - Locations: no location pages yet
 
+## Programs
+- [AI Client Acquisition Mastermind](https://www.qualifiedleadsx.com/mastermind/hidden-facebook-interest): 6-week hands-on implementation mastermind covering Meta ads audience and creative research, AI advertising, lead qualification, Pixel and CAPI tracking, scaling, manual bidding, retargeting and unit economics
+
 ## Comparisons
 - [Meta ads vs Google ads for high-ticket offers](https://www.qualifiedleadsx.com/compare/meta-ads-vs-google-ads-high-ticket)
 - [Done-for-you vs done-with-you lead generation](https://www.qualifiedleadsx.com/compare/done-for-you-vs-done-with-you-lead-generation)

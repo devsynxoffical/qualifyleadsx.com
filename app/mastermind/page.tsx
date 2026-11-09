@@ -61,9 +61,9 @@ const mastermindStats = [
 
 const privateMasterminds = [
   {
-    tag: "Hidden Facebook Interest",
-    title: "The Framework Behind 300–500 Qualified Calls",
-    description: "Deep dive into hidden Facebook interest targeting, ad creative rotation strategies, and direct-response offer angles that scaled client accounts to 300–500 booked strategy calls.",
+    tag: "AI Client Acquisition Mastermind",
+    title: "6-Week Meta Ads & AI Acquisition Program",
+    description: "A 6-week, hands-on implementation mastermind: hidden interest research, AI advertising, lead qualification, Pixel and CAPI tracking, scaling, manual bidding, retargeting and unit economics.",
     url: "/mastermind/hidden-facebook-interest",
     badge: "Private Mastermind #01",
   },
@@ -156,7 +156,7 @@ const steps = [
 
 const breakdownPages = [
   { path: "/mastermind/lto-funnel-scale", name: "How We Scaled an LTO Funnel to $847K", videoId: "Nr1WIDiWPNA" },
-  { path: "/mastermind/hidden-facebook-interest", name: "Hidden Facebook Interest Targeting Breakdown", videoId: "jjq9-FSD4iA" },
+  { path: "/mastermind/hidden-facebook-interest", name: "AI Client Acquisition Mastermind: Hidden Facebook Interest Preview", videoId: "jjq9-FSD4iA" },
   { path: "/mastermind/7-days-paid-trial", name: "7 Days Paid Trial Funnel Breakdown", videoId: "Hy1M7WbookU" },
 ];
 

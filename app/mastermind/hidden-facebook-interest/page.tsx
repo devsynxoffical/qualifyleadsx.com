@@ -394,12 +394,12 @@ export default function AiClientAcquisitionMastermindPage() {
   };
 
   const btnPrimary =
-    "group inline-flex items-center justify-center gap-2 rounded-full bg-amber px-8 py-4 text-sm font-semibold text-black shadow-[0_0_50px_-12px_rgba(255,200,87,0.6)] transition-transform hover:scale-[1.03]";
+    "group inline-flex items-center justify-center gap-2 rounded-full bg-lime px-8 py-4 text-sm font-semibold text-ink shadow-[0_0_50px_-12px_rgba(201,242,107,0.6)] transition-transform hover:scale-[1.03]";
   const btnSecondary =
-    "inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-8 py-4 text-sm font-semibold text-white transition-colors hover:border-amber hover:text-amber";
+    "inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-8 py-4 text-sm font-semibold text-white transition-colors hover:border-lime hover:text-lime";
 
   return (
-    <main id="main" className="flex min-h-screen flex-col bg-black text-white selection:bg-amber/30 selection:text-amber">
+    <main id="main" className="flex min-h-screen flex-col bg-ink text-white selection:bg-lime/30 selection:text-lime">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPage) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage(`${pageUrl}#faq`, faqs)) }} />
@@ -413,13 +413,13 @@ export default function AiClientAcquisitionMastermindPage() {
 
       {/* Hero */}
       <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-24">
-        <div className="pointer-events-none absolute left-1/2 top-0 h-[520px] w-[820px] -translate-x-1/2 rounded-full bg-amber/10 blur-[150px]" />
+        <div className="pointer-events-none absolute left-1/2 top-0 h-[520px] w-[820px] -translate-x-1/2 rounded-full bg-lime/10 blur-[150px]" />
         <div className="container-x relative z-10 grid items-center gap-14 lg:grid-cols-[1.15fr_1fr]">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-amber">QualifiedLeadsX · 6-week hands-on implementation mastermind</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-lime">QualifiedLeadsX · 6-week hands-on implementation mastermind</p>
             <h1 className="mt-6 text-4xl font-bold leading-[1.08] tracking-tight sm:text-6xl">
               AI Client Acquisition Mastermind:{" "}
-              <span className="text-amber">Build a Predictable Client Acquisition System.</span>
+              <span className="text-lime">Build a Predictable Client Acquisition System.</span>
             </h1>
             <p className="mt-6 text-xl font-semibold text-white/90">Attract ideal clients. Scale profitably.</p>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
@@ -440,8 +440,8 @@ export default function AiClientAcquisitionMastermindPage() {
                 ["12", "Live classes"],
                 ["14", "Implementation resources"],
               ].map(([v, l]) => (
-                <li key={l} className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
-                  <span className="block font-mono text-2xl font-bold text-amber">{v}</span>
+                <li key={l} className="rounded-2xl border border-line bg-panel p-4">
+                  <span className="block font-mono text-2xl font-bold text-lime">{v}</span>
                   <span className="mt-1 block text-[11px] uppercase tracking-wider text-white/60">{l}</span>
                 </li>
               ))}
@@ -449,13 +449,13 @@ export default function AiClientAcquisitionMastermindPage() {
           </div>
 
           {/* Visual: acquisition pipeline taught in the program */}
-          <div aria-hidden="true" className="rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.01] p-6 sm:p-8">
+          <div aria-hidden="true" className="rounded-3xl border border-line bg-gradient-to-b from-white/[0.06] to-white/[0.01] p-6 sm:p-8">
             <div className="flex items-center justify-between">
               <span className="font-mono text-[11px] uppercase tracking-widest text-white/50">Acquisition system</span>
               <span className="flex gap-1.5">
                 <span className="h-2 w-2 rounded-full bg-white/20" />
                 <span className="h-2 w-2 rounded-full bg-white/20" />
-                <span className="h-2 w-2 rounded-full bg-amber" />
+                <span className="h-2 w-2 rounded-full bg-lime" />
               </span>
             </div>
             <div className="mt-6 space-y-3">
@@ -473,7 +473,7 @@ export default function AiClientAcquisitionMastermindPage() {
                     <span className="font-mono text-white/40">{wk}</span>
                   </div>
                   <div className="mt-1.5 h-2.5 rounded-full bg-white/[0.06]">
-                    <div className="h-2.5 rounded-full bg-gradient-to-r from-amber to-amber/40" style={{ width: `${w}%` }} />
+                    <div className="h-2.5 rounded-full bg-gradient-to-r from-lime to-lime/40" style={{ width: `${w}%` }} />
                   </div>
                 </div>
               ))}
@@ -481,7 +481,7 @@ export default function AiClientAcquisitionMastermindPage() {
             <div className="mt-7 grid grid-cols-5 items-center gap-1 text-center text-[10px] uppercase tracking-wider text-white/60">
               {["Research", "Create", "Track", "Scale", "Profit"].map((s, i) => (
                 <div key={s} className="flex items-center justify-center gap-1">
-                  <span className={`rounded-md border px-1.5 py-1 ${i === 4 ? "border-amber text-amber" : "border-white/15"}`}>{s}</span>
+                  <span className={`rounded-md border px-1.5 py-1 ${i === 4 ? "border-lime text-lime" : "border-line"}`}>{s}</span>
                 </div>
               ))}
             </div>
@@ -490,10 +490,10 @@ export default function AiClientAcquisitionMastermindPage() {
       </section>
 
       {/* Program introduction */}
-      <section className="border-t border-white/10 bg-[#0a0a0a] py-20">
+      <section className="border-t border-line bg-base/60 py-20">
         <div className="container-x grid gap-10 lg:grid-cols-2">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.25em] text-amber">Program introduction</p>
+            <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">Program introduction</p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Not just another advertising course</h2>
           </div>
           <div className="space-y-4 text-base leading-relaxed text-white/70 sm:text-lg">
@@ -508,14 +508,14 @@ export default function AiClientAcquisitionMastermindPage() {
       </section>
 
       {/* Core benefits */}
-      <section className="border-t border-white/10 py-20">
+      <section className="border-t border-line py-20">
         <div className="container-x">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-amber">Core benefits</p>
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">Core benefits</p>
           <h2 className="mt-3 max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">What you&apos;ll be able to do after six weeks</h2>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {benefits.map((b) => (
-              <div key={b.title} className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-                <CheckCircle2 className="h-6 w-6 text-amber" />
+              <div key={b.title} className="rounded-2xl border border-line bg-panel p-6">
+                <CheckCircle2 className="h-6 w-6 text-lime" />
                 <h3 className="mt-4 text-lg font-bold">{b.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/65">{b.text}</p>
               </div>
@@ -525,26 +525,26 @@ export default function AiClientAcquisitionMastermindPage() {
       </section>
 
       {/* Curriculum */}
-      <section id="curriculum" className="scroll-mt-24 border-t border-white/10 bg-[#0a0a0a] py-20">
+      <section id="curriculum" className="scroll-mt-24 border-t border-line bg-base/60 py-20">
         <div className="container-x">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-amber">The complete 6-week curriculum</p>
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">The complete 6-week curriculum</p>
           <h2 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">What you will master, week by week</h2>
           <div className="mt-12 space-y-8">
             {curriculum.map((w) => (
-              <div key={w.week} className="rounded-3xl border border-white/10 bg-black p-6 sm:p-8">
+              <div key={w.week} className="rounded-3xl border border-line bg-ink p-6 sm:p-8">
                 <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                  <span className="font-mono text-sm font-bold uppercase tracking-widest text-amber">Week {w.week}</span>
+                  <span className="font-mono text-sm font-bold uppercase tracking-widest text-lime">Week {w.week}</span>
                   <h3 className="text-xl font-bold sm:text-2xl">{w.theme}</h3>
                 </div>
                 <div className="mt-6 grid gap-5 md:grid-cols-2">
                   {w.classes.map((c) => (
-                    <div key={c.number} className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6">
+                    <div key={c.number} className="rounded-2xl border border-line bg-panel p-5 sm:p-6">
                       <p className="font-mono text-xs uppercase tracking-wider text-white/50">Class {c.number}</p>
                       <h4 className="mt-1 text-lg font-semibold text-white">{c.title}</h4>
                       <ul className="mt-4 space-y-2">
                         {c.topics.map((t) => (
                           <li key={t} className="flex gap-2 text-sm text-white/70">
-                            <ArrowRight className="mt-0.5 h-4 w-4 shrink-0 text-amber" />
+                            <ArrowRight className="mt-0.5 h-4 w-4 shrink-0 text-lime" />
                             <span>{t}</span>
                           </li>
                         ))}
@@ -565,9 +565,9 @@ export default function AiClientAcquisitionMastermindPage() {
       </section>
 
       {/* Free preview: Class 1 */}
-      <section className="border-t border-white/10 pt-20">
+      <section className="border-t border-line pt-20">
         <div className="container-x max-w-3xl text-center">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-amber">Free preview · Class 1</p>
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">Free preview · Class 1</p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Hidden Facebook interest targeting</h2>
           <p className="mt-4 text-base leading-relaxed text-white/70 sm:text-lg">
             A taste of week 1: how hidden interest research, buyer-intent segmentation and creative rotation work together to reach high-ticket buyers on Meta.
@@ -577,14 +577,14 @@ export default function AiClientAcquisitionMastermindPage() {
       <VSL videoId="jjq9-FSD4iA" hideHeading />
 
       {/* What makes it different */}
-      <section className="border-t border-white/10 py-20">
+      <section className="border-t border-line py-20">
         <div className="container-x">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-amber">What makes this mastermind different</p>
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">What makes this mastermind different</p>
           <h2 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">Built around your campaigns, not slides</h2>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {differentiators.map(({ icon: Icon, title, text }) => (
-              <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-                <Icon className="h-7 w-7 text-amber" />
+              <div key={title} className="rounded-2xl border border-line bg-panel p-6">
+                <Icon className="h-7 w-7 text-lime" />
                 <h3 className="mt-4 text-lg font-bold">{title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/65">{text}</p>
               </div>
@@ -594,10 +594,10 @@ export default function AiClientAcquisitionMastermindPage() {
       </section>
 
       {/* Resources */}
-      <section className="border-t border-white/10 bg-[#0a0a0a] py-20">
+      <section className="border-t border-line bg-base/60 py-20">
         <div className="container-x grid gap-10 lg:grid-cols-[1fr_1.4fr]">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.25em] text-amber">Implementation resources</p>
+            <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">Implementation resources</p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Premium resources you keep using</h2>
             <p className="mt-4 text-base leading-relaxed text-white/70">
               SOPs, checklists, playbooks and templates for every stage of the system, plus weekly assignments that turn each class into action on your own account.
@@ -605,8 +605,8 @@ export default function AiClientAcquisitionMastermindPage() {
           </div>
           <ul className="grid gap-3 sm:grid-cols-2">
             {resources.map((r) => (
-              <li key={r} className="flex items-center gap-3 rounded-xl border border-white/10 bg-black px-4 py-3 text-sm text-white/85">
-                <FileText className="h-4 w-4 shrink-0 text-amber" />
+              <li key={r} className="flex items-center gap-3 rounded-xl border border-line bg-ink px-4 py-3 text-sm text-white/85">
+                <FileText className="h-4 w-4 shrink-0 text-lime" />
                 {r}
               </li>
             ))}
@@ -615,31 +615,31 @@ export default function AiClientAcquisitionMastermindPage() {
       </section>
 
       {/* Who it's for */}
-      <section className="border-t border-white/10 py-20">
+      <section className="border-t border-line py-20">
         <div className="container-x">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-amber">Who is this mastermind for?</p>
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">Who is this mastermind for?</p>
           <h2 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">For people who run, or rely on, paid acquisition</h2>
           <ul className="mt-10 flex flex-wrap gap-3">
             {audience.map((a) => (
-              <li key={a} className="rounded-full border border-white/15 bg-white/[0.03] px-5 py-2.5 text-sm text-white/85">
+              <li key={a} className="rounded-full border border-line bg-panel px-5 py-2.5 text-sm text-white/85">
                 {a}
               </li>
             ))}
           </ul>
           <p className="mt-8 max-w-3xl text-sm leading-relaxed text-white/60">
             Prefer to have the system built and run for you instead? See our{" "}
-            <a href="/meta-ads-agency" className="text-amber underline underline-offset-2">Meta ads agency</a> and{" "}
-            <a href="/lead-generation-agency" className="text-amber underline underline-offset-2">done-for-you lead generation</a> services.
+            <a href="/meta-ads-agency" className="text-lime underline underline-offset-2">Meta ads agency</a> and{" "}
+            <a href="/lead-generation-agency" className="text-lime underline underline-offset-2">done-for-you lead generation</a> services.
           </p>
         </div>
       </section>
 
       {/* Graduate support */}
-      <section className="border-t border-white/10 bg-[#0a0a0a] py-20">
+      <section className="border-t border-line bg-base/60 py-20">
         <div className="container-x grid items-center gap-10 lg:grid-cols-2">
           <div>
-            <GraduationCap className="h-9 w-9 text-amber" />
-            <p className="mt-4 font-mono text-xs uppercase tracking-[0.25em] text-amber">Graduate support program</p>
+            <GraduationCap className="h-9 w-9 text-lime" />
+            <p className="mt-4 font-mono text-xs uppercase tracking-[0.25em] text-lime">Graduate support program</p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">You don&apos;t graduate alone</h2>
           </div>
           <div className="space-y-4 text-base leading-relaxed text-white/70 sm:text-lg">
@@ -664,9 +664,9 @@ export default function AiClientAcquisitionMastermindPage() {
       />
 
       {/* Results */}
-      <section id="results" className="border-t border-white/10 bg-[#0a0a0a] py-20">
+      <section id="results" className="border-t border-line bg-base/60 py-20">
         <div className="container-x">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-amber">Results</p>
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">Results</p>
           <h2 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">Results from the system taught in this mastermind</h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-white/70">
             Documented client results from the same Meta ads, qualification, tracking and scaling methods covered in the 12 classes. Each one links to the full case study.
@@ -676,10 +676,10 @@ export default function AiClientAcquisitionMastermindPage() {
               <Link
                 key={c.slug}
                 href={`/case-studies/${c.slug}`}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-black transition-colors hover:border-amber/60"
+                className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-ink transition-colors hover:border-lime/60"
               >
                 {c.image && (
-                  <div className="relative aspect-[4/5] overflow-hidden bg-white/[0.03]">
+                  <div className="relative aspect-[4/5] overflow-hidden bg-panel">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={c.image}
@@ -691,9 +691,9 @@ export default function AiClientAcquisitionMastermindPage() {
                   </div>
                 )}
                 <div className="flex flex-1 flex-col p-6">
-                  <h3 className="text-lg font-bold text-amber">{c.title}</h3>
+                  <h3 className="text-lg font-bold text-lime">{c.title}</h3>
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-white/70">{c.description}</p>
-                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-white group-hover:text-amber">
+                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-white group-hover:text-lime">
                     Read the case study <ArrowUpRight className="h-4 w-4" />
                   </span>
                 </div>
@@ -701,7 +701,7 @@ export default function AiClientAcquisitionMastermindPage() {
             ))}
           </div>
           <div className="mt-8 text-center">
-            <Link href="/case-studies" className="text-sm font-semibold text-amber underline underline-offset-4">
+            <Link href="/case-studies" className="text-sm font-semibold text-lime underline underline-offset-4">
               See all case studies
             </Link>
           </div>
@@ -710,10 +710,10 @@ export default function AiClientAcquisitionMastermindPage() {
       <Testimonials />
 
       {/* Final CTA */}
-      <section className="relative overflow-hidden border-t border-white/10 py-24">
-        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[420px] w-[720px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-amber/10 blur-[140px]" />
+      <section className="relative overflow-hidden border-t border-line py-24">
+        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[420px] w-[720px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime/10 blur-[140px]" />
         <div className="container-x relative z-10 text-center">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-amber">Build your client acquisition advantage</p>
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-lime">Build your client acquisition advantage</p>
           <h2 className="mx-auto mt-4 max-w-3xl text-3xl font-bold tracking-tight sm:text-5xl">Stop relying on guesswork.</h2>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg">
             Build a predictable system to attract, qualify, convert and acquire ideal clients using modern advertising strategies, AI automation, conversion intelligence and advanced scaling methodologies.

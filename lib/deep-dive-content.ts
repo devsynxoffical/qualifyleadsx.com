@@ -427,3 +427,98 @@ export const leadGenAgencyDeepDive: DeepDiveContent = {
     { q: "Is a lead generation agency worth it?", a: "It is worth it when the agency is measured on booked calls and clients, you own the assets, and your offer already sells. Compare the agency fee plus ad spend with the cost per client it produces and the lifetime value of that client." },
   ],
 };
+
+export const solarDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Solar appointments",
+    title: "Buying solar appointments vs generating your own",
+    paragraphs: [
+      "Many solar installers start by buying solar appointments: preset, \"guaranteed\" or pay-per-appointment slots from a lead vendor. It's fast, but the appointment is usually set from a lead the vendor also sells or recycles, and you have no control over how it was qualified. QualifiedLeadsX takes the other route: we run Meta ads in your own ad account, qualify homeowners before booking, and set exclusive residential solar appointments that only your reps see.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "The difference",
+      title: "Bought appointments vs your own appointment engine",
+      items: [],
+      table: {
+        head: ["", "Bought / preset solar appointments", "Your own appointment engine"],
+        rows: [
+          ["Exclusivity", "Often shared, resold or recycled", "Exclusive to your company"],
+          ["Qualification", "Set by the vendor's script", "Your criteria: homeownership, roof, bill size, credit"],
+          ["\"Guaranteed\"", "Usually means a refund or replacement for no-shows, not a sale", "You own the funnel and fix the leak instead"],
+          ["Data and assets", "The vendor keeps them", "Ad account, funnel, CRM and data stay yours"],
+          ["Cost over time", "Price per appointment rarely falls", "Cost per appointment falls as creative and targeting improve"],
+        ],
+      },
+    },
+    {
+      eyebrow: "Results",
+      title: "What solar campaigns have produced",
+      lead: "Two recent solar campaigns we ran on Meta:",
+      items: [
+        { title: "232 qualified homeowner leads in 15 days", text: "For roughly $6,000 in ad spend (about $26 per lead), from homeowners actively looking to switch to solar." },
+        { title: "300 OTP-verified leads in 10 days, Texas", text: "At $14.71 per lead and a $50 CPM, while the client reported paying $80 to $100 CPMs before. Phone verification removes fake and mistyped numbers before a setter calls." },
+      ],
+      note: "Model what an appointment is worth to you with the [cost per booked call calculator](/tools/cost-per-booked-call-calculator), and see how fast follow-up protects sit rates on [speed to lead](/speed-to-lead).",
+    },
+    {
+      eyebrow: "How we set solar appointments",
+      title: "From ad to sat appointment",
+      numbered: true,
+      items: [
+        { title: "Utility-bill angles, not hype", text: "Ads lead with rising electricity costs and honest savings, which attracts homeowners who have already done the maths." },
+        { title: "Qualify before booking", text: "Homeownership, roof type, monthly bill and credit range are confirmed in the form or on the first call, so reps don't drive to renters." },
+        { title: "Phone verification", text: "OTP verification keeps fake numbers out of the CRM." },
+        { title: "Book within minutes", text: "Qualified homeowners get a call and text within 5 minutes and book an in-home or virtual consultation. See [appointment setting](/appointment-setting)." },
+        { title: "Confirm and remind", text: "Reminders by SMS and WhatsApp before the appointment protect sit rates." },
+      ],
+    },
+  ],
+  faqs: [
+    { q: "Should I buy solar appointments or generate my own?", a: "Buying appointments is fast but usually shared or recycled, and you can't control qualification. Generating your own with Meta ads and an in-house or outsourced setter gives you exclusive appointments, your own data, and a cost per appointment that falls as the campaign improves." },
+    { q: "What does \"guaranteed solar appointments\" mean?", a: "It usually means the vendor will refund or replace appointments that don't sit, not that they will close. Ask how the homeowner was qualified, whether the lead is exclusive, and what counts as a valid appointment before you buy." },
+    { q: "How much do solar leads cost on Facebook?", a: "In two recent campaigns we ran, solar leads cost about $26 (232 leads from roughly $6,000) and $14.71 (300 phone-verified leads in Texas). Costs vary by state, season and how strictly leads are qualified." },
+  ],
+};
+
+export const setterVsVaDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Virtual appointment setters",
+    title: "What is a virtual appointment setter?",
+    paragraphs: [
+      "A virtual appointment setter is a remote team member whose only job is to contact new leads, qualify them and book them into your sales calendar, by phone, SMS, WhatsApp or DM. A virtual assistant (VA) is a remote generalist who handles admin: inbox, scheduling, data entry and research. Some VAs also set appointments, which is where most hiring mistakes start: setting appointments for a high-ticket offer is a sales skill, not an admin task.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Side by side",
+      title: "VA appointment setter vs dedicated appointment setter",
+      items: [],
+      table: {
+        head: ["", "Virtual assistant setting appointments", "Dedicated appointment setter"],
+        rows: [
+          ["Main job", "Admin, with booking as one task", "Contacting, qualifying and booking leads"],
+          ["Speed to lead", "Depends on what else is in the queue", "Measured on replying within 5 minutes"],
+          ["Qualification", "Usually books whoever asks", "Confirms budget, authority and timeline first"],
+          ["Measured on", "Tasks completed", "Booking rate, show rate and qualified rate"],
+          ["Best for", "Low lead volume, simple offers, admin-heavy roles", "High-ticket offers and steady lead flow"],
+        ],
+      },
+    },
+    {
+      eyebrow: "Choosing",
+      title: "When a VA is enough, and when you need a setter",
+      items: [
+        { title: "A VA is enough when", text: "Leads arrive slowly, the offer is low-priced, and booking is mostly scheduling people who already want to buy." },
+        { title: "You need a setter when", text: "You sell a high-ticket offer, leads arrive daily, and every booked call costs real ad spend. A setter protects your closer's time and your show rate." },
+        { title: "Or combine them", text: "AI follow-up handles the first reply in seconds; a setter handles the conversations; a VA handles admin. See [AI speed to lead](/speed-to-lead)." },
+      ],
+      note: "Hiring one? Read [how to hire an appointment setter](/blog/how-to-hire-an-appointment-setter) and compare [setter compensation models](/blog/appointment-setter-compensation-models).",
+    },
+  ],
+  faqs: [
+    { q: "What is a virtual appointment setter?", a: "A virtual appointment setter is a remote team member who contacts new leads, qualifies them on budget, authority and timeline, and books qualified prospects into a closer's calendar. Unlike a general virtual assistant, they are measured on booking rate, show rate and qualified rate." },
+    { q: "Can a virtual assistant be an appointment setter?", a: "Yes, for simple offers and low lead volume. For high-ticket offers a VA usually needs sales training, a qualification script and clear targets, otherwise they tend to book anyone who asks and show rates suffer." },
+  ],
+};

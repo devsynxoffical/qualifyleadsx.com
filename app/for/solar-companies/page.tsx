@@ -7,16 +7,18 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { solarDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Solar Appointment Setting | QualifiedLeadsX",
+  title: "Solar Appointment Setting: Exclusive, Pre-Qualified Leads",
   description:
     "Exclusive qualified solar appointments with verified homeowners. Credit-checked ($650+ FICO), electric bill qualified ($150+/mo), with 80%+ sit rates.",
   alternates: {
     canonical: `${site.url}/for/solar-companies`,
   },
   openGraph: {
-    title: "Solar Appointment Setting | QualifiedLeadsX",
+    title: "Solar Appointment Setting: Exclusive, Pre-Qualified Leads",
     description:
       "Exclusive qualified solar appointments with verified homeowners. Credit-checked ($650+ FICO) and electric bill qualified.",
     url: `${site.url}/for/solar-companies`,
@@ -42,6 +44,7 @@ const faqs = [
     q: "What is the typical cost per qualified solar sit?",
     a: "Depending on utility territory and net metering policy (NEM 3.0 vs 1-to-1 credit states), cost per qualified sit-down ranges from $120 to $220.",
   },
+  ...solarDeepDive.faqs,
 ];
 
 export default function SolarCompaniesPage() {
@@ -106,7 +109,7 @@ export default function SolarCompaniesPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Solar appointment setting</strong> pairs honest utility rate hedge advertising with strict qualification (credit 650+, electric bill \$150+/mo, single-family homeowner) before booking in-home or virtual consultations. This eliminates wasted rep drive-time and maintains sit rates above 78%.
@@ -148,6 +151,8 @@ export default function SolarCompaniesPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={solarDeepDive} />
 
         <ProofStack variant="full" />
 

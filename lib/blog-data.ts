@@ -2918,7 +2918,7 @@ export const blogPosts: BlogPost[] = [
     seoTitle: "Meta Ads for Coaches Guide: Scale to $100K/Mo",
     description: "The complete step-by-step Meta Ads guide for high-ticket coaches. Campaign structures, creative formats, budget allocation, and scaling tactics.",
     publishedAt: "2026-11-05",
-    updatedAt: "2026-11-05",
+    updatedAt: "2026-11-10",
     readTime: "12 min read",
     coverImage: "/images2/showreel/shot_10_roas_curve.webp",
     author: {
@@ -2954,6 +2954,23 @@ export const blogPosts: BlogPost[] = [
             "For full operational steps to break through revenue plateaus, read our comprehensive roadmap on [scaling from $100K to $500K/month as a coaching business](/blog/scaling-from-100k-to-500k-coaching), and discover our tailored solutions for [lead generation for coaches](/for/coaches).",
           ],
         },
+        {
+          "heading": "Best Practices for Facebook Ads Management for Coaches",
+          "subheading": "The checklist we run on every coaching account",
+          "body": [
+            "Good Facebook ads management for coaches is less about secret targeting and more about a disciplined weekly routine. These are the practices that matter most for coaching offers priced from about $3,000 upwards:"
+          ],
+          "bulletList": [
+            "Optimise for an application or booked call, not for cheap leads. Pass the event back with the Conversions API so Meta learns who actually books.",
+            "Let creative do the targeting: broad audiences, with hooks that name who the program is for and the result it delivers. See [broad targeting for high-ticket offers](/blog/meta-ads-for-high-ticket-b2b-broad-targeting).",
+            "Ship new creative every week: client stories, founder-to-camera videos and objection-handling ads. Coaching ads fatigue fast.",
+            "Pre-sell before the call with a short VSL and an application, so the calendar fills with people who can afford the program.",
+            "Reply to every applicant within 5 minutes by SMS, WhatsApp or call. See [speed to lead](/speed-to-lead).",
+            "Judge results on cost per booked call and cost per client over two to four weeks, not on day-three cost per lead.",
+            "Respect Meta's personal-attributes and health policies: speak to the situation, not to the person's flaws, especially for fitness and wellness coaching.",
+            "Set the budget from your numbers, not a guess. The [Meta ads budget calculator](/tools/meta-ads-budget-calculator) works backwards from clients wanted, close rate and show rate."
+          ]
+        }
       ],
       conclusion: "Mastering paid traffic gives coaches the autonomy to scale beyond referral dependence.",
       faqs: [
@@ -2965,6 +2982,10 @@ export const blogPosts: BlogPost[] = [
             href: "/for/coaches",
           },
         },
+        {
+          "q": "What are the best practices for Facebook ads management for coaches?",
+          "a": "Optimise for applications or booked calls rather than cheap leads, use broad audiences with creative that names who the program is for, refresh creative weekly, pre-sell with a short video and an application, reply to applicants within 5 minutes, and judge results on cost per booked call and cost per client over several weeks."
+        }
       ],
     },
   },

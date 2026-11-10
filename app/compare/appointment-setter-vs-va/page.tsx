@@ -7,16 +7,18 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { setterVsVaDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Appointment Setter vs Virtual Assistant | QualifiedLeadsX",
+  title: "Appointment Setter vs Virtual Assistant (VA): Which to Hire",
   description:
     "Appointment setter vs virtual assistant (VA): compare conversion rates, compensation, qualification skills, and sales impact for high-ticket offers.",
   alternates: {
     canonical: `${site.url}/compare/appointment-setter-vs-va`,
   },
   openGraph: {
-    title: "Appointment Setter vs Virtual Assistant | QualifiedLeadsX",
+    title: "Appointment Setter vs Virtual Assistant (VA): Which to Hire",
     description:
       "Appointment setter vs virtual assistant: compare conversion rates, compensation, and sales impact.",
     url: `${site.url}/compare/appointment-setter-vs-va`,
@@ -70,6 +72,7 @@ const faqs = [
     q: "Can QualifiedLeadsX place and manage appointment setters for us?",
     a: "Yes. QualifiedLeadsX provides fully trained, vetted, and supervised appointment setters embedded into your CRM, managing all speed-to-lead and DM triage without founder management headaches.",
   },
+  ...setterVsVaDeepDive.faqs,
 ];
 
 export default function AppointmentSetterVsVaPage() {
@@ -138,7 +141,7 @@ export default function AppointmentSetterVsVaPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 An <strong>appointment setter is a specialized sales professional</strong> trained in consultative qualification, objection handling, and speed-to-lead triage to book sales calls. A <strong>virtual assistant (VA) is an administrative support worker</strong> who executes repetitive tasks. For high-ticket offers, setters convert 3x more calls and protect calendar quality.
@@ -190,6 +193,8 @@ export default function AppointmentSetterVsVaPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={setterVsVaDeepDive} />
 
         <ProofStack variant="full" />
 

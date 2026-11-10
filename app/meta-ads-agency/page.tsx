@@ -80,7 +80,7 @@ const metaAgencyFaqs = [
   },
   {
     q: "What ad spend budget is required to work with QualifiedLeadsX?",
-    a: "Our clients typically begin with a minimum ad spend budget of $2,000 to $5,000 per month on Meta (Facebook & Instagram). This volume allows the Meta machine-learning algorithm to gather sufficient conversion data, optimize creative variations, and deliver a predictable flow of 25–50 qualified appointments every month.",
+    a: "Our clients typically begin with a minimum ad spend budget of $2,000 to $5,000 per month on Meta (Facebook & Instagram). This volume allows the Meta machine-learning algorithm to gather sufficient conversion data, optimize creative variations, and deliver a predictable flow of 25–50 qualified appointments every month. You can estimate the budget for your own targets with our free Meta ads budget calculator.",
   },
   {
     q: "Do Meta ads still work for B2B services, consultants, and high-ticket coaches in 2026?",

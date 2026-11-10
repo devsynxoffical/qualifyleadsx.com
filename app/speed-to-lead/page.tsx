@@ -20,6 +20,8 @@ import {
   Activity,
 } from "lucide-react";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { speedToLeadDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
   title: "AI Speed to Lead: Reply to Every Lead in Under 5 Minutes",
@@ -97,6 +99,7 @@ const faqs = [
     q: "Does speed to lead integrate with my existing CRM?",
     a: "Yes. Our workflows integrate with GoHighLevel, HubSpot, Close, Salesforce, and custom webhooks, ensuring automatic contact syncing and calendar routing.",
   },
+  ...speedToLeadDeepDive.faqs,
 ];
 
 export default function SpeedToLeadPage() {
@@ -269,6 +272,8 @@ export default function SpeedToLeadPage() {
       </section>
 
       <ProofStack variant="full" />
+
+      <DeepDive content={speedToLeadDeepDive} />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

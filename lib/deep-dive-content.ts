@@ -277,3 +277,153 @@ export const appointmentSettingDeepDive: DeepDiveContent = {
     { q: "Is appointment setting worth it for small teams?", a: "If you get more leads than you can contact within 5 minutes, or more than about a third of your booked calls don't show, appointment setting usually pays for itself by lifting the number of qualified calls your closers take." },
   ],
 };
+
+export const highTicketDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "High-ticket vs low-ticket",
+    title: "Why high-ticket lead generation needs a different system",
+    paragraphs: [
+      "High-ticket lead generation means generating qualified sales conversations for offers priced at roughly $3,000 and above, where the sale happens on a call rather than at a checkout. Because each client is worth thousands, the goal is not the most leads at the lowest cost. It is the most qualified calls at a cost per client your margins can carry.",
+      "That changes every part of the system: the offer and creative have to pre-sell, the funnel has to filter, follow-up has to be immediate, and success is measured in booked calls, show rate and signed clients rather than cost per lead.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "The difference in practice",
+      title: "High-ticket vs low-ticket lead generation",
+      items: [],
+      table: {
+        head: ["", "Low-ticket lead generation", "High-ticket lead generation"],
+        rows: [
+          ["Goal", "Cheap leads or direct purchases", "Qualified sales calls and signed clients"],
+          ["Main metric", "Cost per lead", "Cost per booked call and cost per client"],
+          ["Funnel", "Lead form or checkout", "VSL or case-study page, application, booking"],
+          ["Follow-up", "Email sequence", "Reply in under 5 minutes by SMS, WhatsApp, call"],
+          ["Qualification", "Little or none", "Budget, authority and timeline before booking"],
+          ["Typical close rate", "Not applicable", "24–31% on setter-qualified calls for $5K–$10K offers ([benchmarks](/benchmarks/close-rate))"],
+        ],
+      },
+    },
+    {
+      eyebrow: "Channels",
+      title: "Which channels work for high-ticket offers",
+      lead: "Most of our clients sell to owner-led businesses and individuals with buying power, so we usually start on Meta and add other channels once the funnel converts.",
+      items: [
+        { title: "Meta (Facebook and Instagram) ads", text: "The largest reach and the fastest feedback loop. Creative does the targeting; the application does the filtering. See [Meta ads agency](/meta-ads-agency)." },
+        { title: "Google search ads", text: "Captures people already searching for a solution, at a higher cost per click and with less volume for niche offers. See [Meta ads vs Google ads for high-ticket](/compare/meta-ads-vs-google-ads-high-ticket)." },
+        { title: "LinkedIn ads", text: "Precise job-title targeting for enterprise deals, at a much higher cost per lead." },
+        { title: "Cold outreach and referrals", text: "Useful supplements, but harder to scale predictably. See [cold outreach vs paid traffic](/blog/cold-outreach-vs-paid-traffic-high-ticket-b2b)." },
+      ],
+    },
+    {
+      eyebrow: "Who it's for",
+      title: "Industries we generate high-ticket leads for",
+      lead: "High-ticket lead generation works where one client is worth several thousand dollars and the sale happens on a call: [coaches](/for/coaches), [consultants](/for/consultants), [marketing agencies](/for/agencies), [B2B service firms](/for/b2b-services), [B2B SaaS](/for/saas), [med spas](/for/med-spas), [financial advisors](/for/financial-advisors) and [law firms](/for/law-firms). See [all industries](/for).",
+      items: [],
+    },
+    {
+      eyebrow: "What it costs",
+      title: "What a high-ticket booked call typically costs",
+      items: [],
+      table: {
+        head: ["Offer size", "Cost per attended call", "Setter-qualified close rate"],
+        rows: [
+          ["~$3,000", "$95–$130", "28–36%"],
+          ["~$5,000", "$120–$160", "24–31% ($5K–$10K)"],
+          ["$10,000+", "$180–$280", "19–26% ($10K–$25K)"],
+        ],
+      },
+      note: "From our [cost per booked call](/benchmarks/cost-per-booked-call) and [close rate](/benchmarks/close-rate) benchmarks. Model your own with the [cost per booked call calculator](/tools/cost-per-booked-call-calculator). We work remotely with clients in the US, UK, Canada and Australia.",
+    },
+  ],
+  faqs: [
+    { q: "What counts as a high-ticket lead?", a: "A high-ticket lead is a prospect for an offer priced at roughly $3,000 or more who has shown interest and passed basic qualification on budget, authority and timeline. For high-ticket offers the useful unit is a qualified booked call, not a raw lead." },
+    { q: "Which industries are best for high-ticket lead generation?", a: "Coaching, consulting, marketing agencies, B2B services, B2B SaaS, med spas and aesthetics, financial advisors, law firms and other businesses where one client is worth thousands and the sale happens on a call." },
+  ],
+};
+
+export const speedToLeadDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Implementation",
+    title: "How to measure and improve speed to lead",
+    paragraphs: [
+      "Speed to lead is the time between a lead submitting a form and your first meaningful response. For high-ticket offers the target is under 5 minutes, every time, including nights and weekends. The research behind that number is in our [speed to lead statistics](/blog/speed-to-lead-statistics-response-time); this section covers how to measure it and how to hit it.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Measure it",
+      title: "How to calculate your speed to lead",
+      numbered: true,
+      items: [
+        { title: "Capture two timestamps", text: "The form submission time and the first outbound touch (call, SMS, WhatsApp or email) that the lead could actually see." },
+        { title: "Use the median, not the average", text: "One lead answered after three days distorts an average. The median shows what a typical lead experiences." },
+        { title: "Split by hour of day", text: "Most teams are fast at 11 am and slow at 9 pm. Report working hours and out-of-hours separately." },
+        { title: "Track contact rate alongside it", text: "A fast automated text that nobody replies to is not a conversation. Measure how many leads you actually reach." },
+      ],
+    },
+    {
+      eyebrow: "Benchmarks",
+      title: "What good speed to lead looks like",
+      items: [],
+      table: {
+        head: ["First response", "What it usually means"],
+        rows: [
+          ["Under 5 minutes", "Lead is still on their phone and thinking about you. Highest contact and booking rates."],
+          ["10–30 minutes", "Contact rate drops sharply; many leads are now talking to a competitor."],
+          ["1–4 hours", "Lead has moved on; most attempts go to voicemail."],
+          ["24+ hours", "Lead is effectively cold. Expect low contact and show rates."],
+        ],
+      },
+    },
+    {
+      eyebrow: "Channels",
+      title: "Which channel to reply on first",
+      items: [
+        { title: "SMS", text: "Fast to read and easy to reply to. A good first touch within seconds." },
+        { title: "WhatsApp", text: "Preferred in many markets and strong for reminders. See [WhatsApp lead nurture](/whatsapp-lead-nurture)." },
+        { title: "Phone call", text: "Highest booking rate when answered. Best within the first few minutes, triggered by the CRM." },
+        { title: "Email", text: "Useful for the record and for details, but rarely the fastest way to start a conversation." },
+      ],
+      note: "Pair fast response with qualification and booking: see [appointment setting](/appointment-setting) and [CRM automation](/crm-automation).",
+    },
+  ],
+  faqs: [
+    { q: "What is a good speed to lead time?", a: "Under 5 minutes for the first response, for every lead, including outside working hours. Beyond about 30 minutes contact and booking rates fall sharply, which is why automated first responses are standard for high-ticket offers." },
+    { q: "How do you calculate speed to lead?", a: "Subtract the form submission time from the time of the first outbound touch the lead could see, for every lead, and report the median. Split the result by working hours and out-of-hours to find where leads are waiting." },
+  ],
+};
+
+export const leadGenAgencyDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Done-for-you",
+    title: "What a done-for-you lead generation agency includes",
+    paragraphs: [
+      "A done-for-you lead generation agency builds and runs the whole path from ad to booked sales call, so your team only takes calls. With QualifiedLeadsX that means offer positioning, Meta ads and creative, a 3 to 5 page funnel, AI follow-up in under 5 minutes, qualification, CRM and calendar booking. You own every asset, and engagements carry a 90-day written guarantee.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "How to choose",
+      title: "How to choose a lead generation agency",
+      numbered: true,
+      items: [
+        { title: "Ask what they are measured on", text: "Cost per lead is easy to game. Look for agencies that report cost per booked call, show rate and cost per client." },
+        { title: "Check who owns the assets", text: "Ad account, pixel, funnel, CRM and creatives should be in your name. If you leave, you should keep everything." },
+        { title: "Look at follow-up, not just ads", text: "Most lost revenue happens after the click. Ask how fast leads are contacted and how they are qualified." },
+        { title: "Ask for case studies in your price range", text: "A result for a $97 product says little about a $10,000 service. See our [case studies](/case-studies)." },
+        { title: "Understand the pricing model", text: "Retainer, pay-per-lead, pay-per-appointment and performance models each shift risk differently. See [how much a lead generation agency costs](/blog/how-much-does-a-lead-generation-agency-cost)." },
+        { title: "Read the guarantee", text: "Get the terms in writing: what is promised, by when, and what happens if it isn't met." },
+      ],
+    },
+    {
+      eyebrow: "Who it's for",
+      title: "Who a done-for-you lead generation agency suits",
+      lead: "Businesses with a proven offer of about $3,000 or more, doing $10,000+ a month, that want a predictable flow of qualified calls without hiring an in-house marketing team: [coaches](/for/coaches), [consultants](/for/consultants), [agencies](/for/agencies), [B2B services](/for/b2b-services) and more in [all industries](/for). If you'd rather build it yourself with guidance, see the [AI Client Acquisition Mastermind](/mastermind/hidden-facebook-interest).",
+      items: [],
+    },
+  ],
+  faqs: [
+    { q: "Is a lead generation agency worth it?", a: "It is worth it when the agency is measured on booked calls and clients, you own the assets, and your offer already sells. Compare the agency fee plus ad spend with the cost per client it produces and the lifetime value of that client." },
+  ],
+};

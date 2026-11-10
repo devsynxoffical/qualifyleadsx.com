@@ -20,6 +20,8 @@ import {
   Layers,
 } from "lucide-react";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { leadGenAgencyDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
   title: "Done-for-You Lead Generation Agency: How It Works",
@@ -105,6 +107,7 @@ const faqs = [
     q: "How quickly does the client acquisition system go live?",
     a: "Our done-for-you sprint spans 14 to 21 business days from kickoff to live ad delivery, VSL deployment, and initial qualified calls appearing on your sales calendar.",
   },
+  ...leadGenAgencyDeepDive.faqs,
 ];
 
 export default function LeadGenAgencyPage() {
@@ -169,7 +172,7 @@ export default function LeadGenAgencyPage() {
           </div>
 
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-fog leading-[1.1]">
-            Lead Generation Agency for{" "}
+            Done-for-You Lead Generation Agency for{" "}
             <span className="text-gradient-lime">High-Ticket B2B & Coaches</span>
           </h1>
 
@@ -261,6 +264,8 @@ export default function LeadGenAgencyPage() {
       </section>
 
       <ProofStack variant="full" />
+
+      <DeepDive content={leadGenAgencyDeepDive} />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

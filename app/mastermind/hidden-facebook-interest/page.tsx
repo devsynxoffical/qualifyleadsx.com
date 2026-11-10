@@ -42,7 +42,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 const PATH = "/mastermind/hidden-facebook-interest";
 const TITLE = "AI Client Acquisition Mastermind: 6-Week Meta Ads Program";
 const DESCRIPTION =
-  "A 6-week, hands-on mastermind: Meta ads, hidden interest research, AI advertising, tracking, scaling and unit economics, built on your own campaigns. Apply now.";
+  "A 6-week, hands-on mastermind: Meta ads, hidden interest research, AI ads, tracking, scaling and unit economics, built on your own campaigns. Apply now.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

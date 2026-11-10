@@ -20,6 +20,8 @@ import {
   Filter,
 } from "lucide-react";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { highTicketDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
   title: "High Ticket Lead Generation for $3K–$25K Offers",
@@ -93,6 +95,7 @@ const faqs = [
     q: "How many qualified calls can my team handle monthly?",
     a: "Our scalable infrastructure is calibrated to your sales capacity, typically delivering between 30 and 50 qualified appointments per month per closer.",
   },
+  ...highTicketDeepDive.faqs,
 ];
 
 export default function HighTicketLeadGenPage() {
@@ -253,6 +256,8 @@ export default function HighTicketLeadGenPage() {
       </section>
 
       <ProofStack variant="full" />
+
+      <DeepDive content={highTicketDeepDive} />
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

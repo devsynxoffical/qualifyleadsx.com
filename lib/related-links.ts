@@ -36,6 +36,7 @@ export const tools: Link[] = [
   { href: "/tools/cost-per-booked-call-calculator", label: "Cost per booked call calculator" },
   { href: "/tools/ltv-cac-calculator", label: "LTV to CAC calculator" },
   { href: "/tools/roas-calculator", label: "ROAS & break-even calculator" },
+  { href: "/tools/meta-ads-budget-calculator", label: "Meta ads budget calculator" },
   { href: "/tools/show-rate-calculator", label: "Show-up rate calculator" },
   { href: "/tools/lead-scoring-template", label: "Lead scoring template" },
 ];
@@ -68,7 +69,7 @@ const guidesFor: Record<string, string[]> = {
   "/high-ticket-lead-generation": ["high-ticket-lead-generation-strategies", "high-ticket-sales-how-to-get-high-ticket-clients"],
   "/b2b-lead-generation": ["cold-outreach-vs-paid-traffic-high-ticket-b2b", "b2b-client-acquisition-cost-cac-benchmarks-2026"],
   "/meta-ads-agency": ["meta-ads-for-high-ticket-b2b-broad-targeting", "how-much-does-meta-ads-cost"],
-  "/appointment-setting": ["b2b-appointment-setting-vs-in-house-sdr-teams", "how-to-qualify-leads"],
+  "/appointment-setting": ["how-to-hire-an-appointment-setter", "b2b-appointment-setting-vs-in-house-sdr-teams"],
   "/speed-to-lead": ["speed-to-lead-statistics-response-time", "speed-to-lead"],
   "/vsl-funnels": ["how-to-write-a-vsl-script-12-minute-structure", "the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition"],
   "/whatsapp-lead-nurture": ["ai-whatsapp-lead-nurture-pipeline-high-ticket", "whatsapp-marketing-for-consultants"],
@@ -80,6 +81,7 @@ const guidesFor: Record<string, string[]> = {
   "/tools/ltv-cac-calculator": ["b2b-client-acquisition-cost-cac-benchmarks-2026", "scaling-from-100k-to-500k-coaching"],
   "/tools/roas-calculator": ["b2b-roas-benchmarks-qualified-appointment-generation", "how-much-does-meta-ads-cost"],
   "/tools/show-rate-calculator": ["how-to-increase-show-rate", "why-leads-dont-show-up"],
+  "/tools/meta-ads-budget-calculator": ["how-much-does-meta-ads-cost", "meta-ads-for-high-ticket-b2b-broad-targeting"],
   "/tools/lead-scoring-template": ["how-to-qualify-leads", "automated-lead-qualification-system-high-ticket"],
   "/benchmarks/close-rate": ["high-ticket-sales-training-framework", "b2b-sales-closer-job-description"],
   "/benchmarks/cost-per-booked-call": ["how-much-does-a-lead-generation-agency-cost", "b2b-roas-benchmarks-qualified-appointment-generation"],
@@ -95,6 +97,7 @@ const servicesForTool: Record<string, string[]> = {
   "/tools/ltv-cac-calculator": ["/lead-generation-agency", "/high-ticket-lead-generation"],
   "/tools/roas-calculator": ["/meta-ads-agency", "/vsl-funnels"],
   "/tools/show-rate-calculator": ["/appointment-setting", "/whatsapp-lead-nurture"],
+  "/tools/meta-ads-budget-calculator": ["/meta-ads-agency", "/appointment-setting"],
   "/tools/lead-scoring-template": ["/appointment-setting", "/crm-automation"],
   "/benchmarks/close-rate": ["/outsourced-sales-closers", "/appointment-setting"],
   "/benchmarks/cost-per-booked-call": ["/appointment-setting", "/meta-ads-agency"],
@@ -123,6 +126,8 @@ const industryGuides: Record<string, string[]> = {
   "b2b-services": ["b2b-client-acquisition-cost-cac-benchmarks-2026", "cold-outreach-vs-paid-traffic-high-ticket-b2b"],
   saas: ["b2b-appointment-setting-vs-in-house-sdr-teams", "meta-advantage-plus-for-b2b"],
   "recruitment-agencies": ["b2b-appointment-setting-vs-in-house-sdr-teams", "how-to-qualify-leads"],
+  "home-improvement": ["facebook-ads-for-hvac-companies", "how-to-increase-show-rate"],
+  "solar-companies": ["facebook-ads-for-hvac-companies", "how-to-qualify-leads"],
 };
 const defaultGuides = ["high-ticket-lead-generation-strategies", "how-to-qualify-leads"];
 
@@ -165,10 +170,15 @@ function industryGroups(path: string): Group[] | null {
       ? rotate(appointmentSettingIndustrySlugs).map((s) => ({ href: `/appointment-setting-for-${s}`, label: `Appointment setting for ${industryLabel(s).toLowerCase()}` }))
       : [];
   const siblings = [...sameService, ...industryLinksFor(slug, 6)].slice(0, 6);
+  // Case studies whose curated "related" pages include this industry.
+  const results: Link[] = Object.entries(caseStudyMeta)
+    .filter(([, m]) => m.related?.some((r) => r.href === `/for/${slug}` || r.href === path))
+    .map(([cs, m]) => ({ href: `/case-studies/${cs}`, label: m.title }));
   return [
     { title: `Services for ${industryLabel(slug).toLowerCase()}`, links: svc },
     { title: "Similar industries", links: siblings },
     { title: "Guides", links: guides(industryGuides[slug] ?? defaultGuides) },
+    ...(results.length ? [{ title: "Results in this industry", links: results }] : []),
   ];
 }
 
@@ -189,7 +199,7 @@ function serviceGroups(path: string): Group[] | null {
   const toolPicks = path === "/appointment-setting" || path === "/speed-to-lead" || path === "/whatsapp-lead-nurture"
     ? ["/tools/show-rate-calculator", "/tools/cost-per-booked-call-calculator"]
     : path === "/meta-ads-agency" || path === "/vsl-funnels"
-      ? ["/tools/roas-calculator", "/tools/cac-calculator"]
+      ? ["/tools/meta-ads-budget-calculator", "/tools/roas-calculator"]
       : ["/tools/cac-calculator", "/tools/ltv-cac-calculator"];
   return [
     { title: "Related services", links: services(neighbours) },

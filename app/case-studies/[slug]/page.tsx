@@ -8,21 +8,10 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { caseStudyMeta } from "@/lib/case-study-meta";
+import { caseStudyMeta, caseStudyIds } from "@/lib/case-study-meta";
 import { ShieldCheck, ExternalLink } from "lucide-react";
 
-const topCaseStudySlugs: Record<string, string> = {
-  "b2b-agency-scaling-846k": "DS5sAimEqsT",
-  "med-spa-marketing-agency-639k": "DZc5twGlC0M",
-  "high-ticket-coaching-203k": "DUsaqlQEsYB",
-  "digital-media-agency-157k": "DQ91hXmEoIm",
-  "executive-consulting-150k": "DQsBVdEkxYc",
-  "commercial-services-86k": "DSkbQyzkvbL",
-  "agency-backend-continuity-86k": "DM3mUZsSNEJ",
-  "strategic-consulting-85k": "DMgZ9YRSuz5",
-  "high-ticket-funnel-79k": "DU71t8DER0c",
-  "b2b-technology-agency-71k": "DT4yHdFkXhM",
-};
+const topCaseStudySlugs: Record<string, string> = caseStudyIds;
 
 
 // Reverse lookup map
@@ -43,6 +32,21 @@ export async function generateStaticParams() {
   const customSlugs = Object.keys(topCaseStudySlugs).map((slug) => ({ slug }));
   const idSlugs = caseStudiesData.slice(0, 30).map((item) => ({ slug: item.id }));
   return [...customSlugs, ...idSlugs];
+}
+
+/** Renders [anchor](/path) links inside analysis text. */
+function richText(text: string) {
+  const parts = text.split(/(\[[^\]]+\]\(\/[^)\s]*\))/g);
+  return parts.map((part, i) => {
+    const m = part.match(/^\[([^\]]+)\]\((\/[^)\s]*)\)$/);
+    return m ? (
+      <Link key={i} href={m[2]} className="text-lime underline underline-offset-2">
+        {m[1]}
+      </Link>
+    ) : (
+      part
+    );
+  });
 }
 
 interface PageProps {
@@ -241,6 +245,39 @@ export default async function IndividualCaseStudyPage({ params }: PageProps) {
                     {item.description}
                   </div>
                 </div>
+
+                {caseStudyMeta[primarySlug]?.analysis?.map((sec) => (
+                  <div key={sec.heading}>
+                    <h2 className="text-2xl font-bold text-paper mb-4">{sec.heading}</h2>
+                    <div className="space-y-4 text-fog text-sm sm:text-base leading-relaxed">
+                      {sec.body.map((para, i) => (
+                        <p key={i}>{richText(para)}</p>
+                      ))}
+                      {sec.bullets && (
+                        <ul className="list-disc space-y-1.5 pl-5">
+                          {sec.bullets.map((b) => (
+                            <li key={b}>{b}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </div>
+                ))}
+
+                {caseStudyMeta[primarySlug]?.related && (
+                  <div>
+                    <h2 className="text-xl font-bold text-paper mb-3">Related services</h2>
+                    <ul className="flex flex-wrap gap-3">
+                      {caseStudyMeta[primarySlug]!.related!.map((r) => (
+                        <li key={r.href}>
+                          <Link href={r.href} className="inline-block rounded-full border border-line px-4 py-2 text-sm text-fog hover:border-lime hover:text-lime">
+                            {r.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
                 {item.tags && item.tags.length > 0 && (
                   <div className="flex flex-wrap gap-2 pt-2">

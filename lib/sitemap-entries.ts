@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
+import { caseStudyIds } from "@/lib/case-study-meta";
 import routeLastmod from "@/lib/route-lastmod.json";
 import { blogPosts, blogCategories, getPostsByCategory } from "@/lib/blog-data";
 
@@ -73,6 +74,12 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
     },
     {
       url: `${site.url}/tools/cost-per-booked-call-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${site.url}/tools/meta-ads-budget-calculator`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.88,
@@ -483,18 +490,7 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
     };
   });
 
-  const caseStudySlugs = [
-    "b2b-agency-scaling-846k",
-    "med-spa-marketing-agency-639k",
-    "high-ticket-coaching-203k",
-    "digital-media-agency-157k",
-    "executive-consulting-150k",
-    "commercial-services-86k",
-    "agency-backend-continuity-86k",
-    "strategic-consulting-85k",
-    "high-ticket-funnel-79k",
-    "b2b-technology-agency-71k",
-  ];
+  const caseStudySlugs = Object.keys(caseStudyIds);
 
   const caseStudyRoutes: MetadataRoute.Sitemap = caseStudySlugs.map((slug) => ({
     url: `${site.url}/case-studies/${slug}`,

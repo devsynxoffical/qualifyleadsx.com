@@ -97,6 +97,28 @@ for (const file of walkHtml(ROOT)) {
   if (!blocks.length) continue;
   pages += 1;
 
+  // A `breadcrumb: {"@id": X}` reference must point at a BreadcrumbList defined on the
+  // same page with that @id, or Google reports an empty second BreadcrumbList.
+  {
+    const defined = new Set();
+    const refs = [];
+    const walk = (o) => {
+      if (Array.isArray(o)) return o.forEach(walk);
+      if (!o || typeof o !== "object") return;
+      const keys = Object.keys(o);
+      if (o["@id"] && keys.length > 1) defined.add(o["@id"]);
+      if (o.breadcrumb && typeof o.breadcrumb === "object" && o.breadcrumb["@id"] && Object.keys(o.breadcrumb).length === 1) refs.push(o.breadcrumb["@id"]);
+      keys.forEach((k) => walk(o[k]));
+    };
+    blocks.forEach(walk);
+    for (const r of refs) {
+      if (!defined.has(r)) {
+        requiredMissing += 1;
+        problems.push(`REQ    ${page}: breadcrumb reference ${r} has no matching BreadcrumbList @id on the page`);
+      }
+    }
+  }
+
   for (const block of blocks) {
     if (block.__parseError) {
       parseErrors += 1;
@@ -114,6 +136,11 @@ for (const file of walkHtml(ROOT)) {
             requiredMissing += 1;
             problems.push(`REQ    ${page}: ${t} at ${path} is missing required "${prop}"`);
           }
+        }
+        // Google rejects VideoObject.uploadDate without a time and timezone.
+        if (t === "VideoObject" && typeof node.uploadDate === "string" && !/T\d{2}:\d{2}(:\d{2})?([+-]\d{2}:\d{2}|Z)$/.test(node.uploadDate)) {
+          requiredMissing += 1;
+          problems.push(`REQ    ${page}: VideoObject at ${path} uploadDate "${node.uploadDate}" needs a time and timezone`);
         }
         for (const prop of rule.recommended) {
           if (node[prop] === undefined) {

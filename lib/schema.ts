@@ -194,6 +194,9 @@ export function webPageNode(opts: {
   };
 }
 
+/** Google needs a full datetime with timezone for VideoObject.uploadDate. */
+export const videoDate = (d: string) => (/^\d{4}-\d{2}-\d{2}$/.test(d) ? `${d}T00:00:00+00:00` : d);
+
 /** VideoObject for a YouTube embed used on the site. */
 export function youtubeVideo(opts: {
   videoId: string;
@@ -212,7 +215,7 @@ export function youtubeVideo(opts: {
       `https://img.youtube.com/vi/${opts.videoId}/maxresdefault.jpg`,
       `https://img.youtube.com/vi/${opts.videoId}/hqdefault.jpg`,
     ],
-    uploadDate: opts.uploadDate ?? CONTENT_LAUNCH_DATE,
+    uploadDate: videoDate(opts.uploadDate ?? CONTENT_LAUNCH_DATE),
     embedUrl: `https://www.youtube-nocookie.com/embed/${opts.videoId}`,
     contentUrl: `https://www.youtube.com/watch?v=${opts.videoId}`,
     url: opts.pageUrl,
@@ -240,7 +243,7 @@ export function hostedVideo(opts: {
     thumbnailUrl: abs(opts.thumbnailUrl),
     contentUrl: abs(opts.contentUrl),
     ...(opts.duration ? { duration: isoDuration(opts.duration) } : {}),
-    uploadDate: opts.uploadDate ?? CONTENT_LAUNCH_DATE,
+    uploadDate: videoDate(opts.uploadDate ?? CONTENT_LAUNCH_DATE),
     url: opts.pageUrl,
     inLanguage: "en-US",
     isFamilyFriendly: true,

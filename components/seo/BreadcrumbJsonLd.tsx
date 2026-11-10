@@ -5,10 +5,16 @@ export interface BreadcrumbItem {
   url: string;
 }
 
+const abs = (url: string) => (url.startsWith("http") ? url : `${site.url}${url}`);
+
 export function BreadcrumbJsonLd({ items }: { items: BreadcrumbItem[] }) {
+  // The @id matches the `breadcrumb` reference in webPageNode (`${pageUrl}#breadcrumb`),
+  // so Google merges them instead of reporting an empty, second BreadcrumbList.
+  const last = items[items.length - 1];
   const schema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "@id": `${last ? abs(last.url) : site.url}#breadcrumb`,
     itemListElement: [
       {
         "@type": "ListItem",
@@ -20,7 +26,7 @@ export function BreadcrumbJsonLd({ items }: { items: BreadcrumbItem[] }) {
         "@type": "ListItem",
         position: index + 2,
         name: item.name,
-        item: item.url.startsWith("http") ? item.url : `${site.url}${item.url}`,
+        item: abs(item.url),
       })),
     ],
   };

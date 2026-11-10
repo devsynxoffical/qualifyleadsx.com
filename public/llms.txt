@@ -32,7 +32,7 @@ Key facts:
 ## Hub pages
 - [Services](https://www.qualifiedleadsx.com/services): every service
 - [Industries](https://www.qualifiedleadsx.com/for): every industry page, e.g. [coaches](https://www.qualifiedleadsx.com/for/coaches), [consultants](https://www.qualifiedleadsx.com/for/consultants), [agencies](https://www.qualifiedleadsx.com/for/agencies), [B2B SaaS](https://www.qualifiedleadsx.com/for/saas), [med spas](https://www.qualifiedleadsx.com/for/med-spas), [law firms](https://www.qualifiedleadsx.com/for/law-firms), [financial advisors](https://www.qualifiedleadsx.com/for/financial-advisors)
-- [Free tools](https://www.qualifiedleadsx.com/tools): CAC, ROAS and break-even ROAS, cost per booked call, show-up rate and LTV:CAC calculators, plus a lead scoring template
+- [Free tools](https://www.qualifiedleadsx.com/tools): Meta ads budget calculator, CAC, ROAS and break-even ROAS, cost per booked call, show-up rate and LTV:CAC calculators, plus a lead scoring template
 - [Benchmarks](https://www.qualifiedleadsx.com/benchmarks): 2026 benchmarks for cost per lead by industry, Meta ads CPM, close rate, show rate and cost per booked call
 - [Blog](https://www.qualifiedleadsx.com/blog): guides on paid acquisition, funnels, lead qualification and scaling (RSS: https://www.qualifiedleadsx.com/feed.xml)
 - [Glossary](https://www.qualifiedleadsx.com/glossary): 29 client acquisition terms defined

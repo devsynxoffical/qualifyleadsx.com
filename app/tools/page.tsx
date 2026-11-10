@@ -22,12 +22,13 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "Free Lead Generation Calculators & Tools - QualifiedLeadsX",
   description:
-    "Free high-ticket lead generation calculators: CAC, ROAS, cost per booked call, show rate and LTV. Model your acquisition pipeline today.",
+    "Free high-ticket lead generation calculators: Meta ads budget, CAC, ROAS, cost per booked call, show rate and LTV. Model your pipeline today.",
   keywords: [
     "free lead generation calculators",
     "cac calculator",
     "roas calculator",
     "cost per booked call calculator",
+    "meta ads budget calculator",
     "show rate calculator",
     "ltv to cac ratio calculator",
   ],
@@ -53,6 +54,16 @@ const toolList = [
     description:
       "Calculate your true blended CAC including media spend, appointment setter commissions, and tech overhead to establish required offer price points.",
     formula: "Total Acquisition Cost / Total Customers Acquired",
+  },
+  {
+    title: "Meta Ads Budget Calculator",
+    keyword: "meta ads budget calculator",
+    href: "/tools/meta-ads-budget-calculator",
+    icon: TrendingUp,
+    badge: "Ad Budget",
+    description:
+      "Work backwards from the new clients you want, your close rate, show rate and cost per booked call to the monthly and daily Facebook and Instagram ad budget you need.",
+    formula: "(Clients / Close Rate / Show Rate) * Cost per Booked Call",
   },
   {
     title: "High-Ticket ROAS & Break-Even Calculator",

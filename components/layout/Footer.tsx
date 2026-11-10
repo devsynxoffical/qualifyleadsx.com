@@ -52,6 +52,7 @@ const footerColumns = [
       { label: "CAC Calculator", href: "/tools/cac-calculator" },
       { label: "ROAS & Break-Even Calculator", href: "/tools/roas-calculator" },
       { label: "Cost Per Booked Call Calculator", href: "/tools/cost-per-booked-call-calculator" },
+      { label: "Meta Ads Budget Calculator", href: "/tools/meta-ads-budget-calculator" },
       { label: "Show-Up Rate Calculator", href: "/tools/show-rate-calculator" },
       { label: "LTV to CAC Calculator", href: "/tools/ltv-cac-calculator" },
       { label: "Lead Scoring Template", href: "/tools/lead-scoring-template" },

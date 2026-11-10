@@ -60,6 +60,236 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // 10 NOV 2026: HVAC Meta ads guide (real campaign data) and appointment setter hiring guide
+  {
+    "slug": "facebook-ads-for-hvac-companies",
+    "seoTitle": "Facebook Ads for HVAC Companies: Real Numbers",
+    "title": "Facebook Ads for HVAC Companies: Real Campaign Numbers and the Funnel Behind Them",
+    "description": "Facebook ads for HVAC companies, with real campaign data: cost per lead, booked appointments, show rate, cost per installation, ROAS and the full funnel.",
+    "publishedAt": "2026-11-10",
+    "updatedAt": "2026-11-10",
+    "readTime": "9 min read",
+    "coverImage": "/images2/showreel/shot_17_meridian.webp",
+    "author": {
+      "name": "QualifiedLeadsX™ Research Team",
+      "role": "Meta Ads & Client Acquisition",
+      "avatar": "/images/qualified-leadsx.webp"
+    },
+    "category": "Paid Advertising",
+    "tags": [
+      "HVAC",
+      "Facebook Ads",
+      "Home Services",
+      "Lead Generation",
+      "Meta Ads"
+    ],
+    "aeoSummary": {
+      "question": "Do Facebook ads work for HVAC companies?",
+      "answer": "Yes, when they are run as a full funnel rather than a lead-form campaign. In two HVAC campaigns we tracked end to end, $5,628 and $1,956 in Meta ads produced 13 and 12 new installations, for 12.70 and 19.63 collected ROAS. What made the difference was qualifying homeowners in the form, contacting them fast and measuring cost per installation, not cost per lead.",
+      "bulletPoints": [
+        "Cost per booked appointment in these campaigns: $13.97 to $45",
+        "Show rates were only 48% to 53%, the biggest leak in both funnels",
+        "Cost per new installation: $163 to $432.92 against $3,200 to $5,500 jobs"
+      ]
+    },
+    "content": {
+      "intro": "Most HVAC owners who say Facebook ads don't work are judging them on cost per lead. The campaigns below were judged on what an HVAC business actually banks: installations. Every number comes from campaigns QualifiedLeadsX ran for HVAC companies, published in our [case studies](/case-studies).",
+      "sections": [
+        {
+          "heading": "Two HVAC Funnels, Tracked From Ad to Installation",
+          "subheading": "Florida and New Jersey, side by side",
+          "body": [
+            "Both companies tracked every stage, so we can see exactly where money was made and lost. The full Florida breakdown is in the [Florida HVAC case study](/case-studies/florida-hvac-65k-cash-collected)."
+          ],
+          "bulletList": [
+            "Florida: $5,628 ad spend → 125 booked appointments ($45 each) → 60 connected calls (48% show) → 45 offers → 13 installations ($432.92 each) at $5,500 → $71,500 collected, 12.70 ROAS",
+            "New Jersey: $1,956 ad spend → 140 booked appointments ($13.97 each) → 74 connected calls (53% show) → 49 offers → 12 installations ($163 each) at $3,200 → $38,400 collected, 19.63 ROAS"
+          ]
+        },
+        {
+          "heading": "What HVAC Leads Cost on Meta",
+          "subheading": "Lead cost varies with market, season and how strictly you qualify",
+          "body": [
+            "Cost per lead on its own says little, but it is useful for planning. Across other HVAC campaigns we have run:"
+          ],
+          "bulletList": [
+            "326 leads in 26 days at $5.57 per lead in a competitive local market",
+            "55 pre-qualified leads in 5 days from $606, at $11.02 per lead",
+            "630 OTP-verified leads from $14,548, at $23.09 per lead",
+            "The higher figure came with phone verification (OTP), which removes fake and mistyped numbers. Paying more per lead for verified homeowners is often cheaper per installation."
+          ]
+        },
+        {
+          "heading": "The HVAC Facebook Ads Funnel, Step by Step",
+          "body": [
+            "This is the process behind the 55-lead campaign above, and it is typical of how we set up HVAC accounts:"
+          ],
+          "bulletList": [
+            "Targeting: serviceable ZIP codes only, so no budget is spent outside your service area.",
+            "Qualifying questions in the form: Do you own the property? How old is your current system? Are you looking to replace or repair in the next 30 days? Is financing a consideration?",
+            "Auto-tagging and routing: high-intent answers go straight to the sales team; others go to a nurture list and retargeting.",
+            "Quality control: a daily spot-check of 10–20% of new leads for real contact details and sensible answers.",
+            "Fast follow-up: verified leads get a call, text and email right away. See [AI speed to lead](/speed-to-lead)."
+          ]
+        },
+        {
+          "heading": "Where HVAC Funnels Leak (and How to Fix It)",
+          "body": [
+            "In both tracked funnels, roughly half of booked homeowners never connected. That is the single biggest lever. Lifting the Florida show rate from 48% to 60% would have added about 15 more conversations from the same ad spend.",
+            "Fixes that usually help: confirm the appointment by SMS within minutes, send reminders the day before and an hour before, and call anyone who doesn't confirm. Size the gain for your own numbers with the [show rate calculator](/tools/show-rate-calculator)."
+          ]
+        },
+        {
+          "heading": "How Much Should an HVAC Company Spend on Facebook Ads?",
+          "body": [
+            "Work backwards from the installations you want. Divide by your close rate on offers and your show rate to get the appointments you need, then multiply by your cost per booked appointment. Our free [Meta ads budget calculator](/tools/meta-ads-budget-calculator) does this for you.",
+            "Then check the result against your margins with the [ROAS and break-even calculator](/tools/roas-calculator). If an installation is worth $3,200 to $5,500, you can afford a far higher cost per lead than most HVAC owners expect, as long as the funnel converts."
+          ]
+        }
+      ],
+      "conclusion": "Facebook ads work for HVAC companies when the campaign is built around installations, not leads: qualify homeowners in the form, contact them within minutes, protect the show rate and track cost per installation. If you want this built and run for you, see [lead generation for home improvement companies](/for/home-improvement).",
+      "faqs": [
+        {
+          "q": "Are Facebook ads good for HVAC companies?",
+          "a": "Yes, for companies that qualify leads and follow up fast. In two tracked campaigns, Meta ads returned 12.70 and 19.63 collected ROAS on HVAC installations. Campaigns judged only on cost per lead often look worse than they are, or better than they are."
+        },
+        {
+          "q": "What is a good cost per lead for HVAC Facebook ads?",
+          "a": "In our HVAC campaigns lead costs ranged from $5.57 to $23.09, depending on market and on whether leads were phone-verified. A better measure is cost per installation, which ranged from $163 to $432.92."
+        },
+        {
+          "q": "What questions should an HVAC lead form ask?",
+          "a": "Ask whether they own the property, how old the current system is, whether they plan to replace or repair in the next 30 days, and whether financing matters. These filter out renters and people who are only browsing."
+        },
+        {
+          "q": "Why do so many HVAC leads not show up?",
+          "a": "Because the homeowner filled in a form on a phone and moved on. In our tracked funnels only 48% to 53% of booked appointments connected. Fast confirmation and reminders by SMS and phone are the usual fix."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "how-to-hire-an-appointment-setter",
+    "seoTitle": "How to Hire an Appointment Setter (2026 Guide)",
+    "title": "How to Hire an Appointment Setter: Scorecard, Interview, Pay and Ramp-Up",
+    "description": "How to hire an appointment setter for a high-ticket business: the scorecard, job description, role-play interview, pay plan and two-week ramp-up.",
+    "publishedAt": "2026-11-10",
+    "updatedAt": "2026-11-10",
+    "readTime": "8 min read",
+    "coverImage": "/images2/showreel/shot_22_culture_strip.webp",
+    "author": {
+      "name": "QualifiedLeadsX™ Research Team",
+      "role": "Meta Ads & Client Acquisition",
+      "avatar": "/images/qualified-leadsx.webp"
+    },
+    "category": "Lead Qualification",
+    "tags": [
+      "Appointment Setting",
+      "Hiring",
+      "Sales Team",
+      "Speed to Lead"
+    ],
+    "aeoSummary": {
+      "question": "How do you hire an appointment setter?",
+      "answer": "Decide what the setter will own (inbound follow-up, outbound, or both), write a scorecard with measurable targets such as speed to lead, booking rate and show rate, test candidates with a short live role-play, pay a small base plus a per-show bonus, and give them a script, a CRM and a two-week ramp-up.",
+      "bulletPoints": [
+        "Judge setters on speed to lead, booking rate, show rate and qualified rate",
+        "Interview with a 10-minute role-play, not a long conversation",
+        "Pay per show, not per booking, so calendars don't fill with no-shows"
+      ]
+    },
+    "content": {
+      "intro": "An appointment setter turns new leads into booked, qualified sales calls, so the closer only talks to people who can buy. Hiring the wrong one is expensive: slow replies lose leads, and loose qualification fills the calendar with no-shows. Here is the hiring process we recommend for high-ticket businesses.",
+      "sections": [
+        {
+          "heading": "What an Appointment Setter Actually Does",
+          "body": [
+            "In a high-ticket business the setter's job is narrow and measurable. A setter is not a closer: setters protect the closer's time, and closers sell. See [outsourced sales closers](/outsourced-sales-closers) for the other half of the team."
+          ],
+          "bulletList": [
+            "Reply to new leads within minutes by phone, SMS, WhatsApp or DM",
+            "Qualify on budget, timeline, decision-maker status and fit",
+            "Book qualified leads into the closer's calendar",
+            "Confirm and remind, so booked calls actually happen",
+            "Log every touch in the CRM"
+          ]
+        },
+        {
+          "heading": "Setter, Virtual Assistant or Agency?",
+          "body": [
+            "An in-house setter makes sense when you have steady lead volume and someone to coach them. A virtual assistant suits admin work, but rarely qualifies well; see [appointment setter vs virtual assistant](/compare/appointment-setter-vs-va). An [appointment setting agency](/appointment-setting) suits businesses that want setters, scripts, CRM and AI follow-up as one system. Whichever you choose, make sure you own the CRM and the data."
+          ]
+        },
+        {
+          "heading": "Step 1: Write the Scorecard Before the Job Ad",
+          "body": [
+            "List the numbers the setter will be judged on. If you can't measure it in your CRM, it doesn't belong on the scorecard."
+          ],
+          "bulletList": [
+            "Speed to lead: first reply in under 5 minutes during working hours",
+            "Contact rate: share of new leads actually reached",
+            "Booking rate: share of contacted leads booked",
+            "Show rate: share of booked calls that happen. The average is 58.2% with email-only confirmations ([show rate benchmarks](/benchmarks/show-rate))",
+            "Qualified rate: share of held calls the closer marks as a fit"
+          ]
+        },
+        {
+          "heading": "Step 2: Write a Specific Job Description",
+          "body": [
+            "Name the offer and price point, the lead sources, the hours, the tools and the pay plan. \"Call inbound leads from Meta ads for a $5,000 coaching program within 5 minutes\" attracts the right people. \"Sales role, high earning potential\" attracts everyone."
+          ]
+        },
+        {
+          "heading": "Step 3: Interview With a 10-Minute Role-Play",
+          "body": [
+            "Skip the long interview. Play a lead who filled in the form but is hesitant about price, and score the candidate on four things:"
+          ],
+          "bulletList": [
+            "Did they open with energy and use the lead's name?",
+            "Did they ask about the problem before the price?",
+            "Did they confirm budget and decision-maker status without sounding scripted?",
+            "Did they book a specific time, or just offer to \"send a link\"?"
+          ]
+        },
+        {
+          "heading": "Step 4: Set a Pay Plan That Rewards Shows",
+          "body": [
+            "Common models are base plus per-booking, base plus per-show, and commission on closed deals. Paying per show rather than per booking stops calendars filling with people who never turn up. We compare the models in detail in [appointment setter compensation models](/blog/appointment-setter-compensation-models)."
+          ]
+        },
+        {
+          "heading": "Step 5: Ramp Them Up Over Two Weeks",
+          "bulletList": [
+            "Week 1: learn the offer, shadow calls, practise the script and book with supervision",
+            "Week 2: own a share of inbound leads, with a daily review of recorded calls",
+            "After that: a weekly scorecard review"
+          ],
+          "body": [
+            "Give the setter the qualification questions in writing from day one. Our [lead scoring template](/tools/lead-scoring-template) is a good starting point."
+          ]
+        }
+      ],
+      "conclusion": "Hire setters on measurable behaviour, not charisma: a scorecard, a role-play, a pay plan tied to shows and a structured ramp-up. And whoever sets the appointments, reply in under 5 minutes. To see what a booked call should cost you, use the [cost per booked call calculator](/tools/cost-per-booked-call-calculator).",
+      "faqs": [
+        {
+          "q": "How many leads can one appointment setter handle?",
+          "a": "It depends on channel and lead quality. Watch speed to lead: if first replies slip past 5 minutes during working hours, the setter is over capacity and you need more help or automated first responses."
+        },
+        {
+          "q": "Should an appointment setter be commission only?",
+          "a": "Commission-only setters tend to leave when leads are slow and to book anyone when leads are plentiful. A small base plus a per-show bonus keeps behaviour steady and honest."
+        },
+        {
+          "q": "What skills matter most in an appointment setter?",
+          "a": "Speed, curiosity and discipline in the CRM. A setter who replies in two minutes and logs every lead usually books more qualified calls than a charming one who replies the next day."
+        },
+        {
+          "q": "Can AI replace appointment setters?",
+          "a": "AI handles first replies, reminders and simple qualification well, around the clock. People still book more high-ticket calls when a lead has questions, so most businesses use both. See AI speed to lead on our services page."
+        }
+      ]
+    }
+  },
   // 4 NOV 2026 — informational pillar: "speed to lead statistics"
   {
     slug: "speed-to-lead-statistics-response-time",
@@ -2205,7 +2435,7 @@ export const blogPosts: BlogPost[] = [
     seoTitle: "How Much Does Meta Ads Cost in 2026? Budget Guide",
     description: "Detailed breakdown of Meta Ads costs for B2B and high-ticket service businesses. CPM, CPC, cost per booked call, and monthly budget recommendations.",
     publishedAt: "2026-11-05",
-    updatedAt: "2026-11-06",
+    updatedAt: "2026-11-10",
     readTime: "14 min read",
     coverImage: "/images2/showreel/shot_09_ad_telemetry.webp",
     author: {
@@ -2310,6 +2540,13 @@ export const blogPosts: BlogPost[] = [
             "Download our ready-to-use [lead scoring template](/tools/lead-scoring-template) to standardize qualification criteria across your sales pipeline.",
           ],
         },
+        {
+          "heading": "Calculate Your Own Meta Ads Budget",
+          "body": [
+            "The ranges above are averages across many accounts. To get a budget for your own offer, work backwards from the number of new clients you want: clients ÷ close rate ÷ show rate gives the booked calls you need, and booked calls × cost per booked call gives the monthly ad spend.",
+            "Our free [Meta ads budget calculator](/tools/meta-ads-budget-calculator) runs that maths for you and shows the monthly and daily budget, the calls you need and your ad cost per client."
+          ]
+        }
       ],
       conclusion: "Budgeting for Meta Ads is an exercise in customer acquisition economics, not creative speculation. By committing to an adequate starting budget of $3,000 to $5,000/month, deploying disciplined Advantage+ broad targeting, and enforcing strict survey qualification, high-ticket founders can predictably scale past $100K/month with verified 4x–7x ROAS.",
       faqs: [

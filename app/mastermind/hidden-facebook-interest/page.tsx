@@ -15,7 +15,13 @@ import {
 } from "lucide-react";
 import { site } from "@/lib/site";
 import { founder, orgRef, publisherOrg, imageObject, youtubeVideo, faqPage, webPageNode, WEBSITE_ID } from "@/lib/schema";
+import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
+import { Section, SectionHeading } from "@/components/ui/Section";
+import { Reveal } from "@/components/ui/Reveal";
+import { Button } from "@/components/ui/Button";
+import { CTABanner } from "@/components/ui/CTABanner";
+import { TrustBar } from "@/components/sections/TrustBar";
 import { Footer } from "@/components/layout/Footer";
 import { VSL } from "@/components/sections/VSL";
 import { Testimonials } from "@/components/sections/Testimonials";
@@ -393,13 +399,8 @@ export default function AiClientAcquisitionMastermindPage() {
     }),
   };
 
-  const btnPrimary =
-    "group inline-flex items-center justify-center gap-2 rounded-full bg-lime px-8 py-4 text-sm font-semibold text-ink shadow-[0_0_50px_-12px_rgba(201,242,107,0.6)] transition-transform hover:scale-[1.03]";
-  const btnSecondary =
-    "inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-8 py-4 text-sm font-semibold text-white transition-colors hover:border-lime hover:text-lime";
-
   return (
-    <main id="main" className="flex min-h-screen flex-col bg-ink text-white selection:bg-lime/30 selection:text-lime">
+    <main id="main">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPage) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage(`${pageUrl}#faq`, faqs)) }} />
@@ -409,247 +410,298 @@ export default function AiClientAcquisitionMastermindPage() {
           { name: "AI Client Acquisition Mastermind", url: PATH },
         ]}
       />
+      <AnnouncementBar />
       <Nav />
 
-      {/* Hero */}
-      <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-24">
-        <div className="pointer-events-none absolute left-1/2 top-0 h-[520px] w-[820px] -translate-x-1/2 rounded-full bg-lime/10 blur-[150px]" />
-        <div className="container-x relative z-10 grid items-center gap-14 lg:grid-cols-[1.15fr_1fr]">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-lime">QualifiedLeadsX · 6-week hands-on implementation mastermind</p>
-            <h1 className="mt-6 text-4xl font-bold leading-[1.08] tracking-tight sm:text-6xl">
-              AI Client Acquisition Mastermind:{" "}
-              <span className="text-lime">Build a Predictable Client Acquisition System.</span>
-            </h1>
-            <p className="mt-6 text-xl font-semibold text-white/90">Attract ideal clients. Scale profitably.</p>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
+      {/* Hero: same centred layout and type scale as the homepage hero */}
+      <section className="relative overflow-hidden bg-ink pt-36 pb-16 sm:pt-44 sm:pb-20">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_45%_at_50%_0%,rgba(201,242,107,0.10),transparent)]" />
+        <div className="container-x relative z-10 flex flex-col items-center text-center">
+          <Reveal>
+            <span className="eyebrow justify-center">6-week implementation mastermind</span>
+          </Reveal>
+          <h1 className="mt-6 max-w-5xl text-balance font-semibold tracking-[-0.03em] text-fog">
+            <span className="block text-[clamp(1.2rem,2.4vw,1.9rem)] leading-[1.22]">
+              <em className="text-gradient-lime not-italic">AI Client Acquisition Mastermind</em> by QualifiedLeadsX
+            </span>
+            <span className="mt-3 block text-gradient-lime text-[clamp(2rem,5.6vw,4.6rem)] font-bold leading-[1.04]">
+              Build a Predictable Client Acquisition System.
+            </span>
+            <span className="mt-3 block text-[clamp(1rem,1.8vw,1.35rem)] font-medium leading-[1.35] text-fog">
+              Attract ideal clients. Scale profitably.
+            </span>
+          </h1>
+          <Reveal delay={0.1}>
+            <p className="mx-auto mt-6 max-w-2xl text-pretty text-[1rem] leading-relaxed text-mist sm:text-lg">
               Learn how to build, optimize and scale a predictable client acquisition system using Meta ads, AI-powered advertising, qualified lead generation, conversion tracking, funnels and advanced scaling strategies.
             </p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <a href={site.bookCallUrl} className={btnPrimary}>
+          </Reveal>
+          <Reveal delay={0.2}>
+            <div className="mt-9 flex flex-col items-center gap-3.5 sm:flex-row sm:gap-5">
+              <Button href={site.bookCallUrl} size="xl" icon="up-right" ariaLabel="Apply for the Mastermind">
                 Apply for the Mastermind
-                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-              </a>
-              <a href="#curriculum" className={btnSecondary}>
+              </Button>
+              <Button href="#curriculum" variant="outline" size="xl">
                 Explore the Curriculum
-              </a>
+              </Button>
             </div>
-            <ul className="mt-10 grid grid-cols-3 gap-3 text-center sm:max-w-md">
+          </Reveal>
+          <Reveal delay={0.3} className="w-full">
+            <ul className="mx-auto mt-12 grid max-w-3xl grid-cols-3 gap-px overflow-hidden rounded-3xl border border-line bg-line">
               {[
                 ["6", "Weeks"],
                 ["12", "Live classes"],
                 ["14", "Implementation resources"],
               ].map(([v, l]) => (
-                <li key={l} className="rounded-2xl border border-line bg-panel p-4">
-                  <span className="block font-mono text-2xl font-bold text-lime">{v}</span>
-                  <span className="mt-1 block text-[11px] uppercase tracking-wider text-white/60">{l}</span>
+                <li key={l} className="bg-panel px-4 py-6">
+                  <span className="block font-mono text-3xl font-bold text-lime sm:text-4xl">{v}</span>
+                  <span className="mt-1 block text-[11px] uppercase tracking-wider text-mist">{l}</span>
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* Visual: acquisition pipeline taught in the program */}
-          <div aria-hidden="true" className="rounded-3xl border border-line bg-gradient-to-b from-white/[0.06] to-white/[0.01] p-6 sm:p-8">
-            <div className="flex items-center justify-between">
-              <span className="font-mono text-[11px] uppercase tracking-widest text-white/50">Acquisition system</span>
-              <span className="flex gap-1.5">
-                <span className="h-2 w-2 rounded-full bg-white/20" />
-                <span className="h-2 w-2 rounded-full bg-white/20" />
-                <span className="h-2 w-2 rounded-full bg-lime" />
-              </span>
-            </div>
-            <div className="mt-6 space-y-3">
-              {[
-                ["Audience & creative research", "Weeks 1–2", 100],
-                ["AI ads & qualified offers", "Week 2", 82],
-                ["Lead → Qualified → Appointment → Sale", "Week 3", 64],
-                ["Scaling & manual bidding", "Week 4", 48],
-                ["Retargeting & funnel CRO", "Week 5", 36],
-                ["Profitability & live reviews", "Week 6", 26],
-              ].map(([label, wk, w]) => (
-                <div key={label as string}>
-                  <div className="flex justify-between text-xs text-white/70">
-                    <span>{label}</span>
-                    <span className="font-mono text-white/40">{wk}</span>
-                  </div>
-                  <div className="mt-1.5 h-2.5 rounded-full bg-white/[0.06]">
-                    <div className="h-2.5 rounded-full bg-gradient-to-r from-lime to-lime/40" style={{ width: `${w}%` }} />
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-7 grid grid-cols-5 items-center gap-1 text-center text-[10px] uppercase tracking-wider text-white/60">
-              {["Research", "Create", "Track", "Scale", "Profit"].map((s, i) => (
-                <div key={s} className="flex items-center justify-center gap-1">
-                  <span className={`rounded-md border px-1.5 py-1 ${i === 4 ? "border-lime text-lime" : "border-line"}`}>{s}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+          </Reveal>
         </div>
       </section>
+
+      <TrustBar />
 
       {/* Program introduction */}
-      <section className="border-t border-line bg-base/60 py-20">
-        <div className="container-x grid gap-10 lg:grid-cols-2">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">Program introduction</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Not just another advertising course</h2>
-          </div>
-          <div className="space-y-4 text-base leading-relaxed text-white/70 sm:text-lg">
-            <p>
-              The AI Client Acquisition Mastermind is a hands-on implementation mastermind designed to help you understand the complete client acquisition ecosystem, improve lead quality, optimize conversion rates and build a repeatable acquisition process.
-            </p>
-            <p>
-              Over six weeks you move from audience and creative research, through AI-assisted ad production, tracking and launch, to advanced scaling, retargeting and profitability, applying each class to your own campaigns.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Section id="program" className="bg-ink">
+        <SectionHeading
+          eyebrow="Program introduction"
+          title={
+            <>
+              Not just another{" "}
+              <em className="font-semibold not-italic text-lime">advertising course.</em>
+            </>
+          }
+          subtitle="The AI Client Acquisition Mastermind is a hands-on implementation mastermind designed to help you understand the complete client acquisition ecosystem, improve lead quality, optimize conversion rates and build a repeatable acquisition process."
+        />
+        <Reveal y={20}>
+          <p className="mx-auto max-w-3xl text-center text-[1rem] leading-relaxed text-mist sm:text-lg">
+            Over six weeks you move from audience and creative research, through AI-assisted ad production, tracking and launch, to advanced scaling, retargeting and profitability, applying each class to your own campaigns.
+          </p>
+        </Reveal>
+      </Section>
 
-      {/* Core benefits */}
-      <section className="border-t border-line py-20">
-        <div className="container-x">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">Core benefits</p>
-          <h2 className="mt-3 max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">What you&apos;ll be able to do after six weeks</h2>
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {/* Core benefits: same tile grid as the homepage "Everything included" section */}
+      <Section id="benefits" className="relative overflow-hidden bg-ink">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_0%,rgba(201,242,107,0.06),transparent)]" />
+        <SectionHeading
+          eyebrow="Core benefits"
+          title={
+            <>
+              What you&apos;ll be able to do{" "}
+              <em className="font-semibold not-italic text-lime">after six weeks.</em>
+            </>
+          }
+        />
+        <Reveal y={20} delay={0.05}>
+          <div className="relative z-10 mx-auto grid max-w-5xl grid-cols-1 gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
             {benefits.map((b) => (
-              <div key={b.title} className="rounded-2xl border border-line bg-panel p-6">
-                <CheckCircle2 className="h-6 w-6 text-lime" />
-                <h3 className="mt-4 text-lg font-bold">{b.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/65">{b.text}</p>
-              </div>
+              <article key={b.title} className="group relative flex flex-col gap-4 bg-panel p-6 transition-colors duration-300 hover:bg-elevated sm:p-7">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-line bg-ink/60 text-lime transition-all duration-300 group-hover:border-lime/40 group-hover:bg-lime/10">
+                  <CheckCircle2 className="h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="text-[15px] font-semibold text-fog">{b.title}</h3>
+                  <p className="mt-1.5 text-[13px] leading-relaxed text-dim">{b.text}</p>
+                </div>
+                <span className="pointer-events-none absolute inset-x-6 bottom-0 h-px origin-left scale-x-0 bg-gradient-to-r from-lime/60 to-transparent transition-transform duration-500 group-hover:scale-x-100" />
+              </article>
             ))}
           </div>
-        </div>
-      </section>
+        </Reveal>
+      </Section>
 
-      {/* Curriculum */}
-      <section id="curriculum" className="scroll-mt-24 border-t border-line bg-base/60 py-20">
-        <div className="container-x">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">The complete 6-week curriculum</p>
-          <h2 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">What you will master, week by week</h2>
-          <div className="mt-12 space-y-8">
-            {curriculum.map((w) => (
-              <div key={w.week} className="rounded-3xl border border-line bg-ink p-6 sm:p-8">
-                <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                  <span className="font-mono text-sm font-bold uppercase tracking-widest text-lime">Week {w.week}</span>
-                  <h3 className="text-xl font-bold sm:text-2xl">{w.theme}</h3>
+      {/* Curriculum: card style of the homepage "How it works" section */}
+      <Section id="curriculum" className="scroll-mt-24 bg-ink">
+        <SectionHeading
+          eyebrow="The complete 6-week curriculum"
+          title={
+            <>
+              What you will master,{" "}
+              <em className="font-semibold not-italic text-lime">week by week.</em>
+            </>
+          }
+          subtitle="Twelve live classes, two a week, each applied to your own campaigns."
+        />
+        <div className="space-y-10">
+          {curriculum.map((w) => (
+            <div key={w.week}>
+              <Reveal y={20}>
+                <div className="mb-5 flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                  <span className="eyebrow">Week {w.week}</span>
+                  <h3 className="text-2xl font-semibold tracking-tight text-fog sm:text-3xl">{w.theme}</h3>
                 </div>
-                <div className="mt-6 grid gap-5 md:grid-cols-2">
-                  {w.classes.map((c) => (
-                    <div key={c.number} className="rounded-2xl border border-line bg-panel p-5 sm:p-6">
-                      <p className="font-mono text-xs uppercase tracking-wider text-white/50">Class {c.number}</p>
-                      <h4 className="mt-1 text-lg font-semibold text-white">{c.title}</h4>
-                      <ul className="mt-4 space-y-2">
-                        {c.topics.map((t) => (
-                          <li key={t} className="flex gap-2 text-sm text-white/70">
-                            <ArrowRight className="mt-0.5 h-4 w-4 shrink-0 text-lime" />
-                            <span>{t}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="mt-10 text-center">
-            <a href={site.bookCallUrl} className={btnPrimary}>
-              Apply for the Mastermind
-              <ArrowUpRight className="h-4 w-4" />
-            </a>
-          </div>
+              </Reveal>
+              <ol className="m-0 grid list-none gap-5 p-0 md:grid-cols-2">
+                {w.classes.map((c, ci) => (
+                  <li key={c.number} className="h-full">
+                    <Reveal delay={ci * 0.06} y={28} className="h-full">
+                      <article className="group relative h-full overflow-hidden rounded-3xl border border-line bg-panel p-7 transition-all duration-500 hover:border-lime/30 hover:bg-elevated">
+                        <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-lime/[0.06] opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
+                        <div className="flex items-start justify-between gap-4">
+                          <div>
+                            <p className="font-mono text-xs uppercase tracking-wider text-lime">Class {c.number}</p>
+                            <h4 className="mt-2 text-lg font-semibold tracking-tight text-fog">{c.title}</h4>
+                          </div>
+                          <span className="font-mono text-5xl font-bold tracking-tight text-fog/[0.08]">{String(c.number).padStart(2, "0")}</span>
+                        </div>
+                        <ul className="mt-5 space-y-2">
+                          {c.topics.map((t) => (
+                            <li key={t} className="flex gap-2.5 text-sm leading-relaxed text-mist">
+                              <ArrowRight className="mt-1 h-3.5 w-3.5 shrink-0 text-lime" />
+                              <span>{t}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        <span className="pointer-events-none absolute inset-x-6 bottom-0 h-px origin-left scale-x-0 bg-gradient-to-r from-lime/70 to-transparent transition-transform duration-500 group-hover:scale-x-100" />
+                      </article>
+                    </Reveal>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ))}
         </div>
-      </section>
+      </Section>
+
+      <CTABanner
+        compact
+        eyebrow="Seats are limited"
+        title={
+          <>
+            Twelve classes.{" "}
+            <em className="font-semibold not-italic text-lime">Your own campaigns.</em>
+          </>
+        }
+        description="Apply for the AI Client Acquisition Mastermind and build your acquisition system with live support."
+        ctaLabel="Apply for the Mastermind"
+        notes={["6 weeks, 12 live classes", "14 implementation resources"]}
+      />
 
       {/* Free preview: Class 1 */}
-      <section className="border-t border-line pt-20">
-        <div className="container-x max-w-3xl text-center">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">Free preview · Class 1</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Hidden Facebook interest targeting</h2>
-          <p className="mt-4 text-base leading-relaxed text-white/70 sm:text-lg">
-            A taste of week 1: how hidden interest research, buyer-intent segmentation and creative rotation work together to reach high-ticket buyers on Meta.
-          </p>
-        </div>
-      </section>
-      <VSL videoId="jjq9-FSD4iA" hideHeading />
+      <VSL
+        videoId="jjq9-FSD4iA"
+        eyebrow="Free preview · Class 1"
+        title={
+          <>
+            Hidden Facebook interest{" "}
+            <em className="font-semibold not-italic text-lime">targeting.</em>
+          </>
+        }
+        subtitle="A taste of week 1: how hidden interest research, buyer-intent segmentation and creative rotation work together to reach high-ticket buyers on Meta."
+      />
 
       {/* What makes it different */}
-      <section className="border-t border-line py-20">
-        <div className="container-x">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">What makes this mastermind different</p>
-          <h2 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">Built around your campaigns, not slides</h2>
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {differentiators.map(({ icon: Icon, title, text }) => (
-              <div key={title} className="rounded-2xl border border-line bg-panel p-6">
-                <Icon className="h-7 w-7 text-lime" />
-                <h3 className="mt-4 text-lg font-bold">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/65">{text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Section id="different" className="bg-ink">
+        <SectionHeading
+          eyebrow="What makes this mastermind different"
+          title={
+            <>
+              Built around your campaigns,{" "}
+              <em className="font-semibold not-italic text-lime">not slides.</em>
+            </>
+          }
+        />
+        <ol className="m-0 grid list-none gap-5 p-0 sm:grid-cols-2 lg:grid-cols-3">
+          {differentiators.map(({ icon: Icon, title, text }, i) => (
+            <li key={title} className="h-full">
+              <Reveal delay={(i % 3) * 0.06} y={28} className="h-full">
+                <article className="group relative h-full overflow-hidden rounded-3xl border border-line bg-panel p-7 transition-all duration-500 hover:border-lime/30 hover:bg-elevated">
+                  <div className="flex items-start justify-between">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-lime/25 bg-lime/[0.07] text-lime transition-transform duration-500 group-hover:-rotate-6 group-hover:scale-110">
+                      <Icon className="h-6 w-6" strokeWidth={1.75} />
+                    </span>
+                    <span className="font-mono text-5xl font-bold tracking-tight text-fog/[0.08]">{String(i + 1).padStart(2, "0")}</span>
+                  </div>
+                  <h3 className="mt-6 text-lg font-semibold tracking-tight text-fog">{title}</h3>
+                  <p className="mt-2.5 text-sm leading-relaxed text-mist">{text}</p>
+                  <span className="pointer-events-none absolute inset-x-6 bottom-0 h-px origin-left scale-x-0 bg-gradient-to-r from-lime/70 to-transparent transition-transform duration-500 group-hover:scale-x-100" />
+                </article>
+              </Reveal>
+            </li>
+          ))}
+        </ol>
+      </Section>
 
-      {/* Resources */}
-      <section className="border-t border-line bg-base/60 py-20">
-        <div className="container-x grid gap-10 lg:grid-cols-[1fr_1.4fr]">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">Implementation resources</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Premium resources you keep using</h2>
-            <p className="mt-4 text-base leading-relaxed text-white/70">
-              SOPs, checklists, playbooks and templates for every stage of the system, plus weekly assignments that turn each class into action on your own account.
-            </p>
-          </div>
-          <ul className="grid gap-3 sm:grid-cols-2">
+      {/* Implementation resources */}
+      <Section id="resources" className="relative overflow-hidden bg-ink">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_0%,rgba(201,242,107,0.06),transparent)]" />
+        <SectionHeading
+          eyebrow="Implementation resources"
+          title={
+            <>
+              Premium resources{" "}
+              <em className="font-semibold not-italic text-lime">you keep using.</em>
+            </>
+          }
+          subtitle="SOPs, checklists, playbooks and templates for every stage of the system, plus weekly assignments that turn each class into action on your own account."
+        />
+        <Reveal y={20} delay={0.05}>
+          <ul className="relative z-10 mx-auto grid max-w-5xl grid-cols-1 gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
             {resources.map((r) => (
-              <li key={r} className="flex items-center gap-3 rounded-xl border border-line bg-ink px-4 py-3 text-sm text-white/85">
-                <FileText className="h-4 w-4 shrink-0 text-lime" />
+              <li key={r} className="group flex items-center gap-3 bg-panel px-6 py-5 text-sm text-fog transition-colors duration-300 hover:bg-elevated">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-line bg-ink/60 text-lime transition-colors group-hover:border-lime/40">
+                  <FileText className="h-4 w-4" />
+                </span>
                 {r}
               </li>
             ))}
           </ul>
-        </div>
-      </section>
+        </Reveal>
+      </Section>
 
       {/* Who it's for */}
-      <section className="border-t border-line py-20">
-        <div className="container-x">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">Who is this mastermind for?</p>
-          <h2 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">For people who run, or rely on, paid acquisition</h2>
-          <ul className="mt-10 flex flex-wrap gap-3">
+      <Section id="who" className="bg-ink">
+        <SectionHeading
+          eyebrow="Who is this mastermind for?"
+          title={
+            <>
+              For people who run,{" "}
+              <em className="font-semibold not-italic text-lime">or rely on, paid acquisition.</em>
+            </>
+          }
+        />
+        <Reveal y={20}>
+          <ul className="mx-auto flex max-w-4xl flex-wrap justify-center gap-3">
             {audience.map((a) => (
-              <li key={a} className="rounded-full border border-line bg-panel px-5 py-2.5 text-sm text-white/85">
+              <li key={a} className="rounded-full border border-line bg-panel px-5 py-2.5 text-sm text-fog transition-colors hover:border-lime/40">
                 {a}
               </li>
             ))}
           </ul>
-          <p className="mt-8 max-w-3xl text-sm leading-relaxed text-white/60">
+          <p className="mx-auto mt-8 max-w-2xl text-center text-sm leading-relaxed text-mist">
             Prefer to have the system built and run for you instead? See our{" "}
-            <a href="/meta-ads-agency" className="text-lime underline underline-offset-2">Meta ads agency</a> and{" "}
-            <a href="/lead-generation-agency" className="text-lime underline underline-offset-2">done-for-you lead generation</a> services.
+            <Link href="/meta-ads-agency" className="text-lime underline underline-offset-2">Meta ads agency</Link> and{" "}
+            <Link href="/lead-generation-agency" className="text-lime underline underline-offset-2">done-for-you lead generation</Link> services.
           </p>
-        </div>
-      </section>
+        </Reveal>
+      </Section>
 
       {/* Graduate support */}
-      <section className="border-t border-line bg-base/60 py-20">
-        <div className="container-x grid items-center gap-10 lg:grid-cols-2">
-          <div>
-            <GraduationCap className="h-9 w-9 text-lime" />
-            <p className="mt-4 font-mono text-xs uppercase tracking-[0.25em] text-lime">Graduate support program</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">You don&apos;t graduate alone</h2>
+      <Section id="graduate-support" className="bg-ink">
+        <Reveal y={24}>
+          <div className="relative mx-auto max-w-5xl overflow-hidden rounded-[2rem] border border-line bg-panel p-8 sm:p-12">
+            <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-lime/[0.08] blur-3xl" />
+            <div className="relative grid items-center gap-8 lg:grid-cols-[auto_1fr]">
+              <span className="flex h-16 w-16 items-center justify-center rounded-2xl border border-lime/25 bg-lime/[0.07] text-lime">
+                <GraduationCap className="h-8 w-8" strokeWidth={1.75} />
+              </span>
+              <div>
+                <span className="eyebrow">Graduate support program</span>
+                <h2 className="mt-4 text-3xl font-semibold tracking-tight text-fog sm:text-4xl">
+                  You don&apos;t graduate <em className="font-semibold not-italic text-lime">alone.</em>
+                </h2>
+                <p className="mt-4 text-[1rem] leading-relaxed text-mist sm:text-lg">
+                  The final class ends with a live review of your campaigns, an optimization roadmap and individual implementation guidance, so you leave with a clear plan for your own account. Details of support after graduation are covered on your application call.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="space-y-4 text-base leading-relaxed text-white/70 sm:text-lg">
-            <p>
-              The final class ends with a live review of your campaigns, an optimization roadmap and individual implementation guidance, so you leave with a clear plan for your own account.
-            </p>
-            <p>Details of support after graduation are covered on your application call.</p>
-          </div>
-        </div>
-      </section>
+        </Reveal>
+      </Section>
 
       <FaqAccordion
         items={faqs}
@@ -664,71 +716,72 @@ export default function AiClientAcquisitionMastermindPage() {
       />
 
       {/* Results */}
-      <section id="results" className="border-t border-line bg-base/60 py-20">
-        <div className="container-x">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-lime">Results</p>
-          <h2 className="mt-3 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">Results from the system taught in this mastermind</h2>
-          <p className="mt-4 max-w-3xl text-base leading-relaxed text-white/70">
-            Documented client results from the same Meta ads, qualification, tracking and scaling methods covered in the 12 classes. Each one links to the full case study.
-          </p>
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {results.map((c) => (
-              <Link
-                key={c.slug}
-                href={`/case-studies/${c.slug}`}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-ink transition-colors hover:border-lime/60"
-              >
-                {c.image && (
-                  <div className="relative aspect-[4/5] overflow-hidden bg-panel">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={c.image}
-                      alt={`${c.title}: client result screenshot`}
-                      loading="lazy"
-                      decoding="async"
-                      className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
-                    />
+      <Section id="results" className="bg-ink">
+        <SectionHeading
+          eyebrow="Results"
+          title={
+            <>
+              Results from the system{" "}
+              <em className="font-semibold not-italic text-lime">taught in this mastermind.</em>
+            </>
+          }
+          subtitle="Documented client results from the same Meta ads, qualification, tracking and scaling methods covered in the 12 classes. Each one links to the full case study."
+        />
+        <ol className="m-0 grid list-none gap-5 p-0 sm:grid-cols-2 lg:grid-cols-3">
+          {results.map((c, i) => (
+            <li key={c.slug} className="h-full">
+              <Reveal delay={(i % 3) * 0.06} y={28} className="h-full">
+                <Link
+                  href={`/case-studies/${c.slug}`}
+                  className="group flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-panel transition-all duration-500 hover:border-lime/30 hover:bg-elevated"
+                >
+                  {c.image && (
+                    <div className="relative aspect-[4/5] overflow-hidden border-b border-line bg-ink">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={c.image}
+                        alt={`${c.title}: client result screenshot`}
+                        loading="lazy"
+                        decoding="async"
+                        className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+                      />
+                    </div>
+                  )}
+                  <div className="flex flex-1 flex-col p-7">
+                    <h3 className="text-lg font-semibold tracking-tight text-fog">{c.title}</h3>
+                    <p className="mt-2.5 flex-1 text-sm leading-relaxed text-mist">{c.description}</p>
+                    <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-lime">
+                      Read the case study <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                    </span>
                   </div>
-                )}
-                <div className="flex flex-1 flex-col p-6">
-                  <h3 className="text-lg font-bold text-lime">{c.title}</h3>
-                  <p className="mt-2 flex-1 text-sm leading-relaxed text-white/70">{c.description}</p>
-                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-white group-hover:text-lime">
-                    Read the case study <ArrowUpRight className="h-4 w-4" />
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-          <div className="mt-8 text-center">
-            <Link href="/case-studies" className="text-sm font-semibold text-lime underline underline-offset-4">
-              See all case studies
-            </Link>
-          </div>
+                </Link>
+              </Reveal>
+            </li>
+          ))}
+        </ol>
+        <div className="mt-10 text-center">
+          <Button href="/case-studies" variant="outline" size="lg">
+            See all case studies
+          </Button>
         </div>
-      </section>
+      </Section>
+
       <Testimonials />
 
-      {/* Final CTA */}
-      <section className="relative overflow-hidden border-t border-line py-24">
-        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[420px] w-[720px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime/10 blur-[140px]" />
-        <div className="container-x relative z-10 text-center">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-lime">Build your client acquisition advantage</p>
-          <h2 className="mx-auto mt-4 max-w-3xl text-3xl font-bold tracking-tight sm:text-5xl">Stop relying on guesswork.</h2>
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg">
-            Build a predictable system to attract, qualify, convert and acquire ideal clients using modern advertising strategies, AI automation, conversion intelligence and advanced scaling methodologies.
-          </p>
-          <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
-            <a href={site.bookCallUrl} className={btnPrimary}>
-              Apply for the Mastermind
-              <ArrowUpRight className="h-4 w-4" />
-            </a>
-            <a href="#curriculum" className={btnSecondary}>
-              Explore the Curriculum
-            </a>
-          </div>
-        </div>
-      </section>
+      <div className="py-12 sm:py-16">
+        <CTABanner
+          eyebrow="Build your client acquisition advantage"
+          title={
+            <>
+              Stop relying on{" "}
+              <em className="font-semibold not-italic text-lime">guesswork.</em>
+            </>
+          }
+          description="Build a predictable system to attract, qualify, convert and acquire ideal clients using modern advertising strategies, AI automation, conversion intelligence and advanced scaling methodologies."
+          ctaLabel="Apply for the Mastermind"
+          notes={["6 weeks, 12 live classes", "Live campaign reviews"]}
+        />
+      </div>
 
       <Footer />
     </main>

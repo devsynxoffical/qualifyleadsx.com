@@ -13,6 +13,11 @@ type CTABannerProps = {
   eyebrow?: string;
   title?: React.ReactNode;
   compact?: boolean;
+  /** Optional overrides; defaults keep the strategy-call copy used across the site. */
+  description?: React.ReactNode;
+  ctaLabel?: string;
+  ctaHref?: string;
+  notes?: [string, string];
 };
 
 export function CTABanner({
@@ -20,6 +25,10 @@ export function CTABanner({
   eyebrow = "Limited spots each month",
   title,
   compact = false,
+  description,
+  ctaLabel = "Book Your Free Strategy Call",
+  ctaHref = site.bookCallUrl,
+  notes = ["No commitment required", "90-day written guarantee"],
 }: CTABannerProps) {
   return (
     <Reveal y={48} className={cn("container-x", className)}>
@@ -60,31 +69,35 @@ export function CTABanner({
 
            <Reveal delay={0.2}>
              <p className="mx-auto mt-6 max-w-xl text-pretty text-[1rem] leading-relaxed text-fog/80 sm:text-lg">
-                Book a free strategy call. We&apos;ll audit your offer, show you the exact funnel you
-               need, and get qualified sales calls onto your calendar. No pressure, no fluff.
+                {description ?? (
+                  <>
+                    Book a free strategy call. We&apos;ll audit your offer, show you the exact funnel you
+                    need, and get qualified sales calls onto your calendar. No pressure, no fluff.
+                  </>
+                )}
              </p>
            </Reveal>
 
           <Reveal delay={0.3}>
             <div className="mt-9 flex flex-col items-center gap-5">
               <Button
-                href={site.bookCallUrl}
+                href={ctaHref}
                 size="xl"
                 icon="up-right"
                 className="w-full sm:w-auto"
-                ariaLabel="Book your free strategy call"
+                ariaLabel={ctaLabel}
                 data-cursor="book"
               >
-                Book Your Free Strategy Call
+                {ctaLabel}
               </Button>
               <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-fog/60">
                 <span className="inline-flex items-center gap-1.5">
                   <CalendarDays className="h-3.5 w-3.5 text-lime" />
-                  No commitment required
+                  {notes[0]}
                 </span>
                 <span className="inline-flex items-center gap-1.5">
                   <ShieldCheck className="h-3.5 w-3.5 text-lime" />
-                  90-day written guarantee
+                  {notes[1]}
                 </span>
               </div>
             </div>

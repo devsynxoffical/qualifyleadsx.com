@@ -1,5 +1,6 @@
 "use client";
 
+import { gaEvent } from "@/lib/ga";
 import { useState, type FormEvent } from "react";
 import { usePathname } from "next/navigation";
 import { X, ArrowUpRight, CheckCircle2, Loader2, Lock, ShieldCheck, Mail } from "lucide-react";
@@ -39,6 +40,7 @@ export function EmailOptInWidget() {
       const data = (await res.json()) as { success?: string | boolean };
       if (data.success === "true" || data.success === true) {
         setStatus("success");
+        gaEvent("generate_lead", { form: "email_optin" });
         form.reset();
       } else {
         setStatus("error");

@@ -6,6 +6,7 @@ import { NoiseOverlay } from "@/components/ui/NoiseOverlay";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { MetaPixel } from "@/components/analytics/MetaPixel";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
 import { EmailOptInWidget } from "@/components/ui/EmailOptInWidget";
 import { site } from "@/lib/site";
@@ -110,6 +111,7 @@ export default function RootLayout({
         <a href="#main" className="skip-link">
           Skip to content
         </a>
+        <GoogleAnalytics />
         <MetaPixel />
         <JsonLd />
         <NoiseOverlay />

@@ -35,6 +35,23 @@ management for coaches" (61.5), "bid strategy calculator" (47.5).
 
 ---
 
+## 2026-11-10 (session 3): Google Analytics 4
+
+**Done**
+- GA4 tag `G-QQLRYFBWPL` (stream "Qualifiedleadsx", ID 16314271000) on every page, loaded
+  after the page is interactive.
+- Lead events sent to GA4 (verified in a browser against the production build):
+  `generate_lead` (form=booking) on booking-form submit, `generate_lead` (form=email_optin) on
+  the email opt-in forms, `contact` (method=whatsapp) on WhatsApp clicks, `view_booking_form`
+  when the booking form is shown. Meta Pixel events are unchanged.
+
+**Owner actions**
+- In GA4 → Admin → Events (after the first events arrive, up to 24 h), mark `generate_lead`
+  and `contact` as **key events**.
+- In GA4 → Admin → Property access management, add the tracking service account as
+  **Viewer** so the daily session can report organic leads.
+- Link GA4 to Search Console (Admin → Product links → Search Console links).
+
 ## Backlog (highest impact first)
 
 1. Resubmit the 21 not-indexed URLs and the new URLs to the Indexing API (quota resets daily).

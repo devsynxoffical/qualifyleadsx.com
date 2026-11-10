@@ -106,7 +106,7 @@ export default function ExecutiveCoachesPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 To acquire <strong>executive coaching clients ($10K–$50K retainers)</strong>, we deploy executive-grade thought-leadership video campaigns that reach C-level decision-makers. Backed by private executive briefings and white-glove appointment concierge, this system books 12 to 25 qualified leadership consultations monthly.

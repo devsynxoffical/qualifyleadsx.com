@@ -106,7 +106,7 @@ export default function AppointmentSettingForAgenciesPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Appointment setting for agencies</strong> places trained sales setters into your CRM to engage inbound leads within 5 minutes, verify monthly marketing budgets ($5K+/mo), and book 25 to 50 qualified discovery calls monthly. This protects founder billable time and lifts calendar show rates to 82%+.

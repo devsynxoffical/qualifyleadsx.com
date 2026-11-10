@@ -112,7 +112,7 @@ export default function MetaAdsCpmPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 In 2026, <strong>Meta Ads CPMs for high-ticket lead generation average $24.50 across Tier-1 markets</strong> (US, UK, Canada, Australia). Pricing fluctuates predictably from Q1 lows ($18.40) to Q4 retail auction peaks ($54.20). Broad Advantage+ targeting paired with 3-second hook testing reduces effective CPMs by 28%.

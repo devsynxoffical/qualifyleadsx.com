@@ -106,7 +106,7 @@ export default function RealEstateInvestorsPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 To generate <strong>off-market real estate investor leads and motivated seller contracts</strong>, we deploy compliant Meta ad funnels paired with sub-90-second phone triage. This filters for high equity, urgent timelines (probate, foreclosure, major repairs), and books qualified acquisition calls at $180–$350 per call.

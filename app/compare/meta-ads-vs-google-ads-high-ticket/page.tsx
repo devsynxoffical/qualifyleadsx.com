@@ -143,7 +143,7 @@ export default function MetaVsGoogleAdsPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 For high-ticket offers ($3K–$25K), <strong>Meta Ads outperforms Google Ads in scale and cost per booked call</strong> ($140–$280 on Meta vs $220–$480 on Google). While Google captures existing search intent, Meta generates new demand through visual proof and VSL funnels, allowing businesses to scale predictably without waiting for search queries.

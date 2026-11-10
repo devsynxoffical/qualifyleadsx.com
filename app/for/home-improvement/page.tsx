@@ -106,7 +106,7 @@ export default function HomeImprovementPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Exclusive home improvement leads</strong> generate confirmed in-home sales estimates for contractors specializing in \$10K–\$50K+ projects (roofing, remodeling, HVAC). By replacing shared lead brokers with proprietary Meta ad funnels and phone confirmation triage, contractors secure 80%+ estimate sit rates.

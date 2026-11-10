@@ -106,7 +106,7 @@ export default function MetaAdsForLawFirmsPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Facebook ads for law firms</strong> sign high-value legal retainers by deploying state-bar-compliant educational video ads and sub-3-minute intake triage. Costing 80% less than Google PPC legal clicks, this system qualifies claimants on liability and damages before routing to attorney calendars.

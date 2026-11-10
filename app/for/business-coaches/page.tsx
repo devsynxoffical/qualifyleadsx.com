@@ -106,7 +106,7 @@ export default function BusinessCoachesPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 To acquire <strong>high-paying clients for business coaches ($5K–$25K packages)</strong>, we deploy paid Meta direct-response campaigns paired with 10-minute VSL funnels and 2-way setter triage. This system books 20 to 40 qualified founder appointments monthly at an average cost of $140–$240 per call.

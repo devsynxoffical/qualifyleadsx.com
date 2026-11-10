@@ -106,7 +106,7 @@ export default function FitnessCoachesPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 To acquire <strong>high-ticket online fitness coaching clients ($2,500–$6,000 packages)</strong>, we combine compliant Meta lifestyle ads, Instagram DM triage sequences, and appointment setters. This system books 30 to 60 qualified consultation calls monthly at an average cost of $85–$145 per call.

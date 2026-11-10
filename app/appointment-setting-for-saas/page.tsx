@@ -106,7 +106,7 @@ export default function AppointmentSettingForSaasPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Appointment setting for SaaS</strong> deploys specialized inbound SDRs who contact trial users and demo requests within 3 minutes, qualify technical fit and seat count, and book qualified product demonstrations for Account Executives. This accelerates pipeline velocity and drives show rates above 85%.

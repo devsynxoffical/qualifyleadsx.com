@@ -188,7 +188,7 @@ export default async function IndividualCaseStudyPage({ params }: PageProps) {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 In this verified case study, QualifiedLeadsX scaled a <strong>{item.category} business to {item.bigNumber}</strong> in tracked revenue. By implementing direct-response Meta Ads, a friction-based VSL qualification funnel, and sub-5-minute appointment setters, the business maintained consistent cash ROAS with over 80% appointment attendance.

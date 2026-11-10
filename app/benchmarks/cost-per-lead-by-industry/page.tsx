@@ -117,7 +117,7 @@ export default function CplByIndustryPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 In 2026, the <strong>average cost per lead (CPL) across high-ticket industries ranges from $24 to $280</strong>. Med spas experience the lowest CPL ($24–$52), high-ticket coaching averages $32–$68, B2B SaaS averages $85–$190, and financial advisory averages $90–$210 based on analysis of over $50M in Meta ad spend.

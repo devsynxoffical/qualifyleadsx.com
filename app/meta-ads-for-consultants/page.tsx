@@ -106,7 +106,7 @@ export default function MetaAdsForConsultantsPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Facebook ads for consultants</strong> secure \$10,000–\$50,000+ corporate engagements by using high-authority diagnostic video assets and executive briefing funnels. Operating at 60% lower CPMs than LinkedIn Ads, this system places 15 to 30 qualified stakeholder consultations monthly directly on your calendar.

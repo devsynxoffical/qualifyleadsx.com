@@ -118,7 +118,7 @@ export default function RoasCalculatorPage() {
           {/* Quick Answer Block (AEO Standard) */}
           <div className="mt-8 rounded-2xl border border-lime/30 bg-elevated/80 p-6 text-left backdrop-blur-md">
             <span className="font-mono text-xs uppercase tracking-wider text-lime font-bold">
-              DIRECT ANSWER (AEO)
+              Quick answer
             </span>
             <h2 className="mt-1 text-lg font-bold text-fog">
               What is Return on Ad Spend (ROAS) for High-Ticket Services?

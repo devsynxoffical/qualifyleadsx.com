@@ -106,7 +106,7 @@ export default function LawFirmsPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Law firm lead generation</strong> requires bar-compliant paid media campaigns coupled with sub-3-minute intake response times. By screening claimants on incident severity, liability, and insurance coverage before attorney handoff, our system signs 15 to 35 high-value retainers monthly while protecting attorney billable hours.

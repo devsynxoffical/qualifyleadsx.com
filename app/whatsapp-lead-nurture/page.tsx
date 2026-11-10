@@ -106,7 +106,7 @@ export default function WhatsAppLeadNurturePage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>WhatsApp lead nurturing</strong> is an automated conversational follow-up system that engages inbound leads within 60 seconds on WhatsApp Business API. Delivering 98% open rates and 45%+ reply rates, it pairs AI response speed with human setter routing to increase high-ticket appointment show rates by 35% to 50%.

@@ -143,7 +143,7 @@ export default function DfyVsDwyPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Done-For-You (DFY) lead generation</strong> is optimal for established businesses ($20K+/mo) because specialists handle media buying, copy, CRM tech, and setter qualification with under 2 hours of founder time weekly. <strong>Done-With-You (DWY)</strong> suits early-stage founders with more time than capital, but requires 15–25 hours per week of technical execution.

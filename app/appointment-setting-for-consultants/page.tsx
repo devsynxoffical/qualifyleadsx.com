@@ -106,7 +106,7 @@ export default function AppointmentSettingForConsultantsPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Appointment setting for consultants</strong> pairs consultative diagnostic triage with white-glove calendar concierge to book C-suite decision-makers for \$15,000–\$50,000+ engagements. Setters verify corporate revenue and operational bottlenecks, securing 15 to 30 executive consultations monthly at 85%+ show rates.

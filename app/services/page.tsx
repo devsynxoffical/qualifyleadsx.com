@@ -238,7 +238,7 @@ export default function ServicesHubPage() {
           {/* Quick Answer Block (AEO Standard) */}
           <div className="mt-10 rounded-2xl border border-lime/30 bg-elevated/80 p-6 sm:p-8 text-left backdrop-blur-md">
             <span className="font-mono text-xs uppercase tracking-wider text-lime font-bold">
-              DIRECT ANSWER (AEO OVERVIEW)
+              Quick answer
             </span>
             <h2 className="mt-2 text-xl font-bold text-fog">
               What are high ticket lead generation services?

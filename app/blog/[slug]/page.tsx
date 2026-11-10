@@ -301,7 +301,7 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="rounded-2xl border-2 border-lime/40 bg-panel/90 p-6 sm:p-8 backdrop-blur-md shadow-[0_0_50px_-20px_rgba(201,242,107,0.15)] mb-12">
                 <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-lime font-bold mb-3">
                   <span className="h-2 w-2 rounded-full bg-lime animate-pulse" />
-                  <span>AI Fast Answer & Direct Summary (AEO / GEO)</span>
+                  <span>Quick answer</span>
                 </div>
                 <h2 className="aeo-question text-xl sm:text-2xl font-bold font-heading text-fog mb-3">
                   {post.aeoSummary.question}

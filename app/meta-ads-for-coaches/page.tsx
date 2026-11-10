@@ -106,7 +106,7 @@ export default function MetaAdsForCoachesPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Facebook ads for coaches</strong> scale $5,000–$25,000 programs by combining direct-response founder videos, Advantage+ algorithmic broad targeting, and VSL funnels. Delivering booked calls at $140–$220, this system generates qualified discovery calls with buyers pre-sold on your framework.

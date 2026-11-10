@@ -106,7 +106,7 @@ export default function CRMAutomationPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>CRM automation for coaches</strong> is a standardized system of sales pipelines, instant lead alerts, multi-channel reminder sequences, and post-call nurture workflows. It eliminates manual lead tracking, lifts appointment show rates above 80%, and automatically synchronizes closed deals back to Meta CAPI for precise ad optimization.

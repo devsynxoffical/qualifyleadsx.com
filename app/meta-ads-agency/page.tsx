@@ -241,7 +241,7 @@ export default function MetaAdsAgencyPage() {
           <div className="mt-12 rounded-2xl border-2 border-lime/40 bg-panel/85 p-6 sm:p-8 backdrop-blur-md max-w-3xl mx-auto text-left shadow-[0_15px_40px_-15px_rgba(0,0,0,0.8)]">
             <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-lime font-bold mb-3">
               <span className="h-2.5 w-2.5 rounded-full bg-lime animate-pulse" />
-              <span>AEO Executive Summary: What We Do</span>
+              <span>Summary: What We Do</span>
             </div>
             <p className="aeo-answer text-sm sm:text-base leading-relaxed text-mist">
               <strong>QualifiedLeadsX™</strong> is a specialized performance <strong>Meta ads agency</strong> that engineers end-to-end client acquisition systems for high-ticket businesses. We combine algorithmic broad creative testing across Facebook and Instagram with high-converting 12-minute VSL funnels and automated qualification filtration to predictably scale clients beyond $100K+/month.

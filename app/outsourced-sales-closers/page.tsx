@@ -106,7 +106,7 @@ export default function OutsourcedSalesClosersPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Outsourced sales closers</strong> are professional commission-aligned sales representatives who handle scheduled consultation calls to convert qualified high-ticket leads into paying clients for $3,000 to $25,000+ offers. They eliminate founder sales burnout, maintain 25%+ close rates, and scale revenue without fixed executive overhead.

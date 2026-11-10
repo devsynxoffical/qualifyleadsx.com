@@ -106,7 +106,7 @@ export default function MetaAdsForSaasPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Facebook ads for SaaS</strong> generate qualified software demo requests by deploying product-led UI walkthrough videos and business-email-verified booking funnels. Operating at 60% lower CPMs than LinkedIn, this engine books 30 to 60 sales-qualified demos monthly at $180–$280 per completed demo.

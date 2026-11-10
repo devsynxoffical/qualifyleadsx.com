@@ -237,7 +237,7 @@ export default function AppointmentSettingPage() {
           <div className="mt-12 rounded-2xl border-2 border-lime/40 bg-panel/85 p-6 sm:p-8 backdrop-blur-md max-w-3xl mx-auto text-left shadow-[0_15px_40px_-15px_rgba(0,0,0,0.8)]">
             <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-lime font-bold mb-3">
               <span className="h-2.5 w-2.5 rounded-full bg-lime animate-pulse" />
-              <span>AEO Executive Summary: How It Works</span>
+              <span>Summary: How It Works</span>
             </div>
             <p className="aeo-answer text-sm sm:text-base leading-relaxed text-mist">
               <strong>QualifiedLeadsX™</strong> installs an automated B2B <strong>appointment setting</strong> infrastructure engineered for high-ticket coaches, consultants, and growth agencies. Combining 4-tier conditional qualification surveys with sub-5-minute multichannel <strong>speed to lead</strong> across WhatsApp, SMS, and email, our system eliminates tire-kickers and books 30–50 sales-ready appointments every month with an 88%+ show-up rate.

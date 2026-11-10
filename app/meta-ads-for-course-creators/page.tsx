@@ -106,7 +106,7 @@ export default function MetaAdsForCourseCreatorsPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Facebook ads for course creators</strong> scale $2,000–$10,000 programs by steering traffic into 12-minute VSL funnels and advisor enrollment calls. Operating at 4.5x+ ROAS, this model outperforms automated webinars by qualifying students and booking enrollment interviews at $120–$180 per call.

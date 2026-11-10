@@ -106,7 +106,7 @@ export default function RecruitmentAgenciesPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 To generate <strong>retained and contingency search clients for recruitment agencies</strong>, we target hiring managers and VPs struggling with urgent talent bottlenecks. By presenting specialized placement track records and speed-to-hire benchmarks, this engine books 15 to 30 corporate client consultations monthly.

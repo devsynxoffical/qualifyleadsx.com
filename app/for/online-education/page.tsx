@@ -106,7 +106,7 @@ export default function OnlineEducationPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Online education lead generation</strong> drives student enrollments for premium academies ($3K–$15K tuitions) through student outcome VSLs and admissions interview triage. By qualifying applicants on financing and career intent, institutions lower student acquisition costs by 35% and achieve 80%+ interview attendance.

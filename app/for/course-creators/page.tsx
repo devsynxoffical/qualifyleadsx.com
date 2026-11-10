@@ -106,7 +106,7 @@ export default function CourseCreatorsPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 For course creators selling <strong>premium programs ($1,500–$10,000)</strong>, <strong>lead generation requires direct VSL funnels paired with phone enrollment advisors</strong>. This bypasses low-converting checkout pages, yielding 4x higher student conversion and 80%+ show rates for cohort interviews.

@@ -148,7 +148,7 @@ export default function QualifiedLeadsXAlternativesPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 When scaling high-ticket offers ($3K–$25K), the main <strong>QualifiedLeadsX alternatives</strong> are traditional PPC agencies, outbound cold email shops, and in-house growth teams. QualifiedLeadsX differs by delivering an integrated full-funnel model combining paid Meta traffic, custom VSL funnels, sub-5-minute qualification, and dedicated appointment setters under one performance framework.

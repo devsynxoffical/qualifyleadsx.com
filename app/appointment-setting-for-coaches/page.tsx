@@ -106,7 +106,7 @@ export default function AppointmentSettingForCoachesPage() {
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
               <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                AEO Direct Answer
+                Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
                 <strong>Appointment setting for coaches</strong> embeds trained sales setters into your DM channels, SMS, and WhatsApp to qualify inbound prospects on revenue and intent before booking calls. This eliminates unqualified tire-kickers and delivers 30 to 60 high-ticket discovery calls monthly with 82%+ show rates.

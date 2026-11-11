@@ -82,8 +82,6 @@ const footerColumns = [
 
 export function Footer() {
   return (
-    <>
-    <RelatedLinks />
     <footer className="relative border-t border-line bg-ink" id="footer">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-lime/30 to-transparent" />
       <div className="container-x">
@@ -222,6 +220,9 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Page-specific related links */}
+        <RelatedLinks />
+
         {/* Guides by topic */}
         <nav
           aria-label="Guides by topic"
@@ -256,6 +257,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-    </>
   );
 }

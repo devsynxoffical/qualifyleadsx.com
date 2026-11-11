@@ -57,6 +57,29 @@ export const caseStudyMeta: Record<string, CaseStudyMeta> = {
     title: "$150,348 in 5 Days: LTO to High-Ticket",
     h1: "$150,348 in 5 Days: Low-Ticket to High-Ticket Funnel Case Study",
     description: "2,063 low-ticket memberships, 183 bundle upsells and 30 high-ticket done-for-you programs produced $150,348 in five days.",
+    analysis: [
+      {
+        heading: "Where the $150,348 came from",
+        body: ["The revenue came from three offers sold in sequence to the same buyers within five days, not from one big sale:"],
+        bullets: [
+          "2,063 low-ticket memberships: $64,379",
+          "183 \"plug and play\" bundles (CRM snapshots, creative vaults and sales scripts): $20,369",
+          "30 high-ticket done-for-you programs: $65,600",
+        ],
+      },
+      {
+        heading: "Why a low-ticket front end feeds high-ticket sales",
+        body: [
+          "A low-ticket offer turns cold ad traffic into paying customers quickly, which helps cover ad spend. The bundle is a natural next step for buyers who want to move faster, and the done-for-you program is offered to the smallest, most committed group. Each step qualifies buyers for the next one.",
+          "In this campaign the 30 high-ticket sales produced almost as much revenue as the 2,063 memberships, which is why the front end does not need to be profitable on its own. See how this structure is built in [high-ticket funnel examples](/blog/high-ticket-funnel-examples) and the [LTO funnel breakdown](/mastermind/lto-funnel-scale).",
+        ],
+      },
+    ],
+    related: [
+      { href: "/high-ticket-lead-generation", label: "High-ticket lead generation" },
+      { href: "/vsl-funnels", label: "VSL funnels" },
+      { href: "/mastermind/lto-funnel-scale", label: "LTO funnel breakdown" },
+    ],
   },
   "commercial-services-86k": {
     title: "Low-Ticket Offer Case Study: $86,275",
@@ -72,6 +95,24 @@ export const caseStudyMeta: Record<string, CaseStudyMeta> = {
     title: "Agency Client Case Study: $85K Month",
     h1: "Agency Client Case Study: An $85K Month, Tracking Toward $95K",
     description: "Inside a done-with-you retargeting session with an agency client doing $85K a month and tracking to $95K+, broken down live in Ads Manager.",
+    analysis: [
+      {
+        heading: "What the session covered",
+        body: ["This case study comes from a recorded done-with-you session with an agency client. At the time of recording the client had done $85K the previous month, was at $70K in the current month and was tracking toward $95K+. The session focused on the retargeting phase of the acquisition system, worked through live inside Ads Manager."],
+      },
+      {
+        heading: "Why retargeting matters for agencies selling high-ticket services",
+        body: [
+          "Most buyers of a high-ticket service do not book on the first visit. Retargeting keeps the agency in front of people who watched the video, visited the case studies or started an application, with proof and objection-handling content rather than the same cold ad.",
+          "The usual retargeting audiences are video viewers, landing-page visitors, application starters and past leads, each shown different creative. For agencies, see [Meta ads for agencies](/for/agencies) and the [AI Client Acquisition Mastermind](/mastermind/hidden-facebook-interest), whose week 5 covers retargeting in detail.",
+        ],
+      },
+    ],
+    related: [
+      { href: "/for/agencies", label: "Client acquisition for agencies" },
+      { href: "/meta-ads-agency", label: "Meta ads agency" },
+      { href: "/appointment-setting-for-agencies", label: "Appointment setting for agencies" },
+    ],
   },
   "high-ticket-funnel-79k": {
     title: "$79,070 in 17 Days: Booking Funnel Case",
@@ -82,6 +123,32 @@ export const caseStudyMeta: Record<string, CaseStudyMeta> = {
     title: "AI SaaS Case Study: $71,934 in 24 Days",
     h1: "AI SaaS Case Study: 320 Customers and $71,934 in 24 Days",
     description: "An AI calling and SMS SaaS added 320 customers and $71,934 in 24 days after fixing its ideal customer profile, ad angles and funnel.",
+    analysis: [
+      {
+        heading: "The client and the results",
+        body: ["The client is an AI automation SaaS that runs AI inbound and outbound calling, SMS follow-up and lead scraping for businesses. The founder's reported results for the 24-day period:"],
+        bullets: ["$71,934 in revenue", "320 new customers", "$96 average order value, including upsells", "2.78 return on ad spend"],
+      },
+      {
+        heading: "What changed: distribution, not the product",
+        body: ["The product stayed the same. Four changes to how it was sold made the difference:"],
+        bullets: [
+          "A clear ideal customer profile instead of \"everyone who wants AI\"",
+          "Ad angles about the buyer's pain rather than the product's features",
+          "Tight audience segmentation",
+          "A simple funnel built to convert rather than to impress",
+        ],
+      },
+      {
+        heading: "What other SaaS founders can take from it",
+        body: ["When paid acquisition stalls for a SaaS product, the fix is often positioning and audience, not more features or more budget. See [lead generation for SaaS](/for/saas) and [Meta ads for SaaS](/meta-ads-for-saas)."],
+      },
+    ],
+    related: [
+      { href: "/for/saas", label: "Lead generation for SaaS" },
+      { href: "/meta-ads-for-saas", label: "Meta ads for SaaS" },
+      { href: "/b2b-lead-generation", label: "B2B lead generation" },
+    ],
   },
   "nyc-med-spa-rf-microneedling-74k": {
     title: "Med Spa Case Study: $74,100 From $10K Ads",

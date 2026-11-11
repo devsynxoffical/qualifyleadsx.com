@@ -26,6 +26,7 @@ import { VSL } from "@/components/sections/VSL";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FaqAccordion } from "@/components/sections/FAQ";
 import { Training } from "@/components/sections/Training";
+import { UFSquareMarquee } from "@/components/sections/UFSquareMarquee";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 const PATH = "/mastermind/hidden-facebook-interest";
@@ -717,6 +718,9 @@ export default function AiClientAcquisitionMastermindPage() {
           notes={["6 weeks, 12 live classes", "Live campaign reviews"]}
         />
       </div>
+
+      {/* Live client call recordings: same strip as the homepage */}
+      <UFSquareMarquee />
 
       <Footer />
     </main>

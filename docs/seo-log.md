@@ -61,7 +61,9 @@ calculator" (64), a Turkish SaaS lead-gen question (/for/saas, position 1).
 
 **Indexing:** 35 URLs submitted to the Indexing API at 04:15 UTC; all rejected with 429
 ("Publish requests per day" already used by the shared Google Cloud project). A retry is
-scheduled for 08:20 UTC, after the quota reset.
+scheduled for 08:20 UTC, after the quota reset. **Retry at 08:21 UTC: 38 URLs submitted, 38 accepted, 0 failed**
+(the 21 not-indexed sitemap URLs plus 17 new or updated pages from 10–11 Nov). Accepted means
+Google received the crawl request; it is not confirmation of indexing.
 
 **Done**
 - New tool `/tools/meta-ads-bid-strategy-calculator` ("bid strategy calculator" query on

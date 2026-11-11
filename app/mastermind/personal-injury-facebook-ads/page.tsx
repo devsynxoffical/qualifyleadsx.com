@@ -150,7 +150,7 @@ export default function PersonalInjuryMastermindPage() {
       <Nav />
 
       {/* Section 1: Hero */}
-      <section className="relative overflow-hidden bg-ink pt-24 pb-12 sm:pt-32 sm:pb-14 lg:flex lg:min-h-[calc(100svh-2.5rem)] lg:items-center lg:pt-28 lg:pb-10">
+      <section className="relative overflow-hidden bg-ink pt-24 pb-12 sm:pt-32 sm:pb-16 lg:pt-32">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_45%_at_50%_0%,rgba(201,242,107,0.10),transparent)]" />
         <div className="container-x relative z-10 flex w-full flex-col items-center text-center">
           <Reveal>
@@ -160,6 +160,17 @@ export default function PersonalInjuryMastermindPage() {
             Discover Hidden Facebook Audiences That Can Help You Generate More{" "}
             <em className="text-gradient-lime not-italic">Qualified Personal Injury Cases</em> at Up to 50% Lower Advertising Costs.
           </h1>
+
+          {/* Section 2: Mastermind video, directly under the headline */}
+          <Reveal delay={0.05} y={24} className="w-full">
+            <div id="video" className="mx-auto mt-6 max-w-4xl scroll-mt-28 sm:mt-8">
+              <VimeoPlayer videoId={VIMEO_ID} title={VIDEO_TITLE} poster={POSTER} durationLabel="1:33:56" />
+              <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.2em] text-lime">
+                Watch the exclusive Sniper Method Mastermind
+              </p>
+            </div>
+          </Reveal>
+
           <Reveal delay={0.1}>
             <p className="mx-auto mt-3 max-w-3xl text-pretty text-[0.85rem] leading-relaxed text-mist sm:mt-4 sm:text-base">
               Whether you&apos;re targeting car accidents, motorcycle accidents, 18-wheeler accidents, rideshare accidents, or other personal injury cases, discover our exclusive Sniper Method to uncover untapped Facebook audiences.
@@ -170,11 +181,11 @@ export default function PersonalInjuryMastermindPage() {
           </Reveal>
           <Reveal delay={0.2}>
             <div className="mt-5 flex flex-col items-center gap-3 sm:mt-6 sm:flex-row sm:gap-4">
-              <Button href="#video" size="lg" icon="up-right" ariaLabel="Watch the Sniper Method Mastermind">
-                Watch the Mastermind
-              </Button>
-              <Button href={site.bookCallUrl} variant="outline" size="lg">
+              <Button href={site.bookCallUrl} size="lg" icon="up-right" ariaLabel="Let's Discuss Your Campaigns">
                 Let&apos;s Discuss Your Campaigns
+              </Button>
+              <Button href="#discover" variant="outline" size="lg">
+                What You&apos;ll Discover
               </Button>
             </div>
           </Reveal>
@@ -194,24 +205,6 @@ export default function PersonalInjuryMastermindPage() {
           </Reveal>
         </div>
       </section>
-
-      {/* Section 2: Mastermind video */}
-      <Section id="video" className="relative scroll-mt-24 overflow-hidden bg-[#040c07]">
-        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime/[0.04] blur-[150px]" />
-        <SectionHeading
-          eyebrow="Exclusive mastermind video"
-          title={
-            <>
-              Watch the exclusive{" "}
-              <em className="font-semibold not-italic text-lime">Sniper Method Mastermind.</em>
-            </>
-          }
-          subtitle="The full 1-hour 33-minute session: how we research, narrow and test Facebook audiences for personal injury cases."
-        />
-        <Reveal y={24} className="relative z-10 mx-auto max-w-5xl">
-          <VimeoPlayer videoId={VIMEO_ID} title={VIDEO_TITLE} poster={POSTER} durationLabel="1:33:56" />
-        </Reveal>
-      </Section>
 
       <TrustBar />
 

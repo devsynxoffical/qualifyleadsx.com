@@ -13,7 +13,7 @@ const qualifiedScreenshotFiles: string[] = [
   "2-Facebook-08-19-2026_05_40_PM.png",
   "2-Facebook-08-19-2026_05_48_PM.png",
   "511931114_10009444519176195_2904689068100117491_n.jpg",
-  "580579101_24954369490923786_5207613913196567984_n (1).jpg",
+  "client-result-580579101.jpg",
   "Facebook-08-19-2026_05_44_PM.png",
   "Screenshot 2026-08-19 at 5.24.30 PM.png",
   "Screenshot 2026-08-19 at 5.24.56 PM.png",

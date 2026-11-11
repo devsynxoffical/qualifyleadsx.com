@@ -463,6 +463,19 @@ export default function AiClientAcquisitionMastermindPage() {
         </div>
       </section>
 
+      {/* Free preview: Class 1 */}
+      <VSL
+        videoId="jjq9-FSD4iA"
+        eyebrow="Free preview · Class 1"
+        title={
+          <>
+            Hidden Facebook interest{" "}
+            <em className="font-semibold not-italic text-lime">targeting.</em>
+          </>
+        }
+        subtitle="A taste of week 1: how hidden interest research, buyer-intent segmentation and creative rotation work together to reach high-ticket buyers on Meta."
+      />
+
       <TrustBar />
 
       {/* Program introduction */}
@@ -579,19 +592,6 @@ export default function AiClientAcquisitionMastermindPage() {
         description="Apply for the AI Client Acquisition Mastermind and build your acquisition system with live support."
         ctaLabel="Apply for the Mastermind"
         notes={["6 weeks, 12 live classes", "14 implementation resources"]}
-      />
-
-      {/* Free preview: Class 1 */}
-      <VSL
-        videoId="jjq9-FSD4iA"
-        eyebrow="Free preview · Class 1"
-        title={
-          <>
-            Hidden Facebook interest{" "}
-            <em className="font-semibold not-italic text-lime">targeting.</em>
-          </>
-        }
-        subtitle="A taste of week 1: how hidden interest research, buyer-intent segmentation and creative rotation work together to reach high-ticket buyers on Meta."
       />
 
       {/* What makes it different */}
@@ -736,14 +736,14 @@ export default function AiClientAcquisitionMastermindPage() {
                   className="group flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-panel transition-all duration-500 hover:border-lime/30 hover:bg-elevated"
                 >
                   {c.image && (
-                    <div className="relative aspect-[4/5] overflow-hidden border-b border-line bg-ink">
+                    <div className="relative aspect-[4/3] overflow-hidden border-b border-line bg-white">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={c.image}
                         alt={`${c.title}: client result screenshot`}
                         loading="lazy"
                         decoding="async"
-                        className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+                        className="h-full w-full object-contain p-2 transition-transform duration-500 group-hover:scale-[1.02]"
                       />
                     </div>
                   )}

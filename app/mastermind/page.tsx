@@ -301,12 +301,12 @@ export default function MastermindPage() {
           subtitle="Explore in-depth strategic breakdowns and frameworks shared exclusively inside the QualifiedLeadsX private collective."
         />
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {privateMasterminds.map((item, i) => (
-            <Reveal key={item.title} delay={i * 0.1}>
-              <div className="group relative flex flex-col justify-between h-full rounded-3xl border border-lime/20 bg-[#050e08] p-8 sm:p-10 backdrop-blur-xl shadow-[0_15px_40px_rgba(0,0,0,0.8)] transition-all duration-500 hover:border-lime/40 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(201,242,107,0.15)]">
+            <Reveal key={item.title} delay={i * 0.1} className="h-full">
+              <div className="group relative flex flex-col justify-between h-full rounded-3xl border border-lime/20 bg-[#050e08] p-7 sm:p-8 backdrop-blur-xl shadow-[0_15px_40px_rgba(0,0,0,0.8)] transition-all duration-500 hover:border-lime/40 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(201,242,107,0.15)]">
                 <div>
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col items-start gap-2">
                     <span className="inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-3.5 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-lime">
                       {item.tag}
                     </span>

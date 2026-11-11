@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 // canonical ("/"), telling Google it was a duplicate of the homepage.
 const TITLE = "Cost Per Booked Call Calculator";
 const DESCRIPTION =
-  "Calculate your true cost per booked sales call from ad spend, lead volume, booking rate and show rate, and compare it with 2026 high-ticket benchmarks.";
+  "Work out the most you can pay per booked call (cost per qualified meeting) from offer price, margin, show rate and close rate. Free, with 2026 benchmarks.";
 
 export const metadata: Metadata = {
   title: { absolute: `${TITLE} | QualifiedLeadsX` },

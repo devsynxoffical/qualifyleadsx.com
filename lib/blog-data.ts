@@ -941,7 +941,7 @@ export const blogPosts: BlogPost[] = [
     title: "How Much Does a Lead Generation Agency Cost in 2026? Pricing Models, Benchmarks & What You Actually Get",
     description: "Lead generation agency pricing explained: retainers, pay-per-call, and performance models with real 2026 benchmarks for high-ticket businesses.",
     publishedAt: "2026-10-27",
-    updatedAt: "2026-10-27",
+    updatedAt: "2026-11-11",
     readTime: "11 min read",
     coverImage: "/images2/showreel/shot_07_calculator.webp",
     author: {
@@ -978,6 +978,20 @@ export const blogPosts: BlogPost[] = [
         tag: "Unit Economics",
       },
       sections: [
+        {
+          "heading": "How Much Does Lead Generation Cost? Quick Summary",
+          "body": [
+            "Lead generation cost has two parts: what you pay the agency and what you pay the ad platform. In 2026, typical ranges for high-ticket businesses are:"
+          ],
+          "bulletList": [
+            "Agency management fees: $2,000 to $10,000+ per month on a retainer",
+            "Ad spend on top: $3,000 to $30,000+ per month",
+            "Pay-per-lead: $25 to $300 per lead, depending on industry",
+            "Pay-per-appointment: $150 to $600 per booked sales call",
+            "Full-service, done-for-you systems: usually start between $3,500 and $7,500 per month",
+            "Estimate the ad-spend part for your own targets with the [Meta ads budget calculator](/tools/meta-ads-budget-calculator)."
+          ]
+        },
         {
           heading: "1. The Four Lead Generation Agency Pricing Models (and Who Each One Favors)",
           subheading: "Retainer, Pay-Per-Lead, Pay-Per-Appointment and Performance",
@@ -1115,6 +1129,10 @@ export const blogPosts: BlogPost[] = [
             href: "/book-your-call#book",
           },
         },
+        {
+          "q": "How much does lead generation cost?",
+          "a": "For high-ticket businesses in 2026, expect agency fees of $2,000 to $10,000+ a month plus ad spend of $3,000 to $30,000+ a month on a retainer model. Pay-per-lead pricing runs $25 to $300 per lead and pay-per-appointment $150 to $600 per booked call."
+        }
       ],
     },
   },
@@ -1287,11 +1305,11 @@ export const blogPosts: BlogPost[] = [
   // 1) 26 OCT 2026
   {
     slug: "high-ticket-sales-how-to-get-high-ticket-clients",
-    seoTitle: "High Ticket Sales: How to Get Clients",
+    seoTitle: "High Ticket Sales: How to Get High-Ticket Clients (2026)",
     title: "High Ticket Sales: How to Get High-Ticket Clients in 2026 (The Complete Funnel & Meta Ads Playbook)",
     description: "Master high ticket sales: attract and close $3,000–$25,000 clients using targeted Meta ads, automated qualification funnels, and speed-to-lead nurture.",
     publishedAt: "2026-10-26",
-    updatedAt: "2026-10-26",
+    updatedAt: "2026-11-11",
     readTime: "15 min read",
     coverImage: "/images/blog/high-ticket-sales-playbook.jpg",
     author: {
@@ -3274,10 +3292,10 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "cost-per-acquisition-vs-cost-per-lead",
     title: "CPA vs CPL: Why Cost Per Lead is a Dangerous Vanity Metric",
-    seoTitle: "CPA vs CPL: Why Cost Per Lead is a Vanity Metric",
+    seoTitle: "Cost Per Acquisition vs Cost Per Lead (CPA vs CPL)",
     description: "The real difference between cost per lead (CPL) and cost per acquisition (CPA), and why optimizing for cheap leads destroys high-ticket margins.",
     publishedAt: "2026-11-05",
-    updatedAt: "2026-11-05",
+    updatedAt: "2026-11-11",
     readTime: "8 min read",
     coverImage: "/images2/showreel/shot_20_growth_proof.webp",
     author: {
@@ -3300,6 +3318,17 @@ export const blogPosts: BlogPost[] = [
       intro: "Amateur agencies boast about $10 leads on Facebook. Professional growth teams focus exclusively on Customer Acquisition Cost (CAC) and Cash Return on Ad Spend (ROAS). Calculate your true numbers with our free [CAC Calculator](/tools/cac-calculator).",
       sections: [
         {
+          "heading": "Cost Per Acquisition vs Cost Per Lead: The Short Answer",
+          "body": [
+            "Cost per lead (CPL) is what you pay to get one enquiry: a form fill, application or call request. Cost per acquisition (CPA) is what you pay to win one paying customer. CPL measures the top of the funnel; CPA measures the result. For high-ticket offers, CPA is the number that decides profit, because a cheap lead that never buys is the most expensive lead you can have."
+          ],
+          "bulletList": [
+            "CPL = ad spend ÷ number of leads",
+            "CPA = ad spend ÷ number of new customers",
+            "CPA = CPL ÷ lead-to-customer conversion rate"
+          ]
+        },
+        {
           heading: "1. The Cheap Lead Trap",
           body: [
             "Auto-filled Meta lead forms generate cheap leads that frequently give wrong phone numbers and ghost your team.",
@@ -3313,6 +3342,24 @@ export const blogPosts: BlogPost[] = [
             "Review our research report on [B2B customer acquisition cost benchmarks](/blog/b2b-client-acquisition-cost-cac-benchmarks-2026) for comparative data across enterprise verticals.",
           ],
         },
+        {
+          "heading": "CPL vs CPA vs CAC: Side by Side",
+          "body": [
+            "The three metrics are often mixed up. They measure different points in the funnel and include different costs:"
+          ],
+          "bulletList": [
+            "CPL (cost per lead): ad spend per enquiry. Easy to measure, easy to game with low-quality leads.",
+            "CPA (cost per acquisition): ad spend per paying customer. Shows whether the campaign makes money.",
+            "CAC (customer acquisition cost): all sales and marketing costs per customer, including agency fees, sales commission and tools. The number to compare with lifetime value. See our [B2B CAC benchmarks](/blog/b2b-client-acquisition-cost-cac-benchmarks-2026)."
+          ]
+        },
+        {
+          "heading": "Worked Example: Why the Cheaper Lead Can Cost More",
+          "body": [
+            "Campaign A produces leads at $20; 2% become customers, so CPA = $20 ÷ 0.02 = $1,000. Campaign B produces leads at $60; 10% become customers, so CPA = $60 ÷ 0.10 = $600. Campaign B costs three times as much per lead but 40% less per customer.",
+            "That gap usually comes from qualification: application questions, phone verification and fast follow-up raise the lead-to-customer rate. Model your own numbers with the [CAC calculator](/tools/cac-calculator) or the [cost per booked call calculator](/tools/cost-per-booked-call-calculator)."
+          ]
+        }
       ],
       conclusion: "Align your advertising objectives with revenue and offline CAPI conversion data, never top-of-funnel lead count.",
       faqs: [
@@ -3324,6 +3371,14 @@ export const blogPosts: BlogPost[] = [
             href: "/tools/cac-calculator",
           },
         },
+        {
+          "q": "What is the difference between cost per acquisition and cost per lead?",
+          "a": "Cost per lead is ad spend divided by the number of enquiries; cost per acquisition is ad spend divided by the number of paying customers. CPA equals CPL divided by your lead-to-customer conversion rate, so a low CPL can still produce a high CPA if few leads buy."
+        },
+        {
+          "q": "Is CPA the same as CAC?",
+          "a": "Not quite. CPA usually counts ad spend per new customer, while customer acquisition cost (CAC) includes all sales and marketing costs, such as agency fees, sales commission and software."
+        }
       ],
     },
   },

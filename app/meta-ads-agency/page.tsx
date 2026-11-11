@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     absolute: "Meta Ads Agency for B2B & High-Ticket Offers",
   },
   description:
-    "Performance Meta ads agency scaling high-ticket coaches, consultants, and B2B agencies to $100K+/month with guaranteed booked calls.",
+    "Meta ads agency for high-ticket coaches, consultants and B2B firms: ads, creative, funnels and AI follow-up that book qualified sales calls.",
   keywords: [
     "meta ads agency",
     "facebook ads agency",

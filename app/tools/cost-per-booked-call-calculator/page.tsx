@@ -32,6 +32,10 @@ export default function CostPerBookedCallCalculatorPage() {
 
   const faqs = [
     {
+      q: "What is cost per qualified meeting?",
+      a: "Cost per qualified meeting (also called cost per booked call or cost per appointment) is your ad spend divided by the number of sales meetings booked with leads who passed qualification. It is a better measure than cost per lead for high-ticket offers, because only qualified meetings can turn into revenue. This calculator shows the most you can afford to pay per qualified meeting.",
+    },
+    {
       q: "What is an acceptable cost per booked call for high-ticket offers?",
       a: "For offers priced between $3,000 and $10,000+, a cost per booked call of $90 to $180 is typical in 2026. If your show rate is 85% and close rate is 25%, each booked call is worth approximately $1,062 in expected revenue, meaning a $150 cost per call delivers massive front-end margins.",
     },

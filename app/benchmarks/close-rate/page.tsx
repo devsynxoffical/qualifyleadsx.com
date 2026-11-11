@@ -9,14 +9,14 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "High Ticket Close Rate Benchmarks 2026 | QualifiedLeadsX",
+  title: "Average High-Ticket Close Rate (2026): 24–31% Benchmarks",
   description:
-    "High-ticket close rate benchmarks for 2026. Real data comparing cold inbound vs setter-qualified calls across $3K, $10K, and $25K+ offers.",
+    "Setter-qualified calls close at 24–31% on $5K–$10K offers vs 9–14% for unvetted bookings. 2026 close rate benchmarks for $3K to $25K+ offers.",
   alternates: {
     canonical: `${site.url}/benchmarks/close-rate`,
   },
   openGraph: {
-    title: "High Ticket Close Rate Benchmarks 2026 | QualifiedLeadsX",
+    title: "Average High-Ticket Close Rate (2026): 24–31% Benchmarks",
     description:
       "High-ticket close rate benchmarks for 2026 across $3K, $10K, and $25K+ offers from 125+ client accounts.",
     url: `${site.url}/benchmarks/close-rate`,

@@ -59,6 +59,11 @@ export function BlogExplorer({ initialPosts, categoryLinks = [] }: BlogExplorerP
           <p className="mt-5 text-lg sm:text-xl text-mist max-w-2xl mx-auto leading-relaxed text-balance">
             Unfiltered frameworks, proven conversion economics, and operational playbooks derived from scaling over $150M+ in high-ticket client revenue.
           </p>
+          <p className="mt-3 text-sm text-mist max-w-2xl mx-auto">
+            Want it done for you? See our{" "}
+            <Link href="/high-ticket-lead-generation" className="text-lime underline underline-offset-2">high-ticket lead generation</Link> and{" "}
+            <Link href="/lead-generation-agency" className="text-lime underline underline-offset-2">done-for-you lead generation agency</Link> services.
+          </p>
 
           {/* Clickable Interactive Category Buttons - Perfectly Centered */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-2.5 max-w-3xl mx-auto">

@@ -414,47 +414,47 @@ export default function AiClientAcquisitionMastermindPage() {
       <Nav />
 
       {/* Hero: same centred layout and type scale as the homepage hero */}
-      <section className="relative overflow-hidden bg-ink pt-36 pb-16 sm:pt-44 sm:pb-20">
+      <section className="relative overflow-hidden bg-ink pt-28 pb-12 sm:pt-32 sm:pb-14 lg:flex lg:min-h-[calc(100svh-2.5rem)] lg:items-center lg:pt-28 lg:pb-10">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_45%_at_50%_0%,rgba(201,242,107,0.10),transparent)]" />
-        <div className="container-x relative z-10 flex flex-col items-center text-center">
+        <div className="container-x relative z-10 flex w-full flex-col items-center text-center">
           <Reveal>
             <span className="eyebrow justify-center">6-week implementation mastermind</span>
           </Reveal>
-          <h1 className="mt-6 max-w-5xl text-balance font-semibold tracking-[-0.03em] text-fog">
-            <span className="block text-[clamp(1.2rem,2.4vw,1.9rem)] leading-[1.22]">
+          <h1 className="mt-4 max-w-5xl text-balance font-semibold tracking-[-0.03em] text-fog">
+            <span className="block text-[clamp(1.1rem,2vw,1.6rem)] leading-[1.22]">
               <em className="text-gradient-lime not-italic">AI Client Acquisition Mastermind</em> by QualifiedLeadsX
             </span>
-            <span className="mt-3 block text-gradient-lime text-[clamp(2rem,5.6vw,4.6rem)] font-bold leading-[1.04]">
+            <span className="mt-2 block text-gradient-lime text-[clamp(2rem,4.4vw,3.75rem)] font-bold leading-[1.05]">
               Build a Predictable Client Acquisition System.
             </span>
-            <span className="mt-3 block text-[clamp(1rem,1.8vw,1.35rem)] font-medium leading-[1.35] text-fog">
+            <span className="mt-2 block text-[clamp(1rem,1.6vw,1.25rem)] font-medium leading-[1.35] text-fog">
               Attract ideal clients. Scale profitably.
             </span>
           </h1>
           <Reveal delay={0.1}>
-            <p className="mx-auto mt-6 max-w-2xl text-pretty text-[1rem] leading-relaxed text-mist sm:text-lg">
+            <p className="mx-auto mt-4 max-w-2xl text-pretty text-[0.95rem] leading-relaxed text-mist sm:text-base">
               Learn how to build, optimize and scale a predictable client acquisition system using Meta ads, AI-powered advertising, qualified lead generation, conversion tracking, funnels and advanced scaling strategies.
             </p>
           </Reveal>
           <Reveal delay={0.2}>
-            <div className="mt-9 flex flex-col items-center gap-3.5 sm:flex-row sm:gap-5">
-              <Button href={site.bookCallUrl} size="xl" icon="up-right" ariaLabel="Apply for the Mastermind">
+            <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
+              <Button href={site.bookCallUrl} size="lg" icon="up-right" ariaLabel="Apply for the Mastermind">
                 Apply for the Mastermind
               </Button>
-              <Button href="#curriculum" variant="outline" size="xl">
+              <Button href="#curriculum" variant="outline" size="lg">
                 Explore the Curriculum
               </Button>
             </div>
           </Reveal>
           <Reveal delay={0.3} className="w-full">
-            <ul className="mx-auto mt-12 grid max-w-3xl grid-cols-3 gap-px overflow-hidden rounded-3xl border border-line bg-line">
+            <ul className="mx-auto mt-8 grid max-w-2xl grid-cols-3 gap-px overflow-hidden rounded-2xl border border-line bg-line">
               {[
                 ["6", "Weeks"],
                 ["12", "Live classes"],
                 ["14", "Implementation resources"],
               ].map(([v, l]) => (
-                <li key={l} className="bg-panel px-4 py-6">
-                  <span className="block font-mono text-3xl font-bold text-lime sm:text-4xl">{v}</span>
+                <li key={l} className="bg-panel px-4 py-4">
+                  <span className="block font-mono text-2xl font-bold text-lime sm:text-3xl">{v}</span>
                   <span className="mt-1 block text-[11px] uppercase tracking-wider text-mist">{l}</span>
                 </li>
               ))}

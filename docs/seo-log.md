@@ -52,10 +52,33 @@ management for coaches" (61.5), "bid strategy calculator" (47.5).
   **Viewer** so the daily session can report organic leads.
 - Link GA4 to Search Console (Admin → Product links → Search Console links).
 
+## 2026-11-11 (daily session)
+
+**Data (Search Console):** last 28 days: 382 impressions (was 351), 6 clicks, 60 pages
+(was 57), 54 queries (was 51), 4 on page 1 (was 3). Last 7 days: 148 impressions, 1 click,
+average position 52.5. New queries: "speed to lead statistics" (88), "lead generation
+calculator" (64), a Turkish SaaS lead-gen question (/for/saas, position 1).
+
+**Indexing:** 35 URLs submitted to the Indexing API at 04:15 UTC; all rejected with 429
+("Publish requests per day" already used by the shared Google Cloud project). A retry is
+scheduled for 08:20 UTC, after the quota reset.
+
+**Done**
+- New tool `/tools/meta-ads-bid-strategy-calculator` ("bid strategy calculator" query on
+  /tools): cost cap per lead and per booked call, target and break-even cost per client,
+  strategy recommendation from Meta's ~50 events/week learning threshold. Added to the tools
+  hub, footer, related links, sitemap, IndexNow list and llms.txt. Maths checked by hand.
+- `/meta-ads-for-law-firms` (239 → 633 unique words): four real MVA/PI results, intake
+  process, 2 FAQs; title "Facebook Ads for Law Firms: Exclusive MVA & PI Leads".
+- `/meta-ads-for-med-spas` (230 → 490): two real results, best practices, FAQ.
+- `/meta-ads-for-real-estate-investors` (227 → 510): two real results, seller offers,
+  2 FAQs targeting "motivated seller leads"; title "Facebook Ads for Real Estate Investors:
+  Seller Leads".
+
 ## Backlog (highest impact first)
 
 1. Resubmit the 21 not-indexed URLs and the new URLs to the Indexing API (quota resets daily).
-2. "bid strategy calculator" (pos 47.5 on /tools): build a Meta bid cap / cost cap calculator.
+2. Done 11 Nov: bid strategy calculator. Next tool candidate: "lead generation calculator" (pos 64 on /tools).
 3. Striking distance: /blog/high-ticket-sales-training-framework (8.2), broad targeting post
    (18.5), B2B ROAS post (14.3), /meta-ads-agency (8.2): CTR-focused titles and answer blocks.
 4. Thin service-for-industry pages (meta-ads-for-*, appointment-setting-for-*): upgrade in

@@ -7,16 +7,18 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { lawFirmsMetaDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Facebook Ads for Law Firms | QualifiedLeadsX",
+  title: "Facebook Ads for Law Firms: Exclusive MVA & PI Leads",
   description:
     "Bar-compliant Facebook & Instagram ads for personal injury, commercial litigation, and estate planning attorneys. Sub-3-minute intake and signed retainers.",
   alternates: {
     canonical: `${site.url}/meta-ads-for-law-firms`,
   },
   openGraph: {
-    title: "Facebook Ads for Law Firms | QualifiedLeadsX",
+    title: "Facebook Ads for Law Firms: Exclusive MVA & PI Leads",
     description:
       "Bar-compliant Facebook ads for personal injury and commercial law firms. Sub-3-minute intake and signed retainers.",
     url: `${site.url}/meta-ads-for-law-firms`,
@@ -42,6 +44,7 @@ const faqs = [
     q: "Can this system integrate with legal practice management CRMs like Clio or Filevine?",
     a: "Yes. Inbound claimant records sync instantly to Clio, Filevine, or Lead Docket via secure webhook integrations, maintaining complete chain-of-custody documentation.",
   },
+  ...lawFirmsMetaDeepDive.faqs,
 ];
 
 export default function MetaAdsForLawFirmsPage() {
@@ -148,6 +151,8 @@ export default function MetaAdsForLawFirmsPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={lawFirmsMetaDeepDive} />
 
         <ProofStack variant="full" />
 

@@ -522,3 +522,110 @@ export const setterVsVaDeepDive: DeepDiveContent = {
     { q: "Can a virtual assistant be an appointment setter?", a: "Yes, for simple offers and low lead volume. For high-ticket offers a VA usually needs sales training, a qualification script and clear targets, otherwise they tend to book anyone who asks and show rates suffer." },
   ],
 };
+
+export const lawFirmsMetaDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Facebook ads for personal injury law firms",
+    title: "Why law firms are replacing bought leads with their own Meta ads",
+    paragraphs: [
+      "Most personal injury firms buy motor vehicle accident (MVA) leads from pay-per-lead vendors. The leads are often shared with other firms, expensive and hard to verify. Running Facebook and Instagram ads in the firm's own account, with phone verification and fast intake, produces exclusive leads at a fraction of the price. The results below come from campaigns QualifiedLeadsX runs for law firms and MVA lead buyers.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Results",
+      title: "What Meta ads have produced for law firms",
+      items: [
+        { title: "MVA client: $388,000 from $20,324 in 30 days", text: "The client had been buying leads at $150–$180 each. Its own campaign produced 1,079 phone-verified leads at $18.94, a 62% show rate (669 attended), a 29% close rate (194 clients) at about $2,000 per client, for $388,000 in revenue and a 19.09x return on ad spend." },
+        { title: "Texas personal injury firm: 530 verified leads in 7 days", text: "$14,270 in spend, $26.90 per lead, every lead confirmed by an SMS code (OTP) so the phone number belongs to a real person." },
+        { title: "387 exclusive MVA appointments in 24 days", text: "At $19.62 per appointment, with no shared or recycled leads." },
+        { title: "8,810 MVA leads at $7.61", text: "A pay-per-lead agency campaign focused on accidents from the last 30 days. [Read the case study](/case-studies/mva-personal-injury-leads-8810)." },
+      ],
+    },
+    {
+      eyebrow: "How it works",
+      title: "The personal injury intake system",
+      numbered: true,
+      items: [
+        { title: "Recency-focused ads", text: "Creative and questions built around recent accidents, because fresh intent signs at a far higher rate than old data." },
+        { title: "Phone verification", text: "OTP verification stops fake and mistyped numbers before intake spends time on them." },
+        { title: "Qualifying questions", text: "Date of accident, injury and treatment, fault and existing representation, so intake only calls viable cases." },
+        { title: "Contact within minutes", text: "Accident victims talk to the first firm that calls back. See [AI speed to lead](/speed-to-lead)." },
+        { title: "Track to signed case", text: "Measure cost per signed case, not cost per lead. See [cost per acquisition vs cost per lead](/blog/cost-per-acquisition-vs-cost-per-lead)." },
+      ],
+    },
+  ],
+  faqs: [
+    { q: "How much do MVA leads cost on Facebook?", a: "In our recent law firm campaigns, phone-verified MVA leads cost between $7.61 and $26.90, against the $150–$180 per lead one client was paying a lead vendor before. Cost depends on state, targeting and how strictly leads are qualified." },
+    { q: "Are Facebook ads allowed for personal injury law firms?", a: "Yes. Law firms can advertise on Meta as long as ads follow Meta's advertising policies and the state bar's advertising rules, for example avoiding guaranteed outcomes. We build creative around those rules." },
+  ],
+};
+
+export const medSpasMetaDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Facebook ads for med spas",
+    title: "Facebook ads that fill treatment chairs, not just inboxes",
+    paragraphs: [
+      "Med spas usually have no shortage of leads. The problem is leads that never book, bookings that never show, and no way to see which ads produced paying clients. The fix is a single-treatment offer, fast confirmation and tracking from ad to paid treatment. Here is what that has produced for med spa clients.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Results",
+      title: "What Meta ads have produced for med spas",
+      items: [
+        { title: "3 New York clinics: $74,100 from $10,387", text: "453 RF microneedling appointments at $22.93 each, a 67% show rate, 247 paying clients at about $42 each. [Read the case study](/case-studies/nyc-med-spa-rf-microneedling-74k)." },
+        { title: "Med spa marketing agency: $639,000 in two months", text: "With 1,116 conversations still open, using Meta ads, qualification and appointment setting. [Read the case study](/case-studies/med-spa-marketing-agency-639k)." },
+      ],
+    },
+    {
+      eyebrow: "Best practices",
+      title: "How to run Facebook ads for a med spa",
+      numbered: true,
+      items: [
+        { title: "Lead with one treatment", text: "One clearly explained treatment per campaign keeps the promise consistent from ad to booking." },
+        { title: "Stay inside Meta's health policies", text: "Talk about the treatment and the result, not the person's flaws, and avoid before-and-after claims Meta restricts." },
+        { title: "Book, then confirm fast", text: "Confirm by SMS or WhatsApp within minutes and remind before the appointment; show rate decides profit." },
+        { title: "Measure cost per paying client", text: "Track appointments, shows and paid treatments, not just leads. Model it with the [show rate calculator](/tools/show-rate-calculator)." },
+      ],
+    },
+  ],
+  faqs: [
+    { q: "How much does a med spa appointment cost from Facebook ads?", a: "In one recent campaign for three New York clinics, appointments cost $22.93 each and paying clients about $42 each. Costs depend on treatment, city and how quickly bookings are confirmed." },
+  ],
+};
+
+export const realEstateMetaDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Motivated seller leads",
+    title: "Generating motivated seller leads instead of buying them",
+    paragraphs: [
+      "Real estate investors and wholesalers often buy motivated seller leads from lead brokers. Those leads are usually shared with other investors and priced per lead regardless of quality. Running your own Facebook ads with seller-focused offers produces exclusive leads you control. These results come from campaigns QualifiedLeadsX ran for real estate investors.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Results",
+      title: "What Meta ads have produced for real estate investors",
+      items: [
+        { title: "157 motivated seller leads in 7 days", text: "$4,397 in spend, $28 per lead, from cold traffic." },
+        { title: "Texas real estate business: 2,279 verified leads in 3 months", text: "Ad spend scaled from $4,069 in the first month to over $22,000 a month while cost per lead stayed between $16.48 and $22.78. In total, $49,888 produced 2,279 phone-verified, pre-qualified leads." },
+      ],
+    },
+    {
+      eyebrow: "Offers that work",
+      title: "Seller offers that turn cold clicks into leads",
+      items: [
+        { title: "Cash offer in 24 hours", text: "Fast and no-obligation: speaks to sellers who need speed." },
+        { title: "Sell as-is", text: "No repairs, no fees: removes the biggest objection." },
+        { title: "What is my home worth?", text: "A free instant quote draws in sellers who are still deciding." },
+        { title: "No agent, no commissions", text: "Sell direct: appeals to owners avoiding agent fees." },
+      ],
+      note: "Pair the offer with phone verification and fast follow-up; see [AI speed to lead](/speed-to-lead) and [lead generation for real estate investors](/for/real-estate-investors).",
+    },
+  ],
+  faqs: [
+    { q: "Should I buy motivated seller leads or generate my own?", a: "Bought leads are fast but usually shared with other investors. Generating your own with Facebook ads gives you exclusive leads; in our campaigns motivated seller leads cost $16.48 to $28 each, including phone-verified leads at scale." },
+    { q: "How much do motivated seller leads cost on Facebook?", a: "In our recent investor campaigns, $16.48 to $28 per lead, with cost per lead held under $23 while monthly spend scaled past $22,000." },
+  ],
+};

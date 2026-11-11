@@ -7,16 +7,18 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { realEstateMetaDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Facebook Ads for Real Estate Investors | QualifiedLeadsX",
+  title: "Facebook Ads for Real Estate Investors: Seller Leads",
   description:
     "Direct-to-seller Facebook ads for real estate wholesalers and flippers. Compliant HEC campaigns, sub-90s triage and off-market purchase contracts.",
   alternates: {
     canonical: `${site.url}/meta-ads-for-real-estate-investors`,
   },
   openGraph: {
-    title: "Facebook Ads for Real Estate Investors | QualifiedLeadsX",
+    title: "Facebook Ads for Real Estate Investors: Seller Leads",
     description:
       "Direct-to-seller Facebook ads for real estate wholesalers and flippers. Compliant HEC campaigns.",
     url: `${site.url}/meta-ads-for-real-estate-investors`,
@@ -42,6 +44,7 @@ const faqs = [
     q: "How quickly do your setters call inbound seller leads?",
     a: "Within 90 seconds. Sellers looking for fast cash often request quotes from multiple investors; our sub-90-second speed-to-lead locks in the contract before competitors even see the notification.",
   },
+  ...realEstateMetaDeepDive.faqs,
 ];
 
 export default function MetaAdsForRealEstateInvestorsPage() {
@@ -148,6 +151,8 @@ export default function MetaAdsForRealEstateInvestorsPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={realEstateMetaDeepDive} />
 
         <ProofStack variant="full" />
 

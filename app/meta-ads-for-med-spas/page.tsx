@@ -7,6 +7,8 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { medSpasMetaDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
   title: "Facebook Ads for Med Spas | QualifiedLeadsX",
@@ -42,6 +44,7 @@ const faqs = [
     q: "How do you navigate Meta's healthcare ad policies for aesthetics?",
     a: "We avoid prohibited before-and-after body close-ups and personal attribute callouts. Instead, we showcase provider artistry, clinic ambiance, treatment demonstrations, and patient testimonial videos.",
   },
+  ...medSpasMetaDeepDive.faqs,
 ];
 
 export default function MetaAdsForMedSpasPage() {
@@ -148,6 +151,8 @@ export default function MetaAdsForMedSpasPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={medSpasMetaDeepDive} />
 
         <ProofStack variant="full" />
 

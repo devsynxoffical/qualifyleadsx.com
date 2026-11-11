@@ -597,10 +597,10 @@ export const medSpasMetaDeepDive: DeepDiveContent = {
 
 export const realEstateMetaDeepDive: DeepDiveContent = {
   intro: {
-    eyebrow: "Motivated seller leads",
-    title: "Generating motivated seller leads instead of buying them",
+    eyebrow: "Facebook ads for investors",
+    title: "How Facebook ads work for real estate investors",
     paragraphs: [
-      "Real estate investors and wholesalers often buy motivated seller leads from lead brokers. Those leads are usually shared with other investors and priced per lead regardless of quality. Running your own Facebook ads with seller-focused offers produces exclusive leads you control. These results come from campaigns QualifiedLeadsX ran for real estate investors.",
+      "Facebook and Instagram ads reach homeowners before they start searching, which makes them a volume channel for wholesalers and investors. Two things decide whether they work: offers that speak to a seller's situation, and campaigns built inside Meta's Housing Special Ad Category rules. These results come from campaigns QualifiedLeadsX ran for real estate investors.",
     ],
   },
   sections: [
@@ -623,9 +623,65 @@ export const realEstateMetaDeepDive: DeepDiveContent = {
       ],
       note: "Pair the offer with phone verification and fast follow-up; see [AI speed to lead](/speed-to-lead) and [lead generation for real estate investors](/for/real-estate-investors).",
     },
+    {
+      eyebrow: "Compliance",
+      title: "Meta's Housing Special Ad Category",
+      lead: "Most seller-acquisition ads fall under Meta's Housing Special Ad Category. That means no targeting by age, gender or ZIP code, a minimum location radius, and restricted lookalike audiences. Campaigns have to win with offer and creative rather than narrow targeting, which is why the seller offers above matter so much.",
+      items: [],
+    },
   ],
   faqs: [
-    { q: "Should I buy motivated seller leads or generate my own?", a: "Bought leads are fast but usually shared with other investors. Generating your own with Facebook ads gives you exclusive leads; in our campaigns motivated seller leads cost $16.48 to $28 each, including phone-verified leads at scale." },
+    { q: "Do Facebook ads work for real estate investors?", a: "Yes, when the offer speaks to a seller's situation and the campaign follows Meta's Housing Special Ad Category rules. In our campaigns seller leads cost $16.48 to $28, and one Texas business held cost per lead under $23 while scaling spend fivefold." },
     { q: "How much do motivated seller leads cost on Facebook?", a: "In our recent investor campaigns, $16.48 to $28 per lead, with cost per lead held under $23 while monthly spend scaled past $22,000." },
+  ],
+};
+
+export const realEstateInvestorsDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Motivated seller leads",
+    title: "Buying from an investor lead broker vs generating your own seller leads",
+    paragraphs: [
+      "Most real estate investors start by buying motivated seller leads from an investor lead broker or a pay-per-lead service. It's quick, but the same lead is often sold to several investors, and you can't see how the seller was qualified. Generating your own pre-qualified investor leads with paid ads and fast follow-up gives you exclusive sellers and a cost per deal you control.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Compare",
+      title: "Lead broker vs your own seller lead engine",
+      items: [],
+      table: {
+        head: ["", "Bought from a lead broker", "Your own seller lead engine"],
+        rows: [
+          ["Exclusivity", "Often shared with other investors", "Exclusive to you"],
+          ["Qualification", "The broker's criteria", "Your criteria: condition, timeline, equity, motivation"],
+          ["Price", "Fixed per lead, whatever the quality", "Falls as offers and creative improve"],
+          ["Data", "Stays with the broker", "Your ad account, CRM and data"],
+        ],
+      },
+    },
+    {
+      eyebrow: "Results",
+      title: "What seller lead campaigns have produced",
+      items: [
+        { title: "157 motivated seller leads in 7 days", text: "$4,397 in ad spend, $28 per lead, from cold traffic." },
+        { title: "2,279 phone-verified leads in 3 months", text: "A Texas real estate business scaled from $4,069 to over $22,000 a month in ad spend while cost per lead stayed between $16.48 and $22.78." },
+      ],
+      note: "Full campaign details on [Facebook ads for real estate investors](/meta-ads-for-real-estate-investors).",
+    },
+    {
+      eyebrow: "Qualify",
+      title: "How to qualify motivated sellers before the call",
+      numbered: true,
+      items: [
+        { title: "Property and condition", text: "Ask about repairs needed and property type, so acquisitions only calls deals that fit." },
+        { title: "Timeline", text: "Sellers who need to move within weeks convert far better than those \"thinking about it\"." },
+        { title: "Reason for selling", text: "Inherited property, relocation, repairs or financial pressure signal real motivation." },
+        { title: "Phone verification and fast contact", text: "Verify the number and call within minutes; see [AI speed to lead](/speed-to-lead)." },
+      ],
+    },
+  ],
+  faqs: [
+    { q: "Should I buy motivated seller leads or generate my own?", a: "Leads from an investor lead broker are fast but usually shared with other investors. Generating your own seller leads gives you exclusive sellers you qualify yourself; in our campaigns they cost $16.48 to $28 per lead, including phone-verified leads at scale." },
+    { q: "What are pre-qualified investor leads?", a: "Pre-qualified investor leads are seller leads that have already answered questions about property condition, timeline and reason for selling, and whose phone number has been verified, so your acquisitions team only calls sellers who fit your buy box." },
   ],
 };

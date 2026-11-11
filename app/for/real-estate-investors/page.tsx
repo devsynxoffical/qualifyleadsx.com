@@ -7,16 +7,18 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { realEstateInvestorsDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Real Estate Investor Leads | QualifiedLeadsX",
+  title: "Real Estate Investor Leads: Motivated Seller Leads",
   description:
     "High-equity off-market real estate investor leads and motivated seller contracts. Hyper-targeted Meta ads, instant phone triage, and verified deal spreads.",
   alternates: {
     canonical: `${site.url}/for/real-estate-investors`,
   },
   openGraph: {
-    title: "Real Estate Investor Leads | QualifiedLeadsX",
+    title: "Real Estate Investor Leads: Motivated Seller Leads",
     description:
       "Off-market real estate investor leads and motivated seller contracts. Hyper-targeted Meta ads and instant phone triage.",
     url: `${site.url}/for/real-estate-investors`,
@@ -42,6 +44,7 @@ const faqs = [
     q: "Do you filter for property condition and equity?",
     a: "Yes. Our multi-step qualifying funnel captures mortgage status, approximate asking price, repair needs, and timeline to close (under 30 days vs 90+ days) so acquisitions managers focus exclusively on high-margin deals.",
   },
+  ...realEstateInvestorsDeepDive.faqs,
 ];
 
 export default function RealEstateInvestorsPage() {
@@ -148,6 +151,8 @@ export default function RealEstateInvestorsPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={realEstateInvestorsDeepDive} />
 
         <ProofStack variant="full" />
 

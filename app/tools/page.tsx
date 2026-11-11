@@ -66,6 +66,16 @@ const toolList = [
     formula: "(Clients / Close Rate / Show Rate) * Cost per Booked Call",
   },
   {
+    title: "Meta Ads Bid Strategy Calculator",
+    keyword: "bid strategy calculator",
+    href: "/tools/meta-ads-bid-strategy-calculator",
+    icon: Calculator,
+    badge: "Bidding",
+    description:
+      "Turn deal value, margin, close rate and show rate into the cost cap to set in Meta Ads Manager, and see which bid strategy your daily budget can support.",
+    formula: "Gross Profit * Ad Share * Close Rate * Show Rate",
+  },
+  {
     title: "High-Ticket ROAS & Break-Even Calculator",
     keyword: "roas calculator",
     href: "/tools/roas-calculator",

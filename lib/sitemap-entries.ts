@@ -85,6 +85,12 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
       priority: 0.88,
     },
     {
+      url: `${site.url}/tools/meta-ads-bid-strategy-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
       url: `${site.url}/tools/show-rate-calculator`,
       lastModified: now,
       changeFrequency: "monthly",

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
-  ArrowUpRight,
   ArrowRight,
   Wrench,
   Microscope,
@@ -26,23 +25,7 @@ import { Footer } from "@/components/layout/Footer";
 import { VSL } from "@/components/sections/VSL";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FaqAccordion } from "@/components/sections/FAQ";
-import { caseStudyMeta } from "@/lib/case-study-meta";
-import { caseStudiesData } from "@/lib/case-studies-data";
-
-/** Named case studies shown as results, with the same image used on each case study page. */
-const resultCaseStudies: [string, string][] = [
-  ["b2b-agency-scaling-846k", "DS5sAimEqsT"],
-  ["med-spa-marketing-agency-639k", "DZc5twGlC0M"],
-  ["high-ticket-coaching-203k", "DUsaqlQEsYB"],
-  ["digital-media-agency-157k", "DQ91hXmEoIm"],
-  ["executive-consulting-150k", "DQsBVdEkxYc"],
-  ["commercial-services-86k", "DSkbQyzkvbL"],
-];
-const results = resultCaseStudies.map(([slug, id]) => {
-  const item = caseStudiesData.find((c) => c.id === id);
-  const image = item ? item.thumbnailSrc ?? (item.type === "image" ? item.mediaSrc : undefined) : undefined;
-  return { slug, ...caseStudyMeta[slug], image };
-});
+import { Training } from "@/components/sections/Training";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 const PATH = "/mastermind/hidden-facebook-interest";
@@ -715,56 +698,8 @@ export default function AiClientAcquisitionMastermindPage() {
         ctaLabel="Apply for the Mastermind"
       />
 
-      {/* Results */}
-      <Section id="results" className="bg-ink">
-        <SectionHeading
-          eyebrow="Results"
-          title={
-            <>
-              Results from the system{" "}
-              <em className="font-semibold not-italic text-lime">taught in this mastermind.</em>
-            </>
-          }
-          subtitle="Documented client results from the same Meta ads, qualification, tracking and scaling methods covered in the 12 classes. Each one links to the full case study."
-        />
-        <ol className="m-0 grid list-none gap-5 p-0 sm:grid-cols-2 lg:grid-cols-3">
-          {results.map((c, i) => (
-            <li key={c.slug} className="h-full">
-              <Reveal delay={(i % 3) * 0.06} y={28} className="h-full">
-                <Link
-                  href={`/case-studies/${c.slug}`}
-                  className="group flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-panel transition-all duration-500 hover:border-lime/30 hover:bg-elevated"
-                >
-                  {c.image && (
-                    <div className="relative aspect-[4/3] overflow-hidden border-b border-line bg-white">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={c.image}
-                        alt={`${c.title}: client result screenshot`}
-                        loading="lazy"
-                        decoding="async"
-                        className="h-full w-full object-contain p-2 transition-transform duration-500 group-hover:scale-[1.02]"
-                      />
-                    </div>
-                  )}
-                  <div className="flex flex-1 flex-col p-7">
-                    <h3 className="text-lg font-semibold tracking-tight text-fog">{c.title}</h3>
-                    <p className="mt-2.5 flex-1 text-sm leading-relaxed text-mist">{c.description}</p>
-                    <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-lime">
-                      Read the case study <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                    </span>
-                  </div>
-                </Link>
-              </Reveal>
-            </li>
-          ))}
-        </ol>
-        <div className="mt-10 text-center">
-          <Button href="/case-studies" variant="outline" size="lg">
-            See all case studies
-          </Button>
-        </div>
-      </Section>
+      {/* Training videos: same section as the homepage */}
+      <Training />
 
       <Testimonials />
 

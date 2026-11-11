@@ -77,6 +77,50 @@ Google received the crawl request; it is not confirmation of indexing.
   2 FAQs targeting "motivated seller leads"; title "Facebook Ads for Real Estate Investors:
   Seller Leads".
 
+## 2026-11-11 (session 2: fresh audit + Bing Webmaster Tools)
+
+**Google index audit (URL Inspection, all 119 sitemap URLs, ~08:40 UTC):** 98 indexed
+(was 91/112 on 10 Nov), 17 "Discovered – not indexed", 4 unknown. All 7 pages published
+10–11 Nov were indexed within ~24 h (both calculators, 3 case studies, 2 guides). No
+canonical conflicts. 8 rich-result FAILs are pages last crawled before the 10 Nov breadcrumb
+fix went live; they should clear on recrawl. 12 updated URLs submitted to the Indexing API
+(12 accepted).
+
+**Pages improved:** /for/real-estate-investors (225 → 573 unique words; owns "motivated seller
+leads", "investor lead broker", "pre-qualified investor leads"); /meta-ads-for-real-estate-
+investors refocused on Facebook ads + Meta Housing Special Ad Category; CPA vs CPL post
+(330 → 731, title matches the query); lead-gen cost post (quick cost summary + FAQ);
+high-ticket sales post (title); /benchmarks/close-rate (title/description lead with
+numbers; position 3.5, 0 clicks); /meta-ads-agency (description no longer says
+"guaranteed booked calls"); cost per booked call calculator ("cost per qualified meeting");
+blog hub links to the service pages; breakdowns on the 3 unindexed case studies.
+
+**Bing Webmaster Tools (API):** site verified; ~27 pages in Bing's index; 0 impressions;
+sitemap last read 4 Nov with 29 URLs. Resubmitted sitemap.xml + 3 child sitemaps (Bing read
+all four on 11 Nov: 36/31/52 URLs, Success). Submitted 100 priority URLs with SubmitUrlBatch
+(daily quota 100 → 0). IndexNow rejects the key ("UserForbiddedToAccessSite") although the
+key file is live.
+
+**Crawler access check (`npm run seo:bots`):** Googlebot, OAI-SearchBot, PerplexityBot,
+ClaudeBot and browsers get 200. Requests with a "bingbot" user agent get 403 from
+Hostinger/LiteSpeed on every URL, and GPTBot gets 429. These tests come from a non-Microsoft
+IP, so the 403 may be bot verification; Bing's real sitemap fetch succeeded today. Needs an
+owner check (below).
+
+**Tooling:** `npm run seo:bots` (crawler access), `npm run seo:bing` (Bing status / sitemap
+and URL submission; key via BING_WEBMASTER_API_KEY, never committed). Node needs
+`NODE_USE_ENV_PROXY=1` in this cloud environment. New personal environment
+"qualifyleadsx.com" allows Bing, IndexNow, the live site and Google APIs.
+
+**Owner actions**
+- Bing Webmaster Tools → URL Inspection → "Live URL" on the homepage: confirm Bingbot gets 200.
+- If it does not, or IndexNow keeps failing: in hPanel check the website's security / bot
+  protection settings, or ask Hostinger support to allow verified Bingbot and Microsoft's
+  IndexNow key verifier (evidence: LiteSpeed returns 403 to user agents containing
+  "bingbot"/"adidxbot" on every URL, including robots.txt and the key file).
+- Optional: GPTBot gets 429; allow it if you want OpenAI training crawls (ChatGPT search
+  uses OAI-SearchBot, which is allowed).
+
 ## Backlog (highest impact first)
 
 1. Resubmit the 21 not-indexed URLs and the new URLs to the Indexing API (quota resets daily).

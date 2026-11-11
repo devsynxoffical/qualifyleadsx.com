@@ -414,7 +414,7 @@ export default function AiClientAcquisitionMastermindPage() {
       <Nav />
 
       {/* Hero: same centred layout and type scale as the homepage hero */}
-      <section className="relative overflow-hidden bg-ink pt-28 pb-12 sm:pt-32 sm:pb-14 lg:flex lg:min-h-[calc(100svh-2.5rem)] lg:items-center lg:pt-28 lg:pb-10">
+      <section className="relative overflow-hidden bg-ink pt-24 pb-12 sm:pt-32 sm:pb-14 lg:flex lg:min-h-[calc(100svh-2.5rem)] lg:items-center lg:pt-28 lg:pb-10">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_45%_at_50%_0%,rgba(201,242,107,0.10),transparent)]" />
         <div className="container-x relative z-10 flex w-full flex-col items-center text-center">
           <Reveal>
@@ -424,7 +424,7 @@ export default function AiClientAcquisitionMastermindPage() {
             <span className="block text-[clamp(1.1rem,2vw,1.6rem)] leading-[1.22]">
               <em className="text-gradient-lime not-italic">AI Client Acquisition Mastermind</em> by QualifiedLeadsX
             </span>
-            <span className="mt-2 block text-gradient-lime text-[clamp(2rem,4.4vw,3.75rem)] font-bold leading-[1.05]">
+            <span className="mt-2 block text-gradient-lime text-[clamp(1.85rem,4.4vw,3.75rem)] font-bold leading-[1.05]">
               Build a Predictable Client Acquisition System.
             </span>
             <span className="mt-2 block text-[clamp(1rem,1.6vw,1.25rem)] font-medium leading-[1.35] text-fog">
@@ -432,7 +432,7 @@ export default function AiClientAcquisitionMastermindPage() {
             </span>
           </h1>
           <Reveal delay={0.1}>
-            <p className="mx-auto mt-4 max-w-2xl text-pretty text-[0.95rem] leading-relaxed text-mist sm:text-base">
+            <p className="mx-auto mt-3 max-w-2xl text-pretty text-[0.9rem] leading-relaxed text-mist sm:mt-4 sm:text-base">
               Learn how to build, optimize and scale a predictable client acquisition system using Meta ads, AI-powered advertising, qualified lead generation, conversion tracking, funnels and advanced scaling strategies.
             </p>
           </Reveal>

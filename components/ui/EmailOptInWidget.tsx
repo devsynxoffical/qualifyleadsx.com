@@ -3,6 +3,7 @@
 import { gaEvent } from "@/lib/ga";
 import { useState, type FormEvent } from "react";
 import { usePathname } from "next/navigation";
+import { useScrolledPast } from "@/components/ui/useScrolledPast";
 import { X, ArrowUpRight, CheckCircle2, Loader2, Lock, ShieldCheck, Mail } from "lucide-react";
 import { site } from "@/lib/site";
 
@@ -50,24 +51,28 @@ export function EmailOptInWidget() {
     }
   }
 
+  // On phones the pill would cover the hero buttons, so it appears only after the first screen.
+  const scrolled = useScrolledPast();
+
   // On the booking page this pill would cover the calendar, and the visitor is already converting.
   if (pathname.startsWith("/book-your-call")) return null;
 
   return (
     <>
       {/* Floating Bottom-Left Trigger Button */}
-      <div className="fixed bottom-6 left-6 z-50 flex items-center pointer-events-auto">
+      <div className={`fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-50 flex items-center transition-opacity duration-300 ${scrolled ? "opacity-100 pointer-events-auto" : "max-sm:pointer-events-none max-sm:opacity-0 pointer-events-auto"}`}>
         <button
           type="button"
           onClick={() => setIsOpen(true)}
-          className="group relative flex items-center gap-2.5 rounded-full border border-lime/40 bg-[#050e08]/95 px-5 py-3.5 shadow-[0_10px_35px_rgba(0,0,0,0.8)] backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:border-lime hover:bg-[#07170c]"
+          aria-label="Instant System Access"
+          className="group relative flex items-center gap-2.5 rounded-full border border-lime/40 bg-[#050e08]/95 px-3.5 py-3.5 sm:px-5 shadow-[0_10px_35px_rgba(0,0,0,0.8)] backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:border-lime hover:bg-[#07170c]"
         >
           <span className="relative flex h-3 w-3">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime opacity-75" />
             <span className="relative inline-flex h-3 w-3 rounded-full bg-lime" />
           </span>
           <Mail className="h-4 w-4 text-lime" />
-          <span className="text-xs font-bold text-white tracking-wide">
+          <span className="hidden sm:inline text-xs font-bold text-white tracking-wide">
             Instant System Access
           </span>
         </button>

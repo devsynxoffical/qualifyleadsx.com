@@ -5,18 +5,21 @@ import { usePathname } from "next/navigation";
 import { X } from "lucide-react";
 import { site } from "@/lib/site";
 import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
+import { useScrolledPast } from "@/components/ui/useScrolledPast";
 
 export function WhatsAppWidget() {
   const [dismissed, setDismissed] = useState(false);
   const pathname = usePathname() || "/";
   // On the booking page the tooltip would sit over the calendar, so only the round button shows.
   const showTooltip = !dismissed && !pathname.startsWith("/book-your-call");
+  // On phones the widget would cover the hero buttons, so it appears only after the first screen.
+  const scrolled = useScrolledPast();
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2.5 pointer-events-auto">
+    <div className={`fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-2.5 transition-opacity duration-300 ${scrolled ? "opacity-100 pointer-events-auto" : "max-sm:pointer-events-none max-sm:opacity-0 pointer-events-auto"}`}>
       {/* Interactive Tooltip Badge */}
       {showTooltip && (
-        <div className="group relative flex items-center gap-3 rounded-2xl border border-[#25D366]/40 bg-[#050e08]/95 px-4 py-3 shadow-[0_12px_40px_rgba(0,0,0,0.8)] backdrop-blur-xl transition-all duration-300 animate-in fade-in slide-in-from-bottom-3">
+        <div className="group relative hidden sm:flex items-center gap-3 rounded-2xl border border-[#25D366]/40 bg-[#050e08]/95 px-4 py-3 shadow-[0_12px_40px_rgba(0,0,0,0.8)] backdrop-blur-xl transition-all duration-300 animate-in fade-in slide-in-from-bottom-3">
           <div className="relative flex h-2.5 w-2.5 shrink-0">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#25D366] opacity-75" />
             <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#25D366]" />

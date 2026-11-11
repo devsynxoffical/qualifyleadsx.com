@@ -81,6 +81,13 @@ const privateMasterminds = [
     url: "/mastermind/lto-funnel-scale",
     badge: "Case Study #03",
   },
+  {
+    tag: "Personal Injury Sniper Method",
+    title: "Hidden Facebook Audiences for PI Cases",
+    description: "A 1-hour 33-minute mastermind for personal injury law firms and agencies: the Sniper Method for finding untapped Facebook audiences for car, motorcycle, 18-wheeler and rideshare accident cases.",
+    url: "/mastermind/personal-injury-facebook-ads",
+    badge: "Private Mastermind #04",
+  },
 ];
 
 const pillars = [
@@ -158,6 +165,7 @@ const breakdownPages = [
   { path: "/mastermind/lto-funnel-scale", name: "How We Scaled an LTO Funnel to $847K", videoId: "Nr1WIDiWPNA" },
   { path: "/mastermind/hidden-facebook-interest", name: "AI Client Acquisition Mastermind: Hidden Facebook Interest Preview", videoId: "jjq9-FSD4iA" },
   { path: "/mastermind/7-days-paid-trial", name: "7 Days Paid Trial Funnel Breakdown", videoId: "Hy1M7WbookU" },
+  { path: "/mastermind/personal-injury-facebook-ads", name: "Sniper Method Mastermind: Facebook Ads for Personal Injury" },
 ];
 
 export default function MastermindPage() {
@@ -301,7 +309,7 @@ export default function MastermindPage() {
           subtitle="Explore in-depth strategic breakdowns and frameworks shared exclusively inside the QualifiedLeadsX private collective."
         />
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+        <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2 lg:gap-8">
           {privateMasterminds.map((item, i) => (
             <Reveal key={item.title} delay={i * 0.1} className="h-full">
               <div className="group relative flex flex-col justify-between h-full rounded-3xl border border-lime/20 bg-[#050e08] p-7 sm:p-8 backdrop-blur-xl shadow-[0_15px_40px_rgba(0,0,0,0.8)] transition-all duration-500 hover:border-lime/40 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(201,242,107,0.15)]">

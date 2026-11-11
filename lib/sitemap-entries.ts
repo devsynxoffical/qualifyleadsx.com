@@ -441,6 +441,12 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${site.url}/mastermind/personal-injury-facebook-ads`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${site.url}/mastermind/7-days-paid-trial`,
       lastModified: now,
       changeFrequency: "monthly",

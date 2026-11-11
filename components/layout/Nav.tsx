@@ -55,6 +55,12 @@ const mastermindSublinks = [
     href: "/mastermind/lto-funnel-scale",
     badge: "Case Study #03",
   },
+  {
+    title: "Personal Injury Sniper Method",
+    desc: "Hidden Facebook audiences for PI cases",
+    href: "/mastermind/personal-injury-facebook-ads",
+    badge: "Mastermind #04",
+  },
 ];
 
 function Logo() {

@@ -76,7 +76,11 @@ const workProofs = qualifiedScreenshotFiles.map((file, i) => ({
   title: `Verified Client Output #${i + 1}`,
 }));
 
-export function ClientSuccess() {
+export function ClientSuccess({
+  eyebrow = "Recognised by client results",
+  title,
+  subtitle = "Booked calendars, paid invoices, closed deals. Every screenshot below is real client output - not marketing mockups.",
+}: { eyebrow?: string; title?: React.ReactNode; subtitle?: string } = {}) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(15);
@@ -106,14 +110,16 @@ export function ClientSuccess() {
 
       <div className="container-x relative z-10">
         <SectionHeading
-          eyebrow="Recognised by client results"
+          eyebrow={eyebrow}
           title={
-            <>
-              Lead generation results:{" "}
-              <em className="font-semibold not-italic text-lime">real client numbers.</em>
-            </>
+            title ?? (
+              <>
+                Lead generation results:{" "}
+                <em className="font-semibold not-italic text-lime">real client numbers.</em>
+              </>
+            )
           }
-          subtitle="Booked calendars, paid invoices, closed deals. Every screenshot below is real client output - not marketing mockups."
+          subtitle={subtitle}
         />
 
         {/* Larger Masonry Grid (3 Columns on Desktop for Bigger Boxes) */}

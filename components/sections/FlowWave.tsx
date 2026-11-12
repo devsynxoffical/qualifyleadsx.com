@@ -231,15 +231,16 @@ export function FlowWave() {
 
     const lowPower =
       window.matchMedia("(max-width: 767px)").matches || (navigator.hardwareConcurrency ?? 8) <= 4;
-    const dprCap = lowPower ? 1.5 : 2;
+    // Phones render at 1x: the bloom passes soften the image anyway, and each
+    // frame costs roughly half as much as at 1.5x.
+    const dprCap = lowPower ? 1 : 2;
     const pixelRatio = () => Math.min(window.devicePixelRatio || 1, dprCap);
 
     /* ------------------------------ scene ------------------------------ */
     const renderer = new THREE.WebGL1Renderer({ canvas, antialias: !lowPower });
     renderer.setPixelRatio(pixelRatio());
     renderer.setSize(window.innerWidth, window.innerHeight, false);
-    renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.VSMShadowMap;
+    // No lights or shadow casters in this scene, so the shadow map stays off.
 
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x000000);
@@ -429,7 +430,7 @@ export function FlowWave() {
 
     /* --------------------------- state & render --------------------------- */
     let stream = 0;
-    const appearStart = performance.now();
+    let appearStart = performance.now();
     let t0 = performance.now() / 1000;
 
     const computeScroll = () => {
@@ -508,7 +509,16 @@ export function FlowWave() {
 
     let raf = 0;
     let renderFailed = false;
-    const loop = () => {
+    // Phones and low-core devices draw at most 30 frames a second; the motion is
+    // slow, so it looks the same and the main thread gets half the work.
+    const minFrameMs = lowPower ? 1000 / 30 : 0;
+    let lastFrame = 0;
+    const loop = (now: number = performance.now()) => {
+      if (minFrameMs && now - lastFrame < minFrameMs) {
+        if (running) raf = requestAnimationFrame(loop);
+        return;
+      }
+      lastFrame = now;
       scrollTarget = computeScroll();
       scrollSmooth = Lerp(scrollSmooth, scrollTarget, 0.1);
       scrollCurrent = Lerp(scrollCurrent, scrollSmooth, 0.06);
@@ -542,9 +552,16 @@ export function FlowWave() {
       if (running) raf = requestAnimationFrame(loop);
     };
 
+    // On phones, draw one frame now and start the animation loop on the first
+    // scroll, touch or key press. The hero is scroll-driven, so it looks the same,
+    // but the page is not busy re-rendering WebGL while it is still loading.
+    let interacted = !lowPower;
     let running = true;
+    let inView = true;
     const visibility = new IntersectionObserver(
       ([entry]) => {
+        inView = entry.isIntersecting;
+        if (!interacted) return;
         if (entry.isIntersecting && !running) {
           running = true;
           raf = requestAnimationFrame(loop);
@@ -578,10 +595,30 @@ export function FlowWave() {
     window.addEventListener("mousemove", onPointerMove, { passive: true });
     window.addEventListener("mouseout", onPointerOut);
 
-    raf = requestAnimationFrame(loop);
+    const wakeEvents = ["scroll", "touchstart", "pointerdown", "keydown", "wheel"] as const;
+    const onWake = () => {
+      if (interacted) return;
+      interacted = true;
+      wakeEvents.forEach((ev) => window.removeEventListener(ev, onWake));
+      if (!inView) return; // the observer starts the loop when the hero is back on screen
+      running = true;
+      raf = requestAnimationFrame(loop);
+    };
+    if (interacted) {
+      raf = requestAnimationFrame(loop);
+    } else {
+      running = false;
+      lastFrame = 0;
+      // Paused first frame: show the fully faded-in particle sheet, as the
+      // animated version looks after its intro.
+      appearStart = performance.now() - 2000;
+      loop(performance.now());
+      wakeEvents.forEach((ev) => window.addEventListener(ev, onWake, { passive: true }));
+    }
 
     return () => {
       running = false;
+      wakeEvents.forEach((ev) => window.removeEventListener(ev, onWake));
       visibility.disconnect();
       cancelAnimationFrame(raf);
       window.removeEventListener("resize", onResize);

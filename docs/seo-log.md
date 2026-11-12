@@ -121,6 +121,35 @@ and URL submission; key via BING_WEBMASTER_API_KEY, never committed). Node needs
 - Optional: GPTBot gets 429; allow it if you want OpenAI training crawls (ChatGPT search
   uses OAI-SearchBot, which is allowed).
 
+## 2026-11-12 (daily session)
+
+**Data (Search Console):** last 28 days: 423 impressions (was 382 on 11 Nov), 6 clicks, 62 pages
+(was 60), 62 queries (was 54), 4 on page 1. Last 7 days: 177 impressions, 1 click, average
+position 54.9. New queries (8): "cost per qualified meeting" (11 impressions, position 83, cost
+per booked call calculator), "outsourced closers" (34), "speed to lead stats" (34), "speed to lead
+study" (97), "speed to lead ai" (65), "med spa lead generation" (77), "meta ads coaching" (91),
+"digital customer acquisition agency" (87). Striking distance: "the closer matrix reviews" (8.2),
+"facebook ads targeting for high ticket products" (18.5), "b2b roas" (14.3); all three pages were
+retitled 10–11 Nov, so left unchanged to let Google re-evaluate.
+
+**Done (live, verified on www.qualifiedleadsx.com)**
+- `/outsourced-sales-closers`: title "Outsourced Sales Closers: Commission-Based Closers"; new
+  section on what outsourced closers do and when to hire them, outsourced vs in-house table,
+  three checks before hiring, 2 FAQs. Only facts already on the page (10–15% commission,
+  $3K–$25K offers, weekly call audits, 14-day onboarding).
+- Cost per booked call calculator: title and H1 now include "Qualified Meeting"; quick answer
+  defines cost per qualified meeting.
+- Speed to lead statistics post: studies heading names HBR, MIT and InsideSales.com.
+- New page (built 11 Nov at the owner's request): `/mastermind/personal-injury-facebook-ads`
+  (Sniper Method mastermind with Vimeo video); description shortened to 148 characters.
+
+**Indexing:** Google Indexing API: 27 submitted, 27 accepted (new mastermind page, mastermind
+hub, today's 3 changed pages and the not-indexed sitemap URLs from the 11 Nov inspection). Bing:
+27 URLs submitted. Accepted means the crawl request was received, not that the page is indexed.
+
+**Checks:** Googlebot, OAI-SearchBot, PerplexityBot, ClaudeBot 200; Bingbot 403 and GPTBot 429
+(unchanged, owner action below). Bing: sitemaps read 11 Nov, 0 impressions, 0 crawl issues.
+
 ## Backlog (highest impact first)
 
 1. Resubmit the 21 not-indexed URLs and the new URLs to the Indexing API (quota resets daily).

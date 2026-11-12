@@ -186,6 +186,20 @@ before earlier fixes); verified clean live, recrawl requested.
 expert-quote links using the /benchmarks data; agency/coaching podcast guesting; Clutch and
 DesignRush profiles with 3–5 reviews.
 
+## 2026-11-12 (session 3: homepage speed)
+
+**Root cause (CPU profile, mobile, 4x CPU):** the WebGL hero (three.js with three post-processing
+passes, two of them bloom) caused about 3.5 s of the homepage's ~4 s Total Blocking Time; with its
+chunk blocked, TBT was ~0.56 s.
+
+**Fix (live, verified):** on phones and low-core devices the hero renders at 1x pixel density,
+at most 30 fps, and draws one fully faded-in frame on load; the animation loop starts on the first
+scroll, touch or key press (the hero is scroll-driven). Unused shadow map removed. Desktop unchanged.
+
+**Result (lab, live site):** TBT 3.5–5.2 s → 1.0–1.25 s (4x CPU). With slow 4G (cwv.cjs): LCP
+2.7 s → 1.2 s, TBT 2.6 s → 1.1 s, CLS 0. Before/after screenshot:
+`reports/screenshots/homepage-hero-before-after-mobile.png`.
+
 ## Backlog (highest impact first)
 
 1. Resubmit the 21 not-indexed URLs and the new URLs to the Indexing API (quota resets daily).
@@ -197,7 +211,7 @@ DesignRush profiles with 3–5 reviews.
 5. Align booked-call cost on /blog/how-much-does-meta-ads-cost ($140–$280) with the
    benchmark pages ($90–$180).
 6. The 10 original named case studies: add written breakdowns like the 3 published on 10 Nov.
-7. Homepage mobile TBT (~2.9 s from the 3D hero): static poster on mobile.
+7. Done 12 Nov: homepage mobile TBT (3D hero) cut to ~1 s.
 8. New supporting guides only where a query cluster appears in Search Console.
 
 ## Needs the owner (cannot be done from the codebase)

@@ -150,6 +150,42 @@ hub, today's 3 changed pages and the not-indexed sitemap URLs from the 11 Nov in
 **Checks:** Googlebot, OAI-SearchBot, PerplexityBot, ClaudeBot 200; Bingbot 403 and GPTBot 429
 (unchanged, owner action below). Bing: sitemaps read 11 Nov, 0 impressions, 0 crawl issues.
 
+## 2026-11-12 (session 2: full strategy pass)
+
+Full report: `reports/QualifiedLeadsX_SEO_Strategy_Report_Nov_12_2026.html` (and .pdf).
+
+**Index audit (URL Inspection, all 120 sitemap URLs):** 99 indexed (was 98/119), 12 "Discovered –
+not indexed", 9 unknown (includes the PI mastermind page published 11 Nov). All 120 return 200
+live. 8 rich-result FAILs and 3 calculator canonical mismatches are stale crawls (6–10 Nov,
+before earlier fixes); verified clean live, recrawl requested.
+
+**Done (live, verified)**
+- Cannibalisation / wrong page: homepage now targets "client & customer acquisition agency"
+  (23 impressions were landing on /for/agencies) with a new FAQ; /for/agencies links that phrase
+  to the homepage. /lead-generation-agency owns "qualified lead generation services" and no longer
+  says "30–50 calls guaranteed". /high-ticket-lead-generation title adds "Agency" and the blog hub
+  links to it with the exact anchor. /appointment-setting title: "Qualified Appointments Booked".
+- CAC benchmarks post description leads with its own figures; solar FAQ on preset residential
+  appointments.
+- New guide `/blog/buy-qualified-leads-vs-generating-your-own` for the "buy qualified/coaching
+  leads, buy solar appointments, qualified b2b leads, investor lead broker" cluster (real
+  campaign data only).
+- Results gallery (ClientSuccess): 60 screenshots to WebP with width/height, 48.2 MB → 3.6 MB.
+  Mobile full-scroll image bytes: homepage 9.8 → 1.6 MB, PI mastermind 9.3 → 1.2 MB.
+
+**Indexing:** Google 15 more accepted (42 today in total), Bing 15 more (42 today).
+
+**Backlog additions**
+- Homepage mobile TBT 2.6 s (lab): profile and defer animated shader backgrounds and
+  below-the-fold video on mobile without changing the design.
+- Re-inspect the 8 rich-result pages and 3 calculators on 15–16 Nov.
+- Check positions for customer acquisition agency / qualified lead generation services / high
+  ticket lead generation in 7–10 days.
+
+**Owner actions (authority):** Source of Sources, Qwoted, Featured.com and Help a B2B Writer for
+expert-quote links using the /benchmarks data; agency/coaching podcast guesting; Clutch and
+DesignRush profiles with 3–5 reviews.
+
 ## Backlog (highest impact first)
 
 1. Resubmit the 21 not-indexed URLs and the new URLs to the Indexing API (quota resets daily).

@@ -24,7 +24,7 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { highTicketDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "High Ticket Lead Generation for $3K–$25K Offers",
+  title: "High Ticket Lead Generation Agency for $3K–$25K Offers",
   description:
     "Done-for-you high ticket lead generation for consultants, coaches, and agencies. Get 30–50 pre-sold, qualified sales calls monthly with verified proof.",
   keywords: [

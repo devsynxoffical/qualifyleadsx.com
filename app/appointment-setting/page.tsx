@@ -38,7 +38,7 @@ import { appointmentSettingDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Appointment Setting Agency: Qualified Sales Calls Booked",
+    absolute: "Appointment Setting Agency: Qualified Appointments Booked",
   },
   description:
     "Automated appointment setting system with sub-5-minute speed to lead. Turn cold inquiries into 30-50 qualified sales calls every month.",

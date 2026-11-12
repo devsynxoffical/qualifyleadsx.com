@@ -29,9 +29,9 @@ import { trainingVideos, testimonialVideos } from "@/lib/media";
 import { isoDuration, imageObject, hostedVideo, WEBSITE_ID, ORG_ID } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Lead Generation Agency for High-Ticket B2B",
+  title: "Client & Customer Acquisition Agency for High-Ticket B2B",
   description:
-    "B2B lead generation agency scaling high ticket sales for agencies and coaches. Get 30-50 predictable booked calls with our AI acquisition engine.",
+    "Done-for-you customer acquisition agency for high-ticket B2B, coaches and agencies: Meta ads, funnels and AI follow-up that book 30-50 qualified calls.",
   keywords: [
     "lead generation agency",
     "high ticket sales",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Lead Generation Agency for High-Ticket Offers - QualifiedLeadsX",
+    title: "Client & Customer Acquisition Agency for High-Ticket B2B - QualifiedLeadsX",
     description:
       "B2B lead generation agency scaling high ticket sales for agencies and coaches. Get predictable booked calls with our AI acquisition engine.",
     url: site.url,
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lead Generation Agency for High-Ticket Offers - QualifiedLeadsX",
+    title: "Client & Customer Acquisition Agency for High-Ticket B2B - QualifiedLeadsX",
     description:
       "B2B lead generation agency scaling high ticket sales for agencies and coaches. Get predictable booked calls with our AI acquisition engine.",
     images: [`${site.url}/opengraph-image`],

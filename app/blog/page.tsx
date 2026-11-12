@@ -120,7 +120,9 @@ export default function BlogHubPage() {
               Calculators, Verified Benchmarks & Scaling Solutions
             </h2>
             <p className="mt-3 text-sm text-mist leading-relaxed">
-              Explore our complete suite of interactive unit economics tools, verified industry datasets, and client acquisition infrastructure.
+              Explore our complete suite of interactive unit economics tools, verified industry datasets, and client acquisition infrastructure. Want it done for you? See our{" "}
+              <Link href="/high-ticket-lead-generation" className="text-lime underline underline-offset-2">high ticket lead generation agency</Link>{" "}
+              service.
             </p>
           </div>
 

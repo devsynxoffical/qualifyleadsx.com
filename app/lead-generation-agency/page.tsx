@@ -24,9 +24,9 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { leadGenAgencyDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Done-for-You Lead Generation Agency: How It Works",
+  title: "Qualified Lead Generation Services: Done-for-You Agency",
   description:
-    "Premier lead generation agency installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. Get 30–50 qualified calls guaranteed.",
+    "Done-for-you lead generation agency: VSL funnels, Meta ads and AI appointment setting that deliver qualified sales calls, with a 90-day written guarantee.",
   keywords: [
     "lead generation agency",
     "b2b lead generation agency",

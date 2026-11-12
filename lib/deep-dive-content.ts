@@ -29,7 +29,7 @@ export const agenciesDeepDive: DeepDiveContent = {
     title: "What a client acquisition agency does for a marketing agency",
     paragraphs: [
       "Most marketing agencies win clients through referrals and the founder's network. That works until about $30K–$50K a month, then growth stalls because referrals arrive when they arrive, not when you have capacity. QualifiedLeadsX is a client acquisition agency for agencies: we build and run the Meta ads, the case-study funnel, the application filter and the follow-up that put qualified retainer prospects on your calendar every week.",
-      "It is the same system we run for coaches and consultants, adapted to how agencies sell. Your buyer has usually been burned by an agency before, so proof matters more than promises, and one closed retainer has to pay for weeks of ad spend. Below is how we handle both.",
+      "It is the same system we run for coaches and consultants, adapted to how agencies sell. Your buyer has usually been burned by an agency before, so proof matters more than promises, and one closed retainer has to pay for weeks of ad spend. Below is how we handle both. (Not an agency yourself? See our [customer acquisition agency](/) service for coaches, consultants and B2B firms.)",
     ],
   },
   sections: [
@@ -478,6 +478,7 @@ export const solarDeepDive: DeepDiveContent = {
   faqs: [
     { q: "Should I buy solar appointments or generate my own?", a: "Buying appointments is fast but usually shared or recycled, and you can't control qualification. Generating your own with Meta ads and an in-house or outsourced setter gives you exclusive appointments, your own data, and a cost per appointment that falls as the campaign improves." },
     { q: "What does \"guaranteed solar appointments\" mean?", a: "It usually means the vendor will refund or replace appointments that don't sit, not that they will close. Ask how the homeowner was qualified, whether the lead is exclusive, and what counts as a valid appointment before you buy." },
+    { q: "What are preset residential solar appointments?", a: "A preset (pre-set) solar appointment is a consultation with a residential homeowner that is already booked and confirmed before it reaches your sales rep, rather than a raw lead your team still has to call. When comparing preset appointment providers, check that each appointment is exclusive to you, which qualification rules were applied (homeownership, roof, monthly electric bill, credit), and how they define and report the sit rate." },
     { q: "How much do solar leads cost on Facebook?", a: "In two recent campaigns we ran, solar leads cost about $26 (232 leads from roughly $6,000) and $14.71 (300 phone-verified leads in Texas). Costs vary by state, season and how strictly leads are qualified." },
   ],
 };

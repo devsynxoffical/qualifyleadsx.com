@@ -7,9 +7,11 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { outsourcedClosersDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Outsourced Sales Closers | QualifiedLeadsX",
+  title: { absolute: "Outsourced Sales Closers: Commission-Based Closers" },
   description:
     "Hire vetted outsourced sales closers for $3K–$25K high-ticket offers. Commission-aligned sales talent, call audits, and consistent 25%+ close rates.",
   alternates: {
@@ -42,6 +44,7 @@ const faqs = [
     q: "How do you maintain quality control and closing consistency?",
     a: "Every sales call recording is audited weekly against our 12-point Closing Framework, reviewing rapport, pain uncovery, financial qualification, urgency framing, and objection handling.",
   },
+  ...outsourcedClosersDeepDive.faqs,
 ];
 
 export default function OutsourcedSalesClosersPage() {
@@ -175,6 +178,8 @@ export default function OutsourcedSalesClosersPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={outsourcedClosersDeepDive} />
 
         <ProofStack variant="full" />
 

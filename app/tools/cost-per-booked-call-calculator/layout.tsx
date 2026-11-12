@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 // The calculator page is a client component and cannot export metadata, so it
 // lives here. Without this file the page inherited the homepage's title and
 // canonical ("/"), telling Google it was a duplicate of the homepage.
-const TITLE = "Cost Per Booked Call Calculator";
+const TITLE = "Cost Per Booked Call & Qualified Meeting Calculator";
 const DESCRIPTION =
   "Work out the most you can pay per booked call (cost per qualified meeting) from offer price, margin, show rate and close rate. Free, with 2026 benchmarks.";
 
 export const metadata: Metadata = {
-  title: { absolute: `${TITLE} | QualifiedLeadsX` },
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: "/tools/cost-per-booked-call-calculator" },
   openGraph: {

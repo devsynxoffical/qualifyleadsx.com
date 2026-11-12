@@ -24,7 +24,7 @@ const VIMEO_ID = "1245761641";
 const POSTER = "/images/mastermind/personal-injury-sniper-method.jpg";
 const VIDEO_TITLE = "Personal Injury Lead Generation: Sniper Method Mastermind";
 const DESCRIPTION =
-  "Sniper Method mastermind for personal injury law firms and agencies: find hidden Facebook audiences for car, motorcycle, 18-wheeler and rideshare accident cases.";
+  "Sniper Method mastermind for PI law firms and agencies: find hidden Facebook audiences for car, motorcycle, 18-wheeler and rideshare accident cases.";
 
 export const metadata: Metadata = {
   title: "Facebook Ads for Personal Injury Lawyers: Sniper Method",

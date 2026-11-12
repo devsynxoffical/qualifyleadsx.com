@@ -336,7 +336,7 @@ export const blogPosts: BlogPost[] = [
       sections: [
         {
           heading: "1. The Core Speed to Lead Statistics (and Where They Come From)",
-          subheading: "Three Studies That Keep Getting Confirmed",
+          subheading: "Speed to Lead Studies: HBR, MIT and InsideSales.com",
           body: [
             "Harvard Business Review's 'The Short Life of Online Sales Leads' audited 2,241 US companies by submitting a web form and timing the response. Firms that responded within an hour were nearly seven times as likely to have a meaningful conversation with a decision-maker as those that waited even an hour longer, and more than 60 times as likely as companies that took 24 hours or more. The average response time among companies that did respond was 42 hours. About 23% never responded.",
             "The MIT and InsideSales.com lead response management study, the most quoted data set in the category, found the odds of qualifying a lead drop roughly 21-fold when first contact moves from five minutes to 30 minutes, and the odds of simply reaching the lead fall about 100-fold after the same window. The first five minutes are not just better; they are a different game.",

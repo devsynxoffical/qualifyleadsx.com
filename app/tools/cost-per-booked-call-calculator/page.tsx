@@ -105,7 +105,7 @@ export default function CostPerBookedCallCalculatorPage() {
 
           <h1 className="font-heading text-4xl sm:text-5xl font-bold tracking-tight text-fog leading-[1.1]">
             Cost Per Booked Call{" "}
-            <span className="text-gradient-lime">Acquisition Calculator</span>
+            <span className="text-gradient-lime">&amp; Qualified Meeting Calculator</span>
           </h1>
 
           <p className="mt-4 text-base sm:text-lg text-mist leading-relaxed font-sans max-w-2xl mx-auto">
@@ -121,7 +121,7 @@ export default function CostPerBookedCallCalculatorPage() {
               What is a Cost Per Booked Call Calculator?
             </h2>
             <p className="mt-2 text-sm text-mist leading-relaxed font-sans">
-              A cost per booked call calculator models how much ad spend your business can afford to invest per scheduled sales appointment while maintaining target profit margins. By factoring in your offer price, appointment show rate, and sales close rate, it calculates your exact break-even cost per call and recommended target cost per call.
+              Cost per booked call (also called cost per qualified meeting or cost per appointment) is your ad spend divided by the qualified sales meetings it produced. A cost per booked call calculator models how much ad spend your business can afford to invest per scheduled sales appointment while maintaining target profit margins. By factoring in your offer price, appointment show rate, and sales close rate, it calculates your exact break-even cost per call and recommended target cost per call.
             </p>
           </div>
         </div>

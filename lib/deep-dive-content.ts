@@ -685,3 +685,45 @@ export const realEstateInvestorsDeepDive: DeepDiveContent = {
     { q: "What are pre-qualified investor leads?", a: "Pre-qualified investor leads are seller leads that have already answered questions about property condition, timeline and reason for selling, and whose phone number has been verified, so your acquisitions team only calls sellers who fit your buy box." },
   ],
 };
+
+export const outsourcedClosersDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Outsourced closers",
+    title: "What outsourced closers do, and when to hire them",
+    paragraphs: [
+      "An outsourced closer is a commission-based sales rep who takes the sales calls your marketing books and turns qualified prospects into paying clients. They don't generate leads: [appointment setters](/appointment-setting) and [AI speed to lead](/speed-to-lead) fill the calendar, and the closer runs the call, handles objections and collects payment.",
+      "Outsourcing makes sense once you have a steady flow of qualified calls for an offer priced around $3,000 to $25,000, and the founder is the bottleneck. Before that point, a closer has nothing to close; fix lead flow first with a [lead generation system](/lead-generation-agency).",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Side by side",
+      title: "Outsourced closers vs an in-house sales hire",
+      items: [],
+      table: {
+        head: ["", "Outsourced closers", "In-house sales hire"],
+        rows: [
+          ["Pay", "Commission on cash collected (typically 10% to 15%)", "Base salary plus commission"],
+          ["Time to start", "Live on your calendar in about 14 days", "Recruiting, hiring and onboarding first"],
+          ["Quality control", "Every call recorded and audited weekly", "Depends on your own sales management"],
+          ["Fixed cost", "Low; you mainly pay when deals close", "Salary is owed whether deals close or not"],
+          ["Best for", "Proven offer, steady qualified calls, founder still closing", "Large teams with an in-house sales manager"],
+        ],
+      },
+    },
+    {
+      eyebrow: "Before you outsource",
+      title: "Three checks before hiring outsourced closers",
+      items: [
+        { title: "Enough qualified calls", text: "A closer needs a full calendar to stay sharp and earn. Track [cost per booked call](/tools/cost-per-booked-call-calculator) and show rate first, so you know how many calls your ad spend can buy." },
+        { title: "A proven offer", text: "Closers scale an offer that already sells; they rarely rescue one that doesn't. If you close under 15% yourself, fix the offer and qualification first." },
+        { title: "Clear qualification", text: "Unqualified calls burn closer time and morale. Use a [lead scoring template](/tools/lead-scoring-template) so only buyers with budget, authority and timeline reach the closer." },
+      ],
+      note: "Hiring your own instead? Use our [B2B sales closer job description](/blog/b2b-sales-closer-job-description) and [high ticket sales training framework](/blog/high-ticket-sales-training-framework).",
+    },
+  ],
+  faqs: [
+    { q: "How much do outsourced closers cost?", a: "Outsourced closers are usually paid commission on cash collected, typically 10% to 15%, sometimes with a short ramp retainer during the first 30 days of onboarding. You pay mostly when deals close, instead of a fixed salary." },
+    { q: "What is the difference between an appointment setter and a closer?", a: "An appointment setter contacts new leads, qualifies them and books them into the calendar. A closer runs the booked sales call and converts the qualified prospect into a paying client. High-ticket teams usually need both." },
+  ],
+};

@@ -226,6 +226,16 @@ the 12 Nov inspection). Bing: 25 submitted.
 -financial-advisors, appointment-setting-for-consultants, -saas); re-inspect all sitemap URLs on
 15–16 Nov.
 
+## 2026-11-13 (session 2: master SEO/AEO/GEO prompt)
+
+Full report: `SEO_FIX_REPORT.md`. Baseline and after audits: `audit/baseline.*`, `audit/after.*`.
+Done (live, verified): robots for all bots, single-hop 301s, OG image on every page (71 missing),
+Reveal performance fix (home TBT 3.28 to 2.59 s live), 3 merges (301 via middleware) and 3 noindexes,
+8 thin pages upgraded today, brand-facts source, founder Gaurav Kapoor + /about/gaurav-kapoor,
+bylines and real updated dates, short answers on 15 money pages, llms-full.txt, GEO prompts,
+5 new GA4 events. Indexing: Google 21 accepted, Bing 21 submitted.
+Open: Hostinger blocks Bingbot/Applebot (403) and GPTBot (429); home Lighthouse 51; 46 pages under 5 FAQs.
+
 ## Backlog (highest impact first)
 
 1. Resubmit the 21 not-indexed URLs and the new URLs to the Indexing API (quota resets daily).

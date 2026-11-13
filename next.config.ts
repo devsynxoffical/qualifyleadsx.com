@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // 13 Nov 2026: thin industry pages with no search demand merged into stronger siblings (audit/programmatic_decisions.csv)
+      { source: "/for/executive-coaches", destination: "/for/coaches", statusCode: 301 },
+      { source: "/for/business-coaches", destination: "/for/coaches", statusCode: 301 },
+      { source: "/for/online-education", destination: "/for/course-creators", statusCode: 301 },
       {
         source: "/:path*",
         has: [

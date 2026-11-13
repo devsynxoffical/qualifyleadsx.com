@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/benchmarks/meta-ads-cpm`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Meta Ads CPM Benchmarks 2026 | QualifiedLeadsX",
     description:
       "Facebook & Instagram Ads CPM benchmarks for 2026 across seasons, niches, and creative formats.",

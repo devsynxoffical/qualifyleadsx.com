@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/for/course-creators`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Course Creator Lead Generation | QualifiedLeadsX",
     description:
       "Scale premium courses & cohort masterminds ($1.5K–$10K). High-converting VSL funnels and phone setters.",

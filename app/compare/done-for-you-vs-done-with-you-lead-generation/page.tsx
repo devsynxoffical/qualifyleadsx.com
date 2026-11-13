@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/compare/done-for-you-vs-done-with-you-lead-generation`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Done For You vs Done With You Lead Gen | QualifiedLeadsX",
     description:
       "Compare Done-For-You (DFY) vs Done-With-You (DWY) lead generation. Economics and execution risk.",

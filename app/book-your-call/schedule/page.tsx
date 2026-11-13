@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { defaultOgImage } from "@/lib/site";
 import Link from "next/link";
 import { CalendarDays, CheckCircle2, ChevronRight, ClipboardList, ShieldCheck, Timer, Video } from "lucide-react";
 import { Nav } from "@/components/layout/Nav";
@@ -19,7 +20,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/book-your-call/schedule" },
   // Conversion utility page: keep it out of search results, let crawlers follow its links.
   robots: { index: false, follow: true },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: "/book-your-call/schedule", type: "website" },
+  openGraph: {
+    images: [defaultOgImage], title: TITLE, description: DESCRIPTION, url: "/book-your-call/schedule", type: "website" },
 };
 
 const includes = [

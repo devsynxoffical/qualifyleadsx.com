@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/benchmarks/cost-per-lead-by-industry`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Cost Per Lead by Industry 2026 Benchmarks | QualifiedLeadsX",
     description:
       "Real CPL benchmarks across B2B SaaS, med spas, real estate, and high-ticket coaching based on $50M+ spend.",

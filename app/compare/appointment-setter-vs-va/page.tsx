@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/compare/appointment-setter-vs-va`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Appointment Setter vs Virtual Assistant (VA): Which to Hire",
     description:
       "Appointment setter vs virtual assistant: compare conversion rates, compensation, and sales impact.",

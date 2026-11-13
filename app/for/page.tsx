@@ -5,7 +5,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { WEBSITE_ID, publisherOrg } from "@/lib/schema";
 import {
   ArrowRight,
@@ -42,6 +42,7 @@ export const metadata: Metadata = {
     canonical: "/for",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Lead Generation by Industry - QualifiedLeadsX",
     description:
       "Explore specialized client acquisition systems and cost-per-booked-call benchmarks across 16+ high-ticket industries.",

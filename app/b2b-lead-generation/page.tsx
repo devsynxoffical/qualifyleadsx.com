@@ -5,7 +5,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { WEBSITE_ID, publisherOrg, orgRef, TIER1_MARKETS } from "@/lib/schema";
 import {
   ArrowRight,
@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     canonical: "/b2b-lead-generation",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "B2B Lead Generation Agency for Service Contracts",
     description:
       "Premier B2B lead generation agency building outbound and paid acquisition funnels. Book 30–50 qualified appointments monthly.",

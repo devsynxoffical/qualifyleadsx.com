@@ -3688,14 +3688,14 @@ export const blogCategories: {
     slug: "lead-qualification",
     title: "Lead Qualification & Appointment Guides",
     description:
-      "Qualification filters, speed-to-lead follow-up, closer frameworks and SDR comparisons that protect your calendar.",
+      "Lead qualifying guides: qualification filters, speed-to-lead follow-up, setter and closer frameworks and SDR comparisons that protect your sales calendar.",
   },
   {
     name: "Scaling & Economics",
     slug: "scaling-economics",
     title: "Scaling, CAC & ROAS Benchmark Guides",
     description:
-      "Customer acquisition cost benchmarks, ROAS targets, agency pricing and the unit economics behind $100K+ months.",
+      "Customer acquisition cost benchmarks, ROAS targets, lead generation agency pricing and the unit economics behind scaling a high-ticket business profitably.",
   },
 ];
 

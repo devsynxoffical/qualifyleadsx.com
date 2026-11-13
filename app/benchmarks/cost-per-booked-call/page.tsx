@@ -5,7 +5,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { WEBSITE_ID, publisherOrg } from "@/lib/schema";
 import {
   ArrowRight,
@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     canonical: "/benchmarks/cost-per-booked-call",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Cost Per Booked Call Benchmarks 2026 - QualifiedLeadsX",
     description:
       "Verified 2026 cost per booked call data across $3K, $5K, $10K, and $25K offer tiers based on $50M+ in managed Meta ad spend.",

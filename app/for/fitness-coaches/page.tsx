@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/for/fitness-coaches`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Online Fitness Coach Clients | QualifiedLeadsX",
     description:
       "Scale high-ticket online fitness coaching ($2.5K–$6K offers). Book 30–60 qualified transformation clients monthly.",

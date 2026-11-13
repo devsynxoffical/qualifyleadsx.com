@@ -12,7 +12,7 @@ import {
   FileText,
   GraduationCap,
 } from "lucide-react";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { founder, orgRef, publisherOrg, imageObject, youtubeVideo, faqPage, webPageNode, WEBSITE_ID } from "@/lib/schema";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
@@ -47,12 +47,14 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: PATH },
   openGraph: {
+    images: [defaultOgImage],
     title: "AI Client Acquisition Mastermind | QualifiedLeadsX™",
     description: "Build a predictable client acquisition system in 6 weeks: Meta ads, AI advertising, tracking, scaling and profitability.",
     url: PATH,
     type: "website",
   },
   twitter: {
+    images: [defaultOgImage.url],
     card: "summary_large_image",
     title: "AI Client Acquisition Mastermind | QualifiedLeadsX™",
     description: "Build a predictable client acquisition system in 6 weeks: Meta ads, AI advertising, tracking, scaling and profitability.",

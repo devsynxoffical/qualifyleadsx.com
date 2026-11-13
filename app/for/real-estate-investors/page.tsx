@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/for/real-estate-investors`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Real Estate Investor Leads: Motivated Seller Leads",
     description:
       "Off-market real estate investor leads and motivated seller contracts. Hyper-targeted Meta ads and instant phone triage.",

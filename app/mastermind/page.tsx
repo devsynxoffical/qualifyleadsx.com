@@ -11,7 +11,7 @@ import {
   Award,
   BarChart3,
 } from "lucide-react";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { serviceExtras, webPageNode, youtubeVideo } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { Footer } from "@/components/layout/Footer";
@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     canonical: "/mastermind",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "8-Figure Mastermind | QualifiedLeadsX™",
     description:
       "Exclusive collective of high-ticket coaches, agency owners, and founders scaling past $100K–$500K+/month.",
@@ -45,6 +46,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: [defaultOgImage.url],
     card: "summary_large_image",
     title: "8-Figure Mastermind | QualifiedLeadsX™",
     description:

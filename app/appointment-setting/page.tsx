@@ -9,7 +9,7 @@ import { LinkGroups } from "@/components/sections/LinkGroups";
 import { appointmentSettingIndustryLinks, industryPages } from "@/lib/industry-links";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { orgRef, serviceExtras, webPageNode } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import {
@@ -73,6 +73,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: [defaultOgImage.url],
     card: "summary_large_image",
     title: "Appointment Setting With AI Follow-Up and Speed to Lead - QualifiedLeadsX",
     description:

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/for/recruitment-agencies`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Recruitment Agency Leads | QualifiedLeadsX",
     description:
       "Client acquisition for executive search & staffing firms. Book hiring managers with open requisitions.",

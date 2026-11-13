@@ -5,7 +5,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { WEBSITE_ID, publisherOrg } from "@/lib/schema";
 import {
   FileSpreadsheet,
@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     canonical: "/tools/lead-scoring-template",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "High-Ticket Lead Scoring Template & Intake Rubric",
     description:
       "Battle-tested 4-tier qualification framework to protect sales calendars and route VIP buyers.",

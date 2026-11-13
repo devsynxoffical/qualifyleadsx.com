@@ -9,7 +9,7 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { coachesDeepDive } from "@/lib/deep-dive-content";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { serviceExtras, webPageNode } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import {
@@ -39,6 +39,7 @@ export const metadata: Metadata = {
     canonical: "/for/coaches",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Client Acquisition Funnels for High-Ticket Coaches | QualifiedLeadsX™",
     description:
       "Install a high-converting VSL funnel and Meta ads machine to book 30–50 qualified coaching sales calls on autopilot.",

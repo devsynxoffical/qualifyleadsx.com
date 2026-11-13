@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/outsourced-sales-closers`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Outsourced Sales Closers | QualifiedLeadsX",
     description:
       "Hire vetted outsourced sales closers for $3K–$25K high-ticket offers. Commission-aligned talent, call audits, and 25%+ close rates.",

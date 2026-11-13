@@ -10,7 +10,7 @@ import { site } from "@/lib/site";
 import { webPageNode, orgRef, TIER1_MARKETS } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Book Your Free Strategy Call",
+  title: "Book Your Free Strategy Call | QualifiedLeadsX Booking",
   description:
     "Book a free 30-minute strategy call with QualifiedLeadsX. Get an offer audit and the exact funnel to fill your calendar with qualified sales calls.",
   alternates: {

@@ -5,7 +5,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { WEBSITE_ID, publisherOrg, orgRef, TIER1_MARKETS } from "@/lib/schema";
 import {
   ArrowRight,
@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     canonical: "/for/financial-advisors",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Financial Advisor Leads & High-Net-Worth Client Funnels",
     description:
       "Compliant financial advisor lead generation for wealth managers. Book 20–40 high-net-worth consultations ($500K+ investable assets).",

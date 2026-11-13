@@ -5,7 +5,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { WEBSITE_ID, publisherOrg } from "@/lib/schema";
 import {
   ArrowRight,
@@ -41,6 +41,7 @@ export const metadata: Metadata = {
     canonical: "/services",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Client Acquisition Services | QualifiedLeadsX",
     description:
       "Meta ads, VSL funnels, AI speed to lead, WhatsApp nurture, CRM automation, appointment setting and sales closers for high-ticket businesses.",

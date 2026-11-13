@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/crm-automation`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "CRM Automation for Coaches | QualifiedLeadsX",
     description:
       "End pipeline drop-off with bespoke CRM automation for high-ticket coaches. Automated reminders, 80%+ show rates, and tracking.",

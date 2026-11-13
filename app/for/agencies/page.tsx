@@ -7,7 +7,7 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { agenciesDeepDive } from "@/lib/deep-dive-content";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { serviceExtras, webPageNode } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import {
@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     canonical: "/for/agencies",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Client Acquisition System for Digital & Marketing Agencies | QualifiedLeadsX™",
     description:
       "Install a high-converting client acquisition funnel for marketing, software, and creative agencies. Book 35–60 qualified retainer calls every month.",

@@ -40,3 +40,11 @@ export const navCta = {
   label: "Book Free Strategy Call",
   href: site.bookCallUrl,
 } as const;
+
+/** Default 1200x630 share image (app/opengraph-image.tsx), used by pages that set their own openGraph block. */
+export const defaultOgImage = {
+  url: "/opengraph-image",
+  width: 1200,
+  height: 630,
+  alt: "QualifiedLeadsX: done-for-you client acquisition for high-ticket offers",
+} as const;

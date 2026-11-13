@@ -11,7 +11,7 @@ import {
   Rocket,
   ShieldCheck,
 } from "lucide-react";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { founder, publisherOrg, imageObject, youtubeVideo, faqPage, webPageNode, CONTENT_LAUNCH_DATE, SITE_LAST_MODIFIED, WEBSITE_ID } from "@/lib/schema";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     canonical: "/mastermind/7-days-paid-trial",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "7 Days Paid Trial Funnel Breakdown | QualifiedLeadsX™",
     description:
       "How to engineer a self-liquidating 7 Days Paid Trial front-end offer converting cold ads into high-ticket clients.",
@@ -41,6 +42,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   twitter: {
+    images: [defaultOgImage.url],
     card: "summary_large_image",
     title: "7 Days Paid Trial Funnel Breakdown | QualifiedLeadsX™",
     description:

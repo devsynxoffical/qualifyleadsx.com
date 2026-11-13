@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { caseStudiesData, type CaseStudyItem } from "@/lib/case-studies-data";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
@@ -81,6 +81,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     alternates: { canonical },
     ...(isNamed ? {} : { robots: { index: false, follow: true } }),
     openGraph: {
+      images: [defaultOgImage],
       title,
       description,
       url: canonical,

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Crosshair, Users, Filter, Car, Shuffle, Search, CheckCircle2 } from "lucide-react";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { founder, orgRef, publisherOrg, imageObject, faqPage, webPageNode, videoDate, WEBSITE_ID } from "@/lib/schema";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
@@ -46,6 +46,7 @@ export const metadata: Metadata = {
     images: [{ url: POSTER, width: 1280, height: 720, alt: VIDEO_TITLE }],
   },
   twitter: {
+    images: [defaultOgImage.url],
     card: "summary_large_image",
     title: "Sniper Method Mastermind: Facebook Ads for Personal Injury",
     description: DESCRIPTION,

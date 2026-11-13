@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/compare/qualifiedleadsx-alternatives`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "QualifiedLeadsX Alternatives & Comparison",
     description:
       "Honest comparison of QualifiedLeadsX alternatives for high-ticket lead generation. Traditional agencies vs QLX.",

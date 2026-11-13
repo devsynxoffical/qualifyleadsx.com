@@ -5,7 +5,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { WEBSITE_ID, publisherOrg, orgRef, TIER1_MARKETS } from "@/lib/schema";
 import {
   ArrowRight,
@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     canonical: "/for/b2b-services",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Lead Generation for Consultancies & B2B Service Firms",
     description:
       "Predictable B2B service lead generation for IT firms, consultancies, and commercial contractors. Book 30–50 qualified calls monthly.",

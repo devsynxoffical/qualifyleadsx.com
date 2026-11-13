@@ -1,7 +1,6 @@
 "use client";
 
-import { useRef, type ReactNode } from "react";
-import { useEffect } from "react";
+import { useRef, useEffect, type ReactNode } from "react";
 import { gsap, prefersReducedMotion } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
@@ -17,6 +16,35 @@ type RevealProps = {
   once?: boolean;
   as?: "div" | "section" | "span" | "li" | "p" | "h2" | "h3";
 };
+
+/*
+ * Performance: one shared IntersectionObserver for every Reveal on the page.
+ * Creating a GSAP ScrollTrigger per element measured the layout for each of the
+ * ~60 blocks on the homepage during hydration (the "Style & Layout" cost in
+ * Lighthouse). The observer fires when the block's top crosses 88% of the
+ * viewport, the same point the ScrollTrigger used, and plays the same tween.
+ */
+type Entry = { play: () => void; once: boolean };
+const entries = new WeakMap<Element, Entry>();
+let observer: IntersectionObserver | null = null;
+
+function getObserver() {
+  if (observer) return observer;
+  observer = new IntersectionObserver(
+    (list) => {
+      for (const e of list) {
+        if (!e.isIntersecting) continue;
+        const entry = entries.get(e.target);
+        if (!entry) continue;
+        entry.play();
+        observer?.unobserve(e.target);
+        entries.delete(e.target);
+      }
+    },
+    { rootMargin: "0px 0px -12% 0px", threshold: 0 }
+  );
+  return observer;
+}
 
 export function Reveal({
   children,
@@ -36,35 +64,25 @@ export function Reveal({
     const el = ref.current;
     if (!el) return;
 
-    if (prefersReducedMotion()) {
+    if (prefersReducedMotion() || typeof IntersectionObserver === "undefined") {
       gsap.set(el, { opacity: 1, x: 0, y: 0, scale: 1 });
       return;
     }
 
     const targets = el.children.length > 1 ? el.children : el;
-    const tween = gsap.fromTo(
-      targets,
-      { opacity: 0, y, x, scale },
-      {
-        opacity: 1,
-        y: 0,
-        x: 0,
-        scale: 1,
-        duration,
-        delay,
-        ease: "expo.out",
-        stagger,
-        scrollTrigger: {
-          trigger: el,
-          start: "top 88%",
-          once,
-        },
-      }
-    );
+    gsap.set(targets, { opacity: 0, y, x, scale });
+    let tween: gsap.core.Tween | null = null;
+    const play = () => {
+      tween = gsap.to(targets, { opacity: 1, y: 0, x: 0, scale: 1, duration, delay, ease: "expo.out", stagger });
+    };
+    entries.set(el, { play, once });
+    const io = getObserver();
+    io.observe(el);
 
     return () => {
-      tween.scrollTrigger?.kill();
-      tween.kill();
+      io.unobserve(el);
+      entries.delete(el);
+      tween?.kill();
     };
   }, [delay, y, x, scale, duration, stagger, once]);
 

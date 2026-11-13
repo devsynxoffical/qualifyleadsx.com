@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/for/solar-companies`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Solar Appointment Setting: Exclusive, Pre-Qualified Leads",
     description:
       "Exclusive qualified solar appointments with verified homeowners. Credit-checked ($650+ FICO) and electric bill qualified.",

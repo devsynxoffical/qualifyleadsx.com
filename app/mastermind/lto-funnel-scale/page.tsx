@@ -10,7 +10,7 @@ import {
   ShoppingBag,
   Zap,
 } from "lucide-react";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { founder, publisherOrg, imageObject, youtubeVideo, faqPage, webPageNode, CONTENT_LAUNCH_DATE, SITE_LAST_MODIFIED, WEBSITE_ID } from "@/lib/schema";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -33,6 +33,7 @@ export const metadata: Metadata = {
     canonical: "/mastermind/lto-funnel-scale",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "How We Scaled an LTO Funnel to $847K | QualifiedLeadsX™",
     description:
       "Deep dive breakdown: scaling a Low-Ticket Offer funnel to $847,290 revenue at 3.32x net ROAS with Meta Ads.",
@@ -40,6 +41,7 @@ export const metadata: Metadata = {
     type: "article",
   },
   twitter: {
+    images: [defaultOgImage.url],
     card: "summary_large_image",
     title: "How We Scaled an LTO Funnel to $847K | QualifiedLeadsX™",
     description:

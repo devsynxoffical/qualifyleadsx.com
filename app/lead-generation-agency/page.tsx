@@ -5,7 +5,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { WEBSITE_ID, publisherOrg, orgRef, TIER1_MARKETS } from "@/lib/schema";
 import {
   ArrowRight,
@@ -39,6 +39,7 @@ export const metadata: Metadata = {
     canonical: "/lead-generation-agency",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Done-for-You Lead Generation Agency: How It Works",
     description:
       "Premier lead generation agency installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. 30–50 qualified calls monthly.",

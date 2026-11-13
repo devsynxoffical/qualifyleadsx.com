@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/meta-ads-for-coaches`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Facebook Ads for Coaches | QualifiedLeadsX",
     description:
       "Scale $5K–$25K coaching offers with high-converting Facebook ads and sub-$180 booked calls.",

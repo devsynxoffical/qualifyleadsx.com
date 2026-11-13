@@ -5,7 +5,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { WEBSITE_ID, publisherOrg, orgRef, TIER1_MARKETS } from "@/lib/schema";
 import {
   ArrowRight,
@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     canonical: "/for/med-spas",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Med Spa Lead Generation & High-Ticket Booking Agency",
     description:
       "Predictable Med Spa lead generation and consultation booking. Fill your treatment calendar with $3K–$10K package clients.",

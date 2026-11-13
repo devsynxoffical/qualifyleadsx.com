@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/for/online-education`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Online Education Lead Generation | QualifiedLeadsX",
     description:
       "Student acquisition for vocational academies, accredited bootcamps, and certification institutes ($3K–$15K tuitions).",

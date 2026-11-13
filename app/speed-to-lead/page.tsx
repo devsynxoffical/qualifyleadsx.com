@@ -5,7 +5,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { WEBSITE_ID, publisherOrg, orgRef, TIER1_MARKETS } from "@/lib/schema";
 import {
   ArrowRight,
@@ -39,6 +39,7 @@ export const metadata: Metadata = {
     canonical: "/speed-to-lead",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "AI Speed to Lead: Reply to Every Lead in Under 5 Minutes",
     description:
       "Engage inbound high-ticket inquiries within 180 seconds. Lift appointment show rates to 88%+ with automated multi-channel speed to lead.",

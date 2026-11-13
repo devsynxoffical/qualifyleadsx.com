@@ -13,7 +13,7 @@ import { CTABanner } from "@/components/ui/CTABanner";
 import { Guarantee } from "@/components/sections/Guarantee";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { ArrowUpRight, CheckCircle2, ShieldCheck, TrendingUp, Users, Video } from "lucide-react";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { caseStudiesData } from "@/lib/case-studies-data";
 import { hostedVideo, publisherOrg, WEBSITE_ID } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     canonical: "/case-studies",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "125+ Real Client Case Studies & Scaling Proof | QualifiedLeadsX™",
     description:
       "Real ad spend, verified cost per lead, revenue dashboards, and live video breakdowns from funnels installed across 30+ high-ticket niches.",
@@ -41,6 +42,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
+    images: [defaultOgImage.url],
     card: "summary_large_image",
     title: "125+ Real Client Case Studies & Scaling Proof | QualifiedLeadsX™",
     description:

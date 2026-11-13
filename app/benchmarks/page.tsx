@@ -5,7 +5,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { WEBSITE_ID, publisherOrg } from "@/lib/schema";
 import {
   ArrowRight,
@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     canonical: "/benchmarks",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "High Ticket Marketing Benchmarks 2026 - QualifiedLeadsX",
     description:
       "Explore real data from $50M+ managed Meta ad spend: cost per call, show rate, close rates, and CAC benchmarks.",

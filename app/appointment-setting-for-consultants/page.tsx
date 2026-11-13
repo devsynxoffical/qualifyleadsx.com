@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/appointment-setting-for-consultants`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Appointment Setting for Consultants | QualifiedLeadsX",
     description:
       "High-touch appointment setting for management & B2B consultants. Book C-suite decision-makers for $15K–$50K+ engagements.",

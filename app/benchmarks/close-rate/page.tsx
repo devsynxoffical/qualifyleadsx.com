@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/benchmarks/close-rate`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Average High-Ticket Close Rate (2026): 24–31% Benchmarks",
     description:
       "High-ticket close rate benchmarks for 2026 across $3K, $10K, and $25K+ offers from 125+ client accounts.",

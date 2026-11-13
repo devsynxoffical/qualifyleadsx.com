@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/whatsapp-lead-nurture`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "WhatsApp Lead Nurturing | QualifiedLeadsX",
     description:
       "Convert 42% more booked calls with automated WhatsApp lead nurturing. Sub-60s response times and 98% open rates.",

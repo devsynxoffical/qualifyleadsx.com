@@ -9,7 +9,7 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { consultantsDeepDive } from "@/lib/deep-dive-content";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { Button } from "@/components/ui/Button";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { serviceExtras, webPageNode } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import {
@@ -39,6 +39,7 @@ export const metadata: Metadata = {
     canonical: "/for/consultants",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Client Acquisition Pipeline for B2B Consultants | QualifiedLeadsX™",
     description:
       "Install an enterprise client acquisition funnel for B2B consultants. Book qualified C-level decision-makers without cold email deliverability headaches.",

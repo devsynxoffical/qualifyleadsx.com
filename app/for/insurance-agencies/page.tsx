@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     canonical: `${site.url}/for/insurance-agencies`,
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Insurance Appointment Setting | QualifiedLeadsX",
     description:
       "Exclusive appointment setting for commercial and high-net-worth insurance agencies. Vetted policy reviews.",

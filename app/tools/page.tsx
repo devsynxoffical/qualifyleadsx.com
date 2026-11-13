@@ -5,7 +5,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { site } from "@/lib/site";
+import { site, defaultOgImage } from "@/lib/site";
 import { WEBSITE_ID, publisherOrg } from "@/lib/schema";
 import {
   ArrowRight,
@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     canonical: "/tools",
   },
   openGraph: {
+    images: [defaultOgImage],
     title: "Free Lead Generation Calculators & Tools - QualifiedLeadsX",
     description:
       "Interactive calculators to model high-ticket client acquisition costs, ad spend break-even, and appointment funnels.",

@@ -14,7 +14,8 @@
     "seo:lastmod": "node scripts/build-lastmod.mjs",
     "seo:daily": "node scripts/seo-daily.mjs",
     "seo:bots": "node scripts/check-bot-access.mjs",
-    "seo:bing": "node scripts/bing-webmaster.mjs"
+    "seo:bing": "node scripts/bing-webmaster.mjs",
+    "seo:audit": "node scripts/seo-audit.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

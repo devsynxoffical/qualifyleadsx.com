@@ -79,8 +79,12 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  // Search engine verification codes. Override with env vars if a property is re-verified.
   verification: {
-    google: "NOUxANYoxDqPZ3H4RgJxesvq4YD2wayyf-I7X8SVvfc",
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "NOUxANYoxDqPZ3H4RgJxesvq4YD2wayyf-I7X8SVvfc",
+    ...(process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+      ? { other: { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION } }
+      : {}),
   },
 };
 

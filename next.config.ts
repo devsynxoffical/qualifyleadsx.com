@@ -17,7 +17,8 @@ const nextConfig: NextConfig = {
           },
         ],
         destination: "https://www.qualifiedleadsx.com/:path*",
-        permanent: true,
+        // Single-hop 301 from the bare domain to the canonical www host.
+        statusCode: 301,
       },
     ];
   },

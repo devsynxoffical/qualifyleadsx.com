@@ -105,14 +105,30 @@ const URLS = [
   `https://${HOST}/case-studies/b2b-technology-agency-71k`
 ];
 
+// `--all` submits every URL in the live sitemaps; extra args submit just those URLs.
+async function urlsToSubmit() {
+  const args = process.argv.slice(2);
+  if (args.includes("--all")) {
+    const out = new Set();
+    for (const sm of ["sitemap-core.xml", "sitemap-industries.xml", "sitemap-content.xml"]) {
+      const xml = await (await fetch(`https://${HOST}/${sm}`)).text();
+      for (const m of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) out.add(m[1]);
+    }
+    return [...out];
+  }
+  const given = args.filter((a) => a.startsWith("http"));
+  return given.length ? given : URLS;
+}
+
 async function submitIndexNow() {
-  console.log(`Submitting ${URLS.length} URLs to IndexNow API for ${HOST}...`);
+  const urlList = await urlsToSubmit();
+  console.log(`Submitting ${urlList.length} URLs to IndexNow API for ${HOST}...`);
 
   const payload = {
     host: HOST,
     key: KEY,
     keyLocation: KEY_LOCATION,
-    urlList: URLS,
+    urlList,
   };
 
   try {

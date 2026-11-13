@@ -1,60 +1,31 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
 
+// Search and AI answer bots are allowed everywhere except the API routes.
+// Listing them explicitly documents intent and survives any later "*" change.
+const BOTS = [
+  "*",
+  "Googlebot",
+  "Bingbot",
+  "GPTBot",
+  "OAI-SearchBot",
+  "ChatGPT-User",
+  "ClaudeBot",
+  "Claude-User",
+  "Claude-SearchBot",
+  "PerplexityBot",
+  "Perplexity-User",
+  "Google-Extended",
+  "Applebot",
+  "Applebot-Extended",
+  "CCBot",
+  "DuckDuckBot",
+];
+
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-        disallow: ["/api/"],
-      },
-      {
-        userAgent: "Googlebot",
-        allow: "/",
-        disallow: ["/api/"],
-      },
-      {
-        userAgent: "Bingbot",
-        allow: "/",
-        disallow: ["/api/"],
-      },
-      {
-        userAgent: "GPTBot",
-        allow: "/",
-        disallow: ["/api/"],
-      },
-      {
-        userAgent: "OAI-SearchBot",
-        allow: "/",
-        disallow: ["/api/"],
-      },
-      {
-        userAgent: "ChatGPT-User",
-        allow: "/",
-        disallow: ["/api/"],
-      },
-      {
-        userAgent: "PerplexityBot",
-        allow: "/",
-        disallow: ["/api/"],
-      },
-      {
-        userAgent: "ClaudeBot",
-        allow: "/",
-        disallow: ["/api/"],
-      },
-      {
-        userAgent: "Google-Extended",
-        allow: "/",
-        disallow: ["/api/"],
-      },
-      {
-        userAgent: "Applebot-Extended",
-        allow: "/",
-        disallow: ["/api/"],
-      },
-    ],
+    rules: BOTS.map((userAgent) => ({ userAgent, allow: "/", disallow: ["/api/"] })),
     sitemap: `${site.url}/sitemap.xml`,
+    host: site.url,
   };
 }

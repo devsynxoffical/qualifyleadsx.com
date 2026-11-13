@@ -839,3 +839,163 @@ export const metaAdsSaasDeepDive: DeepDiveContent = {
     { q: "What should SaaS companies measure on Meta ads?", a: "Cost per trial or demo, trial-to-paid or demo-to-close rate, and customer acquisition cost against lifetime value. Clicks and cost per lead alone don't show whether the ads reach buyers." },
   ],
 };
+
+export const metaAdsCoachesDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Facebook ads for coaches",
+    title: "How Facebook ads get coaches clients without a big audience",
+    paragraphs: [
+      "Coaches who sell a program of a few thousand dollars rarely win by running ads straight to a sales call. The campaigns that work for our coaching clients usually start with a low-priced offer or an application funnel, so cold traffic pays for itself first and the best buyers are invited to the high-ticket program.",
+      "One life-transformation coach spent $21K on ads during a Black Friday offer, made $60,912 back on 613 front-end sales, and booked 270 registrations for a $2,000 six-month done-with-you program, all from cold traffic with no prior launch.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Funnel choice",
+      title: "Which Facebook ads funnel should a coach use?",
+      items: [
+        { title: "Low-ticket first", text: "A $7 to $99 offer pays back ad spend and creates buyers you can upsell. Best when your audience is broad (fitness, mindset, money)." },
+        { title: "Application funnel", text: "A short video plus an application form that books qualified calls. Best when the program is $3,000+ and the buyer needs a conversation." },
+        { title: "Webinar or workshop", text: "Teaches one result live, then invites attendees to the program. Best when the method needs explaining." },
+      ],
+    },
+    {
+      eyebrow: "Proof",
+      title: "Coaching results from our Meta campaigns",
+      items: [
+        { title: "$203,941 in 11 days", text: "A fitness client's low-ticket membership funnel sold 1,566 memberships plus one-time offers and high-ticket upsells ([case study](/case-studies/high-ticket-coaching-203k))." },
+        { title: "$150,348 in five days", text: "2,063 memberships, 183 bundle upsells and 30 high-ticket done-for-you programs ([case study](/case-studies/executive-consulting-150k))." },
+      ],
+      note: "Full playbook: [Meta ads for coaches guide](/blog/meta-ads-for-coaches-guide). Booking calls from the leads: [appointment setting for coaches](/appointment-setting-for-coaches).",
+    },
+  ],
+  faqs: [
+    { q: "Do Facebook ads work for coaches?", a: "Yes, when the funnel fits the price. Coaches with programs of a few thousand dollars usually do best with a low-ticket offer or an application funnel first. One coaching client turned $21K of ad spend into $60,912 in front-end sales and 270 registrations for a $2,000 program." },
+    { q: "Should coaches send Facebook ads straight to a sales call?", a: "Rarely. Cold traffic seldom books a high-ticket call straight away. A low-ticket offer, workshop or short application funnel warms buyers up and qualifies them before the call." },
+  ],
+};
+
+export const metaAdsCourseCreatorsDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Facebook ads for course creators",
+    title: "The offer stack that makes Facebook ads profitable for courses",
+    paragraphs: [
+      "For course creators the ad cost per sale is often higher than the course price at first. What makes it profitable is the stack behind the front-end offer: order bumps, upsells, a membership or a higher-ticket mastermind. The front end buys the customer; the backend makes the margin.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Proof",
+      title: "Course and education funnels we have scaled",
+      items: [
+        { title: "$157,184 from one stack", text: "1,202 low-ticket sales, 193 order bumps and 28 mastermind enrollments for an agency-training client ([case study](/case-studies/digital-media-agency-157k))." },
+        { title: "$79,070 at 2.72 ROAS", text: "837 low-ticket sales and 376 high-ticket registrations in 17 days from a low-ticket-first funnel ([case study](/case-studies/high-ticket-funnel-79k))." },
+        { title: "810 members in 30 days", text: "$29K in Meta ads turned a $99/month offer into $86K in revenue without a sales team ([case study](/case-studies/agency-backend-continuity-86k))." },
+      ],
+    },
+    {
+      eyebrow: "Metrics",
+      title: "What course creators should track on Meta",
+      items: [
+        { title: "Average order value", text: "Front-end price plus bumps and upsells per buyer. It decides how much you can pay per sale." },
+        { title: "Front-end ROAS", text: "Whether the first purchase pays back the ads; break-even here is often enough if the backend converts." },
+        { title: "Backend take rate", text: "The share of buyers who join the membership, mastermind or high-ticket program." },
+      ],
+      note: "Model it with the [ROAS calculator](/tools/roas-calculator) and the [LTV to CAC calculator](/tools/ltv-cac-calculator). Broader strategy: [lead generation for course creators](/for/course-creators).",
+    },
+  ],
+  faqs: [
+    { q: "Are Facebook ads profitable for online courses?", a: "They can be when the front-end offer is backed by order bumps, upsells and a higher-ticket backend. In one funnel we ran, 1,202 low-ticket sales, 193 order bumps and 28 mastermind enrollments added up to $157,184." },
+    { q: "What ROAS do course creators need on Meta?", a: "It depends on the backend. If enough buyers join a membership or high-ticket program, breaking even on the first purchase can be profitable overall. Track average order value and backend take rate, not ROAS alone." },
+  ],
+};
+
+export const metaAdsConsultantsDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Facebook ads for consultants",
+    title: "How consultants use Meta ads to fill a calendar with buyers",
+    paragraphs: [
+      "Consulting is bought on trust, so the ads that work for consultants lead with proof and a specific outcome, then filter hard before anyone reaches a call. A broad audience is fine; the creative and the application form do the targeting.",
+      "Two consulting results from our campaigns: a membership and done-for-you program funnel that produced $150,348 in five days, and an agency client doing $85K a month whose retargeting we rebuilt live in Ads Manager as it tracked toward $95K+.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Campaign structure",
+      title: "What a consulting campaign on Meta looks like",
+      items: [
+        { title: "Proof-led creative", text: "Case results, client screenshots and a clear before/after; consultants are hired for outcomes, not features." },
+        { title: "Application, not a free call", text: "A short form on revenue, problem and timeline so only fit prospects book." },
+        { title: "Retargeting", text: "Video viewers and page visitors see case studies and objection-handling ads before they apply ([strategic consulting case](/case-studies/strategic-consulting-85k))." },
+      ],
+      note: "The booking side: [appointment setting for consultants](/appointment-setting-for-consultants). Full system: [lead generation for consultants](/for/consultants).",
+    },
+  ],
+  faqs: [
+    { q: "Do Facebook ads work for consultants?", a: "Yes, with proof-led creative and an application step. In one consulting funnel we ran, 2,063 memberships, 183 bundle upsells and 30 high-ticket done-for-you programs produced $150,348 in five days." },
+    { q: "What should consultants retarget on Meta?", a: "People who watched your video, visited your offer page or started an application. Show them case studies and answers to common objections before asking them to book." },
+  ],
+};
+
+export const appointmentSettingConsultantsDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Appointment setting for consultants",
+    title: "Why consultants need a setter between the lead and the call",
+    paragraphs: [
+      "A consultant's time is the product. Every discovery call with someone who can't afford the engagement, or who wants free advice, is time not spent with paying clients. Appointment setting puts a qualification step in front of the calendar: a fast reply, a few questions on revenue, problem and timeline, and a booked call only for prospects who fit.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Qualifying",
+      title: "Questions a consulting setter should ask before booking",
+      items: [
+        { title: "Current revenue and goal", text: "Is the gap big enough that your engagement pays for itself?" },
+        { title: "What they have tried", text: "Prospects who have already tried to fix it themselves are usually readier to buy help." },
+        { title: "Who decides", text: "Book the owner or partner who signs, not an assistant gathering quotes." },
+        { title: "When they want to start", text: "This quarter goes to the calendar; next year goes to nurture." },
+      ],
+    },
+    {
+      eyebrow: "Proof",
+      title: "Consulting results behind the booked calls",
+      items: [
+        { title: "30 done-for-you programs", text: "Sold in a five-day, $150,348 funnel alongside 2,063 memberships and 183 bundle upsells ([case study](/case-studies/executive-consulting-150k))." },
+        { title: "$85K a month, tracking to $95K+", text: "An agency consulting client whose retargeting we rebuilt live ([case study](/case-studies/strategic-consulting-85k))." },
+      ],
+      note: "The ads side: [Meta ads for consultants](/meta-ads-for-consultants). Setter pay: [compensation models](/blog/appointment-setter-compensation-models).",
+    },
+  ],
+  faqs: [
+    { q: "What does an appointment setter do for a consultant?", a: "They reply to new enquiries within minutes, ask a few questions on revenue, problem, decision-maker and timing, and book only prospects who fit into the consultant's calendar. The consultant spends calls with buyers instead of browsers." },
+    { q: "Should consultants offer free discovery calls?", a: "Only after qualification. A short application or a setter conversation first keeps free calls for prospects who can afford the engagement and want to start soon." },
+  ],
+};
+
+export const appointmentSettingSaasDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Appointment setting for SaaS",
+    title: "Booking SaaS demos that actually turn into customers",
+    paragraphs: [
+      "For sales-led SaaS, the demo calendar is the pipeline. Appointment setting for SaaS means replying to every trial sign-up or demo request within minutes, confirming the company fits your ideal customer profile, and booking the demo with the right account executive, with reminders so the demo happens.",
+      "Getting the ideal customer profile right matters more than volume. An AI calling and SMS SaaS we worked with added 320 customers and $71,934 in 24 days once it narrowed its ICP and rewrote its ad angles around the buyer's pain ([AI SaaS case study](/case-studies/b2b-technology-agency-71k)).",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Qualifying",
+      title: "What to confirm before booking a SaaS demo",
+      items: [
+        { title: "Company fit", text: "Industry, team size and the use case your product actually solves." },
+        { title: "Role", text: "A user and a buyer are different people; get the buyer on the demo or book a second one." },
+        { title: "Current tool", text: "Who they use today tells you the switch story and the objection to prepare for." },
+        { title: "Timing", text: "Contract renewal dates and budget cycles decide when a demo can close." },
+      ],
+      note: "Generating the demand: [Facebook ads for SaaS](/meta-ads-for-saas) and [lead generation for SaaS](/for/saas). Measuring it: [cost per booked call calculator](/tools/cost-per-booked-call-calculator).",
+    },
+  ],
+  faqs: [
+    { q: "What is appointment setting for SaaS?", a: "It is the process of replying to trial sign-ups and demo requests within minutes, qualifying them on company fit, role, current tool and timing, and booking the demo with an account executive, with reminders so it happens." },
+    { q: "Should SaaS companies book demos for every sign-up?", a: "No. Book demos for accounts that match your ideal customer profile and send everyone else to self-serve onboarding. Demos for poor-fit accounts waste account executive time and lower close rates." },
+  ],
+};

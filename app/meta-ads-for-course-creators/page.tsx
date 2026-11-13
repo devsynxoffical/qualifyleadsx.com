@@ -7,9 +7,11 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { metaAdsCourseCreatorsDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Facebook Ads for Course Creators | QualifiedLeadsX",
+  title: { absolute: "Facebook Ads for Course Creators: Profitable Offer Stacks" },
   description:
     "Scale premium online courses and masterminds ($2K–$10K). High-converting VSL funnels, webinar remarketing, and phone setters with 4.5x+ ROAS.",
   alternates: {
@@ -43,6 +45,7 @@ const faqs = [
     q: "What is your average ROAS on course creator ad campaigns?",
     a: "Our clients average 3.8x to 5.6x front-end return on ad spend within 90 days of launch.",
   },
+  ...metaAdsCourseCreatorsDeepDive.faqs,
 ];
 
 export default function MetaAdsForCourseCreatorsPage() {
@@ -149,6 +152,8 @@ export default function MetaAdsForCourseCreatorsPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={metaAdsCourseCreatorsDeepDive} />
 
         <ProofStack variant="full" />
 

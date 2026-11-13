@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   title: "Recruitment Agency Leads | QualifiedLeadsX",
   description:
     "Client acquisition for executive search & staffing firms. Book hiring managers and HR directors with open requisitions for $15K–$40K placement contracts.",
+  // Noindexed until upgraded with real data (audit/programmatic_decisions.csv, 13 Nov 2026).
+  robots: { index: false, follow: true },
   alternates: {
     canonical: `${site.url}/for/recruitment-agencies`,
   },

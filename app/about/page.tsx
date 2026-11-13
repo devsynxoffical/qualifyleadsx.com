@@ -59,8 +59,8 @@ const processSteps = [
 
 const leadershipRoles = [
   {
-    name: "Gaurav",
-    role: "Founder & Growth Architect",
+    name: "Gaurav Kapoor",
+    role: "Founder & Head of Acquisition",
     bio: "12+ years of hands-on paid acquisition and direct-response marketing experience. Has directed over $50M in Meta Ads spend, scaling agencies and high-ticket service providers into multi-million dollar annual run rates.",
     linkedin: "https://www.linkedin.com/in/gauravecom/",
   },
@@ -223,7 +223,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-base sm:text-lg text-mist leading-relaxed">
               <p>
-                QualifiedLeadsX was founded in 2022 by Gaurav after more than 12 years inside the trenches of paid media buying, direct-response copywriting, and performance marketing. Having managed tens of millions in Meta ad spend, a single constant became clear: <strong className="text-fog">traffic alone does not solve client acquisition.</strong>
+                QualifiedLeadsX was founded in 2022 by <Link href="/about/gaurav-kapoor" className="text-lime underline underline-offset-2">Gaurav Kapoor</Link> after more than 12 years inside the trenches of paid media buying, direct-response copywriting, and performance marketing. Having managed tens of millions in Meta ad spend, a single constant became clear: <strong className="text-fog">traffic alone does not solve client acquisition.</strong>
               </p>
               <p>
                 A high-ticket offer requires a complete ecosystem. When ads drive clicks to a weak offer page, money is burned. When landing pages convert leads but nobody follows up within 5 minutes, 80% of high-intent buyers vanish. By shifting from pure media buying to building end-to-end acquisition infrastructure—combining high-converting VSLs, hyper-targeted Facebook & Instagram campaigns, and sub-5-minute AI follow-up workflows—we engineered a predictable engine that consistently scales clients past $100k/month.
@@ -560,7 +560,7 @@ export default function AboutPage() {
                   Who manages the campaigns and creative production?
                 </h3>
                 <p className="text-sm text-mist leading-relaxed">
-                  All campaign architecture, media buying, copy scripting, and technical automations are handled in-house by Gaurav and our specialized growth engineering team. We never outsource client accounts to inexperienced junior freelancers.
+                  All campaign architecture, media buying, copy scripting, and technical automations are handled in-house by Gaurav Kapoor and our specialized growth engineering team. We never outsource client accounts to inexperienced junior freelancers.
                 </p>
               </div>
             </div>

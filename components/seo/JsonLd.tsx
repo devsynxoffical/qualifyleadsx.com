@@ -1,4 +1,5 @@
 import { site, nav } from "@/lib/site";
+import { brandFacts } from "@/lib/brand-facts";
 import { siteNavigation, TIER1_MARKETS, orgRef } from "@/lib/schema";
 
 export function JsonLd() {
@@ -6,8 +7,8 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${site.url}/#organization`,
-    name: "QualifiedLeadsX",
-    legalName: "Ecom Expertz LLC",
+    name: brandFacts.name,
+    legalName: brandFacts.legalName,
     url: site.url,
     logo: {
       "@type": "ImageObject",
@@ -17,23 +18,35 @@ export function JsonLd() {
     description:
       "QualifiedLeadsX is a done-for-you client acquisition agency that builds and runs Meta ads, funnels, CRM and AI follow-up to book qualified sales calls for agency owners, high-ticket coaches and B2B service businesses doing $10,000+ a month.",
     email: site.email,
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "sales",
-      email: site.email,
-      availableLanguage: ["English"],
-    },
-    foundingDate: "2022",
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        email: site.email,
+        url: `${site.url}${brandFacts.bookingPath}`,
+        availableLanguage: ["English"],
+      },
+      {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        url: `https://wa.me/${brandFacts.whatsappNumber}`,
+        availableLanguage: ["English"],
+      },
+    ],
+    foundingDate: String(brandFacts.foundedYear),
     founder: {
+      "@type": "Person",
       "@id": `${site.url}/about#founder`,
+      name: brandFacts.founder.name,
+      url: `${site.url}${brandFacts.founder.path}`,
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "1309 Coffeen Avenue STE 1200",
-      addressLocality: "Sheridan",
-      addressRegion: "WY",
-      postalCode: "82801",
-      addressCountry: "US",
+      streetAddress: brandFacts.address.streetAddress,
+      addressLocality: brandFacts.address.addressLocality,
+      addressRegion: brandFacts.address.addressRegion,
+      postalCode: brandFacts.address.postalCode,
+      addressCountry: brandFacts.address.addressCountry,
     },
     areaServed: TIER1_MARKETS.map((name) => ({ "@type": "Country", name })),
     slogan: "Done-for-you client acquisition for high-ticket offers",

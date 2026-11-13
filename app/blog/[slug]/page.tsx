@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { PageByline } from "@/components/seo/PageByline";
 import Image from "next/image";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
@@ -261,6 +262,7 @@ export default async function BlogPostPage({ params }: Props) {
               <div>
                 <div className="text-sm font-semibold text-fog">{post.author.name}</div>
                 <div className="text-xs text-dim font-mono">{post.author.role}</div>
+                <PageByline updated={post.updatedAt} className="mt-1" />
               </div>
             </div>
             <Link
@@ -480,7 +482,8 @@ export default async function BlogPostPage({ params }: Props) {
                     {post.author.role}
                   </div>
                   <p className="text-xs sm:text-sm text-mist leading-relaxed">
-                    QualifiedLeadsX™ Research Team builds and scales customer acquisition funnels for elite high-ticket coaches, consultants, and growth agencies. Over $150M+ in client revenue scaled across North America, Europe, and the Middle East.
+                    QualifiedLeadsX™ Research Team builds and scales customer acquisition funnels for high-ticket coaches, consultants, and growth agencies, led by founder{" "}
+                    <Link href="/about/gaurav-kapoor" className="text-lime underline underline-offset-2">Gaurav Kapoor</Link>.
                   </p>
                 </div>
               </div>

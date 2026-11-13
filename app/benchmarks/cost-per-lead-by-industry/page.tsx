@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PageByline } from "@/components/seo/PageByline";
 import Link from "next/link";
 import { site, defaultOgImage } from "@/lib/site";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
@@ -114,6 +115,7 @@ export default function CplByIndustryPage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-paper mt-3 mb-6">
               Cost Per Lead by Industry 2026
             </h1>
+            <PageByline path={"/benchmarks/cost-per-lead-by-industry"} className="mb-6" />
 
             {/* AEO Direct Answer */}
             <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">

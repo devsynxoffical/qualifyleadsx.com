@@ -1,20 +1,22 @@
+import { brandFacts as bf } from "@/lib/brand-facts";
+
 export const site = {
-  name: "QualifiedLeadsX",
-  legalName: "Ecom Expertz LLC",
+  name: bf.name,
+  legalName: bf.legalName,
   legalAddress: "1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801",
-  url: "https://www.qualifiedleadsx.com",
+  url: bf.url,
   bookCallUrl: "/book-your-call#book",
-  email: "hello@qualifiedleadsx.com",
+  email: bf.email,
   phone: "",
-  whatsappNumber: "919625695456",
-  whatsappDisplay: "+91 96256 95456",
-  founded: 2022,
+  whatsappNumber: bf.whatsappNumber,
+  whatsappDisplay: bf.whatsappDisplay,
+  founded: bf.foundedYear,
   location: {
-    streetAddress: "1309 Coffeen Avenue STE 1200",
-    addressLocality: "Sheridan",
-    addressRegion: "WY",
-    postalCode: "82801",
-    addressCountry: "US",
+    streetAddress: bf.address.streetAddress,
+    addressLocality: bf.address.addressLocality,
+    addressRegion: bf.address.addressRegion,
+    postalCode: bf.address.postalCode,
+    addressCountry: bf.address.addressCountry,
   },
   description:
     "QualifiedLeadsX™ installs a done-for-you client acquisition funnel system for high-ticket coaches, consultants and service providers - generating $100K+ months of qualified sales calls on your calendar.",
@@ -22,6 +24,7 @@ export const site = {
     { label: "Facebook", href: "https://www.facebook.com/qualifiedleadsx/" },
     { label: "Instagram", href: "https://www.instagram.com/qualifiedleadsx/" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/gauravecom/" },
+    { label: "YouTube", href: "https://www.youtube.com/@QualifiedLeadsX" },
   ],
 } as const;
 

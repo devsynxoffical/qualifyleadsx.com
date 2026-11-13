@@ -9,7 +9,7 @@ import { industries } from "@/lib/data";
 /** Industries that have a dedicated landing page link to it (homepage -> industry pages). */
 const INDUSTRY_HREF: Record<string, string> = {
   "Digital Marketing Agencies": "/for/agencies",
-  "Business Coaches": "/for/business-coaches",
+  "Business Coaches": "/for/coaches",
   Consultants: "/for/consultants",
   "High-Ticket Service Providers": "/high-ticket-lead-generation",
   "B2B Companies": "/for/b2b-services",

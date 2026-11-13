@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PageByline } from "@/components/seo/PageByline";
 import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
@@ -142,6 +143,7 @@ export default function ShowRateBenchmarkPage() {
             Appointment Show Rate Benchmarks 2026:{" "}
             <span className="text-gradient-lime">Channel & Industry Data</span>
           </h1>
+          <PageByline path={"/benchmarks/show-rate"} className="mb-6" />
 
           <p className="mt-6 text-base sm:text-lg text-mist leading-relaxed font-sans max-w-3xl mx-auto">
             Review how follow-up speed, communication channels, and intake qualification impact sales call attendance rates across 125+ client acquisition campaigns.

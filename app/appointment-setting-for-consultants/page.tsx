@@ -7,9 +7,11 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { appointmentSettingConsultantsDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Appointment Setting for Consultants | QualifiedLeadsX",
+  title: { absolute: "Appointment Setting for Consultants: Qualified Calls Only" },
   description:
     "High-touch appointment setting for management & B2B consultants. Book C-suite decision-makers for $15K–$50K+ advisory engagements with 85%+ show rates.",
   alternates: {
@@ -43,6 +45,7 @@ const faqs = [
     q: "How do you protect show rates with busy corporate leaders?",
     a: "We provide an executive briefing document upon booking, send tailored calendar invites with direct Zoom details, and confirm attendance with a personalized executive email 24 hours prior.",
   },
+  ...appointmentSettingConsultantsDeepDive.faqs,
 ];
 
 export default function AppointmentSettingForConsultantsPage() {
@@ -149,6 +152,8 @@ export default function AppointmentSettingForConsultantsPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={appointmentSettingConsultantsDeepDive} />
 
         <ProofStack variant="full" />
 

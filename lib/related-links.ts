@@ -111,7 +111,7 @@ const servicesForTool: Record<string, string[]> = {
 
 /** Industry sectors, so siblings from the same sector come first. */
 const sectors: string[][] = [
-  ["coaches", "business-coaches", "executive-coaches", "fitness-coaches", "course-creators", "online-education"],
+  ["coaches", "fitness-coaches", "course-creators"],
   ["agencies", "consultants", "b2b-services", "saas", "recruitment-agencies"],
   ["med-spas", "financial-advisors", "insurance-agencies", "law-firms", "real-estate-investors", "home-improvement", "solar-companies"],
 ];
@@ -119,11 +119,8 @@ const sectors: string[][] = [
 /** Two guides per industry (falls back to general guides). */
 const industryGuides: Record<string, string[]> = {
   coaches: ["meta-ads-for-coaches-guide", "scaling-from-100k-to-500k-coaching"],
-  "business-coaches": ["scaling-from-100k-to-500k-coaching", "high-ticket-sales-how-to-get-high-ticket-clients"],
-  "executive-coaches": ["high-ticket-sales-how-to-get-high-ticket-clients", "how-to-write-a-vsl-script-12-minute-structure"],
   "fitness-coaches": ["meta-ads-for-coaches-guide", "high-ticket-funnel-examples"],
   "course-creators": ["high-ticket-funnel-examples", "vsl-script-template-high-ticket"],
-  "online-education": ["high-ticket-funnel-examples", "how-to-increase-show-rate"],
   consultants: ["whatsapp-marketing-for-consultants", "cold-outreach-vs-paid-traffic-high-ticket-b2b"],
   agencies: ["facebook-ads-agency-vs-in-house-media-buyer", "how-much-does-a-lead-generation-agency-cost"],
   "b2b-services": ["b2b-client-acquisition-cost-cac-benchmarks-2026", "cold-outreach-vs-paid-traffic-high-ticket-b2b"],

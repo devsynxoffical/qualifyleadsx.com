@@ -49,7 +49,7 @@ for (const dir of pageDirs(APP)) {
   if (d) out[route] = d;
 }
 // Dynamic case study pages share one template and data file
-out["/case-studies/*"] = git("app/case-studies/[slug]", "lib/case-studies-data.ts");
+out["/case-studies/*"] = git("app/case-studies/[slug]", "lib/case-studies-data.ts", "lib/case-study-meta.ts");
 
 const sorted = Object.fromEntries(Object.entries(out).sort(([a], [b]) => a.localeCompare(b)));
 writeFileSync("lib/route-lastmod.json", JSON.stringify(sorted, null, 2) + "\n");

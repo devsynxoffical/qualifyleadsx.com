@@ -7,9 +7,11 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { metaAdsConsultantsDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Facebook Ads for Consultants | QualifiedLeadsX",
+  title: { absolute: "Facebook Ads for Consultants: Proof-Led Campaigns" },
   description:
     "Generate high-fee B2B consulting engagements ($10K–$50K+). Bespoke Meta ad funnels, executive white-paper VSLs, and verified C-suite consultations.",
   alternates: {
@@ -43,6 +45,7 @@ const faqs = [
     q: "How do you pre-qualify consulting prospects before they get on the calendar?",
     a: "Our intake form requires prospects to state company annual revenue, current system bottlenecks, and project timeline before unlocking calendar availability.",
   },
+  ...metaAdsConsultantsDeepDive.faqs,
 ];
 
 export default function MetaAdsForConsultantsPage() {
@@ -149,6 +152,8 @@ export default function MetaAdsForConsultantsPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={metaAdsConsultantsDeepDive} />
 
         <ProofStack variant="full" />
 

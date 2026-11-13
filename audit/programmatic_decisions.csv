@@ -1,0 +1,30 @@
+url,decision,reason,target_query
+/for/executive-coaches,merge (301 -> /for/coaches),"0 impressions in 90 days; 230 unique words; Jaccard 0.45 with siblings; no executive-coaching data",executive coach lead generation
+/for/business-coaches,merge (301 -> /for/coaches),"0 impressions in 90 days; 335 unique words; Jaccard 0.40 with siblings; no business-coaching data",business coach lead generation
+/for/online-education,merge (301 -> /for/course-creators),"0 impressions in 90 days; 231 unique words; Jaccard 0.45 with course creators; same buyer",online course marketing
+/for/insurance-agencies,noindex until upgraded,"0 impressions in 90 days; 234 unique words; no insurance case data to add",insurance agency leads
+/for/recruitment-agencies,noindex until upgraded,"0 impressions in 90 days; 238 unique words; no recruitment case data to add",recruitment agency lead generation
+/meta-ads-for-financial-advisors,noindex until upgraded,"0 impressions in 90 days; 261 unique words; Jaccard 0.44 with service-for-industry siblings; no financial-advisor campaign data",facebook ads for financial advisors
+/meta-ads-for-coaches,keep + upgraded 13 Nov,"Real coaching results added (life-transformation coach $60,912; $203,941; $150,348)",facebook ads for coaches
+/meta-ads-for-course-creators,keep + upgraded 13 Nov,"Real course/education stacks added ($157,184; $79,070; 810 members)",facebook ads for course creators
+/meta-ads-for-consultants,keep + upgraded 13 Nov,"Real consulting results added ($150,348; $85K/month client)",facebook ads for consultants
+/appointment-setting-for-consultants,keep + upgraded 13 Nov,"Consulting qualification questions and results",appointment setting for consultants
+/appointment-setting-for-saas,keep + upgraded 13 Nov,"Demo qualification and AI SaaS case",appointment setting for saas
+/appointment-setting-for-coaches,keep (upgraded 13 Nov AM),"Coaching process and results",appointment setting for coaches
+/appointment-setting-for-agencies,keep (upgraded 13 Nov AM),"Agency qualification and $846K / $639K cases",appointment setting for agencies
+/meta-ads-for-saas,keep (upgraded 13 Nov AM),"AI SaaS case",facebook ads for saas
+/meta-ads-for-med-spas,keep,"Real med spa results; new query 'meta ads for med spa'",meta ads for med spa
+/meta-ads-for-law-firms,keep,"4 real MVA/PI results",facebook ads for law firms
+/meta-ads-for-real-estate-investors,keep,"Real seller-lead results",facebook ads for real estate investors
+/for/coaches,keep (merge target),"Impressions; receives /for/executive-coaches and /for/business-coaches",coach lead generation
+/for/course-creators,keep (merge target),"Receives /for/online-education; education case data",course creator marketing
+/for/fitness-coaches,keep; upgrade queued,"Fitness case ($203,941) exists; 265 unique words",fitness coach leads
+/for/home-improvement,keep; upgrade queued,"Real HVAC and roofing campaign data; 232 unique words",home improvement leads
+/for/law-firms,keep; upgrade queued,"Real MVA data; 249 unique words",law firm lead generation
+/for/financial-advisors,keep,"438 unique words; dedicated content",financial advisor lead generation
+"/for/agencies, /for/consultants, /for/b2b-services, /for/saas, /for/med-spas, /for/real-estate-investors, /for/solar-companies",keep,"Impressions and unique content above sibling average",(each industry)
+/case-studies/*,keep (all 14),"Real published client results; 5 with under 300 unique words queued for written breakdowns",(each case)
+/compare/*,keep,"Distinct comparisons; average Jaccard 0.30",(each comparison)
+/benchmarks/*,keep,"Original data pages; average Jaccard 0.13",(each benchmark)
+/tools/*,keep,"Working calculators; average Jaccard 0.14",(each tool)
+/blog/category/*,keep,"Topic hubs linking all posts",(each topic)

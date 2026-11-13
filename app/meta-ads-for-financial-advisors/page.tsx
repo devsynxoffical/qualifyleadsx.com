@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   title: "Facebook Ads for Financial Advisors | QualifiedLeadsX",
   description:
     "FINRA & SEC compliant Facebook and Instagram ads for wealth managers and RIAs. Attract pre-retirees and HNW clients with $500K+ investable assets.",
+  // Noindexed until upgraded with real data (audit/programmatic_decisions.csv, 13 Nov 2026).
+  robots: { index: false, follow: true },
   alternates: {
     canonical: `${site.url}/meta-ads-for-financial-advisors`,
   },

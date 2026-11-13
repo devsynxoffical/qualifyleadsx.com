@@ -7,9 +7,11 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { appointmentSettingSaasDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Appointment Setting for SaaS | QualifiedLeadsX",
+  title: { absolute: "Appointment Setting for SaaS: Qualified Demo Booking" },
   description:
     "Turnkey inbound SDR appointment setting for B2B SaaS. Sub-5-minute demo qualification, CRM routing, and 85%+ show rates for Account Executives.",
   alternates: {
@@ -43,6 +45,7 @@ const faqs = [
     q: "What is the typical ramp-up period for a SaaS setter team?",
     a: "Our SDRs complete product onboarding, competitive positioning drills, and live call calibration within 7 to 10 days of project kickoff.",
   },
+  ...appointmentSettingSaasDeepDive.faqs,
 ];
 
 export default function AppointmentSettingForSaasPage() {
@@ -149,6 +152,8 @@ export default function AppointmentSettingForSaasPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={appointmentSettingSaasDeepDive} />
 
         <ProofStack variant="full" />
 

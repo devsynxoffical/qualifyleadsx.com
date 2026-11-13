@@ -226,18 +226,6 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${site.url}/for/business-coaches`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${site.url}/for/executive-coaches`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
       url: `${site.url}/for/fitness-coaches`,
       lastModified: now,
       changeFrequency: "weekly",
@@ -245,12 +233,6 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
     },
     {
       url: `${site.url}/for/course-creators`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${site.url}/for/insurance-agencies`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
@@ -275,18 +257,6 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
     },
     {
       url: `${site.url}/for/solar-companies`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${site.url}/for/recruitment-agencies`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${site.url}/for/online-education`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
@@ -325,12 +295,6 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
     },
     {
       url: `${site.url}/meta-ads-for-consultants`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.92,
-    },
-    {
-      url: `${site.url}/meta-ads-for-financial-advisors`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.92,
@@ -455,6 +419,12 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
     // Entity & Company
     {
       url: `${site.url}/about`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${site.url}/about/gaurav-kapoor`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.85,

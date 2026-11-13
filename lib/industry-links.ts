@@ -9,12 +9,9 @@
 export const industryPages: { slug: string; label: string }[] = [
   { slug: "agencies", label: "Marketing & Growth Agencies" },
   { slug: "coaches", label: "High-Ticket Coaches" },
-  { slug: "business-coaches", label: "Business Coaches" },
-  { slug: "executive-coaches", label: "Executive Coaches" },
   { slug: "fitness-coaches", label: "Fitness Coaches" },
   { slug: "consultants", label: "B2B Consultants" },
   { slug: "course-creators", label: "Course Creators" },
-  { slug: "online-education", label: "Online Education" },
   { slug: "b2b-services", label: "B2B Service Companies" },
   { slug: "saas", label: "B2B SaaS" },
   { slug: "med-spas", label: "Med Spas & Aesthetics" },

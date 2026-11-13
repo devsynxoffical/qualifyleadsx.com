@@ -1,4 +1,5 @@
 import { site } from "@/lib/site";
+import { brandFacts } from "@/lib/brand-facts";
 
 /**
  * Shared schema.org building blocks so every page references the same
@@ -8,6 +9,7 @@ import { site } from "@/lib/site";
 export const ORG_ID = `${site.url}/#organization`;
 export const WEBSITE_ID = `${site.url}/#website`;
 export const FOUNDER_ID = `${site.url}/about#founder`;
+export const FOUNDER_URL = `${site.url}${brandFacts.founder.path}`;
 export const LOGO_URL = `${site.url}/images/qualified-leadsx.webp`;
 
 export const orgRef = { "@id": ORG_ID } as const;
@@ -15,10 +17,12 @@ export const orgRef = { "@id": ORG_ID } as const;
 export const founder = {
   "@type": "Person",
   "@id": FOUNDER_ID,
-  name: "Gaurav",
-  jobTitle: "Founder & Head of Acquisition",
+  name: brandFacts.founder.name,
+  givenName: brandFacts.founder.givenName,
+  familyName: brandFacts.founder.familyName,
+  jobTitle: brandFacts.founder.role,
   worksFor: orgRef,
-  url: `${site.url}/about`,
+  url: FOUNDER_URL,
   description:
     "Founder of QualifiedLeadsX with 12+ years in paid acquisition and $50M+ in Meta ads managed across 125+ documented client accounts.",
   knowsAbout: [

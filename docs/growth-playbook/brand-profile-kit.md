@@ -13,7 +13,7 @@ below already appears on qualifiedleadsx.com; nothing here is new or unverified.
 - **Registered address:** 1309 Coffeen Avenue STE 1200, Sheridan, Wyoming 82801, USA
   (registered address only; do not list it as an office open to visitors)
 - **Founded:** 2022
-- **Founder:** Gaurav, Founder & Head of Acquisition
+- **Founder:** Gaurav Kapoor, Founder & Head of Acquisition (profile: https://www.qualifiedleadsx.com/about/gaurav-kapoor)
 - **Service area:** United States, United Kingdom, Canada, Australia (remote)
 - **Category:** Lead generation agency / client acquisition agency / Meta ads agency
 - **Social:** facebook.com/qualifiedleadsx · instagram.com/qualifiedleadsx ·

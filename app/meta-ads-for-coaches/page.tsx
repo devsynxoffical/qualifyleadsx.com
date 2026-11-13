@@ -7,9 +7,11 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { metaAdsCoachesDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Facebook Ads for Coaches | QualifiedLeadsX",
+  title: { absolute: "Facebook Ads for Coaches: Funnels That Get Clients" },
   description:
     "Scale $5K–$25K coaching offers with Facebook and Instagram ads: tested creative frameworks, broad Advantage+ scaling and sub-$180 booked calls.",
   alternates: {
@@ -43,6 +45,7 @@ const faqs = [
     q: "What is your average ROAS for business coaching campaigns?",
     a: "Our coaching client accounts average 4.2x to 5.8x front-end return on ad spend within 60 days of launch.",
   },
+  ...metaAdsCoachesDeepDive.faqs,
 ];
 
 export default function MetaAdsForCoachesPage() {
@@ -149,6 +152,8 @@ export default function MetaAdsForCoachesPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={metaAdsCoachesDeepDive} />
 
         <ProofStack variant="full" />
 

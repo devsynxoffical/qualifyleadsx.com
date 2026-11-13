@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   title: "Insurance Appointment Setting | QualifiedLeadsX",
   description:
     "Exclusive appointment setting for commercial and high-net-worth insurance agencies. Vetted policy reviews, sub-5-minute speed to lead, real show rates.",
+  // Noindexed until upgraded with real data (audit/programmatic_decisions.csv, 13 Nov 2026).
+  robots: { index: false, follow: true },
   alternates: {
     canonical: `${site.url}/for/insurance-agencies`,
   },

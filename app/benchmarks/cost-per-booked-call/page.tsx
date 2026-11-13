@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PageByline } from "@/components/seo/PageByline";
 import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
@@ -156,6 +157,7 @@ export default function CostPerBookedCallBenchmarkPage() {
             Cost Per Booked Call Benchmarks 2026:{" "}
             <span className="text-gradient-lime">Data by Offer Size</span>
           </h1>
+          <PageByline path={"/benchmarks/cost-per-booked-call"} className="mb-6" />
 
           <p className="mt-6 text-base sm:text-lg text-mist leading-relaxed font-sans max-w-3xl mx-auto">
             Aggregated from over $50M+ in managed Meta advertising spend across 125+ client accounts in 30+ high-ticket industries.

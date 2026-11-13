@@ -200,6 +200,32 @@ scroll, touch or key press (the hero is scroll-driven). Unused shadow map remove
 2.7 s → 1.2 s, TBT 2.6 s → 1.1 s, CLS 0. Before/after screenshot:
 `reports/screenshots/homepage-hero-before-after-mobile.png`.
 
+## 2026-11-13 (daily session)
+
+**Data (Search Console):** last 28 days: 448 impressions (was 423), 6 clicks, 65 pages (was 62),
+66 queries (was 62), 5 on page 1 (was 4). Last 7 days: 194 impressions, 1 click, average position
+55.7. New queries: "buy investor leads" (85.5), "meta ads for med spa" (79), "lead qualifying
+services" (57), "qualified case studies" (7). Striking-distance pages unchanged (retitled 10–11 Nov).
+
+**Bing:** 66 pages in Bing's index (was ~27 on 11 Nov); first Bing impression recorded. Bingbot user
+agent still gets 403 from Hostinger in our test; GPTBot 429.
+
+**Done (live, verified)**
+- Thin service-for-industry pages upgraded with page-specific sections and 2 FAQs each, real case
+  data only: `/appointment-setting-for-coaches` (321 → 433 unique words; coaching cases $203,941,
+  $157,184, $150,348), `/appointment-setting-for-agencies` (300 → 384; $846K and $639K agency
+  cases), `/meta-ads-for-saas` (312 → 409; AI SaaS 320 customers, $71,934 in 24 days, 2.78 ROAS).
+  New titles on all three.
+- `/meta-ads-for-med-spas`: title and H1 "Meta & Facebook Ads for Med Spas".
+- `/for/real-estate-investors`: FAQ for "buy investor leads" and a link to the buying-leads guide.
+
+**Indexing:** Google 25 submitted, 25 accepted (today's 5 pages + 20 not-indexed sitemap URLs from
+the 12 Nov inspection). Bing: 25 submitted.
+
+**Next:** remaining thin pages (meta-ads-for-coaches, -consultants, -course-creators,
+-financial-advisors, appointment-setting-for-consultants, -saas); re-inspect all sitemap URLs on
+15–16 Nov.
+
 ## Backlog (highest impact first)
 
 1. Resubmit the 21 not-indexed URLs and the new URLs to the Indexing API (quota resets daily).

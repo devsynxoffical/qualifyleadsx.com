@@ -2,8 +2,8 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /,core,Client & Customer Acquisition Agency for High-Ticket B2B,2349,3053,154,none,keep
 /about,company/legal,About  Client Acquisition Agency,1032,1065,154,none,keep
 /appointment-setting,core,Appointment Setting Agency: Qualified Appointments Booked,1414,1828,154,none,keep
-/appointment-setting-for-agencies,industry,Appointment Setting for Agencies,197,522,8,thin (197 unique words),improve
-/appointment-setting-for-coaches,industry,Appointment Setting for Coaches,231,556,8,thin (231 unique words),improve
+/appointment-setting-for-agencies,industry,Appointment Setting for Agencies: Booked Strategy Calls,538,863,8,none,keep
+/appointment-setting-for-coaches,industry,Appointment Setting for Coaches: Qualified Discovery Calls,660,985,8,none,keep
 /appointment-setting-for-consultants,industry,Appointment Setting for Consultants,188,513,8,thin (188 unique words),improve
 /appointment-setting-for-saas,industry,Appointment Setting for SaaS,201,526,7,thin (201 unique words),improve
 /b2b-lead-generation,core,B2B Lead Generation Agency for Service Contracts,470,1073,19,none,keep
@@ -12,16 +12,16 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /benchmarks/cost-per-booked-call,free tool,Cost Per Booked Call Benchmarks 2026,360,737,51,none,keep
 /benchmarks/cost-per-lead-by-industry,free tool,Cost Per Lead by Industry 2026 Benchmarks,263,362,154,thin (263 unique words),improve
 /benchmarks/meta-ads-cpm,free tool,Meta Ads CPM Benchmarks 2026,284,383,154,thin (284 unique words),improve
-/benchmarks/show-rate,free tool,Appointment Show Rate Benchmarks 2026,347,728,85,none,keep
+/benchmarks/show-rate,free tool,Appointment Show Rate Benchmarks 2026,347,728,86,none,keep
 /blog,blog,"Client Acquisition, VSL Funnels & Meta Ads Insights",845,1557,154,none,keep
 /blog/ai-whatsapp-lead-nurture-pipeline-high-ticket,blog,AI WhatsApp Lead Nurture for High-Ticket Calls,633,1337,16,none,keep
-/blog/appointment-setter-compensation-models,blog,Appointment Setter Compensation Models Guide,276,982,8,thin (276 unique words),improve
+/blog/appointment-setter-compensation-models,blog,Appointment Setter Compensation Models Guide,276,982,9,thin (276 unique words),improve
 /blog/automated-lead-qualification-system-high-ticket,blog,Automated Lead Qualification System for B2B,766,1490,17,none,keep
 /blog/b2b-appointment-setting-vs-in-house-sdr-teams,blog,B2B Appointment Setting vs In-House SDR Teams,1412,2140,19,none,keep
 /blog/b2b-client-acquisition-cost-cac-benchmarks-2026,blog,B2B CAC Benchmarks 2026: Cost to Acquire a Client,1280,2012,21,none,keep
 /blog/b2b-roas-benchmarks-qualified-appointment-generation,blog,B2B ROAS Benchmarks & Appointment Math 2026,1523,2266,20,none,keep
 /blog/b2b-sales-closer-job-description,blog,High-Ticket Sales Closer Job Description Template,254,962,8,thin (254 unique words),improve
-/blog/buy-qualified-leads-vs-generating-your-own,blog,Buying Qualified Leads vs Generating Your Own (2026),1271,2001,13,none,keep
+/blog/buy-qualified-leads-vs-generating-your-own,blog,Buying Qualified Leads vs Generating Your Own (2026),1271,2001,14,none,keep
 /blog/category/funnel-strategy,blog,Funnel Strategy Guides for High-Ticket Offers,88,483,154,thin (88 unique words),improve
 /blog/category/lead-qualification,blog,Lead Qualification & Appointment Guides,185,644,154,thin (185 unique words),improve
 /blog/category/paid-advertising,blog,Meta & Facebook Ads Guides for B2B,101,536,154,thin (101 unique words),improve
@@ -36,7 +36,7 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /blog/high-ticket-sales-training-framework,blog,High Ticket Sales Training & Framework,1356,2062,17,none,keep
 /blog/how-much-does-a-lead-generation-agency-cost,blog,How Much Does a Lead Gen Agency Cost in 2026?,2198,2937,19,none,keep
 /blog/how-much-does-meta-ads-cost,blog,How Much Does Meta Ads Cost in 2026? Budget Guide,2017,2736,11,none,keep
-/blog/how-to-hire-an-appointment-setter,blog,How to Hire an Appointment Setter (2026 Guide),902,1630,15,none,keep
+/blog/how-to-hire-an-appointment-setter,blog,How to Hire an Appointment Setter (2026 Guide),902,1630,16,none,keep
 /blog/how-to-increase-show-rate,blog,How to Increase Show Rate: 80%+ Attendance Guide,272,977,11,thin (272 unique words),improve
 /blog/how-to-qualify-leads,blog,How to Qualify Leads: High-Ticket Framework,264,957,18,thin (264 unique words),improve
 /blog/how-to-write-a-vsl-script-12-minute-structure,blog,How to Write a VSL Script: 12-Minute Structure,2181,2893,20,none,keep
@@ -45,7 +45,7 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /blog/meta-advantage-plus-for-b2b,blog,Meta Advantage+ for B2B: Broad Targeting Guide,291,1013,19,thin (291 unique words),improve
 /blog/scaling-from-100k-to-500k-coaching,blog,Scale Coaching Business: $100K to $500K/Mo,307,1019,20,none,keep
 /blog/speed-to-lead,blog,How to Improve Speed to Lead: Sub-5-Minute Playbook,1492,2196,7,none,keep
-/blog/speed-to-lead-statistics-response-time,blog,Speed to Lead Statistics 2026: 5-Minute Rule,1908,2636,21,none,keep
+/blog/speed-to-lead-statistics-response-time,blog,Speed to Lead Statistics 2026: 5-Minute Rule,1908,2636,22,none,keep
 /blog/the-2026-vsl-funnel-blueprint-high-ticket-client-acquisition,blog,VSL Funnel Blueprint 2026: Book 50+ Calls,1246,1952,25,none,keep
 /blog/vsl-script-template-high-ticket,blog,High-Ticket VSL Script Template & Blueprint,298,996,7,thin (298 unique words),improve
 /blog/whatsapp-marketing-for-consultants,blog,WhatsApp Marketing for Consultants (2026),237,925,10,thin (237 unique words),improve
@@ -87,8 +87,8 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /case-studies/b2b-agency-scaling-846k,company/legal (proof),Agency Case Study: $846K and 235 Clients,364,637,154,none,keep
 /case-studies/b2b-technology-agency-71k,company/legal (proof),"AI SaaS Case Study: $71,934 in 24 Days",371,644,8,none,keep
 /case-studies/commercial-services-86k,company/legal (proof),"Low-Ticket Offer Case Study: $86,275",256,534,5,thin (256 unique words),improve
-/case-studies/digital-media-agency-157k,company/legal (proof),"LTO Funnel Case Study: $157,184 Revenue",206,479,36,thin (206 unique words),improve
-/case-studies/executive-consulting-150k,company/legal (proof),"$150,348 in 5 Days: LTO to High-Ticket",361,634,5,none,keep
+/case-studies/digital-media-agency-157k,company/legal (proof),"LTO Funnel Case Study: $157,184 Revenue",206,479,37,thin (206 unique words),improve
+/case-studies/executive-consulting-150k,company/legal (proof),"$150,348 in 5 Days: LTO to High-Ticket",361,634,6,none,keep
 /case-studies/florida-hvac-65k-cash-collected,company/legal (proof),"HVAC Case Study: $65,872 Net Cash, 12.7 ROAS",550,828,7,none,keep
 /case-studies/high-ticket-coaching-203k,company/legal (proof),"Fitness Funnel: $203,941 in 11 Days",191,469,154,thin (191 unique words),improve
 /case-studies/high-ticket-funnel-79k,company/legal (proof),"$79,070 in 17 Days: Booking Funnel Case",252,525,5,thin (252 unique words),improve
@@ -117,7 +117,7 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /for/law-firms,industry,Law Firm Lead Generation,225,550,154,thin (225 unique words),improve
 /for/med-spas,industry,Med Spa Lead Generation & High-Ticket Booking Agency,525,1104,154,none,keep
 /for/online-education,industry,Online Education Lead Generation,203,528,10,thin (203 unique words),improve
-/for/real-estate-investors,industry,Real Estate Investor Leads: Motivated Seller Leads,573,898,154,none,keep
+/for/real-estate-investors,industry,Real Estate Investor Leads: Motivated Seller Leads,659,984,154,none,keep
 /for/recruitment-agencies,industry,Recruitment Agency Leads,217,542,6,thin (217 unique words),improve
 /for/saas,industry,B2B SaaS Lead Generation & Demo Booking Agency,488,1098,154,none,keep
 /for/solar-companies,industry,"Solar Appointment Setting: Exclusive, Pre-Qualified Leads",778,1103,10,none,keep
@@ -135,9 +135,9 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /meta-ads-for-course-creators,industry,Facebook Ads for Course Creators,201,526,9,thin (201 unique words),improve
 /meta-ads-for-financial-advisors,industry,Facebook Ads for Financial Advisors,244,569,9,thin (244 unique words),improve
 /meta-ads-for-law-firms,industry,Facebook Ads for Law Firms: Exclusive MVA & PI Leads,633,958,12,none,keep
-/meta-ads-for-med-spas,industry,Facebook Ads for Med Spas,490,815,10,none,keep
+/meta-ads-for-med-spas,industry,Meta & Facebook Ads for Med Spas: Real Booking Results,492,817,10,none,keep
 /meta-ads-for-real-estate-investors,industry,Facebook Ads for Real Estate Investors: Seller Leads,575,900,9,none,keep
-/meta-ads-for-saas,industry,Facebook Ads for SaaS,207,532,12,thin (207 unique words),improve
+/meta-ads-for-saas,industry,Facebook Ads for SaaS: Real Results and Playbook,530,855,12,none,keep
 /outsourced-sales-closers,core,Outsourced Sales Closers: Commission-Based Closers,674,999,154,none,keep
 /privacy,company/legal,Privacy Policy,210,210,0,noindex,keep (noindex)
 /services,core,"Client Acquisition Services: Meta Ads, VSL & Setters",674,1016,154,none,keep

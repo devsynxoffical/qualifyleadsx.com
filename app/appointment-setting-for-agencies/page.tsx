@@ -7,9 +7,11 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { appointmentSettingAgenciesDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Appointment Setting for Agencies | QualifiedLeadsX",
+  title: { absolute: "Appointment Setting for Agencies: Booked Strategy Calls" },
   description:
     "Scale agency retainers ($3K–$15K/mo) with dedicated appointment setters. Sub-5-minute speed to lead, qualified discovery calls and 82%+ show rates.",
   alternates: {
@@ -42,6 +44,7 @@ const faqs = [
     q: "How do setters prevent low-budget businesses from wasting agency time?",
     a: "Leads that do not meet your revenue or budget thresholds are routed to automated email nurture or low-ticket resources, protecting agency executive time for qualified deals.",
   },
+  ...appointmentSettingAgenciesDeepDive.faqs,
 ];
 
 export default function AppointmentSettingForAgenciesPage() {
@@ -148,6 +151,8 @@ export default function AppointmentSettingForAgenciesPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={appointmentSettingAgenciesDeepDive} />
 
         <ProofStack variant="full" />
 

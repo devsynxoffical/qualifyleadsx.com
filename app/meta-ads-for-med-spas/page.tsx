@@ -11,7 +11,7 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { medSpasMetaDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Facebook Ads for Med Spas | QualifiedLeadsX",
+  title: { absolute: "Meta & Facebook Ads for Med Spas: Real Booking Results" },
   description:
     "High-ticket aesthetic consultations for medical spas & plastic surgeons. Scale injectables, body contouring, and laser packages with sub-45s speed to lead.",
   alternates: {
@@ -103,7 +103,7 @@ export default function MetaAdsForMedSpasPage() {
               Aesthetic Practice & Clinic Patient Acquisition
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-paper mt-3 mb-6">
-              Facebook Ads for Med Spas
+              Meta &amp; Facebook Ads for Med Spas
             </h1>
 
             {/* AEO Direct Answer */}

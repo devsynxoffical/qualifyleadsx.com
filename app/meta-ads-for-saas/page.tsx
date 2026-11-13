@@ -7,9 +7,11 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { metaAdsSaasDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Facebook Ads for SaaS | QualifiedLeadsX",
+  title: { absolute: "Facebook Ads for SaaS: Real Results and Playbook" },
   description:
     "Scale B2B SaaS demo requests with targeted Facebook & Instagram ads. Product-led video walkthroughs, qualification forms, and sub-$240 completed demos.",
   alternates: {
@@ -42,6 +44,7 @@ const faqs = [
     q: "What is your average cost per completed SaaS demo?",
     a: "Completed qualified product demos range from $180 to $280 for mid-market SaaS ($5K–$25K ACV), achieving payback periods within 3 to 6 months.",
   },
+  ...metaAdsSaasDeepDive.faqs,
 ];
 
 export default function MetaAdsForSaasPage() {
@@ -148,6 +151,8 @@ export default function MetaAdsForSaasPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={metaAdsSaasDeepDive} />
 
         <ProofStack variant="full" />
 

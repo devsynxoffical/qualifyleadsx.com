@@ -667,7 +667,7 @@ export const realEstateInvestorsDeepDive: DeepDiveContent = {
         { title: "157 motivated seller leads in 7 days", text: "$4,397 in ad spend, $28 per lead, from cold traffic." },
         { title: "2,279 phone-verified leads in 3 months", text: "A Texas real estate business scaled from $4,069 to over $22,000 a month in ad spend while cost per lead stayed between $16.48 and $22.78." },
       ],
-      note: "Full campaign details on [Facebook ads for real estate investors](/meta-ads-for-real-estate-investors).",
+      note: "Full campaign details on [Facebook ads for real estate investors](/meta-ads-for-real-estate-investors). Buying leads from a broker instead? Read [buying leads vs generating your own](/blog/buy-qualified-leads-vs-generating-your-own).",
     },
     {
       eyebrow: "Qualify",
@@ -682,6 +682,7 @@ export const realEstateInvestorsDeepDive: DeepDiveContent = {
     },
   ],
   faqs: [
+    { q: "Can I buy investor leads instead of running ads?", a: "Yes, lead brokers sell motivated seller leads and appointments to investors, but they are often shared with other buyers and you don't control how they were qualified. Running your own Meta ads gives you exclusive leads; in our campaigns that meant 157 motivated seller leads in 7 days at $28 each. Our guide to buying leads vs generating your own compares the options." },
     { q: "Should I buy motivated seller leads or generate my own?", a: "Leads from an investor lead broker are fast but usually shared with other investors. Generating your own seller leads gives you exclusive sellers you qualify yourself; in our campaigns they cost $16.48 to $28 per lead, including phone-verified leads at scale." },
     { q: "What are pre-qualified investor leads?", a: "Pre-qualified investor leads are seller leads that have already answered questions about property condition, timeline and reason for selling, and whose phone number has been verified, so your acquisitions team only calls sellers who fit your buy box." },
   ],
@@ -726,5 +727,115 @@ export const outsourcedClosersDeepDive: DeepDiveContent = {
   faqs: [
     { q: "How much do outsourced closers cost?", a: "Outsourced closers are usually paid commission on cash collected, typically 10% to 15%, sometimes with a short ramp retainer during the first 30 days of onboarding. You pay mostly when deals close, instead of a fixed salary." },
     { q: "What is the difference between an appointment setter and a closer?", a: "An appointment setter contacts new leads, qualifies them and books them into the calendar. A closer runs the booked sales call and converts the qualified prospect into a paying client. High-ticket teams usually need both." },
+  ],
+};
+
+export const appointmentSettingCoachesDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Appointment setting for coaches",
+    title: "What an appointment setter does for a coaching business",
+    paragraphs: [
+      "In a coaching business the setter sits between your ads or content and your sales calls. They reply to every new application within minutes, confirm the prospect fits the program (budget, goal, timeline, coachability), and book only qualified people onto the coach's or closer's calendar. The coach stops spending evenings on discovery calls with people who were never going to buy.",
+      "It matters most once you sell a program of a few thousand dollars and leads arrive every day. Below that point, a booking link and a short application form are usually enough.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "The process",
+      title: "How coaching appointment setting works",
+      items: [
+        { title: "1. Reply in minutes", text: "Most applicants are lost in the first hour. The setter (or [AI speed to lead](/speed-to-lead) out of hours) replies by phone, SMS or WhatsApp while the prospect is still thinking about the program. See the [speed to lead statistics](/blog/speed-to-lead-statistics-response-time)." },
+        { title: "2. Qualify on four things", text: "Budget, goal, timeline and whether they will do the work. A [lead scoring template](/tools/lead-scoring-template) keeps the decision consistent between setters." },
+        { title: "3. Book and confirm", text: "Qualified prospects book a specific time, then get a confirmation, a short case study and reminders. The cross-industry average show rate with email-only confirmations is 58.2% ([show rate benchmarks](/benchmarks/show-rate)), so reminders are part of the job, not an extra." },
+        { title: "4. Hand over notes", text: "The closer sees what the prospect wants, what they have tried and what they can invest before the call starts." },
+      ],
+    },
+    {
+      eyebrow: "Proof",
+      title: "Coaching and education results from our campaigns",
+      items: [
+        { title: "$203,941 in 11 days", text: "A fitness client turned a low-ticket membership funnel into 1,566 memberships, 246 one-time offers and high-ticket upsells ([case study](/case-studies/high-ticket-coaching-203k))." },
+        { title: "$157,184 from stacked offers", text: "1,202 low-ticket sales, 193 order bumps and 28 mastermind enrollments for an agency-training client ([case study](/case-studies/digital-media-agency-157k))." },
+        { title: "$150,348 in five days", text: "2,063 memberships, 183 bundle upsells and 30 high-ticket done-for-you programs ([case study](/case-studies/executive-consulting-150k))." },
+      ],
+      note: "Hiring your own setter? Read [how to hire an appointment setter](/blog/how-to-hire-an-appointment-setter) and compare [setter compensation models](/blog/appointment-setter-compensation-models).",
+    },
+  ],
+  faqs: [
+    { q: "Do coaches need an appointment setter?", a: "Once you sell a program priced in the thousands and get new applications every day, yes. A setter replies within minutes, qualifies on budget, goal and timeline, and books only fit prospects, so the coach or closer spends their time on calls that can close." },
+    { q: "What should a coaching appointment setter qualify for?", a: "Budget for the program, a clear goal the program solves, a realistic timeline, and willingness to do the work. Prospects who miss on budget or timing can go into a nurture sequence instead of the sales calendar." },
+  ],
+};
+
+export const appointmentSettingAgenciesDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Appointment setting for agencies",
+    title: "Why agencies lose retainers between the lead and the call",
+    paragraphs: [
+      "Agency buyers usually enquire with more than one agency at once. The agency that replies first, asks sensible questions and books a time while the prospect is still interested tends to get the meeting. Appointment setting for agencies is that process: a fast first reply, qualification on budget and fit, and a booked strategy call with the right person on your team.",
+      "It also protects the founder's calendar. Prospects without the budget for a retainer, or looking for a one-off project you don't sell, are filtered out before they reach a sales call.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Qualification",
+      title: "What to qualify before booking an agency strategy call",
+      items: [
+        { title: "Budget", text: "Can they pay your minimum retainer plus the ad spend or production budget it needs?" },
+        { title: "Fit", text: "Is the service they want one you deliver well, in an industry where you have proof?" },
+        { title: "Decision-maker", text: "Is the person booking the one who signs, or do you need the owner on the call?" },
+        { title: "Timing", text: "Are they starting this quarter, or researching for next year? Later starts go into nurture." },
+      ],
+    },
+    {
+      eyebrow: "Proof",
+      title: "Agency results from Meta ads, qualification and follow-up",
+      items: [
+        { title: "235 clients, $846,000", text: "A service agency closed 235 clients at a $3,600 average deal in 2025 using Meta ads, qualification and structured follow-up ([case study](/case-studies/b2b-agency-scaling-846k))." },
+        { title: "$639,000 in two months", text: "A med spa marketing agency crossed $639,000 with 1,116 conversations still open, using Meta ads, qualification and appointment setting ([case study](/case-studies/med-spa-marketing-agency-639k))." },
+      ],
+      note: "Want the full system, ads included? See [client acquisition for agencies](/for/agencies) and [our Meta ads agency service](/meta-ads-agency).",
+    },
+  ],
+  faqs: [
+    { q: "What is appointment setting for agencies?", a: "It is the process of replying to new agency enquiries within minutes, qualifying them on budget, fit, decision-maker and timing, and booking qualified prospects into a strategy call. It can be done by an in-house setter, an outsourced team or an AI-assisted system." },
+    { q: "Should an agency outsource appointment setting?", a: "Outsourcing makes sense when enquiries arrive faster than the team can reply, or when the founder is still doing first calls. Keep ownership of the CRM and the data whichever option you choose." },
+  ],
+};
+
+export const metaAdsSaasDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Facebook ads for SaaS",
+    title: "When Facebook and Instagram ads work for SaaS",
+    paragraphs: [
+      "Meta ads work for SaaS when the product solves a pain a defined group of buyers already feels, and the funnel gets them to a trial, demo or purchase quickly. They struggle when the targeting is \"everyone who might want software\" and the ads describe features instead of the buyer's problem.",
+      "Our clearest example is an AI calling and SMS SaaS. The product didn't change; the distribution did, and it added 320 customers and $71,934 in revenue in 24 days at a 2.78 return on ad spend ([AI SaaS case study](/case-studies/b2b-technology-agency-71k)).",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "What changed",
+      title: "Four fixes that made a SaaS Meta campaign work",
+      items: [
+        { title: "A clear ideal customer profile", text: "One specific buyer instead of \"everyone who wants AI\"." },
+        { title: "Pain-led ad angles", text: "Ads about the buyer's problem rather than the product's features." },
+        { title: "Tight segmentation", text: "Separate audiences and messages for each buyer group." },
+        { title: "A simple funnel", text: "Built to convert rather than to impress, with the offer and next step obvious." },
+      ],
+    },
+    {
+      eyebrow: "Measuring it",
+      title: "Numbers to track for SaaS on Meta",
+      items: [
+        { title: "Cost per trial or demo", text: "The first cost that reflects real intent; cost per click alone hides poor targeting." },
+        { title: "Trial-to-paid or demo-to-close rate", text: "Tells you whether the ads attract buyers or browsers." },
+        { title: "CAC against LTV", text: "Use the [CAC calculator](/tools/cac-calculator) and [LTV to CAC calculator](/tools/ltv-cac-calculator) before scaling spend." },
+      ],
+      note: "For sales-led SaaS that needs demos rather than self-serve sign-ups, see [lead generation for SaaS](/for/saas) and [appointment setting for SaaS](/appointment-setting-for-saas).",
+    },
+  ],
+  faqs: [
+    { q: "Do Facebook ads work for SaaS?", a: "Yes, when the product solves a clear pain for a defined buyer and the funnel is simple. In one campaign we ran, an AI calling and SMS SaaS added 320 customers and $71,934 in 24 days at a 2.78 return on ad spend after fixing its ideal customer profile, ad angles and funnel." },
+    { q: "What should SaaS companies measure on Meta ads?", a: "Cost per trial or demo, trial-to-paid or demo-to-close rate, and customer acquisition cost against lifetime value. Clicks and cost per lead alone don't show whether the ads reach buyers." },
   ],
 };

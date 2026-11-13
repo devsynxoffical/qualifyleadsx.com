@@ -7,9 +7,11 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { appointmentSettingCoachesDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Appointment Setting for Coaches | QualifiedLeadsX",
+  title: { absolute: "Appointment Setting for Coaches: Qualified Discovery Calls" },
   description:
     "Fill coaching calendars with qualified high-ticket clients ($5K–$25K). Omnichannel DM & phone setters, 2-way qualification, and 82%+ show rates.",
   alternates: {
@@ -42,6 +44,7 @@ const faqs = [
     q: "How do setters maintain high show rates?",
     a: "Setters send personal video or voice notes upon booking, confirm attendance 2 hours prior, and ensure the prospect has completed required pre-call VSL homework.",
   },
+  ...appointmentSettingCoachesDeepDive.faqs,
 ];
 
 export default function AppointmentSettingForCoachesPage() {
@@ -148,6 +151,8 @@ export default function AppointmentSettingForCoachesPage() {
             </div>
           </div>
         </section>
+
+        <DeepDive content={appointmentSettingCoachesDeepDive} />
 
         <ProofStack variant="full" />
 

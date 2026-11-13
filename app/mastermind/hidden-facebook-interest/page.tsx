@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -448,6 +449,12 @@ export default function AiClientAcquisitionMastermindPage() {
           </Reveal>
         </div>
       </section>
+
+      <div className="bg-ink px-4 pt-10 sm:px-6">
+        <ShortAnswer className="mt-0">
+          The AI Client Acquisition Mastermind is a 6-week, 12-class implementation program covering Meta ads audience research, AI advertising, lead qualification, Pixel and CAPI tracking, scaling, manual bidding, retargeting and unit economics. You apply each class to your own campaigns, with 14 implementation resources.
+        </ShortAnswer>
+      </div>
 
       {/* Free preview: Class 1 */}
       <VSL

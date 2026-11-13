@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
@@ -112,6 +113,9 @@ export default function MetaAdsBidStrategyCalculatorPage() {
           <h1 className="font-heading text-4xl sm:text-5xl font-bold tracking-tight text-fog leading-[1.1]">
             Meta Ads <span className="text-gradient-lime">Bid Strategy Calculator</span>
           </h1>
+          <ShortAnswer>
+            A cost cap tells Meta the most you want to pay per result. This calculator works it out from your offer price, margin, show rate and close rate, gives a target and break-even cost per client, and recommends lowest cost, cost cap or bid cap based on Meta&apos;s learning threshold of about 50 conversions a week.
+          </ShortAnswer>
           <p className="mt-4 text-base sm:text-lg text-mist leading-relaxed max-w-2xl mx-auto">
             Turn your deal value, margin, close rate and show rate into the cost cap to enter in Meta Ads Manager, and see which bid strategy your budget can support.
           </p>

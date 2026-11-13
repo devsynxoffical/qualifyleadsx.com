@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import {
   ArrowUpRight,
   Lock,
@@ -216,6 +217,9 @@ export default function LtoFunnelScalePage() {
                 $255K Spend to Near $1M Sales
               </em>
             </h1>
+            <ShortAnswer>
+              This breakdown shows how a low-ticket offer (LTO) funnel was scaled to $847,290 in revenue on $255,140 of Meta ad spend, a 3.32x blended ROAS, by adding order bumps and one-click upsells and moving buyers into high-ticket backend offers.
+            </ShortAnswer>
           </Reveal>
 
           <Reveal delay={0.1}>

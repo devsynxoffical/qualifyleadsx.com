@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -132,6 +133,9 @@ export default function AgenciesLandingPage() {
             Client Acquisition for Agencies: Scale Retainers Past{" "}
             <span className="text-gradient-lime font-extrabold">$100K/Month Predictably</span>
           </h1>
+          <ShortAnswer>
+            A client acquisition system for agencies replaces referral-only growth with Meta ads, a case-study funnel, an application filter and fast follow-up that book retainer prospects every week. One service agency using this approach closed 235 clients at a $3,600 average deal, $846,000 in 2025.
+          </ShortAnswer>
 
           <p className="mt-6 text-lg sm:text-2xl text-mist max-w-3xl mx-auto leading-relaxed">
             Stop relying on word-of-mouth or burnt-out cold email scrapers. We install a battle-tested inbound VSL funnel that delivers 35–60 qualified retainer sales appointments every month.

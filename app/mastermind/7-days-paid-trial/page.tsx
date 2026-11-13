@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import {
   ArrowUpRight,
   Target,
@@ -217,6 +218,9 @@ export default function SevenDaysPaidTrialPage() {
                 The Self-Liquidating Meta Ads Playbook
               </em>
             </h1>
+            <ShortAnswer>
+              A 7-day paid trial sells a short trial for about $7 to $29 to cold Meta ads traffic, so the front end helps pay for the ads, then moves trial users into a high-ticket program. This breakdown covers the offer, price point, ad angles and upgrade sequence behind that funnel.
+            </ShortAnswer>
           </Reveal>
 
           <Reveal delay={0.1}>

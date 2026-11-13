@@ -43,6 +43,10 @@ const faqs = [
     q: "Does WhatsApp allow marketing messages without getting banned?",
     a: "We only use official WhatsApp Business Cloud API with verified Meta Business Manager accounts, opt-in consent compliance, and approved high-engagement message templates.",
   },
+  {
+    q: "Who owns the WhatsApp number and chat history?",
+    a: "You do. The WhatsApp Business account, the phone number, the message templates and every conversation sit in your own accounts and CRM, so the history stays with your business if you change agencies. QualifiedLeadsX builds and runs the sequences inside accounts you own, the same way we handle your ad account and funnels.",
+  },
 ];
 
 export default function WhatsAppLeadNurturePage() {

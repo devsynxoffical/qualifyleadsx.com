@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import {
   ArrowUpRight,
   ShieldCheck,
@@ -252,6 +253,9 @@ export default function MastermindPage() {
                 8-Figure Mastermind
               </em>
             </h1>
+            <ShortAnswer>
+              The QualifiedLeadsX mastermind pages share the frameworks the team uses with clients: a 6-week AI Client Acquisition Mastermind, a personal injury Sniper Method session, a $7 to $29 paid-trial playbook and an LTO funnel breakdown that reached $847,290 in revenue from $255,140 in Meta ad spend.
+            </ShortAnswer>
           </Reveal>
 
           <Reveal delay={0.1}>

@@ -43,6 +43,10 @@ const faqs = [
     q: "Does your system pass offline conversion data back to Meta?",
     a: "Yes. Every deal stage change (Call Held, Deal Qualified, Closed-Won) triggers a server-side webhook back into Meta CAPI and Google Ads offline conversion tracking to train the ad algorithm on closed revenue.",
   },
+  {
+    q: "Who owns the CRM and the data after setup?",
+    a: "You do. The CRM account, pipelines, automations, calendars and every contact record are set up in accounts you own, so nothing is lost if you stop working with us. QualifiedLeadsX builds and maintains the automation inside your account, and you keep full admin access from day one.",
+  },
 ];
 
 export default function CRMAutomationPage() {

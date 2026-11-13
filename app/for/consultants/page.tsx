@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import Image from "next/image";
 import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
@@ -134,6 +135,9 @@ export default function ConsultantsLandingPage() {
             Client Acquisition for Consultants:{" "}
             <span className="text-gradient-lime font-extrabold">A Predictable Pipeline of Decision-Makers</span>
           </h1>
+          <ShortAnswer>
+            Consultants are hired on trust, so the system leads with proof, filters prospects with a short application and books only fit buyers. QualifiedLeadsX runs the Meta ads, funnel, qualification and booking. One consulting funnel sold 2,063 memberships, 183 bundle upsells and 30 done-for-you programs: $150,348 in five days.
+          </ShortAnswer>
 
           <p className="mt-6 text-lg sm:text-2xl text-mist max-w-3xl mx-auto leading-relaxed">
             Break free from erratic referral cycles. We install a done-for-you client acquisition pipeline that books 20–40 vetted discovery meetings with C-level executives every month.

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import Image from "next/image";
 import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
@@ -135,6 +136,9 @@ export default function CoachesLandingPage() {
             <span className="text-gradient-lime font-extrabold">30–50 Qualified Sales Calls</span>{" "}
             Every Month
           </h1>
+          <ShortAnswer>
+            For coaches, client acquisition means a funnel that turns cold Meta traffic into qualified discovery calls, or into low-ticket buyers you can upsell. QualifiedLeadsX builds and runs the ads, funnel, follow-up and booking for you. One fitness client&apos;s low-ticket membership funnel produced $203,941 in 11 days.
+          </ShortAnswer>
 
           <p className="mt-6 text-lg sm:text-2xl text-mist max-w-3xl mx-auto leading-relaxed">
             Eliminate low-ticket tire-kickers and the organic social media treadmill. We install a complete done-for-you client acquisition system engineered for $3K–$25K coaching programs.

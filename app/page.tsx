@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -186,6 +187,11 @@ export default function Home() {
       <AnnouncementBar />
       <Nav />
       <FlowWave />
+      <section aria-label="Short answer" className="bg-ink px-4 pt-10 sm:px-6">
+        <ShortAnswer className="mt-0">
+          QualifiedLeadsX is a done-for-you client acquisition agency. We build and run Meta ads, a 3 to 5 page funnel, AI follow-up that replies in under 5 minutes, lead qualification and calendar booking, so agency owners, coaches and B2B firms doing $10,000+ a month get qualified sales calls. Every engagement carries a 90-day written guarantee.
+        </ShortAnswer>
+      </section>
       <VSL />
       <LogoBar />
       <TrustBar />

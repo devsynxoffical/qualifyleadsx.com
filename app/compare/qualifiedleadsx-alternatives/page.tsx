@@ -82,6 +82,10 @@ const faqs = [
     q: "What types of companies are NOT a good fit for QualifiedLeadsX?",
     a: "We do not work with low-ticket e-commerce stores, pre-revenue startups without a validated offer, or businesses with products priced below $3,000.",
   },
+  {
+    q: "How is QualifiedLeadsX priced compared with alternatives?",
+    a: "Every QualifiedLeadsX engagement is custom quoted on your niche, monthly ad budget, funnel scope and number of offers, so there is no public price list. Compare alternatives on what is included (ads, creative, funnel, follow-up, booking), who owns the accounts and data, and whether results are backed by a written guarantee.",
+  },
 ];
 
 export default function QualifiedLeadsXAlternativesPage() {

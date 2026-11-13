@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
@@ -106,6 +107,9 @@ export default function MetaAdsBudgetCalculatorPage() {
           <h1 className="font-heading text-4xl sm:text-5xl font-bold tracking-tight text-fog leading-[1.1]">
             Free Meta Ads <span className="text-gradient-lime">Budget Calculator</span>
           </h1>
+          <ShortAnswer>
+            Your monthly Meta ads budget is the number of clients you want, divided by your close rate and show rate, multiplied by your cost per booked call. This free calculator does that maths from your own numbers and shows the Facebook and Instagram budget needed to reach your client target.
+          </ShortAnswer>
           <p className="mt-4 text-base sm:text-lg text-mist leading-relaxed max-w-2xl mx-auto">
             Enter how many new clients you want, your close rate, show rate and cost per booked call. The calculator works backwards to the monthly and daily Facebook and Instagram ad budget you need.
           </p>

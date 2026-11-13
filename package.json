@@ -15,7 +15,8 @@
     "seo:daily": "node scripts/seo-daily.mjs",
     "seo:bots": "node scripts/check-bot-access.mjs",
     "seo:bing": "node scripts/bing-webmaster.mjs",
-    "seo:audit": "node scripts/seo-audit.mjs"
+    "seo:audit": "node scripts/seo-audit.mjs",
+    "postbuild": "node scripts/build-llms-full.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -165,6 +166,9 @@ export default function AboutPage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading tracking-tight text-fog leading-[1.1] mb-6">
               About <span className="text-lime">QualifiedLeadsX</span>
             </h1>
+            <ShortAnswer>
+              QualifiedLeadsX is a done-for-you client acquisition agency founded in 2022 by Gaurav Kapoor and operated by Ecom Expertz LLC. The team builds and runs Meta ads, funnels, AI follow-up, lead qualification and calendar booking for agencies, coaches, consultants and B2B firms in the US, UK, Canada and Australia.
+            </ShortAnswer>
             <p className="text-xl sm:text-2xl text-fog leading-relaxed font-normal mb-6">
               QualifiedLeadsX™ is a done-for-you client acquisition agency that builds and runs Meta ads, funnels, CRM, and AI follow-up to book qualified sales calls for agency owners, high-ticket coaches, and B2B service businesses doing $10,000+ a month.
             </p>

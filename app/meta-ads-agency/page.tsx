@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
@@ -221,6 +222,9 @@ export default function MetaAdsAgencyPage() {
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-white max-w-5xl mx-auto leading-[1.08]">
             The <span className="text-lime">Meta Ads Agency</span> For Coaches, Agencies & High-Ticket B2B
           </h1>
+          <ShortAnswer>
+            QualifiedLeadsX is a Meta ads agency for high-ticket and B2B offers. We produce the creative, run Facebook and Instagram campaigns with Conversions API tracking, and optimise for booked, qualified calls rather than cheap leads. In one campaign, $5,628 in Meta ads booked 125 HVAC appointments and returned $65,872 in net cash.
+          </ShortAnswer>
 
           {/* Subtitle with Secondary Keyword */}
           <p className="mt-6 text-lg sm:text-2xl text-mist max-w-3xl mx-auto leading-relaxed font-normal">

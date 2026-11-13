@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import Link from "next/link";
 import { Crosshair, Users, Filter, Car, Shuffle, Search, CheckCircle2 } from "lucide-react";
 import { site, defaultOgImage } from "@/lib/site";
@@ -206,6 +207,12 @@ export default function PersonalInjuryMastermindPage() {
           </Reveal>
         </div>
       </section>
+
+      <div className="bg-ink px-4 pt-10 sm:px-6">
+        <ShortAnswer className="mt-0">
+          The Sniper Method mastermind is a 1-hour 33-minute session for personal injury law firms and agencies running ads for attorneys. It shows how to find hidden Facebook audiences for car, motorcycle, 18-wheeler and rideshare accident cases, so campaigns stop competing for the same audiences as every other firm.
+        </ShortAnswer>
+      </div>
 
       <TrustBar />
 

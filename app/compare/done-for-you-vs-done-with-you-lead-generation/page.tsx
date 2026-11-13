@@ -77,6 +77,10 @@ const faqs = [
     q: "Does QualifiedLeadsX offer DFY or DWY?",
     a: "QualifiedLeadsX operates exclusively as a Done-For-You (DFY) partner. We provide the media buyers, creative editors, CRM engineers, and appointment setting teams to put qualified appointments directly onto your calendar.",
   },
+  {
+    q: "How do I choose between done-for-you and done-with-you?",
+    a: "Choose done-for-you if your time is worth more on delivery and sales than on running ads, and you want a team accountable for results. Choose done-with-you if you have someone in-house with the time to learn and execute, and you mainly need a proven plan and reviews of their work.",
+  },
 ];
 
 export default function DfyVsDwyPage() {

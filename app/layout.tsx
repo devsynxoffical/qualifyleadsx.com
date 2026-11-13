@@ -7,6 +7,7 @@ import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { MetaPixel } from "@/components/analytics/MetaPixel";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { SiteEvents } from "@/components/analytics/SiteEvents";
 import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
 import { EmailOptInWidget } from "@/components/ui/EmailOptInWidget";
 import { site } from "@/lib/site";
@@ -116,6 +117,7 @@ export default function RootLayout({
           Skip to content
         </a>
         <GoogleAnalytics />
+        <SiteEvents />
         <MetaPixel />
         <JsonLd />
         <NoiseOverlay />

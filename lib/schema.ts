@@ -191,7 +191,7 @@ export function webPageNode(opts: {
       ? {
           speakable: {
             "@type": "SpeakableSpecification",
-            cssSelector: [".aeo-answer"],
+            cssSelector: [".aeo-answer", ".short-answer"],
           },
         }
       : {}),

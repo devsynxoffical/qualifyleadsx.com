@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import Link from "next/link";
 import Image from "next/image";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
@@ -217,6 +218,9 @@ export default function AppointmentSettingPage() {
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-white max-w-5xl mx-auto leading-[1.08]">
             <span className="text-lime">Appointment Setting</span> Agency With Sub-5-Minute Speed To Lead
           </h1>
+          <ShortAnswer>
+            Appointment setting means replying to new leads within minutes, qualifying them on budget, authority and timeline, and booking only fit prospects into your sales calendar with reminders. QualifiedLeadsX combines sub-5-minute AI follow-up with human setters. With email-only confirmations the average show rate is 58.2%, which is why reminders are built in.
+          </ShortAnswer>
 
           {/* Subtitle with Secondary Keyword */}
           <p className="mt-6 text-lg sm:text-2xl text-mist max-w-3xl mx-auto leading-relaxed font-normal">

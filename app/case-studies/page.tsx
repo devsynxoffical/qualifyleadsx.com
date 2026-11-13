@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import Link from "next/link";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
@@ -246,6 +247,9 @@ export default function CaseStudiesPage() {
               The numbers don&apos;t lie.{" "}
               <span className="text-gradient-lime">Here is the proof.</span>
             </h1>
+            <ShortAnswer>
+              These case studies document real QualifiedLeadsX client results, each with the numbers as the client reported them. Examples include a service agency that closed 235 clients at a $3,600 average deal ($846,000 in 2025) and a 3-clinic med spa that booked 453 appointments at $22.93 each.
+            </ShortAnswer>
           </Reveal>
 
           <Reveal delay={0.2}>

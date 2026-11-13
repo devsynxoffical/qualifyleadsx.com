@@ -77,6 +77,10 @@ const faqs = [
     q: "How does creative testing differ between Meta and Google?",
     a: "Meta requires continuous creative iteration (3-5 fresh UGC/founder-led video concepts weekly) to combat ad fatigue, whereas Google Search prioritizes headline testing, negative keywords, and landing page quality score.",
   },
+  {
+    q: "Can I start with Meta ads and add Google later?",
+    a: "Yes, and for most high-ticket offers that is the usual order. Meta creates demand from people who match your buyer but are not searching yet, which is where most volume is. Once you know which offer and message convert, Google search ads can capture people actively looking for the service.",
+  },
 ];
 
 export default function MetaVsGoogleAdsPage() {

@@ -236,6 +236,32 @@ bylines and real updated dates, short answers on 15 money pages, llms-full.txt, 
 5 new GA4 events. Indexing: Google 21 accepted, Bing 21 submitted.
 Open: Hostinger blocks Bingbot/Applebot (403) and GPTBot (429); home Lighthouse 51; 46 pages under 5 FAQs.
 
+## 2026-11-14 (daily session)
+
+**Data (Search Console):** latest day 33 impressions (highest single day so far); last 7 days 233
+impressions (was 194), 1 click; last 28 days 499 impressions (was 448), 6 clicks, 71 pages, 77
+queries (was 66), 5 on page 1. New queries (11) include "hvac meta ads" (3), "lead conversion rate
+calculator" (90), "roas benchmarks by industry" (38), "alternatives to qualified" (81).
+
+**Done (live, verified)**
+- New tool `/tools/lead-conversion-rate-calculator`: booking, show, close and lead-to-client
+  rates, revenue per lead, weakest stage (compared only with the site's published 58.2% show rate
+  and 24-31% close rate). Tested in a browser; added to tools hub, footer, related links, content
+  sitemap, IndexNow list and llms.txt.
+- B2B ROAS post: title "B2B ROAS Benchmarks by Industry (2026)" and a section of ROAS figures
+  from published case studies, each linked (HVAC 12.70, med spa ~7.1x, LTO 3.32x, membership
+  ~3.0x, AI SaaS 2.78, booking funnel 2.72).
+- HVAC guide title: "Facebook & Meta Ads for HVAC Companies: Real Numbers".
+
+**Indexing:** URL Inspection on all 117 sitemap URLs: 97 indexed (99/120 on 12 Nov; merged pages
+removed), 12 discovered not indexed, 7 unknown. Newly indexed: /about/gaurav-kapoor,
+/b2b-lead-generation, /blog/buy-qualified-leads-vs-generating-your-own,
+/mastermind/personal-injury-facebook-ads. Rich-result FAILs: same 8 pages, all last crawled
+6-10 Nov (before the fix). Google Indexing API: 4 accepted; Bing: 4 submitted.
+
+**Owner actions unchanged:** Hostinger blocks Bingbot (403) and GPTBot (429); GSC "Validate fix"
+on Breadcrumbs.
+
 ## Backlog (highest impact first)
 
 1. Resubmit the 21 not-indexed URLs and the new URLs to the Indexing API (quota resets daily).

@@ -168,7 +168,7 @@ export const blogPosts: BlogPost[] = [
   // 10 NOV 2026: HVAC Meta ads guide (real campaign data) and appointment setter hiring guide
   {
     "slug": "facebook-ads-for-hvac-companies",
-    "seoTitle": "Facebook Ads for HVAC Companies: Real Numbers",
+    "seoTitle": "Facebook & Meta Ads for HVAC Companies: Real Numbers",
     "title": "Facebook Ads for HVAC Companies: Real Campaign Numbers and the Funnel Behind Them",
     "description": "Facebook ads for HVAC companies, with real campaign data: cost per lead, booked appointments, show rate, cost per installation, ROAS and the full funnel.",
     "publishedAt": "2026-11-10",
@@ -731,7 +731,7 @@ export const blogPosts: BlogPost[] = [
   // 30 OCT 2026 — commercial-intent pillar: "benchmark roas b2b & qualified appointment generation" (GSC top query target)
   {
     slug: "b2b-roas-benchmarks-qualified-appointment-generation",
-    seoTitle: "B2B ROAS Benchmarks & Appointment Math 2026",
+    seoTitle: "B2B ROAS Benchmarks by Industry (2026)",
     title: "B2B ROAS Benchmarks & Qualified Appointment Generation: How High-Ticket Offers Hit 4x–7x ROAS",
     description: "Real B2B ROAS benchmarks for coaching, consulting, and SaaS. Master customer acquisition costs, shorten sales cycles, and scale to 50+ booked calls.",
     publishedAt: "2026-10-30",
@@ -783,6 +783,20 @@ export const blogPosts: BlogPost[] = [
             "Break-even ROAS = 1 ÷ gross margin. At a 60% margin you need 1.67x just to break even",
             "Check your numbers with the [ROAS and break-even calculator](/tools/roas-calculator)"
           ]
+        },
+        {
+          heading: "ROAS by Industry: Results From Our Published Case Studies",
+          body: [
+            "Benchmarks are only useful if you can check them. These are return-on-ad-spend figures from campaigns we ran, each linked to its case study. Where the case study gives revenue and ad spend but not ROAS, the ROAS shown is revenue divided by ad spend.",
+          ],
+          bulletList: [
+            "Home services (HVAC, Florida): 12.70 ROAS. $5,628 in Meta ads, 13 installations worth $71,500 ([case study](/case-studies/florida-hvac-65k-cash-collected))",
+            "Med spa (3 clinics, New York): about 7.1x. $74,100 from $10,387 in ad spend ([case study](/case-studies/nyc-med-spa-rf-microneedling-74k))",
+            "Low-ticket offer funnel with high-ticket backend: 3.32x blended. $847,290 on $255,140 ([breakdown](/mastermind/lto-funnel-scale))",
+            "Membership offer, $99/month: about 3.0x in the first 30 days. $86K from $29K ([case study](/case-studies/agency-backend-continuity-86k))",
+            "AI calling and SMS SaaS: 2.78 ROAS, $71,934 in 24 days ([case study](/case-studies/b2b-technology-agency-71k))",
+            "Low-ticket-first booking funnel: 2.72 ROAS, $79,070 in 17 days ([case study](/case-studies/high-ticket-funnel-79k))",
+          ],
         },
         {
           heading: "The 2026 B2B ROAS Reality: Front-End vs. Lifetime Economics",

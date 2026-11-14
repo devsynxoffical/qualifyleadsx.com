@@ -77,6 +77,16 @@ const toolList = [
     formula: "Gross Profit * Ad Share * Close Rate * Show Rate",
   },
   {
+    title: "Lead Conversion Rate Calculator",
+    keyword: "lead conversion rate calculator",
+    href: "/tools/lead-conversion-rate-calculator",
+    icon: Calculator,
+    badge: "Funnel",
+    description:
+      "Enter one month of leads, booked calls, held calls and clients won to get your booking, show, close and lead-to-client conversion rates, revenue per lead and the weakest stage.",
+    formula: "Clients Won / Leads * 100",
+  },
+  {
     title: "High-Ticket ROAS & Break-Even Calculator",
     keyword: "roas calculator",
     href: "/tools/roas-calculator",

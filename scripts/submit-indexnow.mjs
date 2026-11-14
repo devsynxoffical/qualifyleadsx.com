@@ -19,6 +19,7 @@ const URLS = [
   `https://${HOST}/tools/show-rate-calculator`,
   `https://${HOST}/tools/meta-ads-budget-calculator`,
   `https://${HOST}/tools/meta-ads-bid-strategy-calculator`,
+  `https://${HOST}/tools/lead-conversion-rate-calculator`,
   `https://${HOST}/tools/ltv-cac-calculator`,
   `https://${HOST}/tools/lead-scoring-template`,
   `https://${HOST}/benchmarks/cost-per-booked-call`,

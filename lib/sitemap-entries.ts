@@ -91,6 +91,12 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
       priority: 0.88,
     },
     {
+      url: `${site.url}/tools/lead-conversion-rate-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
       url: `${site.url}/tools/show-rate-calculator`,
       lastModified: now,
       changeFrequency: "monthly",

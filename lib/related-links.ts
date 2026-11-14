@@ -38,6 +38,7 @@ export const tools: Link[] = [
   { href: "/tools/roas-calculator", label: "ROAS & break-even calculator" },
   { href: "/tools/meta-ads-budget-calculator", label: "Meta ads budget calculator" },
   { href: "/tools/meta-ads-bid-strategy-calculator", label: "Meta ads bid strategy calculator" },
+  { href: "/tools/lead-conversion-rate-calculator", label: "Lead conversion rate calculator" },
   { href: "/tools/show-rate-calculator", label: "Show-up rate calculator" },
   { href: "/tools/lead-scoring-template", label: "Lead scoring template" },
 ];
@@ -84,6 +85,7 @@ const guidesFor: Record<string, string[]> = {
   "/tools/show-rate-calculator": ["how-to-increase-show-rate", "why-leads-dont-show-up"],
   "/tools/meta-ads-budget-calculator": ["how-much-does-meta-ads-cost", "meta-ads-for-high-ticket-b2b-broad-targeting"],
   "/tools/meta-ads-bid-strategy-calculator": ["meta-advantage-plus-for-b2b", "how-much-does-meta-ads-cost"],
+  "/tools/lead-conversion-rate-calculator": ["how-to-qualify-leads", "how-to-increase-show-rate"],
   "/tools/lead-scoring-template": ["how-to-qualify-leads", "automated-lead-qualification-system-high-ticket"],
   "/benchmarks/close-rate": ["high-ticket-sales-training-framework", "b2b-sales-closer-job-description"],
   "/benchmarks/cost-per-booked-call": ["how-much-does-a-lead-generation-agency-cost", "b2b-roas-benchmarks-qualified-appointment-generation"],
@@ -101,6 +103,7 @@ const servicesForTool: Record<string, string[]> = {
   "/tools/show-rate-calculator": ["/appointment-setting", "/whatsapp-lead-nurture"],
   "/tools/meta-ads-budget-calculator": ["/meta-ads-agency", "/appointment-setting"],
   "/tools/meta-ads-bid-strategy-calculator": ["/meta-ads-agency", "/lead-generation-agency"],
+  "/tools/lead-conversion-rate-calculator": ["/appointment-setting", "/speed-to-lead"],
   "/tools/lead-scoring-template": ["/appointment-setting", "/crm-automation"],
   "/benchmarks/close-rate": ["/outsourced-sales-closers", "/appointment-setting"],
   "/benchmarks/cost-per-booked-call": ["/appointment-setting", "/meta-ads-agency"],

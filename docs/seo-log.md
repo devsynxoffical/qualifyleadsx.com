@@ -262,6 +262,27 @@ removed), 12 discovered not indexed, 7 unknown. Newly indexed: /about/gaurav-kap
 **Owner actions unchanged:** Hostinger blocks Bingbot (403) and GPTBot (429); GSC "Validate fix"
 on Breadcrumbs.
 
+## 2026-11-15 (daily session)
+
+**Data (Search Console):** latest day 44 impressions (new high); last 7 days 273 impressions (was
+233), 1 click, average position 51.4 (was 54.8); last 28 days 553 impressions (was 499), 6 clicks,
+73 pages, 87 queries (was 77), 8 on page 1 (was 5). New queries (10) include "how to get marketing
+qualified leads" (position 6.7), "va appointment setter" (36), "appointment setting virtual
+assistant" (60.5), "lead generation roi calculator" (94), "meta ads for hvac contractors" (91).
+
+**Done (live, verified)**
+- `/blog/how-to-qualify-leads`: title "How to Qualify Leads and Get Marketing Qualified Leads",
+  new description; the 5-point checklist is now listed (budget, authority, need, timeline, fit);
+  new section on getting MQLs and MQL vs SQL; 2 FAQs.
+- `/compare/appointment-setter-vs-va`: FAQ "Should I hire a VA appointment setter?".
+- `/tools`: ROAS calculator described as a lead generation ROI calculator.
+- Commits are now authored by DEVSYNX with no Claude attribution (owner request, 14 Nov).
+
+**Indexing:** Google Indexing API 23 accepted (3 changed pages + the 20 not-indexed sitemap URLs
+from the 14 Nov inspection); Bing 23 submitted. Bing: 68 pages in index.
+
+**Owner actions unchanged:** Hostinger blocks Bingbot (403) and GPTBot (429).
+
 ## Backlog (highest impact first)
 
 1. Resubmit the 21 not-indexed URLs and the new URLs to the Indexing API (quota resets daily).

@@ -93,7 +93,7 @@ const toolList = [
     icon: TrendingUp,
     badge: "Media Buying",
     description:
-      "Model how changes in close rate, appointment show rate, and offer pricing directly impact front-end return on ad spend and gross cash collected.",
+      "Lead generation ROI and ROAS calculator: model how close rate, appointment show rate and offer price change front-end return on ad spend and gross cash collected.",
     formula: "(Closed Revenue - Ad Spend) / Ad Spend",
   },
   {

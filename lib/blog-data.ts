@@ -2940,8 +2940,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-qualify-leads",
     title: "How to Qualify Leads: The High-Ticket Screening Framework",
-    seoTitle: "How to Qualify Leads: High-Ticket Framework",
-    description: "Learn how to filter out tire-kickers and protect closer calendars. The 5-stage qualification matrix for $5K–$25K high-ticket service offers.",
+    seoTitle: "How to Qualify Leads and Get Marketing Qualified Leads",
+    description: "How to get marketing qualified leads (MQLs), turn them into sales qualified leads, and screen high-ticket prospects with a 5-point checklist.",
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "9 min read",
@@ -2968,8 +2968,29 @@ export const blogPosts: BlogPost[] = [
         {
           heading: "1. The 5-Point Qualification Checklist",
           body: [
-            "Filter prospects on capital readiness, operational fit, and implementation timeline before releasing calendar access.",
+            "Filter prospects on capital readiness, operational fit, and implementation timeline before releasing calendar access. The five checks below work for most offers priced from about $3,000 upwards.",
             "You can immediately download and implement our ready-to-use [lead scoring template](/tools/lead-scoring-template) to standardize criteria across your entire marketing and sales team.",
+          ],
+          bulletList: [
+            "Budget: can they pay for the offer now, or within your payment terms?",
+            "Authority: is this the person who signs, or do they need a partner on the call?",
+            "Need: is the problem your offer solves painful enough to act on this quarter?",
+            "Timeline: do they want to start within 30 to 60 days?",
+            "Fit: is their business the type you have results for (industry, size, stage)?",
+          ],
+        },
+        {
+          heading: "How to Get Marketing Qualified Leads (MQLs)",
+          body: [
+            "A marketing qualified lead (MQL) is a lead that has shown enough interest and fit for marketing to hand it to sales, for example someone who completed an application form or watched most of a sales video. A sales qualified lead (SQL) is an MQL that a setter or salesperson has confirmed on budget, authority, need and timeline, and is ready for a sales call.",
+            "To get more marketing qualified leads rather than more leads in total:",
+          ],
+          bulletList: [
+            "Target by message, not only by audience: ads that name the buyer's problem and price range attract buyers and put off browsers.",
+            "Add an application step: two to five questions on revenue, budget and timeline before the booking calendar.",
+            "Score every lead automatically: give points for fit and intent so only leads above the threshold reach sales (use the [lead scoring template](/tools/lead-scoring-template)).",
+            "Reply fast: MQLs go cold quickly, so contact them within minutes ([speed to lead statistics](/blog/speed-to-lead-statistics-response-time)).",
+            "Measure each stage: track MQL to SQL, SQL to held call and held call to client with the [lead conversion rate calculator](/tools/lead-conversion-rate-calculator).",
           ],
         },
         {
@@ -2982,6 +3003,14 @@ export const blogPosts: BlogPost[] = [
       ],
       conclusion: "Strict qualification creates exclusivity, elevates closer morale, and increases close rates above 25%.",
       faqs: [
+        {
+          q: "What is a marketing qualified lead (MQL)?",
+          a: "A marketing qualified lead is a lead that has shown enough interest and fit for marketing to pass it to sales, such as completing an application form or a high-intent action on your site. It becomes a sales qualified lead (SQL) once a setter or salesperson confirms budget, authority, need and timeline.",
+        },
+        {
+          q: "How do you get more marketing qualified leads?",
+          a: "Write ads that name the buyer's problem and price range, add a short application step before booking, score leads on fit and intent so only qualified ones reach sales, and reply within minutes. Then measure each stage from MQL to client to see where leads are lost.",
+        },
         {
           q: "Does adding questions reduce lead volume?",
           a: "Yes, it reduces unqualified volume by 40%, while increasing booked qualified sales calls and revenue by 30%+.",

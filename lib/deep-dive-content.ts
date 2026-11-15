@@ -520,6 +520,7 @@ export const setterVsVaDeepDive: DeepDiveContent = {
   ],
   faqs: [
     { q: "What is a virtual appointment setter?", a: "A virtual appointment setter is a remote team member who contacts new leads, qualifies them on budget, authority and timeline, and books qualified prospects into a closer's calendar. Unlike a general virtual assistant, they are measured on booking rate, show rate and qualified rate." },
+    { q: "Should I hire a VA appointment setter?", a: "A VA appointment setter (an appointment setting virtual assistant) suits low lead volume and simpler offers where booking is mostly scheduling. For high-ticket offers with daily leads, a dedicated setter who replies within minutes and qualifies on budget, authority and timeline usually books more qualified calls and protects show rates." },
     { q: "Can a virtual assistant be an appointment setter?", a: "Yes, for simple offers and low lead volume. For high-ticket offers a VA usually needs sales training, a qualification script and clear targets, otherwise they tend to book anyone who asks and show rates suffer." },
   ],
 };

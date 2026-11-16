@@ -11,28 +11,46 @@ import { cn } from "@/lib/utils";
 
 const servicesSublinks = [
   {
-    title: "All Services Directory",
-    desc: "Complete done-for-you acquisition services",
-    href: "/services",
-    badge: "Hub",
-  },
-  {
-    title: "Lead Generation Agency",
+    title: "Customer Acquisition Agency",
     desc: "Full-funnel client acquisition & pipeline",
     href: "/lead-generation-agency",
-    badge: "Full-Funnel",
+    badge: "Top Rated",
   },
   {
-    title: "Meta Ads Agency",
-    desc: "Facebook & Instagram ads for high-ticket offers",
-    href: "/meta-ads-agency",
-    badge: "Done-For-You",
+    title: "Qualified B2B Leads",
+    desc: "Enterprise B2B lead generation & VSL funnels",
+    href: "/b2b-lead-generation",
+    badge: "1500+ Words",
   },
   {
-    title: "Appointment Setting",
-    desc: "Sub-5-minute AI follow-up & speed to lead",
+    title: "Lead Gen for Agencies",
+    desc: "Scale agency retainers past $100K/month",
+    href: "/for/agencies",
+    badge: "35–60 Calls",
+  },
+  {
+    title: "B2B Appointment Setting",
+    desc: "Sub-3-minute speed to lead & AI qualification",
     href: "/appointment-setting",
     badge: "AI + CRM",
+  },
+  {
+    title: "Meta Ads Agency for B2B",
+    desc: "Facebook & Instagram ads for high-ticket offers",
+    href: "/meta-ads-agency",
+    badge: "$50M+ Spend",
+  },
+  {
+    title: "Motivated Seller Leads",
+    desc: "Proprietary direct-to-seller deal funnels",
+    href: "/for/real-estate-investors",
+    badge: "Off-Market",
+  },
+  {
+    title: "All Services Directory",
+    desc: "Complete done-for-you acquisition systems",
+    href: "/services",
+    badge: "Directory",
   },
 ];
 

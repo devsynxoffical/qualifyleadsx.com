@@ -19,11 +19,11 @@ export type Link = { href: string; label: string };
 export type Group = { title: string; links: Link[] };
 
 export const coreServices: Link[] = [
-  { href: "/lead-generation-agency", label: "Lead generation agency" },
+  { href: "/lead-generation-agency", label: "Customer acquisition agency" },
   { href: "/high-ticket-lead-generation", label: "High-ticket lead generation" },
-  { href: "/b2b-lead-generation", label: "B2B lead generation" },
-  { href: "/meta-ads-agency", label: "Meta ads agency" },
-  { href: "/appointment-setting", label: "Appointment setting" },
+  { href: "/b2b-lead-generation", label: "Qualified B2B leads" },
+  { href: "/meta-ads-agency", label: "Meta ads agency for B2B" },
+  { href: "/appointment-setting", label: "B2B appointment setting" },
   { href: "/speed-to-lead", label: "AI speed to lead" },
   { href: "/vsl-funnels", label: "VSL funnel agency" },
   { href: "/whatsapp-lead-nurture", label: "WhatsApp lead nurture" },
@@ -32,7 +32,7 @@ export const coreServices: Link[] = [
 ];
 
 export const tools: Link[] = [
-  { href: "/tools/cac-calculator", label: "CAC calculator" },
+  { href: "/tools/cac-calculator", label: "B2B CAC benchmarks calculator" },
   { href: "/tools/cost-per-booked-call-calculator", label: "Cost per booked call calculator" },
   { href: "/tools/ltv-cac-calculator", label: "LTV to CAC calculator" },
   { href: "/tools/roas-calculator", label: "ROAS & break-even calculator" },
@@ -45,7 +45,7 @@ export const tools: Link[] = [
 
 export const benchmarks: Link[] = [
   { href: "/benchmarks/cost-per-lead-by-industry", label: "Cost per lead by industry" },
-  { href: "/benchmarks/cost-per-booked-call", label: "Cost per booked call benchmarks" },
+  { href: "/benchmarks/cost-per-booked-call", label: "Cost per qualified meeting" },
   { href: "/benchmarks/meta-ads-cpm", label: "Meta ads CPM benchmarks" },
   { href: "/benchmarks/close-rate", label: "Close rate benchmarks" },
   { href: "/benchmarks/show-rate", label: "Show rate benchmarks" },

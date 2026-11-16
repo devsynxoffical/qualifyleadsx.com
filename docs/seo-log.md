@@ -315,3 +315,10 @@ from the 14 Nov inspection); Bing 23 submitted. Bing: 68 pages in index.
 - Photos uploaded from /gbp/: logo (profile), cover, 5 client-result screenshots (AT_WORK).
 - 3 posts published: HVAC case study (Learn more), Lead Conversion Rate Calculator (Learn more), open-for-clients post (Book).
 - Owner-only: review Google updates in the dashboard, remove keyword stuffing from the business name, add real office/team photos.
+
+## 2026-11-16 (daily run, 08:44 UTC)
+**Measured:** GSC last 28 days 620 impressions, 6 clicks, 80 pages, 97 queries, 8 on page 1; last 7 days 305 impressions, 1 click, avg position 47.9. 10 new queries (top: "marketing efficiency ratio calculator" pos 18 → /tools). Bing: 68 indexed, 0 crawl issues, 3 impressions in 18 days.
+**Indexing:** Bing 23 URLs submitted (all not-indexed sitemap URLs + 3 changed pages). Google Indexing API 6 accepted today (plus 12 earlier today with the diagnosis).
+**Done:** no page edits. Following SEO_DIAGNOSIS_2026-11-16.md: core-page metadata freeze until 14 Dec; striking-distance pages (b2b ROAS post, broad-targeting post) already have 5+ internal links.
+**Backlog:** backlink plan (docs/backlink-plan-qualifiedleadsx.pdf, local only, PDFs are gitignored); re-check on 30 Nov whether /lead-generation-agency replaced /for/agencies for "customer acquisition agency"; /blog/how-to-qualify-leads is "crawled, not indexed" despite pos 9.6 for "how to get marketing qualified leads": resubmitted, do not rewrite again.
+**Owner actions:** week 1 of the backlink plan (Clutch, G2, DesignRush, LinkedIn company page, Crunchbase, 5 review requests); decide the address rule (Wyoming vs Delhi).

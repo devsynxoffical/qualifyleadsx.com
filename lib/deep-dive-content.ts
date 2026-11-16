@@ -26,10 +26,10 @@ export type DeepDiveContent = {
 export const agenciesDeepDive: DeepDiveContent = {
   intro: {
     eyebrow: "Client acquisition for agencies",
-    title: "What a client acquisition agency does for a marketing agency",
+    title: "How marketing agencies win retainer clients predictably",
     paragraphs: [
       "Most marketing agencies win clients through referrals and the founder's network. That works until about $30K–$50K a month, then growth stalls because referrals arrive when they arrive, not when you have capacity. QualifiedLeadsX is a client acquisition agency for agencies: we build and run the Meta ads, the case-study funnel, the application filter and the follow-up that put qualified retainer prospects on your calendar every week.",
-      "It is the same system we run for coaches and consultants, adapted to how agencies sell. Your buyer has usually been burned by an agency before, so proof matters more than promises, and one closed retainer has to pay for weeks of ad spend. Below is how we handle both. (Not an agency yourself? See our [customer acquisition agency](/) service for coaches, consultants and B2B firms.)",
+      "It is the same system we run for coaches and consultants, adapted to how agencies sell. Your buyer has usually been burned by an agency before, so proof matters more than promises, and one closed retainer has to pay for weeks of ad spend. Below is how we handle both. (Not an agency yourself? See our [customer acquisition agency](/lead-generation-agency) service for coaches, consultants and B2B firms.)",
     ],
   },
   sections: [
@@ -90,7 +90,7 @@ export const agenciesDeepDive: DeepDiveContent = {
     },
   ],
   faqs: [
-    { q: "What is a customer acquisition agency?", a: "A customer acquisition agency (or client acquisition agency) is responsible for the whole path from ad to booked sales call: offer positioning, ads, landing pages or funnel, follow-up, qualification and booking. A traditional ad agency usually stops at the click. QualifiedLeadsX runs the full path and reports on cost per booked call and cost per client, not just cost per lead." },
+    { q: "How do marketing agencies get clients without referrals?", a: "Run a paid channel you control: Meta ads to a case-study funnel, an application that filters by budget and fit, and follow-up within 5 minutes that books qualified prospects onto your calendar. It replaces waiting for referrals with a weekly flow you can scale with headcount. A full-service customer acquisition agency runs all of these steps for you." },
     { q: "How much does it cost to acquire an agency client with Meta ads?", a: "In our accounts a qualified booked call for a $3,000–$5,000 monthly retainer usually costs $95–$160. At a 25% close rate that is roughly $380–$640 in ad spend per signed retainer. Your numbers depend on offer, niche and proof; the CAC calculator on this site lets you model them." },
     { q: "Should an agency use LinkedIn or Meta ads to get clients?", a: "For agencies that sell to owner-led small and mid-size businesses, Meta usually books calls at a lower cost because the audience is larger and CPMs are lower. LinkedIn can make sense for agencies that only sell to enterprise marketing teams with large deal sizes." },
   ],
@@ -397,12 +397,29 @@ export const speedToLeadDeepDive: DeepDiveContent = {
 export const leadGenAgencyDeepDive: DeepDiveContent = {
   intro: {
     eyebrow: "Done-for-you",
-    title: "What a done-for-you lead generation agency includes",
+    title: "What a customer acquisition agency does (and what it includes)",
     paragraphs: [
       "A done-for-you lead generation agency builds and runs the whole path from ad to booked sales call, so your team only takes calls. With QualifiedLeadsX that means offer positioning, Meta ads and creative, a 3 to 5 page funnel, AI follow-up in under 5 minutes, qualification, CRM and calendar booking. You own every asset, and engagements carry a 90-day written guarantee.",
     ],
   },
   sections: [
+    {
+      eyebrow: "Definition",
+      title: "Customer acquisition agency vs lead generation agency",
+      lead: "A customer acquisition agency (also called a client acquisition agency) is accountable for paying clients, not just contacts. A lead generation agency usually stops at the lead. The difference shows up in what each one builds and what it reports on:",
+      items: [],
+      table: {
+        head: ["", "Lead generation agency", "Customer acquisition agency"],
+        rows: [
+          ["Delivers", "Leads (names, emails, form fills)", "Qualified sales calls and closed clients"],
+          ["Scope", "Ads and a landing page", "Offer, ads, funnel, qualification, follow-up and booking"],
+          ["Main metric", "Cost per lead", "Cost per booked call and customer acquisition cost (CAC)"],
+          ["Follow-up", "Usually your team's job", "Built in: fast first contact, nurture and reminders"],
+          ["Who owns the assets", "Varies", "With QualifiedLeadsX, you own the ad account, funnel and CRM"],
+        ],
+      },
+      note: "Model your own numbers with the [CAC calculator](/tools/cac-calculator) and the [cost per booked call calculator](/tools/cost-per-booked-call-calculator).",
+    },
     {
       eyebrow: "How to choose",
       title: "How to choose a lead generation agency",
@@ -424,6 +441,8 @@ export const leadGenAgencyDeepDive: DeepDiveContent = {
     },
   ],
   faqs: [
+    { q: "What is a customer acquisition agency?", a: "A customer acquisition agency (or client acquisition agency) is responsible for the whole path from ad to paying client: offer positioning, paid ads, the funnel, lead qualification, fast follow-up and booking sales calls. A traditional ad or lead generation agency usually stops at the click or the lead. QualifiedLeadsX runs the full path for high-ticket B2B firms, coaches and agencies and reports on cost per booked call and cost per client, not just cost per lead." },
+    { q: "What is the difference between a customer acquisition agency and a lead generation agency?", a: "A lead generation agency is measured on leads. A customer acquisition agency is measured on booked calls and new clients, so it also builds the qualification and follow-up that turn leads into sales conversations. If your team already converts leads well, a lead generation agency can be enough; if leads go cold or calls don't show, you need the full acquisition system." },
     { q: "Is a lead generation agency worth it?", a: "It is worth it when the agency is measured on booked calls and clients, you own the assets, and your offer already sells. Compare the agency fee plus ad spend with the cost per client it produces and the lifetime value of that client." },
   ],
 };

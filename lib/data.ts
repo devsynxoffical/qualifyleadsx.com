@@ -267,7 +267,7 @@ export const faqs: {
     category: "The System",
   },
   {
-    q: "What does a customer acquisition agency do?",
+    q: "What does QualifiedLeadsX do?",
     a: "A customer (or client) acquisition agency builds and runs the whole system that turns strangers into paying clients: offer positioning, paid ads, the funnel, lead qualification, fast follow-up and booking sales calls. QualifiedLeadsX is a done-for-you client acquisition agency for high-ticket B2B offers, coaches and agencies; you keep ownership of the ad account, funnel, CRM and data.",
     category: "The System",
   },

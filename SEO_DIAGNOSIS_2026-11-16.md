@@ -122,7 +122,7 @@ Evidence-led: only the head-term cluster that GSC shows is split.
 | `/lead-generation-agency` | The single owner of "customer acquisition agency". Title: **"Customer Acquisition Agency for High-Ticket B2B: Done-for-You"**. H1 changed to match (it said "Lead Generation Agency"). New section "Customer acquisition agency vs lead generation agency" with a comparison table. New FAQs: "What is a customer acquisition agency?" and "…vs lead generation agency". | The site nav, footer and related links already send "Customer Acquisition Agency" anchors here. The SERP shows the guide-style intent (definition, vs, how to choose). |
 | `/for/agencies` | Removed the generic "What is a customer acquisition agency?" FAQ (replaced with "How do marketing agencies get clients without referrals?"). Intro heading changed to "How marketing agencies win retainer clients predictably". In-text "customer acquisition agency" link now points to `/lead-generation-agency`, not `/`. | This page was getting the head term at 76–84 because it answered the generic definition. |
 
-Verified in the build: titles, H1, the FAQPage JSON-LD (1 per page), 0 missing required schema properties, and no raw markdown in FAQ answers. Live deploy check: DEPLOY_STATUS.
+Verified in the build: titles, H1, the FAQPage JSON-LD (1 per page), 0 missing required schema properties, and no raw markdown in FAQ answers. Live deploy check: verified on the live site 16 Nov (new titles, H1 and the comparison section are served). Google was asked to recrawl all 3 URLs (Indexing API: 3 accepted).
 
 Not changed, on purpose:
 - Other page titles: no evidence that they're wrong.

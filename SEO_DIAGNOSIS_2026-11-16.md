@@ -94,7 +94,34 @@ Long-tail, specific comparison pages rank. Head terms don't. That pattern is wha
 
 ## 4. Indexing
 
-INDEXING_SECTION
+**[verified]** URL Inspection API, all 117 sitemap URLs, run on 16 Nov:
+
+| Status | URLs |
+|---|---|
+| Submitted and indexed | **97** |
+| Discovered, currently not indexed | 11 |
+| URL is unknown to Google | 7 |
+| Crawled, currently not indexed | 2 |
+
+- **Canonicals:** Google's chosen canonical matches the declared one on every indexed URL (0 mismatches).
+- **Discovered, not indexed (11):** Google knows about these but hasn't crawled them yet, which is typical crawl budget for a new, unlinked domain:
+  - /appointment-setting-for-coaches, /appointment-setting-for-saas
+  - /benchmarks/meta-ads-cpm
+  - /compare/done-for-you-vs-done-with-you-lead-generation, /compare/meta-ads-vs-google-ads-high-ticket
+  - /crm-automation
+  - /for/home-improvement, /for/law-firms
+  - /meta-ads-for-course-creators, /meta-ads-for-law-firms, /meta-ads-for-real-estate-investors
+- **Unknown to Google (7):** mostly pages added in the last few days:
+  - /blog/scaling-from-100k-to-500k-coaching
+  - 3 case studies: b2b-technology-agency-71k, executive-consulting-150k, strategic-consulting-85k
+  - /for/financial-advisors
+  - /tools/ltv-cac-calculator, /tools/roas-calculator
+- **Crawled, not indexed (2):**
+  - /blog/how-to-qualify-leads (crawled 7 Nov): it had 2 impressions at position 4.5 earlier, so it was dropped from the index after a rewrite.
+  - /tools/lead-conversion-rate-calculator (crawled 15 Nov, launched 14 Nov).
+- **Indexed but invisible:** 30 of the 97 indexed URLs have had zero impressions.
+
+Conclusion: indexing is **not** the main bottleneck. 83% of URLs are indexed. Indexed pages get no traffic because they rank too low, which is an authority problem. The not-indexed group is mostly programmatic service-by-industry pages and pages days old, which matches root causes #1 and #5.
 
 ---
 
@@ -165,7 +192,7 @@ Not changed, on purpose:
 | "high ticket lead generation" | /blog pos 75 | /high-ticket-lead-generation, pos < 50 |
 | Referring domains (Bing) | 0 | 15 |
 | Bing indexed URLs | 68 | 100 |
-| Google indexed (URL Inspection) | INDEXED_COUNT | 105 |
+| Google indexed (URL Inspection) | 97 / 117 | 105 |
 | Lighthouse mobile perf (home / LGA) | 41 / 62 | 70 / 80 |
 
 Re-pull with `scratchpad/gsc/gsc.mjs` using the same dimensions. Compare 28-day windows, not 3-month windows, until February.

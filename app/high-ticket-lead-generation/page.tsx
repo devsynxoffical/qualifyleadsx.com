@@ -24,15 +24,16 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { highTicketDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "High Ticket Lead Generation Agency for $3K–$25K Offers",
+  title: "High Ticket Lead Generation: 30–50 Booked Calls Monthly",
   description:
-    "Done-for-you high ticket lead generation for consultants, coaches, and agencies. Get 30–50 pre-sold, qualified sales calls monthly with verified proof.",
+    "Done-for-you high ticket lead generation for consultants, coaches, and agencies. Book 30–50 pre-sold, qualified sales calls monthly with verified $150M+ proof.",
   keywords: [
     "high ticket lead generation",
+    "customer acquisition systems",
     "high ticket client acquisition",
     "high ticket sales funnel",
     "b2b high ticket lead generation",
-    "lead qualification funnel",
+    "qualified lead generation services",
     "meta ads for high ticket",
   ],
   alternates: {
@@ -40,9 +41,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "High Ticket Lead Generation for $3K–$25K Offers",
+    title: "High Ticket Lead Generation: 30–50 Booked Calls Monthly",
     description:
-      "Done-for-you high ticket lead generation for consultants, coaches, and agencies. 30–50 qualified calls monthly.",
+      "Done-for-you high ticket lead generation for consultants, coaches, and agencies. 30–50 qualified calls monthly with verified proof.",
     url: `${site.url}/high-ticket-lead-generation`,
     type: "website",
   },
@@ -77,8 +78,12 @@ const pillars = [
 
 const faqs = [
   {
-    q: "What defines high ticket lead generation?",
-    a: "High ticket lead generation is client acquisition engineered specifically for offers priced between $3,000 and $25,000+. Unlike mass-volume lead gen, it prioritizes prospect qualification, positioning authority, and pre-call conviction so sales teams only speak with ready-to-invest decision-makers.",
+    q: "What defines high ticket lead generation and customer acquisition systems?",
+    a: "High ticket lead generation is client acquisition engineered specifically for offers priced between $3,000 and $25,000+. Unlike mass-volume consumer lead gen, our customer acquisition systems prioritize strict prospect qualification, positioning authority, and pre-call conviction so sales teams only speak with ready-to-invest decision-makers.",
+  },
+  {
+    q: "How do your customer acquisition systems filter out tire-kickers?",
+    a: "We embed multi-tier conditional logic surveys before prospects can access your calendar. Applicants must verify company revenue ($1M+ ARR or $5K+ liquid capital), operational bottlenecks, and implementation timelines. Anyone who fails budget criteria is routed to video nurture rather than wasting your closer's calendar time.",
   },
   {
     q: "Why do low-ticket lead generation tactics fail for high-ticket offers?",

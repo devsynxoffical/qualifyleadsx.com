@@ -21,11 +21,13 @@ import {
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Cost Per Booked Call Benchmarks 2026 - QualifiedLeadsX",
+  title: "Cost Per Booked Call & Qualified Meeting Benchmarks [2026]",
   description:
-    "Verified 2026 cost per booked call benchmarks by offer size ($3K to $25K) from $50M+ in managed Meta ad spend. Compare your acquisition costs today.",
+    "Verified 2026 cost per booked call and cost per qualified meeting benchmarks across $3K–$25K tiers from $50M+ in ad spend. Compare acquisition costs.",
   keywords: [
+    "cost per qualified meeting",
     "cost per booked call",
+    "b2b cost per meeting benchmark",
     "cost per call benchmarks",
     "b2b cost per booked call",
     "high ticket cost per call",
@@ -37,9 +39,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Cost Per Booked Call Benchmarks 2026 - QualifiedLeadsX",
+    title: "Cost Per Booked Call & Qualified Meeting Benchmarks [2026]",
     description:
-      "Verified 2026 cost per booked call data across $3K, $5K, $10K, and $25K offer tiers based on $50M+ in managed Meta ad spend.",
+      "Verified 2026 cost per booked call and cost per qualified meeting data across $3K–$25K offer tiers based on $50M+ in managed ad spend.",
     url: `${site.url}/benchmarks/cost-per-booked-call`,
     type: "website",
   },
@@ -81,6 +83,10 @@ const tierBenchmarks = [
 ];
 
 const faqs = [
+  {
+    q: "What is the average cost per qualified meeting in B2B and high-ticket sales?",
+    a: "In 2026, the average cost per qualified meeting ranges between $120 and $250 for high-ticket service contracts ($5K to $50K). Unlike raw cost-per-lead (CPL) which averages $25–$65 on Meta, a qualified meeting accounts for strict budget qualification ($1M+ ARR or liquid funds), decision authority, and confirmed calendar attendance.",
+  },
   {
     q: "What is an acceptable cost per booked call in 2026?",
     a: "Across more than $50M+ in managed Meta ad spend, the 2026 average cost per qualified booked call for high-ticket offers ($3,000–$25,000) ranges between $90 and $180. Cost per call varies by offer tier: $3,000 offers average $95–$130, $5,000 offers average $120–$160, and $10,000+ enterprise consulting offers average $180–$280 per attended call.",

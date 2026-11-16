@@ -11,17 +11,25 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { realEstateInvestorsDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Real Estate Investor Leads: Motivated Seller Leads",
+  title: "Buy Motivated Seller Leads: Off-Market Real Estate Deals",
   description:
-    "High-equity off-market real estate investor leads and motivated seller contracts. Hyper-targeted Meta ads, instant phone triage, and verified deal spreads.",
+    "Stop buying recycled shared lists. Generate exclusive motivated seller leads and high-equity purchase contracts. Sub-90s triage and $32K+ average deal spreads.",
+  keywords: [
+    "buy motivated seller leads",
+    "real estate investor leads",
+    "off market property leads",
+    "motivated seller leads for wholesalers",
+    "direct to seller marketing",
+    "real estate acquisition funnel",
+  ],
   alternates: {
     canonical: `${site.url}/for/real-estate-investors`,
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Real Estate Investor Leads: Motivated Seller Leads",
+    title: "Buy Motivated Seller Leads: Off-Market Real Estate Deals",
     description:
-      "Off-market real estate investor leads and motivated seller contracts. Hyper-targeted Meta ads and instant phone triage.",
+      "Stop buying recycled shared lists. Generate exclusive off-market motivated seller leads and high-equity contracts. Sub-90s triage and $32K+ average spreads.",
     url: `${site.url}/for/real-estate-investors`,
     siteName: site.name,
     type: "website",
@@ -29,6 +37,10 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
+  {
+    q: "Why should real estate investors stop buying shared motivated seller leads?",
+    a: "Third-party lead vendors resell the exact same 'motivated seller' lists to 10–25 competing wholesalers and flippers simultaneously. By the time you call, the distressed homeowner has been spammed with dozen aggressive offers. Our proprietary inbound acquisition engine builds your own brand-owned pipeline where 100% of motivated seller inquiries are exclusive to your acquisitions team.",
+  },
   {
     q: "How do you generate motivated seller leads on Meta without getting flagged?",
     a: "Meta classifies housing under Housing Special Ad Category (HEC). We comply fully by using compliant copy focusing on speed, cash convenience, and solving distressed situations (probate, deferred maintenance, landlord fatigue) paired with algorithmic audience self-selection.",
@@ -104,7 +116,7 @@ export default function RealEstateInvestorsPage() {
               Off-Market Acquisitions & Private Equity
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-paper mt-3 mb-6">
-              Real Estate Investor Leads
+              Buy Motivated Seller Leads &amp; Off-Market Contracts
             </h1>
 
             {/* AEO Direct Answer */}
@@ -113,8 +125,56 @@ export default function RealEstateInvestorsPage() {
                 Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
-                To generate <strong>off-market real estate investor leads and motivated seller contracts</strong>, we deploy compliant Meta ad funnels paired with sub-90-second phone triage. This filters for high equity, urgent timelines (probate, foreclosure, major repairs), and books qualified acquisition calls at $180–$350 per call.
+                Rather than buying recycled shared lists from third-party lead brokers, we engineer a <strong>done-for-you acquisition machine to buy and generate exclusive motivated seller leads</strong> directly from Meta and paid social. Paired with sub-90-second phone triage, our system filters for high home equity, urgent timelines (probate, foreclosure, tax liens, landlord fatigue), and books sales-ready acquisition discovery calls at $180–$350 per qualified call.
               </p>
+            </div>
+
+            {/* Shared Lists vs Exclusive Acquisition Comparison */}
+            <div className="my-10 rounded-2xl border border-line bg-paper/[0.02] p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-paper mb-4">
+                Why Buying Shared Lists Fails vs. Proprietary Direct-to-Seller Funnels
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div className="rounded-xl border border-red-500/20 bg-red-500/[0.03] p-5">
+                  <div className="text-red-400 font-mono text-xs uppercase tracking-wider font-bold mb-2">
+                    Traditional &quot;Buy Leads&quot; Broker Model
+                  </div>
+                  <ul className="space-y-2 text-sm text-fog/80">
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 font-bold shrink-0">✕</span>
+                      <span>Resold to 10–25 competing local wholesalers simultaneously</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 font-bold shrink-0">✕</span>
+                      <span>85%+ phone dial fatigue; angry homeowners bombarded by calls</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 font-bold shrink-0">✕</span>
+                      <span>Compressed deal margins and race-to-the-bottom assignment fees</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="rounded-xl border border-lime/30 bg-lime/[0.04] p-5">
+                  <div className="text-lime font-mono text-xs uppercase tracking-wider font-bold mb-2">
+                    QualifiedLeadsX™ Dedicated Pipeline
+                  </div>
+                  <ul className="space-y-2 text-sm text-paper">
+                    <li className="flex items-start gap-2">
+                      <span className="text-lime font-bold shrink-0">✓</span>
+                      <span>100% exclusive inbound inquiries; zero competing investors</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-lime font-bold shrink-0">✓</span>
+                      <span>Sub-90s automated phone &amp; SMS triage while seller is at peak intent</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-lime font-bold shrink-0">✓</span>
+                      <span>Average wholesale assignment spread of $32,000+ per closed contract</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">

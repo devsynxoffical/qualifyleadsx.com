@@ -20,17 +20,21 @@ import {
   PhoneCall,
 } from "lucide-react";
 import { ProofStack } from "@/components/sections/ProofStack";
+import { DeepDive } from "@/components/sections/DeepDive";
+import { b2bLeadGenDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "B2B Lead Generation Agency for Service Contracts",
+  title: "Qualified B2B Leads: Enterprise Lead Generation Services",
   description:
-    "Premier B2B lead generation agency building outbound and paid acquisition funnels. Book 30–50 qualified commercial sales appointments every month.",
+    "Generate qualified B2B leads and high-ticket service contracts ($10K–$100K+). Algorithmic Meta ads, 12-min VSL pre-selling, and sub-5-minute appointment setting.",
   keywords: [
-    "b2b lead generation agency",
+    "qualified b2b leads",
     "b2b lead generation services",
+    "b2b lead generation agency",
+    "customer acquisition agency",
+    "commercial lead generation",
     "b2b sales pipeline agency",
     "b2b appointment setting",
-    "commercial lead generation",
     "b2b client acquisition agency",
   ],
   alternates: {
@@ -38,7 +42,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "B2B Lead Generation Agency for Service Contracts",
+    title: "Qualified B2B Leads: Enterprise Lead Generation Services",
     description:
       "Premier B2B lead generation agency building outbound and paid acquisition funnels. Book 30–50 qualified appointments monthly.",
     url: `${site.url}/b2b-lead-generation`,
@@ -74,6 +78,7 @@ const capabilities = [
 ];
 
 const faqs = [
+  ...b2bLeadGenDeepDive.faqs,
   {
     q: "What does a specialized B2B lead generation agency do?",
     a: "A specialized B2B lead generation agency installs scalable commercial acquisition systems that consistently book qualified corporate decision-makers onto sales calendars. Unlike mass spam email agencies, QualifiedLeadsX combines algorithmic Meta Ads media buying, 12-minute executive VSL funnels, and sub-5-minute appointment setting to generate high-contract B2B appointments ($5,000–$50,000+).",
@@ -183,6 +188,9 @@ export default function B2bLeadGenAgencyPage() {
           </div>
         </div>
       </section>
+
+      {/* In-Depth Commercial Strategy & Buying Committee Deep Dive */}
+      <DeepDive content={b2bLeadGenDeepDive} />
 
       {/* Capabilities Grid */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/30">

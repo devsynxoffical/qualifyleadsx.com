@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 // The calculator page is a client component and cannot export metadata, so it
 // lives here. Without this file the page inherited the homepage's title and
 // canonical ("/"), telling Google it was a duplicate of the homepage.
-const TITLE = "CAC Calculator for High-Ticket Offers";
+const TITLE = "B2B CAC Calculator & Acquisition Benchmarks";
 const DESCRIPTION =
-  "Free customer acquisition cost (CAC) calculator for high-ticket offers. Enter ad spend, team and tool costs to get blended CAC, payback and margin.";
+  "Free B2B customer acquisition cost (CAC) calculator and benchmark models. Enter ad spend, team and tool costs to calculate blended CAC, payback, and profit margin.";
 
 export const metadata: Metadata = {
   title: { absolute: `${TITLE} | QualifiedLeadsX` },

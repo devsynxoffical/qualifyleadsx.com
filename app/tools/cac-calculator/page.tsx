@@ -44,6 +44,10 @@ export default function CacCalculatorPage() {
       a: "In high-ticket client acquisition ($3,000 to $10,000+ offers), an acceptable blended CAC is generally 15% to 25% of your front-end contract value. For example, spending $750 to acquire a $5,000 client yields an extraordinary 6.6x return.",
     },
     {
+      q: "What is the benchmark CAC for B2B companies in 2026?",
+      a: "For B2B service firms and commercial consultancies ($5K to $50K contract sizes), a healthy benchmark CAC is 15% to 25% of annual contract value (ACV). B2B professional services average $750–$1,800 CAC, B2B SaaS averages $1,200–$3,500 CAC, and high-ticket B2B agencies average $600–$1,400 per retained client.",
+    },
+    {
       q: "What is the difference between Pure Media CAC and Blended CAC?",
       a: "Pure Media CAC only measures ad spend per closed client (Ad Spend / Customers). Blended CAC (Fully-Loaded) includes appointment setter salaries, closer commissions, and CRM software, giving you a complete picture of net margins.",
     },

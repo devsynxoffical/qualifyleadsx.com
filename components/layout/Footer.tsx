@@ -71,6 +71,7 @@ const footerColumns = [
     links: [
       { label: "125+ Verified Case Studies", href: "/case-studies" },
       { label: "Verified on Clutch.co", href: "https://clutch.co/profile/qualifiedleadsx" },
+      { label: "Crunchbase Organization", href: "https://www.crunchbase.com/organization/qualifiedleadsx" },
       { label: "$846K B2B Agency Case", href: "/case-studies/b2b-agency-scaling-846k" },
       { label: "$639K Med Spa Case", href: "/case-studies/med-spa-marketing-agency-639k" },
       { label: "$203K Coaching Case", href: "/case-studies/high-ticket-coaching-203k" },

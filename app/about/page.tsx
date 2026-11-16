@@ -562,6 +562,14 @@ export default function AboutPage() {
                   Clutch.co Verified Profile
                 </a>
                 <a
+                  href="https://www.crunchbase.com/organization/qualifiedleadsx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lime hover:underline block mb-1 transition-colors"
+                >
+                  Crunchbase Organization
+                </a>
+                <a
                   href="https://www.youtube.com/@QualifiedLeadsX"
                   target="_blank"
                   rel="noopener noreferrer"

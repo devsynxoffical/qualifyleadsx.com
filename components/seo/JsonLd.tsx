@@ -90,6 +90,7 @@ export function JsonLd() {
     ],
     sameAs: [
       "https://clutch.co/profile/qualifiedleadsx",
+      "https://www.crunchbase.com/organization/qualifiedleadsx",
       "https://www.facebook.com/qualifiedleadsx/",
       "https://www.instagram.com/qualifiedleadsx/",
       "https://www.youtube.com/@QualifiedLeadsX",

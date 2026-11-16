@@ -38,7 +38,7 @@ Symptoms (what you see) are kept separate from causes (why it happens).
 
 | # | Root cause | Evidence | Impact | Fixable in code? |
 |---|---|---|---|---|
-| 1 | **No authority: no backlinks and no brand demand** | Bing `GetLinkCounts` lists 0 external linking pages. GSC shows 0 queries containing "qualifiedleadsx" in 24 days. A web search for "qualifiedleadsx" doesn't return the site. Google's own backlink report could not be read (the API has no backlinks endpoint), and the third-party backlink tool (OpenSEO) had 2 credits, so no data. | Very high: caps every commercial ranking at page 5–10 | No, needs off-site work |
+| 1 | **No authority: no backlinks and no brand demand** | Bing `GetLinkCounts` lists 0 external linking pages. GSC shows 0 queries containing "qualifiedleadsx" in 24 days. A web search for "qualifiedleadsx" doesn't return the site. Google's own backlink report could not be read (the API has no backlinks endpoint). OpenSEO competitor data is in section 5: competitors have 877–4,950 referring domains. | Very high: caps every commercial ranking at page 5–10 | No, needs off-site work |
 | 2 | **Site and domain age: Google is still testing positions** | Data starts 19 Oct. Impressions jumped 4x after 8 Nov. Positions move 30+ places week to week. | High, fades with time | No |
 | 3 | **Head terms split across 2–3 pages (cannibalisation)** | "customer acquisition agency" (31 impressions, the biggest query): Google ranks `/for/agencies` at 76–84, but the homepage and `/lead-generation-agency` both had the term in their titles. `/for/agencies` had a "What is a customer acquisition agency?" FAQ and a "What a client acquisition agency does" heading, and linked the term to `/`. "qualified lead generation services": homepage at 81, `/lead-generation-agency` at 90, `/for/b2b-services` at 94. "high ticket lead generation": `/blog` hub at 75, the service page at 69, the blog post at 84. | High for the money terms | **Yes, fixed today (section 6)** |
 | 4 | **Search intent mismatch on head terms** | The live top results for "customer acquisition agency" and "qualified lead generation services" are guides and listicles ("What they do & how to choose", "10 best … 2026") from clicksgeek, revnew, ninjapromo, belkins, callbox and singlegrain. The site answers them with sales pages. | Medium-high | Partly: definition and comparison content added to the owner page |
@@ -137,6 +137,26 @@ Conclusion: indexing is **not** the main bottleneck. 83% of URLs are indexed. In
 
 **[verified]** Directory and review profiles (Clutch, G2, DesignRush) rank directly for the commercial terms and also pass links. QualifiedLeadsX has none that this check could find.
 
+### Backlink gap (OpenSEO / DataForSEO, pulled 16 Nov, scope: domain + subdomains)
+
+| Domain | Referring domains | Backlinks | Domain rank | Ranks for |
+|---|---|---|---|---|
+| ninjapromo.io | 4,950 | 19,895 | 46 | customer acquisition agency (listicle) |
+| martal.ca | 4,709 | 31,583 | 50 | customer acquisition agency |
+| belkins.io | 3,226 | 18,439 | 50 | appointment setting agencies |
+| revnew.com | 877 | 2,493 | 35 | customer acquisition agency guide |
+| **qualifiedleadsx.com** | **not measured** (OpenSEO ran out of credits; Bing `GetLinkCounts` = 0 linking pages) | – | – | – |
+
+- **[verified]** Even the weakest competitor on the page for "customer acquisition agency" (revnew) has **877 referring domains**. The gap is two to three orders of magnitude, which explains positions 76–84 better than any on-page factor.
+- **[verified]** Their top referring domains are mostly **statistics and "best tools/agencies" aggregator sites**:
+  - Statistics roundups: worldmetrics.org, zipdo.co, statpit.com, gaugius.com, wifitalents.com.
+  - Agency and tool lists: oppalerts.com, alternative.to, prospeo.io, outboundagencyindex.com.
+  - These sites cite pages with original numbers.
+- **The QualifiedLeadsX equivalent:**
+  - The pages with its own numbers are `/benchmarks/*`: cost per booked call, show rate, close rate and Meta CPM.
+  - Pitching those to statistics roundups is the most direct link route available. This adds a P0 task to section 7.
+- **Not measured:** QualifiedLeadsX's own referring domains in DataForSEO, clicksgeek.com and stealthagents.com (the credits ran out after ~118 credits per domain). Re-run when credits are added: `get_backlinks_overview` for those 3 targets.
+
 ---
 
 ## 6. Fixes implemented today (commit `eec85d4`, pushed to `main`)
@@ -165,6 +185,7 @@ Not changed, on purpose:
 | P0 | **Freeze metadata and URL changes on core pages until 14 Dec.** One person merges SEO changes, with one dated log entry per change. | Team | `/`, `/lead-generation-agency`, `/high-ticket-lead-generation`, `/appointment-setting`, `/for/*` | Each change can be traced to a GSC movement |
 | P0 | **Earn the first 10–20 referring domains**: Clutch, G2, DesignRush, GoodFirms, Sortlist profiles with real client reviews; founder guest posts or podcasts (Gaurav Kapoor); the case-study clients linking back; the sister sites already owned (contractorleads.us, funnelsthatprint.com, etc.) linking only where the link is relevant. | Founder / ops | `/`, `/lead-generation-agency`, case studies | Referring domains (Bing Webmaster `GetLinkCounts`, GSC Links report): 0 → 15 by 31 Dec |
 | P0 | **Build brand demand**: put "QualifiedLeadsX" in YouTube, LinkedIn and Instagram bios and video titles; keep the Business Profile active (posts weekly) | Marketing | Brand | Brand queries in GSC: 0 → ≥30 impressions a month by Jan |
+| P0 | Pitch `/benchmarks/*` original numbers to statistics roundups (worldmetrics, zipdo, statpit, gaugius, wifitalents): the same sites that link to belkins, martal and ninjapromo | Founder / marketing | /benchmarks/cost-per-booked-call, /benchmarks/show-rate, /benchmarks/close-rate, /benchmarks/meta-ads-cpm | Referring domains to /benchmarks/* |
 | P1 | Get onto the listicles that rank for "customer acquisition agency" and "qualified lead generation services": pitch the publishers (clicksgeek, ninjapromo, designrush lists) | Founder | Those SERPs | Count of listicle mentions |
 | P1 | Watch the head-term consolidation | SEO | "customer acquisition agency" → `/lead-generation-agency` | Ranking URL switches from /for/agencies to /lead-generation-agency within 4 weeks; position under 50 by 31 Dec |
 | P1 | Consolidate "high ticket lead generation": add a strong link from the `/blog` hub intro to `/high-ticket-lead-generation` **only if** `/blog` still outranks the service page on 30 Nov | SEO | /blog, /high-ticket-lead-generation | The service page becomes the ranking URL |

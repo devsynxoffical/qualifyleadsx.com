@@ -1000,3 +1000,95 @@ export const appointmentSettingSaasDeepDive: DeepDiveContent = {
     { q: "Should SaaS companies book demos for every sign-up?", a: "No. Book demos for accounts that match your ideal customer profile and send everyone else to self-serve onboarding. Demos for poor-fit accounts waste account executive time and lower close rates." },
   ],
 };
+
+export const b2bLeadGenDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Qualified B2B Lead Generation Services",
+    title: "Engineering predictable commercial deal flow for high-ticket service contracts",
+    paragraphs: [
+      "Most B2B lead generation relies on buying scraped email lists and firing automated cold sequences that burn domain reputations and yield a 1% reply rate. For professional service firms selling $10,000 to $100,000+ contracts, cold spam damages enterprise positioning before the first conversation begins.",
+      "QualifiedLeadsX installs an inbound direct-response acquisition engine built on algorithmic Meta Ads, 12-minute executive VSL assets, and sub-5-minute phone triage. By pre-selling corporate decision-makers before they book, our clients consistently generate 30 to 50 qualified B2B appointments each month with 85%+ calendar attendance rates.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Buying Committee",
+      title: "How we pre-frame the multi-stakeholder enterprise buying committee",
+      items: [
+        {
+          title: "Economic Buyer Alignment (CFO & CEO)",
+          text: "Enterprise purchasing requires financial justification. Our 12-minute VSL assets present clear CAC payback mathematics, unit economics, and risk-reversal guarantees that allow operational champions to easily secure internal budget approval.",
+        },
+        {
+          title: "Operational Pain Articulation (VP & Department Heads)",
+          text: "We target the specific workflow friction keeping department heads from hitting quarterly targets, positioning your service as the proprietary mechanism to solve capacity constraints.",
+        },
+        {
+          title: "Pre-Call Educational Indoctrination",
+          text: "Between application submission and the scheduled strategy session, prospects receive automated WhatsApp and email video case studies, eliminating basic introductory friction and starting calls directly at commercial scope alignment.",
+        },
+      ],
+      note: "Compare acquisition economics: [Cold outreach vs paid traffic for high-ticket B2B](/blog/cold-outreach-vs-paid-traffic-high-ticket-b2b) and [B2B CAC benchmarks 2026](/blog/b2b-client-acquisition-cost-cac-benchmarks-2026).",
+    },
+    {
+      eyebrow: "Lead Qualification",
+      title: "4-Tier commercial qualification filters that protect executive time",
+      items: [
+        {
+          title: "Fiscal Capital Verification",
+          text: "Conditional intake logic requires applicants to specify gross annual revenue and dedicated capital allocation ($10K+ minimum for commercial service retainers).",
+        },
+        {
+          title: "Decision Authority Gating",
+          text: "Junior researchers, students, and unfunded entities are filtered out before reaching your calendar, ensuring sales executives only speak with equity owners or C-level officers.",
+        },
+        {
+          title: "Implementation Urgency Criteria",
+          text: "Prospects must confirm an active project timeline (under 30 to 60 days). Long-term exploratory inquiries are routed to email nurture rather than live sales calendars.",
+        },
+        {
+          title: "Sub-5-Minute Multichannel Dispatch",
+          text: "When a qualified commercial prospect submits an inquiry, automated SMS, WhatsApp, and phone setters reach out within 180 seconds while intent is at its peak.",
+        },
+      ],
+      note: "Explore our automated screening methodology: [High-ticket lead qualification framework](/blog/how-to-qualify-leads) and [appointment setting services](/appointment-setting).",
+    },
+    {
+      eyebrow: "Verified Proof",
+      title: "Commercial outcomes from B2B companies using our acquisition engine",
+      items: [
+        {
+          title: "$846,000 In B2B Agency Retainers",
+          text: "235 high-ticket commercial clients closed in a single scaling sprint using our broad Meta media buying and automated setter system ([view case study](/case-studies/b2b-agency-scaling-846k)).",
+        },
+        {
+          title: "$150,348 Executive Advisory Pipeline",
+          text: "High-ticket consultancy scaling commercial advisory packages with zero reliance on cold calling or referral plateaus ([view case study](/case-studies/executive-consulting-150k)).",
+        },
+        {
+          title: "$71,934 In 24 Days for B2B Tech Agency",
+          text: "Narrowed ICP targeting and automated booking infrastructure that delivered 320 new accounts at 88%+ show rates ([view case study](/case-studies/b2b-technology-agency-71k)).",
+        },
+      ],
+      note: "Review 125+ verified breakdowns: [explore all case studies](/case-studies) or inspect [B2B ROAS benchmarks](/blog/b2b-roas-benchmarks-qualified-appointment-generation).",
+    },
+  ],
+  faqs: [
+    {
+      q: "What are qualified B2B leads?",
+      a: "Qualified B2B leads are corporate decision-makers (CEOs, founders, VPs, or partners) who have verified buying authority, an active business bottleneck, liquid budget ($5,000 to $50,000+), and a confirmed timeline to purchase within the current quarter. Unlike raw contact lists, qualified leads have watched a pre-selling asset and actively booked a consultation.",
+    },
+    {
+      q: "Why do B2B companies choose paid social over cold email in 2026?",
+      a: "Google and Yahoo deliverability updates (DMARC, spam rate thresholds under 0.3%) have severely disrupted mass cold email. Meta Ads offer broad algorithmic targeting at $25–$45 CPMs, reaching decision-makers during high-intent visual attention and driving inbound inquiries with zero domain blacklisting risk.",
+    },
+    {
+      q: "What contract sizes does this B2B lead generation engine best support?",
+      a: "Our system is optimized for high-ticket commercial services with customer lifetime values (LTV) ranging between $10,000 and $100,000+, including IT MSPs, management consultancies, corporate recruitment, and specialized marketing agencies.",
+    },
+    {
+      q: "How does the 90-day double revenue guarantee work for B2B services?",
+      a: "If we do not meet agreed qualified sales call milestones within your first 90 days, we continue running your media buying, ad creative testing, and appointment setting at zero agency management fee until the target is achieved.",
+    },
+  ],
+};

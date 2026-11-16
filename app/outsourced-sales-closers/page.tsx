@@ -30,6 +30,10 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
+    q: "How do your outsourced closers compare to marketplace networks like Closer Nation?",
+    a: "Unlike open sales placement networks (such as Closer Nation or freelance talent boards) that simply match unvetted closers with minimal oversight, QualifiedLeadsX integrates vetted sales closers directly into your end-to-end client acquisition system. Closers are embedded into your CRM, synchronized with sub-5-minute appointment setters, and audited weekly against our 12-point high-ticket closing rubric to maintain consistent 25%+ close rates.",
+  },
+  {
     q: "How are your outsourced sales closers vetted and trained?",
     a: "Every closer undergoes a 3-stage vetting process: past track record verification (minimum $500K closed revenue), live simulated objection handling roleplay, and product mastery on your exact high-ticket offer.",
   },

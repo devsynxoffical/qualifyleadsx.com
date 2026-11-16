@@ -30,11 +30,14 @@ import { trainingVideos, testimonialVideos } from "@/lib/media";
 import { isoDuration, imageObject, hostedVideo, WEBSITE_ID, ORG_ID } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Client & Customer Acquisition Agency for High-Ticket B2B",
+  title: "Customer Acquisition Agency for High-Ticket B2B",
   description:
     "Done-for-you customer acquisition agency for high-ticket B2B, coaches and agencies: Meta ads, funnels and AI follow-up that book 30-50 qualified calls.",
   keywords: [
+    "customer acquisition agency",
+    "customer acquisition systems",
     "lead generation agency",
+    "qualified lead generation services",
     "high ticket sales",
     "b2b lead generation",
     "appointment setting",

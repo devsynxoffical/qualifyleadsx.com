@@ -24,14 +24,17 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { leadGenAgencyDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Qualified Lead Generation Services: Done-for-You Agency",
+  title: "Customer Acquisition Agency: Done-for-You Lead Gen",
   description:
-    "Done-for-you lead generation agency: VSL funnels, Meta ads and AI appointment setting that deliver qualified sales calls, with a 90-day written guarantee.",
+    "Premier customer acquisition agency installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. Book 30–50 qualified sales calls with 90-day guarantee.",
   keywords: [
+    "customer acquisition agency",
+    "customer acquisition systems",
+    "qualified lead generation services",
     "lead generation agency",
     "b2b lead generation agency",
     "high ticket lead generation agency",
-    "lead generation company",
+    "done for you lead generation agency",
     "appointment setting agency",
     "client acquisition agency",
   ],
@@ -40,9 +43,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Done-for-You Lead Generation Agency: How It Works",
+    title: "Customer Acquisition Agency: Done-for-You Lead Gen",
     description:
-      "Premier lead generation agency installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. 30–50 qualified calls monthly.",
+      "Premier customer acquisition agency installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. 30–50 qualified calls monthly.",
     url: `${site.url}/lead-generation-agency`,
     type: "website",
   },

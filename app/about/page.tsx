@@ -570,6 +570,14 @@ export default function AboutPage() {
                   Crunchbase Organization
                 </a>
                 <a
+                  href="https://www.trustpilot.com/review/qualifiedleadsx.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lime hover:underline block mb-1 transition-colors"
+                >
+                  Trustpilot Business Profile
+                </a>
+                <a
                   href="https://www.youtube.com/@QualifiedLeadsX"
                   target="_blank"
                   rel="noopener noreferrer"

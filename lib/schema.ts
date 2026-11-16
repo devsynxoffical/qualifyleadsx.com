@@ -51,6 +51,7 @@ export const publisherOrg = {
   sameAs: [
     "https://clutch.co/profile/qualifiedleadsx",
     "https://www.crunchbase.com/organization/qualifiedleadsx",
+    "https://www.trustpilot.com/review/qualifiedleadsx.com",
     "https://www.linkedin.com/in/gauravecom/",
     "https://www.youtube.com/@QualifiedLeadsX",
     "https://www.facebook.com/qualifiedleadsx/",

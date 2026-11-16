@@ -20,7 +20,7 @@ const PAGES = [
   "/appointment-setting", "/speed-to-lead", "/vsl-funnels", "/whatsapp-lead-nurture", "/crm-automation",
   "/outsourced-sales-closers",
   "/for/agencies", "/for/coaches", "/for/consultants", "/for/b2b-services", "/for/saas", "/for/med-spas",
-  "/for/law-firms", "/for/solar-companies", "/for/real-estate-investors", "/for/home-improvement",
+  "/for/law-firms", "/personal-injury-leads", "/for/solar-companies", "/for/real-estate-investors", "/for/home-improvement",
   "/benchmarks", "/benchmarks/cost-per-booked-call", "/benchmarks/show-rate", "/benchmarks/cost-per-lead-by-industry",
   "/benchmarks/meta-ads-cpm", "/benchmarks/close-rate",
   "/tools/cost-per-booked-call-calculator", "/tools/meta-ads-budget-calculator", "/tools/cac-calculator",

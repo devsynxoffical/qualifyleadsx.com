@@ -322,3 +322,10 @@ from the 14 Nov inspection); Bing 23 submitted. Bing: 68 pages in index.
 **Done:** no page edits. Following SEO_DIAGNOSIS_2026-11-16.md: core-page metadata freeze until 14 Dec; striking-distance pages (b2b ROAS post, broad-targeting post) already have 5+ internal links.
 **Backlog:** backlink plan (docs/backlink-plan-qualifiedleadsx.pdf, local only, PDFs are gitignored); re-check on 30 Nov whether /lead-generation-agency replaced /for/agencies for "customer acquisition agency"; /blog/how-to-qualify-leads is "crawled, not indexed" despite pos 9.6 for "how to get marketing qualified leads": resubmitted, do not rewrite again.
 **Owner actions:** week 1 of the backlink plan (Clutch, G2, DesignRush, LinkedIn company page, Crunchbase, 5 review requests); decide the address rule (Wyoming vs Delhi).
+
+## 2026-11-16 (PM): personal injury leads
+**Demand (Keyword Planner, US, Nov 2025–Oct 2026, from the user):** personal injury leads 100–1K (3-month +900%), personal injury lead generation 100–1K, lead generation (for) personal injury 100–1K, personal injury leads for attorneys 10–100, personal injury leads for sale 10–100, personal injury lead generation companies 10–100. Credit repair leads / credit repair lead generation 100–1K each.
+**Done:** new /personal-injury-leads (title "Personal Injury Leads: Exclusive MVA Lead Generation"). Only numbers from the MVA case study; answers "for sale" honestly (we don't resell leads). Linked from /for/law-firms, PI mastermind, MVA case study, law-firm related links, sitemap, llms.txt, llms-full.txt. Live (HTTP 200, verified). Google Indexing API 4 accepted, Bing 4 submitted.
+**Not done, needs the owner:** credit repair leads page. The site has no credit repair client, campaign or result to build it on; waiting for real data.
+**Flagged:** /for/law-firms and /meta-ads-for-law-firms show stats with no source on the site (3.8x pipeline growth, 83–84% show rate, "100% state bar compliant", "15 to 35 retainers monthly", "80% lower cost than Google"). Owner to confirm or remove.
+**Seen:** a Clutch profile (clutch.co/profile/qualifiedleadsx) was added to schema sameAs, the footer and About page upstream.

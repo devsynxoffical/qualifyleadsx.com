@@ -266,7 +266,9 @@ export default function PersonalInjuryMastermindPage() {
             <p className="mt-5 text-sm leading-relaxed text-mist">
               See it in practice in our{" "}
               <Link href="/case-studies/mva-personal-injury-leads-8810" className="text-lime underline underline-offset-2">MVA case study (8,810 leads at $7.61)</Link>{" "}
-              and our{" "}
+              our{" "}
+              <Link href="/personal-injury-leads" className="text-lime underline underline-offset-2">exclusive personal injury leads</Link>{" "}
+              service and our{" "}
               <Link href="/meta-ads-for-law-firms" className="text-lime underline underline-offset-2">Facebook ads service for law firms</Link>.
             </p>
           </Reveal>

@@ -159,6 +159,7 @@ function industryGroups(path: string): Group[] | null {
   const variants: Link[] = [];
   if (industryPages.some((p) => p.slug === slug)) variants.push({ href: `/for/${slug}`, label: `Lead generation for ${industryLabel(slug).toLowerCase()}` });
   if ((metaAdsIndustrySlugs as readonly string[]).includes(slug)) variants.push({ href: `/meta-ads-for-${slug}`, label: `Meta ads for ${industryLabel(slug).toLowerCase()}` });
+  if (slug === "law-firms") variants.push({ href: "/personal-injury-leads", label: "Personal injury leads" });
   if ((appointmentSettingIndustrySlugs as readonly string[]).includes(slug)) variants.push({ href: `/appointment-setting-for-${slug}`, label: `Appointment setting for ${industryLabel(slug).toLowerCase()}` });
   const coreFill = services(path.startsWith("/meta-ads-for-") ? ["/meta-ads-agency", "/vsl-funnels", "/lead-generation-agency"] : path.startsWith("/appointment-setting-for-") ? ["/appointment-setting", "/speed-to-lead", "/lead-generation-agency"] : ["/lead-generation-agency", "/meta-ads-agency", "/appointment-setting"]);
   const svc = [...variants.filter((v) => v.href !== path), ...coreFill].slice(0, 3 + Math.max(0, variants.length - 1));
@@ -281,9 +282,31 @@ function compareGroups(path: string): Group[] | null {
 }
 
 /** Groups for a path, or null for pages that get no block (home, hubs, legal, booking). */
+function nichePageGroups(path: string): Group[] | null {
+  if (path !== "/personal-injury-leads") return null;
+  return [
+    {
+      title: "Services for law firms",
+      links: [
+        { href: "/for/law-firms", label: "Lead generation for law firms" },
+        { href: "/meta-ads-for-law-firms", label: "Meta ads for law firms" },
+        ...services(["/speed-to-lead", "/appointment-setting"]),
+      ],
+    },
+    {
+      title: "Results and training",
+      links: [
+        { href: "/case-studies/mva-personal-injury-leads-8810", label: "MVA case study: 8,810 leads at $7.61" },
+        { href: "/mastermind/personal-injury-facebook-ads", label: "Facebook ads for personal injury (Sniper Method)" },
+      ],
+    },
+    { title: "Guides", links: guides(["cost-per-acquisition-vs-cost-per-lead", "buy-qualified-leads-vs-generating-your-own", "speed-to-lead-statistics-response-time"]) },
+  ];
+}
+
 export function relatedGroupsFor(pathname: string): Group[] | null {
   const path = pathname.replace(/\/+$/, "") || "/";
-  for (const fn of [industryGroups, serviceGroups, toolGroups, blogGroups, caseStudyGroups, compareGroups]) {
+  for (const fn of [nichePageGroups, industryGroups, serviceGroups, toolGroups, blogGroups, caseStudyGroups, compareGroups]) {
     const g = fn(path);
     if (g) return g.map((x) => ({ ...x, links: x.links.filter((l) => l.href !== path) })).filter((x) => x.links.length > 0);
   }

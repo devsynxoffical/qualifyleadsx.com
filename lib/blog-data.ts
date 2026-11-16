@@ -168,11 +168,11 @@ export const blogPosts: BlogPost[] = [
   // 10 NOV 2026: HVAC Meta ads guide (real campaign data) and appointment setter hiring guide
   {
     "slug": "facebook-ads-for-hvac-companies",
-    "seoTitle": "Facebook & Meta Ads for HVAC Companies: Real Numbers",
+    "seoTitle": "Facebook Ads for HVAC Companies: Real Campaign Numbers & 12.7x ROAS",
     "title": "Facebook Ads for HVAC Companies: Real Campaign Numbers and the Funnel Behind Them",
     "description": "Facebook ads for HVAC companies, with real campaign data: cost per lead, booked appointments, show rate, cost per installation, ROAS and the full funnel.",
     "publishedAt": "2026-11-10",
-    "updatedAt": "2026-11-10",
+    "updatedAt": "2026-11-16",
     "readTime": "9 min read",
     "coverImage": "/images2/showreel/shot_17_meridian.webp",
     "author": {
@@ -183,9 +183,11 @@ export const blogPosts: BlogPost[] = [
     "category": "Paid Advertising",
     "tags": [
       "HVAC",
+      "Facebook Ads for HVAC",
       "Facebook Ads",
       "Home Services",
       "Lead Generation",
+      "HVAC Lead Generation Facebook",
       "Meta Ads"
     ],
     "aeoSummary": {
@@ -275,11 +277,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     "slug": "how-to-hire-an-appointment-setter",
-    "seoTitle": "How to Hire an Appointment Setter (2026 Guide)",
+    "seoTitle": "How to Hire an Appointment Setter: Scorecard, Pay & Ramp-Up (2026)",
     "title": "How to Hire an Appointment Setter: Scorecard, Interview, Pay and Ramp-Up",
     "description": "How to hire an appointment setter for a high-ticket business: the scorecard, job description, role-play interview, pay plan and two-week ramp-up.",
     "publishedAt": "2026-11-10",
-    "updatedAt": "2026-11-10",
+    "updatedAt": "2026-11-16",
     "readTime": "8 min read",
     "coverImage": "/images2/showreel/shot_22_culture_strip.webp",
     "author": {
@@ -290,8 +292,10 @@ export const blogPosts: BlogPost[] = [
     "category": "Lead Qualification",
     "tags": [
       "Appointment Setting",
+      "How to Hire an Appointment Setter",
       "Hiring",
       "Sales Team",
+      "Appointment Setter Salary",
       "Speed to Lead"
     ],
     "aeoSummary": {
@@ -398,11 +402,11 @@ export const blogPosts: BlogPost[] = [
   // 4 NOV 2026 — informational pillar: "speed to lead statistics"
   {
     slug: "speed-to-lead-statistics-response-time",
-    seoTitle: "Speed to Lead Statistics 2026: 5-Minute Rule",
+    seoTitle: "Speed to Lead Statistics 2026: The 5-Minute Rule That Boosts Bookings 391%",
     title: "Speed to Lead Statistics 2026: Why the First 5 Minutes Decide Whether a High-Ticket Lead Books a Call",
     description: "Speed to lead statistics for high-ticket offers: how response time changes qualification odds, bookings and no-shows, plus the 60-second follow-up stack.",
     publishedAt: "2026-11-04",
-    updatedAt: "2026-11-04",
+    updatedAt: "2026-11-16",
     readTime: "10 min read",
     coverImage: "/images2/showreel/shot_15_calendar_booked.webp",
     author: {
@@ -413,6 +417,7 @@ export const blogPosts: BlogPost[] = [
     category: "Lead Qualification",
     tags: [
       "Speed to Lead",
+      "Speed to Lead Statistics",
       "Lead Response Time",
       "Appointment Setting",
       "Follow-Up Automation",
@@ -550,11 +555,11 @@ export const blogPosts: BlogPost[] = [
   // 4 NOV 2026 — informational pillar: "how to write a VSL script"
   {
     slug: "how-to-write-a-vsl-script-12-minute-structure",
-    seoTitle: "How to Write a VSL Script: 12-Minute Structure",
+    seoTitle: "How to Write a VSL Script: 12-Minute Structure That Pre-Sells $5K–$25K Deals",
     title: "How to Write a VSL Script: The 12-Minute Structure That Pre-Sells High-Ticket Prospects Before the Call",
     description: "A six-act VSL script structure for high-ticket offers: hook, problem, alternatives, unique mechanism, proof and filtered CTA, with timing and examples.",
     publishedAt: "2026-11-04",
-    updatedAt: "2026-11-04",
+    updatedAt: "2026-11-16",
     readTime: "13 min read",
     coverImage: "/images2/showreel/shot_06_vsl_player.webp",
     author: {
@@ -565,6 +570,7 @@ export const blogPosts: BlogPost[] = [
     category: "Funnel Strategy",
     tags: [
       "VSL Script",
+      "How to Write a VSL Script",
       "Video Sales Letter",
       "VSL Funnel",
       "Direct Response Copywriting",
@@ -2570,10 +2576,10 @@ export const blogPosts: BlogPost[] = [
       {
     slug: "how-much-does-meta-ads-cost",
     title: "How Much Does Meta Ads Cost in 2026? Full Budget Guide",
-    seoTitle: "How Much Does Meta Ads Cost in 2026? Budget Guide",
+    seoTitle: "How Much Does Meta Ads Cost in 2026? Full Budget Guide & CPM Benchmarks",
     description: "Detailed breakdown of Meta Ads costs for B2B and high-ticket service businesses. CPM, CPC, cost per booked call, and monthly budget recommendations.",
     publishedAt: "2026-11-05",
-    updatedAt: "2026-11-10",
+    updatedAt: "2026-11-16",
     readTime: "14 min read",
     coverImage: "/images2/showreel/shot_09_ad_telemetry.webp",
     author: {
@@ -2584,8 +2590,10 @@ export const blogPosts: BlogPost[] = [
     category: "Paid Advertising",
     tags: [
       "Meta Ads",
+      "How Much Does Meta Ads Cost",
       "Ad Spend",
       "Paid Traffic",
+      "Facebook Ads Cost Per Booked Call",
       "B2B Marketing",
       "Budgeting",
       "Customer Acquisition Cost",
@@ -2885,10 +2893,10 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "high-ticket-funnel-examples",
     title: "High-Ticket Funnel Examples: 5 Proven Blueprints in 2026",
-    seoTitle: "High-Ticket Funnel Examples: 5 Proven Blueprints",
+    seoTitle: "5 High-Ticket Funnel Examples: Blueprints Generating $150M+ Revenue",
     description: "Inspect 5 proven high-ticket sales funnel examples generating $150M+ in client revenue. VSL funnels, two-step applications, and setter-closers workflows.",
     publishedAt: "2026-11-05",
-    updatedAt: "2026-11-05",
+    updatedAt: "2026-11-16",
     readTime: "11 min read",
     coverImage: "/images2/showreel/shot_06_vsl_player.webp",
     author: {
@@ -2897,7 +2905,14 @@ export const blogPosts: BlogPost[] = [
       avatar: "/brand/avatar-author.png",
     },
     category: "Funnel Strategy",
-    tags: ["Funnel Strategy", "VSL Funnel", "High Ticket", "Conversion Rate"],
+    tags: [
+      "Funnel Strategy",
+      "High Ticket Funnel Examples",
+      "VSL Funnel",
+      "High Ticket Sales Funnels",
+      "High Ticket",
+      "Conversion Rate"
+    ],
     aeoSummary: {
       question: "What are the best high-ticket funnel models?",
       answer: "The top performing high-ticket funnel is the 12-minute VSL Application Funnel, which routes traffic from Meta Ads to a video case breakdown, a qualifying application, and setter calendar booking.",
@@ -3159,10 +3174,10 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "high-ticket-lead-generation-strategies",
     title: "High-Ticket Lead Generation Strategies: 7 Scalable Models",
-    seoTitle: "High-Ticket Lead Generation Strategies (2026)",
-    description: "Discover 7 proven high-ticket lead generation strategies to acquire $5K–$25K clients. Compare paid social, direct VSLs, and speed-to-lead triage.",
+    seoTitle: "High-Ticket Lead Generation Strategies: 7 Models to Book $5K–$25K Clients",
+    description: "Discover 7 proven high-ticket lead generation strategies to acquire $5K–$25K clients predictably. Compare paid social, 12-min VSLs, and speed-to-lead triage.",
     publishedAt: "2026-11-05",
-    updatedAt: "2026-11-05",
+    updatedAt: "2026-11-16",
     readTime: "11 min read",
     coverImage: "/images2/showreel/shot_05_kanban.webp",
     author: {
@@ -3171,7 +3186,13 @@ export const blogPosts: BlogPost[] = [
       avatar: "/brand/avatar-author.png",
     },
     category: "Funnel Strategy",
-    tags: ["High Ticket", "Lead Generation", "Client Acquisition", "B2B Sales"],
+    tags: [
+      "High Ticket Lead Generation",
+      "High-Ticket Lead Generation Strategies",
+      "Lead Generation",
+      "Client Acquisition",
+      "B2B Sales"
+    ],
     aeoSummary: {
       question: "What are the most effective high-ticket lead generation strategies?",
       answer: "The 3 most profitable high-ticket strategies are: 1) Meta Ads Advantage+ paired with 12-minute VSL funnels, 2) Sub-5-minute speed-to-lead triage via WhatsApp/SMS, and 3) Friction-based income qualification gating.",

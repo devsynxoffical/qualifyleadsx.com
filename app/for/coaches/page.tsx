@@ -26,14 +26,16 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Client Acquisition Funnels for High-Ticket Coaches",
+  title: "Lead Generation for Coaches: Client Acquisition Funnels ($5K–$25K Offers)",
   description:
-    "Done-for-you client acquisition for business, executive and fitness coaches. Get 30–50 qualified sales calls a month from ready-to-invest buyers.",
+    "Done-for-you lead generation and client acquisition for business and executive coaches. Book 30–50 qualified sales calls monthly from ready-to-invest clients.",
   keywords: [
+    "lead generation for coaches",
     "client acquisition for coaches",
     "high ticket coaching leads",
     "lead generation for business coaches",
     "coaching vsl funnel",
+    "coaching client acquisition funnels",
     "scale coaching business to 100k",
   ],
   alternates: {
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Client Acquisition Funnels for High-Ticket Coaches | QualifiedLeadsX™",
+    title: "Lead Generation for Coaches: Client Acquisition Funnels | QualifiedLeadsX™",
     description:
       "Install a high-converting VSL funnel and Meta ads machine to book 30–50 qualified coaching sales calls on autopilot.",
     url: "/for/coaches",

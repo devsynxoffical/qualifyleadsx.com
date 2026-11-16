@@ -22,7 +22,7 @@ import {
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "VSL Funnel Agency for High-Ticket Client Acquisition",
+  title: "VSL Funnel Agency: High-Ticket Video Sales Letter Funnels ($3K–$25K Deals)",
   description:
     "Premier VSL funnel agency engineering 12-minute video sales letters that pre-sell $3K–$25K offers. Book 30–50 qualified sales calls every month.",
   keywords: [
@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     "video sales letter funnel",
     "high ticket vsl funnel",
     "vsl copywriting agency",
+    "vsl funnels for b2b",
     "vsl script framework",
     "client acquisition funnel",
   ],
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "VSL Funnel Agency for High-Ticket Client Acquisition",
+    title: "VSL Funnel Agency: High-Ticket Video Sales Letter Funnels | QualifiedLeadsX™",
     description:
       "Premier VSL funnel agency engineering 12-minute video sales letters that pre-sell $3K–$25K offers. Book 30–50 qualified calls monthly.",
     url: `${site.url}/vsl-funnels`,

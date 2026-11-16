@@ -21,12 +21,13 @@ import {
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Med Spa Lead Generation & High-Ticket Booking Agency",
+  title: "Med Spa Lead Generation: High-Ticket Booking Agency ($3K–$10K Packages)",
   description:
     "Predictable Med Spa lead generation and consultation booking. Fill your treatment calendar with $3K–$10K package clients using Meta Ads and speed to lead.",
   keywords: [
     "med spa lead generation",
     "medspa marketing agency",
+    "med spa marketing",
     "aesthetic clinic lead generation",
     "med spa appointment setting",
     "meta ads for med spas",
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Med Spa Lead Generation & High-Ticket Booking Agency",
+    title: "Med Spa Lead Generation: High-Ticket Booking Agency | QualifiedLeadsX™",
     description:
       "Predictable Med Spa lead generation and consultation booking. Fill your treatment calendar with $3K–$10K package clients.",
     url: `${site.url}/for/med-spas`,

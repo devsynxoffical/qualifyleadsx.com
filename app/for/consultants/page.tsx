@@ -26,13 +26,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Client Acquisition Pipeline for B2B Consultants",
+  title: "Lead Generation for Consultants: B2B Client Acquisition System ($10K+ Retainers)",
   description:
-    "Predictable B2B pipeline for strategy, operations and management consultants. Book 20–40 vetted discovery meetings with C-level buyers a month.",
+    "Predictable B2B lead generation pipeline for strategy, operations, and management consultants. Book 20–40 vetted discovery meetings with C-level buyers every month.",
   keywords: [
+    "lead generation for consultants",
     "client acquisition for consultants",
     "b2b consulting lead generation",
     "sales pipeline for consultants",
+    "consulting client acquisition funnel",
     "consulting business growth",
     "executive appointment setting",
   ],
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Client Acquisition Pipeline for B2B Consultants | QualifiedLeadsX™",
+    title: "Lead Generation for Consultants: B2B Client Acquisition System | QualifiedLeadsX™",
     description:
       "Install an enterprise client acquisition funnel for B2B consultants. Book qualified C-level decision-makers without cold email deliverability headaches.",
     url: "/for/consultants",

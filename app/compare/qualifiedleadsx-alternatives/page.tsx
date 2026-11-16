@@ -10,15 +10,22 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "QualifiedLeadsX Alternatives & Comparison",
+  title: "Top QualifiedLeadsX Alternatives: Lead Gen Agencies Comparison (2026)",
   description:
-    "An honest comparison of QualifiedLeadsX alternatives for high-ticket lead generation: traditional agencies, cold email shops and in-house hiring.",
+    "An honest comparison of QualifiedLeadsX alternatives for high-ticket lead generation: traditional agencies, cold email shops, and in-house hiring.",
+  keywords: [
+    "qualifiedleadsx alternatives",
+    "qualifiedleadsx reviews",
+    "lead generation agency alternatives",
+    "client acquisition agency alternatives",
+    "best b2b lead generation agencies",
+  ],
   alternates: {
     canonical: `${site.url}/compare/qualifiedleadsx-alternatives`,
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "QualifiedLeadsX Alternatives & Comparison",
+    title: "Top QualifiedLeadsX Alternatives: Lead Gen Agencies Comparison | QualifiedLeadsX™",
     description:
       "Honest comparison of QualifiedLeadsX alternatives for high-ticket lead generation. Traditional agencies vs QLX.",
     url: `${site.url}/compare/qualifiedleadsx-alternatives`,

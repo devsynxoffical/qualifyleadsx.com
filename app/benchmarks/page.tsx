@@ -20,11 +20,13 @@ import {
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "High Ticket Marketing Benchmarks 2026 - QualifiedLeadsX",
+  title: "B2B & High-Ticket Marketing Benchmarks 2026 ($50M+ Data Breakdown)",
   description:
-    "2026 high-ticket marketing benchmarks: cost per lead, cost per booked call, Meta CPMs and show rates across 30+ industries from $50M+ ad spend.",
+    "Explore verified 2026 marketing benchmarks: cost per qualified meeting ($120–$250), Meta CPMs, CAC, and show-up rates across 30+ industries from $50M+ ad spend.",
   keywords: [
+    "marketing benchmarks 2026",
     "high ticket marketing benchmarks",
+    "cost per qualified meeting",
     "cost per booked call",
     "b2b lead generation benchmarks",
     "meta ads cpm 2026",
@@ -36,7 +38,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "High Ticket Marketing Benchmarks 2026 - QualifiedLeadsX",
+    title: "B2B & High-Ticket Marketing Benchmarks 2026 | QualifiedLeadsX™",
     description:
       "Explore real data from $50M+ managed Meta ad spend: cost per call, show rate, close rates, and CAC benchmarks.",
     url: `${site.url}/benchmarks`,

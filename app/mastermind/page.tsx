@@ -25,22 +25,24 @@ import { ClientSuccess } from "@/components/sections/ClientSuccess";
 import { Testimonials } from "@/components/sections/Testimonials";
 
 export const metadata: Metadata = {
-  title: "8-Figure Mastermind for Agency Owners & Coaches",
+  title: "AI Client Acquisition Mastermind for Agency Owners & Coaches ($100K–$500K/Mo)",
   description:
-    "An exclusive private collective of high-ticket coaches, agency owners, and B2B founders scaling past $100K–$500K+/month. Apply for mastermind membership.",
+    "An exclusive private collective of high-ticket coaches, agency owners, and B2B founders scaling past $100K–$500K+/month with Meta Ads and AI pipelines.",
   keywords: [
-    "8 figure mastermind",
     "agency mastermind",
+    "ai client acquisition mastermind",
     "high ticket coach mastermind",
     "b2b scale mastermind",
+    "scaling agency to 100k",
     "scaling to 500k a month",
+    "8 figure mastermind",
   ],
   alternates: {
     canonical: "/mastermind",
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "8-Figure Mastermind | QualifiedLeadsX™",
+    title: "AI Client Acquisition Mastermind | QualifiedLeadsX™",
     description:
       "Exclusive collective of high-ticket coaches, agency owners, and founders scaling past $100K–$500K+/month.",
     url: "/mastermind",

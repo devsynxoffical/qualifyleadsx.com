@@ -24,7 +24,7 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { leadGenAgencyDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Customer Acquisition Agency: Qualified Lead Generation Services",
+  title: "Customer Acquisition Agency for High-Ticket B2B: Done-for-You",
   description:
     "Top customer acquisition agencies installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. Book 30–50 qualified sales calls with 90-day guarantee.",
   keywords: [
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Customer Acquisition Agency: Qualified Lead Generation Services | QualifiedLeadsX™",
+    title: "Customer Acquisition Agency for High-Ticket B2B: Done-for-You | QualifiedLeadsX™",
     description:
       "Premier customer acquisition agency installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. 30–50 qualified calls monthly.",
     url: `${site.url}/lead-generation-agency`,
@@ -185,7 +185,7 @@ export default function LeadGenAgencyPage() {
           </div>
 
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-fog leading-[1.1]">
-            Done-for-You Lead Generation Agency for{" "}
+            Customer Acquisition Agency for{" "}
             <span className="text-gradient-lime">High-Ticket B2B & Coaches</span>
           </h1>
 

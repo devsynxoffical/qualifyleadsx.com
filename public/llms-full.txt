@@ -16,7 +16,7 @@
 ---
 
 URL: https://www.qualifiedleadsx.com
-Title: Customer Acquisition Agency for High-Ticket B2B
+Title: QualifiedLeadsX: Qualified Lead Generation for High-Ticket B2B
 
 # Lead Generation Agency for High-Ticket Offers: From Meta Ads to Booked Calls Double Your Revenue Within The Next 90 Days Or We'll Continue Working For You At No Management Fee Until We Do.
 Done-For-You Client Acquisition From Meta Ads To The Booked Call.
@@ -749,9 +749,9 @@ No commitment required 90-day written guarantee
 ---
 
 URL: https://www.qualifiedleadsx.com/lead-generation-agency
-Title: Customer Acquisition Agency: Qualified Lead Generation Services
+Title: Customer Acquisition Agency for High-Ticket B2B: Done-for-You
 
-# Done-for-You Lead Generation Agency for High-Ticket B2B & Coaches
+# Customer Acquisition Agency for High-Ticket B2B & Coaches
 We install, manage, and scale complete client acquisition funnels that consistently generate 30 to 50 qualified sales calls every month. From Meta media buying to sub-5-minute appointment setting, everything is done for you.
 Quick answer
 
@@ -853,8 +853,19 @@ Signed & sealed
 Guarantee
 Done-for-you
 
-## What a done-for-you lead generation agency includes
+## What a customer acquisition agency does (and what it includes)
 A done-for-you lead generation agency builds and runs the whole path from ad to booked sales call, so your team only takes calls. With QualifiedLeadsX that means offer positioning, Meta ads and creative, a 3 to 5 page funnel, AI follow-up in under 5 minutes, qualification, CRM and calendar booking. You own every asset, and engagements carry a 90-day written guarantee.
+Definition
+
+## Customer acquisition agency vs lead generation agency
+A customer acquisition agency (also called a client acquisition agency) is accountable for paying clients, not just contacts. A lead generation agency usually stops at the lead. The difference shows up in what each one builds and what it reports on:
+| | | Lead generation agency | Customer acquisition agency
+| Delivers | Leads (names, emails, form fills) | Qualified sales calls and closed clients
+| Scope | Ads and a landing page | Offer, ads, funnel, qualification, follow-up and booking
+| Main metric | Cost per lead | Cost per booked call and customer acquisition cost (CAC)
+| Follow-up | Usually your team's job | Built in: fast first contact, nurture and reminders
+| Who owns the assets | Varies | With QualifiedLeadsX, you own the ad account, funnel and CRM
+Model your own numbers with the CAC calculator and the cost per booked call calculator .
 How to choose
 
 ## How to choose a lead generation agency
@@ -910,6 +921,12 @@ Our systems are engineered specifically for high-ticket service offers priced be
 
 ### How quickly does the client acquisition system go live?
 Our done-for-you sprint spans 14 to 21 business days from kickoff to live ad delivery, VSL deployment, and initial qualified calls appearing on your sales calendar.
+
+### What is a customer acquisition agency?
+A customer acquisition agency (or client acquisition agency) is responsible for the whole path from ad to paying client: offer positioning, paid ads, the funnel, lead qualification, fast follow-up and booking sales calls. A traditional ad or lead generation agency usually stops at the click or the lead. QualifiedLeadsX runs the full path for high-ticket B2B firms, coaches and agencies and reports on cost per booked call and cost per client, not just cost per lead.
+
+### What is the difference between a customer acquisition agency and a lead generation agency?
+A lead generation agency is measured on leads. A customer acquisition agency is measured on booked calls and new clients, so it also builds the qualification and follow-up that turn leads into sales conversations. If your team already converts leads well, a lead generation agency can be enough; if leads go cold or calls don't show, you need the full acquisition system.
 
 ### Is a lead generation agency worth it?
 It is worth it when the agency is measured on booked calls and clients, you own the assets, and your offer already sells. Compare the agency fee plus ad spend with the cost per client it produces and the lifetime value of that client.
@@ -2433,7 +2450,7 @@ Cinematic VSL & Case Study Funnel A custom-built, ultra-fast landing page featur
 Broad Meta Ads Engine Targeted direct response video creative tested and scaled to deliver consistent $80–$150 qualified discovery appointments.
 Client acquisition for agencies
 
-## What a client acquisition agency does for a marketing agency
+## How marketing agencies win retainer clients predictably
 Most marketing agencies win clients through referrals and the founder's network. That works until about $30K–$50K a month, then growth stalls because referrals arrive when they arrive, not when you have capacity. QualifiedLeadsX is a client acquisition agency for agencies: we build and run the Meta ads, the case-study funnel, the application filter and the follow-up that put qualified retainer prospects on your calendar every week.
 It is the same system we run for coaches and consultants, adapted to how agencies sell. Your buyer has usually been burned by an agency before, so proof matters more than promises, and one closed retainer has to pay for weeks of ad spend. Below is how we handle both. (Not an agency yourself? See our customer acquisition agency service for coaches, consultants and B2B firms.)
 Why agencies need a predictable channel
@@ -2550,7 +2567,7 @@ We are an agency ourselves—why not just run ads internally? Most agencies are 
 Will this work if we sell specialized services like Web3, SEO, or custom software dev? Yes. The core mechanism of the VSL funnel is translating specialized, technical services into clear commercial outcomes (revenue, efficiency, CAC reduction) that non-technical CEOs and CMOs gladly pay premium retainers for.
 How does this prevent commoditization and price haggling? A VSL positions your agency around a proprietary, branded mechanism rather than a generic deliverable (e.g. 'Custom Growth Engine' vs 'We do Facebook Ads'). When prospects view you as a strategic category-of-one partner, price shopping evaporates.
 What monthly retainer size does this system best support? The system is optimized for monthly agency retainers ranging from $3,000/mo to $25,000/mo+, as well as enterprise project fees exceeding $15,000.
-What is a customer acquisition agency? A customer acquisition agency (or client acquisition agency) is responsible for the whole path from ad to booked sales call: offer positioning, ads, landing pages or funnel, follow-up, qualification and booking. A traditional ad agency usually stops at the click. QualifiedLeadsX runs the full path and reports on cost per booked call and cost per client, not just cost per lead.
+How do marketing agencies get clients without referrals? Run a paid channel you control: Meta ads to a case-study funnel, an application that filters by budget and fit, and follow-up within 5 minutes that books qualified prospects onto your calendar. It replaces waiting for referrals with a weekly flow you can scale with headcount. A full-service customer acquisition agency runs all of these steps for you.
 How much does it cost to acquire an agency client with Meta ads? In our accounts a qualified booked call for a $3,000–$5,000 monthly retainer usually costs $95–$160. At a 25% close rate that is roughly $380–$640 in ad spend per signed retainer. Your numbers depend on offer, niche and proof; the CAC calculator on this site lets you model them.
 Should an agency use LinkedIn or Meta ads to get clients? For agencies that sell to owner-led small and mid-size businesses, Meta usually books calls at a lower cost because the audience is larger and CPMs are lower. LinkedIn can make sense for agencies that only sell to enterprise marketing teams with large deal sizes.
 Further Reading

@@ -5,7 +5,7 @@ set -u
 LABEL=${1:-run}; ORIGIN=${2:-https://www.qualifiedleadsx.com}
 CH=${CHROME_PATH:-/opt/pw-browsers/chromium}
 mkdir -p audit/lighthouse
-for u in / /high-ticket-lead-generation /blog/buy-qualified-leads-vs-generating-your-own /case-studies/b2b-agency-scaling-846k; do
+for u in ${PAGES:-/ /high-ticket-lead-generation /blog/buy-qualified-leads-vs-generating-your-own /case-studies/b2b-agency-scaling-846k}; do
   n=$(echo "$u" | sed 's|^/$|home|; s|^/||; s|/|_|g')
   CHROME_PATH=$CH timeout 300 npx -y lighthouse@12.2.1 "$ORIGIN$u" --quiet \
     --chrome-flags="--headless=new --no-sandbox" \

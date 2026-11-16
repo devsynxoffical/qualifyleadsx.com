@@ -24,10 +24,12 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { speedToLeadDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "AI Speed to Lead: Reply to Every Lead in Under 5 Minutes",
+  title: "Speed to Lead Automation: Sub-5-Minute Quick Lead Acquisition",
   description:
-    "Increase sales call booking rates by 391% with AI speed to lead. Sub-5-minute automated SMS, WhatsApp, and setter response for high-ticket funnels.",
+    "Increase sales call booking rates by 391% with AI speed to lead. Sub-5-minute automated SMS, WhatsApp, and quick lead acquisition for high-ticket funnels.",
   keywords: [
+    "speed to lead",
+    "quick lead acquisition",
     "ai speed to lead",
     "speed to lead automation",
     "speed to lead appointment setting",
@@ -40,7 +42,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "AI Speed to Lead: Reply to Every Lead in Under 5 Minutes",
+    title: "Speed to Lead Automation: Sub-5-Minute Quick Lead Acquisition | QualifiedLeadsX™",
     description:
       "Engage inbound high-ticket inquiries within 180 seconds. Lift appointment show rates to 88%+ with automated multi-channel speed to lead.",
     url: `${site.url}/speed-to-lead`,
@@ -80,6 +82,10 @@ const decayStages = [
 ];
 
 const faqs = [
+  {
+    q: "How does speed to lead achieve quick lead acquisition?",
+    a: "Quick lead acquisition is achieved by closing the gap between ad click and first contact. When an automated conversational sequence reaches a prospect within 180 seconds across WhatsApp and SMS, the prospect is still on their device actively thinking about the problem. This sub-5-minute velocity produces a 391% higher qualification and booking rate, turning paid ad impressions into booked appointments immediately.",
+  },
   {
     q: "What is AI speed to lead and why does it matter?",
     a: "AI speed to lead is automated technology infrastructure that connects with inbound marketing inquiries within 180 to 300 seconds across SMS, WhatsApp, email, and live phone dispatch. Academic research proves contacting prospects within 5 minutes results in a 391% higher close probability compared to waiting 30 minutes.",

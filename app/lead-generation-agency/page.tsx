@@ -24,11 +24,12 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { leadGenAgencyDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: "Customer Acquisition Agency: Done-for-You Lead Gen",
+  title: "Customer Acquisition Agency: Qualified Lead Generation Services",
   description:
-    "Premier customer acquisition agency installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. Book 30–50 qualified sales calls with 90-day guarantee.",
+    "Top customer acquisition agencies installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. Book 30–50 qualified sales calls with 90-day guarantee.",
   keywords: [
     "customer acquisition agency",
+    "customer acquisition agencies",
     "customer acquisition systems",
     "qualified lead generation services",
     "lead generation agency",
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Customer Acquisition Agency: Done-for-You Lead Gen",
+    title: "Customer Acquisition Agency: Qualified Lead Generation Services | QualifiedLeadsX™",
     description:
       "Premier customer acquisition agency installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. 30–50 qualified calls monthly.",
     url: `${site.url}/lead-generation-agency`,
@@ -91,6 +92,14 @@ const processSteps = [
 ];
 
 const faqs = [
+  {
+    q: "Why do businesses choose customer acquisition agencies over traditional lead gen agencies?",
+    a: "Traditional lead generation agencies focus on cheap lead volume—delivering low-intent form fills or cold scraped emails that waste your sales team's hours. Modern customer acquisition agencies engineer end-to-end buyer systems: combining high-converting VSL funnels, broad Meta ad buying, strict financial qualification surveys, and sub-3-minute speed-to-lead nurture to deliver closed revenue rather than vanity metrics.",
+  },
+  {
+    q: "What are qualified lead generation services and how do they work?",
+    a: "Qualified lead generation services are performance marketing systems that filter inbound prospects before they can access your calendar. Instead of open booking links, prospects must verify decision-making authority, liquid capital ($5,000+ investment readiness), and specific pain points. This ensures every conversation on your calendar is with a vetted, sales-ready buyer.",
+  },
   {
     q: "What makes QualifiedLeadsX different from other lead generation agencies?",
     a: "Most lead generation agencies scrape cold email lists or hand you raw, unverified contact spreadsheets with zero intent. QualifiedLeadsX builds a comprehensive inbound acquisition engine: we produce high-retention 12-minute VSL assets, manage broad-targeted Meta Ads, enforce strict 4-tier intake qualification surveys, and activate sub-5-minute speed-to-lead setters.",

@@ -11,17 +11,26 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { metaAdsCoachesDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: { absolute: "Facebook Ads for Coaches: Funnels That Get Clients" },
+  title: { absolute: "Facebook Ads for Coaches: Best Practices & Client Acquisition ($5K–$25K)" },
   description:
-    "Scale $5K–$25K coaching offers with Facebook and Instagram ads: tested creative frameworks, broad Advantage+ scaling and sub-$180 booked calls.",
+    "Scale $5K–$25K coaching offers with Facebook and Instagram ads: discover proven best practices, broad Advantage+ scaling, and sub-$180 booked calls.",
+  keywords: [
+    "facebook ads for coaches",
+    "facebook ads management for coaches",
+    "best practices for facebook ads management for coaches",
+    "meta ads for coaches",
+    "high ticket coaching ads",
+    "client acquisition for coaches",
+    "coaching vsl funnel",
+  ],
   alternates: {
     canonical: `${site.url}/meta-ads-for-coaches`,
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Facebook Ads for Coaches | QualifiedLeadsX",
+    title: "Facebook Ads for Coaches: Best Practices & Client Acquisition | QualifiedLeadsX™",
     description:
-      "Scale $5K–$25K coaching offers with high-converting Facebook ads and sub-$180 booked calls.",
+      "Scale $5K–$25K coaching offers with high-converting Facebook ads, proven best practices, and sub-$180 booked calls.",
     url: `${site.url}/meta-ads-for-coaches`,
     siteName: site.name,
     type: "website",
@@ -29,6 +38,10 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
+  {
+    q: "What are the best practices for Facebook ads management for coaches in 2026?",
+    a: "The top best practices for coaching Facebook ads include: 1) Deploy broad algorithmic targeting without restrictive interest layers so Meta's Andromeda AI finds high-intent clients, 2) Use founder-led 60–90 second 'problem-unpacking' direct-to-camera videos rather than generic stock footage, 3) Direct traffic to a 12-minute case-study VSL rather than raw lead forms, 4) Enforce dynamic application qualification ($5,000+ liquid capital checkpoint) before calendar access, and 5) Execute sub-3-minute speed to lead with automated WhatsApp/SMS nurture to achieve 85%+ show-up rates.",
+  },
   {
     q: "What ad budget do coaches need to start scaling on Facebook?",
     a: "We recommend a minimum testing budget of $3,000 to $5,000 per month ($100 to $160/day). At this spend level, our algorithm collects sufficient conversion events to optimize Advantage+ audiences within the first 14 days.",

@@ -49,6 +49,7 @@ export const brandFacts = {
     { name: "Outsourced sales closers", path: "/outsourced-sales-closers", line: "Commission-based closers for high-ticket calls." },
   ],
   sameAs: [
+    "https://clutch.co/profile/qualifiedleadsx",
     "https://www.facebook.com/qualifiedleadsx/",
     "https://www.instagram.com/qualifiedleadsx/",
     "https://www.linkedin.com/in/gauravecom/",

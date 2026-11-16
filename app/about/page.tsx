@@ -24,9 +24,18 @@ import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
 import { founder, imageObject, FOUNDER_ID, ORG_ID, WEBSITE_ID } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: { absolute: "About QualifiedLeadsX Client Acquisition Agency" },
+  title: { absolute: "About QualifiedLeadsX: $50M+ Meta Ads Managed | Gaurav Kapoor" },
   description:
-    "QualifiedLeadsX has managed $50M+ in Meta ads with 125+ case studies, scaling high-ticket coaches, consultants, and B2B agencies.",
+    "QualifiedLeadsX is operated by Ecom Expertz LLC and founded by Gaurav Kapoor. 12+ years of performance marketing, $50M+ Meta ads spend, and 125+ case studies.",
+  keywords: [
+    "about qualifiedleadsx",
+    "gaurav kapoor",
+    "ecom expertz llc",
+    "client acquisition agency",
+    "meta ads performance agency",
+    "qualifiedleadsx case studies",
+    "qualifiedleadsx reviews",
+  ],
   alternates: {
     canonical: "/about",
   },
@@ -82,6 +91,33 @@ const leadershipRoles = [
   },
 ];
 
+const aboutFaqs = [
+  {
+    q: "Who owns and operates QualifiedLeadsX™?",
+    a: "QualifiedLeadsX™ is founded and led by Gaurav Kapoor, a seasoned paid acquisition specialist with 12+ years in direct-response marketing and over $50M in directed Meta ad spend. The agency is operated by Ecom Expertz LLC, a registered US business headquartered at 1309 Coffeen Avenue STE 1200, Sheridan, WY 82801.",
+  },
+  {
+    q: "Where are QualifiedLeadsX case studies and client results documented?",
+    a: "QualifiedLeadsX maintains a library of over 125 documented client case studies, including 69 full-length live screen-recorded breakdowns inside Meta Ads Manager and Stripe dashboards. Notable results include generating $846,000 for a B2B marketing agency (235 clients closed) and scaling a MedSpa agency to $639,000 in 60 days.",
+  },
+  {
+    q: "What makes QualifiedLeadsX™ different from a traditional marketing agency?",
+    a: "Most agencies simply run ad campaigns inside Meta Ads Manager and invoice you regardless of closed revenue. QualifiedLeadsX™ acts as an end-to-end growth partner: we script your 12-minute VSL, build custom qualification funnels, deploy sub-5-minute speed-to-lead automation, and back our delivery with a 90-day written performance milestone guarantee.",
+  },
+  {
+    q: "What types of businesses do you work with?",
+    a: "We specialize exclusively in high-ticket B2B service providers, executive and business coaches, consulting firms, and growth marketing agencies selling offers priced between $3,000 and $25,000+. We require clients to have an established offer generating at least $10,000/month in baseline revenue.",
+  },
+  {
+    q: "How does the 90-Day Written Guarantee work?",
+    a: "Every engagement includes concrete, written pipeline benchmarks agreed upon during your strategy walkthrough. If our installed client acquisition system does not achieve your designated qualified sales call milestones, our team continues operating and optimizing your campaigns at zero agency management fee until the target is met.",
+  },
+  {
+    q: "Who manages the campaigns and creative production?",
+    a: "All campaign architecture, media buying, copy scripting, and technical automations are handled in-house by Gaurav Kapoor and our specialized growth engineering team. We never outsource client accounts to inexperienced junior freelancers.",
+  },
+];
+
 export default function AboutPage() {
   const personJsonLd = {
     "@context": "https://schema.org",
@@ -100,6 +136,19 @@ export default function AboutPage() {
     about: { "@id": ORG_ID },
     dateModified: "2026-10-30",
     primaryImageOfPage: imageObject("/images/about-command-center.jpg"),
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: aboutFaqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a,
+      },
+    })),
   };
 
   const breadcrumbJsonLd = {
@@ -130,6 +179,10 @@ export default function AboutPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <script
         type="application/ld+json"
@@ -532,41 +585,12 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-4 max-w-4xl mx-auto">
-              <div className="p-6 rounded-2xl bg-panel border border-line">
-                <h3 className="text-lg font-bold text-fog mb-2">
-                  What makes QualifiedLeadsX™ different from a traditional marketing agency?
-                </h3>
-                <p className="text-sm text-mist leading-relaxed">
-                  Most agencies simply run ad campaigns inside Meta Ads Manager and invoice you regardless of closed revenue. QualifiedLeadsX™ acts as an end-to-end growth partner: we script your 12-minute VSL, build custom qualification funnels, deploy sub-5-minute speed-to-lead automation, and back our delivery with a 90-day written performance milestone guarantee.
-                </p>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-panel border border-line">
-                <h3 className="text-lg font-bold text-fog mb-2">
-                  What types of businesses do you work with?
-                </h3>
-                <p className="text-sm text-mist leading-relaxed">
-                  We specialize exclusively in high-ticket B2B service providers, executive and business coaches, consulting firms, and growth marketing agencies selling offers priced between $3,000 and $25,000+. We require clients to have an established offer generating at least $10,000/month in baseline revenue.
-                </p>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-panel border border-line">
-                <h3 className="text-lg font-bold text-fog mb-2">
-                  How does the 90-Day Written Guarantee work?
-                </h3>
-                <p className="text-sm text-mist leading-relaxed">
-                  Every engagement includes concrete, written pipeline benchmarks agreed upon during your strategy walkthrough. If our installed client acquisition system does not achieve your designated qualified sales call milestones, our team continues operating and optimizing your campaigns at zero agency management fee until the target is met.
-                </p>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-panel border border-line">
-                <h3 className="text-lg font-bold text-fog mb-2">
-                  Who manages the campaigns and creative production?
-                </h3>
-                <p className="text-sm text-mist leading-relaxed">
-                  All campaign architecture, media buying, copy scripting, and technical automations are handled in-house by Gaurav Kapoor and our specialized growth engineering team. We never outsource client accounts to inexperienced junior freelancers.
-                </p>
-              </div>
+              {aboutFaqs.map((faq, i) => (
+                <div key={i} className="p-6 rounded-2xl bg-panel border border-line">
+                  <h3 className="text-lg font-bold text-fog mb-2">{faq.q}</h3>
+                  <p className="text-sm text-mist leading-relaxed">{faq.a}</p>
+                </div>
+              ))}
             </div>
           </section>
         </div>

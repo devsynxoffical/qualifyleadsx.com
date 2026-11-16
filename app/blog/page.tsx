@@ -11,22 +11,24 @@ import { founder, imageObject, publisherOrg, webPageNode } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
-  title: "Client Acquisition, VSL Funnels & Meta Ads Insights",
+  title: "B2B Client Acquisition & Meta Ads Blog: Scaling Guides & Frameworks",
   description:
-    "In-depth blueprints, performance media buying playbooks, and lead qualification frameworks for high-ticket coaches, consultants, and B2B agencies.",
+    "Explore actionable B2B client acquisition guides, VSL funnel architecture, Meta ads playbooks, and lead qualification benchmarks from $50M+ managed ad spend.",
   keywords: [
+    "b2b client acquisition blog",
+    "meta ads guides",
+    "vsl funnel blueprint",
     "client acquisition blog",
-    "vsl funnel guide",
-    "meta ads for b2b",
-    "high ticket lead qualification",
-    "agency scaling blueprints",
+    "appointment setting strategies",
+    "high ticket lead generation",
+    "agency scaling playbooks",
     "b2b cac benchmarks",
   ],
   alternates: {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Client Acquisition, VSL Funnels & Meta Ads Insights | QualifiedLeadsX",
+    title: "B2B Client Acquisition & Meta Ads Blog | QualifiedLeadsX™",
     description:
       "Actionable scaling blueprints, funnel architecture, and media buying guides for high-ticket service providers.",
     url: "/blog",

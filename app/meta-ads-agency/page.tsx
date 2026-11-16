@@ -32,17 +32,19 @@ import {
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Meta Ads Agency for B2B & High-Ticket Offers",
+    absolute: "Meta Ads Agency for B2B & High-Ticket ($50M+ Managed Spend)",
   },
   description:
-    "Meta ads agency for high-ticket coaches, consultants and B2B firms: ads, creative, funnels and AI follow-up that book qualified sales calls.",
+    "Elite Meta ads agency for high-ticket coaches, consultants, and B2B agencies. Custom VSL funnels, algorithmic broad targeting, and 30–50 qualified calls/month.",
   keywords: [
     "meta ads agency",
+    "meta ads agency for b2b",
     "facebook ads agency",
-    "b2b meta ads",
-    "meta advertising agency for coaches",
+    "b2b meta ads agency",
     "high ticket facebook ads",
-    "meta lead generation",
+    "meta advertising agency for coaches",
+    "cost per booked call facebook ads",
+    "meta lead generation services",
     "facebook ads for b2b agencies",
     "meta creative testing",
   ],
@@ -50,7 +52,7 @@ export const metadata: Metadata = {
     canonical: "/meta-ads-agency",
   },
   openGraph: {
-    title: "Meta Ads Agency for Coaches, Agencies and B2B - QualifiedLeadsX",
+    title: "Meta Ads Agency for B2B & High-Ticket ($50M+ Managed Spend) | QualifiedLeadsX™",
     description:
       "Elite Meta ads agency scaling high-ticket coaches, consultants, and B2B agencies to $100K+/month with predictable booked client calls.",
     url: `${site.url}/meta-ads-agency`,
@@ -69,13 +71,21 @@ export const metadata: Metadata = {
   twitter: {
     images: [defaultOgImage.url],
     card: "summary_large_image",
-    title: "Meta Ads Agency for Coaches, Agencies and B2B - QualifiedLeadsX",
+    title: "Meta Ads Agency for B2B & High-Ticket ($50M+ Managed Spend)",
     description:
       "Elite Meta ads agency scaling high-ticket coaches, consultants, and B2B agencies to $100K+/month with predictable booked client calls.",
   },
 };
 
 const metaAgencyFaqs = [
+  {
+    q: "How does Meta ads compare to LinkedIn ads for B2B client acquisition?",
+    a: "LinkedIn ads typically carry exorbitant CPMs ($80 to $130+) and strict text limitations, resulting in $350+ costs per booked call. On Meta (Facebook & Instagram), CPMs hover between $18 and $35. Because B2B founders, CEOs, and VP-level executives spend 45+ minutes daily on Instagram and Facebook, our direct-response video creative targets those exact decision-makers using Meta's algorithmic interest-free broad targeting—slashing B2B customer acquisition costs by 60% compared to LinkedIn.",
+  },
+  {
+    q: "What tracking and attribution infrastructure do you deploy for Meta ads in 2026?",
+    a: "We configure full server-side Meta Conversions API (CAPI) using Cloudflare and Google Tag Manager Server Containers, bypassing iOS 14.5+ ad blockers and browser cookie restrictions. We pair CAPI with automated offline CRM conversion syncing (sending 'Qualified Call Booked' and 'Deal Closed' signals back to Meta's algorithm) to train the ad auction to continuously hunt high-spending buyers.",
+  },
   {
     q: "How does your Meta ads agency differ from standard Facebook ads agencies?",
     a: "Traditional Facebook ads agencies rely on outdated narrow interest targeting, generic Canva ad creatives, and native lead forms that produce unresponsive, low-budget tire-kickers. QualifiedLeadsX operates as a performance growth partner: we deploy broad AI algorithmic creative testing, script custom 12-minute VSL assets, and enforce a 4-tier conditional qualification survey so your sales team only speaks with pre-sold buyers who have $5,000+ liquid capital.",

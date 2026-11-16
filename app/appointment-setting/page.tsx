@@ -39,27 +39,28 @@ import { appointmentSettingDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Appointment Setting Agency: Qualified Appointments Booked",
+    absolute: "B2B Appointment Setting Agency: 30–50 Qualified Sales Calls Monthly",
   },
   description:
-    "Automated appointment setting system with sub-5-minute speed to lead. Turn cold inquiries into 30-50 qualified sales calls every month.",
+    "Automated B2B appointment setting agency with sub-3-minute speed to lead. Turn cold inquiries into 30-50 pre-qualified sales calls every month. 88%+ show-up rate.",
   keywords: [
-    "appointment setting",
-    "speed to lead",
+    "b2b appointment setting services",
+    "appointment setting agency",
     "b2b appointment setting",
     "automated appointment setting",
+    "speed to lead appointment setting",
+    "cost per qualified meeting",
     "appointment setter agency",
     "ai appointment setting",
-    "lead qualification system",
     "high ticket sales calls",
   ],
   alternates: {
     canonical: "/appointment-setting",
   },
   openGraph: {
-    title: "Appointment Setting With AI Follow-Up and Speed to Lead - QualifiedLeadsX",
+    title: "B2B Appointment Setting Agency: 30–50 Qualified Sales Calls Monthly | QualifiedLeadsX™",
     description:
-      "Automated appointment setting system with sub-5-minute speed to lead. Turn cold inquiries into pre-qualified, high-ticket sales calls.",
+      "Automated B2B appointment setting system with sub-3-minute speed to lead. Turn cold inquiries into pre-qualified, high-ticket sales calls.",
     url: `${site.url}/appointment-setting`,
     siteName: site.name,
     images: [
@@ -67,7 +68,7 @@ export const metadata: Metadata = {
         url: `${site.url}/images/blog/vsl-funnel-blueprint.jpg`,
         width: 1200,
         height: 630,
-        alt: "Appointment Setting With AI Follow-Up and Speed to Lead - QualifiedLeadsX",
+        alt: "B2B Appointment Setting Agency - QualifiedLeadsX",
       },
     ],
     locale: "en_US",
@@ -76,19 +77,23 @@ export const metadata: Metadata = {
   twitter: {
     images: [defaultOgImage.url],
     card: "summary_large_image",
-    title: "Appointment Setting With AI Follow-Up and Speed to Lead - QualifiedLeadsX",
+    title: "B2B Appointment Setting Agency: 30–50 Qualified Sales Calls Monthly",
     description:
-      "Automated appointment setting system with sub-5-minute speed to lead. Turn cold inquiries into pre-qualified, high-ticket sales calls.",
+      "Automated B2B appointment setting system with sub-3-minute speed to lead. Turn cold inquiries into pre-qualified, high-ticket sales calls.",
   },
 };
 
 const appointmentFaqs = [
   {
-    q: "How does automated appointment setting compare to hiring human appointment setters?",
+    q: "What is the average cost per qualified appointment in B2B appointment setting?",
+    a: "Across enterprise B2B and high-ticket service industries ($3,000 to $25,000 deal sizes), the average cost per qualified booked appointment ranges from $120 to $250. Because our automated system requires prospects to pass through a 4-tier conditional qualification gate ($5,000+ budget, decision-maker authority) and validates attendance via two-way WhatsApp/SMS confirmation, your acquisition spend translates directly into sales-ready pipeline rather than ghosted calendar slots.",
+  },
+  {
+    q: "How does automated appointment setting compare to hiring human appointment setters or SDRs?",
     a: "Human appointment setters cost between $3,500 and $5,500 per month in base salary plus commissions, suffer from fatigue, take sick days, and frequently experience 30-to-90 minute response delays. Our automated system executes sub-3-minute speed to lead 24/7 across WhatsApp, SMS, and email with zero payroll overhead, achieving 2.8x higher appointment booking velocity without commission churn.",
   },
   {
-    q: "Why is speed to lead critical for high-ticket client acquisition?",
+    q: "Why is speed to lead critical for B2B appointment booking rates?",
     a: "Empirical sales studies prove that responding to an inbound lead within 5 minutes makes you 21 times more likely to qualify and book that prospect compared to waiting 30 minutes. After 5 minutes, lead attention decays by 80%. Our automated speed-to-lead protocol triggers instant two-way conversational confirmation before competitor agencies even open their email notifications.",
   },
   {
@@ -96,12 +101,12 @@ const appointmentFaqs = [
     a: "We never provide open calendar booking links. Prospects must pass through an automated 4-tier conditional qualification gate verifying monthly revenue, business model, and investment capital ($5,000+ liquid capital requirement). Underqualified prospects are politely routed to low-ticket training assets, protecting your sales closers' time.",
   },
   {
-    q: "What CRM and calendar platforms does this appointment setting system integrate with?",
-    a: "Our architecture integrates natively with GoHighLevel, HubSpot, Salesforce, Calendly, Close CRM, and Zapier/Make webhooks. Leads flow directly into your existing sales pipeline with custom tags, lead source attribution, and qualification score cards.",
-  },
-  {
     q: "How does this system achieve an 88%+ sales call show-up rate?",
     a: "Most agencies suffer from 40–50% calendar no-shows because they send generic automated emails that go to spam. We deploy an omnichannel pre-call indoctrination sequence via WhatsApp and SMS: prospects receive short video case studies, 1-click attendance confirmation, and an interactive prep workbook that builds authority prior to the call.",
+  },
+  {
+    q: "What CRM and calendar platforms does this appointment setting system integrate with?",
+    a: "Our architecture integrates natively with GoHighLevel, HubSpot, Salesforce, Calendly, Close CRM, and Zapier/Make webhooks. Leads flow directly into your existing sales pipeline with custom tags, lead source attribution, and qualification score cards.",
   },
   ...appointmentSettingDeepDive.faqs,
 ];

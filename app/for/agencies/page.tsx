@@ -24,22 +24,25 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Client Acquisition for Digital & Marketing Agencies",
+  title: "Lead Generation for Agencies: Client Acquisition System ($5K–$25K Retainers)",
   description:
-    "Scale your agency past $100K/month with predictable inbound sales calls. We install a done-for-you VSL funnel and Meta ads machine to book retainers.",
+    "Scale your digital marketing agency past $100K/month with predictable inbound sales calls. We install a done-for-you VSL funnel and Meta ads machine to book retainers.",
   keywords: [
+    "lead generation for agencies",
     "client acquisition for agencies",
+    "lead generation for marketing agencies",
     "agency lead generation system",
     "how to get agency clients",
     "digital agency client acquisition",
     "scale marketing agency to 100k",
+    "b2b agency retainer sales funnel",
   ],
   alternates: {
     canonical: "/for/agencies",
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Client Acquisition System for Digital & Marketing Agencies | QualifiedLeadsX™",
+    title: "Lead Generation for Agencies: Client Acquisition System ($5K–$25K Retainers) | QualifiedLeadsX™",
     description:
       "Install a high-converting client acquisition funnel for marketing, software, and creative agencies. Book 35–60 qualified retainer calls every month.",
     url: "/for/agencies",
@@ -48,6 +51,18 @@ export const metadata: Metadata = {
 };
 
 const agencyFaqs = [
+  {
+    q: "How do marketing agencies generate qualified leads without cold email or referrals?",
+    a: "Modern agencies replace cold outreach with a high-converting Video Sales Letter (VSL) funnel paired with broad Meta ads. Rather than spamming inboxes with automated sequences that risk domain blacklisting, this system presents a proprietary, commercial mechanism directly to CEOs, CMOs, and founders on Facebook and Instagram—booking 35–60 pre-qualified discovery calls every month.",
+  },
+  {
+    q: "What is the typical cost per booked retainer call for a digital agency?",
+    a: "Across our managed agency partner accounts, the average Cost Per Qualified Booked Call ranges from $140 to $250. Because prospects watch a 12-minute case study breakdown and pass through strict revenue gating ($5,000+ liquid budget requirement), agency closers achieve a 25% to 35% close rate on high-ticket retainers ($3,000 to $25,000/mo).",
+  },
+  {
+    q: "Why do white-label lead generation and cold outreach fail for agencies in 2026?",
+    a: "Google and Microsoft have enforced strict DMARC, DKIM, and spam rate thresholds, dropping cold email inbox delivery rates below 15%. Furthermore, white-label agencies share commoditized lead lists across multiple competitors. In contrast, our direct-to-consumer VSL funnel builds proprietary branded authority that positions your agency as a category-of-one market leader.",
+  },
   {
     q: "We are an agency ourselves—why not just run ads internally?",
     a: "Most agencies are trapped working in their business rather than on it. Delivering for clients eats your creative bandwidth. We provide the dedicated operational focus, vetted $150M+ VSL frameworks, and proprietary lead qualification filters so you don't waste 6 months in internal trial-and-error.",
@@ -130,7 +145,7 @@ export default function AgenciesLandingPage() {
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-fog max-w-4xl mx-auto leading-[1.1]">
-            Client Acquisition for Agencies: Scale Retainers Past{" "}
+            Lead Generation for Agencies: Scale Retainers Past{" "}
             <span className="text-gradient-lime font-extrabold">$100K/Month Predictably</span>
           </h1>
           <ShortAnswer>

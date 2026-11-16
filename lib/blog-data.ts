@@ -905,11 +905,11 @@ export const blogPosts: BlogPost[] = [
   // 29 OCT 2026 — commercial-intent pillar: "b2b appointment setting vs in-house sdr"
   {
     slug: "b2b-appointment-setting-vs-in-house-sdr-teams",
-    seoTitle: "B2B Appointment Setting vs In-House SDR Teams",
+    seoTitle: "B2B Appointment Setting vs In-House SDR Teams: 2026 Cost & ROI Comparison",
     title: "B2B Appointment Setting vs In-House SDR Teams: The 2026 Cost, Performance & ROI Breakdown",
-    description: "Compare fully loaded SDR salaries ($85K-$120K) vs done-for-you appointment setting. Review ramp time, tech stack costs, and pipeline ROI.",
+    description: "Compare in-house SDR costs ($85K–$120K) vs automated B2B appointment setting. See real benchmarks on ramp time, tech stacks, show-up rates, and pipeline ROI.",
     publishedAt: "2026-10-29",
-    updatedAt: "2026-10-29",
+    updatedAt: "2026-11-16",
     readTime: "12 min read",
     coverImage: "/images/blog/b2b-sdr-vs-appointment-setting.jpg",
     author: {
@@ -1259,11 +1259,11 @@ export const blogPosts: BlogPost[] = [
   // 27 OCT 2026 — commercial-intent pillar: "facebook ads agency"
   {
     slug: "facebook-ads-agency-vs-in-house-media-buyer",
-    seoTitle: "Facebook Ads Agency vs Hiring an In-House Media Buyer (2026)",
+    seoTitle: "Facebook Ads Agency vs Hiring an In-House Media Buyer: 2026 Cost & ROI Comparison",
     title: "Facebook Ads Agency vs In-House Media Buyer: Which Is Right for a High-Ticket Business in 2026?",
-    description: "Agency fees run $2K–$7.5K a month; an in-house media buyer costs $90K–$150K a year fully loaded. Compare cost, creative output, speed and risk.",
+    description: "Agency fees run $2K–$7.5K a month; an in-house media buyer costs $90K–$150K a year fully loaded. Compare real costs, creative output, speed, and ROI.",
     publishedAt: "2026-10-27",
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-16",
     readTime: "10 min read",
     coverImage: "/images2/showreel/shot_04_stat_cards.webp",
     author: {
@@ -1275,6 +1275,7 @@ export const blogPosts: BlogPost[] = [
     tags: [
       "Facebook Ads Agency",
       "In-House Media Buyer",
+      "Facebook Ads Agency vs Hiring an In-House Media Buyer",
       "Meta Ads Management",
       "Agency vs In-House",
       "Paid Acquisition Strategy",
@@ -1955,11 +1956,11 @@ export const blogPosts: BlogPost[] = [
   // 4) 19 OCT 2026
   {
     slug: "high-ticket-sales-training-framework",
-    seoTitle: "High Ticket Sales Training & Framework",
+    seoTitle: "High Ticket Sales Training: The Closer & Qualification Framework (25–35% Win Rates)",
     title: "High Ticket Sales Training: The Closer & Qualification Framework That Doubles Win Rates",
     description: "Elite sales training for B2B closers: discover the pre-call indoctrination architecture, objection matrix, and scripts that double win rates to 25–35%.",
     publishedAt: "2026-10-19",
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-16",
     readTime: "14 min read",
     coverImage: "/images/blog/high-ticket-sales-training.jpg",
     author: {

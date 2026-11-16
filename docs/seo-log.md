@@ -308,3 +308,10 @@ from the 14 Nov inspection); Bing 23 submitted. Bing: 68 pages in index.
 - **Search Console:** resubmit `/sitemap.xml`; "Validate fix" on the Breadcrumbs report.
 - **Bing Webmaster Tools:** add the site and submit the sitemap (feeds ChatGPT search and Copilot).
 - **OpenSEO credits** (4 left) if keyword-volume, backlink or AI-visibility data is wanted.
+
+## 2026-11-16: Google Business Profile (locations/6499443464649758122, via Windsor)
+- Status: API reports OPEN; re-asserted OPEN. `has_google_updated=true`: Google-applied edits are waiting for the owner's review (likely source of the "Permanently closed" label).
+- Updated: description (no URL), website https://www.qualifiedleadsx.com/, primary phone +91 96256 95456, 8 service items, appointment link /book-your-call.
+- Photos uploaded from /gbp/: logo (profile), cover, 5 client-result screenshots (AT_WORK).
+- 3 posts published: HVAC case study (Learn more), Lead Conversion Rate Calculator (Learn more), open-for-clients post (Book).
+- Owner-only: review Google updates in the dashboard, remove keyword stuffing from the business name, add real office/team photos.

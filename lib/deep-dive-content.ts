@@ -560,7 +560,7 @@ export const lawFirmsMetaDeepDive: DeepDiveContent = {
         { title: "MVA client: $388,000 from $20,324 in 30 days", text: "The client had been buying leads at $150–$180 each. Its own campaign produced 1,079 phone-verified leads at $18.94, a 62% show rate (669 attended), a 29% close rate (194 clients) at about $2,000 per client, for $388,000 in revenue and a 19.09x return on ad spend." },
         { title: "Texas personal injury firm: 530 verified leads in 7 days", text: "$14,270 in spend, $26.90 per lead, every lead confirmed by an SMS code (OTP) so the phone number belongs to a real person." },
         { title: "387 exclusive MVA appointments in 24 days", text: "At $19.62 per appointment, with no shared or recycled leads." },
-        { title: "8,810 MVA leads at $7.61", text: "A pay-per-lead agency campaign focused on accidents from the last 30 days. [Read the case study](/case-studies/mva-personal-injury-leads-8810)." },
+        { title: "8,810 MVA leads at $7.61", text: "A pay-per-lead agency campaign focused on accidents from the last 30 days. [Read the case study](/case-studies/mva-personal-injury-leads-8810) or see how we generate [exclusive personal injury leads](/personal-injury-leads)." },
       ],
     },
     {
@@ -1109,5 +1109,79 @@ export const b2bLeadGenDeepDive: DeepDiveContent = {
       q: "How does the 90-day double revenue guarantee work for B2B services?",
       a: "If we do not meet agreed qualified sales call milestones within your first 90 days, we continue running your media buying, ad creative testing, and appointment setting at zero agency management fee until the target is achieved.",
     },
+  ],
+};
+
+/**
+ * /personal-injury-leads (16 Nov 2026). Demand: Google Keyword Planner, US,
+ * "personal injury leads" and "personal injury lead generation" 100-1K/month.
+ * Every number comes from /case-studies/mva-personal-injury-leads-8810.
+ */
+export const personalInjuryLeadsDeepDive: DeepDiveContent = {
+  intro: {
+    eyebrow: "Personal injury lead generation",
+    title: "Exclusive personal injury leads from a campaign you own",
+    paragraphs: [
+      "Most personal injury leads for sale are shared: the same claimant is sold to several firms, or the list is days old by the time you call. QualifiedLeadsX does not resell leads. We build and run the Meta ads, the qualifying form and the follow-up in your own ad account, so every lead goes only to you and arrives while the accident is recent.",
+      "The system was built and proven on motor vehicle accident (MVA) cases. For a pay-per-lead agency that supplies MVA leads to personal injury firms, it produced [8,810 leads at $7.61 each](/case-studies/mva-personal-injury-leads-8810) from $67,013 in Meta ads between July 1 and September 19, 2026.",
+    ],
+  },
+  sections: [
+    {
+      eyebrow: "Two ways to get PI leads",
+      title: "Buying personal injury leads vs generating your own",
+      items: [],
+      table: {
+        head: ["", "Buying leads from a vendor", "Your own campaign with QualifiedLeadsX"],
+        rows: [
+          ["Who else gets the lead", "Often sold to several firms", "Only you"],
+          ["How fresh it is", "Depends on the vendor; can be aged", "Arrives in real time; targeting built around recent accidents"],
+          ["Qualifying questions", "The vendor's", "Yours: accident date, injuries, treatment, fault, representation"],
+          ["Follow-up", "Your intake team, whenever they get to it", "Built in: first contact in under 5 minutes, then nurture and booking"],
+          ["Who owns the data and ad account", "The vendor", "You"],
+          ["Pricing", "Per lead", "Custom quoted management fee plus your ad spend"],
+        ],
+      },
+      note: "Comparing the two on your numbers? See [buying qualified leads vs generating your own](/blog/buy-qualified-leads-vs-generating-your-own).",
+    },
+    {
+      eyebrow: "How it works",
+      title: "How the personal injury lead generation system works",
+      numbered: true,
+      items: [
+        { title: "Recency targeting", text: "Ads and copy are built around people involved in an accident in the last 30 days, not broad 'injury' interest. Recency is what kept volume high in the MVA campaign. The targeting approach is explained in the [Sniper Method mastermind](/mastermind/personal-injury-facebook-ads)." },
+        { title: "Qualification inside the form", text: "Short questions filter on accident date, injuries, medical treatment and whether the person already has a lawyer, so intake spends time on cases that can be signed." },
+        { title: "Contact in under 5 minutes", text: "Claimants often fill in several forms. [AI speed to lead](/speed-to-lead) calls, texts or messages each new lead within minutes, and [WhatsApp follow-up](/whatsapp-lead-nurture) reaches the ones who don't answer." },
+        { title: "Booked intake calls", text: "Qualified claimants are booked straight into your intake calendar, with reminders, and synced to your CRM through [CRM automation](/crm-automation)." },
+        { title: "Reporting on signed cases", text: "We report cost per lead, cost per qualified lead and cost per signed case, not just lead volume." },
+      ],
+    },
+    {
+      eyebrow: "Who it's for",
+      title: "Personal injury leads for attorneys and lead generation companies",
+      items: [
+        { title: "Personal injury law firms", text: "Firms that want exclusive MVA and injury leads for their own intake team, without sharing claimants with other firms. More on [lead generation for law firms](/for/law-firms)." },
+        { title: "PI lead generation companies", text: "Pay-per-lead and pay-per-case agencies that supply firms. The [MVA case study](/case-studies/mva-personal-injury-leads-8810) was run for one." },
+        { title: "Firms already running Facebook ads", text: "If your current campaign produces leads that don't sign, the fix is usually targeting and follow-up, not more budget. See [Facebook ads for law firms](/meta-ads-for-law-firms)." },
+      ],
+    },
+    {
+      eyebrow: "What to measure",
+      title: "Cost per lead is only the first number",
+      items: [
+        { title: "Contact rate", text: "The share of leads reached by phone or message. Slow follow-up loses claimants to the next firm." },
+        { title: "Qualified rate", text: "The share that meet your case criteria. Model it with the [lead conversion rate calculator](/tools/lead-conversion-rate-calculator)." },
+        { title: "Cost per signed case", text: "Ad spend and fees divided by signed retainers: the number to compare against case value. Read [cost per acquisition vs cost per lead](/blog/cost-per-acquisition-vs-cost-per-lead)." },
+      ],
+      note: "Attorney advertising rules differ by state. Your firm reviews and approves every ad before it runs, and no ad promises case outcomes.",
+    },
+  ],
+  faqs: [
+    { q: "What are personal injury leads?", a: "Personal injury leads are people who were recently injured, for example in a motor vehicle accident, and asked to be contacted about a possible claim. A useful lead includes the accident date, the type of injury, whether they received medical treatment and whether they already have a lawyer." },
+    { q: "Are your personal injury leads exclusive?", a: "Yes. The campaign runs in an ad account in your name and every lead goes only to you. QualifiedLeadsX does not resell or share leads between firms." },
+    { q: "Do you sell personal injury leads?", a: "No. We don't sell lead lists. We build and manage the campaign that generates your own leads: Meta ads, a qualifying form, follow-up within minutes and booked intake calls. You own the ad account, the data and the funnel." },
+    { q: "How much does a personal injury lead cost?", a: "In the motor vehicle accident campaign we ran from July 1 to September 19, 2026, leads cost $7.61 each across 8,810 leads and $67,013 in ad spend. Your cost depends on state, case type, how strict the qualifying questions are and ad competition. Our management fee is custom quoted, and the engagement has a 90-day written guarantee." },
+    { q: "Do you work with personal injury lead generation companies?", a: "Yes. The MVA case study was run for a pay-per-lead agency that supplies motor vehicle accident leads to personal injury firms. We also work directly with law firms." },
+    { q: "How fast are personal injury leads contacted?", a: "New leads are contacted within 5 minutes by AI speed-to-lead follow-up over phone, SMS or WhatsApp, and qualified claimants are booked into your intake calendar." },
   ],
 };

@@ -49,6 +49,7 @@ const URLS = [
   `https://${HOST}/meta-ads-for-real-estate-investors`,
   `https://${HOST}/meta-ads-for-course-creators`,
   `https://${HOST}/meta-ads-for-saas`,
+  `https://${HOST}/personal-injury-leads`,
   `https://${HOST}/meta-ads-for-law-firms`,
   `https://${HOST}/appointment-setting-for-agencies`,
   `https://${HOST}/appointment-setting-for-saas`,

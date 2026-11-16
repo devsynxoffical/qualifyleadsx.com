@@ -133,6 +133,14 @@ export default function LawFirmsPage() {
               </div>
             </div>
 
+            <p className="text-sm text-mist">
+              Personal injury firm?{" "}
+              <Link href="/personal-injury-leads" className="text-lime underline underline-offset-2">
+                See how we generate exclusive personal injury leads
+              </Link>{" "}
+              (8,810 MVA leads at $7.61 in one campaign).
+            </p>
+
             <div className="flex flex-wrap gap-4 mt-8">
               <Link
                 href="/book-your-call#book"

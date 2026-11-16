@@ -330,6 +330,12 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
       priority: 0.92,
     },
     {
+      url: `${site.url}/personal-injury-leads`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
       url: `${site.url}/meta-ads-for-law-firms`,
       lastModified: now,
       changeFrequency: "weekly",

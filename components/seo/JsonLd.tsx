@@ -89,6 +89,7 @@ export function JsonLd() {
       "CRM automation",
     ],
     sameAs: [
+      "https://clutch.co/profile/qualifiedleadsx",
       "https://www.facebook.com/qualifiedleadsx/",
       "https://www.instagram.com/qualifiedleadsx/",
       "https://www.youtube.com/@QualifiedLeadsX",

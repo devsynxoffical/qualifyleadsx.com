@@ -48,6 +48,13 @@ export const publisherOrg = {
     width: 1000,
     height: 444,
   },
+  sameAs: [
+    "https://clutch.co/profile/qualifiedleadsx",
+    "https://www.linkedin.com/in/gauravecom/",
+    "https://www.youtube.com/@QualifiedLeadsX",
+    "https://www.facebook.com/qualifiedleadsx/",
+    "https://www.instagram.com/qualifiedleadsx/",
+  ],
 } as const;
 
 /** Known intrinsic sizes for the image folders used as covers / inline graphics. */

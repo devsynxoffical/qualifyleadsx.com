@@ -554,6 +554,14 @@ export default function AboutPage() {
               <div>
                 <span className="text-dim block mb-1 font-mono text-xs uppercase tracking-wider">Official Channels</span>
                 <a
+                  href="https://clutch.co/profile/qualifiedleadsx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lime hover:underline block mb-1 transition-colors"
+                >
+                  Clutch.co Verified Profile
+                </a>
+                <a
                   href="https://www.youtube.com/@QualifiedLeadsX"
                   target="_blank"
                   rel="noopener noreferrer"

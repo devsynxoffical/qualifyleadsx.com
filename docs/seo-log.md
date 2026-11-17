@@ -329,3 +329,34 @@ from the 14 Nov inspection); Bing 23 submitted. Bing: 68 pages in index.
 **Not done, needs the owner:** credit repair leads page. The site has no credit repair client, campaign or result to build it on; waiting for real data.
 **Flagged:** /for/law-firms and /meta-ads-for-law-firms show stats with no source on the site (3.8x pipeline growth, 83–84% show rate, "100% state bar compliant", "15 to 35 retainers monthly", "80% lower cost than Google"). Owner to confirm or remove.
 **Seen:** a Clutch profile (clutch.co/profile/qualifiedleadsx) was added to schema sameAs, the footer and About page upstream.
+
+## 2026-11-17: SEO/AEO/GEO cycle (see SEO_REPORT_2026-11-17.md)
+**Done:**
+- 23 titles shortened to 60 characters or fewer (keyword prefix kept).
+- 6 descriptions trimmed to 155 characters or fewer.
+- Unsourced law-firm stats replaced with the MVA case study figures.
+- llms files list the Clutch, Crunchbase and Trustpilot profiles.
+- PI page added to the footer.
+- AEO question on the broad-targeting post matched to its query.
+
+**Indexing:**
+- Google Indexing API: 6 accepted, 23 got 429 (quota); resubmit 18 Nov.
+- Bing: 29 accepted.
+- /blog/how-to-qualify-leads is now indexed.
+- 13 URLs discovered but not indexed, 7 unknown to Google, 1 crawled but not indexed.
+
+**Backlog:**
+- Resubmit the 23 URLs to Google on 18 Nov.
+- Measure the 16–17 Nov changes on 30 Nov.
+- Homepage mobile performance.
+
+**Owner:**
+- Clutch and Trustpilot reviews.
+- Credit-repair results.
+- Confirm the $50M+ and $150M+ claims.
+- Address rule.
+
+## 2026-11-17 (daily run, 08:44 UTC)
+**Measured:** GSC latest day 16 Nov: 70 impressions. Last 7 days: 324 impressions, 0 clicks, avg position 43.3. Last 28 days: 715 impressions, 6 clicks, 81 pages, 103 queries. 6 new single-impression queries, including "facebook ads for personal injury law firms" at pos 63 on the PI mastermind. "how to get marketing qualified leads" is now at 15.7 (was 6.7–9.6) since the post was re-indexed.
+**Indexing:** Google Indexing API accepted all 23 URLs that hit the quota earlier today.
+**Done:** no further page edits; today's cycle (SEO_REPORT_2026-11-17.md) already changed 28 pages.

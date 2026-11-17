@@ -21,7 +21,7 @@ import {
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Med Spa Lead Generation: High-Ticket Booking Agency ($3K–$10K Packages)",
+  title: "Med Spa Lead Generation: High-Ticket Booking Agency",
   description:
     "Predictable Med Spa lead generation and consultation booking. Fill your treatment calendar with $3K–$10K package clients using Meta Ads and speed to lead.",
   keywords: [

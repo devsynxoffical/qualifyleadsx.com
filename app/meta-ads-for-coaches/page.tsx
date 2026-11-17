@@ -11,7 +11,7 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { metaAdsCoachesDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
-  title: { absolute: "Facebook Ads for Coaches: Best Practices & Client Acquisition ($5K–$25K)" },
+  title: { absolute: "Facebook Ads for Coaches: Management Best Practices" },
   description:
     "Scale $5K–$25K coaching offers with Facebook and Instagram ads: discover proven best practices, broad Advantage+ scaling, and sub-$180 booked calls.",
   keywords: [

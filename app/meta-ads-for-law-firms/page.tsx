@@ -35,11 +35,11 @@ const faqs = [
   },
   {
     q: "How does Facebook advertising compare to Google PPC for attorneys?",
-    a: "Google Search clicks for competitive legal terms (like 'car accident lawyer') often cost $80 to $250+ per click. Facebook Ads disrupts potential claimants with educational consumer rights videos at an 80% lower cost per inquiry, opening a high-margin secondary intake channel.",
+    a: "Google Search clicks for competitive legal terms (like 'car accident lawyer') often cost $80 to $250+ per click. Facebook Ads disrupts potential claimants with educational consumer rights videos, usually at a lower cost per inquiry than search clicks. In one MVA campaign we ran, leads cost $7.61 each across 8,810 leads.",
   },
   {
     q: "Why is sub-3-minute intake vital for retaining legal cases?",
-    a: "Legal claimants typically submit inquiries on multiple firm websites simultaneously. Reaching them within 180 seconds increases signed retainer conversion by over 300% compared to delayed email follow-ups.",
+    a: "Legal claimants typically submit inquiries on multiple firm websites simultaneously. Reaching them within 180 seconds means your firm is often the first to speak to them, which is when most cases are signed.",
   },
   {
     q: "Can this system integrate with legal practice management CRMs like Clio or Filevine?",
@@ -113,14 +113,14 @@ export default function MetaAdsForLawFirmsPage() {
                 Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
-                <strong>Facebook ads for law firms</strong> sign high-value legal retainers by deploying state-bar-compliant educational video ads and sub-3-minute intake triage. Costing 80% less than Google PPC legal clicks, this system qualifies claimants on liability and damages before routing to attorney calendars.
+                <strong>Facebook ads for law firms</strong> sign high-value legal retainers by deploying state-bar-compliant educational video ads and sub-3-minute intake triage. This system qualifies claimants on liability and damages before routing to attorney calendars.
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-lime font-mono">100%</div>
-                <div className="text-xs text-fog mt-1">State Bar Ethics Compliant</div>
+                <div className="text-2xl font-bold text-lime font-mono">8,810</div>
+                <div className="text-xs text-fog mt-1">MVA Leads in One Campaign</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
                 <div className="text-2xl font-bold text-paper font-mono">&lt;3 Mins</div>
@@ -131,8 +131,8 @@ export default function MetaAdsForLawFirmsPage() {
                 <div className="text-xs text-fog mt-1">Initial Consultation Show Rate</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-paper font-mono">3.8x</div>
-                <div className="text-xs text-fog mt-1">Case Retainer Pipeline Growth</div>
+                <div className="text-2xl font-bold text-paper font-mono">$7.61</div>
+                <div className="text-xs text-fog mt-1">Cost per MVA Lead</div>
               </div>
             </div>
 

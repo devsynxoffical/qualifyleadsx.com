@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Lead Generation for Coaches: Client Acquisition Funnels ($5K–$25K Offers)",
+  title: "Lead Generation for Coaches: Client Acquisition Funnels",
   description:
     "Done-for-you lead generation and client acquisition for business and executive coaches. Book 30–50 qualified sales calls monthly from ready-to-invest clients.",
   keywords: [

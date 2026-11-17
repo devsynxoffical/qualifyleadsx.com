@@ -24,9 +24,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Lead Generation for Agencies: Client Acquisition System ($5K–$25K Retainers)",
+  title: "Lead Generation for Agencies: Win More Retainer Clients",
   description:
-    "Scale your digital marketing agency past $100K/month with predictable inbound sales calls. We install a done-for-you VSL funnel and Meta ads machine to book retainers.",
+    "Lead generation for marketing agencies: a done-for-you VSL funnel and Meta ads system that books qualified retainer prospects onto your calendar weekly.",
   keywords: [
     "lead generation for agencies",
     "client acquisition for agencies",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Lead Generation for Agencies: Client Acquisition System ($5K–$25K Retainers) | QualifiedLeadsX™",
+    title: "Lead Generation for Agencies: Win More Retainer Clients | QualifiedLeadsX™",
     description:
       "Install a high-converting client acquisition funnel for marketing, software, and creative agencies. Book 35–60 qualified retainer calls every month.",
     url: "/for/agencies",

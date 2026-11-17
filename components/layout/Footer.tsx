@@ -44,6 +44,7 @@ const footerColumns = [
       { label: "For Medical Spas", href: "/for/med-spas" },
       { label: "For Financial Advisors", href: "/for/financial-advisors" },
       { label: "For Law Firms", href: "/for/law-firms" },
+      { label: "Personal Injury Leads", href: "/personal-injury-leads" },
     ],
   },
   {

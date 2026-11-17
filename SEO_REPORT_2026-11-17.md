@@ -150,7 +150,22 @@ Left at 61–62 characters on purpose: `/`, `/lead-generation-agency` and `/spee
 
 ## 6. Indexing
 
-INDEXING
+**URL Inspection API, 17 Nov.** These are the 20 URLs that were not indexed on 16 Nov, plus the 4 pages that lost impressions and the new PI page.
+
+| Status | Count | URLs |
+|---|---|---|
+| Submitted and indexed | 5 | /blog/how-to-qualify-leads (**newly indexed since 16 Nov**, was "crawled, not indexed"); /blog/high-ticket-sales-training-framework, /blog/b2b-roas-benchmarks-qualified-appointment-generation, /blog/high-ticket-sales-how-to-get-high-ticket-clients, /mastermind/hidden-facebook-interest |
+| Discovered, not indexed | 13 | /appointment-setting-for-saas, /benchmarks/meta-ads-cpm, /case-studies/executive-consulting-150k, both /compare pages, /crm-automation, /for/home-improvement, /for/law-firms, /meta-ads-for-law-firms, /meta-ads-for-real-estate-investors, /tools/ltv-cac-calculator, /tools/roas-calculator |
+| URL unknown to Google | 7 | /appointment-setting-for-coaches, /blog/scaling-from-100k-to-500k-coaching, /case-studies/b2b-technology-agency-71k, /case-studies/strategic-consulting-85k, /for/financial-advisors, /meta-ads-for-course-creators, /personal-injury-leads |
+| Crawled, not indexed | 1 | /tools/lead-conversion-rate-calculator (crawled 15 Nov) |
+
+- **Pages that lost impressions:** all 4 are still indexed. Their loss is about ranking, not index removal.
+- **Recrawl requests (17 Nov):**
+  - **Google Indexing API:** 6 accepted (/vsl-funnels, /appointment-setting, /compare/qualifiedleadsx-alternatives, /mastermind, /about, /for/med-spas). The other 23 got **429 quota exceeded**: the daily publish quota was spent by the 16 Nov requests. They should be resubmitted on 18 Nov.
+  - **Bing:** 29 URLs accepted.
+  - **Caveat:** Google documents its Indexing API only for job-posting and livestream pages. An accepted request does not mean the page will be crawled or indexed. The 16 Nov requests (24 accepted) had produced 1 newly indexed URL by 17 Nov.
+- **Overall Google index status:** at least 98 of 118 indexed (the 97 indexed on 16 Nov plus /blog/how-to-qualify-leads). Today's check did not re-inspect the other 93 indexed URLs: the full run failed partway on a network error and was re-run only on these 25.
+- **Live check after deploy:** 27 of the 28 changed pages serve a title of 60 characters or fewer. /lead-generation-agency is 61 on purpose (section 3). The law-firm pages no longer contain "State Bar Ethics Compliant" or "3.8x".
 
 ## 7. Remaining opportunities and the next cycle (from 24 Nov)
 

@@ -355,3 +355,8 @@ from the 14 Nov inspection); Bing 23 submitted. Bing: 68 pages in index.
 - Credit-repair results.
 - Confirm the $50M+ and $150M+ claims.
 - Address rule.
+
+## 2026-11-17 (daily run, 08:44 UTC)
+**Measured:** GSC latest day 16 Nov: 70 impressions. Last 7 days: 324 impressions, 0 clicks, avg position 43.3. Last 28 days: 715 impressions, 6 clicks, 81 pages, 103 queries. 6 new single-impression queries, including "facebook ads for personal injury law firms" at pos 63 on the PI mastermind. "how to get marketing qualified leads" is now at 15.7 (was 6.7–9.6) since the post was re-indexed.
+**Indexing:** Google Indexing API accepted all 23 URLs that hit the quota earlier today.
+**Done:** no further page edits; today's cycle (SEO_REPORT_2026-11-17.md) already changed 28 pages.

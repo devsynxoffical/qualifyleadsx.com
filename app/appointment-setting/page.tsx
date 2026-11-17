@@ -39,10 +39,10 @@ import { appointmentSettingDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "B2B Appointment Setting Agency: 30–50 Qualified Sales Calls Monthly",
+    absolute: "B2B Appointment Setting Agency: 30–50 Sales Calls a Month",
   },
   description:
-    "Automated B2B appointment setting agency with sub-3-minute speed to lead. Turn cold inquiries into 30-50 pre-qualified sales calls every month. 88%+ show-up rate.",
+    "B2B appointment setting agency: every inquiry contacted within minutes, qualified and booked. Turn cold leads into 30–50 pre-qualified sales calls a month.",
   keywords: [
     "b2b appointment setting services",
     "appointment setting agency",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     canonical: "/appointment-setting",
   },
   openGraph: {
-    title: "B2B Appointment Setting Agency: 30–50 Qualified Sales Calls Monthly | QualifiedLeadsX™",
+    title: "B2B Appointment Setting Agency: 30–50 Sales Calls a Month | QualifiedLeadsX™",
     description:
       "Automated B2B appointment setting system with sub-3-minute speed to lead. Turn cold inquiries into pre-qualified, high-ticket sales calls.",
     url: `${site.url}/appointment-setting`,
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   twitter: {
     images: [defaultOgImage.url],
     card: "summary_large_image",
-    title: "B2B Appointment Setting Agency: 30–50 Qualified Sales Calls Monthly",
+    title: "B2B Appointment Setting Agency: 30–50 Sales Calls a Month",
     description:
       "Automated B2B appointment setting system with sub-3-minute speed to lead. Turn cold inquiries into pre-qualified, high-ticket sales calls.",
   },

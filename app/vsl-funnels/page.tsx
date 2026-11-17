@@ -22,7 +22,7 @@ import {
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "VSL Funnel Agency: High-Ticket Video Sales Letter Funnels ($3K–$25K Deals)",
+  title: "VSL Funnel Agency: High-Ticket Video Sales Letter Funnels",
   description:
     "Premier VSL funnel agency engineering 12-minute video sales letters that pre-sell $3K–$25K offers. Book 30–50 qualified sales calls every month.",
   keywords: [

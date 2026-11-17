@@ -20,7 +20,7 @@ import {
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "B2B & High-Ticket Marketing Benchmarks 2026 ($50M+ Data Breakdown)",
+  title: "B2B & High-Ticket Marketing Benchmarks 2026",
   description:
     "Explore verified 2026 marketing benchmarks: cost per qualified meeting ($120–$250), Meta CPMs, CAC, and show-up rates across 30+ industries from $50M+ ad spend.",
   keywords: [

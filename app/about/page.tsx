@@ -24,7 +24,7 @@ import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
 import { founder, imageObject, FOUNDER_ID, ORG_ID, WEBSITE_ID } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: { absolute: "About QualifiedLeadsX: $50M+ Meta Ads Managed | Gaurav Kapoor" },
+  title: { absolute: "About QualifiedLeadsX: $50M+ Meta Ads Managed" },
   description:
     "QualifiedLeadsX is operated by Ecom Expertz LLC and founded by Gaurav Kapoor. 12+ years of performance marketing, $50M+ Meta ads spend, and 125+ case studies.",
   keywords: [

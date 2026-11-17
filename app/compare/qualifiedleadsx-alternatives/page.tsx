@@ -10,7 +10,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Top QualifiedLeadsX Alternatives: Lead Gen Agencies Comparison (2026)",
+  title: "QualifiedLeadsX Alternatives: Lead Gen Agencies Compared",
   description:
     "An honest comparison of QualifiedLeadsX alternatives for high-ticket lead generation: traditional agencies, cold email shops, and in-house hiring.",
   keywords: [

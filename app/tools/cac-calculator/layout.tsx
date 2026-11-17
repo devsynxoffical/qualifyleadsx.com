@@ -5,10 +5,10 @@ import type { Metadata } from "next";
 // canonical ("/"), telling Google it was a duplicate of the homepage.
 const TITLE = "B2B CAC Calculator & Acquisition Benchmarks";
 const DESCRIPTION =
-  "Free B2B customer acquisition cost (CAC) calculator and benchmark models. Enter ad spend, team and tool costs to calculate blended CAC, payback, and profit margin.";
+  "Free B2B customer acquisition cost (CAC) calculator. Enter ad spend, team and tool costs to get blended CAC, payback period and profit margin.";
 
 export const metadata: Metadata = {
-  title: { absolute: `${TITLE} | QualifiedLeadsX` },
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: "/tools/cac-calculator" },
   openGraph: {

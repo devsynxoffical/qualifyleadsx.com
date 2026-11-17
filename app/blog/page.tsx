@@ -11,7 +11,7 @@ import { founder, imageObject, publisherOrg, webPageNode } from "@/lib/schema";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
-  title: "B2B Client Acquisition & Meta Ads Blog: Scaling Guides & Frameworks",
+  title: "B2B Client Acquisition & Meta Ads Blog",
   description:
     "Explore actionable B2B client acquisition guides, VSL funnel architecture, Meta ads playbooks, and lead qualification benchmarks from $50M+ managed ad spend.",
   keywords: [

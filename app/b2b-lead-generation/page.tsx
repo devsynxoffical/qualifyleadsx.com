@@ -26,7 +26,7 @@ import { b2bLeadGenDeepDive } from "@/lib/deep-dive-content";
 export const metadata: Metadata = {
   title: "Qualified B2B Leads: Enterprise Lead Generation Services",
   description:
-    "Generate qualified B2B leads and high-ticket service contracts ($10K–$100K+). Algorithmic Meta ads, 12-min VSL pre-selling, and sub-5-minute appointment setting.",
+    "Qualified B2B leads for high-ticket service firms ($10K–$100K+ contracts): Meta ads, 12-minute VSL pre-selling and appointment setting in under 5 minutes.",
   keywords: [
     "qualified b2b leads",
     "b2b lead generation services",

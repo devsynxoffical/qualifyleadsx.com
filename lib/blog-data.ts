@@ -168,7 +168,7 @@ export const blogPosts: BlogPost[] = [
   // 10 NOV 2026: HVAC Meta ads guide (real campaign data) and appointment setter hiring guide
   {
     "slug": "facebook-ads-for-hvac-companies",
-    "seoTitle": "Facebook Ads for HVAC Companies: Real Campaign Numbers & 12.7x ROAS",
+    "seoTitle": "Facebook Ads for HVAC Companies: Real Numbers & 12.7x ROAS",
     "title": "Facebook Ads for HVAC Companies: Real Campaign Numbers and the Funnel Behind Them",
     "description": "Facebook ads for HVAC companies, with real campaign data: cost per lead, booked appointments, show rate, cost per installation, ROAS and the full funnel.",
     "publishedAt": "2026-11-10",
@@ -277,7 +277,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     "slug": "how-to-hire-an-appointment-setter",
-    "seoTitle": "How to Hire an Appointment Setter: Scorecard, Pay & Ramp-Up (2026)",
+    "seoTitle": "How to Hire an Appointment Setter: Scorecard, Pay & Ramp-Up",
     "title": "How to Hire an Appointment Setter: Scorecard, Interview, Pay and Ramp-Up",
     "description": "How to hire an appointment setter for a high-ticket business: the scorecard, job description, role-play interview, pay plan and two-week ramp-up.",
     "publishedAt": "2026-11-10",
@@ -402,7 +402,7 @@ export const blogPosts: BlogPost[] = [
   // 4 NOV 2026 — informational pillar: "speed to lead statistics"
   {
     slug: "speed-to-lead-statistics-response-time",
-    seoTitle: "Speed to Lead Statistics 2026: The 5-Minute Rule That Boosts Bookings 391%",
+    seoTitle: "Speed to Lead Statistics (2026): Response Time Benchmarks",
     title: "Speed to Lead Statistics 2026: Why the First 5 Minutes Decide Whether a High-Ticket Lead Books a Call",
     description: "Speed to lead statistics for high-ticket offers: how response time changes qualification odds, bookings and no-shows, plus the 60-second follow-up stack.",
     publishedAt: "2026-11-04",
@@ -555,7 +555,7 @@ export const blogPosts: BlogPost[] = [
   // 4 NOV 2026 — informational pillar: "how to write a VSL script"
   {
     slug: "how-to-write-a-vsl-script-12-minute-structure",
-    seoTitle: "How to Write a VSL Script: 12-Minute Structure That Pre-Sells $5K–$25K Deals",
+    seoTitle: "How to Write a VSL Script: The 12-Minute Structure",
     title: "How to Write a VSL Script: The 12-Minute Structure That Pre-Sells High-Ticket Prospects Before the Call",
     description: "A six-act VSL script structure for high-ticket offers: hook, problem, alternatives, unique mechanism, proof and filtered CTA, with timing and examples.",
     publishedAt: "2026-11-04",
@@ -911,7 +911,7 @@ export const blogPosts: BlogPost[] = [
   // 29 OCT 2026 — commercial-intent pillar: "b2b appointment setting vs in-house sdr"
   {
     slug: "b2b-appointment-setting-vs-in-house-sdr-teams",
-    seoTitle: "B2B Appointment Setting vs In-House SDR Teams: 2026 Cost & ROI Comparison",
+    seoTitle: "B2B Appointment Setting vs In-House SDR: Cost & ROI (2026)",
     title: "B2B Appointment Setting vs In-House SDR Teams: The 2026 Cost, Performance & ROI Breakdown",
     description: "Compare in-house SDR costs ($85K–$120K) vs automated B2B appointment setting. See real benchmarks on ramp time, tech stacks, show-up rates, and pipeline ROI.",
     publishedAt: "2026-10-29",
@@ -1265,7 +1265,7 @@ export const blogPosts: BlogPost[] = [
   // 27 OCT 2026 — commercial-intent pillar: "facebook ads agency"
   {
     slug: "facebook-ads-agency-vs-in-house-media-buyer",
-    seoTitle: "Facebook Ads Agency vs Hiring an In-House Media Buyer: 2026 Cost & ROI Comparison",
+    seoTitle: "Facebook Ads Agency vs Hiring an In-House Media Buyer",
     title: "Facebook Ads Agency vs In-House Media Buyer: Which Is Right for a High-Ticket Business in 2026?",
     description: "Agency fees run $2K–$7.5K a month; an in-house media buyer costs $90K–$150K a year fully loaded. Compare real costs, creative output, speed, and ROI.",
     publishedAt: "2026-10-27",
@@ -1679,7 +1679,7 @@ export const blogPosts: BlogPost[] = [
       "Performance Media Buying",
     ],
     aeoSummary: {
-      question: "Why does broad targeting work better than lookalikes for high-ticket B2B ads?",
+      question: "How should you target Facebook ads for high-ticket products and B2B offers?",
       answer: "Broad targeting on Meta outperforms narrow lookalike audiences because Meta's Andromeda recommendation engine uses the creative assets (video script, on-screen text, transcript audio) to identify and deliver ads directly to receptive decision-makers, eliminating the audience fatigue and rising CPMs inherent in small audience pools.",
       bulletPoints: [
         "Narrow interest stacks restrict machine learning and cause rapid frequency fatigue.",
@@ -1962,7 +1962,7 @@ export const blogPosts: BlogPost[] = [
   // 4) 19 OCT 2026
   {
     slug: "high-ticket-sales-training-framework",
-    seoTitle: "High Ticket Sales Training: The Closer & Qualification Framework (25–35% Win Rates)",
+    seoTitle: "High Ticket Sales Training: Closer & Qualification Framework",
     title: "High Ticket Sales Training: The Closer & Qualification Framework That Doubles Win Rates",
     description: "Elite sales training for B2B closers: discover the pre-call indoctrination architecture, objection matrix, and scripts that double win rates to 25–35%.",
     publishedAt: "2026-10-19",
@@ -2576,7 +2576,7 @@ export const blogPosts: BlogPost[] = [
       {
     slug: "how-much-does-meta-ads-cost",
     title: "How Much Does Meta Ads Cost in 2026? Full Budget Guide",
-    seoTitle: "How Much Does Meta Ads Cost in 2026? Full Budget Guide & CPM Benchmarks",
+    seoTitle: "How Much Does Meta Ads Cost in 2026? Budget & CPM Guide",
     description: "Detailed breakdown of Meta Ads costs for B2B and high-ticket service businesses. CPM, CPC, cost per booked call, and monthly budget recommendations.",
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-16",
@@ -2893,7 +2893,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "high-ticket-funnel-examples",
     title: "High-Ticket Funnel Examples: 5 Proven Blueprints in 2026",
-    seoTitle: "5 High-Ticket Funnel Examples: Blueprints Generating $150M+ Revenue",
+    seoTitle: "5 High-Ticket Funnel Examples: Proven Funnel Blueprints",
     description: "Inspect 5 proven high-ticket sales funnel examples generating $150M+ in client revenue. VSL funnels, two-step applications, and setter-closers workflows.",
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-16",
@@ -3174,7 +3174,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "high-ticket-lead-generation-strategies",
     title: "High-Ticket Lead Generation Strategies: 7 Scalable Models",
-    seoTitle: "High-Ticket Lead Generation Strategies: 7 Models to Book $5K–$25K Clients",
+    seoTitle: "High-Ticket Lead Generation Strategies: 7 Proven Models",
     description: "Discover 7 proven high-ticket lead generation strategies to acquire $5K–$25K clients predictably. Compare paid social, 12-min VSLs, and speed-to-lead triage.",
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-16",

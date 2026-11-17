@@ -84,6 +84,7 @@ const header = `# QualifiedLeadsX: full content for AI assistants
 - Guarantee: ${bf.guarantee}
 - Book a call: ${SITE}/book-your-call
 - Contact: hello@qualifiedleadsx.com, WhatsApp +91 96256 95456
+- Profiles: https://clutch.co/profile/qualifiedleadsx · https://www.crunchbase.com/organization/qualifiedleadsx · https://www.trustpilot.com/review/qualifiedleadsx.com
 - Short index: ${SITE}/llms.txt
 - Generated: ${new Date().toISOString().slice(0, 10)} from the live site's server-rendered pages.
 

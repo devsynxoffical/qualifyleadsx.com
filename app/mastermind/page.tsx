@@ -25,7 +25,7 @@ import { ClientSuccess } from "@/components/sections/ClientSuccess";
 import { Testimonials } from "@/components/sections/Testimonials";
 
 export const metadata: Metadata = {
-  title: "AI Client Acquisition Mastermind for Agency Owners & Coaches ($100K–$500K/Mo)",
+  title: "AI Client Acquisition Mastermind for Agency Owners & Coaches",
   description:
     "An exclusive private collective of high-ticket coaches, agency owners, and B2B founders scaling past $100K–$500K+/month with Meta Ads and AI pipelines.",
   keywords: [

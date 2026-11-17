@@ -26,7 +26,7 @@ import { leadGenAgencyDeepDive } from "@/lib/deep-dive-content";
 export const metadata: Metadata = {
   title: "Customer Acquisition Agency for High-Ticket B2B: Done-for-You",
   description:
-    "Top customer acquisition agencies installing done-for-you VSL funnels, Meta Ads, and AI appointment setting. Book 30–50 qualified sales calls with 90-day guarantee.",
+    "Done-for-you customer acquisition agency: Meta ads, VSL funnels and AI appointment setting that book 30–50 qualified sales calls a month. 90-day guarantee.",
   keywords: [
     "customer acquisition agency",
     "customer acquisition agencies",

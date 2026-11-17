@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "Why is sub-3-minute intake critical for law firm lead generation?",
-    a: "Legal consumers facing urgent issues typically call the first firm that responds. Contacting an inquiring claimant within 3 minutes increases case retention rates by over 300% compared to firms that follow up hours later.",
+    a: "Legal consumers facing urgent issues typically call the first firm that responds. Contacting an inquiring claimant within 3 minutes gives your firm the best chance of signing the case before another firm calls back. Response-time research is summarised in our speed-to-lead statistics guide.",
   },
   {
     q: "What is the average cost per retained legal client?",
@@ -110,7 +110,7 @@ export default function LawFirmsPage() {
                 Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
-                <strong>Law firm lead generation</strong> requires bar-compliant paid media campaigns coupled with sub-3-minute intake response times. By screening claimants on incident severity, liability, and insurance coverage before attorney handoff, our system signs 15 to 35 high-value retainers monthly while protecting attorney billable hours.
+                <strong>Law firm lead generation</strong> requires bar-compliant paid media campaigns coupled with sub-3-minute intake response times. By screening claimants on incident severity, liability, and insurance coverage before attorney handoff, intake spends time only on viable cases, protecting attorney billable hours. One MVA campaign we ran produced 8,810 leads at $7.61 each.
               </p>
             </div>
 
@@ -120,12 +120,12 @@ export default function LawFirmsPage() {
                 <div className="text-xs text-fog mt-1">Average Intake Speed</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-paper font-mono">100%</div>
-                <div className="text-xs text-fog mt-1">State Bar Ethics Compliant</div>
+                <div className="text-2xl font-bold text-paper font-mono">8,810</div>
+                <div className="text-xs text-fog mt-1">MVA Leads in One Campaign</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-lime font-mono">3.8x</div>
-                <div className="text-xs text-fog mt-1">Retainer Pipeline Growth</div>
+                <div className="text-2xl font-bold text-lime font-mono">$7.61</div>
+                <div className="text-xs text-fog mt-1">Cost per MVA Lead</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
                 <div className="text-2xl font-bold text-paper font-mono">84%</div>

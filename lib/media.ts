@@ -18,6 +18,8 @@ export type TrainingVideo = {
   description: string;
   duration?: string;
   link?: string;
+  /** Original publish date (ISO), when known. */
+  uploadDate?: string;
 };
 
 const REVIEW_CDN =
@@ -83,5 +85,37 @@ export const trainingVideos: TrainingVideo[] = [
     description: "Roofing agency client just dropped their cost per lead by 50%. Live dashboard breakdown showing $129,000 in 60 days.",
     duration: "4:49",
     link: "/mastermind/lto-funnel-scale",
+  },
+  // Added 18 Nov 2026 from Gaurav Kapoor's Facebook videos (downloaded from the
+  // links the owner sent; descriptions summarise the original captions).
+  {
+    src: "/training/fb-agency-client-256-to-4k.mp4",
+    uploadDate: "2025-06-16T00:00:00+00:00",
+    poster: "/training/fb-agency-client-256-to-4k-poster.jpg",
+    title: "Agency Client Turned $256 Into $4K In Deals",
+    label: "DWY Client Result",
+    description: "Behind the scenes: how an agency owner used our system to help their own client close $4K in high-ticket deals from $256 in ad spend.",
+    duration: "4:52",
+    link: "/mastermind/hidden-facebook-interest",
+  },
+  {
+    src: "/training/fb-mva-agency-deep-dive.mp4",
+    uploadDate: "2026-11-14T00:00:00+00:00",
+    poster: "/training/fb-mva-agency-deep-dive-poster.jpg",
+    title: "MVA Agency Deep-Dive: Targeting & Ad Copy",
+    label: "MVA & Legal Strategy",
+    description: "Two 1.5-hour sessions with an MVA agency owner: audience segmentation, ad copy frameworks for car, truck and motorcycle accident cases, and his reaction.",
+    duration: "5:00",
+    link: "/mastermind/personal-injury-facebook-ads",
+  },
+  {
+    src: "/training/fb-dwy-client-reaction.mp4",
+    uploadDate: "2025-06-12T00:00:00+00:00",
+    poster: "/training/fb-dwy-client-reaction-poster.jpg",
+    title: "New DWY Agency Client Sees The Targeting Method",
+    label: "Client Reaction",
+    description: "A 40-second clip from a 1.5-hour deep-dive: the moment a new done-with-you agency client sees the targeting method for landing high-ticket clients.",
+    duration: "0:40",
+    link: "/mastermind/hidden-facebook-interest",
   },
 ];

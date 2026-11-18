@@ -122,7 +122,7 @@ export default function Home() {
         thumbnailUrl: v.poster ? `${site.url}${v.poster}` : undefined,
         contentUrl: v.src ? `${site.url}${v.src}` : undefined,
         duration: v.duration ? isoDuration(v.duration) : undefined,
-        uploadDate: "2026-09-15T00:00:00+00:00",
+        uploadDate: v.uploadDate ?? "2026-09-15T00:00:00+00:00",
         inLanguage: "en-US",
         publisher: { "@id": ORG_ID },
         url: v.link ? `${site.url}${v.link}` : site.url,

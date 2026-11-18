@@ -76,7 +76,19 @@ Compared with 17 Nov: impressions are up (397 → 584 property total), clicks 6 
 |---|---|---|---|
 | Live site before (18 Nov, 2 runs) | 46 / 52 | 2,510 / 1,320 ms | 4.0 / 3.7 s |
 | Production build with fix (local, 2 runs) | 70 / 70 | 670 / 700 ms | 4.1 / 4.0 s |
-| Live site after deploy | LIVE_LH | | |
+| Live after deploy, without preload (2 runs) | 50 / 50 | 800 / 790 ms | 5.6 / 5.8 s |
+| **Live after preload fix, commit 2 (3 runs)** | **56 / 52 / 60** | **730 / 860 / 810 ms** | **4.5 / 4.8 / 3.8 s** |
+
+**A regression was caught and fixed the same day.** After the first deploy, the still image became the LCP element (PerformanceObserver on a Moto G4 profile with 4x CPU throttle: image painted at 4,020 ms, text at 2,940 ms). The browser was only finding the image through the stylesheet.
+
+A mobile-only `<link rel="preload" fetchpriority="high">` in `<head>` fixed it. The same test now shows the image painting at 2,896 ms, together with the text (2,872 ms).
+
+**Net live result:**
+- Total blocking time fell by about 35–70% (from 1,320–2,510 ms to 730–860 ms).
+- Performance score is up from 46–52 to 52–60.
+- LCP is within run-to-run variance of before (3.8–4.8 s vs 3.7–4.0 s).
+
+The 4–5 s LCP is mostly hydration and server distance, not the hero.
 
 ### 3.3 Metadata
 Nine meta descriptions over 155 characters were trimmed: /about, /benchmarks, /blog, /blog/b2b-appointment-setting-vs-in-house-sdr-teams, /blog/high-ticket-lead-generation-strategies, /for/coaches, /for/real-estate-investors, /high-ticket-lead-generation and /meta-ads-agency.
@@ -109,7 +121,39 @@ Watched but not changed: "facebook ads agency vs hiring an in-house media buyer"
 
 ## 5. Technical and indexing audit
 
-INDEXING
+**URL Inspection API, all 118 sitemap URLs (18 Nov; run with retries, 0 fetch errors):**
+
+| Status | 16 Nov | 18 Nov |
+|---|---|---|
+| Submitted and indexed | 97 | **100** |
+| Discovered, currently not indexed | 13 | 11 |
+| URL is unknown to Google | 6 | 7 |
+| Crawled, currently not indexed | 2 | 0 |
+
+- **Newly indexed since 16 Nov:** /personal-injury-leads (crawled 17 Nov), /blog/how-to-qualify-leads and /tools/lead-conversion-rate-calculator.
+- **Canonicals:** 0 mismatches between Google's chosen canonical and the declared one.
+- **Still not indexed (18):**
+  - /appointment-setting-for-coaches and /appointment-setting-for-saas
+  - /benchmarks/meta-ads-cpm
+  - /blog/scaling-from-100k-to-500k-coaching
+  - 3 case studies (b2b-technology-agency-71k, executive-consulting-150k, strategic-consulting-85k)
+  - 2 comparison pages
+  - /crm-automation
+  - /for/financial-advisors, /for/home-improvement and /for/law-firms
+  - /meta-ads-for-course-creators, /meta-ads-for-law-firms and /meta-ads-for-real-estate-investors
+  - /tools/ltv-cac-calculator and /tools/roas-calculator
+- **A few pages moved backwards** in the API, from "discovered" to "unknown" (e.g. /meta-ads-for-law-firms). Google reports this when it drops a discovered URL from its crawl queue. None of these pages has an error, block or noindex.
+- **Most likely cause** (my inference): Google is rationing crawl on a new domain with no external links. The programmatic service-by-industry pages and the newest pages are waiting in the queue.
+
+**Recrawl requests (18 Nov):**
+- **Google Indexing API:** 29 accepted, 0 failed. That covers the 2 new tools, the 10 pages with changed descriptions, the homepage and 16 of the 18 not-indexed URLs.
+- **Bing:** the first submission got a temporary 503 from Bing's service; the retry was accepted (25 URLs).
+- Accepted does not mean indexed. Google documents its Indexing API only for job-posting and livestream pages.
+
+**Live checks after deploy:**
+- **New tools:** /tools/mer-calculator and /tools/ad-frequency-calculator return the new titles, self-canonicals and FAQPage schema.
+- **Sitemaps:** both tools are in the live sitemaps.
+- **Homepage:** the preload tag is served.
 
 **Other checks today:**
 - `seo:validate`: 0 missing required schema properties.

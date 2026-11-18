@@ -360,3 +360,25 @@ from the 14 Nov inspection); Bing 23 submitted. Bing: 68 pages in index.
 **Measured:** GSC latest day 16 Nov: 70 impressions. Last 7 days: 324 impressions, 0 clicks, avg position 43.3. Last 28 days: 715 impressions, 6 clicks, 81 pages, 103 queries. 6 new single-impression queries, including "facebook ads for personal injury law firms" at pos 63 on the PI mastermind. "how to get marketing qualified leads" is now at 15.7 (was 6.7–9.6) since the post was re-indexed.
 **Indexing:** Google Indexing API accepted all 23 URLs that hit the quota earlier today.
 **Done:** no further page edits; today's cycle (SEO_REPORT_2026-11-17.md) already changed 28 pages.
+
+## 2026-11-18: SEO/AEO/GEO cycle (see SEO_REPORT_2026-11-18.md)
+**Done:**
+- New /tools/mer-calculator and /tools/ad-frequency-calculator (GSC demand: pos 18 and 10.5 on the /tools hub).
+- Mobile homepage: three.js deferred to first input, plus a hero still and preload. Live: TBT 1,320–2,510 → 730–860 ms, perf 46–52 → 52–60.
+- 9 descriptions trimmed (0 over 155 now).
+
+**Indexing:**
+- 100 of 118 indexed (up from 97); the PI page is indexed.
+- Google: 29 accepted.
+- Bing: 25 accepted (after a temporary 503).
+
+**Backlog:**
+- 30 Nov measurement.
+- Homepage hydration: convert static sections to server components.
+- 18 URLs not indexed: crawl budget, waiting on authority.
+
+**Owner:**
+- Reviews.
+- Tool-directory submissions.
+- GA4 Data API plus property ID.
+- Credit-repair data.

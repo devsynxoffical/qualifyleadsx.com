@@ -24,6 +24,10 @@ const faqs = [
     a: "Yes. Meta Ads Manager runs Facebook, Instagram, Messenger and Audience Network from one budget, so a Facebook ads budget and a Meta ads budget are the same thing.",
   },
   {
+    q: "Is this a Meta ads calculator for Facebook and Instagram?",
+    a: "Yes. It is a free Meta ads calculator for Facebook and Instagram campaigns: enter the clients you want, your close rate, show rate and cost per booked call, and it returns the monthly and daily budget. To set a cost cap for the campaign, use the Meta ads bid strategy calculator; to check how often people see your ads, use the ad frequency calculator.",
+  },
+  {
     q: "Why does my close rate change the budget so much?",
     a: "Every client needs a certain number of held calls. Doubling your close rate from 15% to 30% halves the calls you need, which halves the ad budget. Qualification and follow-up often move the budget more than ad costs do.",
   },

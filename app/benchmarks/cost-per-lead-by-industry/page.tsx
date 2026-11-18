@@ -45,6 +45,10 @@ const faqs = [
     a: "For high-ticket offers ($3,000 to $25,000), a healthy CPL ranges between $35 and $95 on Meta Ads. However, CPL alone is a vanity metric; the critical indicator is Cost Per Qualified Booked Call ($140–$280).",
   },
   {
+    q: "What is a good cost per lead for a med spa?",
+    a: "In our 2026 benchmarks, med spas and aesthetics clinics have the lowest CPL of the industries we track: $24 to $52 per lead on Meta ads, $65 to $135 per booked consultation and a target customer acquisition cost of $250 to $650. Judge a med spa campaign on cost per booked and attended consultation, not cost per lead.",
+  },
+  {
     q: "Why do financial advising and legal have much higher CPLs?",
     a: "Finance and legal face strict regulatory compliance, Special Ad Category restrictions on Meta, and higher consumer scrutiny. However, high customer lifetime value ($10,000–$50,000+) makes higher CPLs highly profitable.",
   },

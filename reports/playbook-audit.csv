@@ -1,5 +1,5 @@
 URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problems,Action
-/,core,Qualified Lead Generation for High-Ticket B2B,2400,3187,159,title 62 chars,shorten title
+/,core,Qualified Lead Generation for High-Ticket B2B,2497,3284,159,title 62 chars,shorten title
 /about,company/legal,About : $50M+ Meta Ads Managed,1265,1298,159,none,keep
 /about/gaurav-kapoor,company/legal,"Gaurav Kapoor, Founder of",229,277,85,none,keep
 /appointment-setting,core,B2B Appointment Setting Agency: 30–50 Sales Calls a Month,1551,2057,159,none,keep
@@ -11,7 +11,7 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /benchmarks,free tool,B2B & High-Ticket Marketing Benchmarks 2026,492,913,159,none,keep
 /benchmarks/close-rate,free tool,Average High-Ticket Close Rate (2026): 24–31% Benchmarks,244,357,159,thin (244 unique words),improve
 /benchmarks/cost-per-booked-call,free tool,Cost Per Booked Call & Qualified Meeting Benchmarks [2026],421,903,159,none,keep
-/benchmarks/cost-per-lead-by-industry,free tool,Cost Per Lead by Industry 2026 Benchmarks,263,376,159,thin (263 unique words),improve
+/benchmarks/cost-per-lead-by-industry,free tool,Cost Per Lead by Industry 2026 Benchmarks,332,445,159,none,keep
 /benchmarks/meta-ads-cpm,free tool,Meta Ads CPM Benchmarks 2026,284,397,159,thin (284 unique words),improve
 /benchmarks/show-rate,free tool,Appointment Show Rate Benchmarks 2026,347,828,87,none,keep
 /blog,blog,B2B Client Acquisition & Meta Ads Blog,847,1642,159,none,keep
@@ -126,9 +126,9 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /mass-tort-leads,core,Mass Tort Leads: Screened Claimants for Law Firms,705,757,159,none,keep
 /mastermind,core,AI Client Acquisition Mastermind for Agency Owners & Coaches,613,1246,159,none,keep
 /mastermind/7-days-paid-trial,core,7 Days Paid Trial Funnel Breakdown,715,1234,159,none,keep
-/mastermind/hidden-facebook-interest,core,AI Client Acquisition Mastermind: 6-Week Meta Ads Program,1397,1900,159,none,keep
+/mastermind/hidden-facebook-interest,core,AI Client Acquisition Mastermind: 6-Week Meta Ads Program,1494,1997,159,none,keep
 /mastermind/lto-funnel-scale,core,How We Scaled an LTO Funnel to $847K,678,1197,159,none,keep
-/mastermind/personal-injury-facebook-ads,core,Facebook Ads for Personal Injury Lawyers: Sniper Method,782,1224,159,none,keep
+/mastermind/personal-injury-facebook-ads,core,Facebook Ads for Personal Injury Lawyers: Sniper Method,879,1321,159,none,keep
 /meta-ads-agency,core,Meta Ads Agency for B2B & High-Ticket ($50M+ Managed Spend),1248,1781,159,none,keep
 /meta-ads-for-coaches,industry,Facebook Ads for Coaches: Management Best Practices,625,950,12,none,keep
 /meta-ads-for-consultants,industry,Facebook Ads for Consultants: Proof-Led Campaigns,444,769,11,none,keep
@@ -154,7 +154,7 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /tools/ltv-cac-calculator,free tool,LTV to CAC Ratio Calculator,304,788,159,none,keep
 /tools/mer-calculator,free tool,Marketing Efficiency Ratio (MER) Calculator,493,945,11,none,keep
 /tools/meta-ads-bid-strategy-calculator,free tool,Meta Ads Bid Strategy Calculator (Cost Cap),760,1257,159,none,keep
-/tools/meta-ads-budget-calculator,free tool,Meta Ads Budget Calculator (Free),777,1270,159,none,keep
+/tools/meta-ads-budget-calculator,free tool,Meta Ads Budget Calculator (Free),851,1344,159,none,keep
 /tools/roas-calculator,free tool,ROAS & Break-Even ROAS Calculator,341,833,159,none,keep
 /tools/show-rate-calculator,free tool,Show-Up Rate & No-Show Cost Calculator,306,795,159,none,keep
 /vsl-funnels,core,VSL Funnel Agency: High-Ticket Video Sales Letter Funnels,550,1244,159,none,keep

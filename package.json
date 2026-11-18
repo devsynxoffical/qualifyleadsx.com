@@ -13,6 +13,7 @@
     "seo:links": "node scripts/audit-links.mjs",
     "seo:lastmod": "node scripts/build-lastmod.mjs",
     "seo:daily": "node scripts/seo-daily.mjs",
+    "seo:rank": "node scripts/seo-rank-monitor.mjs",
     "seo:bots": "node scripts/check-bot-access.mjs",
     "seo:bing": "node scripts/bing-webmaster.mjs",
     "seo:audit": "node scripts/seo-audit.mjs",

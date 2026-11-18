@@ -165,7 +165,7 @@ function industryGroups(path: string): Group[] | null {
   const variants: Link[] = [];
   if (industryPages.some((p) => p.slug === slug)) variants.push({ href: `/for/${slug}`, label: `Lead generation for ${industryLabel(slug).toLowerCase()}` });
   if ((metaAdsIndustrySlugs as readonly string[]).includes(slug)) variants.push({ href: `/meta-ads-for-${slug}`, label: `Meta ads for ${industryLabel(slug).toLowerCase()}` });
-  if (slug === "law-firms") variants.push({ href: "/personal-injury-leads", label: "Personal injury leads" });
+  if (slug === "law-firms") variants.push({ href: "/personal-injury-leads", label: "Personal injury leads" }, { href: "/mva-leads", label: "MVA leads" }, { href: "/mass-tort-leads", label: "Mass tort leads" });
   if ((appointmentSettingIndustrySlugs as readonly string[]).includes(slug)) variants.push({ href: `/appointment-setting-for-${slug}`, label: `Appointment setting for ${industryLabel(slug).toLowerCase()}` });
   const coreFill = services(path.startsWith("/meta-ads-for-") ? ["/meta-ads-agency", "/vsl-funnels", "/lead-generation-agency"] : path.startsWith("/appointment-setting-for-") ? ["/appointment-setting", "/speed-to-lead", "/lead-generation-agency"] : ["/lead-generation-agency", "/meta-ads-agency", "/appointment-setting"]);
   const svc = [...variants.filter((v) => v.href !== path), ...coreFill].slice(0, 3 + Math.max(0, variants.length - 1));
@@ -289,7 +289,13 @@ function compareGroups(path: string): Group[] | null {
 
 /** Groups for a path, or null for pages that get no block (home, hubs, legal, booking). */
 function nichePageGroups(path: string): Group[] | null {
-  if (path !== "/personal-injury-leads") return null;
+  if (path === "/final-expense-leads")
+    return [
+      { title: "Services", links: services(["/lead-generation-agency", "/meta-ads-agency", "/speed-to-lead", "/crm-automation"]) },
+      { title: "Other lead types", links: [{ href: "/mva-leads", label: "MVA leads" }, { href: "/personal-injury-leads", label: "Personal injury leads" }, { href: "/for/real-estate-investors", label: "Motivated seller leads" }] },
+      { title: "Guides", links: guides(["buy-qualified-leads-vs-generating-your-own", "cost-per-acquisition-vs-cost-per-lead", "speed-to-lead-statistics-response-time"]) },
+    ];
+  if (!["/personal-injury-leads", "/mva-leads", "/mass-tort-leads"].includes(path)) return null;
   return [
     {
       title: "Services for law firms",
@@ -304,6 +310,9 @@ function nichePageGroups(path: string): Group[] | null {
       links: [
         { href: "/case-studies/mva-personal-injury-leads-8810", label: "MVA case study: 8,810 leads at $7.61" },
         { href: "/mastermind/personal-injury-facebook-ads", label: "Facebook ads for personal injury (Sniper Method)" },
+        { href: "/personal-injury-leads", label: "Personal injury leads" },
+        { href: "/mva-leads", label: "MVA leads" },
+        { href: "/mass-tort-leads", label: "Mass tort leads" },
       ],
     },
     { title: "Guides", links: guides(["cost-per-acquisition-vs-cost-per-lead", "buy-qualified-leads-vs-generating-your-own", "speed-to-lead-statistics-response-time"]) },

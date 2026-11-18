@@ -348,6 +348,24 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
       priority: 0.92,
     },
     {
+      url: `${site.url}/mva-leads`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/mass-tort-leads`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/final-expense-leads`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
       url: `${site.url}/meta-ads-for-law-firms`,
       lastModified: now,
       changeFrequency: "weekly",

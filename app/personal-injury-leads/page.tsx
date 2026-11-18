@@ -10,7 +10,7 @@ import { DeepDive } from "@/components/sections/DeepDive";
 import { personalInjuryLeadsDeepDive } from "@/lib/deep-dive-content";
 
 const PATH = "/personal-injury-leads";
-const TITLE = "Personal Injury Leads: Exclusive MVA Lead Generation";
+const TITLE = "Personal Injury Leads for Law Firms: Exclusive & Verified";
 const DESCRIPTION =
   "Exclusive personal injury leads from your own Meta ads campaign. One MVA campaign produced 8,810 leads at $7.61 each, for PI firms and lead gen companies.";
 

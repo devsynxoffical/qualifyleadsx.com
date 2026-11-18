@@ -45,6 +45,9 @@ const footerColumns = [
       { label: "For Financial Advisors", href: "/for/financial-advisors" },
       { label: "For Law Firms", href: "/for/law-firms" },
       { label: "Personal Injury Leads", href: "/personal-injury-leads" },
+      { label: "MVA Leads", href: "/mva-leads" },
+      { label: "Mass Tort Leads", href: "/mass-tort-leads" },
+      { label: "Final Expense Leads", href: "/final-expense-leads" },
     ],
   },
   {

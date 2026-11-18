@@ -1163,6 +1163,7 @@ export const personalInjuryLeadsDeepDive: DeepDiveContent = {
         { title: "Personal injury law firms", text: "Firms that want exclusive MVA and injury leads for their own intake team, without sharing claimants with other firms. More on [lead generation for law firms](/for/law-firms)." },
         { title: "PI lead generation companies", text: "Pay-per-lead and pay-per-case agencies that supply firms. The [MVA case study](/case-studies/mva-personal-injury-leads-8810) was run for one." },
         { title: "Firms already running Facebook ads", text: "If your current campaign produces leads that don't sign, the fix is usually targeting and follow-up, not more budget. See [Facebook ads for law firms](/meta-ads-for-law-firms)." },
+        { title: "MVA and mass tort campaigns", text: "All 10 published motor vehicle accident campaigns are on our [MVA leads](/mva-leads) page; product and exposure cases are covered on [mass tort leads](/mass-tort-leads)." },
       ],
     },
     {

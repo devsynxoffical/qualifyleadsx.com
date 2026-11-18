@@ -138,6 +138,10 @@ export default function LawFirmsPage() {
               <Link href="/personal-injury-leads" className="text-lime underline underline-offset-2">
                 See how we generate exclusive personal injury leads
               </Link>{" "}
+              and{" "}
+              <Link href="/mva-leads" className="text-lime underline underline-offset-2">
+                MVA leads
+              </Link>{" "}
               (8,810 MVA leads at $7.61 in one campaign).
             </p>
 

@@ -419,3 +419,21 @@ from the 14 Nov inspection); Bing 23 submitted. Bing: 68 pages in index.
 **Backlog (next run):**
 - "meta ads budget calculator" (pos 63.5) and "meta ads calculator" (6 impressions, pos 55.3) land on /tools/meta-ads-bid-strategy-calculator instead of /tools/meta-ads-budget-calculator. Check whether the budget calculator answers "meta ads calculator" and how strongly the two link to each other.
 - "med spa cost per lead benchmark" is at pos 17 on /benchmarks/cost-per-lead-by-industry: check the med spa row and answer.
+
+## 2026-11-19 02:13 IST: 12-hourly run #2
+**Measured (new GSC day: 18 Nov):**
+- 7 days: 471 impressions (+104 vs run #1), 3 clicks (+1), 69 pages (+9), 82 queries (+7), avg position 33.8 (was 38.1).
+- 28 days: 882 impressions, 9 clicks, 117 queries.
+- Movers up: "facebook ads for coaches" 82 → 60, "virtual assistant appointment setter" 78 → 57.5, "meta ads for hvac contractors" 94.7 → 77.8.
+- Movers down: "marketing efficiency ratio calculator" 18 → 24.7 (the new /tools/mer-calculator is not indexed yet; the query still lands on /tools), "qualified appointment setting" 39 → 45.5.
+- New: "high ticket agency mastermind" (pos 19, /mastermind), "qlxcorp.com" (pos 10), "digital marketing agency in rajouri garden" (pos 61, homepage; local search near the Delhi office).
+- Bing: 74 indexed, 0 crawl issues.
+
+**Done:**
+- FAQ "Is this a Meta ads calculator for Facebook and Instagram?" on /tools/meta-ads-budget-calculator (for "meta ads calculator", which lands on the bid strategy calculator).
+- FAQ "What is a good cost per lead for a med spa?" on /benchmarks/cost-per-lead-by-industry (pos 17 query; existing $24–$52 figures).
+- No title or description changes (14-day rule).
+
+**Backlog:**
+- Recheck on 21 Nov whether /tools/mer-calculator and /tools/ad-frequency-calculator are indexed and take over their queries from /tools.
+- Full URL Inspection due 21 Nov.

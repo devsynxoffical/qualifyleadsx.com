@@ -405,3 +405,17 @@ from the 14 Nov inspection); Bing 23 submitted. Bing: 68 pages in index.
 - Collect reviews (review link on /about).
 - Upload the 3 Facebook training videos as MP4 (facebook.com is blocked from this environment).
 - Send real mass tort results.
+
+## 2026-11-18 14:13 IST: 12-hourly run #1
+**Measured:**
+- Rank monitor vs the baseline taken 3 minutes earlier: no change. Search Console's latest day is still 17 Nov.
+- GSC 7 days: 335 impressions, 2 clicks, avg position 39.3. 28 days: 778 impressions, 8 clicks, 83 pages, 110 queries.
+- 7 new queries.
+- Bing: 74 indexed, 1 4xx in its latest crawl, 0 crawl issues.
+- Bots: OK except spoofed Bingbot (403) and GPTBot (429), which is Hostinger bot protection.
+
+**Done:** no page changes or indexing requests; the 18 Nov cycle already did both today.
+
+**Backlog (next run):**
+- "meta ads budget calculator" (pos 63.5) and "meta ads calculator" (6 impressions, pos 55.3) land on /tools/meta-ads-bid-strategy-calculator instead of /tools/meta-ads-budget-calculator. Check whether the budget calculator answers "meta ads calculator" and how strongly the two link to each other.
+- "med spa cost per lead benchmark" is at pos 17 on /benchmarks/cost-per-lead-by-industry: check the med spa row and answer.

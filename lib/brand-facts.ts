@@ -58,4 +58,26 @@ export const brandFacts = {
     "https://www.youtube.com/@QualifiedLeadsX",
   ],
   bookingPath: "/book-your-call",
+  // Spellings people search for; used as schema alternateName.
+  alternateNames: ["Qualified LeadsX", "Qualified Leads X", "QualifiedLeadsX.com"],
+  // Google Business Profile (read from the GBP API, 18 Nov 2026). The Delhi office
+  // is the operating office shown on Google Maps; the Wyoming address above is the
+  // registered address of the legal entity.
+  googleBusinessProfile: {
+    mapsUrl: "https://maps.google.com/maps?cid=12897087509369850560",
+    placeId: "ChIJtXE6o-kDDTkRwAoeEcKo-7I",
+    reviewUrl: "https://search.google.com/local/writereview?placeid=ChIJtXE6o-kDDTkRwAoeEcKo-7I",
+    office: {
+      streetAddress: "F-129 A, Second Floor, Mansarover Garden, near Ravi Corner",
+      addressLocality: "New Delhi",
+      addressRegion: "Delhi",
+      postalCode: "110015",
+      addressCountry: "IN",
+      display: "F-129 A, Second Floor, Mansarover Garden, near Ravi Corner, New Delhi 110015, India",
+      latitude: 28.6425,
+      longitude: 77.1327,
+      telephone: "+91 96256 95456",
+      openingHours: "Mo-Sa 10:00-19:30",
+    },
+  },
 } as const;

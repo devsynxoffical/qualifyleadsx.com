@@ -8,7 +8,9 @@ export function JsonLd() {
     "@type": "Organization",
     "@id": `${site.url}/#organization`,
     name: brandFacts.name,
+    alternateName: [...brandFacts.alternateNames],
     legalName: brandFacts.legalName,
+    department: { "@id": `${site.url}/#office-delhi` },
     url: site.url,
     logo: {
       "@type": "ImageObject",
@@ -92,6 +94,7 @@ export function JsonLd() {
       "https://clutch.co/profile/qualifiedleadsx",
       "https://www.crunchbase.com/organization/qualifiedleadsx",
       "https://www.trustpilot.com/review/qualifiedleadsx.com",
+      brandFacts.googleBusinessProfile.mapsUrl,
       "https://www.facebook.com/qualifiedleadsx/",
       "https://www.instagram.com/qualifiedleadsx/",
       "https://www.youtube.com/@QualifiedLeadsX",
@@ -106,9 +109,39 @@ export function JsonLd() {
     "@id": `${site.url}/#website`,
     url: site.url,
     name: "QualifiedLeadsX",
-    alternateName: "QualifiedLeadsX.com",
+    alternateName: [...brandFacts.alternateNames],
     publisher: { "@id": `${site.url}/#organization` },
     inLanguage: "en-US",
+  };
+
+  // Operating office as listed on Google Business Profile, linked to the
+  // Organization so Google can match the website to the Maps listing.
+  const gbp = brandFacts.googleBusinessProfile;
+  const office = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": `${site.url}/#office-delhi`,
+    name: brandFacts.name,
+    alternateName: [...brandFacts.alternateNames],
+    url: site.url,
+    image: `${site.url}/gbp/qualifiedleadsx-cover.png`,
+    logo: `${site.url}/gbp/qualifiedleadsx-logo.png`,
+    telephone: gbp.office.telephone,
+    email: site.email,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: gbp.office.streetAddress,
+      addressLocality: gbp.office.addressLocality,
+      addressRegion: gbp.office.addressRegion,
+      postalCode: gbp.office.postalCode,
+      addressCountry: gbp.office.addressCountry,
+    },
+    geo: { "@type": "GeoCoordinates", latitude: gbp.office.latitude, longitude: gbp.office.longitude },
+    hasMap: gbp.mapsUrl,
+    openingHours: gbp.office.openingHours,
+    priceRange: "Custom quote",
+    parentOrganization: { "@id": `${site.url}/#organization` },
+    sameAs: [gbp.mapsUrl],
   };
 
   const navigation = siteNavigation([...nav, { label: "Book Free Strategy Call", href: "/book-your-call" }]);
@@ -118,6 +151,10 @@ export function JsonLd() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(office) }}
       />
       <script
         type="application/ld+json"

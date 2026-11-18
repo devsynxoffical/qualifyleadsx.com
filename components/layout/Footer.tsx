@@ -71,6 +71,7 @@ const footerColumns = [
     title: "Proof & Comparisons",
     links: [
       { label: "125+ Verified Case Studies", href: "/case-studies" },
+      { label: "Google Business Profile", href: "https://maps.google.com/maps?cid=12897087509369850560" },
       { label: "Verified on Clutch.co", href: "https://clutch.co/profile/qualifiedleadsx" },
       { label: "Trustpilot Reviews", href: "https://www.trustpilot.com/review/qualifiedleadsx.com" },
       { label: "Crunchbase Organization", href: "https://www.crunchbase.com/organization/qualifiedleadsx" },

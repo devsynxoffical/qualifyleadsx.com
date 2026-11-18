@@ -20,6 +20,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { site } from "@/lib/site";
+import { brandFacts } from "@/lib/brand-facts";
 import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
 import { founder, imageObject, FOUNDER_ID, ORG_ID, WEBSITE_ID } from "@/lib/schema";
 
@@ -592,6 +593,35 @@ export default function AboutPage() {
                   className="text-lime hover:underline block transition-colors"
                 >
                   Facebook Group (350+ Leaders)
+                </a>
+              </div>
+            </div>
+          </section>
+
+          {/* Google Business Profile: same office as the Maps listing */}
+          <section className="mb-20 p-8 rounded-3xl bg-panel border border-line" aria-labelledby="google-profile">
+            <h2 id="google-profile" className="text-2xl font-bold font-heading text-fog mb-4">
+              Find QualifiedLeadsX on Google
+            </h2>
+            <p className="text-mist text-sm sm:text-base leading-relaxed max-w-3xl">
+              Our operating office in New Delhi is listed on Google Maps as QualifiedLeadsX. Clients work with us remotely across the
+              United States, United Kingdom, Canada and Australia; the office is where our team works, not a walk-in location.
+            </p>
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
+              <div>
+                <span className="text-dim block mb-1 font-mono text-xs uppercase tracking-wider">Office</span>
+                <span className="text-mist">{brandFacts.googleBusinessProfile.office.display}</span>
+              </div>
+              <div>
+                <span className="text-dim block mb-1 font-mono text-xs uppercase tracking-wider">Hours</span>
+                <span className="text-mist">Monday to Saturday, 10:00–19:30 IST</span>
+              </div>
+              <div className="flex flex-col gap-2">
+                <a href={brandFacts.googleBusinessProfile.mapsUrl} target="_blank" rel="noopener noreferrer" className="text-lime hover:underline">
+                  View QualifiedLeadsX on Google Maps
+                </a>
+                <a href={brandFacts.googleBusinessProfile.reviewUrl} target="_blank" rel="noopener noreferrer" className="text-lime hover:underline">
+                  Worked with us? Leave a Google review
                 </a>
               </div>
             </div>

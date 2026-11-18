@@ -185,6 +185,9 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      {/* Phones show a still of the hero (see FlowWave) until first input; it is the
+          largest element on screen, so fetch it early instead of waiting for CSS. */}
+      <link rel="preload" as="image" href="/images/hero-wave-mobile.webp" type="image/webp" media="(max-width: 767px)" fetchPriority="high" />
       <AnnouncementBar />
       <Nav />
       <FlowWave />

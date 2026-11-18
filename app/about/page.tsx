@@ -26,7 +26,7 @@ import { founder, imageObject, FOUNDER_ID, ORG_ID, WEBSITE_ID } from "@/lib/sche
 export const metadata: Metadata = {
   title: { absolute: "About QualifiedLeadsX: $50M+ Meta Ads Managed" },
   description:
-    "QualifiedLeadsX is operated by Ecom Expertz LLC and founded by Gaurav Kapoor. 12+ years of performance marketing, $50M+ Meta ads spend, and 125+ case studies.",
+    "QualifiedLeadsX is operated by Ecom Expertz LLC and founded by Gaurav Kapoor: 12+ years of performance marketing, $50M+ Meta ads spend, 125+ case studies.",
   keywords: [
     "about qualifiedleadsx",
     "gaurav kapoor",

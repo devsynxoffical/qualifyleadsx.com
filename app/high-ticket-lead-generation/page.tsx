@@ -26,7 +26,7 @@ import { highTicketDeepDive } from "@/lib/deep-dive-content";
 export const metadata: Metadata = {
   title: "High Ticket Lead Generation: 30–50 Booked Calls Monthly",
   description:
-    "Done-for-you high ticket lead generation for consultants, coaches, and agencies. Book 30–50 pre-sold, qualified sales calls monthly with verified $150M+ proof.",
+    "Done-for-you high ticket lead generation for consultants, coaches and agencies: 30–50 pre-sold, qualified sales calls a month.",
   keywords: [
     "high ticket lead generation",
     "customer acquisition systems",

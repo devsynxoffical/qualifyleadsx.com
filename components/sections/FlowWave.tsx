@@ -206,7 +206,7 @@ export function FlowWave() {
     // lighter scene on phones and low-core devices, and pause rendering while
     // the hero is off screen. The text overlay is server-rendered and visible
     // without it.
-    const setup = async (): Promise<(() => void) | undefined> => {
+    const setup = async (startedByUser = false): Promise<(() => void) | undefined> => {
     const [
       THREE,
       { EffectComposer },
@@ -555,7 +555,7 @@ export function FlowWave() {
     // On phones, draw one frame now and start the animation loop on the first
     // scroll, touch or key press. The hero is scroll-driven, so it looks the same,
     // but the page is not busy re-rendering WebGL while it is still loading.
-    let interacted = !lowPower;
+    let interacted = !lowPower || startedByUser;
     let running = true;
     let inView = true;
     const visibility = new IntersectionObserver(
@@ -634,23 +634,39 @@ export function FlowWave() {
 
     let cleanup: (() => void) | undefined;
     let cancelled = false;
-    const start = () => {
+    const start = (startedByUser = false) => {
       if (cancelled) return;
-      setup()
+      setup(startedByUser)
         .then((dispose) => {
           if (cancelled) dispose?.();
           else cleanup = dispose;
         })
         .catch((err) => console.warn("hero init skipped", err));
     };
+    // Phones: three.js (~600 KB of script) is not downloaded or run during page
+    // load at all. A still of the first frame (/images/hero-wave-mobile.webp,
+    // the section background below) shows until the first scroll, touch or key
+    // press, then the live scene takes over. This took about 1.1 s of main-thread
+    // work out of the mobile load (Lighthouse, 18 Nov 2026).
+    const phone = window.matchMedia("(max-width: 767px)").matches;
+    const wake = ["scroll", "touchstart", "pointerdown", "keydown", "wheel"] as const;
+    const onFirstInput = () => {
+      wake.forEach((ev) => window.removeEventListener(ev, onFirstInput));
+      start(true);
+    };
     // Safari has no requestIdleCallback; fall back to a short timeout there.
     const hasIdle = "requestIdleCallback" in window;
-    const handle = hasIdle ? window.requestIdleCallback(start, { timeout: 1500 }) : window.setTimeout(start, 400);
+    let handle: number | undefined;
+    if (phone) wake.forEach((ev) => window.addEventListener(ev, onFirstInput, { passive: true }));
+    else handle = hasIdle ? window.requestIdleCallback(() => start(), { timeout: 1500 }) : window.setTimeout(() => start(), 400);
 
     return () => {
       cancelled = true;
-      if (hasIdle) window.cancelIdleCallback(handle);
-      else window.clearTimeout(handle);
+      wake.forEach((ev) => window.removeEventListener(ev, onFirstInput));
+      if (handle !== undefined) {
+        if (hasIdle) window.cancelIdleCallback(handle);
+        else window.clearTimeout(handle);
+      }
       cleanup?.();
     };
   }, []);
@@ -663,7 +679,7 @@ export function FlowWave() {
       style={{ height: "170vh" }}
       aria-label="Qualified demand hero"
     >
-      <div className="sticky top-0 h-screen w-full overflow-hidden bg-[#02160c]">
+      <div className="sticky top-0 h-screen w-full overflow-hidden bg-[#02160c] bg-[url('/images/hero-wave-mobile.webp')] bg-cover bg-center md:bg-none">
         <canvas ref={canvasRef} className="absolute inset-0 block h-full w-full" />
 
         {/* readability vignette */}

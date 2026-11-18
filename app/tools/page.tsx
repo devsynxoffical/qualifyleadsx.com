@@ -77,6 +77,26 @@ const toolList = [
     formula: "Gross Profit * Ad Share * Close Rate * Show Rate",
   },
   {
+    title: "Marketing Efficiency Ratio (MER) Calculator",
+    keyword: "marketing efficiency ratio calculator",
+    href: "/tools/mer-calculator",
+    icon: Percent,
+    badge: "Blended Efficiency",
+    description:
+      "Divide total revenue by total marketing spend to get your MER (blended ROAS), and compare it with the break-even MER your gross margin allows.",
+    formula: "Total Revenue / Total Marketing Spend",
+  },
+  {
+    title: "Ad Frequency Calculator",
+    keyword: "ad frequency calculator",
+    href: "/tools/ad-frequency-calculator",
+    icon: TrendingUp,
+    badge: "Meta Ads",
+    description:
+      "Check how often people see your Facebook and Instagram ads, then plan the impressions and budget needed for a target frequency at your CPM.",
+    formula: "Impressions / Reach",
+  },
+  {
     title: "Lead Conversion Rate Calculator",
     keyword: "lead conversion rate calculator",
     href: "/tools/lead-conversion-rate-calculator",

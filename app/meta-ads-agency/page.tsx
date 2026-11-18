@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     absolute: "Meta Ads Agency for B2B & High-Ticket ($50M+ Managed Spend)",
   },
   description:
-    "Elite Meta ads agency for high-ticket coaches, consultants, and B2B agencies. Custom VSL funnels, algorithmic broad targeting, and 30–50 qualified calls/month.",
+    "Meta ads agency for high-ticket coaches, consultants and B2B agencies: custom VSL funnels, broad targeting and 30–50 qualified calls a month.",
   keywords: [
     "meta ads agency",
     "meta ads agency for b2b",

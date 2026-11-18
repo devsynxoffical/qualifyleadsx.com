@@ -382,3 +382,26 @@ from the 14 Nov inspection); Bing 23 submitted. Bing: 68 pages in index.
 - Tool-directory submissions.
 - GA4 Data API plus property ID.
 - Credit-repair data.
+
+## 2026-11-18 (PM): Google Business Profile + niche lead pages
+**GBP (locations/6499443464649758122, via Windsor):**
+- Description rewritten to include "QualifiedLeadsX (Qualified LeadsX)", the founder and the MVA/PI/final expense services.
+- Service items: 11 (added MVA & PI leads, final expense & burial insurance leads, mass tort).
+- 9 photos uploaded: 3 training-call thumbnails and 6 client-result screenshots.
+- 3 posts: MER calculator, MVA leads (8,810 at $7.61), final expense (2,440 at $7.79). All PROCESSING at creation; the 16 Nov HVAC post was still PROCESSING on 18 Nov.
+
+**Website ↔ GBP:**
+- Organization/WebSite alternateName.
+- ProfessionalService node for the Delhi office (hasMap to the Maps listing).
+- About page "Find QualifiedLeadsX on Google" block with a review link.
+- Footer and llms.txt link.
+
+**New pages (live, verified):** /mva-leads, /final-expense-leads (covers burial insurance), /mass-tort-leads (no mass tort results yet, stated). /personal-injury-leads retitled.
+**Indexing:** Google 6 accepted, Bing 6 accepted.
+
+**Owner:**
+- Rename the GBP to "QualifiedLeadsX".
+- Review the pending Google updates.
+- Collect reviews (review link on /about).
+- Upload the 3 Facebook training videos as MP4 (facebook.com is blocked from this environment).
+- Send real mass tort results.

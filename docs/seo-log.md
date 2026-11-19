@@ -450,3 +450,11 @@ Full report: SEO_INVESTIGATION_2026-11-19.md. Change log with before metrics and
 - C2: 5 unindexed service × industry pages 301-redirected to the matching indexed page (meta-ads-for-law-firms, meta-ads-for-real-estate-investors, meta-ads-for-course-creators, appointment-setting-for-coaches, appointment-setting-for-saas); links and sitemap updated (118 URLs).
 - C3: recovery tracker created; core pages on HOLD for title/description/H1 edits until 14 Dec.
 - 12-hourly routine prompt updated to fill the tracker and respect the hold.
+
+## 2026-11-19 PM: new lead pages (owner request: new SEO pages with full layout and lead capture)
+Checked first whether new pages were justified. Customer acquisition agency, solar appointments and motivated seller leads already have pages (/lead-generation-agency, /for/solar-companies, /for/real-estate-investors), so new pages there would compete with them. Built pages only where published proof exists and no page did:
+- /roofing-leads: 10 published roofing campaigns (5,246 leads across 9 lead campaigns, $4.27–$24 CPL).
+- /hvac-leads: 6 published HVAC campaigns; GSC already shows HVAC queries landing on a blog post.
+- /mortgage-leads: 5 published mortgage and refinance campaigns (208 leads → 37 closings).
+New template components/landing/RichLeadPage.tsx: lead form beside the hero, screenshot proof cards with lightbox, funnel or CPL table, budget estimator, process cards, qualification chips, comparison, FAQ accordion, CTA. The form now tags each lead with its source page.
+Homepage tiles: Roofing → /roofing-leads, HVAC (was unlinked) → /hvac-leads, Mortgage Brokers → /mortgage-leads. Footer, related links, sitemap, llms.txt and IndexNow list updated. Tracker rows N1–N3, F1.

@@ -354,6 +354,24 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
       priority: 0.92,
     },
     {
+      url: `${site.url}/roofing-leads`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/hvac-leads`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
+      url: `${site.url}/mortgage-leads`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+    },
+    {
       url: `${site.url}/appointment-setting-for-agencies`,
       lastModified: now,
       changeFrequency: "weekly",

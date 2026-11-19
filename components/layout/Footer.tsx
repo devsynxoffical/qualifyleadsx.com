@@ -48,6 +48,9 @@ const footerColumns = [
       { label: "MVA Leads", href: "/mva-leads" },
       { label: "Mass Tort Leads", href: "/mass-tort-leads" },
       { label: "Final Expense Leads", href: "/final-expense-leads" },
+      { label: "Roofing Leads", href: "/roofing-leads" },
+      { label: "HVAC Leads", href: "/hvac-leads" },
+      { label: "Mortgage Leads", href: "/mortgage-leads" },
     ],
   },
   {

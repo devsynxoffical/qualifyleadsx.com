@@ -38,15 +38,37 @@ async function sendNotification(payload: Record<string, unknown>) {
   }
 }
 
-export function BookingForm() {
+const NICHES = [
+  "Coaching / Consulting",
+  "Health & Fitness",
+  "Real Estate",
+  "SaaS / Tech",
+  "Finance & Insurance",
+  "Mortgage / Refinance",
+  "Roofing",
+  "HVAC",
+  "Local Services",
+  "E-commerce",
+  "Other",
+];
+
+type BookingFormProps = {
+  /** Page the form is embedded on (landing pages). Sent with the lead so the team knows which page converted. */
+  source?: string;
+  /** Preselects the business type, e.g. "Roofing" on /roofing-leads. */
+  defaultNiche?: string;
+};
+
+export function BookingForm({ source, defaultNiche }: BookingFormProps = {}) {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [firstName, setFirstName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
 
   useEffect(() => {
-    fbqTrack("Schedule");
-  }, []);
+    // Only the booking page counts as a booking-form view; embedded landing-page forms don't.
+    if (!source) fbqTrack("Schedule");
+  }, [source]);
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -56,7 +78,7 @@ export function BookingForm() {
     if (String(fd.get("_honey") || "").trim()) return;
 
     const payload = {
-      _subject: "New booking request - QualifiedLeadsX",
+      _subject: source ? `New lead from ${source} - QualifiedLeadsX` : "New booking request - QualifiedLeadsX",
       _template: "table",
       _captcha: "false",
       name: fd.get("name"),
@@ -65,6 +87,7 @@ export function BookingForm() {
       company: fd.get("company"),
       niche: fd.get("niche"),
       message: fd.get("message"),
+      ...(source ? { source_page: source } : {}),
     };
 
     const firstName = String(fd.get("name") || "").trim().split(/\s+/)[0] || "";
@@ -77,7 +100,7 @@ export function BookingForm() {
       setFirstName(firstName);
       setEmail(emailValue);
       setStatus("success");
-      fbqTrack("CompleteRegistration");
+      fbqTrack("CompleteRegistration", source ? { form: "landing", source_page: source } : undefined);
       void sendNotification(payload).catch(() => {
         /* the visitor still books on the calendar; nothing to show them */
       });
@@ -92,7 +115,7 @@ export function BookingForm() {
         setFirstName(firstName);
         setEmail(emailValue);
         setStatus("success");
-        fbqTrack("CompleteRegistration");
+        fbqTrack("CompleteRegistration", source ? { form: "landing", source_page: source } : undefined);
         form.reset();
       } else {
         setStatus("error");
@@ -211,18 +234,13 @@ export function BookingForm() {
           <label htmlFor="niche" className={labelCls}>
             What best describes your business?
           </label>
-          <select id="niche" name="niche" className={inputCls} defaultValue="">
+          <select id="niche" name="niche" className={inputCls} defaultValue={defaultNiche ?? ""}>
             <option value="" disabled>
               Select one…
             </option>
-            <option>Coaching / Consulting</option>
-            <option>Health &amp; Fitness</option>
-            <option>Real Estate</option>
-            <option>SaaS / Tech</option>
-            <option>Finance &amp; Insurance</option>
-            <option>Local Services</option>
-            <option>E-commerce</option>
-            <option>Other</option>
+            {NICHES.map((n) => (
+              <option key={n}>{n}</option>
+            ))}
           </select>
         </div>
         <div className="sm:col-span-2">

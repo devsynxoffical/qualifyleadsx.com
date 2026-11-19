@@ -289,6 +289,19 @@ function compareGroups(path: string): Group[] | null {
 
 /** Groups for a path, or null for pages that get no block (home, hubs, legal, booking). */
 function nichePageGroups(path: string): Group[] | null {
+  if (["/roofing-leads", "/hvac-leads"].includes(path))
+    return [
+      { title: "Services", links: services(["/lead-generation-agency", "/meta-ads-agency", "/speed-to-lead", "/whatsapp-lead-nurture"]) },
+      { title: "Home services", links: [{ href: "/roofing-leads", label: "Roofing leads" }, { href: "/hvac-leads", label: "HVAC leads" }, { href: "/for/home-improvement", label: "Home improvement leads" }, { href: "/for/solar-companies", label: "Solar appointments" }] },
+      { title: "Results", links: [{ href: "/case-studies/florida-hvac-65k-cash-collected", label: "Florida HVAC: $65,872 collected" }, { href: "/case-studies", label: "All case studies" }] },
+      { title: "Guides", links: guides(["buy-qualified-leads-vs-generating-your-own", "cost-per-acquisition-vs-cost-per-lead", "speed-to-lead-statistics-response-time"]) },
+    ];
+  if (path === "/mortgage-leads")
+    return [
+      { title: "Services", links: services(["/lead-generation-agency", "/meta-ads-agency", "/speed-to-lead", "/crm-automation"]) },
+      { title: "Other lead types", links: [{ href: "/final-expense-leads", label: "Final expense leads" }, { href: "/for/financial-advisors", label: "Financial advisor leads" }, { href: "/for/real-estate-investors", label: "Motivated seller leads" }] },
+      { title: "Guides", links: guides(["buy-qualified-leads-vs-generating-your-own", "cost-per-acquisition-vs-cost-per-lead", "speed-to-lead-statistics-response-time"]) },
+    ];
   if (path === "/final-expense-leads")
     return [
       { title: "Services", links: services(["/lead-generation-agency", "/meta-ads-agency", "/speed-to-lead", "/crm-automation"]) },

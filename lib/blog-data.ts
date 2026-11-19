@@ -206,7 +206,7 @@ export const blogPosts: BlogPost[] = [
           "heading": "Two HVAC Funnels, Tracked From Ad to Installation",
           "subheading": "Florida and New Jersey, side by side",
           "body": [
-            "Both companies tracked every stage, so we can see exactly where money was made and lost. The full Florida breakdown is in the [Florida HVAC case study](/case-studies/florida-hvac-65k-cash-collected)."
+            "Both companies tracked every stage, so we can see exactly where money was made and lost. The full Florida breakdown is in the [Florida HVAC case study](/case-studies/florida-hvac-65k-cash-collected), and every published HVAC campaign is on our [HVAC leads](/hvac-leads) page."
           ],
           "bulletList": [
             "Florida: $5,628 ad spend → 125 booked appointments ($45 each) → 60 connected calls (48% show) → 45 offers → 13 installations ($432.92 each) at $5,500 → $71,500 collected, 12.70 ROAS",

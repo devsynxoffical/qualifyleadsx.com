@@ -437,3 +437,16 @@ from the 14 Nov inspection); Bing 23 submitted. Bing: 68 pages in index.
 **Backlog:**
 - Recheck on 21 Nov whether /tools/mer-calculator and /tools/ad-frequency-calculator are indexed and take over their queries from /tools.
 - Full URL Inspection due 21 Nov.
+
+## 2026-11-19 12:30 IST: performance investigation (owner request)
+Full report: SEO_INVESTIGATION_2026-11-19.md. Change log with before metrics and checks: reports/recovery-tracker.csv.
+
+**Baseline (Search Console, 22 Oct to 18 Nov):** 678 impressions, 9 clicks, CTR 1.3%, avg position 40.5. No earlier 28-day or 3-month period to compare (data starts 19 Oct). First half vs second half: impressions 82 → 596, clicks 5 → 4, position 31.3 → 41.8. GA4 data not accessible (Data API disabled).
+
+**Biggest problems found:** no authority (0 linking pages, 0 brand searches), title churn (188 commits in 30 days; /lead-generation-agency retitled 6 times), 113 new URLs with 39 at 0 impressions, homepage industry tiles pointing at a noindex page and an unindexed page.
+
+**Done:**
+- C1: homepage industry tiles now point to /personal-injury-leads, /mva-leads and /final-expense-leads (indexed pages with published results) instead of /for/law-firms and the noindex /for/insurance-agencies.
+- C2: 5 unindexed service × industry pages 301-redirected to the matching indexed page (meta-ads-for-law-firms, meta-ads-for-real-estate-investors, meta-ads-for-course-creators, appointment-setting-for-coaches, appointment-setting-for-saas); links and sitemap updated (118 URLs).
+- C3: recovery tracker created; core pages on HOLD for title/description/H1 edits until 14 Dec.
+- 12-hourly routine prompt updated to fill the tracker and respect the hold.

@@ -53,6 +53,7 @@ export const publisherOrg = {
     "https://www.crunchbase.com/organization/qualifiedleadsx",
     "https://www.trustpilot.com/review/qualifiedleadsx.com",
     "https://www.sortlist.com/agency/qualifiedleadsx",
+    "https://www.agencyspotter.com/qualifiedleadsx",
     "https://www.linkedin.com/in/gauravecom/",
     "https://www.youtube.com/@QualifiedLeadsX",
     "https://www.facebook.com/qualifiedleadsx/",

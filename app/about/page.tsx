@@ -586,6 +586,14 @@ export default function AboutPage() {
                   Sortlist Agency Profile
                 </a>
                 <a
+                  href="https://www.agencyspotter.com/qualifiedleadsx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lime hover:underline block mb-1 transition-colors"
+                >
+                  Agency Spotter Verified
+                </a>
+                <a
                   href="https://www.youtube.com/@QualifiedLeadsX"
                   target="_blank"
                   rel="noopener noreferrer"

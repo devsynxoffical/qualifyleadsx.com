@@ -464,3 +464,7 @@ Homepage tiles: Roofing → /roofing-leads, HVAC (was unlinked) → /hvac-leads,
 **Tracker:** no rows due (first check 3 Dec).
 **Changed:** nothing. No new data day, and today already shipped C1–C3 and N1–N3; more edits now would blur what caused any movement.
 **Indexing:** all changed pages were already submitted to Google and Bing earlier today.
+
+## 2026-11-19 evening: full index submission + URL Inspection
+- Submitted all 121 sitemap URLs to the Google Indexing API (121 accepted) and 80 to Bing (daily limit; 41 left for 20 Nov). IndexNow returned 403 "UserForbiddedToAccessSite" although the key file is served correctly (likely Hostinger bot protection); Bing's own API worked.
+- URL Inspection, all 121: 105 indexed (was 100 of 118), 10 unknown to Google, 6 discovered but not indexed. Unknown: /benchmarks/meta-ads-cpm, /blog/scaling-from-100k-to-500k-coaching, /case-studies/strategic-consulting-85k, /compare/done-for-you-vs-done-with-you-lead-generation, /compare/meta-ads-vs-google-ads-high-ticket, /for/home-improvement, /hvac-leads, /mortgage-leads, /roofing-leads, /tools/roas-calculator. Discovered: /case-studies/b2b-technology-agency-71k, /case-studies/executive-consulting-150k, /crm-automation, /for/financial-advisors, /for/law-firms, /tools/ltv-cac-calculator. Recheck 21 Nov.

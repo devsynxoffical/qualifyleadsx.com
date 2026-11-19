@@ -3697,7 +3697,7 @@ export const blogPosts: BlogPost[] = [
           heading: "1. Removing Founder Bottlenecks",
           body: [
             "You cannot build an enterprise asset if all sales depend on founder charisma. Standardizing your closing script and placing vetted [outsourced sales closers](/outsourced-sales-closers) unlocks 5x capacity.",
-            "Support closers with dedicated [appointment setting for coaches](/appointment-setting-for-coaches) and our full sector playbook for [lead generation for coaches](/for/coaches).",
+            "Support closers with dedicated [appointment setting](/appointment-setting) and our full sector playbook for [lead generation for coaches](/for/coaches).",
           ],
         },
         {

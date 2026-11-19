@@ -301,7 +301,6 @@ function nichePageGroups(path: string): Group[] | null {
       title: "Services for law firms",
       links: [
         { href: "/for/law-firms", label: "Lead generation for law firms" },
-        { href: "/meta-ads-for-law-firms", label: "Meta ads for law firms" },
         ...services(["/speed-to-lead", "/appointment-setting"]),
       ],
     },

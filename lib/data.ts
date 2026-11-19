@@ -209,6 +209,7 @@ export const industries: string[] = [
   "HVAC Companies",
   "Solar Companies",
   "Personal Injury Law Firms",
+  "MVA & Auto Accident Lead Buyers",
   "Medical Malpractice Attorneys",
   "Healthcare Practices",
   "Med Spas & Aesthetic Clinics",

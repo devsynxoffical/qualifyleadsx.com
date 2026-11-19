@@ -7,6 +7,13 @@ const MERGED: Record<string, string> = {
   "/for/executive-coaches": "/for/coaches",
   "/for/business-coaches": "/for/coaches",
   "/for/online-education": "/for/course-creators",
+  // 19 Nov 2026 (SEO_INVESTIGATION_2026-11-19.md, C2): service x industry pages that were
+  // not indexed and had 0 impressions in 28 days, merged into the closest live page.
+  "/meta-ads-for-law-firms": "/personal-injury-leads",
+  "/meta-ads-for-real-estate-investors": "/for/real-estate-investors",
+  "/meta-ads-for-course-creators": "/for/course-creators",
+  "/appointment-setting-for-coaches": "/for/coaches",
+  "/appointment-setting-for-saas": "/for/saas",
 };
 
 export function middleware(request: NextRequest) {

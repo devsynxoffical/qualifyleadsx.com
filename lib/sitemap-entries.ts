@@ -324,18 +324,6 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
       priority: 0.92,
     },
     {
-      url: `${site.url}/meta-ads-for-real-estate-investors`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.92,
-    },
-    {
-      url: `${site.url}/meta-ads-for-course-creators`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.92,
-    },
-    {
       url: `${site.url}/meta-ads-for-saas`,
       lastModified: now,
       changeFrequency: "weekly",
@@ -366,25 +354,7 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
       priority: 0.92,
     },
     {
-      url: `${site.url}/meta-ads-for-law-firms`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.92,
-    },
-    {
       url: `${site.url}/appointment-setting-for-agencies`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.92,
-    },
-    {
-      url: `${site.url}/appointment-setting-for-saas`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.92,
-    },
-    {
-      url: `${site.url}/appointment-setting-for-coaches`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.92,

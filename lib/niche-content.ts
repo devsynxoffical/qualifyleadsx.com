@@ -64,7 +64,7 @@ export const mvaLeadsContent: DeepDiveContent = {
       eyebrow: "Who it's for",
       title: "MVA leads for law firms and PPL agencies",
       items: [
-        { title: "Personal injury and MVA law firms", text: "Exclusive leads for your own intake team instead of shared lists. See also [personal injury leads](/personal-injury-leads) and [Facebook ads for law firms](/meta-ads-for-law-firms)." },
+        { title: "Personal injury and MVA law firms", text: "Exclusive leads for your own intake team instead of shared lists. See also [personal injury leads](/personal-injury-leads) and [lead generation for law firms](/for/law-firms)." },
         { title: "Pay-per-lead (PPL) agencies", text: "Generate MVA leads you can resell. In one campaign a PPL client resold 126 leads at $150 each, $18,900 in lead value from $2,162 in ads." },
         { title: "Mass tort and other case types", text: "The same intake system adapts to other legal campaigns. See [mass tort lead generation](/mass-tort-leads)." },
       ],

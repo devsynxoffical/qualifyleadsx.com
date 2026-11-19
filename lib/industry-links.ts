@@ -28,16 +28,13 @@ export const industryPages: { slug: string; label: string }[] = [
 export const metaAdsIndustrySlugs = [
   "coaches",
   "consultants",
-  "course-creators",
   "financial-advisors",
-  "law-firms",
   "med-spas",
-  "real-estate-investors",
   "saas",
 ] as const;
 
 /** /appointment-setting-for-[slug] pages */
-export const appointmentSettingIndustrySlugs = ["agencies", "coaches", "consultants", "saas"] as const;
+export const appointmentSettingIndustrySlugs = ["agencies", "consultants"] as const;
 
 const LABEL: Record<string, string> = Object.fromEntries(industryPages.map((p) => [p.slug, p.label]));
 export const industryLabel = (slug: string) => LABEL[slug] ?? slug.replace(/-/g, " ");

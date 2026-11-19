@@ -11,7 +11,7 @@
 - Contact: hello@qualifiedleadsx.com, WhatsApp +91 96256 95456
 - Profiles: https://clutch.co/profile/qualifiedleadsx · https://www.crunchbase.com/organization/qualifiedleadsx · https://www.trustpilot.com/review/qualifiedleadsx.com
 - Short index: https://www.qualifiedleadsx.com/llms.txt
-- Generated: 2026-11-18 from the live site's server-rendered pages.
+- Generated: 2026-11-19 from the live site's server-rendered pages.
 
 
 ---
@@ -287,6 +287,7 @@ Roofing Companies
 HVAC Companies
 Solar Companies
 Personal Injury Law Firms
+MVA & Auto Accident Lead Buyers
 Medical Malpractice Attorneys
 Healthcare Practices
 Med Spas & Aesthetic Clinics
@@ -1442,11 +1443,8 @@ By industry
 ### Meta ads by industry
 - Meta Ads for High-Ticket Coaches
 - Meta Ads for B2B Consultants
-- Meta Ads for Course Creators
 - Meta Ads for Financial Advisors
-- Meta Ads for Law Firms
 - Meta Ads for Med Spas & Aesthetics
-- Meta Ads for Real Estate Investors
 - Meta Ads for B2B SaaS
 
 ### Lead generation by industry
@@ -1704,9 +1702,7 @@ By industry
 
 ### Appointment setting by industry
 - Appointment Setting for Marketing & Growth Agencies
-- Appointment Setting for High-Ticket Coaches
 - Appointment Setting for B2B Consultants
-- Appointment Setting for B2B SaaS
 
 ### Lead generation by industry
 - Marketing & Growth Agencies
@@ -3514,7 +3510,7 @@ Pay-per-lead and pay-per-case agencies that supply firms. The MVA case study was
 -
 
 ### Firms already running Facebook ads
-If your current campaign produces leads that don't sign, the fix is usually targeting and follow-up, not more budget. See Facebook ads for law firms .
+If your current campaign produces leads that don't sign, the fix is usually targeting and follow-up, not more budget. See all published results on MVA leads .
 -
 
 ### MVA and mass tort campaigns
@@ -3644,7 +3640,7 @@ Who it's for
 -
 
 ### Personal injury and MVA law firms
-Exclusive leads for your own intake team instead of shared lists. See also personal injury leads and Facebook ads for law firms .
+Exclusive leads for your own intake team instead of shared lists. See also personal injury leads and lead generation for law firms .
 -
 
 ### Pay-per-lead (PPL) agencies
@@ -4077,8 +4073,8 @@ $4,397 in ad spend, $28 per lead, from cold traffic.
 -
 
 ### 2,279 phone-verified leads in 3 months
-A Texas real estate business scaled from $4,069 to over $22,000 a month in ad spend while cost per lead stayed between $16.48 and $22.78.
-Full campaign details on Facebook ads for real estate investors . Buying leads from a broker instead? Read buying leads vs generating your own .
+A Texas real estate business scaled from $4,069 to over $22,000 a month in ad spend while cost per lead stayed between $16.48 and $22.78; in total $49,888 produced 2,279 phone-verified, pre-qualified leads.
+Buying leads from a broker instead? Read buying leads vs generating your own .
 Qualify
 
 ## How to qualify motivated sellers before the call
@@ -5268,7 +5264,7 @@ URL: https://www.qualifiedleadsx.com/case-studies/b2b-agency-scaling-846k
 Title: Agency Case Study: $846K and 235 Clients
 
 # Service Agency Case Study: $846,000 and 235 Clients Closed in 2025
-By the QualifiedLeadsX team, led by Gaurav Kapoor · Last updated November 16, 2026
+By the QualifiedLeadsX team, led by Gaurav Kapoor · Last updated November 18, 2026
 Quick answer In this verified case study, QualifiedLeadsX scaled a Agency & B2B business to $846,000 in tracked revenue. By implementing direct-response Meta Ads, a friction-based VSL qualification funnel, and sub-5-minute appointment setters, the business maintained consistent cash ROAS with over 80% appointment attendance.
 $846,000
 Ad Spend / Revenue
@@ -5382,7 +5378,7 @@ URL: https://www.qualifiedleadsx.com/case-studies/med-spa-marketing-agency-639k
 Title: Med Spa Agency: $639K in Two Months
 
 # Med Spa Marketing Agency Case Study: $639,000 in Two Months
-By the QualifiedLeadsX team, led by Gaurav Kapoor · Last updated November 16, 2026
+By the QualifiedLeadsX team, led by Gaurav Kapoor · Last updated November 18, 2026
 Quick answer In this verified case study, QualifiedLeadsX scaled a Agency & B2B business to $639,000 in tracked revenue. By implementing direct-response Meta Ads, a friction-based VSL qualification funnel, and sub-5-minute appointment setters, the business maintained consistent cash ROAS with over 80% appointment attendance.
 $639,000
 Ad Spend / Revenue
@@ -5488,7 +5484,7 @@ URL: https://www.qualifiedleadsx.com/case-studies/nyc-med-spa-rf-microneedling-7
 Title: Med Spa Case Study: $74,100 From $10K Ads
 
 # Multi-Location Med Spa Case Study: $74,100 From $10,387 in Meta Ads
-By the QualifiedLeadsX team, led by Gaurav Kapoor · Last updated November 16, 2026
+By the QualifiedLeadsX team, led by Gaurav Kapoor · Last updated November 18, 2026
 Quick answer In this verified case study, QualifiedLeadsX scaled a Agency & B2B business to $10K in tracked revenue. By implementing direct-response Meta Ads, a friction-based VSL qualification funnel, and sub-5-minute appointment setters, the business maintained consistent cash ROAS with over 80% appointment attendance.
 $10K
 Ad Spend / Revenue
@@ -5603,7 +5599,7 @@ URL: https://www.qualifiedleadsx.com/case-studies/florida-hvac-65k-cash-collecte
 Title: HVAC Case Study: $65,872 Net Cash, 12.7 ROAS
 
 # Florida HVAC Case Study: $65,872 Net Cash Collected at 12.70 ROAS
-By the QualifiedLeadsX team, led by Gaurav Kapoor · Last updated November 16, 2026
+By the QualifiedLeadsX team, led by Gaurav Kapoor · Last updated November 18, 2026
 Quick answer In this verified case study, QualifiedLeadsX scaled a Home Services & Roofing business to 5,628 in tracked revenue. By implementing direct-response Meta Ads, a friction-based VSL qualification funnel, and sub-5-minute appointment setters, the business maintained consistent cash ROAS with over 80% appointment attendance.
 5,628
 Leads Generated
@@ -5726,7 +5722,7 @@ URL: https://www.qualifiedleadsx.com/case-studies/mva-personal-injury-leads-8810
 Title: MVA Leads Case Study: 8,810 Leads at $7.61
 
 # Personal Injury (MVA) Case Study: 8,810 Leads at $7.61 Each
-By the QualifiedLeadsX team, led by Gaurav Kapoor · Last updated November 16, 2026
+By the QualifiedLeadsX team, led by Gaurav Kapoor · Last updated November 18, 2026
 Quick answer In this verified case study, QualifiedLeadsX scaled a Legal & MVA business to 8,810 in tracked revenue. By implementing direct-response Meta Ads, a friction-based VSL qualification funnel, and sub-5-minute appointment setters, the business maintained consistent cash ROAS with over 80% appointment attendance.
 8,810
 Leads Generated
@@ -5773,7 +5769,6 @@ For law firms, cost per lead is only the first number. Track how many leads are 
 - MVA leads
 - Personal injury leads
 - Lead generation for law firms
-- Meta ads for law firms
 - AI speed to lead
 
 # mva # attorney # injuryattorney # injury # advertising_agency
@@ -5840,7 +5835,7 @@ URL: https://www.qualifiedleadsx.com/case-studies/b2b-technology-agency-71k
 Title: AI SaaS Case Study: $71,934 in 24 Days
 
 # AI SaaS Case Study: 320 Customers and $71,934 in 24 Days
-By the QualifiedLeadsX team, led by Gaurav Kapoor · Last updated November 16, 2026
+By the QualifiedLeadsX team, led by Gaurav Kapoor · Last updated November 18, 2026
 Quick answer In this verified case study, QualifiedLeadsX scaled a Agency & B2B business to $71,934 in tracked revenue. By implementing direct-response Meta Ads, a friction-based VSL qualification funnel, and sub-5-minute appointment setters, the business maintained consistent cash ROAS with over 80% appointment attendance.
 $71,934
 Ad Spend / Revenue

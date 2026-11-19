@@ -458,3 +458,9 @@ Checked first whether new pages were justified. Customer acquisition agency, sol
 - /mortgage-leads: 5 published mortgage and refinance campaigns (208 leads → 37 closings).
 New template components/landing/RichLeadPage.tsx: lead form beside the hero, screenshot proof cards with lightbox, funnel or CPL table, budget estimator, process cards, qualification chips, comparison, FAQ accordion, CTA. The form now tags each lead with its source page.
 Homepage tiles: Roofing → /roofing-leads, HVAC (was unlinked) → /hvac-leads, Mortgage Brokers → /mortgage-leads. Footer, related links, sitemap, llms.txt and IndexNow list updated. Tracker rows N1–N3, F1.
+
+## 2026-11-19 14:13 IST: 12-hourly run #3
+**Measured:** no new Search Console day since run #2 (latest still 18 Nov). 7 days: 488 impressions (+17 late data), 3 clicks, 64 pages, 79 queries, avg position 31.0 (was 33.8). Lost queries are the 7-day window moving, not drops. New HVAC queries ("hvac facebook ads cost" pos 29, "facebook ads for hvac contractors" pos 44) support the new /hvac-leads page. Bing: 74 indexed, 0 crawl issues. Bots: all 200.
+**Tracker:** no rows due (first check 3 Dec).
+**Changed:** nothing. No new data day, and today already shipped C1–C3 and N1–N3; more edits now would blur what caused any movement.
+**Indexing:** all changed pages were already submitted to Google and Bing earlier today.

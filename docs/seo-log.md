@@ -470,3 +470,12 @@ Homepage tiles: Roofing → /roofing-leads, HVAC (was unlinked) → /hvac-leads,
 - URL Inspection, all 121: 105 indexed (was 100 of 118), 10 unknown to Google, 6 discovered but not indexed. Unknown: /benchmarks/meta-ads-cpm, /blog/scaling-from-100k-to-500k-coaching, /case-studies/strategic-consulting-85k, /compare/done-for-you-vs-done-with-you-lead-generation, /compare/meta-ads-vs-google-ads-high-ticket, /for/home-improvement, /hvac-leads, /mortgage-leads, /roofing-leads, /tools/roas-calculator. Discovered: /case-studies/b2b-technology-agency-71k, /case-studies/executive-consulting-150k, /crm-automation, /for/financial-advisors, /for/law-firms, /tools/ltv-cac-calculator. Recheck 21 Nov.
 
 Indexing submissions 2026-11-19 10:40 UTC: 121 URLs to Google (all sitemap URLs) and 80 to Bing. Owner rule from now on: max 20 pages in any 24 hours; next batch no earlier than the 21 Nov 14:13 IST run.
+
+## 2026-11-20 02:13 IST: 12-hourly run #4
+**Measured:** new partial Search Console day 19 Nov (25 impressions so far, 0 clicks). 7 days: 552 impressions (+64), 3 clicks, 65 pages, 84 queries, avg position 29.8 (was 31.0). 28 days: 990 impressions, 9 clicks, 127 queries, 9 on page 1.
+- Up: "meta ads for hvac contractors" 77.8 → 68, "qualified b2b leads" 72.2 → 67.3, "qualified appointments" 82 → 74, "lead conversion rate" 91 → 86. Down: none.
+- New: "agencies that optimize meta ads for booked consultations, not just leads" pos 2 on /meta-ads-agency; "how to calculate cost per result" pos 18; "real estate outbound lead generation service for investors" pos 54.
+- Bing: 78 indexed (was 74), 0 crawl issues. Bots: Googlebot, OAI-SearchBot, PerplexityBot, ClaudeBot 200; spoofed Bingbot 403 and GPTBot 429 (Hostinger bot protection, unchanged).
+**Tracker:** nothing due (first check 3 Dec).
+**Changed:** nothing. Top striking-distance query ("facebook ads agency vs hiring an in-house media buyer", pos 5, 24 impressions, 0 clicks) already matches the page title exactly; 0 clicks from 24 impressions at pos 5 is within normal variation. Today's 6 changes need time before more edits.
+**Indexing:** none sent (owner limit 20 per 24 hours; next batch allowed in the 21 Nov 14:13 IST run).

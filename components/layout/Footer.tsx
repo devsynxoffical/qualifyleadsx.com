@@ -74,6 +74,7 @@ const footerColumns = [
       { label: "Verified on Clutch.co", href: "https://clutch.co/profile/qualifiedleadsx" },
       { label: "Trustpilot Reviews", href: "https://www.trustpilot.com/review/qualifiedleadsx.com" },
       { label: "Crunchbase Organization", href: "https://www.crunchbase.com/organization/qualifiedleadsx" },
+      { label: "Sortlist Agency Profile", href: "https://www.sortlist.com/agency/qualifiedleadsx" },
       { label: "$846K B2B Agency Case", href: "/case-studies/b2b-agency-scaling-846k" },
       { label: "$639K Med Spa Case", href: "/case-studies/med-spa-marketing-agency-639k" },
       { label: "$203K Coaching Case", href: "/case-studies/high-ticket-coaching-203k" },

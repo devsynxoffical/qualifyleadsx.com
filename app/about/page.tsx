@@ -578,6 +578,14 @@ export default function AboutPage() {
                   Trustpilot Business Profile
                 </a>
                 <a
+                  href="https://www.sortlist.com/agency/qualifiedleadsx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lime hover:underline block mb-1 transition-colors"
+                >
+                  Sortlist Agency Profile
+                </a>
+                <a
                   href="https://www.youtube.com/@QualifiedLeadsX"
                   target="_blank"
                   rel="noopener noreferrer"

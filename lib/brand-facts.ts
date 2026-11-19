@@ -52,6 +52,7 @@ export const brandFacts = {
     "https://clutch.co/profile/qualifiedleadsx",
     "https://www.crunchbase.com/organization/qualifiedleadsx",
     "https://www.trustpilot.com/review/qualifiedleadsx.com",
+    "https://www.sortlist.com/agency/qualifiedleadsx",
     "https://www.facebook.com/qualifiedleadsx/",
     "https://www.instagram.com/qualifiedleadsx/",
     "https://www.linkedin.com/in/gauravecom/",

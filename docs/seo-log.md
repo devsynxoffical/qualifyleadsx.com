@@ -485,3 +485,12 @@ Verified live: homepage title "Done-for-You Outsourced Lead Generation", one H1 
 
 ## 2026-11-20: Instagram case study reels
 Owner sent 77 unique reels/posts. 70 were already on /case-studies with their videos. Added the 7 missing ones as video case studies (downloaded with yt-dlp, re-encoded H.264 720p, thumbnails): DfuDbu2S7qc (MVA agency DWY sessions), Dfrv-GDSHhw (credit repair 196 leads at $6.07), DfBrxnMy4Yf (15,538 home service leads at $10.64), DeObqYNSuH2 (353 solar leads at $10.32), DeMdVqDSMLy (hackathon 34,397 enquiries at $7.82), DeJ4e7Wy7g2 (roofing 101 leads at $8.95), DeCJICayIm1 (hackathon 27,169 enquiries at $7.59). Dd9D3rnSCMT (2,440 final expense leads) switched from a still image to its video. Video count updated 69 -> 77 (about, case studies, funnel proof, llms.txt).
+
+## 2026-11-20 14:13 IST: 12-hourly run #5
+**Measured:** latest Search Console day still 19 Nov (now 74 impressions, 0 clicks for that day). 7 days: 573 impressions (+21 late data), 3 clicks, 66 pages, 88 queries, avg position 29.3 (was 29.8). 28 days: 1,026 impressions, 8 clicks, 134 queries.
+- Up: "facebook ads for coaches" 60 → 38 (/meta-ads-for-coaches), "virtual assistant appointment setter" 57.5 → 37, "qualified appointments" 74 → 69.3 (/appointment-setting), "qualified lead generation services" 73.3 → 68.8 (/), "customer acquisition agencies" 60.2 → 55.8. Down: none.
+- New: "qualified appointment" pos 48.3 on /appointment-setting, "facebook ads for hvac companies" pos 34, "lead to customer rate calculator" pos 46. "mass tort leads" (72) and "tort leads" (66) were for /mass-tort-leads, which now 301s to /services (owner plan).
+- Bing: 78 indexed, 0 crawl issues. Bots unchanged (Googlebot and AI search bots 200; spoofed Bingbot 403, GPTBot 429).
+**Tracker:** nothing due (first check 3 Dec).
+**Changed:** nothing in this run. Today's recovery-plan changes (P1–P7) and the 8 case-study videos need time; the video deploy (814e41c) was pushed 10 minutes before this run and is not live yet.
+**Indexing:** none sent (owner limit; next batch in the 21 Nov 14:13 IST run, starting with the pages changed on 20 Nov).

@@ -511,3 +511,13 @@ Owner: footer looked messy (60+ links in long columns). New shared lib/menu.ts. 
 
 ## 2026-11-20: footer, all links in dropdowns
 Owner: footer should be very neat, everything in dropdown or hover. Footer is now brand row (logo, one line, Book call, socials, WhatsApp), one row of menus (Services, Industries, Resources, Case Studies, Mastermind, Company, Reviews, plus Related to this page when a page has related links) that open on hover on desktop and on tap on mobile (accordion), and a bottom bar with email and legal links. All links stay in the HTML (link audit 0 broken, 0 orphans).
+
+## 2026-11-21 02:13 IST: 12-hourly run #6
+**Measured:** new Search Console day 20 Nov (40 impressions, 0 clicks, partial). 7 days: 636 impressions (+63), 3 clicks, 71 pages (+5), 104 queries (+16), avg position 29.6. 28 days: 1,089 impressions, 8 clicks, 150 queries, 9 on page 1.
+- Up: "hvac meta ads" 72.8 → 57.1, "lead conversion rate calculator" 77 → 68.8. Down: "metaadsagency.com" 79 → 84.7.
+- New pages already showing: /mortgage-leads ("mortgage leads exclusive" pos 37, "qualified personal loan leads" 51, "refi leads" 64), so Google has picked it up. /tools/lead-conversion-rate-calculator now 53 impressions at pos 21.4.
+- Mass tort queries ("buy mass tort leads" pos 38, "mass tort case leads" 53) still reach /mass-tort-leads, which now 301s to /services under the owner's recovery plan (topic owned by scalewithads.us).
+- Bing: 78 indexed, 0 crawl issues.
+**Tracker:** nothing due (first check 3 Dec).
+**Changed:** nothing in this run; 20 Nov already shipped the recovery-plan pages, case study redesign, speed fix and new header/footer.
+**Indexing:** none sent (owner limit; next batch in the 21 Nov 14:13 IST run).

@@ -503,3 +503,5 @@ Owner report: /case-studies/<slug> pages were plain with no video or results. Re
 
 ## 2026-11-20: speed
 Lighthouse mobile (live, before): / 65 (LCP 3.6 s, TBT 740 ms, 7.0 MB), /case-studies 84, case study page 95, /appointment-setting 90, /pay-per-appointment 94, /for/coaches 94, new coaching guide 96, /hvac-leads 95. Homepage cause: testimonial player preloaded a 6.4 MB hosted MP4 (index at end of file) on every visit; fixed by setting the video src only when play is pressed (homepage weight about 0.9 MB, 0 MP4 requests before play, plays on click). Below-the-fold homepage sections wrapped in separate Suspense boundaries to split hydration (local TBT avg about 810 -> 600 ms). Remaining: one about 700 ms React hydration task from the animated homepage sections; reducing it needs a bigger refactor.
+
+Live after (20 Nov): / 69 and 74 (two runs; LCP 3.4/2.7 s, TBT 620/640 ms, 782 KB), /case-studies 89, /appointment-setting 94.

@@ -8,78 +8,15 @@ import { Menu, X, ArrowUpRight, ChevronDown } from "lucide-react";
 import { nav, navCta, site } from "@/lib/site";
 import { scrollToId } from "@/components/providers/SmoothScroll";
 import { cn } from "@/lib/utils";
+import { servicesMenu, industriesMenu, resourcesMenu, mastermindMenu, type MenuGroup } from "@/lib/menu";
 
-const servicesSublinks = [
-  {
-    title: "Customer Acquisition Agency",
-    desc: "Full-funnel client acquisition & pipeline",
-    href: "/lead-generation-agency",
-    badge: "Top Rated",
-  },
-  {
-    title: "Qualified B2B Leads",
-    desc: "Enterprise B2B lead generation & VSL funnels",
-    href: "/b2b-lead-generation",
-    badge: "1500+ Words",
-  },
-  {
-    title: "Lead Gen for Agencies",
-    desc: "Scale agency retainers past $100K/month",
-    href: "/for/agencies",
-    badge: "35–60 Calls",
-  },
-  {
-    title: "B2B Appointment Setting",
-    desc: "Sub-3-minute speed to lead & AI qualification",
-    href: "/appointment-setting",
-    badge: "AI + CRM",
-  },
-  {
-    title: "Meta Ads Agency for B2B",
-    desc: "Facebook & Instagram ads for high-ticket offers",
-    href: "/meta-ads-agency",
-    badge: "$50M+ Spend",
-  },
-  {
-    title: "Motivated Seller Leads",
-    desc: "Proprietary direct-to-seller deal funnels",
-    href: "/for/real-estate-investors",
-    badge: "Off-Market",
-  },
-  {
-    title: "All Services Directory",
-    desc: "Complete done-for-you acquisition systems",
-    href: "/services",
-    badge: "Directory",
-  },
-];
-
-const mastermindSublinks = [
-  {
-    title: "AI Client Acquisition Mastermind",
-    desc: "6-week Meta ads & AI program",
-    href: "/mastermind/hidden-facebook-interest",
-    badge: "Mastermind #01",
-  },
-  {
-    title: "7 Days Paid Trial",
-    desc: "Self-liquidating Meta Ads playbook",
-    href: "/mastermind/7-days-paid-trial",
-    badge: "Mastermind #02",
-  },
-  {
-    title: "LTO Funnel $847K Scale",
-    desc: "$255K spend to near $1M sales Meta Ads",
-    href: "/mastermind/lto-funnel-scale",
-    badge: "Case Study #03",
-  },
-  {
-    title: "Personal Injury Sniper Method",
-    desc: "Hidden Facebook audiences for PI cases",
-    href: "/mastermind/personal-injury-facebook-ads",
-    badge: "Mastermind #04",
-  },
-];
+// Dropdown content lives in lib/menu.ts (shared with the footer).
+const DROPDOWNS: Record<string, { group: MenuGroup; wide?: boolean }> = {
+  Services: { group: servicesMenu },
+  Industries: { group: industriesMenu, wide: true },
+  Resources: { group: resourcesMenu },
+  Mastermind: { group: mastermindMenu },
+};
 
 function Logo() {
   return (
@@ -102,10 +39,8 @@ export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
     const [barDismissed, setBarDismissed] = useState(false);
-  const [servicesDropdown, setServicesDropdown] = useState(false);
-  const [mobileServicesOpen, setMobileServicesOpen] = useState(true);
-  const [mastermindDropdown, setMastermindDropdown] = useState(false);
-  const [mobileMastermindOpen, setMobileMastermindOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [mobileOpen, setMobileOpen] = useState<string | null>("Services");
   const pathname = usePathname();
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -126,6 +61,7 @@ export function Nav() {
 
   useEffect(() => {
     setOpen(false);
+    setOpenDropdown(null);
   }, [pathname]);
 
   useEffect(() => {
@@ -176,113 +112,63 @@ export function Nav() {
           <Logo />
           <ul className="hidden items-center gap-1 lg:flex">
             {nav.map((item) => {
-              if (item.label === "Services") {
+              const dd = DROPDOWNS[item.label];
+              if (dd) {
+                const isOpen = openDropdown === item.label;
                 return (
                   <li
                     key={item.href}
                     className="relative"
-                    onMouseEnter={() => setServicesDropdown(true)}
-                    onMouseLeave={() => setServicesDropdown(false)}
+                    onMouseEnter={() => setOpenDropdown(item.label)}
+                    onMouseLeave={() => setOpenDropdown(null)}
                   >
                     <a
                       href={item.href}
                       onClick={(e) => go(e, item.href)}
+                      onFocus={() => setOpenDropdown(item.label)}
+                      aria-haspopup="true"
+                      aria-expanded={isOpen}
                       className="group inline-flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-mist transition-colors hover:text-fog"
                     >
                       {item.label}
-                      <ChevronDown className="h-3.5 w-3.5 transition-transform duration-300 group-hover:rotate-180 text-lime" />
+                      <ChevronDown className={cn("h-3.5 w-3.5 text-lime transition-transform duration-300", isOpen && "rotate-180")} />
                     </a>
-
                     <div
                       className={cn(
-                        "absolute top-full left-1/2 -translate-x-1/2 pt-2 w-80 transition-all duration-300 z-50",
-                        servicesDropdown
-                          ? "pointer-events-auto opacity-100 translate-y-0"
-                          : "pointer-events-none opacity-0 translate-y-2"
+                        "absolute left-1/2 top-full z-50 -translate-x-1/2 pt-3 transition-all duration-200",
+                        dd.wide ? "w-[520px]" : "w-[360px]",
+                        isOpen ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none translate-y-2 opacity-0"
                       )}
                     >
-                      <div className="rounded-2xl border border-line-strong bg-ink/95 p-3 backdrop-blur-2xl shadow-2xl">
-                        <div className="space-y-1">
-                          {servicesSublinks.map((sub) => (
-                            <a
-                              key={sub.title}
-                              href={sub.href}
-                              className="group/sub flex flex-col rounded-xl p-2.5 transition-colors hover:bg-white/[0.05]"
-                            >
-                              <div className="flex items-center justify-between text-xs font-bold text-white group-hover/sub:text-lime">
-                                <span className="flex items-center gap-2">
-                                  {sub.title}
-                                  {sub.badge && (
-                                    <span className="rounded-full bg-lime/10 border border-lime/30 px-2 py-0.5 font-mono text-[9px] font-bold text-lime">
-                                      {sub.badge}
-                                    </span>
-                                  )}
+                      <div className="rounded-2xl border border-line-strong bg-ink/95 p-2 shadow-[0_20px_50px_rgba(0,0,0,0.8)] backdrop-blur-2xl">
+                        <ul className={cn("grid gap-0.5", dd.wide && "grid-cols-2")}>
+                          {dd.group.featured.map((sub) => (
+                            <li key={sub.href}>
+                              <a
+                                href={sub.href}
+                                onClick={() => setOpenDropdown(null)}
+                                className="group/sub flex items-start justify-between gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-white/[0.05]"
+                              >
+                                <span>
+                                  <span className="block text-sm font-semibold text-fog group-hover/sub:text-lime">{sub.label}</span>
+                                  {sub.desc && <span className="mt-0.5 block text-xs leading-snug text-mist">{sub.desc}</span>}
                                 </span>
-                                <ArrowUpRight className="h-3.5 w-3.5 text-lime opacity-70 group-hover/sub:opacity-100 group-hover/sub:translate-x-0.5" />
-                              </div>
-                              <span className="mt-1 text-[11px] text-mist/70 leading-snug">{sub.desc}</span>
-                            </a>
+                                <ArrowUpRight className="mt-0.5 h-3.5 w-3.5 shrink-0 text-lime opacity-0 transition-opacity group-hover/sub:opacity-100" />
+                              </a>
+                            </li>
                           ))}
-                        </div>
+                        </ul>
+                        <a
+                          href={dd.group.href}
+                          onClick={() => setOpenDropdown(null)}
+                          className="mt-1 flex items-center justify-between rounded-xl border-t border-line px-3 py-2.5 text-xs font-semibold text-lime hover:bg-lime/[0.06]"
+                        >
+                          View all {dd.group.title.toLowerCase()}
+                          <ArrowUpRight className="h-3.5 w-3.5" />
+                        </a>
                       </div>
                     </div>
                   </li>
-                );
-              }
-
-              if (item.label === "Mastermind") {
-                return (
-                  <li
-                    key={item.href}
-                    className="relative"
-                    onMouseEnter={() => setMastermindDropdown(true)}
-                    onMouseLeave={() => setMastermindDropdown(false)}
-                  >
-                    <a
-                      href={item.href}
-                      onClick={(e) => go(e, item.href)}
-                      className="group inline-flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-mist transition-colors hover:text-fog"
-                    >
-                      {item.label}
-                      <ChevronDown className="h-3.5 w-3.5 transition-transform duration-300 group-hover:rotate-180 text-lime" />
-                    </a>
-
-                    {/* Mastermind Dropdown Menu */}
-                    <div
-                      className={cn(
-                        "absolute top-full left-1/2 -translate-x-1/2 pt-2 w-80 transition-all duration-300 z-50",
-                        mastermindDropdown
-                          ? "pointer-events-auto opacity-100 translate-y-0"
-                          : "pointer-events-none opacity-0 translate-y-2"
-                      )}
-                    >
-                      {/* Invisible hover bridge to prevent cursor gap */}
-                      <div className="relative rounded-2xl border border-lime/20 bg-[#050e08]/95 p-3 backdrop-blur-xl shadow-[0_15px_40px_rgba(0,0,0,0.9)] before:absolute before:inset-x-0 before:-top-3 before:h-3">
-                        <div className="space-y-1">
-                          {mastermindSublinks.map((sub) => (
-                            <a
-                              key={sub.title}
-                              href={sub.href}
-                              className="group/sub flex flex-col rounded-xl p-3 text-left transition-colors hover:bg-lime/10"
-                            >
-                              <div className="flex items-center justify-between text-xs font-bold text-white group-hover/sub:text-lime">
-                                <span className="flex items-center gap-2">
-                                  {sub.title}
-                                  {sub.badge && (
-                                    <span className="rounded-full bg-lime/10 border border-lime/30 px-2 py-0.5 font-mono text-[9px] font-bold text-lime">
-                                      {sub.badge}
-                                    </span>
-                                  )}
-                                </span>
-                                <ArrowUpRight className="h-3.5 w-3.5 text-lime opacity-70 group-hover/sub:opacity-100 group-hover/sub:translate-x-0.5" />
-                              </div>
-                              <span className="mt-1 text-[11px] text-mist/70 leading-snug">{sub.desc}</span>
-                            </a>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                </li>
                 );
               }
 
@@ -336,110 +222,41 @@ export function Nav() {
         <div data-lenis-prevent className="mt-24 flex flex-1 flex-col justify-between px-6 pb-10 overflow-y-auto overscroll-contain">
           <ul className="flex flex-col gap-1">
             {nav.map((item, i) => {
-              if (item.label === "Services") {
+              const dd = DROPDOWNS[item.label];
+              if (dd) {
+                const isOpen = mobileOpen === item.label;
                 return (
                   <li key={item.href} className="border-b border-line py-2">
                     <div className="flex items-center justify-between py-1">
-                      <a
-                        href={item.href}
-                        onClick={(e) => go(e, item.href)}
-                        className="text-2xl font-bold tracking-tight text-fog hover:text-lime"
-                      >
+                      <a href={item.href} onClick={(e) => go(e, item.href)} className="text-2xl font-bold tracking-tight text-fog hover:text-lime">
                         {item.label}
                       </a>
                       <button
                         type="button"
-                        onClick={() => setMobileServicesOpen((v) => !v)}
+                        onClick={() => setMobileOpen(isOpen ? null : item.label)}
                         className="flex h-9 w-9 items-center justify-center rounded-full border border-lime/30 bg-lime/10 text-lime"
-                        aria-label="Toggle Services sublinks"
+                        aria-label={`Toggle ${item.label} sublinks`}
+                        aria-expanded={isOpen}
                       >
-                        <ChevronDown
-                          className={cn(
-                            "h-4 w-4 transition-transform duration-300",
-                            mobileServicesOpen && "rotate-180"
-                          )}
-                        />
+                        <ChevronDown className={cn("h-4 w-4 transition-transform duration-300", isOpen && "rotate-180")} />
                       </button>
                     </div>
-
-                    {mobileServicesOpen && (
-                      <div className="mt-2 space-y-2 pl-3 border-l-2 border-lime/30 py-1">
-                        {servicesSublinks.map((sub) => (
-                          <a
-                            key={sub.title}
-                            href={sub.href}
-                            className="flex flex-col rounded-xl bg-white/[0.03] p-2.5 border border-white/5 hover:border-lime/40"
-                          >
-                            <div className="flex items-center justify-between text-xs font-bold text-white">
-                              <span className="flex items-center gap-1.5">
-                                <span>{sub.title}</span>
-                                {sub.badge && (
-                                  <span className="rounded-full bg-lime/15 border border-lime/30 px-1.5 py-0.5 font-mono text-[8px] font-bold text-lime">
-                                    {sub.badge}
-                                  </span>
-                                )}
-                              </span>
-                              <ArrowUpRight className="h-3.5 w-3.5 text-lime" />
-                            </div>
-                            <span className="mt-1 text-[10px] text-mist">{sub.desc}</span>
-                          </a>
+                    {isOpen && (
+                      <ul className="mt-2 space-y-1 border-l-2 border-lime/30 py-1 pl-3">
+                        {dd.group.featured.map((sub) => (
+                          <li key={sub.href}>
+                            <a href={sub.href} onClick={() => setOpen(false)} className="flex items-center justify-between rounded-xl px-3 py-2.5 text-[15px] font-medium text-fog hover:bg-white/[0.04] hover:text-lime">
+                              {sub.label}
+                              <ArrowUpRight className="h-4 w-4 text-lime" />
+                            </a>
+                          </li>
                         ))}
-                      </div>
-                    )}
-                  </li>
-                );
-              }
-
-              if (item.label === "Mastermind") {
-                return (
-                  <li key={item.href} className="border-b border-line py-2">
-                    <div className="flex items-center justify-between py-1">
-                      <a
-                        href={item.href}
-                        onClick={(e) => go(e, item.href)}
-                        className="text-2xl font-bold tracking-tight text-fog hover:text-lime"
-                      >
-                        {item.label}
-                      </a>
-                      <button
-                        type="button"
-                        onClick={() => setMobileMastermindOpen((v) => !v)}
-                        className="flex h-9 w-9 items-center justify-center rounded-full border border-lime/30 bg-lime/10 text-lime"
-                        aria-label="Toggle Mastermind sublinks"
-                      >
-                        <ChevronDown
-                          className={cn(
-                            "h-4 w-4 transition-transform duration-300",
-                            mobileMastermindOpen && "rotate-180"
-                          )}
-                        />
-                      </button>
-                    </div>
-
-                    {/* Expandable Mobile Sublinks */}
-                    {mobileMastermindOpen && (
-                      <div className="mt-2 space-y-2 pl-3 border-l-2 border-lime/30 py-1">
-                        {mastermindSublinks.map((sub) => (
-                          <a
-                            key={sub.title}
-                            href={sub.href}
-                            className="flex flex-col rounded-xl bg-white/[0.03] p-2.5 border border-white/5 hover:border-lime/40"
-                          >
-                            <div className="flex items-center justify-between text-xs font-bold text-white">
-                              <span className="flex items-center gap-1.5">
-                                <span>{sub.title}</span>
-                                {sub.badge && (
-                                  <span className="rounded-full bg-lime/15 border border-lime/30 px-1.5 py-0.5 font-mono text-[8px] font-bold text-lime">
-                                    {sub.badge}
-                                  </span>
-                                )}
-                              </span>
-                              <ArrowUpRight className="h-3.5 w-3.5 text-lime" />
-                            </div>
-                            <span className="mt-1 text-[10px] text-mist">{sub.desc}</span>
+                        <li>
+                          <a href={dd.group.href} onClick={() => setOpen(false)} className="block px-3 py-2 text-sm font-semibold text-lime">
+                            View all {dd.group.title.toLowerCase()} →
                           </a>
-                        ))}
-                      </div>
+                        </li>
+                      </ul>
                     )}
                   </li>
                 );

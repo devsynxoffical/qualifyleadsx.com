@@ -1,121 +1,100 @@
-import { ArrowUpRight, Mail } from "lucide-react";
+import { ArrowUpRight, ChevronDown, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { site } from "@/lib/site";
 import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
 import { RelatedLinks } from "@/components/sections/RelatedLinks";
+import {
+  servicesMenu,
+  industriesMenu,
+  toolsLinks,
+  benchmarkLinks,
+  guideLinks,
+  compareLinks,
+  mastermindMenu,
+  companyLinks,
+  caseStudyLinksMenu,
+  profileLinks,
+  legalLinks,
+  type MenuLink,
+} from "@/lib/menu";
 
-const topicLinks = [
-  { label: "Funnel Strategy", href: "/blog/category/funnel-strategy" },
-  { label: "Paid Advertising", href: "/blog/category/paid-advertising" },
-  { label: "Lead Qualification", href: "/blog/category/lead-qualification" },
-  { label: "Scaling & Economics", href: "/blog/category/scaling-economics" },
-  { label: "Client Acquisition Glossary", href: "/glossary" },
-  { label: "RSS Feed", href: "/feed.xml" },
+/**
+ * Footer (redesigned 20 Nov 2026): brand + four short columns of the most
+ * important links, then a closed "Browse all pages" section that still puts
+ * every page in the HTML for crawlers without showing 60+ links at once.
+ */
+const columns: { title: string; href: string; viewAll: string; links: MenuLink[] }[] = [
+  { title: "Services", href: "/services", viewAll: "All services", links: servicesMenu.featured.slice(0, 6) },
+  { title: "Industries", href: "/for", viewAll: "All industries", links: industriesMenu.featured.slice(0, 6) },
+  {
+    title: "Resources",
+    href: "/tools",
+    viewAll: "All free tools",
+    links: [
+      { label: "Free tools & calculators", href: "/tools" },
+      { label: "Benchmarks", href: "/benchmarks" },
+      { label: "Cost per lead by industry", href: "/benchmarks/cost-per-lead-by-industry" },
+      { label: "Blog & guides", href: "/blog" },
+      { label: "Glossary", href: "/glossary" },
+      { label: "Alternatives compared", href: "/compare/qualifiedleadsx-alternatives" },
+    ],
+  },
+  { title: "Company", href: "/book-your-call#book", viewAll: "Contact us", links: companyLinks.slice(0, 4).concat(companyLinks[5]) },
 ];
 
-const footerColumns = [
-  {
-    title: "Core Services",
-    links: [
-      { label: "Services Hub Directory", href: "/services" },
-      { label: "Customer Acquisition Agency", href: "/lead-generation-agency" },
-      { label: "Qualified B2B Leads", href: "/b2b-lead-generation" },
-      { label: "High-Ticket Lead Generation", href: "/high-ticket-lead-generation" },
-      { label: "B2B Appointment Setting", href: "/appointment-setting" },
-      { label: "Meta Ads Agency for B2B", href: "/meta-ads-agency" },
-      { label: "AI Speed to Lead", href: "/speed-to-lead" },
-      { label: "VSL Funnel Agency", href: "/vsl-funnels" },
-      { label: "WhatsApp Lead Nurture", href: "/whatsapp-lead-nurture" },
-      { label: "Pay-Per-Appointment Lead Gen", href: "/pay-per-appointment" },
-      { label: "CRM Automation", href: "/crm-automation" },
-      { label: "Outsourced Sales Closers", href: "/outsourced-sales-closers" },
-    ],
-  },
-  {
-    title: "Industries & Solutions",
-    links: [
-      { label: "Industries Hub Directory", href: "/for" },
-      { label: "Lead Gen for Agencies ($5K-$25K)", href: "/for/agencies" },
-      { label: "Buy Motivated Seller Leads", href: "/for/real-estate-investors" },
-      { label: "For High-Ticket Coaches", href: "/for/coaches" },
-      { label: "For B2B Consultants", href: "/for/consultants" },
-      { label: "For B2B SaaS", href: "/for/saas" },
-      { label: "For B2B Services", href: "/for/b2b-services" },
-      { label: "For Medical Spas", href: "/for/med-spas" },
-      { label: "For Financial Advisors", href: "/for/financial-advisors" },
-      { label: "For Insurance Agents", href: "/for/insurance-agencies" },
-      { label: "Final Expense Leads", href: "/final-expense-leads" },
-      { label: "HVAC Leads", href: "/hvac-leads" },
-      { label: "Mortgage Leads", href: "/mortgage-leads" },
-    ],
-  },
-  {
-    title: "Calculators & Benchmarks",
-    links: [
-      { label: "Free Tools & Calculators Hub", href: "/tools" },
-      { label: "B2B CAC Benchmark Calculator", href: "/tools/cac-calculator" },
-      { label: "Cost Per Qualified Meeting", href: "/benchmarks/cost-per-booked-call" },
-      { label: "ROAS & Break-Even Calculator", href: "/tools/roas-calculator" },
-      { label: "Cost Per Booked Call Calculator", href: "/tools/cost-per-booked-call-calculator" },
-      { label: "Meta Ads Budget Calculator", href: "/tools/meta-ads-budget-calculator" },
-      { label: "Meta Ads Bid Strategy Calculator", href: "/tools/meta-ads-bid-strategy-calculator" },
-      { label: "Lead Conversion Rate Calculator", href: "/tools/lead-conversion-rate-calculator" },
-      { label: "Show-Up Rate Calculator", href: "/tools/show-rate-calculator" },
-      { label: "LTV to CAC Calculator", href: "/tools/ltv-cac-calculator" },
-      { label: "Lead Scoring Template", href: "/tools/lead-scoring-template" },
-      { label: "2026 Marketing Benchmarks Hub", href: "/benchmarks" },
-      { label: "Cost Per Lead by Industry", href: "/benchmarks/cost-per-lead-by-industry" },
-      { label: "Meta Ads CPM Benchmarks", href: "/benchmarks/meta-ads-cpm" },
-      { label: "Close Rate Benchmarks", href: "/benchmarks/close-rate" },
-    ],
-  },
-  {
-    title: "Proof & Comparisons",
-    links: [
-      { label: "125+ Verified Case Studies", href: "/case-studies" },
-      { label: "Google Business Profile", href: "https://maps.google.com/maps?cid=12897087509369850560" },
-      { label: "Verified on Clutch.co", href: "https://clutch.co/profile/qualifiedleadsx" },
-      { label: "Trustpilot Reviews", href: "https://www.trustpilot.com/review/qualifiedleadsx.com" },
-      { label: "Crunchbase Organization", href: "https://www.crunchbase.com/organization/qualifiedleadsx" },
-      { label: "Sortlist Agency Profile", href: "https://www.sortlist.com/agency/qualifiedleadsx" },
-      { label: "Agency Spotter Verified", href: "https://www.agencyspotter.com/qualifiedleadsx" },
-      { label: "$846K B2B Agency Case", href: "/case-studies/b2b-agency-scaling-846k" },
-      { label: "$639K Med Spa Case", href: "/case-studies/med-spa-marketing-agency-639k" },
-      { label: "$203K Coaching Case", href: "/case-studies/high-ticket-coaching-203k" },
-      { label: "Meta Ads vs Google Ads", href: "/compare/meta-ads-vs-google-ads-high-ticket" },
-      { label: "DFY vs DWY Lead Gen", href: "/compare/done-for-you-vs-done-with-you-lead-generation" },
-      { label: "Appointment Setter vs VA", href: "/compare/appointment-setter-vs-va" },
-      { label: "QualifiedLeadsX Alternatives", href: "/compare/qualifiedleadsx-alternatives" },
-      { label: "Growth Guides & Blog", href: "/blog" },
-      { label: "Book Strategy Call", href: "/book-your-call#book" },
-    ],
-  },
+const allPages: { title: string; links: MenuLink[] }[] = [
+  { title: "Services", links: servicesMenu.all },
+  { title: "Industries & lead types", links: industriesMenu.all },
+  { title: "Free tools", links: toolsLinks },
+  { title: "Benchmarks", links: benchmarkLinks },
+  { title: "Guides", links: guideLinks },
+  { title: "Comparisons", links: compareLinks },
+  { title: "Case studies", links: caseStudyLinksMenu },
+  { title: "Mastermind", links: mastermindMenu.all },
+  { title: "Reviews & profiles", links: profileLinks },
 ];
+
+function FooterLink({ l, className }: { l: MenuLink; className: string }) {
+  return l.href.startsWith("http") ? (
+    <a href={l.href} target="_blank" rel="noopener noreferrer" className={className}>
+      {l.label}
+    </a>
+  ) : l.href.endsWith(".xml") ? (
+    <a href={l.href} className={className}>
+      {l.label}
+    </a>
+  ) : (
+    <Link href={l.href} className={className}>
+      {l.label}
+    </Link>
+  );
+}
 
 export function Footer() {
   return (
     <footer className="relative border-t border-line bg-ink" id="footer">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-lime/30 to-transparent" />
       <div className="container-x">
-        <div className="grid gap-10 py-16 sm:py-20 sm:grid-cols-2 lg:grid-cols-5">
-          {/* Brand */}
+        <div className="grid gap-12 py-16 sm:py-20 lg:grid-cols-[1.3fr_2.7fr] lg:gap-16">
+          {/* Brand and contact */}
           <div>
-            <Link href="/" className="group flex items-center" aria-label="QualifiedLeadsX home">
+            <Link href="/" className="group inline-flex items-center" aria-label="QualifiedLeadsX home">
               <span className="flex items-center rounded-full bg-white px-3 py-1.5 shadow-[0_0_0_1px_rgba(255,255,255,0.08)] transition-colors duration-300 group-hover:bg-white/90 sm:px-3.5 sm:py-2">
-                <Image
-                  src="/images/qualified-leadsx.webp"
-                  alt="QualifiedLeadsX"
-                  width={1000}
-                  height={444}
-                  className="h-4 w-auto sm:h-5"
-                />
+                <Image src="/images/qualified-leadsx.webp" alt="QualifiedLeadsX" width={1000} height={444} className="h-4 w-auto sm:h-5" />
               </span>
             </Link>
-            <p className="mt-5 max-w-xs text-sm leading-relaxed text-mist">
-              The done-for-you client acquisition system for high-ticket coaches, consultants and
-              service providers.
+            <p className="mt-5 max-w-sm text-sm leading-relaxed text-mist">
+              Done-for-you lead generation and appointment setting for coaches, consultants, financial advisors and insurance agents.
             </p>
+            <a href={site.bookCallUrl} className="mt-6 inline-flex items-center gap-2 rounded-full bg-lime px-6 py-3 text-sm font-bold text-ink transition-all duration-300 hover:shadow-[0_0_40px_-8px_var(--color-lime)]">
+              Book Free Strategy Call
+              <ArrowUpRight className="h-4 w-4" />
+            </a>
+            <a href={`mailto:${site.email}`} className="mt-5 flex items-center gap-2 text-sm text-mist transition-colors hover:text-lime">
+              <Mail className="h-4 w-4" />
+              {site.email}
+            </a>
             <div className="mt-6 flex gap-3">
               {/* Facebook */}
               <a
@@ -168,105 +147,63 @@ export function Footer() {
             </WhatsAppLink>
           </div>
 
-          {/* Link columns */}
-          {footerColumns.map((col) => (
-            <nav key={col.title} aria-label={col.title}>
-              <h3 className="font-mono text-[11px] uppercase tracking-[0.25em] text-dim">
-                {col.title}
-              </h3>
-              <ul className="mt-5 space-y-3">
-                {col.links.map((l) => (
-                  <li key={l.label}>
-                    {l.href.startsWith("http") ? (
-                      <a
-                        href={l.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group inline-flex items-center gap-1.5 text-sm text-mist transition-colors hover:text-fog"
-                      >
-                        {l.label}
-                        <ArrowUpRight className="h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" />
-                      </a>
-                    ) : (
-                      <Link
-                        href={l.href}
-                        className="group inline-flex items-center gap-1.5 text-sm text-mist transition-colors hover:text-lime"
-                      >
-                        {l.label}
-                      </Link>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          ))}
-
-          {/* Contact */}
-          <div>
-            <h3 className="font-mono text-[11px] uppercase tracking-[0.25em] text-dim">
-              Get in touch
-            </h3>
-            <ul className="mt-5 space-y-3 text-sm">
-              <li>
-                <a
-                  href={`mailto:${site.email}`}
-                  className="inline-flex items-center gap-2 text-mist transition-colors hover:text-lime"
-                >
-                  <Mail className="h-4 w-4" />
-                  {site.email}
-                </a>
-              </li>
-            </ul>
-            <a
-              href={site.bookCallUrl}
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-lime px-6 py-3 text-sm font-bold text-ink transition-all duration-300 hover:shadow-[0_0_40px_-8px_var(--color-lime)]"
-            >
-              Book Free Strategy Call
-              <ArrowUpRight className="h-4 w-4" />
-            </a>
-            <Link
-              href="/book-your-call/schedule#calendar"
-              className="mt-3 block text-sm text-mist transition-colors hover:text-lime"
-            >
-              Or pick a time on our calendar
-            </Link>
+          {/* Four short link columns */}
+          <div className="grid grid-cols-2 gap-x-8 gap-y-10 md:grid-cols-4">
+            {columns.map((col) => (
+              <nav key={col.title} aria-label={col.title}>
+                <h3 className="font-mono text-[11px] uppercase tracking-[0.25em] text-lime">{col.title}</h3>
+                <ul className="mt-5 space-y-3">
+                  {col.links.map((l) => (
+                    <li key={l.href + l.label}>
+                      <FooterLink l={l} className="text-sm text-mist transition-colors hover:text-fog" />
+                    </li>
+                  ))}
+                </ul>
+                <Link href={col.href} className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-lime hover:underline underline-offset-4">
+                  {col.viewAll} <ArrowUpRight className="h-3.5 w-3.5" />
+                </Link>
+              </nav>
+            ))}
           </div>
         </div>
 
         {/* Page-specific related links */}
         <RelatedLinks />
 
-        {/* Guides by topic */}
-        <nav
-          aria-label="Guides by topic"
-          className="flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-line py-6 text-sm"
-        >
-          <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-dim">Guides by topic</span>
-          {topicLinks.map((l) =>
-            l.href.endsWith(".xml") ? (
-              <a key={l.href} href={l.href} className="text-mist transition-colors hover:text-lime">
-                {l.label}
-              </a>
-            ) : (
-              <Link key={l.href} href={l.href} className="text-mist transition-colors hover:text-lime">
-                {l.label}
-              </Link>
-            )
-          )}
-        </nav>
-        {/* Bottom bar */}
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-line py-8 text-center sm:text-left sm:flex-row">
-          <div>
-            <p className="text-xs font-medium text-fog">
-              Copyright © 2026 Ecom Expertz LLC®. All rights reserved.
-            </p>
-            <p className="mt-1 text-xs text-mist">
-              1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801
-            </p>
+        {/* Every page, closed by default */}
+        <details className="group border-t border-line py-6">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+            <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-mist group-open:text-lime">Browse all pages</span>
+            <ChevronDown className="h-4 w-4 text-mist transition-transform duration-300 group-open:rotate-180 group-open:text-lime" />
+          </summary>
+          <div className="mt-8 grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+            {allPages.map((g) => (
+              <div key={g.title}>
+                <h3 className="font-mono text-[11px] uppercase tracking-[0.2em] text-dim">{g.title}</h3>
+                <ul className="mt-3 space-y-2">
+                  {g.links.map((l) => (
+                    <li key={l.href + l.label}>
+                      <FooterLink l={l} className="text-[13px] text-mist transition-colors hover:text-lime" />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
-          <p className="font-mono text-[10px] uppercase tracking-widest text-dim/60">
-            Results vary. Not a guarantee of income.
-          </p>
+        </details>
+
+        {/* Bottom bar */}
+        <div className="flex flex-col gap-4 border-t border-line py-8 text-xs sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="font-medium text-fog">© 2026 Ecom Expertz LLC®. All rights reserved.</p>
+            <p className="mt-1 text-mist">1309 Coffeen Avenue STE 1200, Sheridan, Wyoming 82801</p>
+          </div>
+          <nav aria-label="Legal" className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            {legalLinks.map((l) => (
+              <FooterLink key={l.href} l={l} className="text-mist transition-colors hover:text-lime" />
+            ))}
+            <span className="font-mono text-[10px] uppercase tracking-widest text-dim/70">Results vary. Not a guarantee of income.</span>
+          </nav>
         </div>
       </div>
     </footer>

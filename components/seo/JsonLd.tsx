@@ -94,6 +94,8 @@ export function JsonLd() {
       "https://clutch.co/profile/qualifiedleadsx",
       "https://www.crunchbase.com/organization/qualifiedleadsx",
       "https://www.trustpilot.com/review/qualifiedleadsx.com",
+      "https://www.sortlist.com/agency/qualifiedleadsx",
+      "https://www.agencyspotter.com/qualifiedleadsx",
       brandFacts.googleBusinessProfile.mapsUrl,
       "https://www.facebook.com/qualifiedleadsx/",
       "https://www.instagram.com/qualifiedleadsx/",

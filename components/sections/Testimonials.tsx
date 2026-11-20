@@ -10,6 +10,8 @@ import { cn } from "@/lib/utils";
 export function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  // No video src until the visitor presses play, so the 6 MB clips never load with the page.
+  const [activated, setActivated] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   
   const currentVideo = testimonialVideos[currentIndex];
@@ -25,18 +27,25 @@ export function Testimonials() {
   }, []);
 
   useEffect(() => {
-    if (videoRef.current) {
+    if (videoRef.current && activated) {
       videoRef.current.load();
-      setIsPlaying(false);
     }
-  }, [currentIndex]);
+    setIsPlaying(false);
+  }, [currentIndex, activated]);
 
   const togglePlay = () => {
     if (videoRef.current) {
       if (isPlaying) {
         videoRef.current.pause();
+      } else if (!activated) {
+        setActivated(true);
+        // Wait for React to set the src, then start playback.
+        requestAnimationFrame(() => {
+          videoRef.current?.load();
+          void videoRef.current?.play().catch(() => {});
+        });
       } else {
-        videoRef.current.play();
+        void videoRef.current.play().catch(() => {});
       }
       setIsPlaying(!isPlaying);
     }
@@ -68,8 +77,12 @@ export function Testimonials() {
           >
             <video
               ref={videoRef}
-              src={`${currentVideo.src}#t=0.001`}
-              preload="metadata"
+              src={activated ? currentVideo.src : undefined}
+              poster={currentVideo.poster}
+              // The hosted MP4s keep their index at the end of the file, so even
+              // preload="metadata" downloaded the whole 6 MB clip on page load.
+              // Show the poster and fetch the video only when someone presses play.
+              preload="none"
               playsInline
               className={cn(
                 "h-full w-full object-cover transition-opacity duration-500",

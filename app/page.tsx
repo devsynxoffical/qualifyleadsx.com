@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
@@ -195,45 +196,89 @@ export default function Home() {
           QualifiedLeadsX is a done-for-you client acquisition agency. We build and run Meta ads, a 3 to 5 page funnel, AI follow-up that replies in under 5 minutes, lead qualification and calendar booking, so agency owners, coaches and B2B firms doing $10,000+ a month get qualified sales calls. Every engagement carries a 90-day written guarantee.
         </ShortAnswer>
       </section>
-      <VSL />
-      <LogoBar />
-      <TrustBar />
-      <WhyScale />
-      <Different />
-      <FunnelProof />
-      <EverythingIncluded />
-      <ClientSuccess />
-      <Process />
-      <CTABanner
-        compact
-        eyebrow="Done-for-you"
-        title={
-          <>
-            Every step above,{" "}
-            <em className="font-semibold not-italic text-lime">installed for you.</em>
-          </>
-        }
-      />
-      <Training />
-      <Industries />
-      <Guarantee />
-      <CTABanner
-        compact
-        eyebrow="Risk reversed"
-        title={
-          <>
-            Your free strategy call,{" "}
-            <em className="font-semibold not-italic text-lime">backed in writing.</em>
-          </>
-        }
-      />
-      <Testimonials />
-      <FAQ />
-      <Pricing />
-      <Community />
-      <FeaturedInsights />
-      <UFSquareMarquee />
-      <FinalCTA />
+      {/* 20 Nov 2026: each below-the-fold section is its own Suspense boundary, so React
+          hydrates them in separate small tasks instead of one long task (TBT). */}
+      <Suspense fallback={null}>
+        <VSL />
+      </Suspense>
+      <Suspense fallback={null}>
+        <LogoBar />
+      </Suspense>
+      <Suspense fallback={null}>
+        <TrustBar />
+      </Suspense>
+      <Suspense fallback={null}>
+        <WhyScale />
+      </Suspense>
+      <Suspense fallback={null}>
+        <Different />
+      </Suspense>
+      <Suspense fallback={null}>
+        <FunnelProof />
+      </Suspense>
+      <Suspense fallback={null}>
+        <EverythingIncluded />
+      </Suspense>
+      <Suspense fallback={null}>
+        <ClientSuccess />
+      </Suspense>
+      <Suspense fallback={null}>
+        <Process />
+      </Suspense>
+      <Suspense fallback={null}>
+        <CTABanner
+          compact
+          eyebrow="Done-for-you"
+          title={
+            <>
+              Every step above,{" "}
+              <em className="font-semibold not-italic text-lime">installed for you.</em>
+            </>
+          }
+        />
+      </Suspense>
+      <Suspense fallback={null}>
+        <Training />
+      </Suspense>
+      <Suspense fallback={null}>
+        <Industries />
+      </Suspense>
+      <Suspense fallback={null}>
+        <Guarantee />
+      </Suspense>
+      <Suspense fallback={null}>
+        <CTABanner
+          compact
+          eyebrow="Risk reversed"
+          title={
+            <>
+              Your free strategy call,{" "}
+              <em className="font-semibold not-italic text-lime">backed in writing.</em>
+            </>
+          }
+        />
+      </Suspense>
+      <Suspense fallback={null}>
+        <Testimonials />
+      </Suspense>
+      <Suspense fallback={null}>
+        <FAQ />
+      </Suspense>
+      <Suspense fallback={null}>
+        <Pricing />
+      </Suspense>
+      <Suspense fallback={null}>
+        <Community />
+      </Suspense>
+      <Suspense fallback={null}>
+        <FeaturedInsights />
+      </Suspense>
+      <Suspense fallback={null}>
+        <UFSquareMarquee />
+      </Suspense>
+      <Suspense fallback={null}>
+        <FinalCTA />
+      </Suspense>
       <Footer />
     </main>
   );

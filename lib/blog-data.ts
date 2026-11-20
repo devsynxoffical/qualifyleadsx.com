@@ -60,6 +60,102 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // 20 NOV 2026: Gaurav Sir SEO Recovery Plan, P1 "how to get coaching clients" (260/mo, KD 20). Numbers from lib/case-studies-data.ts (DUsaqlQEsYB, DMTbiLhy45r, DMOUbBhywzQ).
+  {
+    slug: "how-to-get-coaching-clients",
+    seoTitle: "How to Get Coaching Clients (2026): 6 Proven Ways",
+    title: "How to Get Coaching Clients: 6 Proven Ways to Fill Your Calendar in 2026",
+    description: "How to get coaching clients: referrals, content, paid ads, low-ticket offers, booked discovery calls and follow-up, with real coaching funnel numbers.",
+    publishedAt: "2026-11-20",
+    updatedAt: "2026-11-20",
+    readTime: "9 min read",
+    coverImage: "/images/blog/high-ticket-sales-playbook.jpg",
+    author: {
+      name: "QualifiedLeadsX™ Research Team",
+      role: "Meta Ads & Client Acquisition",
+      avatar: "/images/qualified-leadsx.webp",
+    },
+    category: "Funnel Strategy",
+    tags: ["Coaching Clients", "Lead Generation for Coaches", "Coaching Leads", "High Ticket Coaching"],
+    aeoSummary: {
+      question: "How do you get coaching clients?",
+      answer: "Most coaches get their first clients from referrals and their network, then grow with content and paid ads that send people to a simple offer. The fastest reliable system is a paid ad that leads to either a low-ticket offer or a short qualifying form, followed by a booked discovery call within minutes of the lead arriving. One fitness coach using a low-ticket-to-mastermind funnel generated $203,941 in 11 days.",
+      bulletPoints: [
+        "Start with referrals and your network, then add one repeatable paid channel",
+        "Qualify prospects before the call so you sell instead of filtering",
+        "Contact every lead within minutes and remind them before the call",
+      ],
+    },
+    content: {
+      intro: "Every coach hits the same wall: the program works, but the calendar is empty. Getting coaching clients is not about one trick; it is a chain of steps from attention to a booked call to a sale, and most coaches lose people at the weakest link. This guide covers the six ways that actually bring coaching clients, which ones scale, and real numbers from coaching funnels we have run.",
+      sections: [
+        {
+          heading: "1. Referrals and Your Existing Network",
+          body: [
+            "Your first coaching clients almost always come from people who already know you: past clients, colleagues and your network. Ask every happy client for one introduction, and tell your network exactly who you help and with what result.",
+            "Referrals close well but don't scale on demand. Treat them as the base, not the growth plan.",
+          ],
+        },
+        {
+          heading: "2. Content That Shows the Result You Sell",
+          body: [
+            "Content builds trust before the first conversation. The posts that bring clients show the transformation: before-and-after stories, client wins, and short teaching that solves one real problem.",
+            "Content compounds slowly. It works best as the trust layer that makes your paid ads and discovery calls convert, not as the only source of clients.",
+          ],
+        },
+        {
+          heading: "3. Paid Ads to a Simple Offer",
+          body: [
+            "Paid ads are the most reliable way to get coaching clients on demand, because you control the volume. Meta (Facebook and Instagram) ads work well for coaches because you can show the person and the result. See our [Facebook ads for coaches](/meta-ads-for-coaches) page and the [Meta ads for coaches guide](/blog/meta-ads-for-coaches-guide).",
+            "The ad should lead to one clear next step: buy a low-ticket offer, or answer a few questions and book a call. Ads that send people to a homepage waste budget.",
+          ],
+        },
+        {
+          heading: "4. Low-Ticket Offers That Lead to High Ticket Coaching",
+          body: [
+            "A low-ticket offer (a $27–$97 program, membership or community) pays for the ads and turns strangers into buyers. The best buyers then move up to your high ticket coaching.",
+            "Real example: a fitness coach sold 1,566 low-ticket memberships ($86,967) and 246 one-time offers ($27,974), then enrolled 35 mastermind clients ($89,000): $203,941 in 11 days ([case study](/case-studies/high-ticket-coaching-203k)). A $97/month coaching community added 537 paying members in 19 days, $57,577 from $22,774 in ads. Another fitness coach sold 696 courses for $70,673 from $21,789 in ads in 30 days.",
+          ],
+          keyMetricOrQuote: {
+            metric: "$203,941",
+            label: "Generated in 11 days by one fitness coach's low-ticket-to-mastermind funnel",
+          },
+        },
+        {
+          heading: "5. Qualified Discovery Calls, Booked for You",
+          body: [
+            "For high ticket coaching ($3,000 and up), the sale happens on a call. The goal is a calendar of qualified discovery calls: people who answered questions about their goal, budget and timeline before booking.",
+            "Contact every new lead within minutes; interest drops fast after that ([speed to lead statistics](/blog/speed-to-lead-statistics-response-time)). If you don't have a team for this, [appointment setting services](/appointment-setting) do the follow-up and booking for you, and [pay per appointment](/pay-per-appointment) models let you judge the work on booked calls.",
+          ],
+        },
+        {
+          heading: "6. Follow-Up and Reminders",
+          body: [
+            "Many coaching leads say yes and then disappear. A short follow-up sequence by SMS, email and WhatsApp, plus reminders before the call, recovers a large share of them. See [how to increase show rate](/blog/how-to-increase-show-rate) and [why leads don't show up](/blog/why-leads-dont-show-up).",
+          ],
+        },
+        {
+          heading: "Which Method Should You Use First?",
+          body: [
+            "If you have fewer than five clients, start with referrals and your network while you refine your offer. Once you can describe the result you sell in one sentence, add one paid channel to a low-ticket offer or a booked-call funnel, and measure cost per client, not cost per lead.",
+            "If you would rather have the whole system done for you, see [lead generation for coaches](/for/coaches).",
+          ],
+          bulletList: [
+            "Under 5 clients: referrals, network, and direct conversations",
+            "5–20 clients: one paid channel to a low-ticket offer or booked call",
+            "20+ clients: low-ticket front end, qualified discovery calls, and a setter or appointment setting service",
+          ],
+        },
+      ],
+      conclusion: "Getting coaching clients is a system: attention, a simple offer, qualification, a fast booked call and follow-up. Fix the weakest link first. Coaches who scale fastest usually pair a low-ticket offer with qualified discovery calls for high ticket coaching, and judge everything on cost per client.",
+      faqs: [
+        { q: "How do I get my first coaching clients?", a: "From people who already know you: past clients, colleagues and your network. Tell them exactly who you help and with what result, and ask every happy client for one introduction. Add paid ads once you can describe your result in one sentence." },
+        { q: "What is the fastest way to get coaching clients?", a: "Paid ads to a simple next step, either a low-ticket offer or a short qualifying form, with every lead contacted within minutes and booked onto a discovery call. One fitness coach generated $203,941 in 11 days with a low-ticket-to-mastermind funnel." },
+        { q: "Are bought coaching leads worth it?", a: "Usually not. Bought coaching lead lists are often shared and cold. Leads from your own campaign are exclusive and arrive while the person is still interested. See buying leads vs generating your own.", link: { text: "Buying leads vs generating your own", href: "/blog/buy-qualified-leads-vs-generating-your-own" } },
+        { q: "How do high ticket coaches get clients?", a: "Through qualified discovery calls. Prospects answer questions about their goal, budget and timeline before booking, so the coach sells on the call instead of filtering. Many also use a low-ticket offer first and move the best buyers up to high ticket coaching." },
+      ],
+    },
+  },
   // 12 NOV 2026: buying leads vs generating your own (Search Console: "buy qualified leads", "buy coaching leads", "buy solar appointments", "qualified b2b leads", "investor lead broker")
   {
     slug: "buy-qualified-leads-vs-generating-your-own",

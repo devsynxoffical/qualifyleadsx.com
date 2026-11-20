@@ -150,11 +150,7 @@ export default function HomeImprovementPage() {
 
             {/* 19 Nov 2026: trade pages with published campaign results */}
             <div className="grid gap-4 sm:grid-cols-2 mt-10">
-              <Link href="/roofing-leads" className="group rounded-2xl border border-line bg-fog/[0.03] p-5 transition-colors hover:border-lime/40">
-                <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-lime">Roofing</span>
-                <span className="mt-2 block text-lg font-semibold text-fog group-hover:text-lime">Roofing leads →</span>
-                <span className="mt-1 block text-sm text-mist">5,246 roofing leads across nine published campaigns, from $4.27 per lead.</span>
-              </Link>
+              
               <Link href="/hvac-leads" className="group rounded-2xl border border-line bg-fog/[0.03] p-5 transition-colors hover:border-lime/40">
                 <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-lime">HVAC</span>
                 <span className="mt-2 block text-lg font-semibold text-fog group-hover:text-lime">HVAC leads →</span>

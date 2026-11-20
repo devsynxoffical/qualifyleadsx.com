@@ -9,11 +9,18 @@ const MERGED: Record<string, string> = {
   "/for/online-education": "/for/course-creators",
   // 19 Nov 2026 (SEO_INVESTIGATION_2026-11-19.md, C2): service x industry pages that were
   // not indexed and had 0 impressions in 28 days, merged into the closest live page.
-  "/meta-ads-for-law-firms": "/personal-injury-leads",
+  "/meta-ads-for-law-firms": "/services",
   "/meta-ads-for-real-estate-investors": "/for/real-estate-investors",
   "/meta-ads-for-course-creators": "/for/course-creators",
   "/appointment-setting-for-coaches": "/for/coaches",
   "/appointment-setting-for-saas": "/for/saas",
+  // 20 Nov 2026 (Gaurav Sir SEO Recovery Plan): legal (PI/MVA/mass tort) and roofing leads
+  // are owned by sister sites; these pages leave qualifiedleadsx.com.
+  "/personal-injury-leads": "/services",
+  "/mva-leads": "/services",
+  "/mass-tort-leads": "/services",
+  "/for/law-firms": "/services",
+  "/roofing-leads": "/for/home-improvement",
 };
 
 export function middleware(request: NextRequest) {

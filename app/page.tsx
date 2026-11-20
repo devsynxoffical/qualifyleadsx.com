@@ -30,26 +30,25 @@ import { trainingVideos, testimonialVideos } from "@/lib/media";
 import { isoDuration, imageObject, hostedVideo, WEBSITE_ID, ORG_ID } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "QualifiedLeadsX: Qualified Lead Generation for High-Ticket B2B",
+  title: "Done-for-You Outsourced Lead Generation | QualifiedLeadsX",
   description:
-    "Qualified lead generation for high-ticket B2B, coaches and agencies: Meta ads, funnels and AI follow-up that book 30-50 qualified sales calls a month.",
+    "Outsourced, done-for-you lead generation and appointment setting for coaches, consultants, financial advisors and insurance agents. Qualified calls booked.",
   keywords: [
-    "lead generation agency",
-    "qualified lead generation services",
-    "high ticket sales",
-    "b2b lead generation",
-    "appointment setting",
-    "high ticket client acquisition",
-    "meta ads agency",
-    "speed to lead",
+    "done for you lead generation",
+    "outsourced lead generation",
+    "appointment setting services",
+    "pay per appointment lead generation",
+    "lead generation for coaches",
+    "lead generation for financial advisors",
+    "lead generation for insurance agents",
   ],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "QualifiedLeadsX: Qualified Lead Generation for High-Ticket B2B",
+    title: "Done-for-You Outsourced Lead Generation | QualifiedLeadsX",
     description:
-      "B2B lead generation agency scaling high ticket sales for agencies and coaches. Get predictable booked calls with our AI acquisition engine.",
+      "Outsourced, done-for-you lead generation and appointment setting for coaches, consultants, financial advisors and insurance agents. Qualified calls booked.",
     url: site.url,
     siteName: "QualifiedLeadsX™",
     images: [
@@ -57,7 +56,7 @@ export const metadata: Metadata = {
         url: `${site.url}/opengraph-image`,
         width: 1200,
         height: 630,
-        alt: "Lead Generation Agency for High-Ticket Offers - QualifiedLeadsX",
+        alt: "Done-for-you lead generation and appointment setting - QualifiedLeadsX",
       },
     ],
     locale: "en_US",
@@ -65,9 +64,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "QualifiedLeadsX: Qualified Lead Generation for High-Ticket B2B",
+    title: "Done-for-You Outsourced Lead Generation | QualifiedLeadsX",
     description:
-      "B2B lead generation agency scaling high ticket sales for agencies and coaches. Get predictable booked calls with our AI acquisition engine.",
+      "Outsourced, done-for-you lead generation and appointment setting for coaches, consultants, financial advisors and insurance agents. Qualified calls booked.",
     images: [`${site.url}/opengraph-image`],
   },
 };

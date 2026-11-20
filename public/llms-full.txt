@@ -11,15 +11,17 @@
 - Contact: hello@qualifiedleadsx.com, WhatsApp +91 96256 95456
 - Profiles: https://clutch.co/profile/qualifiedleadsx · https://www.crunchbase.com/organization/qualifiedleadsx · https://www.trustpilot.com/review/qualifiedleadsx.com
 - Short index: https://www.qualifiedleadsx.com/llms.txt
-- Generated: 2026-11-19 from the live site's server-rendered pages.
+- Generated: 2026-11-20 from the live site's server-rendered pages.
 
 
 ---
 
 URL: https://www.qualifiedleadsx.com
-Title: QualifiedLeadsX: Qualified Lead Generation for High-Ticket B2B
+Title: Done-for-You Outsourced Lead Generation | QualifiedLeadsX
 
-# Lead Generation Agency for High-Ticket Offers: From Meta Ads to Booked Calls Double Your Revenue Within The Next 90 Days Or We'll Continue Working For You At No Management Fee Until We Do.
+# Done-for-You Lead Generation and Appointment Setting for High-Ticket Offers
+Double Your Revenue Within The Next 90 Days
+Or We'll Continue Working For You At No Management Fee Until We Do.
 Done-For-You Client Acquisition From Meta Ads To The Booked Call.
 Book Your Free Strategy Call Backed By A Written Agreement
 Free 30-Minute Strategy Call · No Pressure · No Obligation
@@ -277,25 +279,22 @@ Client Reaction
 A 40-second clip from a 1.5-hour deep-dive: the moment a new done-with-you agency client sees the targeting method for landing high-ticket clients.
 Watch Mastermind Breakdown
 Training is included with every install - new lessons added as we roll out upgrades to the system.
-Digital Marketing Agencies
 Business Coaches
 Consultants
+Financial Advisors
+Insurance Agents
+Digital Marketing Agencies
 High-Ticket Service Providers
 B2B Companies
-Home Service Businesses
-Roofing Companies
-HVAC Companies
-Solar Companies
-Personal Injury Law Firms
-MVA & Auto Accident Lead Buyers
-Medical Malpractice Attorneys
-Healthcare Practices
-Med Spas & Aesthetic Clinics
-Chiropractors
-Real Estate Companies
 Mortgage Brokers
-Insurance Agencies
+Real Estate Companies
+Med Spas & Aesthetic Clinics
 Fitness Brands & Gyms
+Solar Companies
+Home Service Businesses
+HVAC Companies
+Healthcare Practices
+Chiropractors
 E-Commerce Brands
 Construction Companies
 Garage Door Companies
@@ -1094,7 +1093,7 @@ Useful supplements, but harder to scale predictably. See cold outreach vs paid t
 Who it's for
 
 ## Industries we generate high-ticket leads for
-High-ticket lead generation works where one client is worth several thousand dollars and the sale happens on a call: coaches , consultants , marketing agencies , B2B service firms , B2B SaaS , med spas , financial advisors and law firms . See all industries .
+High-ticket lead generation works where one client is worth several thousand dollars and the sale happens on a call: coaches , consultants , marketing agencies , B2B service firms , B2B SaaS , med spas and financial advisors . See all industries .
 What it costs
 
 ## What a high-ticket booked call typically costs
@@ -1491,9 +1490,9 @@ No commitment required 90-day written guarantee
 ---
 
 URL: https://www.qualifiedleadsx.com/appointment-setting
-Title: B2B Appointment Setting Agency: 30–50 Sales Calls a Month
+Title: Appointment Setting Services: Qualified Sales Appointments
 
-# Appointment Setting Agency With Sub-5-Minute Speed To Lead
+# Appointment Setting Services That Book Qualified Sales Appointments
 Short answer
 Appointment setting means replying to new leads within minutes, qualifying them on budget, authority and timeline, and booking only fit prospects into your sales calendar with reminders. QualifiedLeadsX combines sub-5-minute AI follow-up with human setters. With email-only confirmations the average show rate is 58.2%, which is why reminders are built in.
 Replace unreliable human setter teams with an automated pipeline that engages inquiries in under 3 minutes, qualifies liquid capital, and books 30–50 ready-to-close sales calls every month.
@@ -1511,6 +1510,25 @@ Call Show-Up Rate
 Lead Qualification Rate
 $0
 Human Setter Overhead
+What you get
+
+## What our appointment setting services include
+Appointment setting services turn new leads into booked sales appointments: someone (or an automated sequence) contacts each lead within minutes, asks the qualifying questions you set, books fit prospects into your calendar and reminds them so they show up. QualifiedLeadsX runs the whole chain, from the Meta ads that create the leads to the reminder before the call.
+
+### B2B appointment setting
+For consultants, agencies and B2B service firms, leads are qualified on budget, decision-making authority and timeline before a call is booked, so your calendar only holds buyers. See lead generation for consultants and B2B service firms .
+
+### Sales appointment setting
+Every inquiry gets a call, SMS or WhatsApp message within minutes ( speed to lead ), then a booked slot and reminders. For a New Jersey HVAC company this produced 140 booked appointments from $1,956 in ads: $13.97 per booked appointment.
+
+### Qualified appointments
+A qualified appointment is a booked call with someone who matches your criteria and confirmed the time. Published examples: 387 exclusive appointments in 24 days at $19.62 each, and 10 qualified buyer appointments in 24 hours from $172.90 for a luxury real estate client.
+
+### Appointment setting agency vs in-house setters
+An agency brings the ads, scripts, automation and setters as one system; in-house setters need hiring, training and management. Compare costs in appointment setting vs in-house SDRs and how to hire an appointment setter .
+
+### Who we set appointments for
+Coaches , consultants , financial advisors and insurance agents , plus agencies and B2B service firms. Pricing is custom quoted; on the free strategy call we work out a realistic cost per booked appointment for your offer. Compare payment models in pay per appointment lead generation .
 THE MATHEMATICS OF CONVERSION
 
 ## Why 5 Minutes Decides A $10,000+ High-Ticket Deal
@@ -2628,7 +2646,7 @@ No commitment required 90-day written guarantee
 URL: https://www.qualifiedleadsx.com/for/coaches
 Title: Lead Generation for Coaches: Client Acquisition Funnels
 
-# Client Acquisition for Coaches: 30–50 Qualified Sales Calls Every Month
+# Lead Generation for Coaches : Qualified Discovery Calls, Done for You
 Short answer
 For coaches, client acquisition means a funnel that turns cold Meta traffic into qualified discovery calls, or into low-ticket buyers you can upsell. QualifiedLeadsX builds and runs the ads, funnel, follow-up and booking for you. One fitness client's low-ticket membership funnel produced $203,941 in 11 days.
 Eliminate low-ticket tire-kickers and the organic social media treadmill. We install a complete done-for-you client acquisition system engineered for $3K–$25K coaching programs.
@@ -2644,6 +2662,20 @@ Target Offer Size
 Deployment Speed
 coach-vsl-funnel-pipeline.arch
 ACTIVE COACHING ENROLLMENT SYSTEM
+Coaching leads
+
+## Coaching leads that turn into booked discovery calls
+Coaching leads are people who asked to hear about your program: they watched your content or ad, answered a few qualifying questions and left their details. Bought coaching lead lists are usually shared and cold. The leads that close come from your own campaign, contacted within minutes and booked onto your calendar.
+
+### High ticket coaching
+For $3K–$25K programs, prospects are qualified on goal, budget and timeline before a discovery call is booked, so you sell on the call instead of filtering.
+
+### Low-ticket first, then high ticket
+A low-ticket offer pays for the ads and creates buyers you can upsell. One fitness client sold 1,566 memberships and 246 one-time offers, $203,941 in 11 days ( case study ).
+
+### Booked, reminded, shown up
+Every lead is followed up and booked through our appointment setting services , with reminders to protect the show rate. Compare pay per appointment models.
+More for coaches: how to get coaching clients , Facebook ads for coaches and scaling a coaching business .
 
 ## The Evolution of Coaching Growth
 
@@ -3343,423 +3375,6 @@ No commitment required 90-day written guarantee
 
 ---
 
-URL: https://www.qualifiedleadsx.com/for/law-firms
-Title: Law Firm Lead Generation | QualifiedLeadsX
-
-# Law Firm Lead Generation
-Quick answer Law firm lead generation requires bar-compliant paid media campaigns coupled with sub-3-minute intake response times. By screening claimants on incident severity, liability, and insurance coverage before attorney handoff, intake spends time only on viable cases, protecting attorney billable hours. One MVA campaign we ran produced 8,810 leads at $7.61 each.
-<3 mins
-Average Intake Speed
-8,810
-MVA Leads in One Campaign
-$7.61
-Cost per MVA Lead
-84%
-Initial Consultation Show Rate
-Personal injury firm? See how we generate exclusive personal injury leads and MVA leads (8,810 MVA leads at $7.61 in one campaign).
-Retain More High-Value Cases Inspect Legal CPL Benchmarks →
-12+ Years Experience $50M+ Managed in Meta Ads Multi-Industry Experience Proven Client Acquisition Framework 100% Done-For-You
-Trusted by clients across 30+ industries
--
-01
-
-### Market Research & Customer Analysis
-We identify exactly who your ideal clients are and what makes them buy.
--
-02
-
-### Offer Positioning
-We package and position your service so it stands out from competitors.
--
-03
-
-### Messaging & Creative Development
-We create ad copy and creatives that attract premium buyers.
--
-04
-
-### Landing Pages & Sales Funnel
-We build high-converting landing pages and funnels that turn traffic into booked appointments.
--
-05
-
-### Meta Ads Management
-We launch, manage and optimise your campaigns every day.
--
-06
-
-### CRM & AI Automations
-Every lead automatically enters your CRM with automated email, SMS, reminders and follow-up.
--
-07
-
-### Lead Qualification
-Our proprietary multi-validation process filters leads before they reach your calendar - improving booking and show-up rates.
--
-08
-
-### Close Premium Clients
-You simply attend the appointments and close the deals while our system works in the background.
-Edgar 2:04
-0 1 / 0 3
-“Edgar Landed A New Agency Client At A $1500/ Month MRR Deal For 3 Months ($4,500) At A $7 Lead Cost”
-
-### Edgar
-Agency Founder · High-Ticket Client
-Risk reversed
-
-## The 90-day written guarantee: we take the risk.
-If we don't help you achieve the mutually agreed growth milestones within the first 90 days after implementing your Client Acquisition System, we'll continue working for you at no management fee until we do. Everything is backed by a written agreement.
-- Written into every engagement
-- Covers mutually agreed growth milestones
-- No management fee until we deliver
-Claim a Strategy Call
-Spots are extremely limited each month.
-QualifiedLeadsX™ Agreement
-Signed & sealed
-90-Day
-Guarantee
-
-## Frequently Asked Questions
-
-### How do you ensure law firm ads comply with state bar advertising ethics?
-We adhere strictly to ABA Model Rules 7.1 through 7.3 and state-specific bar requirements. We avoid unauthorized guarantees, include mandatory attorney advertising disclaimers, and ensure all messaging reflects factual case capabilities without creating unjustified expectations.
-
-### Which legal practice areas benefit most from your intake systems?
-Our intake engines perform best in high-damages personal injury, commercial contract litigation, estate planning/probate, employment law, and high-net-worth divorce cases.
-
-### Why is sub-3-minute intake critical for law firm lead generation?
-Legal consumers facing urgent issues typically call the first firm that responds. Contacting an inquiring claimant within 3 minutes gives your firm the best chance of signing the case before another firm calls back. Response-time research is summarised in our speed-to-lead statistics guide.
-
-### What is the average cost per retained legal client?
-Cost per signed retainer varies by practice area: $450–$950 for estate planning packages, and $1,800–$4,200 for contested commercial litigation or qualified personal injury contingency retainers.
-Limited spots each month
-
-### Let's install the system that books your calendar by this week.
-Book a free strategy call. We'll audit your offer, show you the exact funnel you need, and get qualified sales calls onto your calendar. No pressure, no fluff.
-Book Your Free Strategy Call
-No commitment required 90-day written guarantee
-
----
-
-URL: https://www.qualifiedleadsx.com/personal-injury-leads
-Title: Personal Injury Leads for Law Firms: Exclusive & Verified
-
-# Personal Injury Leads From Your Own Campaign
-Short answer QualifiedLeadsX generates exclusive personal injury leads instead of reselling shared lists: we run Meta ads aimed at recent motor vehicle accidents in your own ad account, qualify claimants in the form, contact them within 5 minutes and book intake calls. One MVA campaign produced 8,810 leads at $7.61 each.
-8,810
-MVA leads generated
-$7.61
-Cost per lead
-$67,013
-Meta ad spend
-Jul 1 – Sep 19
-Campaign window, 2026
-Source: MVA personal injury case study (pay-per-lead agency supplying personal injury firms). Results vary by state, case type and budget.
-Book a PI strategy call Read the MVA case study →
-Personal injury lead generation
-
-## Exclusive personal injury leads from a campaign you own
-Most personal injury leads for sale are shared: the same claimant is sold to several firms, or the list is days old by the time you call. QualifiedLeadsX does not resell leads. We build and run the Meta ads, the qualifying form and the follow-up in your own ad account, so every lead goes only to you and arrives while the accident is recent.
-The system was built and proven on motor vehicle accident (MVA) cases. For a pay-per-lead agency that supplies MVA leads to personal injury firms, it produced 8,810 leads at $7.61 each from $67,013 in Meta ads between July 1 and September 19, 2026.
-Two ways to get PI leads
-
-## Buying personal injury leads vs generating your own
-| | | Buying leads from a vendor | Your own campaign with QualifiedLeadsX
-| Who else gets the lead | Often sold to several firms | Only you
-| How fresh it is | Depends on the vendor; can be aged | Arrives in real time; targeting built around recent accidents
-| Qualifying questions | The vendor's | Yours: accident date, injuries, treatment, fault, representation
-| Follow-up | Your intake team, whenever they get to it | Built in: first contact in under 5 minutes, then nurture and booking
-| Who owns the data and ad account | The vendor | You
-| Pricing | Per lead | Custom quoted management fee plus your ad spend
-Comparing the two on your numbers? See buying qualified leads vs generating your own .
-How it works
-
-## How the personal injury lead generation system works
--
-
-### 01 Recency targeting
-Ads and copy are built around people involved in an accident in the last 30 days, not broad 'injury' interest. Recency is what kept volume high in the MVA campaign. The targeting approach is explained in the Sniper Method mastermind .
--
-
-### 02 Qualification inside the form
-Short questions filter on accident date, injuries, medical treatment and whether the person already has a lawyer, so intake spends time on cases that can be signed.
--
-
-### 03 Contact in under 5 minutes
-Claimants often fill in several forms. AI speed to lead calls, texts or messages each new lead within minutes, and WhatsApp follow-up reaches the ones who don't answer.
--
-
-### 04 Booked intake calls
-Qualified claimants are booked straight into your intake calendar, with reminders, and synced to your CRM through CRM automation .
--
-
-### 05 Reporting on signed cases
-We report cost per lead, cost per qualified lead and cost per signed case, not just lead volume.
-Who it's for
-
-## Personal injury leads for attorneys and lead generation companies
--
-
-### Personal injury law firms
-Firms that want exclusive MVA and injury leads for their own intake team, without sharing claimants with other firms. More on lead generation for law firms .
--
-
-### PI lead generation companies
-Pay-per-lead and pay-per-case agencies that supply firms. The MVA case study was run for one.
--
-
-### Firms already running Facebook ads
-If your current campaign produces leads that don't sign, the fix is usually targeting and follow-up, not more budget. See all published results on MVA leads .
--
-
-### MVA and mass tort campaigns
-All 10 published motor vehicle accident campaigns are on our MVA leads page; product and exposure cases are covered on mass tort leads .
-What to measure
-
-## Cost per lead is only the first number
--
-
-### Contact rate
-The share of leads reached by phone or message. Slow follow-up loses claimants to the next firm.
--
-
-### Qualified rate
-The share that meet your case criteria. Model it with the lead conversion rate calculator .
--
-
-### Cost per signed case
-Ad spend and fees divided by signed retainers: the number to compare against case value. Read cost per acquisition vs cost per lead .
-Attorney advertising rules differ by state. Your firm reviews and approves every ad before it runs, and no ad promises case outcomes.
-
-## Personal injury leads: frequently asked questions
-
-### What are personal injury leads?
-Personal injury leads are people who were recently injured, for example in a motor vehicle accident, and asked to be contacted about a possible claim. A useful lead includes the accident date, the type of injury, whether they received medical treatment and whether they already have a lawyer.
-
-### Are your personal injury leads exclusive?
-Yes. The campaign runs in an ad account in your name and every lead goes only to you. QualifiedLeadsX does not resell or share leads between firms.
-
-### Do you sell personal injury leads?
-No. We don't sell lead lists. We build and manage the campaign that generates your own leads: Meta ads, a qualifying form, follow-up within minutes and booked intake calls. You own the ad account, the data and the funnel.
-
-### How much does a personal injury lead cost?
-In the motor vehicle accident campaign we ran from July 1 to September 19, 2026, leads cost $7.61 each across 8,810 leads and $67,013 in ad spend. Your cost depends on state, case type, how strict the qualifying questions are and ad competition. Our management fee is custom quoted, and the engagement has a 90-day written guarantee.
-
-### Do you work with personal injury lead generation companies?
-Yes. The MVA case study was run for a pay-per-lead agency that supplies motor vehicle accident leads to personal injury firms. We also work directly with law firms.
-
-### How fast are personal injury leads contacted?
-New leads are contacted within 5 minutes by AI speed-to-lead follow-up over phone, SMS or WhatsApp, and qualified claimants are booked into your intake calendar.
-Limited spots each month
-
-### Let's install the system that books your calendar by this week.
-Book a free strategy call. We'll audit your offer, show you the exact funnel you need, and get qualified sales calls onto your calendar. No pressure, no fluff.
-Book Your Free Strategy Call
-No commitment required 90-day written guarantee
-
----
-
-URL: https://www.qualifiedleadsx.com/mva-leads
-Title: MVA Leads: Exclusive, OTP-Verified Accident Leads
-
-# Exclusive, Verified MVA Leads
-Short answer QualifiedLeadsX generates exclusive MVA leads from Meta ads aimed at accidents in the last 30 days, qualifies and OTP-verifies them in the funnel, and contacts them within minutes. Published campaigns: 8,810 leads at $7.61 and 6,275 at $4.38.
-8,810
-MVA leads, one campaign
-$7.61
-Cost per lead
-$4.38
-Lowest published CPL
-10
-Published MVA campaigns
-Source: MVA case study and the results table below. Results vary by state, verification and budget.
-Book an MVA strategy call Read the 8,810-lead case study →
-MVA lead generation
-
-## Exclusive MVA leads from fresh accidents, verified before they reach you
-Motor vehicle accident (MVA) leads lose value by the hour. The claimant fills in a form, then talks to whichever firm calls first. Leads bought from shared lists are often days old and sold to several buyers. QualifiedLeadsX runs the Meta ads, the qualifying funnel and the verification in your own ad account, aimed at people involved in an accident in the last 30 days, so every lead is exclusive and arrives while the case is still open.
-We run this for two kinds of clients: personal injury law firms that want cases for their own intake team, and pay-per-lead (PPL) agencies that resell verified MVA leads to firms. The table below lists campaigns we have published, with spend, volume and cost per lead.
-Published results
-
-## MVA campaign results
-| | Client | Ad spend | Leads | Cost per lead | Window
-| PPL agency, MVA (US) | $67,013.43 | 8,810 | $7.61 | Jul 1 – Sep 19, 2026 ( case study )
-| Nationwide MVA campaign, OTP-verified | $27,467.70 | 6,275 | $4.38 | 19 days
-| MVA client, Texas | $9,770 | 1,865 | $5.24 | Oct 16 – Jan 19
-| Nationwide firm | Not published | 1,111 qualified | $4.92 | 30 days
-| MVA client, OTP-verified (previously buying at $150–$180) | $20,324 | 1,079 | $18.94 | 30 days
-| Texas personal injury firm, Meta OTP-verified | $14,270 | 530 | $26.90 | 7 days
-| Florida MVA attorney | $6,608 | 465 | $14.21 | 17 days
-| Exclusive MVA appointments | Not published | 387 appointments | $19.62 per appointment | 24 days
-| PPL client, New York, OTP-verified calls | $5,453 | 276+ calls | ≈$19.76 | 5 days
-| MVA lead-selling client | $2,162 | 126 | $17.16 | 14 days
-Results from campaigns QualifiedLeadsX ran and published; cost per lead depends on state, verification depth, offer and budget. More results on the case studies page .
-From lead to signed case
-
-## What one MVA campaign looked like end to end
-For an MVA client that had been buying leads at $150–$180 each, 30 days of its own campaign produced:
--
-
-### 1,079 OTP-verified leads
-$20,324 in ad spend at $18.94 per lead, every phone number confirmed with a one-time code.
--
-
-### 669 shows (62%)
-Leads were contacted fast and reminded before the consultation. See our speed to lead system.
--
-
-### 194 signed clients (29%)
-At an average of $2,000 per client, $388,000 in revenue from $20,324 in ads.
-How it works
-
-## How we generate verified MVA leads
--
-
-### 01 Recent-accident targeting
-Ads, copy and questions are built around accidents in the last 30 days, not broad 'injury' interest. The angles are covered in the Sniper Method mastermind .
--
-
-### 02 Multi-step qualification
-Accident date, injuries, medical treatment, fault and whether the person already has a lawyer, asked inside the funnel so intake only calls viable cases.
--
-
-### 03 OTP phone verification
-The claimant confirms a code sent to their phone, which filters out fake and mistyped numbers before the lead reaches you or your buyers.
--
-
-### 04 Contact within minutes
-AI speed to lead calls or texts each new lead immediately, with WhatsApp follow-up for those who don't answer.
--
-
-### 05 Reporting to signed case
-Cost per lead, cost per verified lead, show rate and cost per signed case, so you judge the campaign on cases, not volume.
-Who it's for
-
-## MVA leads for law firms and PPL agencies
--
-
-### Personal injury and MVA law firms
-Exclusive leads for your own intake team instead of shared lists. See also personal injury leads and lead generation for law firms .
--
-
-### Pay-per-lead (PPL) agencies
-Generate MVA leads you can resell. In one campaign a PPL client resold 126 leads at $150 each, $18,900 in lead value from $2,162 in ads.
--
-
-### Mass tort and other case types
-The same intake system adapts to other legal campaigns. See mass tort lead generation .
-Attorney advertising rules differ by state. Your firm reviews and approves every ad before it runs, and no ad promises case outcomes.
-
-## MVA leads: frequently asked questions
-
-### What are MVA leads?
-MVA leads are people who were recently in a motor vehicle accident and asked to be contacted about a possible injury claim. A useful MVA lead includes the accident date, injuries, whether they received medical treatment, who was at fault and whether they already have a lawyer.
-
-### How much do MVA leads cost?
-In campaigns we have published, cost per lead ranged from $4.38 (6,275 OTP-verified leads from $27,467.70 in 19 days) to $26.90 (530 Meta OTP-verified leads for a Texas firm in 7 days). Our largest campaign produced 8,810 leads at $7.61 from $67,013 between July 1 and September 19, 2026. Your cost depends on state, verification depth and budget; our management fee is custom quoted.
-
-### Are your MVA leads exclusive?
-Yes. The campaign runs in an ad account in your name and every lead goes only to you. We do not resell or share leads between clients.
-
-### What does OTP-verified mean?
-The person enters a one-time code sent to their phone before the form is submitted, which proves the number is real and belongs to them. It removes most fake, mistyped and bot submissions, which is why resold leads and law-firm intake both convert better.
-
-### Do you work with PPL agencies that resell MVA leads?
-Yes. Several of our published MVA campaigns were run for pay-per-lead agencies, including the 8,810-lead campaign at $7.61 and a New York campaign that produced 276+ OTP-verified calls in 5 days.
-
-### How fast are MVA leads contacted?
-Within minutes. New leads get an automatic call or text, then WhatsApp and SMS follow-up and reminders until the consultation is booked.
-Limited spots each month
-
-### Let's install the system that books your calendar by this week.
-Book a free strategy call. We'll audit your offer, show you the exact funnel you need, and get qualified sales calls onto your calendar. No pressure, no fluff.
-Book Your Free Strategy Call
-No commitment required 90-day written guarantee
-
----
-
-URL: https://www.qualifiedleadsx.com/mass-tort-leads
-Title: Mass Tort Leads: Screened Claimants for Law Firms
-
-# Mass Tort Leads, Screened Before Intake
-Short answer QualifiedLeadsX runs mass tort lead generation in your firm's own ad account: Meta ads, a tort-specific screening questionnaire, OTP phone verification and follow-up within minutes, reported on cost per signed retainer. It uses the same intake system behind our MVA campaigns.
-Book a mass tort strategy call See our MVA lead results →
-Mass tort lead generation
-
-## Mass tort leads that are screened before they reach intake
-Mass tort campaigns are harder than MVA campaigns: the audience is smaller, the qualifying criteria are strict (product use or exposure, a qualifying diagnosis, dates, proof) and most raw leads do not qualify. The cost that matters is cost per signed retainer, not cost per lead. QualifiedLeadsX builds the Meta ads, the screening questionnaire and the follow-up in your own ad account, so intake only spends time on claimants who meet the tort's criteria.
-Our published legal results so far are motor vehicle accident (MVA) and personal injury campaigns, for example 8,810 MVA leads at $7.61 . Mass tort campaigns use the same intake system with a longer, tort-specific qualification step. We will publish mass tort results here once a campaign has run long enough to report cost per signed case.
-MVA vs mass tort
-
-## How a mass tort campaign differs from an MVA campaign
-| | | MVA campaign | Mass tort campaign
-| Audience | Anyone in a recent accident | People with a specific product use or exposure and a qualifying injury
-| Qualification | Accident date, injuries, treatment, fault, representation | Exposure or usage period, diagnosis and date, proof (records, receipts), representation
-| Lead volume | High | Lower; many applicants do not qualify
-| Metric that matters | Cost per signed case | Cost per signed retainer that passes the firm's criteria
-| Intake work | Short call | Longer questionnaire, document collection, retainer
-How it works
-
-## How we run mass tort lead generation
--
-
-### 01 Criteria first
-Your firm defines the qualifying criteria for the tort. Every question in the funnel maps to one of them, so disqualified applicants are filtered before intake.
--
-
-### 02 Compliant creative
-Ads describe the injury and the right to a free case review without promising outcomes; your firm approves every ad before it runs.
--
-
-### 03 Multi-step screening and OTP verification
-A short questionnaire plus a one-time code to the claimant's phone, the same verification behind our MVA leads .
--
-
-### 04 Fast follow-up
-AI speed to lead contacts each applicant within minutes and books a call with intake, with reminders by SMS and WhatsApp .
--
-
-### 05 Report on retainers
-We track cost per lead, cost per qualified applicant and cost per signed retainer, and move budget toward the ads that produce retainers.
-Who it's for
-
-## For mass tort firms and lead buyers
--
-
-### Mass tort law firms
-Firms that want exclusive, screened claimants from their own campaign rather than shared lists. See also lead generation for law firms .
--
-
-### Pay-per-lead and pay-per-retainer agencies
-Agencies that supply firms and need a predictable, verified flow of applicants.
-Attorney advertising rules differ by state and by tort. Your firm reviews every ad and the screening questions; we do not give legal advice or promise case outcomes.
-
-## Mass tort leads: frequently asked questions
-
-### What are mass tort leads?
-Mass tort leads are people who may have been harmed by the same product, drug, device or exposure and who ask to have their claim reviewed. A qualified mass tort lead meets the firm's criteria for that tort: the right product use or exposure, a qualifying diagnosis, dates within the filing window and no existing representation.
-
-### How are mass tort leads different from MVA leads?
-MVA leads are high-volume and qualify on a recent accident. Mass tort leads come from a smaller audience and must meet strict, tort-specific criteria, so fewer applicants qualify and screening matters more. The right metric is cost per signed retainer.
-
-### Do you have mass tort case studies?
-Not published yet. Our published legal results are MVA and personal injury campaigns, such as 8,810 MVA leads at $7.61 and 6,275 OTP-verified accident leads at $4.38. Mass tort campaigns use the same intake system with tort-specific screening.
-
-### Are the leads exclusive?
-Yes. The campaign runs in an ad account in your firm's name and every applicant goes only to you.
-
-### How much does mass tort lead generation cost?
-Ad cost depends on the tort, the audience size and how strict the criteria are. Our management fee is custom quoted after we review the criteria, and the engagement has a 90-day written guarantee.
-Limited spots each month
-
-### Let's install the system that books your calendar by this week.
-Book a free strategy call. We'll audit your offer, show you the exact funnel you need, and get qualified sales calls onto your calendar. No pressure, no fluff.
-Book Your Free Strategy Call
-No commitment required 90-day written guarantee
-
----
-
 URL: https://www.qualifiedleadsx.com/final-expense-leads
 Title: Final Expense & Burial Insurance Leads (Exclusive)
 
@@ -3868,170 +3483,310 @@ No commitment required 90-day written guarantee
 
 ---
 
-URL: https://www.qualifiedleadsx.com/roofing-leads
-Title: Roofing Leads: Exclusive, Verified Leads for Roofers
+URL: https://www.qualifiedleadsx.com/pay-per-appointment
+Title: Pay Per Appointment Lead Generation: Booked Sales Calls
 
-# Exclusive Roofing Leads, Verified Before They Reach You
-QualifiedLeadsX generates exclusive roofing leads with Meta ads that run in your own ad account. Homeowners answer qualifying questions and verify their phone number before the lead reaches you, and nobody else gets the same lead. Across nine published roofing campaigns we generated 5,246 leads, at $4.27 to $24 per lead.
-- Exclusive: the ad account and every lead are yours, never resold
-- Filtered: homeowner, repair or replacement, timeline and service area
-- Verified: one-time code to the homeowner's phone on most campaigns
-- Contacted within minutes by call, SMS and WhatsApp
-5,246
-Roofing leads in 9 published campaigns
-$4.27
-Lowest published cost per lead
-850
-Leads in 8 days, Texas roofer
-3.79%
-Best published click-through rate
-Source: the campaign screenshots below, each linked to its original post. Results vary by market, offer and budget.
-Get a free roofing lead plan for your service area
+# Pay-Per-Appointment Lead Generation
+Pay per appointment lead generation means judging a campaign on booked, qualified sales appointments instead of raw leads. QualifiedLeadsX runs the ads, qualifies every lead, contacts them within minutes and books them on your calendar, then reports cost per booked appointment. In published campaigns that cost ranged from $4.81 to $45 per booked appointment.
+- Booked, qualified appointments on your calendar, not a spreadsheet of form fills
+- Every lead qualified on the questions you set before it is booked
+- Reminders by SMS, email and WhatsApp to protect the show rate
+- Reported as cost per booked appointment, per show and per sale
+$4.81
+Lowest published cost per booked appointment
+453
+Appointments booked, NYC med spa
+140
+Appointments from $1,956, NJ HVAC
+337
+Appointments in 19 days, remodeling
+Source: the campaign screenshots below, each linked to its original post. Pricing is custom quoted. Results vary by offer, market and budget.
+Get a cost-per-appointment estimate for your offer
 Published results
 
-## Roofing campaigns we have run and published
-Screenshots from the clients' Ads Manager, published at the time. Tap a card to see the full screenshot, or open the original post to check the numbers.
-Spend $6,461
-CPL $7.60
-CTR 3.79%
+## Appointment campaigns we have run and published
+Screenshots from the clients' Ads Manager and booking results, published at the time. Tap a card to see the full screenshot, or open the original post to check the numbers.
+Per appt $4.81
+Appts 337
+Days 19
 See the original post
-Spend $18,583
-CPL $17.40
-Leads 1,068
+Spend $1,956
+Per appt $13.97
+Revenue $38,400
 See the original post
-Spend $24,902
-CPL $24
-CTR 1.63%
+Spend $10,387
+Per appt $22.93
+Show rate 67%
 See the original post
-Spend $2,292
-CPL $4.27
-Days 13
+Spend $172.90
+Per appt $17.29
+Appts 10
 See the original post
-Spend $2,749
-CPL $12.79
-CTR 2.33%
+Spend $5,628
+Per appt $45
+ROAS 12.70
 See the original post
-Spend $646
-Per call $12.42
-Calls 52
-See the original post
-Cost per lead by campaign
+From lead to job
 
-## What roofing leads have cost in our campaigns
-Cost per lead in nine published roofing lead campaigns, lowest first. Verification depth and the market explain most of the spread: the $24 campaign required a phone code on every lead in a saturated market.
-- 537 leads, new client (TX, FL, GA), 13 days $4.27
-- 177 verified leads, new client, 7 days $4.80
-- 635 pre-qualified leads, 45 days $4–$6
-- 686 website leads, Texas, 8 days $5.31
-- 850 leads, Texas, 8 days $7.60
-- 215 validated leads, 28 days $12.79
-- 1,068 exclusive leads, agency client, 30 days $17.40
-- 54 qualified leads, 7 days $23.81
-- 1,024 OTP-verified leads, PPL agency $24
+## From booked appointment to paying client
+A booked appointment is only worth something if the person shows up and buys. Published numbers for a med spa with three New York clinics:
+- Ad spend $10,387
+- Appointments booked 453
+$22.93 per booked appointment
+- Showed up (67%) 303
+- Became paying clients 247
+$42 in ads per paying client
+$74,100 in revenue from $10,387 in ads. This is why we report cost per show and per client, not just cost per appointment. See the full med spa case study .
 Lead estimator
 Move the slider to your monthly ad budget
 Monthly ad spend $5,000 $1,000 $30,000
-At our highest published CPL ( $24 )
-208
-roofing leads / month
-At our lowest published CPL ( $4.27 )
-1,170
-roofing leads / month
-Uses the lowest ($4.27) and highest ($24) cost per lead from the published roofing campaigns on this page. An estimate from past campaigns, not a quote or a guarantee. Results depend on market, offer, verification and budget.
+At our highest published CPL ( $45 )
+111
+booked appointments / month
+At our lowest published CPL ( $4.81 )
+1,039
+booked appointments / month
+Uses the lowest ($4.81) and highest ($45) cost per booked appointment from the published campaigns on this page. An estimate from past campaigns, not a quote or a guarantee. Results depend on market, offer, verification and budget.
 Get a plan for $5,000 /month
 How it works
 
-## How we generate exclusive roofing leads
-The same system behind the campaigns above, set up in your ad account so you keep the data, the pixel history and the leads.
+## How pay-per-appointment lead generation works
+Each step is built to turn ad spend into appointments that show up. It is the same system behind our appointment setting services .
 01
 
-### Service-area targeting
-Ads run only in the ZIP codes you serve. For storm work we focus on areas hit by recent storms, as in the California call campaign above.
+### Ads for buyers, not browsers
+Meta ads and offers written for the people who buy your service, tested until cost per booked appointment, not cost per click, is lowest.
 02
 
-### Offers homeowners act on
-Free inspection, replacement or repair angles tested against each other, with real video instead of polished stock ads.
+### Qualification before booking
+Budget, need, timeline and fit are asked in the form, so only qualified people can book.
 03
 
-### Qualifying questions
-Homeowner, repair or replacement, storm damage, timeline and address are asked inside the form, so renters and tire-kickers drop out.
+### Contact within minutes
+Automatic call, SMS or WhatsApp follow-up as soon as a lead arrives. See speed to lead .
 04
 
-### Phone verification
-On verified campaigns the homeowner confirms a one-time code sent to their phone, which removes fake and mistyped numbers.
+### Booked on your calendar
+Qualified leads pick a time in your calendar, with confirmations and reminders before the call.
 05
 
-### Contact within minutes
-New leads get an automatic call or text and WhatsApp follow-up . See our speed-to-lead system .
+### Exclusive to you
+The ad account and every appointment are yours. Nothing is shared with or resold to competitors.
 06
 
-### Scale the winners
-Budget moves to the ads that produce inspections and signed jobs. For one agency client, three ads took 35% of the budget and drove over 70% of closed deals.
+### Reported per appointment
+Cost per lead, per booked appointment, per show and per client, so budget follows sales.
 Qualification
 
-## The questions a roofing lead answers before you see it
-Each campaign uses a short set of questions matched to your jobs. These are the ones we use most for residential roofing.
-- Do you own the home?
-- Repair or full replacement?
-- Storm or hail damage?
-- Roof age
-- Insurance claim?
-- When do you want the work done?
-- Address in your service area
-- Best time to call
+## What a booked appointment has already answered
+Questions are set with you for each offer. These are typical for coaches, consultants, advisors and service businesses.
+- What do you need help with?
+- Budget range
+- Timeline to start
+- Decision-maker?
+- Current situation
+- Location or service area
+- Best time for a call
 The difference
 
-## Shared roofing leads vs your own campaign
-Shared lead vendors
-- The same homeowner is sold to several roofers
-- You never see the ads or the targeting
-- Leads can be days old when they arrive
-- Stop paying and the lead flow stops with nothing to keep
+## Pay per lead companies vs pay-per-appointment
+Typical pay per lead companies
+- You pay for every form fill, qualified or not
+- Leads are often shared with other buyers
+- Follow-up and booking are your problem
+- No view of shows or sales
 QualifiedLeadsX
-- Every lead is exclusive to you
-- Ads, pixel and data live in your ad account
-- Leads arrive in real time and are contacted in minutes
-- The campaigns and their learning stay yours
+- Measured on booked, qualified appointments
+- Exclusive leads from your own ad account
+- Follow-up, booking and reminders done for you
+- Reported down to cost per client
 Who it's for
 
-## Roofing leads for contractors, lead sellers and agencies
+## Who pay-per-appointment lead generation is for
 
-### Roofing contractors
-Repair and replacement leads for your own sales team, in the ZIP codes you serve.
+### Coaches and consultants
+Booked discovery calls with qualified prospects. See lead generation for coaches and consultants .
 
-### Pay-per-lead agencies
-Verified roofing leads you can sell to roofers. One PPL client received 1,024 OTP-verified leads at $24.
+### Financial advisors and insurance agents
+Appointments with prospects who match your client profile. See financial advisors and insurance agents .
 
-### Agencies serving roofers
-We run campaigns and train agency teams in the roofing niche, as for the agency client that reached 1,068 leads in 30 days.
+### Local and home service businesses
+In-home estimates and consultations booked on your calendar, like the HVAC and remodeling campaigns above.
 FAQ
 
-## Roofing leads: frequently asked questions
+## Pay per appointment lead generation: FAQ
 
-### How much do roofing leads cost?
-In nine roofing lead campaigns we have published, cost per lead ranged from $4.27 (537 leads in 13 days) to $24 (1,024 OTP-verified leads for a pay-per-lead agency). Larger campaigns included 850 leads at $7.60 in 8 days and 1,068 leads at $17.40 in 30 days. Your cost depends on the market, the offer, how strict the verification is and the budget. Our management fee is custom quoted.
+### What is pay per appointment lead generation?
+It is lead generation measured on booked sales appointments instead of raw leads. The provider runs the ads, qualifies each lead, follows up and books the appointment on your calendar, and the campaign is judged on cost per booked appointment, show rate and sales.
 
-### Are your roofing leads exclusive?
-Yes. The ads run in an ad account in your name and each lead goes only to you. We do not resell or share leads between roofers.
+### How much does a booked appointment cost?
+In campaigns we have published, cost per booked appointment ranged from $4.81 (337 kitchen remodeling appointments in 19 days) to $45 (125 booked appointments for a Florida HVAC company that collected $65,872 net). A New Jersey HVAC company paid $13.97 per booked appointment and a three-clinic med spa $22.93. Your cost depends on the offer, market and qualification. Our fees are custom quoted.
 
-### What is an OTP-verified roofing lead?
-The homeowner enters a one-time code sent to their phone before the form is submitted. It proves the phone number is real and belongs to them, and removes most fake and mistyped submissions.
+### Is pay per appointment better than pay per lead?
+For businesses that sell on a call, usually yes: a lead only has value once it is contacted, qualified and booked. Pay per lead is cheaper per unit, but you do the follow-up, and leads from pay per lead companies are often shared with other buyers.
 
-### Do you work with roofing lead sellers and agencies?
-Yes. Some of the campaigns on this page were run for pay-per-lead agencies and for agencies that serve roofers, including 1,024 OTP-verified leads for a PPL client.
+### How is this different from pay per lead companies?
+Pay per lead companies sell form fills, often to several buyers. We run the campaign in your own ad account, so every lead and appointment is exclusive, and we handle follow-up, booking and reminders.
 
-### Can you get inbound calls instead of form leads?
-Yes. For a California roof repair client we ran a call campaign straight from the ad to the phone: 52 inbound calls in 7 days from $646, $12.42 per call.
+### Do you charge per appointment?
+Pricing is custom quoted for each offer and market. On the free strategy call we look at your offer and give you a realistic cost-per-appointment range based on campaigns like the ones on this page.
 
-### How fast does a roofing campaign start producing leads?
-In published campaigns, new clients saw volume in the first days: 177 leads in the first 7 days for one roofer and 686 leads in 8 days for a Texas roofer starting with no pixel data.
+### What happens if appointments don't show up?
+Show rate is tracked and worked on: confirmations, reminders by SMS, email and WhatsApp, and fast follow-up. For the three-clinic med spa, 67% of booked appointments showed up and 247 became paying clients.
 Keep reading
 
-## More for roofing and home service companies
-HVAC leads Booked HVAC appointments and installs from Meta ads, with full funnel numbers. Home improvement leads Lead generation for remodeling, solar and other home service companies. Speed to lead How new leads get a call or text within minutes, day or night. Cost per lead by industry Benchmarks for home services and other industries.
+## More on appointments and lead generation
+Appointment setting services How we turn leads into qualified sales appointments. Buy leads or generate your own? What bought leads really cost compared with your own campaign. Cost per booked call calculator Work out what a booked appointment costs you today. Show rate benchmarks How many booked appointments actually show up.
 Exclusive leads, your ad account
 
-### Ready for your own roofing lead generation ?
+### Ready for your own pay-per-appointment lead generation ?
+Tell us your service area and budget. On a free 30-minute call we map the offer, the qualifying questions and a realistic cost-per-lead range based on campaigns like the ones above.
+Get my free lead plan
+No commitment required 90-day written guarantee
+Prefer to chat? Message us on WhatsApp
+
+---
+
+URL: https://www.qualifiedleadsx.com/for/insurance-agencies
+Title: Lead Generation for Insurance Agents: Exclusive Leads
+
+# Lead Generation for Insurance Agents
+QualifiedLeadsX runs lead generation for insurance agents with Meta ads in your own ad account. Prospects answer qualifying questions, can verify their phone number, and are contacted within minutes, so your agents call people who asked to hear from them, not leads shared with other agents. For a pay-per-lead client we generated 2,440 final expense leads at $7.79 each in one month.
+- Exclusive leads: never shared with or resold to other agents
+- Qualified on age band, state, coverage wanted and best time to call
+- Optional phone verification to remove fake numbers
+- Contacted in minutes, with appointments booked for your agents
+2,440
+Final expense leads in one month
+$7.79
+Cost per final expense lead
+55
+Life insurance leads in 14 days
+≈$18
+Cost per life insurance lead
+Source: the campaign screenshots below, each linked to its original post. Cost depends on state, age band, product and budget.
+Get a free insurance lead plan for your states
+Published results
+
+## Insurance campaigns we have run and published
+Screenshots from the clients' Ads Manager, published at the time. Tap a card to see the full screenshot, or open the original post to check the numbers.
+Spend $19,011
+CPL $7.79
+Leads 2,440
+See the original post
+Spend $990
+CPL ≈$18
+Leads 55
+See the original post
+Cost per lead by campaign
+
+## What insurance leads have cost in our campaigns
+The two insurance campaigns we have published so far. Final expense details are on the final expense leads page.
+- Final expense, pay-per-lead client, 1 month ($19,011.31 spend) $7.79
+- Life insurance agents, 14 days ($990 spend) ≈$18
+Lead estimator
+Move the slider to your monthly ad budget
+Monthly ad spend $5,000 $1,000 $30,000
+At our highest published CPL ( $18 )
+277
+insurance leads / month
+At our lowest published CPL ( $7.79 )
+641
+insurance leads / month
+Uses the two published insurance campaigns on this page: $7.79 (final expense) and about $18 (life insurance) per lead. An estimate from past campaigns, not a quote or a guarantee. Results depend on market, offer, verification and budget.
+Get a plan for $5,000 /month
+How it works
+
+## How we generate insurance leads for agents
+Built for insurance: honest ads, qualification in the form and follow-up fast enough that your agent is the first to call.
+01
+
+### Ads for the right age group
+Plain-language Meta ads for the people you sell to, with no misleading 'government program' claims. Your compliance rules apply to every ad.
+02
+
+### Qualifying questions
+Age band, state, coverage amount wanted and best time to call, plus consent to be contacted.
+03
+
+### Phone verification
+Optional one-time-code verification removes fake and mistyped numbers before leads reach your agents.
+04
+
+### Called within minutes
+Automatic call or text the moment a lead arrives. See speed to lead .
+05
+
+### Appointments for agents
+Leads can be booked straight into agents' calendars, with reminders. See appointment setting services .
+06
+
+### Reported on policies
+Cost per lead, contact rate, appointments and cost per policy written, so budget follows sales.
+Qualification
+
+## What an insurance lead tells you before the first call
+Questions are set with you for each product and state. These are typical for final expense and life insurance.
+- Age band
+- State
+- Coverage amount wanted
+- Who the policy is for
+- Current coverage?
+- Best time to call
+- Consent to be contacted
+The difference
+
+## Insurance lead vendors vs your own campaign
+Typical lead vendors
+- The same prospect is sold to several agents
+- Aged leads that were called days ago
+- You can't change the questions or the ads
+- Stop paying and nothing stays with you
+QualifiedLeadsX
+- Exclusive leads from your own ad account
+- Real-time leads, contacted in minutes
+- Questions and ads built for your products
+- Ad account, pixel and data stay yours
+Who it's for
+
+## Insurance lead generation for agents, agencies and call centers
+
+### Independent agents
+A steady flow of exclusive final expense and life insurance leads. See final expense leads .
+
+### Agencies and call centers
+Volume for a team of agents, with lead routing and reporting through CRM automation .
+
+### Pay-per-lead insurance businesses
+Verified leads you can sell to agents, like the 2,440-lead final expense campaign above.
+FAQ
+
+## Lead generation for insurance agents: FAQ
+
+### How do insurance agents get leads?
+Most buy leads from vendors, where the same prospect is often sold to several agents, or rely on referrals. Running your own Meta ads campaign gives you exclusive, real-time leads: people who filled in your form, answered your qualifying questions and are called within minutes.
+
+### How much do insurance leads cost?
+In our published insurance campaigns, final expense leads cost $7.79 each (2,440 leads from $19,011.31 in one month for a pay-per-lead client) and life insurance leads about $18 each (55 qualified leads for $990 in 14 days). Cost depends on state, age band, product and budget. Our management fee is custom quoted.
+
+### Are the leads exclusive to my agency?
+Yes. The campaign runs in an ad account in your name and every lead goes only to you. We do not resell or share leads between agents.
+
+### Which insurance products do you generate leads for?
+Our published insurance results are final expense (burial insurance) and life insurance. Other products can be tested on the same system; we will tell you on the strategy call if we have no comparable results.
+
+### Can you book appointments for my agents?
+Yes. Leads can be contacted within minutes and booked straight into your agents' calendars, with SMS, email and WhatsApp reminders to protect the show rate.
+
+### Are Meta insurance ads compliant?
+Every ad is written in plain language without misleading claims, and your compliance team approves ads and disclosures before they run. Some insurance products fall under Meta's special ad category for financial products, which limits targeting; we build campaigns within those rules.
+Keep reading
+
+## More for insurance and financial professionals
+Final expense leads Exclusive final expense and burial insurance leads, with results. Lead generation for financial advisors Qualified client calls for advisors and wealth managers. Pay per appointment Lead generation measured on booked appointments. Mortgage leads OTP-verified mortgage and refinance leads.
+Exclusive leads, your ad account
+
+### Ready for your own lead generation for insurance agents ?
 Tell us your service area and budget. On a free 30-minute call we map the offer, the qualifying questions and a realistic cost-per-lead range based on campaigns like the ones above.
 Get my free lead plan
 No commitment required 90-day written guarantee
@@ -4195,7 +3950,7 @@ In our published campaigns they did: a Florida HVAC company collected $65,872 ne
 Keep reading
 
 ## More for HVAC and home service companies
-Florida HVAC case study $65,872 net cash collected, step by step. Facebook ads for HVAC Offers, targeting and budgets for HVAC Meta ads. Roofing leads 5,246 roofing leads across nine published campaigns. Cost per booked call calculator Work out what a booked appointment costs you today.
+Florida HVAC case study $65,872 net cash collected, step by step. Facebook ads for HVAC Offers, targeting and budgets for HVAC Meta ads. Home improvement leads Lead generation for remodeling, solar and other home service companies. Cost per booked call calculator Work out what a booked appointment costs you today.
 Exclusive leads, your ad account
 
 ### Ready for your own hvac lead generation ?
@@ -4705,7 +4460,7 @@ Average Contract Value
 5.8x
 Contractor Cash ROAS
 Book Your Territory Exclusivity Model Job Profitability & CAC →
-Roofing Roofing leads → 5,246 roofing leads across nine published campaigns, from $4.27 per lead. HVAC HVAC leads → 140 booked appointments and 12 installs from $1,956 in ads for a New Jersey HVAC company.
+HVAC HVAC leads → 140 booked appointments and 12 installs from $1,956 in ads for a New Jersey HVAC company.
 12+ Years Experience $50M+ Managed in Meta Ads Multi-Industry Experience Proven Client Acquisition Framework 100% Done-For-You
 Trusted by clients across 30+ industries
 -
@@ -6268,10 +6023,9 @@ Qualification inside the funnel. Scaling to thousands of leads without CPL climb
 For law firms, cost per lead is only the first number. Track how many leads are contacted within minutes, how many qualify, and how many sign. Read cost per acquisition vs cost per lead for why cheap leads only matter if they turn into signed cases.
 
 ## Related services
-- MVA leads
-- Personal injury leads
-- Lead generation for law firms
+- Facebook ads for personal injury lawyers (training)
 - AI speed to lead
+- All case studies
 
 # mva # attorney # injuryattorney # injury # advertising_agency
 
@@ -7673,6 +7427,11 @@ Keep Reading
 Glossary All guides
 Funnel Strategy
 
+### How to Get Coaching Clients (2026): 6 Proven Ways
+How to get coaching clients: referrals, content, paid ads, low-ticket offers, booked discovery calls and follow-up, with real coaching funnel numbers.
+9 min read
+Funnel Strategy
+
 ### How to Write a VSL Script: The 12-Minute Structure
 A six-act VSL script structure for high-ticket offers: hook, problem, alternatives, unique mechanism, proof and filtered CTA, with timing and examples.
 13 min read
@@ -7681,11 +7440,6 @@ Funnel Strategy
 ### VSL Funnel Blueprint 2026: Book 50+ Calls
 Replace 90-minute webinars with concise 12-minute VSL funnels and qualification filters converting at 14–18% into booked sales appointments.
 12 min read
-Funnel Strategy
-
-### 5 High-Ticket Funnel Examples: Proven Funnel Blueprints
-Inspect 5 proven high-ticket sales funnel examples generating $150M+ in client revenue. VSL funnels, two-step applications, and setter-closers workflows.
-11 min read
 Direct Implementation
 
 ### Ready to install this system? Book your strategy session.

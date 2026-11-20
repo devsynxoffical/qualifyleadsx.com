@@ -55,7 +55,7 @@ const NICHES = [
 type BookingFormProps = {
   /** Page the form is embedded on (landing pages). Sent with the lead so the team knows which page converted. */
   source?: string;
-  /** Preselects the business type, e.g. "Roofing" on /roofing-leads. */
+  /** Preselects the business type, e.g. "HVAC" on /hvac-leads. */
   defaultNiche?: string;
 };
 

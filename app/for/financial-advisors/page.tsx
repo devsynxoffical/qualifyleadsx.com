@@ -22,13 +22,13 @@ import {
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Financial Advisor Leads & High-Net-Worth Client Funnels",
+  title: { absolute: "Lead Generation for Financial Advisors | QualifiedLeadsX" },
   description:
-    "Compliant financial advisor lead generation for wealth managers. Book 20–40 high-net-worth consultations ($500K+ investable assets) every month.",
+    "Lead generation for financial advisors: compliant Meta ads, prospects qualified on investable assets, and discovery calls booked on your calendar.",
   keywords: [
+    "lead generation for financial advisors",
     "financial advisor leads",
     "wealth management lead generation",
-    "lead generation for financial advisors",
     "high net worth client acquisition",
     "fiduciary lead generation",
     "meta ads for wealth managers",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Financial Advisor Leads & High-Net-Worth Client Funnels",
+    title: "Lead Generation for Financial Advisors | QualifiedLeadsX",
     description:
-      "Compliant financial advisor lead generation for wealth managers. Book 20–40 high-net-worth consultations ($500K+ investable assets).",
+      "Lead generation for financial advisors: compliant Meta ads, prospects qualified on investable assets, and discovery calls booked on your calendar.",
     url: `${site.url}/for/financial-advisors`,
     type: "website",
   },
@@ -69,14 +69,14 @@ const pillars = [
     icon: PhoneCall,
     title: "White-Glove Speed-to-Lead Concierge",
     description:
-      "Inbound inquiries receive immediate, professional executive confirmation via SMS and scheduled concierge outreach, building early trust and achieving 88%+ show rates.",
+      "Inbound inquiries receive immediate, professional executive confirmation via SMS and scheduled concierge outreach, building early trust and protecting your show rate.",
   },
 ];
 
 const faqs = [
   {
     q: "What is compliant lead generation for financial advisors?",
-    a: "Financial advisor lead generation is the compliant acquisition process of attracting, qualifying, and booking high-net-worth individuals ($500,000+ in investable assets) into fiduciary financial planning and wealth management consultations. QualifiedLeadsX builds FINRA- and SEC-compliant educational funnels and automated appointment setting that pre-qualify retirement readiness and portfolio size before discovery meetings.",
+    a: "Financial advisor lead generation is the compliant acquisition process of attracting, qualifying, and booking high-net-worth individuals ($500,000+ in investable assets) into fiduciary financial planning and wealth management consultations. QualifiedLeadsX builds educational funnels written for FINRA and SEC advertising rules, approved by your compliance team, and automated appointment setting that pre-qualify retirement readiness and portfolio size before discovery meetings.",
   },
   {
     q: "How do you ensure campaigns comply with regulatory standards?",
@@ -103,7 +103,7 @@ export default function FinancialAdvisorsPage() {
         name: "Financial Advisor Lead Generation & Client Acquisition",
         serviceType: "Wealth Management Client Acquisition",
         description:
-          "Compliant financial advisor lead generation for wealth managers. Book 20–40 high-net-worth consultations ($500K+ investable assets) every month.",
+          "Lead generation for financial advisors: compliant Meta ads, prospects qualified on investable assets, and discovery calls booked on your calendar.",
         url: pageUrl,
         provider: orgRef,
         areaServed: TIER1_MARKETS.map((name) => ({ "@type": "Country", name })),
@@ -157,12 +157,11 @@ export default function FinancialAdvisorsPage() {
           </div>
 
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-fog leading-[1.1]">
-            Financial Advisor Leads: Compliant{" "}
-            <span className="text-gradient-lime">High-Net-Worth Client Acquisition</span>
+            <span className="text-gradient-lime">Lead Generation for Financial Advisors</span>: Qualified Client Calls
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-mist leading-relaxed font-sans max-w-3xl mx-auto">
-            Stop relying on cold seminars or low-intent lead vendors. We engineer compliant, educational acquisition funnels that book 15 to 35 high-net-worth wealth management consultations ($500K+ investable assets) directly on your calendar every month.
+            Stop relying on cold seminars or low-intent lead vendors. We build educational acquisition funnels that qualify prospects on investable assets before they book a discovery call on your calendar, and we tell you on the strategy call what volume is realistic for your market.
           </p>
 
           {/* Quick Answer Block (AEO Standard) */}
@@ -174,7 +173,7 @@ export default function FinancialAdvisorsPage() {
               What is compliant lead generation for financial advisors?
             </h2>
             <p className="mt-3 text-sm sm:text-base leading-relaxed text-mist">
-              Financial advisor lead generation is the compliant acquisition process of attracting, qualifying, and booking high-net-worth individuals ($500,000+ in investable assets) into fiduciary financial planning and wealth management consultations. QualifiedLeadsX builds FINRA- and SEC-compliant educational funnels and automated appointment setting that pre-qualify retirement readiness and portfolio size before discovery meetings.
+              Financial advisor lead generation is the compliant acquisition process of attracting, qualifying, and booking high-net-worth individuals ($500,000+ in investable assets) into fiduciary financial planning and wealth management consultations. QualifiedLeadsX builds educational funnels written for FINRA and SEC advertising rules, approved by your compliance team, and automated appointment setting that pre-qualify retirement readiness and portfolio size before discovery meetings.
             </p>
           </div>
         </div>

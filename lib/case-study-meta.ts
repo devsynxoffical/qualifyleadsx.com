@@ -245,10 +245,9 @@ export const caseStudyMeta: Record<string, CaseStudyMeta> = {
       },
     ],
     related: [
-      { href: "/mva-leads", label: "MVA leads" },
-      { href: "/personal-injury-leads", label: "Personal injury leads" },
-      { href: "/for/law-firms", label: "Lead generation for law firms" },
+      { href: "/mastermind/personal-injury-facebook-ads", label: "Facebook ads for personal injury lawyers (training)" },
       { href: "/speed-to-lead", label: "AI speed to lead" },
+      { href: "/case-studies", label: "All case studies" },
     ],
   },
 };

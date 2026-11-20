@@ -11,7 +11,6 @@ import {
   ArrowRight,
   Briefcase,
   GraduationCap,
-  Scale,
   Activity,
   Home,
   Sun,
@@ -141,16 +140,6 @@ const industries = [
     description:
       "Pre-qualified homeowner utility bill audits booked directly onto solar sales rep calendars with strict credit and shading pre-qualification.",
     stats: "Credit-Qualified Homeowners · Sub-15 Minute Dispatch",
-  },
-  {
-    title: "Legal Practices & Law Firms",
-    keyword: "law firm lead generation",
-    href: "/for/law-firms",
-    icon: Scale,
-    badge: "Legal & MVA",
-    description:
-      "Motor Vehicle Accident (MVA) and high-value personal injury claimant intake infrastructure with strict signed retainer pre-qualification.",
-    stats: "8,810+ MVA Leads Generated at $7.61 Per Lead",
   },
 ];
 

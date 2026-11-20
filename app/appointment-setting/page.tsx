@@ -39,14 +39,16 @@ import { appointmentSettingDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "B2B Appointment Setting Agency: 30–50 Sales Calls a Month",
+    absolute: "Appointment Setting Services: Qualified Sales Appointments",
   },
   description:
-    "B2B appointment setting agency: every inquiry contacted within minutes, qualified and booked. Turn cold leads into 30–50 pre-qualified sales calls a month.",
+    "Appointment setting services for coaches, consultants, advisors and insurance agents: leads contacted in minutes, qualified and booked on your calendar.",
   keywords: [
-    "b2b appointment setting services",
-    "appointment setting agency",
+    "appointment setting services",
     "b2b appointment setting",
+    "sales appointment setting",
+    "qualified appointments",
+    "appointment setting agency",
     "automated appointment setting",
     "speed to lead appointment setting",
     "cost per qualified meeting",
@@ -58,7 +60,7 @@ export const metadata: Metadata = {
     canonical: "/appointment-setting",
   },
   openGraph: {
-    title: "B2B Appointment Setting Agency: 30–50 Sales Calls a Month | QualifiedLeadsX™",
+    title: "Appointment Setting Services: Qualified Sales Appointments",
     description:
       "Automated B2B appointment setting system with sub-3-minute speed to lead. Turn cold inquiries into pre-qualified, high-ticket sales calls.",
     url: `${site.url}/appointment-setting`,
@@ -68,7 +70,7 @@ export const metadata: Metadata = {
         url: `${site.url}/images/blog/vsl-funnel-blueprint.jpg`,
         width: 1200,
         height: 630,
-        alt: "B2B Appointment Setting Agency - QualifiedLeadsX",
+        alt: "Appointment setting services - QualifiedLeadsX",
       },
     ],
     locale: "en_US",
@@ -77,7 +79,7 @@ export const metadata: Metadata = {
   twitter: {
     images: [defaultOgImage.url],
     card: "summary_large_image",
-    title: "B2B Appointment Setting Agency: 30–50 Sales Calls a Month",
+    title: "Appointment Setting Services: Qualified Sales Appointments",
     description:
       "Automated B2B appointment setting system with sub-3-minute speed to lead. Turn cold inquiries into pre-qualified, high-ticket sales calls.",
   },
@@ -221,7 +223,7 @@ export default function AppointmentSettingPage() {
 
           {/* Primary Keyword H1 */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-white max-w-5xl mx-auto leading-[1.08]">
-            <span className="text-lime">Appointment Setting</span> Agency With Sub-5-Minute Speed To Lead
+            <span className="text-lime">Appointment Setting Services</span> That Book Qualified Sales Appointments
           </h1>
           <ShortAnswer>
             Appointment setting means replying to new leads within minutes, qualifying them on budget, authority and timeline, and booking only fit prospects into your sales calendar with reminders. QualifiedLeadsX combines sub-5-minute AI follow-up with human setters. With email-only confirmations the average show rate is 58.2%, which is why reminders are built in.
@@ -302,6 +304,41 @@ export default function AppointmentSettingPage() {
               <div className="font-mono text-2xl sm:text-3xl font-bold text-lime">$0</div>
               <div className="mt-1 text-xs font-mono uppercase tracking-wider text-mist">Human Setter Overhead</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 20 Nov 2026 (SEO Recovery Plan): answers for the appointment setting keyword cluster, with published numbers only. */}
+      <section className="py-16 sm:py-24 bg-ink border-t border-line">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold">What you get</span>
+          <h2 className="mt-3 text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight max-w-3xl">What our appointment setting services include</h2>
+          <p className="mt-4 max-w-3xl text-mist">
+            Appointment setting services turn new leads into booked sales appointments: someone (or an automated sequence) contacts each lead within minutes, asks the qualifying questions you set, books fit prospects into your calendar and reminds them so they show up. QualifiedLeadsX runs the whole chain, from the Meta ads that create the leads to the reminder before the call.
+          </p>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            <div className="rounded-2xl border border-line bg-panel p-6">
+              <h3 className="text-lg font-bold font-heading text-white">B2B appointment setting</h3>
+              <p className="mt-2 text-sm leading-relaxed text-mist">For consultants, agencies and B2B service firms, leads are qualified on budget, decision-making authority and timeline before a call is booked, so your calendar only holds buyers. See <Link href="/for/consultants" className="text-lime hover:underline">lead generation for consultants</Link> and <Link href="/for/b2b-services" className="text-lime hover:underline">B2B service firms</Link>.</p>
+            </div>
+            <div className="rounded-2xl border border-line bg-panel p-6">
+              <h3 className="text-lg font-bold font-heading text-white">Sales appointment setting</h3>
+              <p className="mt-2 text-sm leading-relaxed text-mist">Every inquiry gets a call, SMS or <Link href="/whatsapp-lead-nurture" className="text-lime hover:underline">WhatsApp</Link> message within minutes (<Link href="/speed-to-lead" className="text-lime hover:underline">speed to lead</Link>), then a booked slot and reminders. For a New Jersey HVAC company this produced 140 booked appointments from $1,956 in ads: $13.97 per booked appointment.</p>
+            </div>
+            <div className="rounded-2xl border border-line bg-panel p-6">
+              <h3 className="text-lg font-bold font-heading text-white">Qualified appointments</h3>
+              <p className="mt-2 text-sm leading-relaxed text-mist">A qualified appointment is a booked call with someone who matches your criteria and confirmed the time. Published examples: 387 exclusive appointments in 24 days at $19.62 each, and 10 qualified buyer appointments in 24 hours from $172.90 for a luxury real estate client.</p>
+            </div>
+            <div className="rounded-2xl border border-line bg-panel p-6">
+              <h3 className="text-lg font-bold font-heading text-white">Appointment setting agency vs in-house setters</h3>
+              <p className="mt-2 text-sm leading-relaxed text-mist">An agency brings the ads, scripts, automation and setters as one system; in-house setters need hiring, training and management. Compare costs in <Link href="/blog/b2b-appointment-setting-vs-in-house-sdr-teams" className="text-lime hover:underline">appointment setting vs in-house SDRs</Link> and <Link href="/blog/how-to-hire-an-appointment-setter" className="text-lime hover:underline">how to hire an appointment setter</Link>.</p>
+            </div>
+          </div>
+          <div className="mt-8 rounded-2xl border border-lime/30 bg-lime/[0.05] p-6">
+            <h3 className="text-lg font-bold font-heading text-white">Who we set appointments for</h3>
+            <p className="mt-2 text-sm leading-relaxed text-mist">
+              <Link href="/for/coaches" className="text-lime hover:underline">Coaches</Link>, <Link href="/for/consultants" className="text-lime hover:underline">consultants</Link>, <Link href="/for/financial-advisors" className="text-lime hover:underline">financial advisors</Link> and <Link href="/for/insurance-agencies" className="text-lime hover:underline">insurance agents</Link>, plus agencies and B2B service firms. Pricing is custom quoted; on the free strategy call we work out a realistic cost per booked appointment for your offer. Compare payment models in <Link href="/pay-per-appointment" className="text-lime hover:underline">pay per appointment lead generation</Link>.
+            </p>
           </div>
         </div>
       </section>

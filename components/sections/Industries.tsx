@@ -8,26 +8,22 @@ import { industries } from "@/lib/data";
 
 /** Industries that have a dedicated landing page link to it (homepage -> industry pages). */
 const INDUSTRY_HREF: Record<string, string> = {
-  "Digital Marketing Agencies": "/for/agencies",
+  // 20 Nov 2026 (SEO Recovery Plan): coaches, consultants, financial advisors and insurance agents are the core audiences.
   "Business Coaches": "/for/coaches",
   Consultants: "/for/consultants",
+  "Financial Advisors": "/for/financial-advisors",
+  "Insurance Agents": "/for/insurance-agencies",
+  "Digital Marketing Agencies": "/for/agencies",
   "High-Ticket Service Providers": "/high-ticket-lead-generation",
   "B2B Companies": "/for/b2b-services",
+  "Mortgage Brokers": "/mortgage-leads",
+  "Real Estate Companies": "/for/real-estate-investors",
+  "Med Spas & Aesthetic Clinics": "/for/med-spas",
+  "Fitness Brands & Gyms": "/for/fitness-coaches",
+  "Solar Companies": "/for/solar-companies",
   "Home Service Businesses": "/for/home-improvement",
   "HVAC Companies": "/hvac-leads",
-  "Roofing Companies": "/roofing-leads",
   "Kitchen & Bathroom Remodeling": "/for/home-improvement",
-  "Solar Companies": "/for/solar-companies",
-  // 19 Nov 2026: point to the indexed pages with published proof, not /for/law-firms (not indexed).
-  "Personal Injury Law Firms": "/personal-injury-leads",
-  "MVA & Auto Accident Lead Buyers": "/mva-leads",
-  "Medical Malpractice Attorneys": "/for/law-firms",
-  "Med Spas & Aesthetic Clinics": "/for/med-spas",
-  "Real Estate Companies": "/for/real-estate-investors",
-  "Mortgage Brokers": "/mortgage-leads",
-  // Was /for/insurance-agencies, which is noindex. Real insurance proof: 2,440 final expense leads at $7.79.
-  "Insurance Agencies": "/final-expense-leads",
-  "Fitness Brands & Gyms": "/for/fitness-coaches",
 };
 
 const tileCls =

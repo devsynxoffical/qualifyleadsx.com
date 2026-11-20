@@ -262,12 +262,6 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${site.url}/for/law-firms`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
       url: `${site.url}/for/home-improvement`,
       lastModified: now,
       changeFrequency: "weekly",
@@ -330,34 +324,22 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
       priority: 0.92,
     },
     {
-      url: `${site.url}/personal-injury-leads`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.92,
-    },
-    {
-      url: `${site.url}/mva-leads`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.92,
-    },
-    {
-      url: `${site.url}/mass-tort-leads`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.92,
-    },
-    {
       url: `${site.url}/final-expense-leads`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.92,
     },
     {
-      url: `${site.url}/roofing-leads`,
+      url: `${site.url}/pay-per-appointment`,
       lastModified: now,
       changeFrequency: "weekly",
-      priority: 0.92,
+      priority: 0.95,
+    },
+    {
+      url: `${site.url}/for/insurance-agencies`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
     },
     {
       url: `${site.url}/hvac-leads`,

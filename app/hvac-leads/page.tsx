@@ -133,7 +133,7 @@ export default function Page() {
         links: [
           { href: "/case-studies/florida-hvac-65k-cash-collected", label: "Florida HVAC case study", text: "$65,872 net cash collected, step by step." },
           { href: "/blog/facebook-ads-for-hvac-companies", label: "Facebook ads for HVAC", text: "Offers, targeting and budgets for HVAC Meta ads." },
-          { href: "/roofing-leads", label: "Roofing leads", text: "5,246 roofing leads across nine published campaigns." },
+          { href: "/for/home-improvement", label: "Home improvement leads", text: "Lead generation for remodeling, solar and other home service companies." },
           { href: "/tools/cost-per-booked-call-calculator", label: "Cost per booked call calculator", text: "Work out what a booked appointment costs you today." },
         ],
       }}

@@ -710,19 +710,18 @@ export function FlowWave() {
 
           <div className="flex flex-1 flex-col items-center justify-center px-6 text-center">
             <div ref={headlineWrapRef}>
-              <h1 className="max-w-4xl text-balance font-semibold tracking-[-0.03em] text-fog">
-                <span className="block text-[clamp(1.2rem,2.4vw,1.9rem)] leading-[1.22]">
-                  <em className="text-gradient-lime not-italic">Lead Generation Agency</em> for High-Ticket Offers: From Meta Ads to Booked Calls
-                </span>
-                <span className="mt-2 block text-gradient-lime text-[clamp(1.9rem,5.6vw,4.8rem)] font-bold leading-[1.02]">
-                  Double Your Revenue Within The Next 90 Days
-                </span>
-                <span className="mt-3 block text-[clamp(0.95rem,1.6vw,1.25rem)] font-medium leading-[1.35] text-fog drop-shadow-md">
-                  Or We&apos;ll Continue Working For You At{" "}
-                  <em className="text-lime not-italic drop-shadow-[0_0_8px_rgba(201,242,107,0.5)]">No Management Fee</em> Until We
-                  Do.
-                </span>
+              {/* 20 Nov 2026 (SEO Recovery Plan): only the keyword line is the H1; the offer lines below are styled the same but are not part of the heading. */}
+              <h1 className="mx-auto max-w-4xl text-balance text-[clamp(1.2rem,2.4vw,1.9rem)] font-semibold leading-[1.22] tracking-[-0.03em] text-fog">
+                <em className="text-gradient-lime not-italic">Done-for-You Lead Generation</em> and Appointment Setting for High-Ticket Offers
               </h1>
+              <p className="mx-auto mt-2 max-w-4xl text-balance text-gradient-lime text-[clamp(1.9rem,5.6vw,4.8rem)] font-bold leading-[1.02] tracking-[-0.03em]">
+                Double Your Revenue Within The Next 90 Days
+              </p>
+              <p className="mx-auto mt-3 max-w-4xl text-balance text-[clamp(0.95rem,1.6vw,1.25rem)] font-medium leading-[1.35] tracking-[-0.03em] text-fog drop-shadow-md">
+                Or We&apos;ll Continue Working For You At{" "}
+                <em className="text-lime not-italic drop-shadow-[0_0_8px_rgba(201,242,107,0.5)]">No Management Fee</em> Until We
+                Do.
+              </p>
               <p className="mx-auto mt-4 max-w-xl text-pretty text-sm font-medium leading-relaxed text-fog drop-shadow-md sm:text-[1rem]">
                 Done-For-You Client Acquisition From Meta Ads To The Booked Call.
               </p>

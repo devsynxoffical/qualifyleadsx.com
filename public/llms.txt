@@ -1,5 +1,5 @@
 # QualifiedLeadsX
-> QualifiedLeadsX is a done-for-you client acquisition agency that builds and runs Meta ads, funnels, CRM and AI follow-up to book qualified sales calls for agency owners, high-ticket coaches and B2B service businesses doing $10,000+ a month. Operated by Ecom Expertz LLC (Sheridan, Wyoming, USA). Founded in 2022 by Gaurav Kapoor, Founder & Head of Acquisition (https://www.qualifiedleadsx.com/about/gaurav-kapoor).
+> QualifiedLeadsX is a done-for-you, outsourced lead generation and appointment setting agency. It builds and runs Meta ads, funnels, CRM and AI follow-up to book qualified sales appointments for coaches, consultants, financial advisors, insurance agents, agency owners and B2B service businesses doing $10,000+ a month. Operated by Ecom Expertz LLC (Sheridan, Wyoming, USA). Founded in 2022 by Gaurav Kapoor, Founder & Head of Acquisition (https://www.qualifiedleadsx.com/about/gaurav-kapoor).
 
 Key facts:
 - $50M+ managed in Meta (Facebook and Instagram) ads; 12+ years experience
@@ -14,9 +14,10 @@ Key facts:
 - Full page content for AI assistants: https://www.qualifiedleadsx.com/llms-full.txt
 
 ## Services
-- [Lead generation agency for high-ticket offers](https://www.qualifiedleadsx.com/): the complete done-for-you client acquisition system
+- [Done-for-you lead generation](https://www.qualifiedleadsx.com/): outsourced lead generation and appointment setting, the complete done-for-you client acquisition system
 - [Meta ads agency](https://www.qualifiedleadsx.com/meta-ads-agency): Facebook and Instagram ads management for coaches, agencies and B2B
-- [Appointment setting](https://www.qualifiedleadsx.com/appointment-setting): AI follow-up, speed to lead, qualification and calendar booking
+- [Pay per appointment lead generation](https://www.qualifiedleadsx.com/pay-per-appointment): lead generation measured on booked, qualified appointments; published costs from $4.81 to $45 per booked appointment (e.g. 453 med spa appointments at $22.93, 140 HVAC appointments at $13.97)
+- [Appointment setting services](https://www.qualifiedleadsx.com/appointment-setting): qualified sales appointments booked on the client's calendar, with AI follow-up, speed to lead and qualification
 - [All services](https://www.qualifiedleadsx.com/services): overview of every service below
 - [Lead generation agency](https://www.qualifiedleadsx.com/lead-generation-agency): how the done-for-you lead generation engagement works
 - [High-ticket lead generation](https://www.qualifiedleadsx.com/high-ticket-lead-generation): lead generation for $3,000 to $25,000 offers
@@ -34,7 +35,7 @@ Key facts:
 
 ## Hub pages
 - [Services](https://www.qualifiedleadsx.com/services): every service
-- [Industries](https://www.qualifiedleadsx.com/for): every industry page, e.g. [coaches](https://www.qualifiedleadsx.com/for/coaches), [consultants](https://www.qualifiedleadsx.com/for/consultants), [agencies](https://www.qualifiedleadsx.com/for/agencies), [B2B SaaS](https://www.qualifiedleadsx.com/for/saas), [med spas](https://www.qualifiedleadsx.com/for/med-spas), [law firms](https://www.qualifiedleadsx.com/for/law-firms), [financial advisors](https://www.qualifiedleadsx.com/for/financial-advisors)
+- [Industries](https://www.qualifiedleadsx.com/for): every industry page, e.g. [coaches](https://www.qualifiedleadsx.com/for/coaches), [consultants](https://www.qualifiedleadsx.com/for/consultants), [agencies](https://www.qualifiedleadsx.com/for/agencies), [B2B SaaS](https://www.qualifiedleadsx.com/for/saas), [med spas](https://www.qualifiedleadsx.com/for/med-spas), [financial advisors](https://www.qualifiedleadsx.com/for/financial-advisors)
 - [Free tools](https://www.qualifiedleadsx.com/tools): Meta ads budget calculator, marketing efficiency ratio (MER) calculator (/tools/mer-calculator), ad frequency calculator (/tools/ad-frequency-calculator), Meta ads bid strategy (cost cap) calculator, CAC, ROAS and break-even ROAS, cost per booked call, show-up rate, LTV:CAC and lead conversion rate calculators, plus a lead scoring template
 - [Benchmarks](https://www.qualifiedleadsx.com/benchmarks): 2026 benchmarks for cost per lead by industry, Meta ads CPM, close rate, show rate and cost per booked call
 - [Blog](https://www.qualifiedleadsx.com/blog): guides on paid acquisition, funnels, lead qualification and scaling (RSS: https://www.qualifiedleadsx.com/feed.xml)
@@ -45,11 +46,8 @@ Key facts:
 ## Programs
 - [AI Client Acquisition Mastermind](https://www.qualifiedleadsx.com/mastermind/hidden-facebook-interest): 6-week hands-on implementation mastermind covering Meta ads audience and creative research, AI advertising, lead qualification, Pixel and CAPI tracking, scaling, manual bidding, retargeting and unit economics
 - [Sniper Method Mastermind for personal injury](https://www.qualifiedleadsx.com/mastermind/personal-injury-facebook-ads): 1-hour 33-minute mastermind on finding hidden Facebook audiences for car, motorcycle, 18-wheeler and rideshare accident cases, for PI law firms and agencies running ads for attorneys
-- [Personal injury leads](https://www.qualifiedleadsx.com/personal-injury-leads): exclusive personal injury and MVA leads from a campaign in the client's own ad account (not resold lists); one MVA campaign produced 8,810 leads at $7.61 from $67,013 in Meta ads, Jul 1 to Sep 19, 2026
-- [MVA leads](https://www.qualifiedleadsx.com/mva-leads): exclusive OTP-verified motor vehicle accident leads for PI firms and PPL agencies; 10 published campaigns incl. 8,810 leads at $7.61 and 6,275 at $4.38
-- [Mass tort leads](https://www.qualifiedleadsx.com/mass-tort-leads): mass tort claimant acquisition with tort-specific screening (no mass tort results published yet; uses the MVA intake system)
+- [Lead generation for insurance agents](https://www.qualifiedleadsx.com/for/insurance-agencies): exclusive final expense and life insurance leads; 2,440 final expense leads at $7.79 in one month, 55 life insurance leads at about $18
 - [Final expense & burial insurance leads](https://www.qualifiedleadsx.com/final-expense-leads): exclusive final expense leads; 2,440 leads at $7.79 from $19,011.31 for a pay-per-lead client
-- [Roofing leads](https://www.qualifiedleadsx.com/roofing-leads): exclusive, verified roofing leads from Meta ads in the contractor's own ad account; 5,246 leads across 9 published campaigns at $4.27 to $24 per lead, incl. 850 leads at $7.60 in 8 days (Texas) and 1,068 at $17.40 in 30 days
 - [HVAC leads](https://www.qualifiedleadsx.com/hvac-leads): exclusive HVAC homeowner leads and booked appointments; New Jersey HVAC company: $1,956 in ads, 140 booked appointments, 12 installs, $38,400 collected (ROAS 19.63); 630 OTP-verified leads at $23.09
 - [Mortgage leads](https://www.qualifiedleadsx.com/mortgage-leads): exclusive OTP-verified mortgage and refinance leads; 208 leads in 21 days produced 37 closings and $9.2M in funded loans from $5,300; 823 Texas leads at $23.97
 

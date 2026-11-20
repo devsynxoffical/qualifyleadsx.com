@@ -16,11 +16,10 @@ export const industryPages: { slug: string; label: string }[] = [
   { slug: "saas", label: "B2B SaaS" },
   { slug: "med-spas", label: "Med Spas & Aesthetics" },
   { slug: "financial-advisors", label: "Financial Advisors" },
-  { slug: "insurance-agencies", label: "Insurance Agencies" },
-  { slug: "law-firms", label: "Law Firms" },
+  { slug: "insurance-agencies", label: "Insurance Agents" },
   { slug: "real-estate-investors", label: "Real Estate Investors" },
   { slug: "recruitment-agencies", label: "Recruitment Agencies" },
-  { slug: "home-improvement", label: "Home Improvement & Roofing" },
+  { slug: "home-improvement", label: "Home Improvement" },
   { slug: "solar-companies", label: "Solar Companies" },
 ];
 

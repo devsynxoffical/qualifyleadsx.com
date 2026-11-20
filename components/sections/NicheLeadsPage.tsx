@@ -11,7 +11,7 @@ import type { DeepDiveContent } from "@/lib/deep-dive-content";
 
 /**
  * Shared layout for niche lead-generation landing pages (MVA, mass tort, final
- * expense). Same structure and styling as /personal-injury-leads: hero with a
+ * expense). Same structure and styling as the former /personal-injury-leads page: hero with a
  * short answer, verified stat tiles with their source, long-form DeepDive
  * sections, one FAQ list (also emitted as FAQPage) and the CTA banner.
  */

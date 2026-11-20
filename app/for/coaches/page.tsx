@@ -134,9 +134,8 @@ export default function CoachesLandingPage() {
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-fog max-w-4xl mx-auto leading-[1.1]">
-            Client Acquisition for Coaches:{" "}
-            <span className="text-gradient-lime font-extrabold">30–50 Qualified Sales Calls</span>{" "}
-            Every Month
+            <span className="text-gradient-lime font-extrabold">Lead Generation for Coaches</span>:{" "}
+            Qualified Discovery Calls, Done for You
           </h1>
           <ShortAnswer>
             For coaches, client acquisition means a funnel that turns cold Meta traffic into qualified discovery calls, or into low-ticket buyers you can upsell. QualifiedLeadsX builds and runs the ads, funnel, follow-up and booking for you. One fitness client&apos;s low-ticket membership funnel produced $203,941 in 11 days.
@@ -204,6 +203,34 @@ export default function CoachesLandingPage() {
       </section>
 
       {/* Comparison: The Old Way vs The QualifiedLeadsX Engine */}
+      {/* 20 Nov 2026 (SEO Recovery Plan): "coaching leads" and "high ticket coaching" answers, published numbers only. */}
+      <section className="py-20 bg-ink border-t border-line">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-mono uppercase tracking-[0.25em] text-lime mb-3">Coaching leads</p>
+          <h2 className="text-3xl sm:text-4xl font-bold font-heading text-fog tracking-tight max-w-3xl">Coaching leads that turn into booked discovery calls</h2>
+          <p className="mt-4 max-w-3xl text-mist">
+            Coaching leads are people who asked to hear about your program: they watched your content or ad, answered a few qualifying questions and left their details. Bought coaching lead lists are usually shared and cold. The leads that close come from your own campaign, contacted within minutes and booked onto your calendar.
+          </p>
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            <div className="rounded-2xl border border-line bg-panel p-6">
+              <h3 className="text-lg font-bold font-heading text-fog">High ticket coaching</h3>
+              <p className="mt-2 text-sm leading-relaxed text-mist">For $3K–$25K programs, prospects are qualified on goal, budget and timeline before a discovery call is booked, so you sell on the call instead of filtering.</p>
+            </div>
+            <div className="rounded-2xl border border-line bg-panel p-6">
+              <h3 className="text-lg font-bold font-heading text-fog">Low-ticket first, then high ticket</h3>
+              <p className="mt-2 text-sm leading-relaxed text-mist">A low-ticket offer pays for the ads and creates buyers you can upsell. One fitness client sold 1,566 memberships and 246 one-time offers, $203,941 in 11 days (<Link href="/case-studies/high-ticket-coaching-203k" className="text-lime hover:underline">case study</Link>).</p>
+            </div>
+            <div className="rounded-2xl border border-line bg-panel p-6">
+              <h3 className="text-lg font-bold font-heading text-fog">Booked, reminded, shown up</h3>
+              <p className="mt-2 text-sm leading-relaxed text-mist">Every lead is followed up and booked through our <Link href="/appointment-setting" className="text-lime hover:underline">appointment setting services</Link>, with reminders to protect the show rate. Compare <Link href="/pay-per-appointment" className="text-lime hover:underline">pay per appointment</Link> models.</p>
+            </div>
+          </div>
+          <p className="mt-8 text-sm text-mist">
+            More for coaches: <Link href="/blog/how-to-get-coaching-clients" className="text-lime hover:underline">how to get coaching clients</Link>, <Link href="/meta-ads-for-coaches" className="text-lime hover:underline">Facebook ads for coaches</Link> and <Link href="/blog/scaling-from-100k-to-500k-coaching" className="text-lime hover:underline">scaling a coaching business</Link>.
+          </p>
+        </div>
+      </section>
+
       <section className="py-20 bg-base/60 border-t border-line">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">

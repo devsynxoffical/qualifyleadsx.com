@@ -497,3 +497,6 @@ Owner sent 77 unique reels/posts. 70 were already on /case-studies with their vi
 
 ## 2026-11-20: scroll stuck fix
 Owner report: case study popup could not be scrolled. Cause: Lenis smooth scroll captured all wheel events, so scrollable panels inside popups never received them. Fix: Lenis allowNestedScroll + prevent for [data-lenis-prevent]/[role=dialog]; data-lenis-prevent and role=dialog on the case study modal, image lightbox and email opt-in popup; data-lenis-prevent on the mobile menu panel and the homepage stage-2 panel. Tested at 1366x768: popup panel and caption scroll (0 -> 186 and 0 -> 841 px), all 118 sitemap pages scroll with the mouse wheel (0 stuck), page scrolls after closing the case study popup, lightbox and mobile menu.
+
+## 2026-11-20: case study detail pages redesigned
+Owner report: /case-studies/<slug> pages were plain with no video or results. Rebuilt the template: video (or screenshot) beside the H1, accurate stat tiles and summary per named case (new stats/summary fields in lib/case-study-meta.ts, numbers copied from each post), breakdown, original post text (hashtags hidden), 6 more case studies with thumbnails, FAQ, lead form (source_page tagged). Removed invented numbers that appeared on every case page (82% show-up rate, <5 min, 178+ closed clients, "over 80% attendance", "12-minute VSL", "first 14 days").

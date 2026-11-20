@@ -13,6 +13,10 @@ export type CaseStudyMeta = {
   analysis?: CaseStudyAnalysis[];
   /** Industry and service pages this result supports. */
   related?: { href: string; label: string }[];
+  /** Headline numbers, copied from the client's own post (20 Nov 2026). */
+  stats?: { value: string; label: string }[];
+  /** One-paragraph summary of what happened, numbers from the post only. */
+  summary?: string;
 };
 
 /** Named slug -> Instagram post ID in lib/case-studies-data.ts. Named slugs are the indexable URLs. */
@@ -34,26 +38,36 @@ export const caseStudyIds: Record<string, string> = {
 
 export const caseStudyMeta: Record<string, CaseStudyMeta> = {
   "b2b-agency-scaling-846k": {
+    stats: [{ value: "$846,000", label: "Tracked revenue in 2025" }, { value: "235", label: "Clients closed" }, { value: "$3,600", label: "Average deal" }, { value: "$46,800", label: "November: 13 clients" }],
+    summary: "A service agency recorded $846,000 in 2025 from 235 closed clients at a $3,600 average deal, using Meta ads and a repeatable conversation, follow-up and close system. Even December brought 11 clients and $39,600 from 155 conversations. Recurring payments collected manually are not included, so the real total is higher.",
     title: "Agency Case Study: $846K and 235 Clients",
     h1: "Service Agency Case Study: $846,000 and 235 Clients Closed in 2025",
     description: "How a service agency closed 235 clients at a $3,600 average deal for $846,000 in 2025 using Meta ads, qualification and structured follow-up.",
   },
   "med-spa-marketing-agency-639k": {
+    stats: [{ value: "$639,000", label: "Sales in 2 months" }, { value: "178", label: "Clients closed" }, { value: "1,116", label: "Conversations still open" }, { value: "2 months", label: "Time frame" }],
+    summary: "A med spa marketing agency crossed $639,000 in sales in two months: 178 clients closed, with 1,116 conversations still open. The work started with the offer, then a funnel built around how med spa owners decide, then scaling on Meta.",
     title: "Med Spa Agency: $639K in Two Months",
     h1: "Med Spa Marketing Agency Case Study: $639,000 in Two Months",
     description: "A med spa marketing agency crossed $639,000 in two months with 1,116 conversations still open, using Meta ads, qualification and appointment setting.",
   },
   "high-ticket-coaching-203k": {
+    stats: [{ value: "$203,941", label: "Revenue in 11 days" }, { value: "1,566", label: "Low-ticket memberships" }, { value: "246", label: "One-time offers sold" }, { value: "35", label: "Mastermind clients ($89,000)" }],
+    summary: "A fitness coach generated $203,941 in 11 days with an ascension funnel: 1,566 low-ticket memberships ($86,967), 246 one-time offers ($27,974) and 35 mastermind clients ($89,000, $2,542 on average).",
     title: "Fitness Funnel: $203,941 in 11 Days",
     h1: "Fitness Coaching Funnel Case Study: $203,941 in 11 Days",
     description: "A fitness client turned a low-ticket membership funnel into $203,941 in 11 days: 1,566 memberships, 246 one-time offers and high-ticket upsells.",
   },
   "digital-media-agency-157k": {
+    stats: [{ value: "$157,184", label: "Total revenue" }, { value: "1,202", label: "Low-ticket offers sold" }, { value: "193", label: "Order bumps ($21,575)" }, { value: "28", label: "Mastermind enrollments ($68,292)" }],
+    summary: "A low-ticket offer funnel stacked $157,184: 1,202 low-ticket sales ($67,317), 193 order bumps ($21,575) and 28 mastermind enrollments ($68,292).",
     title: "LTO Funnel Case Study: $157,184 Revenue",
     h1: "Low-Ticket Offer Funnel Case Study: $157,184 in Stacked Revenue",
     description: "1,202 low-ticket offer sales, 193 order bumps and 28 mastermind enrollments stacked to $157,184 for an agency-training client.",
   },
   "executive-consulting-150k": {
+    stats: [{ value: "$150,348", label: "Revenue in 5 days" }, { value: "2,063", label: "Low-ticket memberships" }, { value: "183", label: "Bundles sold ($20,369)" }, { value: "30", label: "High-ticket DFY programs ($65,600)" }],
+    summary: "$150,348 in five days from three offers sold in sequence: 2,063 low-ticket memberships ($64,379), 183 plug-and-play bundles ($20,369) and 30 high-ticket done-for-you programs ($65,600).",
     title: "$150,348 in 5 Days: LTO to High-Ticket",
     h1: "$150,348 in 5 Days: Low-Ticket to High-Ticket Funnel Case Study",
     description: "2,063 low-ticket memberships, 183 bundle upsells and 30 high-ticket done-for-you programs produced $150,348 in five days.",
@@ -82,16 +96,22 @@ export const caseStudyMeta: Record<string, CaseStudyMeta> = {
     ],
   },
   "commercial-services-86k": {
+    stats: [{ value: "$86,275", label: "Revenue in 19 days" }, { value: "689", label: "Front-end buyers ($38,018)" }, { value: "101", label: "Upsell buyers ($11,807)" }, { value: "15", label: "High-ticket clients ($36,450)" }],
+    summary: "A so-called low-ticket offer generated $86,275 in 19 days: 689 front-end buyers ($38,018), 101 upsell buyers ($11,807) and 15 high-ticket done-for-you clients ($36,450).",
     title: "Low-Ticket Offer Case Study: $86,275",
     h1: "Low-Ticket Offer Case Study: $86,275 in 19 Days",
     description: "How a so-called low-ticket offer generated $86,275 in 19 days, and the upsell path that made the funnel profitable to scale.",
   },
   "agency-backend-continuity-86k": {
+    stats: [{ value: "$86K", label: "Revenue in 30 days" }, { value: "$29K", label: "Ad spend" }, { value: "810", label: "Paying members" }, { value: "$99/mo", label: "Offer price" }],
+    summary: "A simple $99/month offer turned $29K in Meta ad spend into $86K in revenue and 810 paying members in 30 days, without a sales team.",
     title: "$99/Month Offer: $86K and 810 Members",
     h1: "Continuity Offer Case Study: $86K Revenue and 810 Members in 30 Days",
     description: "$29K in Meta ad spend turned a $99/month offer into $86K in revenue and 810 paying members in 30 days, without a sales team.",
   },
   "strategic-consulting-85k": {
+    stats: [{ value: "$85K", label: "Previous month" }, { value: "$70K", label: "Month to date" }, { value: "$95K+", label: "Tracking toward" }, { value: "1 h 45 min", label: "Done-with-you session" }],
+    summary: "From a recorded 1 hour 45 minute done-with-you session with an agency client who did $85K the previous month, was at $70K in the current month and was tracking toward $95K+. The session covered retargeting for high-ticket acquisition, live in Ads Manager.",
     title: "Agency Client Case Study: $85K Month",
     h1: "Agency Client Case Study: An $85K Month, Tracking Toward $95K",
     description: "Inside a done-with-you retargeting session with an agency client doing $85K a month and tracking to $95K+, broken down live in Ads Manager.",
@@ -115,11 +135,15 @@ export const caseStudyMeta: Record<string, CaseStudyMeta> = {
     ],
   },
   "high-ticket-funnel-79k": {
+    stats: [{ value: "$79,070", label: "Revenue in 17 days" }, { value: "2.72", label: "ROAS" }, { value: "837", label: "Low-ticket sales" }, { value: "376", label: "High-ticket registrations" }],
+    summary: "$79,070 in 17 days at a 2.72 ROAS: cold traffic bought a low-ticket offer first (837 sales), then an upsell, then 376 buyers booked or registered for the high-ticket offer.",
     title: "$79,070 in 17 Days: Booking Funnel Case",
     h1: "$79,070 in 17 Days With a Low-Ticket-First Booking Funnel",
     description: "837 low-ticket sales and 376 high-ticket registrations produced $79,070 at 2.72 ROAS in 17 days from a low-ticket-first booking funnel.",
   },
   "b2b-technology-agency-71k": {
+    stats: [{ value: "$71,934", label: "Revenue in 24 days" }, { value: "320", label: "New customers" }, { value: "$96", label: "Average order value" }, { value: "2.78", label: "ROAS" }],
+    summary: "An AI automation SaaS did $71,934 in 24 days: 320 new customers at a $96 average order value (with upsells) and a 2.78 ROAS, after fixing the ideal customer profile, ad angles, segmentation and funnel.",
     title: "AI SaaS Case Study: $71,934 in 24 Days",
     h1: "AI SaaS Case Study: 320 Customers and $71,934 in 24 Days",
     description: "An AI calling and SMS SaaS added 320 customers and $71,934 in 24 days after fixing its ideal customer profile, ad angles and funnel.",
@@ -151,6 +175,8 @@ export const caseStudyMeta: Record<string, CaseStudyMeta> = {
     ],
   },
   "nyc-med-spa-rf-microneedling-74k": {
+    stats: [{ value: "$74,100", label: "Revenue" }, { value: "453", label: "Appointments booked ($22.93 each)" }, { value: "67%", label: "Show-up rate (303 showed)" }, { value: "247", label: "Paying clients ($42 each)" }],
+    summary: "A med spa with three New York clinics turned $10,387 in ad spend into $74,100: 453 RF microneedling appointments at $22.93 each, a 67% show rate (303 showed up) and 247 paying clients at $42 in ads per client.",
     title: "Med Spa Case Study: $74,100 From $10K Ads",
     h1: "Multi-Location Med Spa Case Study: $74,100 From $10,387 in Meta Ads",
     description: "A 3-clinic New York med spa booked 453 RF microneedling appointments at $22.93 each and closed 247 clients for $74,100 from $10,387 in ad spend.",
@@ -187,6 +213,8 @@ export const caseStudyMeta: Record<string, CaseStudyMeta> = {
     ],
   },
   "florida-hvac-65k-cash-collected": {
+    stats: [{ value: "$65,872", label: "Net cash collected" }, { value: "12.70", label: "ROAS" }, { value: "125", label: "Booked appointments ($45 each)" }, { value: "13", label: "New installations" }],
+    summary: "A Florida HVAC company spent $5,628 on ads for 125 booked appointments ($45 each), 60 connected calls (48% show), 45 offers and 13 new installations at $5,500 each: $71,500 collected, $65,872 net of ad spend, a 12.70 ROAS.",
     title: "HVAC Case Study: $65,872 Net Cash, 12.7 ROAS",
     h1: "Florida HVAC Case Study: $65,872 Net Cash Collected at 12.70 ROAS",
     description: "$5,628 in Meta ads booked 125 HVAC appointments and 13 new installations worth $71,500, for $65,872 net cash collected and a 12.70 ROAS.",
@@ -223,6 +251,8 @@ export const caseStudyMeta: Record<string, CaseStudyMeta> = {
     ],
   },
   "mva-personal-injury-leads-8810": {
+    stats: [{ value: "8,810", label: "MVA leads" }, { value: "$7.61", label: "Cost per lead" }, { value: "$67,013", label: "Ad spend" }, { value: "Jul 1 \u2013 Sep 19", label: "Campaign window, 2026" }],
+    summary: "For a pay-per-lead agency in the MVA space, $67,013.43 in Meta ad spend produced 8,810 leads at $7.61 each between July 1 and September 19, 2026, targeting accidents from the last 30 days.",
     title: "MVA Leads Case Study: 8,810 Leads at $7.61",
     h1: "Personal Injury (MVA) Case Study: 8,810 Leads at $7.61 Each",
     description: "A motor vehicle accident (MVA) lead campaign for a pay-per-lead agency produced 8,810 leads at $7.61 each from $67,013 in Meta ads in under 3 months.",

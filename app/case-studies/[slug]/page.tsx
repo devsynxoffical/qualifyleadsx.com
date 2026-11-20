@@ -10,7 +10,9 @@ import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { caseStudyMeta, caseStudyIds } from "@/lib/case-study-meta";
+import Image from "next/image";
 import { ShieldCheck, ExternalLink } from "lucide-react";
+import { BookingForm } from "@/components/layout/BookingForm";
 
 const topCaseStudySlugs: Record<string, string> = caseStudyIds;
 
@@ -101,23 +103,34 @@ export default async function IndividualCaseStudyPage({ params }: PageProps) {
   }
 
   const primarySlug = idToSlugMap[item.id] || item.id;
+  const meta = caseStudyMeta[primarySlug];
+  const h1 = meta?.h1 ?? `${item.bigNumber} Client Results Case Study`;
+  const summary =
+    meta?.summary ?? meta?.description ?? item.subtitle ?? item.title;
+  // Curated stats when available; otherwise the post's own big number only (the auto-extracted
+  // metric labels in the data file are not reliable enough to show as facts).
+  const stats = meta?.stats ?? [{ value: item.bigNumber, label: item.bigNumberLabel || "Headline result" }];
+  const poster = item.thumbnailSrc ?? item.mediaSrc;
+  const isVideo = item.type === "video" && item.mediaSrc.endsWith(".mp4");
+
+  const more = Object.entries(topCaseStudySlugs)
+    .filter(([s]) => s !== primarySlug)
+    .map(([s, id]) => ({ slug: s, item: caseStudiesData.find((c) => c.id === id), meta: caseStudyMeta[s] }))
+    .filter((x): x is { slug: string; item: CaseStudyItem; meta: (typeof caseStudyMeta)[string] } => Boolean(x.item && x.meta))
+    .slice(0, 6);
 
   const faqs = [
     {
-      q: `What was the primary acquisition bottleneck before scaling to ${item.bigNumber}?`,
-      a: "The client suffered from erratic deal flow, reliance on manual referrals, and poor speed-to-lead follow-up. Inbound prospects were going cold before sales discovery calls could be scheduled.",
+      q: "Where do the numbers in this case study come from?",
+      a: "They are the figures the client campaign reported at the time, shown in the screenshot or video on this page and published in the original post linked below. Nothing has been added or estimated.",
     },
     {
-      q: "What ad channel and funnel model drove these results?",
-      a: "We deployed targeted Meta (Facebook & Instagram) direct-response campaigns paired with a 12-minute VSL funnel, automated qualification filters, and dedicated appointment setters.",
+      q: "What did QualifiedLeadsX do for this client?",
+      a: summary,
     },
     {
-      q: "How fast did this client achieve positive cash return on ad spend?",
-      a: "The client generated cash-collected sales within the first 14 days of ad launch, maintaining positive ROAS throughout quarterly scaling.",
-    },
-    {
-      q: "Can this exact client acquisition system be replicated for our business?",
-      a: "Yes. If your high-ticket offer is priced between $3,000 and $25,000, our full-funnel media buying and setter infrastructure can be customized and deployed in under 10 days.",
+      q: "Can these results be replicated for my business?",
+      a: "Results depend on the offer, market, budget and follow-up, so no result is guaranteed. On a free strategy call we look at your offer and show you which parts of this system fit and what a realistic outcome looks like. Pricing is custom quoted.",
     },
   ];
 
@@ -127,30 +140,16 @@ export default async function IndividualCaseStudyPage({ params }: PageProps) {
       {
         "@type": "Article",
         "@id": `${site.url}/case-studies/${primarySlug}#article`,
-        headline: `${item.category} Case Study: Scaled to ${item.bigNumber}`,
-        description: item.description.slice(0, 180),
-        author: {
-          "@type": "Organization",
-          name: site.name,
-          url: site.url,
-        },
-        publisher: {
-          "@type": "Organization",
-          name: site.name,
-          url: site.url,
-        },
+        headline: h1,
+        description: summary.slice(0, 300),
+        image: `${site.url}${poster}`,
+        author: { "@type": "Organization", name: site.name, url: site.url },
+        publisher: { "@type": "Organization", name: site.name, url: site.url },
       },
       {
         "@type": "FAQPage",
         "@id": `${site.url}/case-studies/${primarySlug}#faq`,
-        mainEntity: faqs.map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: f.a,
-          },
-        })),
+        mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
       },
     ],
   };
@@ -163,271 +162,223 @@ export default async function IndividualCaseStudyPage({ params }: PageProps) {
         items={[
           { name: "Home", url: "/" },
           { name: "Case Studies", url: "/case-studies" },
-          { name: `${item.category} - ${item.bigNumber}`, url: `/case-studies/${primarySlug}` },
+          { name: meta?.title ?? `${item.bigNumber} case study`, url: `/case-studies/${primarySlug}` },
         ]}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <main className="bg-ink min-h-screen text-fog">
-        <section className="relative pt-20 pb-16 border-b border-line overflow-hidden">
-          <div className="absolute inset-0 bg-radial-glow opacity-60 pointer-events-none" />
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-lime text-xs font-mono tracking-widest uppercase">
-                {item.category} Case Study
+      <main className="min-h-screen bg-ink text-fog">
+        {/* Hero: result + media */}
+        <section className="relative overflow-hidden border-b border-line pb-16 pt-24 sm:pt-28">
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_50%_at_20%_0%,color-mix(in_oklab,var(--color-lime)_14%,transparent),transparent_70%)]" />
+          <div className="relative mx-auto grid max-w-6xl items-start gap-10 px-4 sm:px-6 lg:grid-cols-[1.15fr_1fr] lg:gap-14">
+            <div>
+              <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-2 text-xs text-dim">
+                <Link href="/" className="hover:text-lime">Home</Link>
+                <span>/</span>
+                <Link href="/case-studies" className="hover:text-lime">Case studies</Link>
+              </nav>
+              <span className="inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.2em] text-lime">
+                <ShieldCheck className="h-3.5 w-3.5" />
+                Published client result
               </span>
-              <span className="text-line text-xs font-mono">•</span>
-              <span className="text-fog text-xs font-mono">ID: {item.id}</span>
-            </div>
+              <h1 className="mt-5 text-balance text-3xl font-bold leading-[1.08] tracking-tight text-fog sm:text-4xl lg:text-5xl">{h1}</h1>
+              <PageByline path={`/case-studies/${slug}`} className="mt-5" />
+              <p className="short-answer mt-6 text-lg leading-relaxed text-mist">{summary}</p>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-paper mt-2 mb-6">
-              {caseStudyMeta[primarySlug]?.h1 ?? `${item.bigNumber} Client Results Case Study`}
-            </h1>
-            <PageByline path={`/case-studies/${slug}`} className="mb-6" />
-
-            {/* AEO Direct Answer */}
-            <div className="p-5 rounded-xl border border-lime/30 bg-lime/[0.04] mb-8">
-              <span className="text-xs font-mono text-lime uppercase tracking-wider block mb-1">
-                Quick answer
-              </span>
-              <p className="text-base sm:text-lg text-paper leading-relaxed">
-                In this verified case study, QualifiedLeadsX scaled a <strong>{item.category} business to {item.bigNumber}</strong> in tracked revenue. By implementing direct-response Meta Ads, a friction-based VSL qualification funnel, and sub-5-minute appointment setters, the business maintained consistent cash ROAS with over 80% appointment attendance.
-              </p>
-            </div>
-
-            {/* Key Metrics Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
-              <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-lime font-mono">{item.bigNumber}</div>
-                <div className="text-xs text-fog mt-1">{item.bigNumberLabel || "Verified Revenue"}</div>
-              </div>
-              <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-paper font-mono">
-                  {item.metrics?.[0]?.value || "178+"}
-                </div>
-                <div className="text-xs text-fog mt-1">Closed Clients / Deals</div>
-              </div>
-              <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-lime font-mono">82%</div>
-                <div className="text-xs text-fog mt-1">Calendar Show-Up Rate</div>
-              </div>
-              <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-paper font-mono">&lt;5 Mins</div>
-                <div className="text-xs text-fog mt-1">Speed-to-Lead Triage</div>
-              </div>
-            </div>
-
-            <div className="flex flex-wrap gap-4 mt-8">
-              <Link
-                href="/book-your-call#book"
-                className="bg-lime text-ink font-semibold px-6 py-3 rounded-lg hover:bg-lime/90 transition"
-              >
-                Replicate These Results
-              </Link>
-              <Link
-                href="/case-studies"
-                className="border border-line hover:border-paper/40 px-6 py-3 rounded-lg text-paper transition"
-              >
-                ← Back to All 125+ Case Studies
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* Narrative & Media */}
-        <section className="py-16 border-b border-line">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="md:col-span-2 space-y-6">
-                <div>
-                  <h2 className="text-2xl font-bold text-paper mb-4">Detailed Case Breakdown</h2>
-                  <div className="text-fog text-sm sm:text-base leading-relaxed whitespace-pre-line bg-paper/[0.02] border border-line rounded-xl p-6">
-                    {item.description}
-                  </div>
-                </div>
-
-                {caseStudyMeta[primarySlug]?.analysis?.map((sec) => (
-                  <div key={sec.heading}>
-                    <h2 className="text-2xl font-bold text-paper mb-4">{sec.heading}</h2>
-                    <div className="space-y-4 text-fog text-sm sm:text-base leading-relaxed">
-                      {sec.body.map((para, i) => (
-                        <p key={i}>{richText(para)}</p>
-                      ))}
-                      {sec.bullets && (
-                        <ul className="list-disc space-y-1.5 pl-5">
-                          {sec.bullets.map((b) => (
-                            <li key={b}>{b}</li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
+              <div className="mt-8 grid grid-cols-2 gap-3">
+                {stats.map((st) => (
+                  <div key={st.label} className="rounded-2xl border border-line bg-panel/70 p-4">
+                    <div className="font-mono text-xl font-bold text-lime sm:text-2xl">{st.value}</div>
+                    <div className="mt-1 text-xs leading-snug text-mist">{st.label}</div>
                   </div>
                 ))}
-
-                {caseStudyMeta[primarySlug]?.related && (
-                  <div>
-                    <h2 className="text-xl font-bold text-paper mb-3">Related services</h2>
-                    <ul className="flex flex-wrap gap-3">
-                      {caseStudyMeta[primarySlug]!.related!.map((r) => (
-                        <li key={r.href}>
-                          <Link href={r.href} className="inline-block rounded-full border border-line px-4 py-2 text-sm text-fog hover:border-lime hover:text-lime">
-                            {r.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-
-                {item.tags && item.tags.length > 0 && (
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    {item.tags.map((tag, idx) => (
-                      <span
-                        key={idx}
-                        className="text-xs font-mono px-3 py-1 rounded-full border border-line bg-paper/5 text-fog"
-                      >
-                        #{tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
               </div>
 
-              {/* Sidebar Proof Card */}
-              <div>
-                <div className="border border-line rounded-xl p-6 bg-paper/[0.02] sticky top-24">
-                  <h3 className="text-paper font-semibold mb-3 flex items-center gap-2">
-                    <ShieldCheck className="w-5 h-5 text-lime" />
-                    Verified Proof Asset
-                  </h3>
-                  <p className="text-xs text-fog mb-4">
-                    Media asset captured directly from client live dashboard and ad accounts.
-                  </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link href="#get-plan" className="rounded-full bg-lime px-6 py-3 text-sm font-bold text-ink transition hover:shadow-[0_0_40px_-8px_var(--color-lime)]">
+                  Get a plan like this for my business
+                </Link>
+                <Link href="/case-studies" className="rounded-full border border-line px-6 py-3 text-sm text-fog transition hover:border-lime/50">
+                  ← All case studies
+                </Link>
+              </div>
+            </div>
 
-                  <div className="border border-line rounded-lg overflow-hidden bg-black/40 mb-4 p-4 text-center">
-                    <span className="text-xs font-mono text-lime block mb-1">
-                      {item.type === "video" ? "VIDEO PROOF" : "DASHBOARD SCREENSHOT"}
-                    </span>
-                    <p className="text-sm text-paper font-medium mb-3">{item.subtitle}</p>
-                    {item.url && (
-                      <a
-                        href={item.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-xs text-lime hover:underline"
-                      >
-                        View Original Source <ExternalLink className="w-3 h-3" />
-                      </a>
+            <div className="lg:sticky lg:top-24">
+              <div className="overflow-hidden rounded-3xl border border-line bg-black shadow-[0_30px_80px_-30px_rgba(0,0,0,0.9)]">
+                {isVideo ? (
+                  <video
+                    src={item.mediaSrc}
+                    poster={poster}
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="mx-auto max-h-[78vh] w-full bg-black object-contain"
+                  />
+                ) : (
+                  <Image
+                    src={item.mediaSrc}
+                    alt={`Screenshot of the published result: ${h1}`}
+                    width={1200}
+                    height={1400}
+                    sizes="(max-width: 1024px) 100vw, 45vw"
+                    className="mx-auto h-auto max-h-[78vh] w-full object-contain"
+                    priority
+                  />
+                )}
+              </div>
+              <div className="mt-3 flex items-center justify-between gap-3 text-xs text-mist">
+                <span>{isVideo ? "Video breakdown from the client campaign" : "Screenshot from the client campaign"}</span>
+                {item.url && (
+                  <a href={item.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-lime hover:underline">
+                    Original post <ExternalLink className="h-3 w-3" />
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Breakdown */}
+        <section className="border-b border-line py-16">
+          <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.4fr_1fr]">
+            <div className="space-y-10">
+              {meta?.analysis?.map((sec) => (
+                <div key={sec.heading}>
+                  <h2 className="text-2xl font-bold text-fog">{sec.heading}</h2>
+                  <div className="mt-4 space-y-4 leading-relaxed text-mist">
+                    {sec.body.map((para, i) => (
+                      <p key={i}>{richText(para)}</p>
+                    ))}
+                    {sec.bullets && (
+                      <ul className="space-y-2">
+                        {sec.bullets.map((b) => (
+                          <li key={b} className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-lime" />{b}</li>
+                        ))}
+                      </ul>
                     )}
                   </div>
+                </div>
+              ))}
+              <div>
+                <h2 className="text-2xl font-bold text-fog">The client result, in the original post</h2>
+                <div className="mt-4 whitespace-pre-line rounded-2xl border border-line bg-panel p-6 text-sm leading-relaxed text-mist sm:text-base">
+                  {item.description.replace(/(^|\s)#[\p{L}\p{N}_]+/gu, "").replace(/\n{3,}/g, "\n\n").trim()}
+                </div>
+              </div>
+            </div>
+            <aside className="space-y-6">
+              <div className="rounded-3xl border border-lime/30 bg-lime/[0.05] p-6">
+                <h2 className="text-lg font-bold text-fog">What this case shows</h2>
+                <ul className="mt-4 space-y-3 text-sm text-mist">
+                  {stats.map((st) => (
+                    <li key={st.label} className="flex items-baseline justify-between gap-4 border-b border-line/60 pb-2 last:border-0">
+                      <span>{st.label}</span>
+                      <span className="shrink-0 font-mono font-bold text-fog">{st.value}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {meta?.related && (
+                <div className="rounded-3xl border border-line bg-panel p-6">
+                  <h2 className="text-lg font-bold text-fog">Related services</h2>
+                  <ul className="mt-4 flex flex-wrap gap-2">
+                    {meta.related.map((r) => (
+                      <li key={r.href}>
+                        <Link href={r.href} className="inline-block rounded-full border border-line px-4 py-2 text-sm text-fog hover:border-lime hover:text-lime">{r.label}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              <div className="rounded-3xl border border-line bg-panel p-6">
+                <h2 className="text-lg font-bold text-fog">Run the numbers for your offer</h2>
+                <ul className="mt-4 space-y-2 text-sm">
+                  <li><Link href="/tools/roas-calculator" className="text-mist hover:text-lime">ROAS & break-even calculator →</Link></li>
+                  <li><Link href="/tools/cost-per-booked-call-calculator" className="text-mist hover:text-lime">Cost per booked call calculator →</Link></li>
+                  <li><Link href="/benchmarks/cost-per-lead-by-industry" className="text-mist hover:text-lime">Cost per lead by industry →</Link></li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </section>
 
-                  <div className="space-y-3 pt-3 border-t border-line text-xs">
-                    <div className="flex justify-between">
-                      <span className="text-fog">Client Category:</span>
-                      <span className="text-paper font-semibold">{item.category}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-fog">Revenue Impact:</span>
-                      <span className="text-lime font-mono font-bold">{item.bigNumber}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-fog">Execution Model:</span>
-                      <span className="text-paper">Done-For-You (DFY)</span>
-                    </div>
+        {/* More case studies */}
+        <section className="border-b border-line py-16">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-lime">More results</p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-fog">More case study breakdowns</h2>
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {more.map(({ slug: s, item: it, meta: m }) => (
+                <Link key={s} href={`/case-studies/${s}`} className="group overflow-hidden rounded-3xl border border-line bg-panel transition-colors hover:border-lime/40">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-ink">
+                    <Image
+                      src={it.thumbnailSrc ?? it.mediaSrc}
+                      alt={m.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
+                    />
+                    <span className="absolute inset-0 bg-gradient-to-t from-ink via-ink/10 to-transparent" />
+                    {it.type === "video" && (
+                      <span className="absolute left-3 top-3 rounded-full border border-line bg-ink/70 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-lime backdrop-blur">Video</span>
+                    )}
+                    {m.stats?.[0] && (
+                      <span className="absolute bottom-3 left-4 font-mono text-2xl font-bold text-lime">{m.stats[0].value}</span>
+                    )}
                   </div>
-
-                  <Link
-                    href="/book-your-call#book"
-                    className="w-full mt-6 block text-center bg-lime text-ink font-semibold py-2.5 rounded-lg hover:bg-lime/90 transition text-sm"
-                  >
-                    Get A Custom Growth Plan
-                  </Link>
-                </div>
-              </div>
+                  <div className="p-5">
+                    <h3 className="font-semibold leading-snug text-fog group-hover:text-lime">{m.title}</h3>
+                    <p className="mt-2 line-clamp-2 text-sm text-mist">{m.description}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <div className="mt-8 text-center">
+              <Link href="/case-studies" className="inline-flex rounded-full border border-line px-6 py-3 text-sm text-fog hover:border-lime/50">See all case studies →</Link>
             </div>
           </div>
         </section>
 
-        {/* Related Acquisition Systems & Growth Blueprints */}
-        <section className="py-16 border-t border-line bg-panel/30">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="text-center max-w-3xl mx-auto mb-10">
-              <span className="text-xs font-mono uppercase tracking-[0.2em] text-lime font-bold">
-                REPLICATE THESE RESULTS
-              </span>
-              <h2 className="mt-2 text-2xl sm:text-3xl font-bold font-heading text-white">
-                Systems & Benchmarks Used in This Case
-              </h2>
-            </div>
-
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="rounded-xl border border-line bg-panel p-5">
-                <span className="text-xs font-mono font-bold text-lime block mb-2">SERVICES</span>
-                <h3 className="text-sm font-bold text-white mb-2">Core Funnel Delivery</h3>
-                <ul className="space-y-1.5 text-xs font-mono text-mist">
-                  <li><Link href="/meta-ads-agency" className="hover:text-lime block">→ Meta Ads Management</Link></li>
-                  <li><Link href="/appointment-setting" className="hover:text-lime block">→ Appointment Setting</Link></li>
-                  <li><Link href="/vsl-funnels" className="hover:text-lime block">→ VSL Funnel Architecture</Link></li>
-                </ul>
-              </div>
-
-              <div className="rounded-xl border border-line bg-panel p-5">
-                <span className="text-xs font-mono font-bold text-lime block mb-2">BENCHMARKS</span>
-                <h3 className="text-sm font-bold text-white mb-2">Empirical Datasets</h3>
-                <ul className="space-y-1.5 text-xs font-mono text-mist">
-                  <li><Link href="/benchmarks/cost-per-lead-by-industry" className="hover:text-lime block">→ Cost Per Lead Data</Link></li>
-                  <li><Link href="/benchmarks/show-rate" className="hover:text-lime block">→ Appointment Show Rates</Link></li>
-                  <li><Link href="/benchmarks/close-rate" className="hover:text-lime block">→ High-Ticket Close Rates</Link></li>
-                </ul>
-              </div>
-
-              <div className="rounded-xl border border-line bg-panel p-5">
-                <span className="text-xs font-mono font-bold text-lime block mb-2">CALCULATORS</span>
-                <h3 className="text-sm font-bold text-white mb-2">Model Your Offer</h3>
-                <ul className="space-y-1.5 text-xs font-mono text-mist">
-                  <li><Link href="/tools/cac-calculator" className="hover:text-lime block">→ CAC & Payback Tool</Link></li>
-                  <li><Link href="/tools/roas-calculator" className="hover:text-lime block">→ ROAS & Break-Even</Link></li>
-                  <li><Link href="/tools/show-rate-calculator" className="hover:text-lime block">→ Show Rate Calculator</Link></li>
-                </ul>
-              </div>
-
-              <div className="rounded-xl border border-line bg-panel p-5">
-                <span className="text-xs font-mono font-bold text-lime block mb-2">EXPLORE MORE</span>
-                <h3 className="text-sm font-bold text-white mb-2">Proof Archive</h3>
-                <ul className="space-y-1.5 text-xs font-mono text-mist">
-                  <li><Link href="/case-studies" className="hover:text-lime block">→ All 125+ Case Studies</Link></li>
-                  <li><Link href="/for" className="hover:text-lime block">→ Lead Gen by Industry</Link></li>
-                  <li><Link href="/blog" className="hover:text-lime block">→ Growth Guides & Playbooks</Link></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQs */}
-        <section className="py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-paper mb-8 text-center">
-              Frequently Asked Questions About This Case
-            </h2>
-            <div className="space-y-6">
+        {/* FAQ */}
+        <section className="border-b border-line py-16">
+          <div className="mx-auto max-w-3xl px-4 sm:px-6">
+            <h2 className="text-2xl font-bold text-fog sm:text-3xl">Questions about this case study</h2>
+            <div className="mt-8 space-y-3">
               {faqs.map((f, i) => (
-                <div key={i} className="border border-line rounded-xl p-6 bg-paper/[0.02]">
-                  <h3 className="text-lg font-semibold text-paper mb-2">{f.q}</h3>
-                  <p className="text-fog text-sm sm:text-base leading-relaxed">{f.a}</p>
-                </div>
+                <details key={f.q} open={i === 0} className="group rounded-2xl border border-line bg-panel px-5 py-1 open:border-lime/30">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-semibold text-fog [&::-webkit-details-marker]:hidden">
+                    <h3 className="text-base text-fog">{f.q}</h3>
+                    <span className="text-mist transition-transform group-open:rotate-45">+</span>
+                  </summary>
+                  <p className="pb-5 text-sm leading-relaxed text-mist">{f.a}</p>
+                </details>
               ))}
             </div>
           </div>
         </section>
 
-        <CTABanner />
+        {/* Lead form */}
+        <section id="get-plan" className="scroll-mt-24 py-16 sm:py-20">
+          <div className="mx-auto grid max-w-6xl items-start gap-10 px-4 sm:px-6 lg:grid-cols-2">
+            <div>
+              <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-lime">Your turn</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-fog sm:text-4xl">Want a result like this?</h2>
+              <p className="mt-4 text-mist">Tell us about your offer. On a free 30-minute strategy call we show you which parts of this system fit your business and what a realistic outcome looks like for your market and budget.</p>
+              <ul className="mt-6 space-y-2 text-sm text-mist">
+                <li>• Ads, funnel, follow-up and booking run in your own accounts</li>
+                <li>• Every number reported, from cost per lead to cost per client</li>
+                <li>• Custom quoted, no long-term lock-in</li>
+              </ul>
+            </div>
+            <BookingForm source={`/case-studies/${primarySlug}`} />
+          </div>
+        </section>
+
+        <CTABanner compact />
       </main>
       <Footer />
     </>
   );
 }
-

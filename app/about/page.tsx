@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 
 const numbers = [
   { value: "$50M+", label: "Managed in Meta Ads", sub: "Across Facebook & Instagram" },
-  { value: "125+", label: "Case Studies Documented", sub: "69 live video breakdowns" },
+  { value: "125+", label: "Case Studies Documented", sub: "77 live video breakdowns" },
   { value: "30+", label: "Niches Scaled", sub: "Coaches, agencies & B2B" },
   { value: "90-Day", label: "Written Guarantee", sub: "Milestone-backed performance" },
 ];
@@ -99,7 +99,7 @@ const aboutFaqs = [
   },
   {
     q: "Where are QualifiedLeadsX case studies and client results documented?",
-    a: "QualifiedLeadsX maintains a library of over 125 documented client case studies, including 69 full-length live screen-recorded breakdowns inside Meta Ads Manager and Stripe dashboards. Notable results include generating $846,000 for a B2B marketing agency (235 clients closed) and scaling a MedSpa agency to $639,000 in 60 days.",
+    a: "QualifiedLeadsX maintains a library of over 125 documented client case studies, including 77 video breakdowns inside Meta Ads Manager and Stripe dashboards. Notable results include generating $846,000 for a B2B marketing agency (235 clients closed) and scaling a MedSpa agency to $639,000 in 60 days.",
   },
   {
     q: "What makes QualifiedLeadsX™ different from a traditional marketing agency?",

@@ -219,7 +219,7 @@ export function FunnelProof() {
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
           <p className="mt-3 text-xs font-mono text-dim">
-            Includes 69 live video breakdowns, Meta Ads account screenshots & verified breakdowns across 30+ niches
+            Includes 77 live video breakdowns, Meta Ads account screenshots & verified breakdowns across 30+ niches
           </p>
         </div>
       </Reveal>

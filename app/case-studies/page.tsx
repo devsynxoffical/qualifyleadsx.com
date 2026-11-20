@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 const caseStudiesStats = [
   { value: "$150M+", label: "Client Revenue Scaled", icon: TrendingUp },
   { value: "125+", label: "Documented Case Studies", icon: ShieldCheck },
-  { value: "69", label: "Live Video Breakdowns", icon: Video },
+  { value: "77", label: "Live Video Breakdowns", icon: Video },
   { value: "30+", label: "Industries & Niches Proven", icon: Users },
 ];
 

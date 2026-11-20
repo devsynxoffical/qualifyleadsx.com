@@ -36,6 +36,265 @@ export const caseStudiesCategories = [
 ] as const;
 
 export const caseStudiesData: CaseStudyItem[] = [
+  // 20 Nov 2026: new case studies added from owner-supplied Instagram reels
+  {
+    "id": "DfBrxnMy4Yf",
+    "type": "video",
+    "title": "15,538 Home Service Leads in 25 Days for a Pay-Per-Lead Agency at $10.64",
+    "subtitle": "🇺🇸 Home service leads across the US",
+    "category": "Home Services & Roofing",
+    "description": "🚨 How We Generated 15,538 Leads in 25 Days for a Pay-Per-Lead Agency! 💰 $165K+ in Meta Ad Spend🎯 Just $10.64 per lead\n\n🇺🇸 Home service leads across the US\n\nOur strategy went beyond running ads:\n\n✅ The right offer\n✅ Creatives that filter out the wrong prospects\n✅ Qualification around budget, timeline & decision-maker\n✅ Fast follow-up to maximize lead value\n\nBecause for a pay-per-lead agency, it’s not just about generating leads. It’s about generating leads vendors actually want to buy.\n\nFull breakdown dropping on YouTube tomorrow! 🚀",
+    "bigNumber": "15,538",
+    "bigNumberLabel": "Leads Generated",
+    "impactScore": 310760.0,
+    "mediaSrc": "/case-studies/videos/DfBrxnMy4Yf.mp4",
+    "thumbnailSrc": "/case-studies/videos/DfBrxnMy4Yf.jpg",
+    "mediaFiles": [
+      "/case-studies/videos/DfBrxnMy4Yf.mp4"
+    ],
+    "metrics": [
+      {
+        "label": "Ad Spend / Revenue",
+        "value": "$165K+"
+      },
+      {
+        "label": "Leads / Volume",
+        "value": "15,538"
+      },
+      {
+        "label": "Cost Per Lead",
+        "value": "$10.64"
+      }
+    ],
+    "tags": [
+      "qualifiedleadsx"
+    ],
+    "url": "https://www.instagram.com/reel/DfBrxnMy4Yf/"
+  },
+  {
+    "id": "DeMdVqDSMLy",
+    "type": "video",
+    "title": "5-Day Hackathon: 34,397 Enquiries at $7.82 Each From $269,019 in Meta Ads",
+    "subtitle": "Now we’ve added 7,228 more enquiries.",
+    "category": "Coaching & Summits",
+    "description": "Just 3 days ago, we were at $206K spent and 27,169 enquiries. \n\nNow we’ve added 7,228 more enquiries. \n\nYou know what’s crazy \nabout scaling a 5-day hackathon?\n\n$269,019 spent.\n34,397 enquiries.\n$7.82 per action.\n\nAnd we’re still scaling. \n\nRunning a webinar, summit, mastermind, or planning one soon? \n\nWhat are you doing to fill the seats?\n\n#Webinars #Summits #Masterminds #WebinarMarketing #EventMarketing #LeadGeneration #FacebookAds #MetaAds #PaidAds #FacebookAdvertising #MetaAdvertising #LeadGenerationStrategy #EventLeads #QualifiedLeads #AppointmentSetting #DigitalMarketing #OnlineEvents #HighTicketMarketing #ClientAcquisition #PaidTraffic #MarketingStrategy #ScaleYourBusiness #BusinessGrowth #OnlineBusiness #entrepreneurship101",
+    "bigNumber": "34,397",
+    "bigNumberLabel": "Enquiries",
+    "impactScore": 687940.0,
+    "mediaSrc": "/case-studies/videos/DeMdVqDSMLy.mp4",
+    "thumbnailSrc": "/case-studies/videos/DeMdVqDSMLy.jpg",
+    "mediaFiles": [
+      "/case-studies/videos/DeMdVqDSMLy.mp4"
+    ],
+    "metrics": [
+      {
+        "label": "Ad Spend / Revenue",
+        "value": "$269,019"
+      },
+      {
+        "label": "Leads / Volume",
+        "value": "34,397"
+      },
+      {
+        "label": "Cost Per Action",
+        "value": "$7.82"
+      }
+    ],
+    "tags": [
+      "Webinars",
+      "Summits",
+      "Masterminds",
+      "WebinarMarketing",
+      "EventMarketing"
+    ],
+    "url": "https://www.instagram.com/reel/DeMdVqDSMLy/"
+  },
+  {
+    "id": "DeCJICayIm1",
+    "type": "video",
+    "title": "Scaling a 5-Day Hackathon: 27,169 Enquiries at $7.59 From $206,177",
+    "subtitle": "But 40+ speakers will be there, and we’re working on filling both the offline auditorium and online seats.",
+    "category": "Coaching & Summits",
+    "description": "28 DAYS LEFT. 🚨 We’re scaling a 5-day hackathon for a major name in the industry. I can’t reveal the name yet.\n\nBut 40+ speakers will be there, and we’re working on filling both the offline auditorium and online seats.\n\nCurrent numbers:\n\n$206,177.05 SPENT\n27,169 Enquiries\n$7.59 PER ACTION\n\nAnd this is not the final number.\n\nThey have a huge sales team handling and entertaining these enquiries, so now we’ll see how far we can take this over the next 28 days.\n\nLet’s see what numbers we achieve by November 1.\n\nThe countdown is on. 🚀\n\n#AgencyOwners #AgencyGrowth #LeadGeneration #MetaAds #FacebookAds #PaidAds #PerformanceMarketing #ClientAcquisition #DigitalMarketing #AgencyMarketing #Hackathon #EventMarketing #EventGrowth #LeadGen #MarketingAgency #ScalingBusiness #BusinessGrowth #Entrepreneurship #MarketingStrategy #metaadvertising",
+    "bigNumber": "27,169",
+    "bigNumberLabel": "Enquiries",
+    "impactScore": 543380.0,
+    "mediaSrc": "/case-studies/videos/DeCJICayIm1.mp4",
+    "thumbnailSrc": "/case-studies/videos/DeCJICayIm1.jpg",
+    "mediaFiles": [
+      "/case-studies/videos/DeCJICayIm1.mp4"
+    ],
+    "metrics": [
+      {
+        "label": "Ad Spend / Revenue",
+        "value": "$206,177"
+      },
+      {
+        "label": "Leads / Volume",
+        "value": "27,169"
+      },
+      {
+        "label": "Cost Per Action",
+        "value": "$7.59"
+      }
+    ],
+    "tags": [
+      "AgencyOwners",
+      "AgencyGrowth",
+      "LeadGeneration",
+      "MetaAds",
+      "FacebookAds"
+    ],
+    "url": "https://www.instagram.com/reel/DeCJICayIm1/"
+  },
+  {
+    "id": "DeObqYNSuH2",
+    "type": "video",
+    "title": "353 Meta OTP-Verified Solar Leads in 5 Days at $10.32 (California & Texas)",
+    "subtitle": "We launched from scratch on Oct 2nd for a solar client serving California & Texas.",
+    "category": "Solar & Energy",
+    "description": "353 Meta OTP-verified solar leads in 5 days. \n\nWe launched from scratch on Oct 2nd for a solar client serving California & Texas.\n\n$3,642.68 spent → 353 verified leads → $10.32/lead\n\nThe interesting part?\n\nI’ve documented the exact campaign structure behind this how I’d structure the campaigns, targeting, ad sets and testing for solar.\n\nI put it together as a step-by-step guide.\n\nComment “SOLAR” and I’ll send it over.\n\n#SolarMarketing #SolarLeads #SolarAds #SolarLeadGeneration #SolarMarketingAgency #SolarSales #SolarCompany #SolarBusiness #SolarLeadsGeneration #SolarAdvertising #SolarIndustry #SolarInstallers #SolarEnergy #SolarPanels #RenewableEnergy #MetaAds #FacebookAds #LeadGeneration #QualifiedLeads #LeadGenAgency",
+    "bigNumber": "353",
+    "bigNumberLabel": "Verified Leads",
+    "impactScore": 7060.0,
+    "mediaSrc": "/case-studies/videos/DeObqYNSuH2.mp4",
+    "thumbnailSrc": "/case-studies/videos/DeObqYNSuH2.jpg",
+    "mediaFiles": [
+      "/case-studies/videos/DeObqYNSuH2.mp4"
+    ],
+    "metrics": [
+      {
+        "label": "Ad Spend / Revenue",
+        "value": "$3,642.68"
+      },
+      {
+        "label": "Leads / Volume",
+        "value": "353"
+      },
+      {
+        "label": "Cost Per Lead",
+        "value": "$10.32"
+      }
+    ],
+    "tags": [
+      "SolarMarketing",
+      "SolarLeads",
+      "SolarAds",
+      "SolarLeadGeneration",
+      "SolarMarketingAgency"
+    ],
+    "url": "https://www.instagram.com/reel/DeObqYNSuH2/"
+  },
+  {
+    "id": "Dfrv-GDSHhw",
+    "type": "video",
+    "title": "Credit Repair: 196 Qualified Leads in 11 Days at $6.07 From a Fresh Ad Account",
+    "subtitle": "But here's what makes this even crazier…",
+    "category": "Insurance & Finance",
+    "description": "🚨 We spent $1,188.81 on Meta Ads for a Credit Repair client and generated 196 qualified leads in just 11 days at $6.07 per lead.\n\nBut here's what makes this even crazier…\n\n🔥 A COMPLETELY FRESH AD ACCOUNT. ZERO HISTORICAL DATA.\n\nNo previous account learnings. No accumulated pixel data. Starting from absolute scratch.\n\nWant to see how we achieved this?\n\nIf you run a Credit Repair business and are struggling with lead generation, DM me and we'll show you the system behind this client success. 🚀\n\n#CreditRepair #CreditRepairLeads #CreditRepairMarketing #MetaAds #FacebookAds #LeadGeneration #CreditRepairBusiness #CreditRepairCompany #MetaAdsCaseStudy #FacebookAdsStrategy #QualifiedLeads #ClientAcquisition #DigitalMarketing",
+    "bigNumber": "196",
+    "bigNumberLabel": "Qualified Leads",
+    "impactScore": 3920.0,
+    "mediaSrc": "/case-studies/videos/Dfrv-GDSHhw.mp4",
+    "thumbnailSrc": "/case-studies/videos/Dfrv-GDSHhw.jpg",
+    "mediaFiles": [
+      "/case-studies/videos/Dfrv-GDSHhw.mp4"
+    ],
+    "metrics": [
+      {
+        "label": "Ad Spend / Revenue",
+        "value": "$1,188.81"
+      },
+      {
+        "label": "Leads / Volume",
+        "value": "196"
+      },
+      {
+        "label": "Cost Per Lead",
+        "value": "$6.07"
+      }
+    ],
+    "tags": [
+      "CreditRepair",
+      "CreditRepairLeads",
+      "CreditRepairMarketing",
+      "MetaAds",
+      "FacebookAds"
+    ],
+    "url": "https://www.instagram.com/reel/Dfrv-GDSHhw/"
+  },
+  {
+    "id": "DeJ4e7Wy7g2",
+    "type": "video",
+    "title": "Roofing Company Replaces $60–$70 Marketplace Leads: 101 Leads at $8.95",
+    "subtitle": "He was paying around $60-$70 per lead, and the bigger problem?",
+    "category": "Home Services & Roofing",
+    "description": "This roofing company was fed up with buying leads from Angie's..\n\nHe was paying around $60-$70 per lead, and the bigger problem?\n\nThe lead quality was poor.\n\nHe ended up wasting roughly $4,000 on leads that simply weren’t producing the kind of opportunities he was looking for.\n\nThat’s when one of our existing clients referred him to us.\n\nWe started completely from scratch.\n\nNo existing Meta campaign.\nNo previous data to work with.\nNo established audience.\n\nJust a roofing company that needed a better way to generate its own leads.\n\nAnd here’s what happened between September 30 – October 5:\n\n🔥 $903.54 Ad Spend\n🔥 101 Leads Generated\n🔥 $8.95 Cost Per Lead\n🔥 2.42% CTR\n\nThink about the difference.\n\nInstead of continuing to spend $60+ on marketplace leads that may be shared with other contractors, he's now generating leads directly through his own campaign.\n\nHe owns the leads.\nHe controls the follow-up.\nHe controls the customer relationship.\n\nAnd this is only the beginning.\n\nWe're now focused on improving lead quality, identifying the strongest audiences and offers, and scaling what’s working.\n\nThis is exactly why I prefer building lead generation systems that businesses actually own rather than relying entirely on third-party lead marketplaces.\n\nHow much are you currently spending per lead through Angie's, HomeAdvisor, or other lead marketplaces and are you happy with the quality you're getting?\n\n#Roofing #RoofingLeads #RoofingMarketing #RoofingContractor #HomeServices #LeadGeneration #FacebookAds #MetaAds #LeadGen #DigitalMarketing #ContractorMarketing #HomeImprovement #FloridaRoofing #RoofingBusiness #marketingforcontractors",
+    "bigNumber": "101",
+    "bigNumberLabel": "Leads Generated",
+    "impactScore": 2020.0,
+    "mediaSrc": "/case-studies/videos/DeJ4e7Wy7g2.mp4",
+    "thumbnailSrc": "/case-studies/videos/DeJ4e7Wy7g2.jpg",
+    "mediaFiles": [
+      "/case-studies/videos/DeJ4e7Wy7g2.mp4"
+    ],
+    "metrics": [
+      {
+        "label": "Ad Spend / Revenue",
+        "value": "$903.54"
+      },
+      {
+        "label": "Leads / Volume",
+        "value": "101"
+      },
+      {
+        "label": "Cost Per Lead",
+        "value": "$8.95"
+      }
+    ],
+    "tags": [
+      "Roofing",
+      "RoofingLeads",
+      "RoofingMarketing",
+      "RoofingContractor",
+      "HomeServices"
+    ],
+    "url": "https://www.instagram.com/reel/DeJ4e7Wy7g2/"
+  },
+  {
+    "id": "DfuDbu2S7qc",
+    "type": "video",
+    "title": "MVA Agency Owner: Two 1.5-Hour Done-With-You Sessions on Targeting and Creative",
+    "subtitle": "After 12+ years in advertising and $50M+ in Meta ad spend managed, one thing I love most is helping agency owners, media buyers and service providers unlock what's actually possible with advertising.",
+    "category": "Legal & MVA",
+    "description": "🔥 If You're in the Law Space or Running an MVA Agency, You NEED to Watch This.\n\nAfter 12+ years in advertising and $50M+ in Meta ad spend managed, one thing I love most is helping agency owners, media buyers and service providers unlock what's actually possible with advertising.\n\nRecently, we conducted two separate 1.5-hour deep-dive sessions with an MVA agency owner.\n\nDay 1: Audience Segmentation & Targeting\nDay 2: Ad Copy Strategy & Creative Intelligence\n\nWe broke down real campaign data and how our clients are generating cases across car accidents, truck accidents, motorcycle accidents, hit-and-runs, and more.\n\nAnd his feedback after these sessions? Incredible.\n\nHe shared how these were strategies he'd been thinking about for over a year and searching for the right direction for months.\n\nHere's a glimpse of both sessions and his genuine reaction. 🚀\n\nThis is just the beginning. So much more is ahead.\n\nIf you're running an MVA agency, what's the biggest challenge you're facing with generating quality accident cases right now?\n\n#MVA #MVAAttorneys #PersonalInjuryMarketing #PersonalInjuryLaw #LawFirmMarketing #AttorneyMarketing #LegalMarketing #MetaAds #FacebookAds #LeadGeneration #AgencyGrowth #AudienceSegmentation #AdCopyStrategy #ClientAcquisition #MarketingCoaching #AgencyOwner #PaidAdvertising #CaseAcquisition #MVAAdvertising",
+    "bigNumber": "2",
+    "bigNumberLabel": "Deep-Dive DWY Sessions",
+    "impactScore": 40.0,
+    "mediaSrc": "/case-studies/videos/DfuDbu2S7qc.mp4",
+    "thumbnailSrc": "/case-studies/videos/DfuDbu2S7qc.jpg",
+    "mediaFiles": [
+      "/case-studies/videos/DfuDbu2S7qc.mp4"
+    ],
+    "metrics": [
+      {
+        "label": "Format",
+        "value": "2 x 1.5-hour sessions"
+      },
+      {
+        "label": "Client",
+        "value": "MVA agency owner"
+      }
+    ],
+    "tags": [
+      "MVA",
+      "MVAAttorneys",
+      "PersonalInjuryMarketing",
+      "PersonalInjuryLaw",
+      "LawFirmMarketing"
+    ],
+    "url": "https://www.instagram.com/reel/DfuDbu2S7qc/"
+  },
   {
     "id": "DS5sAimEqsT",
     "type": "video",
@@ -648,18 +907,18 @@ export const caseStudiesData: CaseStudyItem[] = [
   },
   {
     "id": "Dd9D3rnSCMT",
-    "type": "image",
+    "type": "video",
     "title": "$7.79 PER FINAL EXPENSE LEAD. 👀",
     "subtitle": "While most people are complaining about rising lead costs…",
-    "category": "Agency & B2B",
+    "category": "Insurance & Finance",
     "description": "$7.79 PER FINAL EXPENSE LEAD. 👀\n\nWhile most people are complaining about rising lead costs…\n\nWe generated 2,440 Final Expense leads for a Pay-Per-Lead client this month.\n\nHere’s the scoreboard:\n💰 $19,011.31 Ad Spend\n🎯 2,440 Leads Generated\n🔥 $7.79 Cost Per Lead\n\nAnd no this isn’t a tiny test campaign.\nIt’s real ad spend, real volume, and real lead generation.\n\nThe interesting part?\n\nWe’re not relying on some secret hack.\nIt comes down to getting the offer + creatives + targeting + funnel + optimization working together.\n\nBecause getting leads is one thing.\nGetting thousands of them at a controlled CPL is a completely different game.\n\nIf you want to see how this could work for your business DM me.\n\n#ppl #payperclickmarketing #metaads #marketingestrategico #advertisingagency #advertising #facebookpro",
     "bigNumber": "2,440",
     "bigNumberLabel": "Leads Generated",
     "impactScore": 48800.0,
-    "mediaSrc": "/case-studies/images/Dd9D3rnSCMT.jpg",
+    "mediaSrc": "/case-studies/videos/Dd9D3rnSCMT.mp4",
     "thumbnailSrc": "/case-studies/images/Dd9D3rnSCMT.jpg",
     "mediaFiles": [
-      "/case-studies/images/Dd9D3rnSCMT.jpg"
+      "/case-studies/videos/Dd9D3rnSCMT.mp4"
     ],
     "metrics": [
       {

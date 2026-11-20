@@ -494,3 +494,6 @@ Owner sent 77 unique reels/posts. 70 were already on /case-studies with their vi
 **Tracker:** nothing due (first check 3 Dec).
 **Changed:** nothing in this run. Today's recovery-plan changes (P1–P7) and the 8 case-study videos need time; the video deploy (814e41c) was pushed 10 minutes before this run and is not live yet.
 **Indexing:** none sent (owner limit; next batch in the 21 Nov 14:13 IST run, starting with the pages changed on 20 Nov).
+
+## 2026-11-20: scroll stuck fix
+Owner report: case study popup could not be scrolled. Cause: Lenis smooth scroll captured all wheel events, so scrollable panels inside popups never received them. Fix: Lenis allowNestedScroll + prevent for [data-lenis-prevent]/[role=dialog]; data-lenis-prevent and role=dialog on the case study modal, image lightbox and email opt-in popup; data-lenis-prevent on the mobile menu panel and the homepage stage-2 panel. Tested at 1366x768: popup panel and caption scroll (0 -> 186 and 0 -> 841 px), all 118 sitemap pages scroll with the mouse wheel (0 stuck), page scrolls after closing the case study popup, lightbox and mobile menu.

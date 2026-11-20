@@ -763,7 +763,7 @@ export function FlowWave() {
           {/* dark scrim so stage-2 cards read clearly over the wave */}
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(110%_110%_at_50%_50%,rgba(2,22,12,0.72)_20%,rgba(2,22,12,0.9)_100%)]" />
 
-          <div className="relative max-h-full w-full overflow-y-auto py-14 sm:py-16">
+          <div data-lenis-prevent className="relative max-h-full w-full overflow-y-auto py-14 sm:py-16">
             <h2
               ref={p2HeadRef}
               className="mx-auto mt-2.5 max-w-4xl text-balance text-[clamp(1.6rem,4.8vw,4.2rem)] font-bold leading-[1.04] tracking-[-0.03em] text-fog sm:mt-4"

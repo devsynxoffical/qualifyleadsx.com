@@ -56,6 +56,9 @@ export function LightboxModal({
 
   return (
     <div
+      data-lenis-prevent
+      role="dialog"
+      aria-modal="true"
       className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 backdrop-blur-xl animate-in fade-in duration-300"
       onClick={onClose}
     >

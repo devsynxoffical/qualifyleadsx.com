@@ -333,7 +333,7 @@ export function Nav() {
         )}
         aria-hidden={!open}
       >
-        <div className="mt-24 flex flex-1 flex-col justify-between px-6 pb-10 overflow-y-auto">
+        <div data-lenis-prevent className="mt-24 flex flex-1 flex-col justify-between px-6 pb-10 overflow-y-auto overscroll-contain">
           <ul className="flex flex-col gap-1">
             {nav.map((item, i) => {
               if (item.label === "Services") {

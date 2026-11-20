@@ -80,7 +80,7 @@ export function EmailOptInWidget() {
 
       {/* Opt-In Modal Popup */}
       {isOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200">
+        <div data-lenis-prevent role="dialog" aria-modal="true" className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200 overflow-y-auto">
           <div className="relative w-full max-w-lg overflow-hidden rounded-[32px] border border-lime/30 bg-[#050e08] p-6 sm:p-8 shadow-[0_25px_70px_rgba(0,0,0,0.95)]">
             
             {/* Top Lime Shimmer Line */}

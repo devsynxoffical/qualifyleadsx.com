@@ -18,6 +18,12 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
       wheelMultiplier: 1,
       touchMultiplier: 1.6,
       anchors: false,
+      // Let any element that scrolls by itself (popups, menus, long captions) take the
+      // mouse wheel and touch scroll. Without this, Lenis swallowed wheel events inside
+      // the case study popup and the page looked stuck (reported 20 Nov 2026).
+      allowNestedScroll: true,
+      prevent: (node: HTMLElement) =>
+        !!node.closest?.("[data-lenis-prevent], [role='dialog'], [aria-modal='true']"),
     });
     lenisRef.current = lenis;
     (window as unknown as { __lenis: Lenis }).__lenis = lenis;

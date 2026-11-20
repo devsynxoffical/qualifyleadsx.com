@@ -95,6 +95,9 @@ export function CaseStudyModal({
 
   return (
     <div
+      data-lenis-prevent
+      role="dialog"
+      aria-modal="true"
       className="fixed inset-0 z-[100] flex items-center justify-center bg-black/92 p-2 sm:p-4 md:p-6 backdrop-blur-2xl animate-in fade-in duration-300"
       onClick={onClose}
     >

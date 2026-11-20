@@ -479,3 +479,6 @@ Indexing submissions 2026-11-19 10:40 UTC: 121 URLs to Google (all sitemap URLs)
 **Tracker:** nothing due (first check 3 Dec).
 **Changed:** nothing. Top striking-distance query ("facebook ads agency vs hiring an in-house media buyer", pos 5, 24 impressions, 0 clicks) already matches the page title exactly; 0 clicks from 24 impressions at pos 5 is within normal variation. Today's 6 changes need time before more edits.
 **Indexing:** none sent (owner limit 20 per 24 hours; next batch allowed in the 21 Nov 14:13 IST run).
+
+## 2026-11-20: SEO Recovery Plan (qualifiedleadsx.com part) live
+Verified live: homepage title "Done-for-You Outsourced Lead Generation", one H1 (keyword line only); /appointment-setting, /pay-per-appointment, /for/insurance-agencies (now indexable), /for/financial-advisors, /for/coaches, /blog/how-to-get-coaching-clients all 200 with one H1. 301s live: /personal-injury-leads, /mva-leads, /mass-tort-leads, /for/law-firms, /meta-ads-for-law-firms -> /services; /roofing-leads -> /for/home-improvement. Sitemaps no longer list them. Tracker rows P1-P7. Indexing requests for the new pages wait for the 21 Nov 14:13 IST run (owner limit 20 per 24 hours).

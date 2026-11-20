@@ -13,7 +13,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "B2B Client Acquisition & Meta Ads Blog",
   description:
-    "Explore actionable B2B client acquisition guides, VSL funnel architecture, Meta ads playbooks, and lead qualification benchmarks from $50M+ managed ad spend.",
+    "B2B client acquisition guides: VSL funnels, Meta ads playbooks, lead qualification and benchmarks from campaigns we run for high-ticket businesses.",
   keywords: [
     "b2b client acquisition blog",
     "meta ads guides",

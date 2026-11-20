@@ -122,7 +122,7 @@ export default function Home() {
         thumbnailUrl: v.poster ? `${site.url}${v.poster}` : undefined,
         contentUrl: v.src ? `${site.url}${v.src}` : undefined,
         duration: v.duration ? isoDuration(v.duration) : undefined,
-        uploadDate: "2026-09-15T00:00:00+00:00",
+        uploadDate: v.uploadDate ?? "2026-09-15T00:00:00+00:00",
         inLanguage: "en-US",
         publisher: { "@id": ORG_ID },
         url: v.link ? `${site.url}${v.link}` : site.url,
@@ -185,6 +185,9 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      {/* Phones show a still of the hero (see FlowWave) until first input; it is the
+          largest element on screen, so fetch it early instead of waiting for CSS. */}
+      <link rel="preload" as="image" href="/images/hero-wave-mobile.webp" type="image/webp" media="(max-width: 767px)" fetchPriority="high" />
       <AnnouncementBar />
       <Nav />
       <FlowWave />

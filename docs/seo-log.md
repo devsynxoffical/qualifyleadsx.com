@@ -360,3 +360,122 @@ from the 14 Nov inspection); Bing 23 submitted. Bing: 68 pages in index.
 **Measured:** GSC latest day 16 Nov: 70 impressions. Last 7 days: 324 impressions, 0 clicks, avg position 43.3. Last 28 days: 715 impressions, 6 clicks, 81 pages, 103 queries. 6 new single-impression queries, including "facebook ads for personal injury law firms" at pos 63 on the PI mastermind. "how to get marketing qualified leads" is now at 15.7 (was 6.7–9.6) since the post was re-indexed.
 **Indexing:** Google Indexing API accepted all 23 URLs that hit the quota earlier today.
 **Done:** no further page edits; today's cycle (SEO_REPORT_2026-11-17.md) already changed 28 pages.
+
+## 2026-11-18: SEO/AEO/GEO cycle (see SEO_REPORT_2026-11-18.md)
+**Done:**
+- New /tools/mer-calculator and /tools/ad-frequency-calculator (GSC demand: pos 18 and 10.5 on the /tools hub).
+- Mobile homepage: three.js deferred to first input, plus a hero still and preload. Live: TBT 1,320–2,510 → 730–860 ms, perf 46–52 → 52–60.
+- 9 descriptions trimmed (0 over 155 now).
+
+**Indexing:**
+- 100 of 118 indexed (up from 97); the PI page is indexed.
+- Google: 29 accepted.
+- Bing: 25 accepted (after a temporary 503).
+
+**Backlog:**
+- 30 Nov measurement.
+- Homepage hydration: convert static sections to server components.
+- 18 URLs not indexed: crawl budget, waiting on authority.
+
+**Owner:**
+- Reviews.
+- Tool-directory submissions.
+- GA4 Data API plus property ID.
+- Credit-repair data.
+
+## 2026-11-18 (PM): Google Business Profile + niche lead pages
+**GBP (locations/6499443464649758122, via Windsor):**
+- Description rewritten to include "QualifiedLeadsX (Qualified LeadsX)", the founder and the MVA/PI/final expense services.
+- Service items: 11 (added MVA & PI leads, final expense & burial insurance leads, mass tort).
+- 9 photos uploaded: 3 training-call thumbnails and 6 client-result screenshots.
+- 3 posts: MER calculator, MVA leads (8,810 at $7.61), final expense (2,440 at $7.79). All PROCESSING at creation; the 16 Nov HVAC post was still PROCESSING on 18 Nov.
+
+**Website ↔ GBP:**
+- Organization/WebSite alternateName.
+- ProfessionalService node for the Delhi office (hasMap to the Maps listing).
+- About page "Find QualifiedLeadsX on Google" block with a review link.
+- Footer and llms.txt link.
+
+**New pages (live, verified):** /mva-leads, /final-expense-leads (covers burial insurance), /mass-tort-leads (no mass tort results yet, stated). /personal-injury-leads retitled.
+**Indexing:** Google 6 accepted, Bing 6 accepted.
+
+**Owner:**
+- Rename the GBP to "QualifiedLeadsX".
+- Review the pending Google updates.
+- Collect reviews (review link on /about).
+- Upload the 3 Facebook training videos as MP4 (facebook.com is blocked from this environment).
+- Send real mass tort results.
+
+## 2026-11-18 14:13 IST: 12-hourly run #1
+**Measured:**
+- Rank monitor vs the baseline taken 3 minutes earlier: no change. Search Console's latest day is still 17 Nov.
+- GSC 7 days: 335 impressions, 2 clicks, avg position 39.3. 28 days: 778 impressions, 8 clicks, 83 pages, 110 queries.
+- 7 new queries.
+- Bing: 74 indexed, 1 4xx in its latest crawl, 0 crawl issues.
+- Bots: OK except spoofed Bingbot (403) and GPTBot (429), which is Hostinger bot protection.
+
+**Done:** no page changes or indexing requests; the 18 Nov cycle already did both today.
+
+**Backlog (next run):**
+- "meta ads budget calculator" (pos 63.5) and "meta ads calculator" (6 impressions, pos 55.3) land on /tools/meta-ads-bid-strategy-calculator instead of /tools/meta-ads-budget-calculator. Check whether the budget calculator answers "meta ads calculator" and how strongly the two link to each other.
+- "med spa cost per lead benchmark" is at pos 17 on /benchmarks/cost-per-lead-by-industry: check the med spa row and answer.
+
+## 2026-11-19 02:13 IST: 12-hourly run #2
+**Measured (new GSC day: 18 Nov):**
+- 7 days: 471 impressions (+104 vs run #1), 3 clicks (+1), 69 pages (+9), 82 queries (+7), avg position 33.8 (was 38.1).
+- 28 days: 882 impressions, 9 clicks, 117 queries.
+- Movers up: "facebook ads for coaches" 82 → 60, "virtual assistant appointment setter" 78 → 57.5, "meta ads for hvac contractors" 94.7 → 77.8.
+- Movers down: "marketing efficiency ratio calculator" 18 → 24.7 (the new /tools/mer-calculator is not indexed yet; the query still lands on /tools), "qualified appointment setting" 39 → 45.5.
+- New: "high ticket agency mastermind" (pos 19, /mastermind), "qlxcorp.com" (pos 10), "digital marketing agency in rajouri garden" (pos 61, homepage; local search near the Delhi office).
+- Bing: 74 indexed, 0 crawl issues.
+
+**Done:**
+- FAQ "Is this a Meta ads calculator for Facebook and Instagram?" on /tools/meta-ads-budget-calculator (for "meta ads calculator", which lands on the bid strategy calculator).
+- FAQ "What is a good cost per lead for a med spa?" on /benchmarks/cost-per-lead-by-industry (pos 17 query; existing $24–$52 figures).
+- No title or description changes (14-day rule).
+
+**Backlog:**
+- Recheck on 21 Nov whether /tools/mer-calculator and /tools/ad-frequency-calculator are indexed and take over their queries from /tools.
+- Full URL Inspection due 21 Nov.
+
+## 2026-11-19 12:30 IST: performance investigation (owner request)
+Full report: SEO_INVESTIGATION_2026-11-19.md. Change log with before metrics and checks: reports/recovery-tracker.csv.
+
+**Baseline (Search Console, 22 Oct to 18 Nov):** 678 impressions, 9 clicks, CTR 1.3%, avg position 40.5. No earlier 28-day or 3-month period to compare (data starts 19 Oct). First half vs second half: impressions 82 → 596, clicks 5 → 4, position 31.3 → 41.8. GA4 data not accessible (Data API disabled).
+
+**Biggest problems found:** no authority (0 linking pages, 0 brand searches), title churn (188 commits in 30 days; /lead-generation-agency retitled 6 times), 113 new URLs with 39 at 0 impressions, homepage industry tiles pointing at a noindex page and an unindexed page.
+
+**Done:**
+- C1: homepage industry tiles now point to /personal-injury-leads, /mva-leads and /final-expense-leads (indexed pages with published results) instead of /for/law-firms and the noindex /for/insurance-agencies.
+- C2: 5 unindexed service × industry pages 301-redirected to the matching indexed page (meta-ads-for-law-firms, meta-ads-for-real-estate-investors, meta-ads-for-course-creators, appointment-setting-for-coaches, appointment-setting-for-saas); links and sitemap updated (118 URLs).
+- C3: recovery tracker created; core pages on HOLD for title/description/H1 edits until 14 Dec.
+- 12-hourly routine prompt updated to fill the tracker and respect the hold.
+
+## 2026-11-19 PM: new lead pages (owner request: new SEO pages with full layout and lead capture)
+Checked first whether new pages were justified. Customer acquisition agency, solar appointments and motivated seller leads already have pages (/lead-generation-agency, /for/solar-companies, /for/real-estate-investors), so new pages there would compete with them. Built pages only where published proof exists and no page did:
+- /roofing-leads: 10 published roofing campaigns (5,246 leads across 9 lead campaigns, $4.27–$24 CPL).
+- /hvac-leads: 6 published HVAC campaigns; GSC already shows HVAC queries landing on a blog post.
+- /mortgage-leads: 5 published mortgage and refinance campaigns (208 leads → 37 closings).
+New template components/landing/RichLeadPage.tsx: lead form beside the hero, screenshot proof cards with lightbox, funnel or CPL table, budget estimator, process cards, qualification chips, comparison, FAQ accordion, CTA. The form now tags each lead with its source page.
+Homepage tiles: Roofing → /roofing-leads, HVAC (was unlinked) → /hvac-leads, Mortgage Brokers → /mortgage-leads. Footer, related links, sitemap, llms.txt and IndexNow list updated. Tracker rows N1–N3, F1.
+
+## 2026-11-19 14:13 IST: 12-hourly run #3
+**Measured:** no new Search Console day since run #2 (latest still 18 Nov). 7 days: 488 impressions (+17 late data), 3 clicks, 64 pages, 79 queries, avg position 31.0 (was 33.8). Lost queries are the 7-day window moving, not drops. New HVAC queries ("hvac facebook ads cost" pos 29, "facebook ads for hvac contractors" pos 44) support the new /hvac-leads page. Bing: 74 indexed, 0 crawl issues. Bots: all 200.
+**Tracker:** no rows due (first check 3 Dec).
+**Changed:** nothing. No new data day, and today already shipped C1–C3 and N1–N3; more edits now would blur what caused any movement.
+**Indexing:** all changed pages were already submitted to Google and Bing earlier today.
+
+## 2026-11-19 evening: full index submission + URL Inspection
+- Submitted all 121 sitemap URLs to the Google Indexing API (121 accepted) and 80 to Bing (daily limit; 41 left for 20 Nov). IndexNow returned 403 "UserForbiddedToAccessSite" although the key file is served correctly (likely Hostinger bot protection); Bing's own API worked.
+- URL Inspection, all 121: 105 indexed (was 100 of 118), 10 unknown to Google, 6 discovered but not indexed. Unknown: /benchmarks/meta-ads-cpm, /blog/scaling-from-100k-to-500k-coaching, /case-studies/strategic-consulting-85k, /compare/done-for-you-vs-done-with-you-lead-generation, /compare/meta-ads-vs-google-ads-high-ticket, /for/home-improvement, /hvac-leads, /mortgage-leads, /roofing-leads, /tools/roas-calculator. Discovered: /case-studies/b2b-technology-agency-71k, /case-studies/executive-consulting-150k, /crm-automation, /for/financial-advisors, /for/law-firms, /tools/ltv-cac-calculator. Recheck 21 Nov.
+
+Indexing submissions 2026-11-19 10:40 UTC: 121 URLs to Google (all sitemap URLs) and 80 to Bing. Owner rule from now on: max 20 pages in any 24 hours; next batch no earlier than the 21 Nov 14:13 IST run.
+
+## 2026-11-20 02:13 IST: 12-hourly run #4
+**Measured:** new partial Search Console day 19 Nov (25 impressions so far, 0 clicks). 7 days: 552 impressions (+64), 3 clicks, 65 pages, 84 queries, avg position 29.8 (was 31.0). 28 days: 990 impressions, 9 clicks, 127 queries, 9 on page 1.
+- Up: "meta ads for hvac contractors" 77.8 → 68, "qualified b2b leads" 72.2 → 67.3, "qualified appointments" 82 → 74, "lead conversion rate" 91 → 86. Down: none.
+- New: "agencies that optimize meta ads for booked consultations, not just leads" pos 2 on /meta-ads-agency; "how to calculate cost per result" pos 18; "real estate outbound lead generation service for investors" pos 54.
+- Bing: 78 indexed (was 74), 0 crawl issues. Bots: Googlebot, OAI-SearchBot, PerplexityBot, ClaudeBot 200; spoofed Bingbot 403 and GPTBot 429 (Hostinger bot protection, unchanged).
+**Tracker:** nothing due (first check 3 Dec).
+**Changed:** nothing. Top striking-distance query ("facebook ads agency vs hiring an in-house media buyer", pos 5, 24 impressions, 0 clicks) already matches the page title exactly; 0 clicks from 24 impressions at pos 5 is within normal variation. Today's 6 changes need time before more edits.
+**Indexing:** none sent (owner limit 20 per 24 hours; next batch allowed in the 21 Nov 14:13 IST run).

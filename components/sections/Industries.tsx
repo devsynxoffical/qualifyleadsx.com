@@ -14,15 +14,19 @@ const INDUSTRY_HREF: Record<string, string> = {
   "High-Ticket Service Providers": "/high-ticket-lead-generation",
   "B2B Companies": "/for/b2b-services",
   "Home Service Businesses": "/for/home-improvement",
-  "Roofing Companies": "/for/home-improvement",
+  "HVAC Companies": "/hvac-leads",
+  "Roofing Companies": "/roofing-leads",
   "Kitchen & Bathroom Remodeling": "/for/home-improvement",
   "Solar Companies": "/for/solar-companies",
-  "Personal Injury Law Firms": "/for/law-firms",
+  // 19 Nov 2026: point to the indexed pages with published proof, not /for/law-firms (not indexed).
+  "Personal Injury Law Firms": "/personal-injury-leads",
+  "MVA & Auto Accident Lead Buyers": "/mva-leads",
   "Medical Malpractice Attorneys": "/for/law-firms",
   "Med Spas & Aesthetic Clinics": "/for/med-spas",
   "Real Estate Companies": "/for/real-estate-investors",
-  "Mortgage Brokers": "/for/financial-advisors",
-  "Insurance Agencies": "/for/insurance-agencies",
+  "Mortgage Brokers": "/mortgage-leads",
+  // Was /for/insurance-agencies, which is noindex. Real insurance proof: 2,440 final expense leads at $7.79.
+  "Insurance Agencies": "/final-expense-leads",
   "Fitness Brands & Gyms": "/for/fitness-coaches",
 };
 

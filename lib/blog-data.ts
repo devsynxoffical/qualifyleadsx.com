@@ -206,7 +206,7 @@ export const blogPosts: BlogPost[] = [
           "heading": "Two HVAC Funnels, Tracked From Ad to Installation",
           "subheading": "Florida and New Jersey, side by side",
           "body": [
-            "Both companies tracked every stage, so we can see exactly where money was made and lost. The full Florida breakdown is in the [Florida HVAC case study](/case-studies/florida-hvac-65k-cash-collected)."
+            "Both companies tracked every stage, so we can see exactly where money was made and lost. The full Florida breakdown is in the [Florida HVAC case study](/case-studies/florida-hvac-65k-cash-collected), and every published HVAC campaign is on our [HVAC leads](/hvac-leads) page."
           ],
           "bulletList": [
             "Florida: $5,628 ad spend → 125 booked appointments ($45 each) → 60 connected calls (48% show) → 45 offers → 13 installations ($432.92 each) at $5,500 → $71,500 collected, 12.70 ROAS",
@@ -913,7 +913,7 @@ export const blogPosts: BlogPost[] = [
     slug: "b2b-appointment-setting-vs-in-house-sdr-teams",
     seoTitle: "B2B Appointment Setting vs In-House SDR: Cost & ROI (2026)",
     title: "B2B Appointment Setting vs In-House SDR Teams: The 2026 Cost, Performance & ROI Breakdown",
-    description: "Compare in-house SDR costs ($85K–$120K) vs automated B2B appointment setting. See real benchmarks on ramp time, tech stacks, show-up rates, and pipeline ROI.",
+    description: "In-house SDR costs ($85K–$120K) vs outsourced B2B appointment setting: ramp time, tech stack, show-up rates and pipeline ROI compared.",
     publishedAt: "2026-10-29",
     updatedAt: "2026-11-16",
     readTime: "12 min read",
@@ -3175,7 +3175,7 @@ export const blogPosts: BlogPost[] = [
     slug: "high-ticket-lead-generation-strategies",
     title: "High-Ticket Lead Generation Strategies: 7 Scalable Models",
     seoTitle: "High-Ticket Lead Generation Strategies: 7 Proven Models",
-    description: "Discover 7 proven high-ticket lead generation strategies to acquire $5K–$25K clients predictably. Compare paid social, 12-min VSLs, and speed-to-lead triage.",
+    description: "7 high-ticket lead generation strategies to win $5K–$25K clients predictably: paid social, 12-minute VSLs and speed-to-lead triage compared.",
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-16",
     readTime: "11 min read",
@@ -3697,7 +3697,7 @@ export const blogPosts: BlogPost[] = [
           heading: "1. Removing Founder Bottlenecks",
           body: [
             "You cannot build an enterprise asset if all sales depend on founder charisma. Standardizing your closing script and placing vetted [outsourced sales closers](/outsourced-sales-closers) unlocks 5x capacity.",
-            "Support closers with dedicated [appointment setting for coaches](/appointment-setting-for-coaches) and our full sector playbook for [lead generation for coaches](/for/coaches).",
+            "Support closers with dedicated [appointment setting](/appointment-setting) and our full sector playbook for [lead generation for coaches](/for/coaches).",
           ],
         },
         {

@@ -45,6 +45,12 @@ const footerColumns = [
       { label: "For Financial Advisors", href: "/for/financial-advisors" },
       { label: "For Law Firms", href: "/for/law-firms" },
       { label: "Personal Injury Leads", href: "/personal-injury-leads" },
+      { label: "MVA Leads", href: "/mva-leads" },
+      { label: "Mass Tort Leads", href: "/mass-tort-leads" },
+      { label: "Final Expense Leads", href: "/final-expense-leads" },
+      { label: "Roofing Leads", href: "/roofing-leads" },
+      { label: "HVAC Leads", href: "/hvac-leads" },
+      { label: "Mortgage Leads", href: "/mortgage-leads" },
     ],
   },
   {
@@ -71,6 +77,7 @@ const footerColumns = [
     title: "Proof & Comparisons",
     links: [
       { label: "125+ Verified Case Studies", href: "/case-studies" },
+      { label: "Google Business Profile", href: "https://maps.google.com/maps?cid=12897087509369850560" },
       { label: "Verified on Clutch.co", href: "https://clutch.co/profile/qualifiedleadsx" },
       { label: "Trustpilot Reviews", href: "https://www.trustpilot.com/review/qualifiedleadsx.com" },
       { label: "Crunchbase Organization", href: "https://www.crunchbase.com/organization/qualifiedleadsx" },

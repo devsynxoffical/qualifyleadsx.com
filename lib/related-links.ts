@@ -39,6 +39,8 @@ export const tools: Link[] = [
   { href: "/tools/meta-ads-budget-calculator", label: "Meta ads budget calculator" },
   { href: "/tools/meta-ads-bid-strategy-calculator", label: "Meta ads bid strategy calculator" },
   { href: "/tools/lead-conversion-rate-calculator", label: "Lead conversion rate calculator" },
+  { href: "/tools/mer-calculator", label: "MER (marketing efficiency ratio) calculator" },
+  { href: "/tools/ad-frequency-calculator", label: "Ad frequency calculator" },
   { href: "/tools/show-rate-calculator", label: "Show-up rate calculator" },
   { href: "/tools/lead-scoring-template", label: "Lead scoring template" },
 ];
@@ -86,6 +88,8 @@ const guidesFor: Record<string, string[]> = {
   "/tools/meta-ads-budget-calculator": ["how-much-does-meta-ads-cost", "meta-ads-for-high-ticket-b2b-broad-targeting"],
   "/tools/meta-ads-bid-strategy-calculator": ["meta-advantage-plus-for-b2b", "how-much-does-meta-ads-cost"],
   "/tools/lead-conversion-rate-calculator": ["how-to-qualify-leads", "how-to-increase-show-rate"],
+  "/tools/mer-calculator": ["b2b-roas-benchmarks-qualified-appointment-generation", "b2b-client-acquisition-cost-cac-benchmarks-2026"],
+  "/tools/ad-frequency-calculator": ["meta-ads-for-high-ticket-b2b-broad-targeting", "how-much-does-meta-ads-cost"],
   "/tools/lead-scoring-template": ["how-to-qualify-leads", "automated-lead-qualification-system-high-ticket"],
   "/benchmarks/close-rate": ["high-ticket-sales-training-framework", "b2b-sales-closer-job-description"],
   "/benchmarks/cost-per-booked-call": ["how-much-does-a-lead-generation-agency-cost", "b2b-roas-benchmarks-qualified-appointment-generation"],
@@ -104,6 +108,8 @@ const servicesForTool: Record<string, string[]> = {
   "/tools/meta-ads-budget-calculator": ["/meta-ads-agency", "/appointment-setting"],
   "/tools/meta-ads-bid-strategy-calculator": ["/meta-ads-agency", "/lead-generation-agency"],
   "/tools/lead-conversion-rate-calculator": ["/appointment-setting", "/speed-to-lead"],
+  "/tools/mer-calculator": ["/meta-ads-agency", "/lead-generation-agency"],
+  "/tools/ad-frequency-calculator": ["/meta-ads-agency", "/vsl-funnels"],
   "/tools/lead-scoring-template": ["/appointment-setting", "/crm-automation"],
   "/benchmarks/close-rate": ["/outsourced-sales-closers", "/appointment-setting"],
   "/benchmarks/cost-per-booked-call": ["/appointment-setting", "/meta-ads-agency"],
@@ -159,7 +165,7 @@ function industryGroups(path: string): Group[] | null {
   const variants: Link[] = [];
   if (industryPages.some((p) => p.slug === slug)) variants.push({ href: `/for/${slug}`, label: `Lead generation for ${industryLabel(slug).toLowerCase()}` });
   if ((metaAdsIndustrySlugs as readonly string[]).includes(slug)) variants.push({ href: `/meta-ads-for-${slug}`, label: `Meta ads for ${industryLabel(slug).toLowerCase()}` });
-  if (slug === "law-firms") variants.push({ href: "/personal-injury-leads", label: "Personal injury leads" });
+  if (slug === "law-firms") variants.push({ href: "/personal-injury-leads", label: "Personal injury leads" }, { href: "/mva-leads", label: "MVA leads" }, { href: "/mass-tort-leads", label: "Mass tort leads" });
   if ((appointmentSettingIndustrySlugs as readonly string[]).includes(slug)) variants.push({ href: `/appointment-setting-for-${slug}`, label: `Appointment setting for ${industryLabel(slug).toLowerCase()}` });
   const coreFill = services(path.startsWith("/meta-ads-for-") ? ["/meta-ads-agency", "/vsl-funnels", "/lead-generation-agency"] : path.startsWith("/appointment-setting-for-") ? ["/appointment-setting", "/speed-to-lead", "/lead-generation-agency"] : ["/lead-generation-agency", "/meta-ads-agency", "/appointment-setting"]);
   const svc = [...variants.filter((v) => v.href !== path), ...coreFill].slice(0, 3 + Math.max(0, variants.length - 1));
@@ -283,13 +289,31 @@ function compareGroups(path: string): Group[] | null {
 
 /** Groups for a path, or null for pages that get no block (home, hubs, legal, booking). */
 function nichePageGroups(path: string): Group[] | null {
-  if (path !== "/personal-injury-leads") return null;
+  if (["/roofing-leads", "/hvac-leads"].includes(path))
+    return [
+      { title: "Services", links: services(["/lead-generation-agency", "/meta-ads-agency", "/speed-to-lead", "/whatsapp-lead-nurture"]) },
+      { title: "Home services", links: [{ href: "/roofing-leads", label: "Roofing leads" }, { href: "/hvac-leads", label: "HVAC leads" }, { href: "/for/home-improvement", label: "Home improvement leads" }, { href: "/for/solar-companies", label: "Solar appointments" }] },
+      { title: "Results", links: [{ href: "/case-studies/florida-hvac-65k-cash-collected", label: "Florida HVAC: $65,872 collected" }, { href: "/case-studies", label: "All case studies" }] },
+      { title: "Guides", links: guides(["buy-qualified-leads-vs-generating-your-own", "cost-per-acquisition-vs-cost-per-lead", "speed-to-lead-statistics-response-time"]) },
+    ];
+  if (path === "/mortgage-leads")
+    return [
+      { title: "Services", links: services(["/lead-generation-agency", "/meta-ads-agency", "/speed-to-lead", "/crm-automation"]) },
+      { title: "Other lead types", links: [{ href: "/final-expense-leads", label: "Final expense leads" }, { href: "/for/financial-advisors", label: "Financial advisor leads" }, { href: "/for/real-estate-investors", label: "Motivated seller leads" }] },
+      { title: "Guides", links: guides(["buy-qualified-leads-vs-generating-your-own", "cost-per-acquisition-vs-cost-per-lead", "speed-to-lead-statistics-response-time"]) },
+    ];
+  if (path === "/final-expense-leads")
+    return [
+      { title: "Services", links: services(["/lead-generation-agency", "/meta-ads-agency", "/speed-to-lead", "/crm-automation"]) },
+      { title: "Other lead types", links: [{ href: "/mva-leads", label: "MVA leads" }, { href: "/personal-injury-leads", label: "Personal injury leads" }, { href: "/for/real-estate-investors", label: "Motivated seller leads" }] },
+      { title: "Guides", links: guides(["buy-qualified-leads-vs-generating-your-own", "cost-per-acquisition-vs-cost-per-lead", "speed-to-lead-statistics-response-time"]) },
+    ];
+  if (!["/personal-injury-leads", "/mva-leads", "/mass-tort-leads"].includes(path)) return null;
   return [
     {
       title: "Services for law firms",
       links: [
         { href: "/for/law-firms", label: "Lead generation for law firms" },
-        { href: "/meta-ads-for-law-firms", label: "Meta ads for law firms" },
         ...services(["/speed-to-lead", "/appointment-setting"]),
       ],
     },
@@ -298,6 +322,9 @@ function nichePageGroups(path: string): Group[] | null {
       links: [
         { href: "/case-studies/mva-personal-injury-leads-8810", label: "MVA case study: 8,810 leads at $7.61" },
         { href: "/mastermind/personal-injury-facebook-ads", label: "Facebook ads for personal injury (Sniper Method)" },
+        { href: "/personal-injury-leads", label: "Personal injury leads" },
+        { href: "/mva-leads", label: "MVA leads" },
+        { href: "/mass-tort-leads", label: "Mass tort leads" },
       ],
     },
     { title: "Guides", links: guides(["cost-per-acquisition-vs-cost-per-lead", "buy-qualified-leads-vs-generating-your-own", "speed-to-lead-statistics-response-time"]) },

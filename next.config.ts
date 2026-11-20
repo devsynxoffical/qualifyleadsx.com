@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
     return [
       // 13 Nov 2026: thin industry pages with no search demand merged into stronger siblings (audit/programmatic_decisions.csv)
       { source: "/for/executive-coaches", destination: "/for/coaches", statusCode: 301 },
+      { source: "/meta-ads-for-law-firms", destination: "/personal-injury-leads", statusCode: 301 },
+      { source: "/meta-ads-for-real-estate-investors", destination: "/for/real-estate-investors", statusCode: 301 },
+      { source: "/meta-ads-for-course-creators", destination: "/for/course-creators", statusCode: 301 },
+      { source: "/appointment-setting-for-coaches", destination: "/for/coaches", statusCode: 301 },
+      { source: "/appointment-setting-for-saas", destination: "/for/saas", statusCode: 301 },
       { source: "/for/business-coaches", destination: "/for/coaches", statusCode: 301 },
       { source: "/for/online-education", destination: "/for/course-creators", statusCode: 301 },
       {

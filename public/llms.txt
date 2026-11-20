@@ -9,6 +9,7 @@ Key facts:
 - Clients own all assets: ad account, funnels, CRM, automations, creatives and data
 - Serves the United States, United Kingdom, Canada and Australia
 - Contact: hello@qualifiedleadsx.com or WhatsApp +91 96256 95456; free 30-minute strategy call at https://www.qualifiedleadsx.com/book-your-call
+- Google Business Profile (office, New Delhi): [Google Maps](https://maps.google.com/maps?cid=12897087509369850560)
 - Third-party profiles: [Clutch](https://clutch.co/profile/qualifiedleadsx), [Crunchbase](https://www.crunchbase.com/organization/qualifiedleadsx), [Trustpilot](https://www.trustpilot.com/review/qualifiedleadsx.com), [founder on LinkedIn](https://www.linkedin.com/in/gauravecom/)
 - Full page content for AI assistants: https://www.qualifiedleadsx.com/llms-full.txt
 
@@ -34,7 +35,7 @@ Key facts:
 ## Hub pages
 - [Services](https://www.qualifiedleadsx.com/services): every service
 - [Industries](https://www.qualifiedleadsx.com/for): every industry page, e.g. [coaches](https://www.qualifiedleadsx.com/for/coaches), [consultants](https://www.qualifiedleadsx.com/for/consultants), [agencies](https://www.qualifiedleadsx.com/for/agencies), [B2B SaaS](https://www.qualifiedleadsx.com/for/saas), [med spas](https://www.qualifiedleadsx.com/for/med-spas), [law firms](https://www.qualifiedleadsx.com/for/law-firms), [financial advisors](https://www.qualifiedleadsx.com/for/financial-advisors)
-- [Free tools](https://www.qualifiedleadsx.com/tools): Meta ads budget calculator, Meta ads bid strategy (cost cap) calculator, CAC, ROAS and break-even ROAS, cost per booked call, show-up rate, LTV:CAC and lead conversion rate calculators, plus a lead scoring template
+- [Free tools](https://www.qualifiedleadsx.com/tools): Meta ads budget calculator, marketing efficiency ratio (MER) calculator (/tools/mer-calculator), ad frequency calculator (/tools/ad-frequency-calculator), Meta ads bid strategy (cost cap) calculator, CAC, ROAS and break-even ROAS, cost per booked call, show-up rate, LTV:CAC and lead conversion rate calculators, plus a lead scoring template
 - [Benchmarks](https://www.qualifiedleadsx.com/benchmarks): 2026 benchmarks for cost per lead by industry, Meta ads CPM, close rate, show rate and cost per booked call
 - [Blog](https://www.qualifiedleadsx.com/blog): guides on paid acquisition, funnels, lead qualification and scaling (RSS: https://www.qualifiedleadsx.com/feed.xml)
 - [Glossary](https://www.qualifiedleadsx.com/glossary): 29 client acquisition terms defined
@@ -45,6 +46,12 @@ Key facts:
 - [AI Client Acquisition Mastermind](https://www.qualifiedleadsx.com/mastermind/hidden-facebook-interest): 6-week hands-on implementation mastermind covering Meta ads audience and creative research, AI advertising, lead qualification, Pixel and CAPI tracking, scaling, manual bidding, retargeting and unit economics
 - [Sniper Method Mastermind for personal injury](https://www.qualifiedleadsx.com/mastermind/personal-injury-facebook-ads): 1-hour 33-minute mastermind on finding hidden Facebook audiences for car, motorcycle, 18-wheeler and rideshare accident cases, for PI law firms and agencies running ads for attorneys
 - [Personal injury leads](https://www.qualifiedleadsx.com/personal-injury-leads): exclusive personal injury and MVA leads from a campaign in the client's own ad account (not resold lists); one MVA campaign produced 8,810 leads at $7.61 from $67,013 in Meta ads, Jul 1 to Sep 19, 2026
+- [MVA leads](https://www.qualifiedleadsx.com/mva-leads): exclusive OTP-verified motor vehicle accident leads for PI firms and PPL agencies; 10 published campaigns incl. 8,810 leads at $7.61 and 6,275 at $4.38
+- [Mass tort leads](https://www.qualifiedleadsx.com/mass-tort-leads): mass tort claimant acquisition with tort-specific screening (no mass tort results published yet; uses the MVA intake system)
+- [Final expense & burial insurance leads](https://www.qualifiedleadsx.com/final-expense-leads): exclusive final expense leads; 2,440 leads at $7.79 from $19,011.31 for a pay-per-lead client
+- [Roofing leads](https://www.qualifiedleadsx.com/roofing-leads): exclusive, verified roofing leads from Meta ads in the contractor's own ad account; 5,246 leads across 9 published campaigns at $4.27 to $24 per lead, incl. 850 leads at $7.60 in 8 days (Texas) and 1,068 at $17.40 in 30 days
+- [HVAC leads](https://www.qualifiedleadsx.com/hvac-leads): exclusive HVAC homeowner leads and booked appointments; New Jersey HVAC company: $1,956 in ads, 140 booked appointments, 12 installs, $38,400 collected (ROAS 19.63); 630 OTP-verified leads at $23.09
+- [Mortgage leads](https://www.qualifiedleadsx.com/mortgage-leads): exclusive OTP-verified mortgage and refinance leads; 208 leads in 21 days produced 37 closings and $9.2M in funded loans from $5,300; 823 Texas leads at $23.97
 
 ## Comparisons
 - [Meta ads vs Google ads for high-ticket offers](https://www.qualifiedleadsx.com/compare/meta-ads-vs-google-ads-high-ticket)

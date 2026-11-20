@@ -28,7 +28,7 @@ import {
 export const metadata: Metadata = {
   title: "Lead Generation for Coaches: Client Acquisition Funnels",
   description:
-    "Done-for-you lead generation and client acquisition for business and executive coaches. Book 30–50 qualified sales calls monthly from ready-to-invest clients.",
+    "Done-for-you lead generation for business and executive coaches: 30–50 qualified sales calls a month from clients ready to invest.",
   keywords: [
     "lead generation for coaches",
     "client acquisition for coaches",

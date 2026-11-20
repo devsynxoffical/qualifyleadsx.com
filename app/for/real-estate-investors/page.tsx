@@ -13,7 +13,7 @@ import { realEstateInvestorsDeepDive } from "@/lib/deep-dive-content";
 export const metadata: Metadata = {
   title: "Buy Motivated Seller Leads: Off-Market Real Estate Deals",
   description:
-    "Stop buying recycled shared lists. Generate exclusive motivated seller leads and high-equity purchase contracts. Sub-90s triage and $32K+ average deal spreads.",
+    "Stop buying recycled shared lists. Generate exclusive motivated seller leads for real estate investors, contacted in under 90 seconds.",
   keywords: [
     "buy motivated seller leads",
     "real estate investor leads",

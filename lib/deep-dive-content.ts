@@ -685,9 +685,9 @@ export const realEstateInvestorsDeepDive: DeepDiveContent = {
       title: "What seller lead campaigns have produced",
       items: [
         { title: "157 motivated seller leads in 7 days", text: "$4,397 in ad spend, $28 per lead, from cold traffic." },
-        { title: "2,279 phone-verified leads in 3 months", text: "A Texas real estate business scaled from $4,069 to over $22,000 a month in ad spend while cost per lead stayed between $16.48 and $22.78." },
+        { title: "2,279 phone-verified leads in 3 months", text: "A Texas real estate business scaled from $4,069 to over $22,000 a month in ad spend while cost per lead stayed between $16.48 and $22.78; in total $49,888 produced 2,279 phone-verified, pre-qualified leads." },
       ],
-      note: "Full campaign details on [Facebook ads for real estate investors](/meta-ads-for-real-estate-investors). Buying leads from a broker instead? Read [buying leads vs generating your own](/blog/buy-qualified-leads-vs-generating-your-own).",
+      note: "Buying leads from a broker instead? Read [buying leads vs generating your own](/blog/buy-qualified-leads-vs-generating-your-own).",
     },
     {
       eyebrow: "Qualify",
@@ -851,7 +851,7 @@ export const metaAdsSaasDeepDive: DeepDiveContent = {
         { title: "Trial-to-paid or demo-to-close rate", text: "Tells you whether the ads attract buyers or browsers." },
         { title: "CAC against LTV", text: "Use the [CAC calculator](/tools/cac-calculator) and [LTV to CAC calculator](/tools/ltv-cac-calculator) before scaling spend." },
       ],
-      note: "For sales-led SaaS that needs demos rather than self-serve sign-ups, see [lead generation for SaaS](/for/saas) and [appointment setting for SaaS](/appointment-setting-for-saas).",
+      note: "For sales-led SaaS that needs demos rather than self-serve sign-ups, see [lead generation for SaaS](/for/saas) and [appointment setting](/appointment-setting).",
     },
   ],
   faqs: [
@@ -886,7 +886,7 @@ export const metaAdsCoachesDeepDive: DeepDiveContent = {
         { title: "$203,941 in 11 days", text: "A fitness client's low-ticket membership funnel sold 1,566 memberships plus one-time offers and high-ticket upsells ([case study](/case-studies/high-ticket-coaching-203k))." },
         { title: "$150,348 in five days", text: "2,063 memberships, 183 bundle upsells and 30 high-ticket done-for-you programs ([case study](/case-studies/executive-consulting-150k))." },
       ],
-      note: "Full playbook: [Meta ads for coaches guide](/blog/meta-ads-for-coaches-guide). Booking calls from the leads: [appointment setting for coaches](/appointment-setting-for-coaches).",
+      note: "Full playbook: [Meta ads for coaches guide](/blog/meta-ads-for-coaches-guide). Booking calls from the leads: [appointment setting for coaches](/appointment-setting).",
     },
   ],
   faqs: [
@@ -1162,7 +1162,8 @@ export const personalInjuryLeadsDeepDive: DeepDiveContent = {
       items: [
         { title: "Personal injury law firms", text: "Firms that want exclusive MVA and injury leads for their own intake team, without sharing claimants with other firms. More on [lead generation for law firms](/for/law-firms)." },
         { title: "PI lead generation companies", text: "Pay-per-lead and pay-per-case agencies that supply firms. The [MVA case study](/case-studies/mva-personal-injury-leads-8810) was run for one." },
-        { title: "Firms already running Facebook ads", text: "If your current campaign produces leads that don't sign, the fix is usually targeting and follow-up, not more budget. See [Facebook ads for law firms](/meta-ads-for-law-firms)." },
+        { title: "Firms already running Facebook ads", text: "If your current campaign produces leads that don't sign, the fix is usually targeting and follow-up, not more budget. See all published results on [MVA leads](/mva-leads)." },
+        { title: "MVA and mass tort campaigns", text: "All 10 published motor vehicle accident campaigns are on our [MVA leads](/mva-leads) page; product and exposure cases are covered on [mass tort leads](/mass-tort-leads)." },
       ],
     },
     {

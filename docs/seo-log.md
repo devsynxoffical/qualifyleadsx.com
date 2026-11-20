@@ -508,3 +508,6 @@ Live after (20 Nov): / 69 and 74 (two runs; LCP 3.4/2.7 s, TBT 620/640 ms, 782 K
 
 ## 2026-11-20: header and footer redesign
 Owner: footer looked messy (60+ links in long columns). New shared lib/menu.ts. Header: dropdowns for Services, Industries (two columns), Resources (tools, benchmarks, blog, comparisons, glossary) and Mastermind, each with View all; removed internal badges such as "1500+ Words"; Benchmarks/Tools/Blog moved under Resources. Footer: brand + contact + socials, four short columns (Services, Industries, Resources, Company) with View all, closed "Browse all pages" section keeping every page linked, legal links in the bottom bar. Link audit: 0 broken, 0 orphans.
+
+## 2026-11-20: footer, all links in dropdowns
+Owner: footer should be very neat, everything in dropdown or hover. Footer is now brand row (logo, one line, Book call, socials, WhatsApp), one row of menus (Services, Industries, Resources, Case Studies, Mastermind, Company, Reviews, plus Related to this page when a page has related links) that open on hover on desktop and on tap on mobile (accordion), and a bottom bar with email and legal links. All links stay in the HTML (link audit 0 broken, 0 orphans).

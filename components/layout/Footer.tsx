@@ -4,6 +4,7 @@ import Image from "next/image";
 import { site } from "@/lib/site";
 import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
 import { FooterMenus } from "@/components/layout/FooterMenus";
+import { PreferredSourceButton } from "@/components/ui/PreferredSourceButton";
 import { legalLinks } from "@/lib/menu";
 
 /**
@@ -83,6 +84,12 @@ export function Footer() {
               Chat on WhatsApp
             </WhatsAppLink>
           </div>
+        </div>
+
+        {/* Google Preferred Sources */}
+        <div className="flex flex-col items-start gap-3 border-t border-line py-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm text-mist">Read our guides on Google? Add us as a preferred source to see more of them in Top Stories.</p>
+          <PreferredSourceButton />
         </div>
 
         {/* All links, in hover / tap menus */}

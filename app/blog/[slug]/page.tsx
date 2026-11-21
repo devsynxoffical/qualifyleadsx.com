@@ -7,6 +7,7 @@ import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { CTABanner } from "@/components/ui/CTABanner";
+import { PreferredSourceButton } from "@/components/ui/PreferredSourceButton";
 import { Button } from "@/components/ui/Button";
 import { blogPosts, getBlogPost, categorySlug } from "@/lib/blog-data";
 import { RichText, plainText } from "@/components/blog/RichText";
@@ -427,6 +428,12 @@ export default async function BlogPostPage({ params }: Props) {
                     View Verified Case Studies
                   </Button>
                 </div>
+              </div>
+
+              {/* Google Preferred Sources (owner request, 20 Nov 2026) */}
+              <div className="mt-8 flex flex-col items-start gap-3 rounded-2xl border border-line bg-panel/60 p-5 sm:flex-row sm:items-center sm:justify-between">
+                <p className="text-sm text-mist">Was this guide useful? Add QualifiedLeadsX as a preferred source on Google to see more of our guides in your search results.</p>
+                <PreferredSourceButton label="Add us on Google" className="shrink-0" />
               </div>
 
               {/* FAQ Section with SEO Interlinks */}

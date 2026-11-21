@@ -521,3 +521,13 @@ Owner: footer should be very neat, everything in dropdown or hover. Footer is no
 **Tracker:** nothing due (first check 3 Dec).
 **Changed:** nothing in this run; 20 Nov already shipped the recovery-plan pages, case study redesign, speed fix and new header/footer.
 **Indexing:** none sent (owner limit; next batch in the 21 Nov 14:13 IST run).
+
+## 2026-11-21 14:13 IST: 12-hourly run #7
+**Measured:** Search Console day 20 Nov reached 117 impressions (best day so far; previous best 83). 7 days: 672 impressions, 3 clicks, 72 pages, 118 queries, avg position 28.2 (was 29.6). 28 days: 1,165 impressions, 8 clicks, 165 queries, 10 on page 1.
+- Up: "lead conversion rate calculator" 68.8 → 52.4, "average cost per lead by industry" 70.8 → 62.7, "hvac meta ads" 57.1 → 50.3, "roas benchmarks by industry" 20.8 → 15. Down: none.
+- New: "burial insurance leads" pos 28.3 (/final-expense-leads), "frequency formula meta" pos 11 (/tools/ad-frequency-calculator), "qualified mass tort leads" pos 19 (/mass-tort-leads, now redirected).
+- Bing: 79 indexed, 0 crawl issues.
+**URL Inspection (all 119 sitemap URLs):** 109 indexed (was 105 of 121 on 19 Nov), 9 discovered not indexed, 1 unknown. Newly indexed: /hvac-leads, /mortgage-leads, /for/home-improvement, /case-studies/executive-consulting-150k. New 20 Nov pages (/pay-per-appointment, /blog/how-to-get-coaching-clients, /for/insurance-agencies) already indexed. Still not indexed: /benchmarks/meta-ads-cpm, /case-studies/b2b-technology-agency-71k, /case-studies/strategic-consulting-85k, /compare/done-for-you-vs-done-with-you-lead-generation, /compare/meta-ads-vs-google-ads-high-ticket, /crm-automation, /for/financial-advisors, /tools/ltv-cac-calculator, /tools/roas-calculator, /blog/scaling-from-100k-to-500k-coaching.
+**Changed:** nothing on the site (20 Nov changes need time).
+Indexing submissions 2026-11-21 08:55 UTC: 20 URLs to Google (20 accepted) and Bing (20 accepted): / /appointment-setting /pay-per-appointment /for/insurance-agencies /for/financial-advisors /for/coaches /blog/how-to-get-coaching-clients /case-studies /case-studies/b2b-technology-agency-71k /case-studies/strategic-consulting-85k /case-studies/florida-hvac-65k-cash-collected /case-studies/nyc-med-spa-rf-microneedling-74k /case-studies/b2b-agency-scaling-846k /case-studies/med-spa-marketing-agency-639k /case-studies/high-ticket-coaching-203k /case-studies/digital-media-agency-157k /case-studies/executive-consulting-150k /case-studies/commercial-services-86k /case-studies/agency-backend-continuity-86k /case-studies/high-ticket-funnel-79k
+Not resent (sent 19 Nov, unchanged since, 7-day rule): the unchanged not-indexed URLs above. Next batch allowed from the 22 Nov 14:13 IST run.

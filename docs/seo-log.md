@@ -534,3 +534,13 @@ Not resent (sent 19 Nov, unchanged since, 7-day rule): the unchanged not-indexed
 
 ## 2026-11-21: Google Preferred Sources button
 Owner request. components/ui/PreferredSourceButton.tsx links to https://www.google.com/preferences/source?q=qualifiedleadsx.com (new tab; Google blue #1a73e8, white text, G logo). Placed in the footer (every page) and after the conclusion of every blog post. Google only: no AI assistant (ChatGPT, Perplexity, Gemini apps, Claude) offers an equivalent setting.
+
+## Run 8: 21 Nov 2026 20:44 UTC (02:13 IST run, no indexing by rule)
+- GSC 7d: 711 impressions (+39 vs run 7), 4 clicks (+1), 74 pages, 124 queries (+6), avg position 29.1 (was 28.2). Latest day with data: 21 Nov (partial).
+- New queries: "air conditioning leads" (pos 60.5, /hvac-leads), "home improvement contractor leads" (69, /for/home-improvement), "show up rate" (9, /tools/show-rate-calculator), consulting programs question (pos 1, /for/consultants).
+- Striking distance: "facebook ads agency vs hiring an in-house media buyer" pos 5.0, 24 impr, 0 clicks. Title already matches the query exactly and was changed 17 Nov (14-day rule until 1 Dec), so no edit. Other striking queries have 1-6 impressions: too thin to justify a change.
+- Bots: Googlebot, OAI-SearchBot, PerplexityBot, ClaudeBot 200; Bingbot 403 and GPTBot 429 (Hostinger bot protection, unchanged).
+- Bing: 79 in index, crawled 40, 0 crawl issues, 8 impressions in 23 days; quota 80 today.
+- Tracker: no check_on dates due (first due 3-4 Dec).
+- Changes: none (no evidence-backed change available).
+- Deploy: Preferred Sources commit b976ccb is on main but still not live at 20:45 UTC (Hostinger deploy stalled; owner asked to redeploy).

@@ -113,7 +113,7 @@ export default function Page() {
         cards: [
           { icon: Users, title: "Coaches and consultants", text: <>Booked discovery calls with qualified prospects. See <Link href="/for/coaches" className="text-lime underline-offset-2 hover:underline">lead generation for coaches</Link> and <Link href="/for/consultants" className="text-lime underline-offset-2 hover:underline">consultants</Link>.</> },
           { icon: Briefcase, title: "Financial advisors and insurance agents", text: <>Appointments with prospects who match your client profile. See <Link href="/for/financial-advisors" className="text-lime underline-offset-2 hover:underline">financial advisors</Link> and <Link href="/for/insurance-agencies" className="text-lime underline-offset-2 hover:underline">insurance agents</Link>.</> },
-          { icon: HandCoins, title: "Local and home service businesses", text: "In-home estimates and consultations booked on your calendar, like the HVAC and remodeling campaigns above." },
+          { icon: HandCoins, title: "Local and home service businesses", text: <>In-home estimates and consultations booked on your calendar, like the HVAC and remodeling campaigns above. See <Link href="/for/home-improvement" className="text-lime underline-offset-2 hover:underline">home improvement leads</Link> and <Link href="/hvac-leads" className="text-lime underline-offset-2 hover:underline">HVAC leads</Link>.</> },
         ],
       }}
       faqTitle="Pay per appointment lead generation: FAQ"

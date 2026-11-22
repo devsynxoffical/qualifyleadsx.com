@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import Link from "next/link";
 import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
@@ -195,6 +196,13 @@ export default function Home() {
         <ShortAnswer className="mt-0">
           QualifiedLeadsX is a done-for-you client acquisition agency. We build and run Meta ads, a 3 to 5 page funnel, AI follow-up that replies in under 5 minutes, lead qualification and calendar booking, so agency owners, coaches and B2B firms doing $10,000+ a month get qualified sales calls. Every engagement carries a 90-day written guarantee.
         </ShortAnswer>
+        {/* 22 Nov 2026 (plan step 2): one main page per topic, linked with the exact search phrase. */}
+        <p className="mx-auto mt-4 max-w-3xl text-center text-sm leading-relaxed text-mist">
+          Start with our <Link href="/lead-generation-agency" className="text-lime underline-offset-2 hover:underline">qualified lead generation services</Link>,{" "}
+          <Link href="/b2b-lead-generation" className="text-lime underline-offset-2 hover:underline">qualified B2B leads</Link>,{" "}
+          <Link href="/appointment-setting" className="text-lime underline-offset-2 hover:underline">appointment setting services</Link> or{" "}
+          <Link href="/high-ticket-lead-generation" className="text-lime underline-offset-2 hover:underline">high-ticket lead generation</Link>.
+        </p>
       </section>
       {/* 20 Nov 2026: each below-the-fold section is its own Suspense boundary, so React
           hydrates them in separate small tasks instead of one long task (TBT). */}

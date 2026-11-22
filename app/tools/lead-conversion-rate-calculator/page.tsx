@@ -203,6 +203,10 @@ export default function LeadConversionRateCalculatorPage() {
                 <li key={t} className="flex gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-lime" /><span>{t}</span></li>
               ))}
             </ul>
+            <p className="mt-4">
+              The overall figure is also called the <strong className="text-fog">lead to customer conversion rate</strong> (or lead-to-client rate). Example: 400 leads that become 12 customers give a lead to customer conversion rate of 12 ÷ 400 × 100 = 3%. For a published example of every stage, see the{" "}
+              <Link href="/hvac-leads" className="text-lime underline-offset-2 hover:underline">HVAC funnel</Link>: 140 booked appointments, 74 connected calls, 49 offers and 12 installs.
+            </p>
           </div>
 
           <div>

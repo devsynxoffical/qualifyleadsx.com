@@ -422,7 +422,7 @@ export const blogPosts: BlogPost[] = [
         {
           "heading": "Setter, Virtual Assistant or Agency?",
           "body": [
-            "An in-house setter makes sense when you have steady lead volume and someone to coach them. A virtual assistant suits admin work, but rarely qualifies well; see [appointment setter vs virtual assistant](/compare/appointment-setter-vs-va). An [appointment setting agency](/appointment-setting) suits businesses that want setters, scripts, CRM and AI follow-up as one system. Whichever you choose, make sure you own the CRM and the data."
+            "An in-house setter makes sense when you have steady lead volume and someone to coach them. A virtual assistant suits admin work, but rarely qualifies well; see [appointment setter vs virtual assistant](/compare/appointment-setter-vs-va). An agency offering [qualified appointment setting](/appointment-setting) suits businesses that want setters, scripts, CRM and AI follow-up as one system. Whichever you choose, make sure you own the CRM and the data."
           ]
         },
         {
@@ -1465,7 +1465,7 @@ export const blogPosts: BlogPost[] = [
           subheading: "A Simple Rule Set by Spend Level and Business Stage",
           body: [
             "Under $20,000 per month in ad spend: Hire a specialized agency. The fully loaded cost of an in-house team is disproportionate to the budget, and you need a proven system more than you need headcount.",
-            "$20,000 to $50,000 per month: Still favor an agency that owns the full journey, but consider adding an in-house marketing coordinator to own brand, organic content and sales-marketing alignment.",
+            "$20,000 to $50,000 per month: Still favor a [Meta ads agency](/meta-ads-agency) that owns the full journey, but consider adding an in-house marketing coordinator to own brand, organic content and sales-marketing alignment.",
             "$50,000 to $150,000 per month, single offer: This is the crossover zone. An in-house media buyer plus a creative team becomes cost-competitive, provided you can recruit and retain senior talent. Many businesses at this level run a hybrid: in-house creative with agency media buying, or vice versa.",
             "Above $150,000 per month or multiple offers: Build in-house, often with an agency retained for creative testing capacity or new-market launches.",
             "Whichever route you pick, the written performance commitment matters. In-house, that is a clear 90-day KPI plan. With an agency, it should be a written guarantee tied to agreed milestones.",

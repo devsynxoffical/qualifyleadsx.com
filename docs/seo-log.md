@@ -554,3 +554,11 @@ Owner request. components/ui/PreferredSourceButton.tsx links to https://www.goog
 - Preferred Sources button live (verified).
 Indexing submissions 2026-11-22 08:56 UTC: Google 1 URL (1 accepted): /pay-per-appointment (changed today; all other sitemap URLs were sent 19 Nov, so the 7-day rule holds them until 26 Nov). Bing 20 URLs (accepted; never sent to Bing before, except the changed first one): /pay-per-appointment /hvac-leads /mortgage-leads /final-expense-leads /tools/lead-conversion-rate-calculator /tools/mer-calculator /tools/ad-frequency-calculator /about/gaurav-kapoor /blog/how-to-qualify-leads /blog/high-ticket-lead-generation-strategies /blog/meta-ads-for-coaches-guide /blog/scaling-from-100k-to-500k-coaching /blog/buy-qualified-leads-vs-generating-your-own /blog/cost-per-acquisition-vs-cost-per-lead /blog/how-to-increase-show-rate /blog/why-leads-dont-show-up /blog/vsl-script-template-high-ticket /blog/appointment-setter-compensation-models /blog/b2b-sales-closer-job-description /blog/meta-advantage-plus-for-b2b
 - 22 Nov: plan steps 2-4 changes P9, P10, P11 (homepage topic links, Meta ads agency + qualified appointment setting links, lead to customer conversion rate paragraph) verified live. Changed URLs to submit to Google in the next 14:13 IST run: /, /tools/lead-conversion-rate-calculator, /blog/facebook-ads-agency-vs-in-house-media-buyer, /blog/how-to-hire-an-appointment-setter.
+
+## Run 10: 22 Nov 2026 20:44 UTC (02:13 IST run, no indexing by rule)
+- GSC 7d: 748 impressions (+27), 5 clicks (+0), 74 pages, 149 queries (+12), avg position 30.4 (was 29.6). 22 Nov is partial (25 impressions so far). 28d: 1,286 impressions, 10 clicks, 201 queries, 13 on page 1.
+- New: 7 insurance agent queries on /for/insurance-agencies (pos 41-61, incl. "lead generation for insurance agents" pos 41); 4 pay per appointment queries on /pay-per-appointment (pos 50-83). Both pages are 2 days old and already ranking for their target terms.
+- Up: marketing efficiency ratio formula 79 -> 64. No queries down.
+- /mass-tort-leads (301 to /services since 20 Nov) still shows 32 impressions; expected to fade as Google processes the redirect.
+- Bots unchanged (Bingbot 403, GPTBot 429). Bing: 86 in index, 0 crawl issues.
+- Tracker: nothing due (first 3-4 Dec). Changes: none this run (P9-P11 went live today; waiting for data).

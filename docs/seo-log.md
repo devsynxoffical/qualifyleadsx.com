@@ -544,3 +544,12 @@ Owner request. components/ui/PreferredSourceButton.tsx links to https://www.goog
 - Tracker: no check_on dates due (first due 3-4 Dec).
 - Changes: none (no evidence-backed change available).
 - Deploy: Preferred Sources commit b976ccb is on main but still not live at 20:45 UTC (Hostinger deploy stalled; owner asked to redeploy).
+
+## Run 9: 22 Nov 2026 08:44 UTC (14:13 IST run)
+- GSC: no new day since run 8 (latest 21 Nov: 84 impressions, 2 clicks). 28d: 1,259 impressions, 10 clicks, 99 pages, 190 queries, 12 on page 1. 7d impression-weighted avg position 29.6.
+- Up: hvac meta ads 50.3 -> 41, air conditioning leads 60.5 -> 52, qualified appointments 67.8 -> 61.6, qualified b2b leads 64.2 -> 59.1. Down: how to get marketing qualified leads 15.7 -> 24.7, high ticket lead generation 53.8 -> 62.7 (1-3 impressions each).
+- New: ~10 home improvement lead queries on /for/home-improvement (pos 63-81); insurance agent queries on /for/insurance-agencies (pos 44-70); marketing efficiency ratio (48) on /tools/mer-calculator.
+- Bots unchanged: Bingbot 403, GPTBot 429; others 200. Bing: 86 in index, 0 crawl issues, 12 impressions in 24 days.
+- Change P8: "home improvement leads" and "HVAC leads" links on /pay-per-appointment (live, verified 08:56 UTC). Tracker row P8, check 10 Dec.
+- Preferred Sources button live (verified).
+Indexing submissions 2026-11-22 08:56 UTC: Google 1 URL (1 accepted): /pay-per-appointment (changed today; all other sitemap URLs were sent 19 Nov, so the 7-day rule holds them until 26 Nov). Bing 20 URLs (accepted; never sent to Bing before, except the changed first one): /pay-per-appointment /hvac-leads /mortgage-leads /final-expense-leads /tools/lead-conversion-rate-calculator /tools/mer-calculator /tools/ad-frequency-calculator /about/gaurav-kapoor /blog/how-to-qualify-leads /blog/high-ticket-lead-generation-strategies /blog/meta-ads-for-coaches-guide /blog/scaling-from-100k-to-500k-coaching /blog/buy-qualified-leads-vs-generating-your-own /blog/cost-per-acquisition-vs-cost-per-lead /blog/how-to-increase-show-rate /blog/why-leads-dont-show-up /blog/vsl-script-template-high-ticket /blog/appointment-setter-compensation-models /blog/b2b-sales-closer-job-description /blog/meta-advantage-plus-for-b2b

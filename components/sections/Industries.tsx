@@ -40,7 +40,15 @@ export function Industries() {
             <em className="font-semibold not-italic text-lime">industries we work with.</em>
           </>
         }
-        subtitle="The QualifiedLeadsX™ system is engineered per niche - same engine, different fuel. These are just some of the industries we've scaled."
+        subtitle={
+          <>
+            We work with home services, med spas,{" "}
+            <Link href="/for/insurance-agencies" className="text-lime underline-offset-2 hover:underline">insurance agents</Link>,{" "}
+            <Link href="/for/financial-advisors" className="text-lime underline-offset-2 hover:underline">financial advisors</Link>, real estate, legal
+            and coaching businesses in the US, UK, Canada and Australia. If one closed client is worth $1,000 or more to you, booked
+            appointments usually beat buying raw leads.
+          </>
+        }
       />
 
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

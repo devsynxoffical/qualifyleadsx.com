@@ -262,94 +262,34 @@ export const faqs: {
   category: (typeof faqCategories)[number];
 }[] = [
   {
-    q: "Who is this for?",
-    a: "Agency owners, coaches, high-ticket service providers and B2B founders already generating $10,000+/month. If you're below that, this system isn't the right fit for you yet.",
+    q: "What is a customer acquisition agency?",
+    a: "A customer acquisition agency runs the full process of turning strangers into booked sales calls: ads, landing pages, lead qualification, follow-up and calendar booking. You get appointments, not a spreadsheet of contacts.",
     category: "The System",
   },
   {
-    q: "What does a customer acquisition agency like QualifiedLeadsX do?",
-    a: "A customer (or client) acquisition agency builds and runs the whole system that turns strangers into paying clients: offer positioning, paid ads, the funnel, lead qualification, fast follow-up and booking sales calls. QualifiedLeadsX is a done-for-you client acquisition agency for high-ticket B2B offers, coaches and agencies; you keep ownership of the ad account, funnel, CRM and data.",
-    category: "The System",
+    q: "How much does done-for-you lead generation cost?",
+    a: "You pay a management fee plus your own ad spend. In our published campaigns, booked appointments have cost between $4.81 and $45 each depending on the industry and offer.",
+    category: "Pricing",
   },
   {
-    q: "Is this completely done-for-you?",
-    a: "Yes. We handle offer positioning, Meta Ads, ad creatives, landing pages, CRM, AI automations, lead qualification and follow-up. Your only job is to show up for the calls and close premium clients.",
-    category: "The System",
-  },
-  {
-    q: "Do I own everything?",
-    a: "Yes - written into the engagement. Landing pages, funnels, CRM, automations, ad creatives, copy, follow-up sequences and customer data all become your business assets. No lock-ins, no hidden ownership.",
+    q: "Do you guarantee results?",
+    a: "Yes. Every engagement comes with a 90-day written guarantee. The terms are agreed before we start, so you know exactly what we are accountable for.",
     category: "Ownership",
   },
   {
-    q: "How long does implementation take?",
-    a: "Most systems are live within weeks. You'll start seeing traffic and booked appointments during implementation - you don't wait 90 days just to get started.",
+    q: "How fast will I get my first appointments?",
+    a: "Most campaigns start booking within the first weeks once ads, funnel and follow-up are live. One luxury real estate campaign booked 10 buyer appointments in 24 hours.",
     category: "Onboarding",
   },
   {
-    q: "What industries do you work with?",
-    a: "Digital marketing agencies, coaches, consultants, B2B companies, home services, legal, healthcare, real estate, mortgage, insurance, fitness, e-commerce, construction and more - 30+ niches and counting.",
+    q: "Which industries do you work with?",
+    a: "Service businesses with a sales call in the process: home services, med spas, insurance, financial advisors, legal, real estate, coaching and B2B services, across 30+ industries.",
     category: "The System",
   },
   {
-    q: "What happens on the strategy call?",
-    a: "We audit your offer, traffic and numbers, show you the exact system we'd install for your niche, and lay out what it takes to double your revenue in 90 days. No pressure, no obligation.",
-    category: "Onboarding",
-  },
-  {
-    q: "How is this different from a marketing agency?",
-    a: "Agencies run ads and hand you leads. We build and operate a complete client acquisition ecosystem - from the first click to a qualified client on your calendar - and back it with a written guarantee.",
-    category: "The System",
-  },
-  {
-    q: "What's included?",
-    a: "Offer positioning, messaging, Meta Ads, creatives, landing pages, complete sales funnel, CRM, AI automations, email sequences, SMS follow-up, appointment reminders, lead qualification, calendar booking and ongoing optimisation.",
-    category: "The System",
-  },
-  {
-    q: "How much does a lead generation agency cost?",
-    a: "Most agencies charge a monthly management fee, a fee per lead or call, or a mix, plus your own ad spend. QualifiedLeadsX quotes each engagement after the strategy call, based on your niche, ad budget and funnel scope, and charges no management fee after day 90 if the agreed milestones are not met.",
+    q: "Is outsourced lead generation worth it?",
+    a: "It is worth it when the value of one client is far higher than the cost of a booked call. Our med spa client paid $42 in ads per paying client and generated $74,100 from $10,387 in ads.",
     category: "Pricing",
-  },
-  {
-    q: "Are lead generation companies worth it?",
-    a: "They are worth it when you can close the calls and your offer is priced high enough to cover the cost of acquisition. That is why we only work with businesses already doing $10,000+ a month.",
-    category: "The System",
-  },
-  {
-    q: "What does a lead generation agency do?",
-    a: "It finds, attracts and qualifies potential buyers for you. We go further than leads: we build the offer, the Meta ads, the funnel, the CRM and the AI follow-up, and we deliver booked, qualified sales calls.",
-    category: "The System",
-  },
-  {
-    q: "Do you work with B2B companies?",
-    a: "Yes. B2B service companies, consultants and agencies are a core group. We use Meta ads with B2B-specific qualification questions and calendar booking instead of cold outreach.",
-    category: "The System",
-  },
-  {
-    q: "Do you run Google ads or LinkedIn ads?",
-    a: "Our system is built on Meta ads (Facebook and Instagram) because that is where we have managed $50M+ in spend. We tell you on the strategy call if your offer needs a different channel.",
-    category: "The System",
-  },
-  {
-    q: "What is a healthy benchmark ROAS for B2B appointment generation on Meta?",
-    a: "For high-ticket offers priced between $3,000 and $25,000+, a healthy front-end benchmark ROAS is between 3.5x and 7.0x. High-converting pipelines maintain an average Cost Per Qualified Call (CPQC) between $140 and $260 and convert 20% to 35% of held discovery sessions into closed revenue.",
-    category: "Pricing",
-  },
-  {
-    q: "How does sub-5-minute speed to lead improve call show-up rates?",
-    a: "Contacting inbound prospects via automated WhatsApp and SMS confirmation within 180 seconds increases conversion rates by up to 391% compared to waiting 30+ minutes. Instant engagement locks in calendar commitment and elevates show-up rates above 88%.",
-    category: "The System",
-  },
-  {
-    q: "Why does broad creative targeting outperform narrow lookalike audiences on Meta in 2026?",
-    a: "Meta's Andromeda machine-learning algorithm uses your video sales letter script, audio transcript, and on-screen text as the targeting filter. Broad audiences prevent audience fatigue, lower CPM costs by 30–50%, and allow the AI algorithm to pinpoint solvent enterprise decision-makers across Facebook and Instagram.",
-    category: "The System",
-  },
-  {
-    q: "What is the difference between simple lead generation and qualified appointment setting?",
-    a: "Simple lead generation captures cheap, unvetted contact information (name and email) resulting in high no-show rates. Qualified appointment setting enforces multi-tier conditional friction gates, verifying liquid capital ($5,000+), company revenue, and purchasing authority, so your closers only speak with pre-framed buyers.",
-    category: "The System",
   },
 ] as const;
 

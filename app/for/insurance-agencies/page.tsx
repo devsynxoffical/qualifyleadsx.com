@@ -10,9 +10,9 @@ import { RichLeadPage } from "@/components/landing/RichLeadPage";
  * from a published campaign in lib/case-studies-data.ts (final expense Dd9D3rnSCMT, life insurance DJFKW2si8E7).
  */
 const PATH = "/for/insurance-agencies";
-const TITLE = "Lead Generation for Insurance Agents: Exclusive Leads";
+const TITLE = "Lead Generation for Insurance Agents: Exclusive Leads | QLX";
 const DESCRIPTION =
-  "Lead generation for insurance agents: exclusive final expense and life insurance leads from your own Meta ads. Published: 2,440 leads at $7.79 in a month.";
+  "Exclusive lead generation for insurance agents. Published campaigns: 2,440 final expense leads at $7.79 each and life insurance leads at about $18.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -30,7 +30,7 @@ export default function Page() {
     <RichLeadPage
       path={PATH}
       eyebrow="For insurance agents, agencies and call centers"
-      h1="Lead Generation for Insurance Agents"
+      h1="Lead Generation for Insurance Agents and Agencies"
       shortAnswer={
         <>
           QualifiedLeadsX runs <strong className="text-fog">lead generation for insurance agents</strong> with Meta ads in your own ad account. Prospects answer qualifying questions, can verify their phone number, and are contacted within minutes, so your agents call people who asked to hear from them, not leads shared with other agents. For a pay-per-lead client we generated 2,440 final expense leads at $7.79 each in one month.
@@ -59,7 +59,7 @@ export default function Page() {
       formTitle="Get a free insurance lead plan for your states"
       proof={{
         title: "Insurance campaigns we have run and published",
-        intro: <>Screenshots from the clients&apos; Ads Manager, published at the time. Tap a card to see the full screenshot, or open the original post to check the numbers.</>,
+        intro: <>For a pay-per-lead client we generated 2,440 final expense leads in one month at $7.79 each on $19,011 in spend. For life insurance agents, $990 produced 55 qualified leads in 14 days, about $18 each. Tap a card to see the full screenshot, or open the original post.</>,
         cards: [
           { img: "/case-studies/images/Dd9D3rnSCMT.jpg", w: 1816, h: 1440, headline: "2,440 final expense leads in a month", where: "Pay-per-lead insurance client", metrics: [{ label: "Spend", value: "$19,011" }, { label: "CPL", value: "$7.79" }, { label: "Leads", value: "2,440" }], source: ig("Dd9D3rnSCMT") },
           { img: "/case-studies/videos/DJFKW2si8E7.jpg", w: 1080, h: 1920, headline: "55 qualified life insurance leads", where: "Life insurance agents, 14 days", metrics: [{ label: "Spend", value: "$990" }, { label: "CPL", value: "≈$18" }, { label: "Leads", value: "55" }], source: ig("DJFKW2si8E7") },
@@ -67,7 +67,7 @@ export default function Page() {
       }}
       plan={{
         title: "What insurance leads have cost in our campaigns",
-        intro: <>The two insurance campaigns we have published so far. Final expense details are on the <Link href="/final-expense-leads" className="text-lime underline-offset-2 hover:underline">final expense leads</Link> page.</>,
+        intro: <>Final expense: $7.79 per lead. Life insurance: about $18 per lead. Use the estimator below to see how many leads your monthly budget could produce at those two published costs. Final expense details are on the <Link href="/final-expense-leads" className="text-lime underline-offset-2 hover:underline">final expense leads</Link> page.</>,
         rows: [
           { label: "Final expense, pay-per-lead client, 1 month ($19,011.31 spend)", value: "$7.79" },
           { label: "Life insurance agents, 14 days ($990 spend)", value: "≈$18" },
@@ -76,7 +76,7 @@ export default function Page() {
       estimator={{ cplLow: 7.79, cplHigh: 18, unit: "insurance leads", sourceNote: "Uses the two published insurance campaigns on this page: $7.79 (final expense) and about $18 (life insurance) per lead." }}
       process={{
         title: "How we generate insurance leads for agents",
-        intro: <>Built for insurance: honest ads, qualification in the form and follow-up fast enough that your agent is the first to call.</>,
+        intro: <>We run compliant Meta and Google campaigns in your licensed states, qualify each prospect by age, coverage need and budget, and send the lead to you or book the call directly into your calendar with our <Link href="/appointment-setting" className="text-lime underline-offset-2 hover:underline">appointment setting services</Link>.</>,
         steps: [
           { icon: Target, title: "Ads for the right age group", text: "Plain-language Meta ads for the people you sell to, with no misleading 'government program' claims. Your compliance rules apply to every ad." },
           { icon: Filter, title: "Qualifying questions", text: "Age band, state, coverage amount wanted and best time to call, plus consent to be contacted." },
@@ -94,25 +94,25 @@ export default function Page() {
       comparison={{
         title: "Insurance lead vendors vs your own campaign",
         themLabel: "Typical lead vendors",
-        them: ["The same prospect is sold to several agents", "Aged leads that were called days ago", "You can't change the questions or the ads", "Stop paying and nothing stays with you"],
-        us: ["Exclusive leads from your own ad account", "Real-time leads, contacted in minutes", "Questions and ads built for your products", "Ad account, pixel and data stay yours"],
+        them: ["Leads are often shared with several agents", "You race other agents to call first", "The lead never saw your name or brand", "The price per lead stays the same"],
+        us: ["Exclusive to you, from your own campaign", "No race: you are the only agent calling", "Every ad and form carries your brand", "Leads get cheaper as the campaign learns"],
       }}
       audiences={{
-        title: "Insurance lead generation for agents, agencies and call centers",
+        title: "Insurance lead generation for agents, agencies and brokers",
         cards: [
-          { icon: UserCheck, title: "Independent agents", text: <>A steady flow of exclusive final expense and life insurance leads. See <Link href="/final-expense-leads" className="text-lime underline-offset-2 hover:underline">final expense leads</Link>.</> },
-          { icon: Building2, title: "Agencies and call centers", text: <>Volume for a team of agents, with lead routing and reporting through <Link href="/crm-automation" className="text-lime underline-offset-2 hover:underline">CRM automation</Link>.</> },
-          { icon: HeartHandshake, title: "Pay-per-lead insurance businesses", text: "Verified leads you can sell to agents, like the 2,440-lead final expense campaign above." },
+          { icon: UserCheck, title: "Independent and captive agents", text: <>Exclusive final expense, life, Medicare and health leads. See <Link href="/final-expense-leads" className="text-lime underline-offset-2 hover:underline">final expense leads</Link>.</> },
+          { icon: Building2, title: "IMOs and agencies", text: <>Volume for a team of agents, routed by state or product. Prefer booked calls? See <Link href="/pay-per-appointment" className="text-lime underline-offset-2 hover:underline">pay per appointment</Link>.</> },
+          { icon: HeartHandshake, title: "Brokerages", text: <>Property and casualty, life and health lines for brokers. Also selling investments? See <Link href="/for/financial-advisors" className="text-lime underline-offset-2 hover:underline">lead generation for financial advisors</Link>.</> },
         ],
       }}
       faqTitle="Lead generation for insurance agents: FAQ"
       faqs={[
-        { q: "How do insurance agents get leads?", a: "Most buy leads from vendors, where the same prospect is often sold to several agents, or rely on referrals. Running your own Meta ads campaign gives you exclusive, real-time leads: people who filled in your form, answered your qualifying questions and are called within minutes." },
-        { q: "How much do insurance leads cost?", a: "In our published insurance campaigns, final expense leads cost $7.79 each (2,440 leads from $19,011.31 in one month for a pay-per-lead client) and life insurance leads about $18 each (55 qualified leads for $990 in 14 days). Cost depends on state, age band, product and budget. Our management fee is custom quoted." },
-        { q: "Are the leads exclusive to my agency?", a: "Yes. The campaign runs in an ad account in your name and every lead goes only to you. We do not resell or share leads between agents." },
-        { q: "Which insurance products do you generate leads for?", a: "Our published insurance results are final expense (burial insurance) and life insurance. Other products can be tested on the same system; we will tell you on the strategy call if we have no comparable results." },
-        { q: "Can you book appointments for my agents?", a: "Yes. Leads can be contacted within minutes and booked straight into your agents' calendars, with SMS, email and WhatsApp reminders to protect the show rate." },
-        { q: "Are Meta insurance ads compliant?", a: "Every ad is written in plain language without misleading claims, and your compliance team approves ads and disclosures before they run. Some insurance products fall under Meta's special ad category for financial products, which limits targeting; we build campaigns within those rules." },
+        { q: "What is the best lead generation for insurance agents?", a: "Exclusive leads from your own ad campaigns usually beat shared vendor leads because you are the only agent calling. Our published final expense campaign produced leads at $7.79 each." },
+        { q: "How much do insurance leads cost?", a: "In our published campaigns, final expense leads cost $7.79 and life insurance leads about $18. Prices depend on product, state and targeting." },
+        { q: "How do life insurance agents get leads?", a: "The main options are referrals, buying vendor leads, and running your own ads with a qualification funnel. The last gives exclusive leads and steady volume." },
+        { q: "Are your insurance leads exclusive?", a: "Yes. Every lead comes from a campaign run only for your agency and is never sold to another agent." },
+        { q: "Can you book appointments instead of sending leads?", a: "Yes. We can qualify each lead and book them into your calendar, which is how our appointment setting service works." },
+        { q: "Do you work with insurance brokers and agencies with several agents?", a: "Yes. Leads can be routed to multiple agents by state, product or round robin inside your CRM." },
       ]}
       further={{
         title: "More for insurance and financial professionals",

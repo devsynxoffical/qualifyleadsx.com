@@ -1,8 +1,8 @@
 URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problems,Action
-/,core,Done-for-You Outsourced Lead Generation,206,556,154,thin (206 unique words),improve
+/,core,Done-for-You Lead Generation and Appointments,226,576,154,thin (226 unique words),improve
 /about,company/legal,About : $50M+ Meta Ads Managed,1263,1296,154,none,keep
 /about/gaurav-kapoor,company/legal,"Gaurav Kapoor, Founder of",215,277,154,none,keep
-/appointment-setting,core,Appointment Setting Services: Qualified Sales Appointments,1797,2311,154,none,keep
+/appointment-setting,core,Appointment Setting Services That Book Sales Calls,1489,2003,154,none,keep
 /appointment-setting-for-agencies,industry,Appointment Setting for Agencies: Booked Strategy Calls,534,863,154,none,keep
 /appointment-setting-for-consultants,industry,Appointment Setting for Consultants: Qualified Calls Only,457,786,154,none,keep
 /b2b-lead-generation,core,Qualified B2B Leads: Enterprise Lead Generation Services,1099,1806,154,none,keep
@@ -109,10 +109,10 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /for/coaches,industry,Lead Generation for Coaches: Client Acquisition Funnels,1373,1922,154,none,keep
 /for/consultants,industry,Lead Generation for Consultants: B2B Client Acquisition,1124,1678,154,none,keep
 /for/course-creators,industry,Course Creator Lead Generation,230,555,154,thin (230 unique words),improve
-/for/financial-advisors,industry,Lead Generation for Financial Advisors,542,1239,154,none,keep
+/for/financial-advisors,industry,Lead Generation for Financial Advisors,483,1180,154,none,keep
 /for/fitness-coaches,industry,Online Fitness Coach Clients,241,566,154,thin (241 unique words),improve
 /for/home-improvement,industry,Home Improvement Leads,209,534,154,thin (209 unique words),improve
-/for/insurance-agencies,industry,Lead Generation for Insurance Agents: Exclusive Leads,995,1070,154,none,keep
+/for/insurance-agencies,industry,Lead Generation for Insurance Agents: Exclusive Leads,976,1051,154,none,keep
 /for/med-spas,industry,Med Spa Lead Generation: High-Ticket Booking Agency,503,1205,154,none,keep
 /for/real-estate-investors,industry,Buy Motivated Seller Leads: Off-Market Real Estate Deals,807,1132,154,none,keep
 /for/recruitment-agencies,industry,Recruitment Agency Leads,217,542,10,noindex,keep (noindex)
@@ -135,7 +135,7 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /meta-ads-for-saas,industry,Facebook Ads for SaaS: Real Results and Playbook,521,850,154,none,keep
 /mortgage-leads,core,"Mortgage Leads: Exclusive, OTP-Verified Borrower Leads",1030,1100,154,meta description 161 chars,shorten description
 /outsourced-sales-closers,core,Outsourced Sales Closers: Commission-Based Closers,745,1070,154,none,keep
-/pay-per-appointment,core,Pay Per Appointment Lead Generation: Booked Sales Calls,1109,1184,154,none,keep
+/pay-per-appointment,core,Pay Per Appointment Lead Generation,1001,1076,154,none,keep
 /privacy,company/legal,Privacy Policy,210,210,154,noindex,keep (noindex)
 /services,core,"Client Acquisition Services: Meta Ads, VSL & Setters",674,1107,154,none,keep
 /speed-to-lead,core,Speed to Lead Automation: Sub-5-Minute Quick Lead Acquisition,926,1626,154,title 61 chars,shorten title

@@ -99,7 +99,7 @@ export function Different() {
               </em>
             </>
           }
-          subtitle="Unlike traditional marketing agencies, we handle every step of your customer journey - from attracting the right prospects, to qualifying them, to nurturing them, to getting them booked onto your calendar."
+          subtitle="We report cost per booked appointment and cost per client, not just cost per lead. Speed to lead is under 3 minutes on our appointment setting system. Our results are published with ad spend shown, across 125+ case studies, and every engagement carries a 90-day written guarantee."
         />
 
         {/* ── All 7 Differentiator Cards (Unified Design) ── */}

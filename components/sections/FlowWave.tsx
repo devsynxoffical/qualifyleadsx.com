@@ -712,7 +712,7 @@ export function FlowWave() {
             <div ref={headlineWrapRef}>
               {/* 20 Nov 2026 (SEO Recovery Plan): only the keyword line is the H1; the offer lines below are styled the same but are not part of the heading. */}
               <h1 className="mx-auto max-w-4xl text-balance text-[clamp(1.2rem,2.4vw,1.9rem)] font-semibold leading-[1.22] tracking-[-0.03em] text-fog">
-                <em className="text-gradient-lime not-italic">Done-for-You Lead Generation</em> and Appointment Setting for High-Ticket Offers
+                <em className="text-gradient-lime not-italic">Done-for-You Lead Generation</em> and Appointment Setting for Service Businesses
               </h1>
               <p className="mx-auto mt-2 max-w-4xl text-balance text-gradient-lime text-[clamp(1.9rem,5.6vw,4.8rem)] font-bold leading-[1.02] tracking-[-0.03em]">
                 Double Your Revenue Within The Next 90 Days
@@ -778,8 +778,9 @@ export function FlowWave() {
               className="mx-auto mt-2.5 max-w-2xl text-pretty text-sm text-fog sm:mt-4 sm:text-[1.05rem]"
               style={{ opacity: 0 }}
             >
-              We Design, Run And Optimize The Entire Acquisition Engine For You, From Meta Ads
-              To The Booked Call. You Just Take The Calls.
+              QualifiedLeadsX is a customer acquisition agency for service businesses. We build the ads, the funnel, the
+              qualification questions and the follow-up, then book qualified prospects straight onto your calendar. You talk
+              only to people who have already answered budget, timing and fit questions.
             </p>
 
             <div

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { X } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
@@ -26,9 +27,13 @@ export function WhyScale() {
           </SplitReveal>
           <Reveal delay={0.15}>
             <p className="mt-6 max-w-md text-pretty leading-relaxed text-mist">
-              Most agencies only run ads. Some build funnels. Others write copy. Someone else
-              handles follow-up. Nobody owns the entire customer journey. That&apos;s exactly why
-              businesses struggle to scale consistently.
+              Most agencies stop at the form fill. You get a list of names, half of them never answer, and
+              the rest were never a fit. We treat the lead as the start of the job: every contact is called or
+              messaged within minutes, qualified against your criteria and only then booked. See how our{" "}
+              <Link href="/appointment-setting" className="text-lime underline-offset-2 hover:underline">appointment setting services</Link>{" "}
+              and{" "}
+              <Link href="/pay-per-appointment" className="text-lime underline-offset-2 hover:underline">pay per appointment</Link>{" "}
+              model work.
             </p>
           </Reveal>
           <Reveal delay={0.25}>

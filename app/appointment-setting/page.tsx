@@ -39,10 +39,10 @@ import { appointmentSettingDeepDive } from "@/lib/deep-dive-content";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Appointment Setting Services: Qualified Sales Appointments",
+    absolute: "Appointment Setting Services That Book Sales Calls | QLX",
   },
   description:
-    "Appointment setting services for coaches, consultants, advisors and insurance agents: leads contacted in minutes, qualified and booked on your calendar.",
+    "Appointment setting services with under 3-minute speed to lead and automatic reminders. Published campaigns booked calls from $4.81 to $45 each.",
   keywords: [
     "appointment setting services",
     "b2b appointment setting",
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
     canonical: "/appointment-setting",
   },
   openGraph: {
-    title: "Appointment Setting Services: Qualified Sales Appointments",
+    title: "Appointment Setting Services That Book Sales Calls | QLX",
     description:
-      "Automated B2B appointment setting system with sub-3-minute speed to lead. Turn cold inquiries into pre-qualified, high-ticket sales calls.",
+      "Appointment setting services with under 3-minute speed to lead and automatic reminders. Published campaigns booked calls from $4.81 to $45 each.",
     url: `${site.url}/appointment-setting`,
     siteName: site.name,
     images: [
@@ -79,38 +79,37 @@ export const metadata: Metadata = {
   twitter: {
     images: [defaultOgImage.url],
     card: "summary_large_image",
-    title: "Appointment Setting Services: Qualified Sales Appointments",
+    title: "Appointment Setting Services That Book Sales Calls | QLX",
     description:
-      "Automated B2B appointment setting system with sub-3-minute speed to lead. Turn cold inquiries into pre-qualified, high-ticket sales calls.",
+      "Appointment setting services with under 3-minute speed to lead and automatic reminders. Published campaigns booked calls from $4.81 to $45 each.",
   },
 };
 
 const appointmentFaqs = [
   {
-    q: "What is the average cost per qualified appointment in B2B appointment setting?",
-    a: "Across enterprise B2B and high-ticket service industries ($3,000 to $25,000 deal sizes), the average cost per qualified booked appointment ranges from $120 to $250. Because our automated system requires prospects to pass through a 4-tier conditional qualification gate ($5,000+ budget, decision-maker authority) and validates attendance via two-way WhatsApp/SMS confirmation, your acquisition spend translates directly into sales-ready pipeline rather than ghosted calendar slots.",
+    q: "How much do appointment setting services cost?",
+    a: "Most providers charge a monthly retainer, a fee per appointment, or both. With us you pay a management fee plus ad spend, and published campaigns have produced booked appointments from $4.81 to $45 each.",
   },
   {
-    q: "How does automated appointment setting compare to hiring human appointment setters or SDRs?",
-    a: "Human appointment setters cost between $3,500 and $5,500 per month in base salary plus commissions, suffer from fatigue, take sick days, and frequently experience 30-to-90 minute response delays. Our automated system executes sub-3-minute speed to lead 24/7 across WhatsApp, SMS, and email with zero payroll overhead, achieving 2.8x higher appointment booking velocity without commission churn.",
+    q: "What is the difference between appointment setting and lead generation?",
+    a: "Lead generation gives you contact details. Appointment setting goes further: the lead is contacted, qualified and booked into your calendar before you ever speak to them.",
   },
   {
-    q: "Why is speed to lead critical for B2B appointment booking rates?",
-    a: "Empirical sales studies prove that responding to an inbound lead within 5 minutes makes you 21 times more likely to qualify and book that prospect compared to waiting 30 minutes. After 5 minutes, lead attention decays by 80%. Our automated speed-to-lead protocol triggers instant two-way conversational confirmation before competitor agencies even open their email notifications.",
+    q: "Is outsourced appointment setting better than hiring an in-house setter?",
+    a: "An outsourced system responds 24/7 in under 3 minutes and has no salary, training or turnover cost. An in-house setter makes sense once volume is high and your process is proven.",
   },
   {
-    q: "How do you filter out low-budget leads and tire-kickers?",
-    a: "We never provide open calendar booking links. Prospects must pass through an automated 4-tier conditional qualification gate verifying monthly revenue, business model, and investment capital ($5,000+ liquid capital requirement). Underqualified prospects are politely routed to low-ticket training assets, protecting your sales closers' time.",
+    q: "What show rate should I expect?",
+    a: "Our appointment setting system averages an 88.3% call show-up rate thanks to instant confirmation and SMS and WhatsApp reminders.",
   },
   {
-    q: "How does this system achieve an 88%+ sales call show-up rate?",
-    a: "Most agencies suffer from 40–50% calendar no-shows because they send generic automated emails that go to spam. We deploy an omnichannel pre-call indoctrination sequence via WhatsApp and SMS: prospects receive short video case studies, 1-click attendance confirmation, and an interactive prep workbook that builds authority prior to the call.",
+    q: "Do you do B2B appointment setting?",
+    a: "Yes. We book calls for B2B service companies, agencies and consultants as well as local and consumer service businesses.",
   },
   {
-    q: "What CRM and calendar platforms does this appointment setting system integrate with?",
-    a: "Our architecture integrates natively with GoHighLevel, HubSpot, Salesforce, Calendly, Close CRM, and Zapier/Make webhooks. Leads flow directly into your existing sales pipeline with custom tags, lead source attribution, and qualification score cards.",
+    q: "Which countries do you book appointments in?",
+    a: "The US, UK, Canada and Australia, in the time zone of your sales team.",
   },
-  ...appointmentSettingDeepDive.faqs,
 ];
 
 export default function AppointmentSettingPage() {
@@ -223,15 +222,15 @@ export default function AppointmentSettingPage() {
 
           {/* Primary Keyword H1 */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-white max-w-5xl mx-auto leading-[1.08]">
-            <span className="text-lime">Appointment Setting Services</span> That Book Qualified Sales Appointments
+            <span className="text-lime">Appointment Setting Services</span> That Book Qualified Sales Calls
           </h1>
           <ShortAnswer>
-            Appointment setting means replying to new leads within minutes, qualifying them on budget, authority and timeline, and booking only fit prospects into your sales calendar with reminders. QualifiedLeadsX combines sub-5-minute AI follow-up with human setters. With email-only confirmations the average show rate is 58.2%, which is why reminders are built in.
+            Appointment setting means replying to new leads within minutes, qualifying them on budget, authority and timeline, and booking only fit prospects into your sales calendar with reminders. QualifiedLeadsX combines sub-5-minute AI follow-up with human setters. With email-only confirmations the average show rate is 58.2% (Velocify), which is why reminders are built in.
           </ShortAnswer>
 
           {/* Subtitle with Secondary Keyword */}
           <p className="mt-6 text-lg sm:text-2xl text-mist max-w-3xl mx-auto leading-relaxed font-normal">
-            Replace unreliable human setter teams with an automated pipeline that engages inquiries in under 3 minutes, qualifies liquid capital, and books 30–50 ready-to-close sales calls every month.
+            Every new lead is contacted in under 3 minutes, qualified on your questions and booked into your calendar, with reminders until the call happens.
           </p>
 
           {/* CTAs */}
@@ -252,7 +251,8 @@ export default function AppointmentSettingPage() {
               <span>Summary: How It Works</span>
             </div>
             <p className="aeo-answer text-sm sm:text-base leading-relaxed text-mist">
-              <strong>QualifiedLeadsX™</strong> installs an automated B2B <strong>appointment setting</strong> infrastructure engineered for high-ticket coaches, consultants, and growth agencies. Combining 4-tier conditional qualification surveys with sub-5-minute multichannel <strong>speed to lead</strong> across WhatsApp, SMS, and email, our system eliminates tire-kickers and books 30–50 sales-ready appointments every month with an 88%+ show-up rate.
+              Pricing is a monthly management fee plus ad spend, agreed after a strategy call. We report cost per booked appointment, cost per show and cost per sale, so you can compare us directly against an in-house setter or a pay-per-lead vendor. Prefer to judge us only on booked calls? See{" "}
+              <Link href="/pay-per-appointment" className="text-lime underline-offset-2 hover:underline">pay per appointment</Link>.
             </p>
           </div>
 
@@ -314,7 +314,10 @@ export default function AppointmentSettingPage() {
           <span className="text-xs font-mono uppercase tracking-[0.25em] text-lime font-bold">What you get</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold font-heading text-white tracking-tight max-w-3xl">What our appointment setting services include</h2>
           <p className="mt-4 max-w-3xl text-mist">
-            Appointment setting services turn new leads into booked sales appointments: someone (or an automated sequence) contacts each lead within minutes, asks the qualifying questions you set, books fit prospects into your calendar and reminds them so they show up. QualifiedLeadsX runs the whole chain, from the Meta ads that create the leads to the reminder before the call.
+            We contact every new lead within minutes by call, SMS and WhatsApp, ask your qualification questions, book the call into your calendar and send reminders until the appointment happens. You get the booking, the answers and the call notes in your CRM. It is the same system behind our{" "}
+            <Link href="/" className="text-lime underline-offset-2 hover:underline">done-for-you lead generation</Link>{" "}
+            and our{" "}
+            <Link href="/for/insurance-agencies" className="text-lime underline-offset-2 hover:underline">lead generation for insurance agents</Link>.
           </p>
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             <div className="rounded-2xl border border-line bg-panel p-6">
@@ -354,7 +357,7 @@ export default function AppointmentSettingPage() {
               Why 5 Minutes Decides A $10,000+ High-Ticket Deal
             </h2>
             <p className="mt-3 text-base text-mist">
-              Every minute of delay after an inbound inquiry is submitted drastically reduces your conversion velocity.
+              Leads cool down fast. Research from Harvard Business Review on lead response shows that contacting a lead quickly makes a large difference to whether they ever talk to you. Our system reaches new leads in under 3 minutes, around the clock.
             </p>
           </div>
 
@@ -446,10 +449,10 @@ export default function AppointmentSettingPage() {
                 </div>
                 <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-2">Gate 01</div>
                 <h3 className="text-lg font-bold font-heading text-white mb-2">
-                  Revenue Threshold
+                  Tier 1: Intent
                 </h3>
                 <p className="text-sm text-mist leading-relaxed font-normal">
-                  Filters by current monthly revenue brackets (&lt;$10K, $10K–$30K, $30K–$100K+). Businesses below minimum threshold are filtered out.
+                  Did they ask for a call or just download something?
                 </p>
               </div>
               <div className="mt-4 pt-3 border-t border-line/50 text-xs font-mono text-dim">
@@ -474,10 +477,10 @@ export default function AppointmentSettingPage() {
                 </div>
                 <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-2">Gate 02</div>
                 <h3 className="text-lg font-bold font-heading text-white mb-2">
-                  Bottleneck Audit
+                  Tier 2: Budget
                 </h3>
                 <p className="text-sm text-mist leading-relaxed font-normal">
-                  Pinpoints the exact pain point (Lead Volume, Qualification, Closing Rate, or Team Capacity) before the prospect speaks with your closer.
+                  Can they afford your service?
                 </p>
               </div>
               <div className="mt-4 pt-3 border-t border-line/50 text-xs font-mono text-dim">
@@ -502,10 +505,10 @@ export default function AppointmentSettingPage() {
                 </div>
                 <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-2">Gate 03</div>
                 <h3 className="text-lg font-bold font-heading text-white mb-2">
-                  Liquid Capital Gate
+                  Tier 3: Timing
                 </h3>
                 <p className="text-sm text-mist leading-relaxed font-normal">
-                  Explicit confirmation that the prospect has minimum investment capital ($5,000+) ready to deploy within 14 days of the strategy session.
+                  Are they buying in the next 30 to 90 days?
                 </p>
               </div>
               <div className="mt-4 pt-3 border-t border-line/50 text-xs font-mono text-dim">
@@ -530,10 +533,10 @@ export default function AppointmentSettingPage() {
                 </div>
                 <div className="text-xs font-mono uppercase tracking-wider text-lime font-bold mb-2">Gate 04</div>
                 <h3 className="text-lg font-bold font-heading text-white mb-2">
-                  Dynamic Routing
+                  Tier 4: Authority
                 </h3>
                 <p className="text-sm text-mist leading-relaxed font-normal">
-                  Qualified buyers unlock VIP closer calendar slots. Unqualified inquiries are redirected to self-paced low-ticket training materials.
+                  Are they the decision maker?
                 </p>
               </div>
               <div className="mt-4 pt-3 border-t border-line/50 text-xs font-mono text-dim">
@@ -558,7 +561,7 @@ export default function AppointmentSettingPage() {
               Real Client Calendars. Real Pipeline Velocity.
             </h2>
             <p className="mt-3 text-base text-mist">
-              Actual calendar telemetry and closed-won pipelines powered by our automated speed-to-lead architecture.
+              Look at show rate and cost per appointment, not lead count. Our system averages an 88.3% call show-up rate. With email-only confirmations, show rates average 58.2% (Velocify), which is why SMS and WhatsApp reminders are built in.
             </p>
           </div>
 

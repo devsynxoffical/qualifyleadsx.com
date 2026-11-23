@@ -11,9 +11,9 @@ import { RichLeadPage } from "@/components/landing/RichLeadPage";
  * Pricing is custom quoted (lib/brand-facts.ts); this page does not state a per-appointment price.
  */
 const PATH = "/pay-per-appointment";
-const TITLE = "Pay Per Appointment Lead Generation: Booked Sales Calls";
+const TITLE = "Pay Per Appointment Lead Generation | QualifiedLeadsX";
 const DESCRIPTION =
-  "Pay per appointment lead generation vs pay per lead: booked, qualified sales appointments. Published results from $4.81 to $45 per booked appointment.";
+  "Pay per appointment lead generation for service businesses. Published campaigns booked appointments from $4.81 to $45 each, tracked per show and per sale.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -31,7 +31,7 @@ export default function Page() {
     <RichLeadPage
       path={PATH}
       eyebrow="For coaches, consultants, advisors and service businesses"
-      h1="Pay-Per-Appointment Lead Generation"
+      h1="Pay-Per-Appointment Lead Generation for Service Businesses"
       shortAnswer={
         <>
           <strong className="text-fog">Pay per appointment lead generation</strong> means judging a campaign on booked, qualified sales appointments instead of raw leads. QualifiedLeadsX runs the ads, qualifies every lead, contacts them within minutes and books them on your calendar, then reports cost per booked appointment. In published campaigns that cost ranged from $4.81 to $45 per booked appointment.
@@ -60,7 +60,7 @@ export default function Page() {
       formTitle="Get a cost-per-appointment estimate for your offer"
       proof={{
         title: "Appointment campaigns we have run and published",
-        intro: <>Screenshots from the clients&apos; Ads Manager and booking results, published at the time. Tap a card to see the full screenshot, or open the original post to check the numbers.</>,
+        intro: <>Every number here comes from a live campaign with the spend shown: 337 remodeling appointments in 19 days at $4.81 each, 140 HVAC appointments from $1,956, and 453 med spa appointments from $10,387. Tap a card to see the full screenshot, or open the original post to check the numbers.</>,
         cards: [
           { img: "/case-studies/videos/DRRS7f-Eh_0.jpg", w: 1440, h: 1440, headline: "337 appointments in 19 days", where: "Kitchen remodeling, New York", metrics: [{ label: "Per appt", value: "$4.81" }, { label: "Appts", value: "337" }, { label: "Days", value: "19" }], source: ig("DRRS7f-Eh_0") },
           { img: "/case-studies/videos/C7v8CbIPJaJ.jpg", w: 1080, h: 1916, headline: "140 booked appointments, 12 installs", where: "HVAC company, New Jersey", metrics: [{ label: "Spend", value: "$1,956" }, { label: "Per appt", value: "$13.97" }, { label: "Revenue", value: "$38,400" }], source: ig("C7v8CbIPJaJ") },
@@ -71,7 +71,7 @@ export default function Page() {
       }}
       funnel={{
         title: "From booked appointment to paying client",
-        intro: <>A booked appointment is only worth something if the person shows up and buys. Published numbers for a med spa with three New York clinics:</>,
+        intro: <>For a med spa with three New York clinics, $10,387 in ads booked 453 appointments at $22.93 each. 303 showed up (67%), 247 became paying clients, and revenue reached $74,100. That is $42 in ads per paying client.</>,
         steps: [
           { value: "$10,387", label: "Ad spend" },
           { value: "453", label: "Appointments booked", detail: "$22.93 per booked appointment" },
@@ -89,12 +89,12 @@ export default function Page() {
         title: "How pay-per-appointment lead generation works",
         intro: <>Each step is built to turn ad spend into appointments that show up. It is the same system behind our <Link href="/appointment-setting" className="text-lime underline-offset-2 hover:underline">appointment setting services</Link>.</>,
         steps: [
-          { icon: Target, title: "Ads for buyers, not browsers", text: "Meta ads and offers written for the people who buy your service, tested until cost per booked appointment, not cost per click, is lowest." },
-          { icon: Filter, title: "Qualification before booking", text: "Budget, need, timeline and fit are asked in the form, so only qualified people can book." },
-          { icon: PhoneCall, title: "Contact within minutes", text: <>Automatic call, SMS or <Link href="/whatsapp-lead-nurture" className="text-lime underline-offset-2 hover:underline">WhatsApp</Link> follow-up as soon as a lead arrives. See <Link href="/speed-to-lead" className="text-lime underline-offset-2 hover:underline">speed to lead</Link>.</> },
-          { icon: CalendarCheck, title: "Booked on your calendar", text: "Qualified leads pick a time in your calendar, with confirmations and reminders before the call." },
+          { icon: Target, title: "Agree what qualifies", text: "We agree what counts as a qualified appointment." },
+          { icon: Filter, title: "Ads and a qualification funnel", text: "We launch ads and a qualification funnel." },
+          { icon: PhoneCall, title: "Contact within minutes", text: <>Every lead is contacted and qualified within minutes. See <Link href="/appointment-setting" className="text-lime underline-offset-2 hover:underline">appointment setting services</Link>.</> },
+          { icon: CalendarCheck, title: "Booked with reminders", text: "Qualified prospects are booked into your calendar with reminders." },
           { icon: ShieldCheck, title: "Exclusive to you", text: "The ad account and every appointment are yours. Nothing is shared with or resold to competitors." },
-          { icon: BarChart3, title: "Reported per appointment", text: "Cost per lead, per booked appointment, per show and per client, so budget follows sales." },
+          { icon: BarChart3, title: "Reported per sale", text: "You see cost per appointment, per show and per sale." },
         ],
       }}
       qualifiers={{
@@ -105,25 +105,25 @@ export default function Page() {
       comparison={{
         title: "Pay per lead companies vs pay-per-appointment",
         themLabel: "Typical pay per lead companies",
-        them: ["You pay for every form fill, qualified or not", "Leads are often shared with other buyers", "Follow-up and booking are your problem", "No view of shows or sales"],
-        us: ["Measured on booked, qualified appointments", "Exclusive leads from your own ad account", "Follow-up, booking and reminders done for you", "Reported down to cost per client"],
+        them: ["You get contact details, not conversations", "Leads are often sold to several buyers at once", "You still have to reach, qualify and book each one", "Cheaper per lead, more expensive per closed client"],
+        us: ["The person has already been reached", "Qualified on your criteria before booking", "Booked into your calendar, exclusive to you", "More per unit, far less per closed client"],
       }}
       audiences={{
         title: "Who pay-per-appointment lead generation is for",
         cards: [
-          { icon: Users, title: "Coaches and consultants", text: <>Booked discovery calls with qualified prospects. See <Link href="/for/coaches" className="text-lime underline-offset-2 hover:underline">lead generation for coaches</Link> and <Link href="/for/consultants" className="text-lime underline-offset-2 hover:underline">consultants</Link>.</> },
-          { icon: Briefcase, title: "Financial advisors and insurance agents", text: <>Appointments with prospects who match your client profile. See <Link href="/for/financial-advisors" className="text-lime underline-offset-2 hover:underline">financial advisors</Link> and <Link href="/for/insurance-agencies" className="text-lime underline-offset-2 hover:underline">insurance agents</Link>.</> },
-          { icon: HandCoins, title: "Local and home service businesses", text: <>In-home estimates and consultations booked on your calendar, like the HVAC and remodeling campaigns above. See <Link href="/for/home-improvement" className="text-lime underline-offset-2 hover:underline">home improvement leads</Link> and <Link href="/hvac-leads" className="text-lime underline-offset-2 hover:underline">HVAC leads</Link>.</> },
+          { icon: HandCoins, title: "Home services", text: "HVAC, roofing, remodeling and solar companies, where one client is worth $1,000 or more and the sale happens on a visit." },
+          { icon: Briefcase, title: "Med spas, legal and real estate", text: "Businesses that sell on a consultation or call, where a missed or unqualified appointment costs real money." },
+          { icon: Users, title: "Insurance and high-ticket coaching", text: <>Agents and coaches who sell on a call. See <Link href="/for/insurance-agencies" className="text-lime underline-offset-2 hover:underline">lead generation for insurance agents</Link> or our <Link href="/" className="text-lime underline-offset-2 hover:underline">done-for-you lead generation</Link>.</> },
         ],
       }}
       faqTitle="Pay per appointment lead generation: FAQ"
       faqs={[
-        { q: "What is pay per appointment lead generation?", a: "It is lead generation measured on booked sales appointments instead of raw leads. The provider runs the ads, qualifies each lead, follows up and books the appointment on your calendar, and the campaign is judged on cost per booked appointment, show rate and sales." },
-        { q: "How much does a booked appointment cost?", a: "In campaigns we have published, cost per booked appointment ranged from $4.81 (337 kitchen remodeling appointments in 19 days) to $45 (125 booked appointments for a Florida HVAC company that collected $65,872 net). A New Jersey HVAC company paid $13.97 per booked appointment and a three-clinic med spa $22.93. Your cost depends on the offer, market and qualification. Our fees are custom quoted." },
-        { q: "Is pay per appointment better than pay per lead?", a: "For businesses that sell on a call, usually yes: a lead only has value once it is contacted, qualified and booked. Pay per lead is cheaper per unit, but you do the follow-up, and leads from pay per lead companies are often shared with other buyers." },
-        { q: "How is this different from pay per lead companies?", a: "Pay per lead companies sell form fills, often to several buyers. We run the campaign in your own ad account, so every lead and appointment is exclusive, and we handle follow-up, booking and reminders." },
-        { q: "Do you charge per appointment?", a: "Pricing is custom quoted for each offer and market. On the free strategy call we look at your offer and give you a realistic cost-per-appointment range based on campaigns like the ones on this page." },
-        { q: "What happens if appointments don't show up?", a: "Show rate is tracked and worked on: confirmations, reminders by SMS, email and WhatsApp, and fast follow-up. For the three-clinic med spa, 67% of booked appointments showed up and 247 became paying clients." },
+        { q: "What is pay per appointment lead generation?", a: "It is a model where you pay based on booked sales appointments rather than raw leads. The provider handles ads, qualification and booking." },
+        { q: "How much does a booked appointment cost?", a: "In our published campaigns, appointments cost between $4.81 and $45 each depending on the industry, offer and location." },
+        { q: "Do pay per appointment companies work for roofing and solar?", a: "Yes, both are high-ticket, in-home sales, which suits this model. Our closest published examples are HVAC and remodeling campaigns booking appointments at $4.81 to $45." },
+        { q: "What counts as a qualified appointment?", a: "We agree the rules before launch, such as service area, budget, homeowner status and timeline. Only prospects who meet them are booked." },
+        { q: "Are the appointments exclusive?", a: "Yes. Appointments are generated from campaigns run for your business only and are never resold." },
+        { q: "Pay per lead or pay per appointment: which is better?", a: "Pay per lead suits businesses with their own fast sales team. Pay per appointment suits owners who want sales calls on the calendar without chasing leads." },
       ]}
       further={{
         title: "More on appointments and lead generation",

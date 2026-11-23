@@ -32,11 +32,14 @@ import { trainingVideos, testimonialVideos } from "@/lib/media";
 import { isoDuration, imageObject, hostedVideo, WEBSITE_ID, ORG_ID } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Done-for-You Outsourced Lead Generation | QualifiedLeadsX",
+  title: { absolute: "Done-for-You Lead Generation and Appointments | QLX" },
   description:
-    "Outsourced, done-for-you lead generation and appointment setting for coaches, consultants, financial advisors and insurance agents. Qualified calls booked.",
+    "Customer acquisition agency for service businesses. We run ads, qualify leads and book appointments, from $4.81 per booked call in published campaigns.",
   keywords: [
+    "customer acquisition agency",
     "done for you lead generation",
+    "appointment setting agency",
+    "lead generation agency for service businesses",
     "outsourced lead generation",
     "appointment setting services",
     "pay per appointment lead generation",
@@ -48,9 +51,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Done-for-You Outsourced Lead Generation | QualifiedLeadsX",
+    title: "Done-for-You Lead Generation and Appointments | QLX",
     description:
-      "Outsourced, done-for-you lead generation and appointment setting for coaches, consultants, financial advisors and insurance agents. Qualified calls booked.",
+      "Customer acquisition agency for service businesses. We run ads, qualify leads and book appointments, from $4.81 per booked call in published campaigns.",
     url: site.url,
     siteName: "QualifiedLeadsX™",
     images: [
@@ -66,9 +69,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Done-for-You Outsourced Lead Generation | QualifiedLeadsX",
+    title: "Done-for-You Lead Generation and Appointments | QLX",
     description:
-      "Outsourced, done-for-you lead generation and appointment setting for coaches, consultants, financial advisors and insurance agents. Qualified calls booked.",
+      "Customer acquisition agency for service businesses. We run ads, qualify leads and book appointments, from $4.81 per booked call in published campaigns.",
     images: [`${site.url}/opengraph-image`],
   },
 };
@@ -228,7 +231,7 @@ export default function Home() {
         <EverythingIncluded />
       </Suspense>
       <Suspense fallback={null}>
-        <ClientSuccess />
+        <ClientSuccess subtitle="Published campaigns have booked appointments for $4.81 to $45 each, including 337 remodeling appointments in 19 days and 453 med spa appointments that became 247 paying clients." />
       </Suspense>
       <Suspense fallback={null}>
         <Process />

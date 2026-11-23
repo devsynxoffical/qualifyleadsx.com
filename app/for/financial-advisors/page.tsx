@@ -24,7 +24,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: { absolute: "Lead Generation for Financial Advisors | QualifiedLeadsX" },
   description:
-    "Lead generation for financial advisors: compliant Meta ads, prospects qualified on investable assets, and discovery calls booked on your calendar.",
+    "Compliant lead generation for financial advisors. We qualify prospects by investable assets and book meetings with people who fit your minimums.",
   keywords: [
     "lead generation for financial advisors",
     "financial advisor leads",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Lead Generation for Financial Advisors | QualifiedLeadsX",
     description:
-      "Lead generation for financial advisors: compliant Meta ads, prospects qualified on investable assets, and discovery calls booked on your calendar.",
+      "Compliant lead generation for financial advisors. We qualify prospects by investable assets and book meetings with people who fit your minimums.",
     url: `${site.url}/for/financial-advisors`,
     type: "website",
   },
@@ -75,24 +75,24 @@ const pillars = [
 
 const faqs = [
   {
-    q: "What is compliant lead generation for financial advisors?",
-    a: "Financial advisor lead generation is the compliant acquisition process of attracting, qualifying, and booking high-net-worth individuals ($500,000+ in investable assets) into fiduciary financial planning and wealth management consultations. QualifiedLeadsX builds educational funnels written for FINRA and SEC advertising rules, approved by your compliance team, and automated appointment setting that pre-qualify retirement readiness and portfolio size before discovery meetings.",
+    q: "How do financial advisors get new clients?",
+    a: "The main channels are referrals, seminars, content and paid ads with a qualification funnel. Paid ads with asset-based qualification give the most predictable flow of new meetings.",
   },
   {
-    q: "How do you ensure campaigns comply with regulatory standards?",
-    a: "We adhere strictly to non-promissory direct-response guidelines, avoiding performance guarantees, testimonials, or specific stock claims. Funnels center on educational topics (tax minimization, retirement timing, estate strategies) and include complete compliance disclaimers.",
+    q: "What is the best lead generation for financial advisors?",
+    a: "A system that filters by investable assets before booking. It costs more per lead than broad campaigns but saves hours of meetings with prospects below your minimum.",
   },
   {
-    q: "What investable asset thresholds can we target?",
-    a: "Our intake qualification gates can be calibrated to your firm's minimum AUM requirements, typically filtering for individuals with $250,000, $500,000, or $1,000,000+ in liquid investable assets.",
+    q: "Is paid lead generation compliant for advisors?",
+    a: "It can be. All ads and pages are written without performance claims and go through your compliance team before anything goes live.",
   },
   {
-    q: "How many qualified consultations will I get each month?",
-    a: "It depends on your market, minimum assets, budget and how fast your team follows up, so we do not promise a fixed number. On the strategy call we look at your offer and minimums and give you a realistic range before any spend.",
+    q: "Can you target high net worth prospects?",
+    a: "Yes. The qualification survey filters by investable assets, for example $500,000 or more, and only qualifying prospects reach your calendar.",
   },
   {
-    q: "How does lead generation for financial advisors work?",
-    a: "Educational Meta ads (for example on retirement timing or tax planning) lead to a short form that asks about investable assets, timeline and goals. Qualified prospects are contacted within minutes and booked into your calendar, with reminders so they show up for the consultation.",
+    q: "Do you guarantee results for advisors?",
+    a: "Yes, the same 90-day written guarantee applies, with terms agreed before launch.",
   },
 ];
 
@@ -107,7 +107,7 @@ export default function FinancialAdvisorsPage() {
         name: "Financial Advisor Lead Generation & Client Acquisition",
         serviceType: "Wealth Management Client Acquisition",
         description:
-          "Lead generation for financial advisors: compliant Meta ads, prospects qualified on investable assets, and discovery calls booked on your calendar.",
+          "Compliant lead generation for financial advisors. We qualify prospects by investable assets and book meetings with people who fit your minimums.",
         url: pageUrl,
         provider: orgRef,
         areaServed: TIER1_MARKETS.map((name) => ({ "@type": "Country", name })),
@@ -161,7 +161,7 @@ export default function FinancialAdvisorsPage() {
           </div>
 
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-fog leading-[1.1]">
-            <span className="text-gradient-lime">Lead Generation for Financial Advisors</span>: Qualified Client Calls
+            <span className="text-gradient-lime">Lead Generation for Financial Advisors</span>: Qualified Prospect Meetings
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-mist leading-relaxed font-sans max-w-3xl mx-auto">
@@ -177,7 +177,7 @@ export default function FinancialAdvisorsPage() {
               What is compliant lead generation for financial advisors?
             </h2>
             <p className="mt-3 text-sm sm:text-base leading-relaxed text-mist">
-              Financial advisor lead generation is the compliant acquisition process of attracting, qualifying, and booking high-net-worth individuals ($500,000+ in investable assets) into fiduciary financial planning and wealth management consultations. QualifiedLeadsX builds educational funnels written for FINRA and SEC advertising rules, approved by your compliance team, and automated appointment setting that pre-qualify retirement readiness and portfolio size before discovery meetings.
+              Compliant lead generation means ads and landing pages that follow your firm&apos;s compliance rules: no performance promises, approved wording and clear disclosures. We submit every asset for your compliance review before launch.
             </p>
           </div>
         </div>
@@ -194,7 +194,10 @@ export default function FinancialAdvisorsPage() {
               Engineered For Fiduciary Wealth Advisors
             </h2>
             <p className="mt-4 text-sm sm:text-base text-mist leading-relaxed font-sans">
-              How our system attracts and qualifies high-net-worth families without compromising regulatory compliance.
+              Prospects answer a short survey on investable assets ($250K, $500K or $1M+), goals and timing. Only those who meet your minimums are booked, so you spend meetings with people you can actually serve. The same{" "}
+              <Link href="/appointment-setting" className="text-lime underline-offset-2 hover:underline">appointment setting</Link>{" "}
+              system runs our{" "}
+              <Link href="/" className="text-lime underline-offset-2 hover:underline">done-for-you lead generation</Link>.
             </p>
           </div>
 
@@ -230,7 +233,8 @@ export default function FinancialAdvisorsPage() {
             Explore Cross-Industry Case Studies
           </h2>
           <p className="mt-4 text-mist max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-            See how our acquisition infrastructure powers high-ticket client acquisition across 30+ service sectors.
+            We do not have a published financial advisor case study yet, so here are campaigns with the same high-ticket, call-based sale: 453 med spa appointments that became 247 clients, and 10 luxury real estate buyer appointments in 24 hours. Selling insurance too? See{" "}
+            <Link href="/for/insurance-agencies" className="text-lime underline-offset-2 hover:underline">lead generation for insurance agents</Link>.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">

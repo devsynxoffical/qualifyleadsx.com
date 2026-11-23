@@ -612,3 +612,4 @@ Note (7-day rule): all five pages were edited in the last 7 days (20, 22 and 23 
 
 Verification: tsc, eslint (0 errors), next build, seo:validate PASS, seo:links PASS, playbook audit OK; each page checked locally at 390 px: one H1 (exact plan text), title 51-59 characters, description 144-154, FAQPage schema 5-6 questions matching the visible FAQs, no horizontal overflow, no em dashes, no "30 to 50" promise.
 Open for owner: the "30-50 booked calls a month" promise still appears on /high-ticket-lead-generation (title and description), /services and /meta-ads-agency (outside this plan).
+- 23 Nov: Page Content Plan changes verified live on all 5 pages (new H1s and FAQs present).

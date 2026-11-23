@@ -152,6 +152,7 @@ export const blogPosts: BlogPost[] = [
         { q: "How do I get my first coaching clients?", a: "From people who already know you: past clients, colleagues and your network. Tell them exactly who you help and with what result, and ask every happy client for one introduction. Add paid ads once you can describe your result in one sentence." },
         { q: "What is the fastest way to get coaching clients?", a: "Paid ads to a simple next step, either a low-ticket offer or a short qualifying form, with every lead contacted within minutes and booked onto a discovery call. One fitness coach generated $203,941 in 11 days with a low-ticket-to-mastermind funnel." },
         { q: "Are bought coaching leads worth it?", a: "Usually not. Bought coaching lead lists are often shared and cold. Leads from your own campaign are exclusive and arrive while the person is still interested. See buying leads vs generating your own.", link: { text: "Buying leads vs generating your own", href: "/blog/buy-qualified-leads-vs-generating-your-own" } },
+        { q: "How many coaching clients can I get from paid ads?", a: "It depends on your offer, price and follow-up speed. In our published coaching campaigns, a $97/month community added 537 paying members in 19 days, and a fitness coach enrolled 35 mastermind clients after a low-ticket launch. Start with a small test budget and measure cost per booked call." },
         { q: "How do high ticket coaches get clients?", a: "Through qualified discovery calls. Prospects answer questions about their goal, budget and timeline before booking, so the coach sells on the call instead of filtering. Many also use a low-ticket offer first and move the best buyers up to high ticket coaching." },
       ],
     },
@@ -249,6 +250,7 @@ export const blogPosts: BlogPost[] = [
           heading: "Turning Leads Into Booked Calls",
           body: [
             "Whatever the source, leads only become revenue if someone replies fast, qualifies properly and confirms the appointment. The cross-industry average show rate for high-ticket calls is 58.2% with email-only confirmations ([show rate benchmarks](/benchmarks/show-rate)), so confirmation and reminders matter as much as the lead itself. An [appointment setting](/appointment-setting) process with sub-5-minute follow-up is what turns either bought or self-generated leads into qualified meetings.",
+            "Whichever route you choose, define what a qualified lead means for you first. Our guide on [how to get marketing qualified leads](/blog/how-to-qualify-leads) shows how to score fit and intent.",
           ],
         },
       ],
@@ -834,10 +836,10 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "b2b-roas-benchmarks-qualified-appointment-generation",
     seoTitle: "B2B ROAS Benchmarks by Industry (2026)",
-    title: "B2B ROAS Benchmarks & Qualified Appointment Generation: How High-Ticket Offers Hit 4x–7x ROAS",
-    description: "Real B2B ROAS benchmarks for coaching, consulting, and SaaS. Master customer acquisition costs, shorten sales cycles, and scale to 50+ booked calls.",
+    title: "B2B ROAS Benchmarks by Industry for High-Ticket Offers",
+    description: "B2B ROAS benchmarks by industry from published campaigns: 2.72 to 12.70 ROAS across SaaS, med spa, home services and coaching, plus how to judge yours.",
     publishedAt: "2026-10-30",
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-23",
     readTime: "14 min read",
     coverImage: "/images/blog/b2b-roas-benchmarks-appointment-generation.jpg",
     author: {
@@ -855,13 +857,12 @@ export const blogPosts: BlogPost[] = [
       "Speed To Lead",
     ],
     aeoSummary: {
-      question: "What is a healthy benchmark ROAS for B2B and high-ticket appointment generation?",
-      answer: "A healthy benchmark ROAS (Return On Ad Spend) for high-ticket B2B services, coaching programs, and consulting offers ($3,000 to $25,000+ contract value) is between 3.5x and 7.0x front-end return. Unlike direct e-commerce where ROAS measures checkout purchases, B2B ROAS measures the total cash collected relative to paid media investment through an automated qualified appointment generation pipeline. Top-performing high-ticket funnels maintain an average Cost Per Qualified Booked Call of $120 to $280 and achieve a 20% to 35% close rate by implementing sub-5-minute speed-to-lead and 4-tier conditional qualification gates.",
+      question: "What is a good B2B ROAS?",
+      answer: "A good B2B ROAS is one above your break-even ROAS (1 divided by your gross margin). In our published campaigns, B2B and high-ticket ROAS ranged from 2.72 (a low-ticket-first booking funnel) to 12.70 (an HVAC company), with a med spa at about 7.1x and an AI calling SaaS at 2.78. For long sales cycles, judge ROAS on revenue collected within 90 days, not only on the first sale.",
       bulletPoints: [
-        "Average B2B ROAS Benchmark: 3.5x–5.2x for established offers; 6.0x–8.5x for optimized VSL funnels with backend continuity.",
-        "Cost Per Qualified Booked Call (CPBC): $140–$260 across broad Meta Ads targeting high-net-worth business owners.",
-        "Sales Call Show-Up Rate Target: 85%+ achieved via automated WhatsApp and SMS confirmation protocols.",
-        "Closing Conversion Target: 20%–35% on pre-qualified sales sessions with pre-framed corporate decision-makers.",
+        "Break-even ROAS = 1 ÷ gross margin (60% margin means 1.67 break-even)",
+        "Published range: 2.72 to 12.70 ROAS across six case studies",
+        "Track LTV to CAC as well as ROAS for B2B offers with renewals",
       ],
     },
     content: {
@@ -887,7 +888,7 @@ export const blogPosts: BlogPost[] = [
           ]
         },
         {
-          heading: "ROAS by Industry: Results From Our Published Case Studies",
+          heading: "ROAS Benchmarks by Industry: Results From Our Published Case Studies",
           body: [
             "Benchmarks are only useful if you can check them. These are return-on-ad-spend figures from campaigns we ran, each linked to its case study. Where the case study gives revenue and ad spend but not ROAS, the ROAS shown is revenue divided by ad spend.",
           ],
@@ -954,7 +955,7 @@ export const blogPosts: BlogPost[] = [
             "Step 2: Qualified Booked Calls × Show-Up Rate (88%) = Completed Strategy Sessions. Healthy Benchmark: 85%–92%.",
             "Step 3: Completed Strategy Sessions × [Close Rate](/blog/high-ticket-sales-training-framework) (25%) = Acquired High-Ticket Clients.",
             "Step 4: (Acquired Clients × Average Contract Value) ÷ Ad Spend = Realized Front-End ROAS.",
-            "Example: If you invest $10,000 on Meta Ads, generate 50 qualified appointments ($200 CPQC), achieve an 88% show-up rate (44 calls held), and close 25% (11 clients) on an $5,000 offer, you collect $55,000 in front-end revenue—producing an immediate 5.5x ROAS.",
+            "Example: If you invest $10,000 on Meta Ads, generate 50 qualified appointments ($200 CPQC), achieve an 88% show-up rate (44 calls held), and close 25% (11 clients) on an $5,000 offer, you collect $55,000 in front-end revenue, producing an immediate 5.5x ROAS.",
           ],
           calloutBox: {
             title: "Pro Metric: Pipeline Velocity Ratio",
@@ -965,7 +966,8 @@ export const blogPosts: BlogPost[] = [
           "heading": "ROAS vs CAC: Which Should a B2B Company Track?",
           "body": [
             "Track both, because they answer different questions. ROAS tells you whether ad spend returns more than it costs in the period you measure. CAC tells you how much it costs to win one customer, including fees and sales costs if you calculate it fully loaded.",
-            "For high-ticket B2B, CAC compared with lifetime value (LTV:CAC) is the better decision metric, because front-end ROAS ignores renewals, upsells and referrals. Use ROAS to manage campaigns week to week and LTV:CAC to decide how much to invest. See our [B2B CAC benchmarks](/blog/b2b-client-acquisition-cost-cac-benchmarks-2026)."
+            "For high-ticket B2B, CAC compared with lifetime value (LTV:CAC) is the better decision metric, because front-end ROAS ignores renewals, upsells and referrals. Use ROAS to manage campaigns week to week and LTV:CAC to decide how much to invest. See our [B2B CAC benchmarks](/blog/b2b-client-acquisition-cost-cac-benchmarks-2026).",
+            "To compare ROAS with total marketing efficiency, use the [marketing efficiency ratio calculator](/tools/mer-calculator). If you are deciding who should manage the spend, see [Facebook ads agency vs hiring an in-house media buyer](/blog/facebook-ads-agency-vs-in-house-media-buyer).",
           ]
         }
       ],
@@ -1362,8 +1364,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "facebook-ads-agency-vs-in-house-media-buyer",
     seoTitle: "Facebook Ads Agency vs Hiring an In-House Media Buyer",
-    title: "Facebook Ads Agency vs In-House Media Buyer: Which Is Right for a High-Ticket Business in 2026?",
-    description: "Agency fees run $2K–$7.5K a month; an in-house media buyer costs $90K–$150K a year fully loaded. Compare real costs, creative output, speed, and ROI.",
+    title: "Facebook Ads Agency vs Hiring an In-House Media Buyer: Which Costs Less?",
+    description: "Agency: $2,000 to $7,500 a month. In-house media buyer: $90,000 to $150,000 a year fully loaded. Compare cost, creative output and speed at your ad spend.",
     publishedAt: "2026-10-27",
     updatedAt: "2026-11-16",
     readTime: "10 min read",
@@ -1754,11 +1756,11 @@ export const blogPosts: BlogPost[] = [
   // 2) 23 OCT 2026
   {
     slug: "meta-ads-for-high-ticket-b2b-broad-targeting",
-    seoTitle: "Facebook Ads Targeting for High-Ticket B2B Offers",
-    title: "Meta Ads for High-Ticket B2B: Why Broad Creative Targeting Outperforms Lookalikes",
+    seoTitle: "Facebook Ads Targeting for High-Ticket Products",
+    title: "Facebook Ads Targeting for High-Ticket Products and B2B Offers",
     description: "How to target Facebook and Instagram ads for high-ticket B2B offers: why broad targeting beats lookalikes and how ad creative selects the right buyers.",
     publishedAt: "2026-10-23",
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-23",
     readTime: "10 min read",
     coverImage: "/images/blog/meta-ads-broad-targeting.jpg",
     author: {
@@ -1776,7 +1778,7 @@ export const blogPosts: BlogPost[] = [
     ],
     aeoSummary: {
       question: "How should you target Facebook ads for high-ticket products and B2B offers?",
-      answer: "Broad targeting on Meta outperforms narrow lookalike audiences because Meta's Andromeda recommendation engine uses the creative assets (video script, on-screen text, transcript audio) to identify and deliver ads directly to receptive decision-makers, eliminating the audience fatigue and rising CPMs inherent in small audience pools.",
+      answer: "For high-ticket products, use broad targeting (country only, Advantage+ audience) and let the ad creative do the targeting: name the buyer, the problem and the price range in the first seconds. Optimize for a qualified conversion such as a completed application or booked call, not clicks, so Meta finds buyers instead of browsers.",
       bulletPoints: [
         "Narrow interest stacks restrict machine learning and cause rapid frequency fatigue.",
         "Your video hook and script language act as the demographic filter: speaking specifically to founders naturally excludes consumers.",
@@ -1789,7 +1791,7 @@ export const blogPosts: BlogPost[] = [
       inlineGraphic: {
         url: "/images2/showreel/shot_09_ad_telemetry.webp",
         alt: "Creative-as-Targeting Performance Heatmap and Telemetry",
-        caption: "Figure 2: Algorithmic Ad Telemetry — Andromeda ML automatically identifies buyer cohorts by transcript parsing and retention curves.",
+        caption: "Figure 2: Algorithmic Ad Telemetry: Andromeda ML automatically identifies buyer cohorts by transcript parsing and retention curves.",
         tag: "Algorithm Delivery Matrix",
       },
       sections: [
@@ -1818,16 +1820,16 @@ export const blogPosts: BlogPost[] = [
           ],
         },
         {
-          heading: "3. First-Party Case Benchmarks: Broad vs. Lookalike Performance",
-          subheading: "Real Account Data Across $50M+ Spend",
+          heading: "3. Broad vs. Lookalike Audiences: What Happens Over Time",
+          subheading: "Why small audiences fatigue",
           body: [
-            "In our testing across 30+ B2B verticals, broad targeting consistently yields a 38% lower cost per booked sales call compared to 1% lookalike audiences. While lookalikes initially generate low cost per clicks, they exhaust within 14 to 21 days as ad frequency escalates beyond 3.5.",
+            "A 1% lookalike or a stack of job-title interests is a small pool. As spend rises, the same people see the ads again and again, frequency climbs and cost per lead rises. Check this in your own account with the [ad frequency calculator](/tools/ad-frequency-calculator): when frequency keeps climbing while cost per lead rises, the audience is exhausted.",
             "Broad targeting sets, by comparison, operate across millions of prospective users, enabling Meta to continuously discover new high-intent buyers as their immediate need arises.",
           ],
           calloutBox: {
-            title: "📈 Verified CPL Comparison",
+            title: "📈 Published example",
             content:
-              "In a high-ticket MedSpa marketing account, broad targeting maintained a stable $0.50 CPL across 2,064 leads over 60 days, whereas lookalike ad sets saw CPL increase from $1.20 to $4.80 over the same duration.",
+              "An agency owner in our Done-With-You program showed a Canadian med spa client's live dashboard: 2,064 registrations at $0.50 cost per lead. See the [case studies](/case-studies) for the original post.",
           },
         },
         {
@@ -2527,7 +2529,8 @@ export const blogPosts: BlogPost[] = [
           "heading": "How to Calculate B2B CAC: Formula and Worked Example",
           "body": [
             "Blended CAC = (ad spend + sales and marketing salaries and commission + agency and tool costs) ÷ new customers in the same period. Paid CAC uses only the costs and customers attributable to paid channels.",
-            "Worked example: $12,000 in Meta spend, $6,000 in agency fees and $4,000 in closer commission in a month that produced 10 new clients gives a paid CAC of ($12,000 + $6,000 + $4,000) ÷ 10 = $2,200. If each client is worth $9,000 in gross profit over their lifetime, LTV:CAC is about 4.1:1, inside the healthy 4:1 to 7:1 range. Run your own numbers with the [CAC calculator](/tools/cac-calculator) and the [LTV to CAC calculator](/tools/ltv-cac-calculator)."
+            "Worked example: $12,000 in Meta spend, $6,000 in agency fees and $4,000 in closer commission in a month that produced 10 new clients gives a paid CAC of ($12,000 + $6,000 + $4,000) ÷ 10 = $2,200. If each client is worth $9,000 in gross profit over their lifetime, LTV:CAC is about 4.1:1, inside the healthy 4:1 to 7:1 range. Run your own numbers with the [CAC calculator](/tools/cac-calculator) and the [LTV to CAC calculator](/tools/ltv-cac-calculator).",
+            "CAC is only half the picture: compare it with revenue using our [B2B ROAS benchmarks by industry](/blog/b2b-roas-benchmarks-qualified-appointment-generation) and the [marketing efficiency ratio calculator](/tools/mer-calculator).",
           ]
         }
       ],
@@ -3051,12 +3054,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-to-qualify-leads",
-    title: "How to Qualify Leads: The High-Ticket Screening Framework",
+    title: "How to Qualify Leads and Get Marketing Qualified Leads",
     seoTitle: "How to Qualify Leads and Get Marketing Qualified Leads",
     description: "How to get marketing qualified leads (MQLs), turn them into sales qualified leads, and screen high-ticket prospects with a 5-point checklist.",
     publishedAt: "2026-11-05",
-    updatedAt: "2026-11-05",
-    readTime: "9 min read",
+    updatedAt: "2026-11-23",
+    readTime: "10 min read",
     coverImage: "/images2/showreel/shot_14_ai_screener.webp",
     author: {
       name: "Sales Leadership",
@@ -3066,8 +3069,8 @@ export const blogPosts: BlogPost[] = [
     category: "Lead Qualification",
     tags: ["Lead Qualification", "Sales Pipeline", "BANT", "High Ticket"],
     aeoSummary: {
-      question: "How do you qualify high-ticket leads?",
-      answer: "Qualifying high-ticket leads requires a 5-point evaluation: Budget eligibility ($3K+ capital), Pain urgency, Authority decision-maker status, System readiness, and Timeframe to purchase.",
+      question: "How do you get marketing qualified leads?",
+      answer: "To get marketing qualified leads, write ads that name the buyer's problem and price range, add a short application step before booking, and score every lead on fit and intent so only leads above your threshold go to sales. Then qualify each one on budget, authority, need, timeline and fit before it reaches a closer.",
       bulletPoints: [
         "Mandatory revenue/income question on application",
         "Two-way setter triage before calendar confirmation",
@@ -3106,6 +3109,14 @@ export const blogPosts: BlogPost[] = [
           ],
         },
         {
+          heading: "MQL vs SQL: When Does a Lead Go to Sales?",
+          body: [
+            "Agree on one written definition with your sales team. A practical rule: a lead becomes an MQL when it scores above your threshold on fit (right industry, size and budget range) and intent (completed the application, watched the video, asked for a call). It becomes an SQL when a setter confirms budget, authority, need and timeline on a short call or by message.",
+            "Example scoring: give up to 40 points for fit, up to 40 for intent and up to 20 for timeline. Leads at 60 or above go straight to a setter, leads from 40 to 59 go into a nurture sequence, and leads below 40 get content only. Adjust the weights once you can see which scores actually close; the [lead scoring template](/tools/lead-scoring-template) has the full rubric.",
+            "Most lost MQLs are lost on speed, not on quality. If marketing hands a lead over and nobody calls for a day, it stops answering. Set a response target in minutes and track it, or use [appointment setting services](/appointment-setting) so every MQL is contacted and booked for you.",
+          ],
+        },
+        {
           heading: "2. Automating Triage with Modern CRM Workflows",
           body: [
             "Connecting conditional survey logic to [CRM automation](/crm-automation) automatically tags applicants as Tier-1 (VIP Immediate Booking), Tier-2 (Setter Triage), or Tier-3 (Downsell / Resource Nurture).",
@@ -3113,7 +3124,7 @@ export const blogPosts: BlogPost[] = [
           ],
         },
       ],
-      conclusion: "Strict qualification creates exclusivity, elevates closer morale, and increases close rates above 25%.",
+      conclusion: "Marketing qualified leads come from a clear definition, a short application step, automatic scoring and fast follow-up. Qualify each MQL on budget, authority, need, timeline and fit before it reaches a closer, and measure every stage so you know where leads are lost.",
       faqs: [
         {
           q: "What is a marketing qualified lead (MQL)?",
@@ -3125,11 +3136,19 @@ export const blogPosts: BlogPost[] = [
         },
         {
           q: "Does adding questions reduce lead volume?",
-          a: "Yes, it reduces unqualified volume by 40%, while increasing booked qualified sales calls and revenue by 30%+.",
+          a: "Usually yes: fewer people finish a longer form. The ones who do are more likely to show up and buy, so judge the change on cost per qualified call and cost per client, not on raw lead count.",
           link: {
             text: "Download The Free Lead Scoring Template",
             href: "/tools/lead-scoring-template",
           },
+        },
+        {
+          q: "What is the difference between an MQL and an SQL?",
+          a: "An MQL (marketing qualified lead) has shown enough fit and interest for marketing to pass it on. An SQL (sales qualified lead) is an MQL that a setter or salesperson has confirmed on budget, authority, need and timeline, so it is ready for a sales call.",
+        },
+        {
+          q: "What makes a lead marketing qualified?",
+          a: "Two things: fit and intent. Fit means the lead matches your buyer (industry, size, budget range). Intent means they took a high-intent action, such as completing an application, watching most of a sales video or asking for a call. Score both and set a threshold.",
         },
       ],
     },
@@ -3236,7 +3255,8 @@ export const blogPosts: BlogPost[] = [
           "heading": "Best Practices for Facebook Ads Management for Coaches",
           "subheading": "The checklist we run on every coaching account",
           "body": [
-            "Good Facebook ads management for coaches is less about secret targeting and more about a disciplined weekly routine. These are the practices that matter most for coaching offers priced from about $3,000 upwards:"
+            "Good Facebook ads management for coaches is less about secret targeting and more about a disciplined weekly routine. These are the practices that matter most for coaching offers priced from about $3,000 upwards:",
+            "Related guides: [how to get coaching clients](/blog/how-to-get-coaching-clients), [Facebook ads targeting for high-ticket products](/blog/meta-ads-for-high-ticket-b2b-broad-targeting), [Facebook ads agency vs hiring an in-house media buyer](/blog/facebook-ads-agency-vs-in-house-media-buyer), and the [ad frequency calculator](/tools/ad-frequency-calculator) to check whether your audience is getting tired of your ads.",
           ],
           "bulletList": [
             "Optimise for an application or booked call, not for cheap leads. Pass the event back with the Conversions API so Meta learns who actually books.",
@@ -3313,6 +3333,7 @@ export const blogPosts: BlogPost[] = [
           body: [
             "Engaging inbound prospects via WhatsApp and SMS in under 5 minutes increases qualified show-up rates from 50% to over 82%, as proven in our [B2B lead generation agency](/b2b-lead-generation) playbooks.",
             "Benchmark your industry numbers using our verified [Cost Per Lead by Industry dataset](/benchmarks/cost-per-lead-by-industry).",
+            "For the ad side, read [Facebook ads targeting for high-ticket products](/blog/meta-ads-for-high-ticket-b2b-broad-targeting): broad targeting with creative that names the buyer and the price range.",
           ],
         },
       ],
@@ -3484,6 +3505,7 @@ export const blogPosts: BlogPost[] = [
           heading: "2. Economics of Algorithmic Buying",
           body: [
             "Lower CPMs directly translate into cheaper booked appointments. Model your pipeline returns with our [ROAS Calculator](/tools/roas-calculator) and review baseline numbers in our [B2B ROAS benchmarks report](/blog/b2b-roas-benchmarks-qualified-appointment-generation).",
+            "Before scaling, check how often your audience sees each ad with the [ad frequency calculator](/tools/ad-frequency-calculator), and decide who should run the account with our comparison of a [Facebook ads agency vs hiring an in-house media buyer](/blog/facebook-ads-agency-vs-in-house-media-buyer).",
           ],
         },
       ],
@@ -3539,6 +3561,7 @@ export const blogPosts: BlogPost[] = [
           heading: "2. Solving Buyer Remorse with Speed to Lead",
           body: [
             "Connecting an automated [WhatsApp lead nurture protocol](/whatsapp-lead-nurture) with rapid [speed to lead](/speed-to-lead) triage re-engages the prospect while their emotional desire for a solution is peak.",
+            "No-shows often start before booking: if unqualified people can reach your calendar, fix that first with our guide on [how to get marketing qualified leads](/blog/how-to-qualify-leads).",
           ],
         },
       ],
@@ -3623,7 +3646,8 @@ export const blogPosts: BlogPost[] = [
           "heading": "Worked Example: Why the Cheaper Lead Can Cost More",
           "body": [
             "Campaign A produces leads at $20; 2% become customers, so CPA = $20 ÷ 0.02 = $1,000. Campaign B produces leads at $60; 10% become customers, so CPA = $60 ÷ 0.10 = $600. Campaign B costs three times as much per lead but 40% less per customer.",
-            "That gap usually comes from qualification: application questions, phone verification and fast follow-up raise the lead-to-customer rate. Model your own numbers with the [CAC calculator](/tools/cac-calculator) or the [cost per booked call calculator](/tools/cost-per-booked-call-calculator)."
+            "That gap usually comes from qualification: application questions, phone verification and fast follow-up raise the lead-to-customer rate. Model your own numbers with the [CAC calculator](/tools/cac-calculator) or the [cost per booked call calculator](/tools/cost-per-booked-call-calculator).",
+            "For return on spend, compare your numbers with our [B2B ROAS benchmarks by industry](/blog/b2b-roas-benchmarks-qualified-appointment-generation) and check blended efficiency with the [marketing efficiency ratio calculator](/tools/mer-calculator).",
           ]
         }
       ],
@@ -3801,6 +3825,7 @@ export const blogPosts: BlogPost[] = [
           body: [
             "At $500K/month with a $6,000 average contract value, you need 83 closed clients monthly. At a 25% close rate, your team needs 332 qualified sales calls.",
             "Scale your campaigns profitably using [Meta ads for coaches](/meta-ads-for-coaches) and monitor your acquisition sustainability with our [LTV to CAC ratio calculator](/tools/ltv-cac-calculator).",
+            "If you are earlier in the journey, start with [how to get coaching clients](/blog/how-to-get-coaching-clients). Once you scale paid ads, track return on spend against our [B2B ROAS benchmarks by industry](/blog/b2b-roas-benchmarks-qualified-appointment-generation).",
           ],
         },
       ],

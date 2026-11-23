@@ -58,7 +58,7 @@ const norm = (href) => {
 };
 
 const isAsset = (h) =>
-  /\.(png|jpe?g|webp|avif|gif|svg|mp4|pdf|xml|txt|ico)$/i.test(h) ||
+  /\.(png|jpe?g|webp|avif|gif|svg|mp4|pdf|xml|txt|ico|csv)$/i.test(h) ||
   h.startsWith("/_next/") ||
   h === "/feed.xml" ||
   h === "/sitemap.xml" ||

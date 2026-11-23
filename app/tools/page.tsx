@@ -20,10 +20,11 @@ import {
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "Free Lead Generation Calculators & Tools - QualifiedLeadsX",
+  title: "Lead Generation Calculator & Free Marketing Tools",
   description:
-    "Free high-ticket lead generation calculators: Meta ads budget, CAC, ROAS, cost per booked call, show rate and LTV. Model your pipeline today.",
+    "Free lead generation calculator set: work out leads, booked calls and clients from your ad budget, plus CAC, ROAS, MER, show rate and LTV to CAC.",
   keywords: [
+    "lead generation calculator",
     "free lead generation calculators",
     "cac calculator",
     "roas calculator",
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Free Lead Generation Calculators & Tools - QualifiedLeadsX",
+    title: "Lead Generation Calculator & Free Marketing Tools",
     description:
       "Interactive calculators to model high-ticket client acquisition costs, ad spend break-even, and appointment funnels.",
     url: `${site.url}/tools`,
@@ -171,6 +172,14 @@ const faqs = [
     q: "Are these calculators free to use?",
     a: "Yes. All calculation engines and models are 100% free with no email gating or software subscriptions required.",
   },
+  {
+    q: "What is a lead generation calculator?",
+    a: "A lead generation calculator works backwards from your ad budget and conversion rates to estimate how many leads, booked calls and clients you will get, and what each one costs. Enter your budget, cost per lead, booking rate, show rate and close rate to see the full funnel.",
+  },
+  {
+    q: "How many leads do I need to get one client?",
+    a: "Divide 1 by your lead to client conversion rate. If 10% of leads book, 70% of booked calls show and 25% of held calls close, your lead to client rate is 1.75%, so you need about 57 leads per client. The lead conversion rate calculator does this for you.",
+  },
 ];
 
 export default function ToolsHubPage() {
@@ -225,8 +234,8 @@ export default function ToolsHubPage() {
           </div>
 
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-fog leading-[1.1]">
-            Free Lead Generation Calculators &{" "}
-            <span className="text-gradient-lime">Acquisition Modeling Tools</span>
+            Lead Generation Calculator &{" "}
+            <span className="text-gradient-lime">Free Marketing Tools</span>
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-mist leading-relaxed font-sans max-w-3xl mx-auto">
@@ -239,9 +248,14 @@ export default function ToolsHubPage() {
               Quick answer
             </span>
             <h2 className="mt-2 text-xl font-bold text-fog">
-              What are the most important lead generation calculators for high-ticket businesses?
+              Which lead generation calculator should you use?
             </h2>
             <p className="mt-3 text-sm sm:text-base leading-relaxed text-mist">
+              To see how many leads, booked calls and clients a budget buys, start with the{" "}
+              <Link href="/tools/meta-ads-budget-calculator" className="text-lime underline-offset-2 hover:underline">Meta ads budget calculator</Link>, then check each stage with the{" "}
+              <Link href="/tools/lead-conversion-rate-calculator" className="text-lime underline-offset-2 hover:underline">lead conversion rate calculator</Link>{" "}
+              and the{" "}
+              <Link href="/tools/cost-per-booked-call-calculator" className="text-lime underline-offset-2 hover:underline">cost per booked call calculator</Link>.{" "}
               High-ticket businesses require five core calculation models: Customer Acquisition Cost (CAC), Return on Ad Spend (ROAS), Cost Per Booked Call, Appointment Show Rate, and LTV-to-CAC Ratio. These financial calculators allow operators to forecast breakeven ad spend, pinpoint pipeline leaks, and identify required close rates before spending marketing capital.
             </p>
           </div>

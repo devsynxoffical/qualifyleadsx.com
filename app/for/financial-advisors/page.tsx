@@ -87,8 +87,12 @@ const faqs = [
     a: "Our intake qualification gates can be calibrated to your firm's minimum AUM requirements, typically filtering for individuals with $250,000, $500,000, or $1,000,000+ in liquid investable assets.",
   },
   {
-    q: "How many qualified consultations are delivered each month?",
-    a: "A standard wealth management acquisition sprint produces between 15 and 35 pre-qualified discovery sessions monthly, giving advisors consistent pipeline to grow AUM.",
+    q: "How many qualified consultations will I get each month?",
+    a: "It depends on your market, minimum assets, budget and how fast your team follows up, so we do not promise a fixed number. On the strategy call we look at your offer and minimums and give you a realistic range before any spend.",
+  },
+  {
+    q: "How does lead generation for financial advisors work?",
+    a: "Educational Meta ads (for example on retirement timing or tax planning) lead to a short form that asks about investable assets, timeline and goals. Qualified prospects are contacted within minutes and booked into your calendar, with reminders so they show up for the consultation.",
   },
 ];
 

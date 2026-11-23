@@ -571,3 +571,31 @@ Indexing submissions 2026-11-22 08:56 UTC: Google 1 URL (1 accepted): /pay-per-a
 - URL Inspection re-run done today in the technical audit (reports/technical-seo-audit-2026-11-23.md): 109 of 119 indexed, unchanged since 21 Nov.
 - Changes: none this run (P9-P11 went live 22 Nov; audit fixes wait for owner decision).
 Indexing submissions 2026-11-23 08:57 UTC: Google 4 URLs (4 accepted, changed 22 Nov): / /tools/lead-conversion-rate-calculator /blog/facebook-ads-agency-vs-in-house-media-buyer /blog/how-to-hire-an-appointment-setter. Bing 13 URLs (accepted): the same 4 plus 9 never sent to Bing: /blog/category/funnel-strategy /blog/category/lead-qualification /blog/category/paid-advertising /blog/category/scaling-economics /blog/whatsapp-marketing-for-consultants /mastermind/7-days-paid-trial /mastermind/hidden-facebook-interest /mastermind/lto-funnel-scale /mastermind/personal-injury-facebook-ads. All sitemap URLs have now been sent to Bing at least once.
+
+## 23 Nov 2026: Gaurav Sir SEO brief (CLAUDE_CODE_SEO_qualifiedleadsx_com.md + Keyword Volume Plan)
+Rules followed: content and SEO elements only (no UI or layout changes, no sitewide footer links), no em dashes added (and existing ones removed on the pages touched), no new numbers except published case-study figures, no Google Indexing API.
+
+Task 1 (near page 1), before -> after:
+- /blog/facebook-ads-agency-vs-in-house-media-buyer (pos 5.0): H1 "Facebook Ads Agency vs In-House Media Buyer: Which Is Right for a High-Ticket Business in 2026?" -> "Facebook Ads Agency vs Hiring an In-House Media Buyer: Which Costs Less?"; description rewritten to lead with the two costs (for clicks); title kept (already the exact query). 5 FAQs already. New contextual links from 3 posts (Meta ads for coaches guide, Advantage+ for B2B, B2B ROAS).
+- /tools/ad-frequency-calculator (10.5): 4 -> 5 FAQs (added "What is the frequency formula in Meta ads?"); new links from broad targeting post, Advantage+ for B2B, Meta ads for coaches guide. Title/H1 already contain the phrase.
+- /blog/b2b-roas-benchmarks-qualified-appointment-generation (b2b roas 14.3, roas benchmarks by industry 20.8): H1 -> "B2B ROAS Benchmarks by Industry for High-Ticket Offers"; H2 -> "ROAS Benchmarks by Industry: Results From Our Published Case Studies"; direct answer rewritten from published case studies only (2.72 to 12.70); description rewritten; links from cost-per-acquisition, B2B CAC and scaling-coaching posts.
+- /blog/how-to-qualify-leads (how to get marketing qualified leads 15.7): H1 -> "How to Qualify Leads and Get Marketing Qualified Leads"; direct answer rewritten for the query; new section "MQL vs SQL: When Does a Lead Go to Sales?"; FAQs 3 -> 5; removed unsourced "40%" and "30%+" FAQ claims and "close rates above 25%"; links from why-leads-dont-show-up, buy-qualified-leads post and the lead scoring template page.
+- /blog/meta-ads-for-high-ticket-b2b-broad-targeting (18.5): title -> "Facebook Ads Targeting for High-Ticket Products"; H1 -> "Facebook Ads Targeting for High-Ticket Products and B2B Offers"; direct answer rewritten; removed unsourced "$50M+ spend", "30+ B2B verticals", "38% lower" and the unpublished lookalike CPL comparison (kept the published 2,064 registrations at $0.50 CPL); links from in-house post (existing), Meta ads for coaches guide and high-ticket strategies post.
+- /tools/mer-calculator (marketing efficiency ratio calculator 24.7): title/H1 already contain the phrase, short answer and 5 FAQs present; new links from B2B ROAS, cost-per-acquisition and B2B CAC posts.
+- "data mirage calculator" (18.0 on /tools): no page or topic on the site matches; nothing changed.
+
+Task 2 (keyword plan):
+- appointment setting services, pay per appointment, lead generation for insurance agents: pages already target the keyword in title and H1 with 6+ FAQs (20 Nov); no change.
+- lead scoring template: title -> "Lead Scoring Template: Free High-Ticket Scoring Rubric", H1 -> "Lead Scoring Template & High-Ticket Scoring Rubric", new description, downloadable CSV (/downloads/lead-scoring-template.csv), points explained, FAQs 3 -> 5, removed unsourced "125+ client acquisition funnels".
+- lead generation calculator (/tools): title -> "Lead Generation Calculator & Free Marketing Tools", H1 same, description rewritten, quick answer now names which calculator to use, FAQs 3 -> 5.
+- lead generation for financial advisors: replaced unsourced "15 to 35 discovery sessions monthly" FAQ with an honest answer; added "How does lead generation for financial advisors work?" (5 FAQs).
+- how to get coaching clients: FAQs 4 -> 5 (published coaching results only); new links from Meta ads for coaches guide and scaling-coaching post.
+- customer acquisition agency: homepage FAQ question -> "What does a customer acquisition agency like QualifiedLeadsX do?" (FAQ only; homepage changed within 7 days).
+- marketing qualified leads: covered in Task 1.
+- qualified lead generation services (P3): no change.
+
+Task 3:
+- Sitewide footer links to sister sites: none exist (checked code and live HTML); nothing to remove. No sitewide footer links added (owner instruction 23 Nov).
+- Disavow: no backlink export available in this session (OpenSEO has no credits), so docs/disavow.txt was not created.
+
+Verification: tsc, eslint (0 errors), next build, seo:validate PASS, seo:links PASS (link checker now accepts .csv files), playbook audit OK; every changed page checked locally at 390 px: 1 H1 containing the keyword, title <= 58 chars, description <= 155, FAQPage schema with 5+ questions, no horizontal overflow, no em dashes.

@@ -43,6 +43,10 @@ export default function AdFrequencyCalculatorPage() {
       a: "There is no single right number. Meta does not publish a target, and the right frequency depends on audience size, how often you refresh creative and how long your buyers take to decide. Watch the trend instead: when frequency keeps rising while click-through rate falls and cost per lead climbs, the audience is seeing the same ads too often and it is time for new creative or a broader audience.",
     },
     {
+      q: "What is the frequency formula in Meta ads?",
+      a: "In Meta Ads Manager, frequency = impressions ÷ reach for the selected date range. For example, 90,000 impressions reaching 30,000 accounts gives a frequency of 3.0. Compare it over the same date range each week to see whether it is rising.",
+    },
+    {
       q: "Why is my Facebook ad frequency so high?",
       a: "Usually because the audience is small for the budget, so Meta shows the same people your ads again and again. Broadening targeting, adding new creative and lowering spend on small retargeting audiences all bring frequency down. Our guide to broad targeting explains why wider audiences often work better for high-ticket offers.",
     },

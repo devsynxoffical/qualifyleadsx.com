@@ -20,9 +20,9 @@ import {
 import { ProofStack } from "@/components/sections/ProofStack";
 
 export const metadata: Metadata = {
-  title: "High-Ticket Lead Scoring Template & Intake Rubric",
+  title: "Lead Scoring Template: Free High-Ticket Scoring Rubric",
   description:
-    "Download our verified 4-tier high-ticket lead scoring template. Filter tire-kickers, route VIP buyers, and protect your sales calendar automatically.",
+    "Free lead scoring template: score leads on revenue, budget, timeline and authority out of 100, route them into 4 tiers, and download the CSV for your CRM.",
   keywords: [
     "lead scoring template",
     "high ticket lead qualification",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "High-Ticket Lead Scoring Template & Intake Rubric",
+    title: "Lead Scoring Template: Free High-Ticket Scoring Rubric",
     description:
       "Battle-tested 4-tier qualification framework to protect sales calendars and route VIP buyers.",
     url: `${site.url}/tools/lead-scoring-template`,
@@ -95,6 +95,14 @@ const faqs = [
     q: "How does this scoring integrate with GoHighLevel or CRMs?",
     a: "Our template uses conditional logic tags. When a prospect submits an intake survey, conditional rules sum their score and tag the contact (e.g. `VIP-Buyer` or `Disqualified-Capital`), instantly triggering custom automated workflows.",
   },
+  {
+    q: "How do you build a lead scoring model?",
+    a: "Pick the 3 to 5 answers that best predict a sale (for high-ticket offers: revenue, budget, timeline and authority), give each a points range that adds up to 100, and set tier thresholds. Then review closed deals every month and move points toward the answers that actually close.",
+  },
+  {
+    q: "Can I download the lead scoring template?",
+    a: "Yes. The free CSV lists every question, answer and points value plus the four tiers and the action for each. Open it in Google Sheets or Excel, or copy the values into your CRM's scoring rules.",
+  },
 ];
 
 export default function LeadScoringTemplatePage() {
@@ -108,7 +116,7 @@ export default function LeadScoringTemplatePage() {
         url: pageUrl,
         name: "High-Ticket Lead Scoring Template & Intake Rubric",
         description:
-          "Download our verified 4-tier high-ticket lead scoring template. Filter tire-kickers, route VIP buyers, and protect your sales calendar automatically.",
+          "Free lead scoring template: score leads on revenue, budget, timeline and authority out of 100, route them into 4 tiers, and download the CSV for your CRM.",
         isPartOf: { "@id": WEBSITE_ID },
         publisher: publisherOrg,
       },
@@ -153,12 +161,13 @@ export default function LeadScoringTemplatePage() {
           </div>
 
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-fog leading-[1.1]">
-            High-Ticket Lead Scoring Template &{" "}
-            <span className="text-gradient-lime">Intake Qualification Rubric</span>
+            Lead Scoring Template &{" "}
+            <span className="text-gradient-lime">High-Ticket Scoring Rubric</span>
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-mist leading-relaxed font-sans max-w-3xl mx-auto">
-            Protect your calendar and eliminate tire-kickers. Deploy our battle-tested 4-tier intake scoring rubric used across 125+ client acquisition funnels.
+            Protect your calendar from unqualified calls. Score every lead out of 100 on four questions, route it into one of four tiers, and copy the free template into your CRM.{" "}
+            <a href="/downloads/lead-scoring-template.csv" download className="text-lime underline-offset-2 hover:underline">Download the lead scoring template (CSV)</a>.
           </p>
 
           {/* Quick Answer Block (AEO Standard) */}
@@ -187,7 +196,10 @@ export default function LeadScoringTemplatePage() {
               The 4-Tier Automated Routing Rubric
             </h2>
             <p className="mt-4 text-sm sm:text-base text-mist leading-relaxed font-sans">
-              How our conditional logic surveys segment inbound leads before they ever reach your sales calendar.
+              Points come from four questions: monthly revenue (up to 30), investment capacity (up to 30), timeline to start (up to 20) and decision-maker status (up to 20). The{" "}
+              <a href="/downloads/lead-scoring-template.csv" download className="text-lime underline-offset-2 hover:underline">downloadable lead scoring template</a>{" "}
+              lists every answer and its points. To see where leads are lost before scoring, read{" "}
+              <Link href="/blog/how-to-qualify-leads" className="text-lime underline-offset-2 hover:underline">how to get marketing qualified leads</Link>.
             </p>
           </div>
 

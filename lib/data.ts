@@ -267,7 +267,7 @@ export const faqs: {
     category: "The System",
   },
   {
-    q: "What does QualifiedLeadsX do?",
+    q: "What does a customer acquisition agency like QualifiedLeadsX do?",
     a: "A customer (or client) acquisition agency builds and runs the whole system that turns strangers into paying clients: offer positioning, paid ads, the funnel, lead qualification, fast follow-up and booking sales calls. QualifiedLeadsX is a done-for-you client acquisition agency for high-ticket B2B offers, coaches and agencies; you keep ownership of the ad account, funnel, CRM and data.",
     category: "The System",
   },
@@ -348,7 +348,7 @@ export const faqs: {
   },
   {
     q: "What is the difference between simple lead generation and qualified appointment setting?",
-    a: "Simple lead generation captures cheap, unvetted contact information (name and email) resulting in high no-show rates. Qualified appointment setting enforces multi-tier conditional friction gates—verifying liquid capital ($5,000+), company revenue, and purchasing authority—so your closers only speak with pre-framed buyers.",
+    a: "Simple lead generation captures cheap, unvetted contact information (name and email) resulting in high no-show rates. Qualified appointment setting enforces multi-tier conditional friction gates, verifying liquid capital ($5,000+), company revenue, and purchasing authority, so your closers only speak with pre-framed buyers.",
     category: "The System",
   },
 ] as const;

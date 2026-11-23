@@ -1,0 +1,22 @@
+Criterion,Answer,Points
+Monthly revenue,"$50,000 or more",30
+Monthly revenue,"$15,000 to $50,000",22
+Monthly revenue,"$5,000 to $15,000",12
+Monthly revenue,Pre-revenue,0
+Investment capacity,"$10,000 or more available now",30
+Investment capacity,"$5,000 to $10,000",22
+Investment capacity,Needs financing or approval,10
+Investment capacity,No budget,0
+Timeline to start,Within 14 days,20
+Timeline to start,Within 30 days,15
+Timeline to start,60 days or more,5
+Timeline to start,Just researching,0
+Decision-maker,Sole founder or CEO,20
+Decision-maker,Decides with a partner (partner joins the call),12
+Decision-maker,Needs someone else's approval,5
+,,
+Tier,Score,Action
+Tier 1: VIP buyer,85 to 100,Call within minutes and book with the senior closer
+Tier 2: Qualified,65 to 84,Book a standard discovery call
+Tier 3: Nurture,45 to 64,Send to nurture emails and the sales video
+Tier 4: Not qualified,Under 45,No calendar access; send free resources

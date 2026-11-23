@@ -562,3 +562,12 @@ Indexing submissions 2026-11-22 08:56 UTC: Google 1 URL (1 accepted): /pay-per-a
 - /mass-tort-leads (301 to /services since 20 Nov) still shows 32 impressions; expected to fade as Google processes the redirect.
 - Bots unchanged (Bingbot 403, GPTBot 429). Bing: 86 in index, 0 crawl issues.
 - Tracker: nothing due (first 3-4 Dec). Changes: none this run (P9-P11 went live today; waiting for data).
+
+## Run 11: 23 Nov 2026 08:44 UTC (14:13 IST run)
+- GSC: 22 Nov = 174 impressions, 0 clicks (best day so far; previous best 117 on 20 Nov). 7d: 865 impressions (+117), 5 clicks, 200 queries (+51), avg position 34.6 (was 30.4; the drop is many new low-position queries). 28d: 1,440 impressions, 10 clicks, 255 queries, 13 on page 1.
+- Up: buy coaching leads 98 -> 27.8 (/blog/how-to-get-coaching-clients), exclusive home improvement leads 81 -> 56, qualified lead generation company 32.5 -> 17 (/), refi leads 64 -> 52 (/mortgage-leads), lead conversion rate calculator 48 -> 42. Down: how to get marketing qualified leads 24.7 -> 46 (1 impr), burial insurance leads 28 -> 35, qualified appointment setting 47 -> 52.
+- New: 58 queries, many home improvement and insurance agent terms on the new and rebuilt pages.
+- Bots unchanged (Bingbot 403, GPTBot 429). Bing: 96 in index (+10), 0 crawl issues.
+- URL Inspection re-run done today in the technical audit (reports/technical-seo-audit-2026-11-23.md): 109 of 119 indexed, unchanged since 21 Nov.
+- Changes: none this run (P9-P11 went live 22 Nov; audit fixes wait for owner decision).
+Indexing submissions 2026-11-23 08:57 UTC: Google 4 URLs (4 accepted, changed 22 Nov): / /tools/lead-conversion-rate-calculator /blog/facebook-ads-agency-vs-in-house-media-buyer /blog/how-to-hire-an-appointment-setter. Bing 13 URLs (accepted): the same 4 plus 9 never sent to Bing: /blog/category/funnel-strategy /blog/category/lead-qualification /blog/category/paid-advertising /blog/category/scaling-economics /blog/whatsapp-marketing-for-consultants /mastermind/7-days-paid-trial /mastermind/hidden-facebook-interest /mastermind/lto-funnel-scale /mastermind/personal-injury-facebook-ads. All sitemap URLs have now been sent to Bing at least once.

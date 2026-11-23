@@ -28,7 +28,7 @@ const REVIEW_CDN =
 export const testimonialVideos: TestimonialVideo[] = [
   {
     src: `${REVIEW_CDN}/69624f63f8a93b76e0751a55.mp4`,
-    poster: "/training/DPHgI7fEuIA-poster.jpg",
+    poster: "/testimonials/69624f63f8a93b76e0751a55-poster.jpg",
     name: "Edgar",
     role: "Agency Founder · High-Ticket Client",
     result: "$4,500 Contract ($1.5K MRR)",
@@ -38,7 +38,7 @@ export const testimonialVideos: TestimonialVideo[] = [
   },
   {
     src: `${REVIEW_CDN}/69624f62f8a93b0480751a4e.mp4`,
-    poster: "/training/DQXUnRNkjR3-poster.jpg",
+    poster: "/testimonials/69624f62f8a93b0480751a4e-poster.jpg",
     name: "Marie Grace Berg",
     role: "Online Summit Founder · High-Ticket Coach",
     result: "2,000+ Registrations",
@@ -48,7 +48,7 @@ export const testimonialVideos: TestimonialVideo[] = [
   },
   {
     src: `${REVIEW_CDN}/6978f116d560857126a4804c.mp4`,
-    poster: "/training/DVjcGrUEr1Y-poster.jpg",
+    poster: "/testimonials/6978f116d560857126a4804c-poster.jpg",
     name: "Edgar & Jeremi",
     role: "Co-Founders · High-Ticket Funnel System",
     result: "$120K+ Cash Generated",

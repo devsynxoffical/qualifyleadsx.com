@@ -1,123 +1,109 @@
-# Rank monitor: 2026-11-23 08:44 UTC
+# Rank monitor: 2026-11-23 20:44 UTC
 
-Window: last 7 days (2026-11-16 to 2026-11-23); latest day with data: 2026-11-22. Source: Google Search Console.
+Window: last 7 days (2026-11-16 to 2026-11-23); latest day with data: 2026-11-23. Source: Google Search Console.
 
 | Metric | Now | Change vs previous run |
 |---|---|---|
-| Clicks (7d) | 5 |  (+0) |
-| Impressions (7d) | 865 |  (+117) |
-| Pages with impressions | 75 |  (+1) |
-| Queries | 200 |  (+51) |
-| Avg position (impression-weighted) | 34.6 | was 30.4 |
+| Clicks (7d) | 6 |  (+1) |
+| Impressions (7d) | 996 |  (+131) |
+| Pages with impressions | 75 |  (+0) |
+| Queries | 223 |  (+23) |
+| Avg position (impression-weighted) | 35.9 | was 34.6 |
 
-_Search Console has not added a new day since the previous run (2026-11-22), so changes below come only from late-arriving data._
+## Queries moving up (6)
+- **pay per appointment lead generation**: 85.5 → 70.8 (5 impr) on /pay-per-appointment
+- **insurance appointment setting services**: 62 → 52.5 (2 impr) on /for/insurance-agencies
+- **exclusive mass tort leads**: 66.3 → 59.9 (8 impr) on /mass-tort-leads
+- **meta ads calculator**: 55.3 → 49.9 (7 impr) on /tools/meta-ads-bid-strategy-calculator
+- **lead conversion rate**: 84.5 → 79.3 (7 impr) on /tools/lead-conversion-rate-calculator
+- **exclusive home improvement leads**: 56.3 → 53.1 (7 impr) on /for/home-improvement
 
-## Queries moving up (11)
-- **buy coaching leads**: 98 → 27.8 (4 impr) on /blog/how-to-get-coaching-clients
-- **high ticket lead generation**: 62.7 → 10 (1 impr) on /high-ticket-lead-generation
-- **exclusive home improvement leads**: 81 → 56.3 (4 impr) on /for/home-improvement
-- **qualified lead generation company**: 32.5 → 17 (1 impr) on /
-- **meta ads for hvac contractors**: 62.3 → 50 (3 impr) on /blog/facebook-ads-for-hvac-companies
-- **refi leads**: 64 → 52 (3 impr) on /mortgage-leads
-- **hvac meta ads**: 41 → 34 (4 impr) on /blog/facebook-ads-for-hvac-companies
-- **lead conversion rate calculator**: 48.2 → 42 (9 impr) on /tools/lead-conversion-rate-calculator
-- **marketing efficiency ratio**: 48.3 → 42.5 (6 impr) on /tools/mer-calculator
-- **qualified b2b leads**: 59.1 → 55.5 (8 impr) on /
-- **ad agency client acquisition services**: 42 → 39 (1 impr) on /for/agencies
+## Queries moving down (9)
+- **insurance leads for agents**: 33 → 51.3 (4 impr) on /for/insurance-agencies
+- **mass tort lead generation companies**: 28 → 45 (2 impr) on /mass-tort-leads
+- **insurance lead generation**: 43 → 57.5 (4 impr) on /for/insurance-agencies
+- **lead generation for consultants**: 53 → 64.3 (3 impr) on /for/consultants
+- **high ticket lead generation**: 10 → 18 (3 impr) on /high-ticket-lead-generation
+- **leads for insurance agents**: 50 → 58 (4 impr) on /for/insurance-agencies
+- **sell insurance leads**: 58 → 62 (2 impr) on /for/insurance-agencies
+- **home improvement lead generation companies**: 57 → 60.5 (4 impr) on /for/home-improvement
+- **qualified mass tort leads**: 18.7 → 21.7 (12 impr) on /mass-tort-leads
 
-## Queries moving down (7)
-- **how to get marketing qualified leads**: 24.7 → 46 (1 impr) on /blog/how-to-qualify-leads
-- **marketing efficiency ratio calculator**: 24.7 → 38 (1 impr) on /tools
-- **burial insurance leads**: 28.3 → 35.3 (4 impr) on /final-expense-leads
-- **qualified appointment setting**: 46.8 → 52.3 (4 impr) on /blog/how-to-hire-an-appointment-setter
-- **marketing efficiency ratio formula**: 64 → 69.3 (3 impr) on /tools/mer-calculator
-- **how to hire an appointment setter**: 55.3 → 60 (3 impr) on /blog/how-to-hire-an-appointment-setter
-- **mer formula**: 65.3 → 70 (5 impr) on /tools/mer-calculator
+## New queries (23)
+- qualify coaching leads before discovery calls: pos 37.2, 5 impr on /blog/how-to-get-coaching-clients
+- supplemental insurance leads: pos 62.3, 3 impr on /for/insurance-agencies
+- commercial insurance leads for agents: pos 75, 2 impr on /for/insurance-agencies
+- insurance lead services for agents: pos 55, 2 impr on /for/insurance-agencies
+- telemarketing insurance leads: pos 81, 2 impr on /for/insurance-agencies
+- burial leads: pos 46, 1 impr on /final-expense-leads
+- business insurance leads: pos 61, 1 impr on /for/insurance-agencies
+- buy insurance leads: pos 82, 1 impr on /for/insurance-agencies
+- buy insurance leads online: pos 35, 1 impr on /for/insurance-agencies
+- facebook ads for personal injury lawyers: pos 52, 1 impr on /mastermind/personal-injury-facebook-ads
+- final expense leads for sale: pos 49, 1 impr on /final-expense-leads
+- get insurance leads: pos 55, 1 impr on /for/insurance-agencies
+- high ticket lead generation services for consultants: pos 14, 1 impr on /for/consultants
+- home improvement leads for contractors: pos 61, 1 impr on /for/home-improvement
+- insurance agency lead generation: pos 44, 1 impr on /for/insurance-agencies
+- insurance broker lead generation: pos 52, 1 impr on /for/insurance-agencies
+- insurance lead generator: pos 80, 1 impr on /for/insurance-agencies
+- leads for insurance: pos 56, 1 impr on /for/insurance-agencies
+- mass tort attorney leads: pos 50, 1 impr on /mass-tort-leads
+- mva case leads: pos 41, 1 impr on /mva-leads
+- refinance lead: pos 68, 1 impr on /mortgage-leads
+- renters insurance leads: pos 56, 1 impr on /for/insurance-agencies
+- va appointment setter: pos 33, 1 impr on /compare/appointment-setter-vs-va
 
-## New queries (58)
-- buy home improvement leads: pos 71, 3 impr on /for/home-improvement
-- home improvement leads for sale: pos 45.7, 3 impr on /for/home-improvement
-- insurance sales leads: pos 54, 3 impr on /for/insurance-agencies
-- qualified life insurance leads: pos 55.3, 3 impr on /for/insurance-agencies
-- cash out refinance leads: pos 70.5, 2 impr on /mortgage-leads
-- cost of mva leads: pos 48.5, 2 impr on /mva-leads
-- credit qualified leads: pos 44.5, 2 impr on /mortgage-leads
-- generate life insurance leads: pos 76, 2 impr on /for/insurance-agencies
-- generating insurance leads: pos 79, 2 impr on /for/insurance-agencies
-- how to calculate ad frequency: pos 63.5, 2 impr on /tools/ad-frequency-calculator
-- insurance lead generation: pos 43, 2 impr on /for/insurance-agencies
-- pay per appointment lead generation companies: pos 83.5, 2 impr on /pay-per-appointment
-- pay per appointment setting: pos 69, 2 impr on /pay-per-appointment
-- qualified mortgage leads: pos 50.5, 2 impr on /mortgage-leads
-- quick lead acquisition: pos 26.5, 2 impr on /speed-to-lead
-- smart lead generation for hvac contractors: exclusive leads only: pos 25.5, 2 impr on /hvac-leads
-- affordable final expense direct mail leads: pos 46, 1 impr on /final-expense-leads
-- auto insurance lead generation contact center: pos 54, 1 impr on /for/insurance-agencies
-- auto insurance leads cost: pos 49, 1 impr on /for/insurance-agencies
-- auto insurance leads exclusive: pos 46, 1 impr on /for/insurance-agencies
-- auto insurance leads for agents: pos 60, 1 impr on /for/insurance-agencies
-- buy qualified leads: pos 52, 1 impr on /
-- coaching leads: pos 77, 1 impr on /blog/how-to-get-coaching-clients
-- commercial insurance lead generation: pos 66, 1 impr on /for/insurance-agencies
-- cost per result formula: pos 29, 1 impr on /tools/meta-ads-bid-strategy-calculator
-
-## Lost queries (7)
-- buy investor leads (was pos 46)
-- investor lead broker (was pos 41.5)
-- investor leads for sale (was pos 42)
-- multi client roas agency (was pos 26)
-- qualified leads for sale (was pos 65.5)
-- quickerleads ad platforms (was pos 89)
-- what is the average cost per acquisition for a free trial lead? (was pos 94)
+## Lost queries (0)
 
 ## Pages
 
 | Page | Impr | Clicks | Pos | Δ pos |
 |---|---|---|---|---|
-| /tools/lead-conversion-rate-calculator | 87 (+6) | 0 | 23.8 | -1.4 |
-| /for/insurance-agencies | 53 (+42) | 0 | 56.9 | -2.3 |
-| /for/home-improvement | 52 (+38) | 0 | 62.3 | 4.4 |
-| /for/agencies | 43 (+6) | 0 | 60.6 | 0 |
-| / | 39 (-9) | 1 | 19.4 | 5.8 |
-| /mass-tort-leads | 39 (+7) | 0 | 46.8 | 2.7 |
-| /benchmarks/close-rate | 32 (+0) | 1 | 3.6 | -0.2 |
-| /tools | 32 (-2) | 0 | 53.8 | -1 |
-| /mortgage-leads | 24 (+17) | 0 | 56.9 | -1.3 |
-| /tools/meta-ads-bid-strategy-calculator | 24 (+1) | 0 | 33.5 | -0.8 |
-| /meta-ads-agency | 21 (+2) | 1 | 22.7 | -2.6 |
-| /benchmarks/cost-per-lead-by-industry | 21 (-3) | 0 | 10.3 | -1 |
-| /tools/mer-calculator | 21 (+6) | 0 | 51.2 | -2.9 |
-| /appointment-setting | 20 (+3) | 0 | 40.5 | -4.7 |
-| /blog/facebook-ads-for-hvac-companies | 20 (-2) | 0 | 39.7 | 4 |
-| /tools/lead-scoring-template | 19 (+3) | 0 | 65.6 | 1.5 |
-| /blog/how-to-hire-an-appointment-setter | 16 (-3) | 0 | 42.7 | -2 |
-| /about | 15 (-3) | 1 | 2.8 | 0.4 |
-| /compare/appointment-setter-vs-va | 15 (+2) | 0 | 21.9 | 1.9 |
-| /blog/category/paid-advertising | 14 (-1) | 0 | 54.3 | 3.7 |
-| /tools/ad-frequency-calculator | 13 (+5) | 0 | 29.2 | -4.4 |
-| /pay-per-appointment | 12 (+8) | 0 | 74 | -4.5 |
-| /blog/facebook-ads-agency-vs-in-house-media-buyer | 11 (-1) | 0 | 6 | 0.1 |
-| /about/gaurav-kapoor | 10 (+0) | 0 | 4.4 | 0 |
-| /b2b-lead-generation | 10 (-4) | 0 | 26.9 | 9.9 |
-| /case-studies | 10 (+3) | 0 | 12.4 | -3.5 |
-| /benchmarks | 9 (-1) | 0 | 6.1 | -0.4 |
-| /blog/category/scaling-economics | 9 (-1) | 0 | 49.4 | -2.3 |
+| /tools/lead-conversion-rate-calculator | 95 (+8) | 0 | 23 | 0.8 |
+| /for/insurance-agencies | 89 (+36) | 0 | 58.3 | -1.4 |
+| /for/home-improvement | 65 (+13) | 0 | 61.4 | 0.9 |
+| /mass-tort-leads | 53 (+14) | 0 | 48.6 | -1.8 |
+| /for/agencies | 44 (+1) | 0 | 60.4 | 0.2 |
+| / | 39 (+0) | 1 | 19.4 | 0 |
+| /benchmarks/close-rate | 37 (+5) | 1 | 3.4 | 0.2 |
+| /tools | 32 (+0) | 0 | 53.8 | 0 |
+| /tools/meta-ads-bid-strategy-calculator | 29 (+5) | 0 | 32.5 | 1 |
+| /benchmarks/cost-per-lead-by-industry | 25 (+4) | 0 | 9.2 | 1.1 |
+| /mortgage-leads | 25 (+1) | 0 | 57.4 | -0.5 |
+| /tools/mer-calculator | 25 (+4) | 0 | 51.3 | -0.1 |
+| /meta-ads-agency | 21 (+0) | 1 | 22.7 | 0 |
+| /appointment-setting | 20 (+0) | 0 | 40.5 | 0 |
+| /blog/facebook-ads-for-hvac-companies | 20 (+0) | 0 | 39.7 | 0 |
+| /tools/lead-scoring-template | 19 (+0) | 0 | 65.6 | 0 |
+| /compare/appointment-setter-vs-va | 18 (+3) | 0 | 22.9 | -1 |
+| /pay-per-appointment | 18 (+6) | 0 | 71.2 | 2.8 |
+| /blog/category/paid-advertising | 16 (+2) | 0 | 55.1 | -0.8 |
+| /blog/how-to-hire-an-appointment-setter | 16 (+0) | 0 | 42.7 | 0 |
+| /about | 15 (+0) | 1 | 2.8 | 0 |
+| /tools/ad-frequency-calculator | 15 (+2) | 0 | 33.6 | -4.4 |
+| /mva-leads | 11 (+3) | 1 | 20.1 | 0.5 |
+| /about/gaurav-kapoor | 11 (+1) | 0 | 4.9 | -0.5 |
+| /blog/facebook-ads-agency-vs-in-house-media-buyer | 11 (+0) | 0 | 6 | 0 |
+| /hvac-leads | 11 (+3) | 0 | 41.9 | -3 |
+| /b2b-lead-generation | 10 (+0) | 0 | 26.9 | 0 |
+| /blog/how-to-get-coaching-clients | 10 (+5) | 0 | 44.5 | 7.3 |
+| /case-studies | 10 (+0) | 0 | 12.4 | 0 |
+| /benchmarks | 9 (+0) | 0 | 6.1 | 0 |
+| /blog/category/scaling-economics | 9 (+0) | 0 | 49.4 | 0 |
+| /tools/meta-ads-budget-calculator | 9 (+1) | 0 | 13.1 | 0.5 |
 | /compare/qualifiedleadsx-alternatives | 8 (+0) | 0 | 47 | 0 |
-| /hvac-leads | 8 (+4) | 0 | 38.9 | 1.9 |
-| /mva-leads | 8 (+6) | 0 | 20.6 | -16.6 |
-| /tools/meta-ads-budget-calculator | 8 (-3) | 0 | 13.6 | -3 |
-| /for/coaches | 7 (+1) | 0 | 15.1 | 5.7 |
-| /lead-generation-agency | 7 (-6) | 0 | 12.4 | 18.1 |
-| /mastermind/lto-funnel-scale | 7 (+1) | 0 | 5.1 | -0.1 |
-| /tools/cost-per-booked-call-calculator | 7 (-1) | 0 | 20.4 | -1.1 |
-| /final-expense-leads | 6 (+2) | 0 | 42.5 | -4.2 |
-| /mastermind | 6 (+1) | 0 | 10.2 | 0.4 |
-| /speed-to-lead | 6 (+3) | 0 | 40 | 30 |
-| /tools/show-rate-calculator | 6 (-1) | 0 | 6.8 | -0.7 |
+| /final-expense-leads | 8 (+2) | 0 | 43.8 | -1.3 |
+| /for/consultants | 8 (+3) | 0 | 29.6 | -13 |
+| /mastermind/lto-funnel-scale | 8 (+1) | 0 | 5.1 | 0 |
+| /for/coaches | 7 (+0) | 0 | 15.1 | 0 |
+| /lead-generation-agency | 7 (+0) | 0 | 12.4 | 0 |
+| /tools/cost-per-booked-call-calculator | 7 (+0) | 0 | 20.4 | 0 |
+| /tools/show-rate-calculator | 7 (+1) | 0 | 7.3 | -0.5 |
 
 ## Striking distance (positions 4–20)
 - **facebook ads agency vs hiring an in-house media buyer**: pos 6, 11 impr, 0 clicks → /blog/facebook-ads-agency-vs-in-house-media-buyer
-- **qualified mass tort leads**: pos 18.7, 11 impr, 0 clicks → /mass-tort-leads
+- **high ticket lead generation**: pos 18, 3 impr, 0 clicks → /high-ticket-lead-generation
 - **data mirage calculator**: pos 18, 3 impr, 0 clicks → /tools
 - **high ticket agency mastermind**: pos 19, 2 impr, 0 clicks → /mastermind
 - **ad frequency calculator**: pos 10.5, 2 impr, 0 clicks → /tools
@@ -127,7 +113,7 @@ _Search Console has not added a new day since the previous run (2026-11-22), so 
 - **med spa cost per lead benchmark**: pos 17, 1 impr, 0 clicks → /benchmarks/cost-per-lead-by-industry
 - **qualified case studies**: pos 6, 1 impr, 0 clicks → /case-studies
 - **qualified leads alternatives**: pos 11, 1 impr, 0 clicks → /compare/qualifiedleadsx-alternatives
-- **high ticket lead generation**: pos 10, 1 impr, 0 clicks → /high-ticket-lead-generation
+- **high ticket lead generation services for consultants**: pos 14, 1 impr, 0 clicks → /for/consultants
 - **buy coaching leads**: pos 8, 1 impr, 0 clicks → /mastermind
 - **frequency formula in meta ads**: pos 9, 1 impr, 0 clicks → /tools/ad-frequency-calculator
 - **frequency formula meta**: pos 11, 1 impr, 0 clicks → /tools/ad-frequency-calculator
@@ -135,4 +121,4 @@ _Search Console has not added a new day since the previous run (2026-11-22), so 
 - **how to calculate cost per result**: pos 18, 1 impr, 0 clicks → /tools/meta-ads-bid-strategy-calculator
 - **show up rate**: pos 9, 1 impr, 0 clicks → /tools/show-rate-calculator
 
-Δ pos is positive when the page moved up. Previous snapshot: 2026-11-22T20-44-27-098Z.json.
+Δ pos is positive when the page moved up. Previous snapshot: 2026-11-23T08-44-14-080Z.json.

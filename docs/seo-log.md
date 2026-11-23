@@ -613,3 +613,11 @@ Note (7-day rule): all five pages were edited in the last 7 days (20, 22 and 23 
 Verification: tsc, eslint (0 errors), next build, seo:validate PASS, seo:links PASS, playbook audit OK; each page checked locally at 390 px: one H1 (exact plan text), title 51-59 characters, description 144-154, FAQPage schema 5-6 questions matching the visible FAQs, no horizontal overflow, no em dashes, no "30 to 50" promise.
 Open for owner: the "30-50 booked calls a month" promise still appears on /high-ticket-lead-generation (title and description), /services and /meta-ads-agency (outside this plan).
 - 23 Nov: Page Content Plan changes verified live on all 5 pages (new H1s and FAQs present).
+
+## Run 12: 23 Nov 2026 20:44 UTC (02:13 IST run, no indexing by rule)
+- GSC 7d: 996 impressions (+131), 6 clicks (+1), 223 queries (+23), avg position 35.9 (was 34.6; more new low-position queries). 28d: 1,571 impressions, 11 clicks, 277 queries, 13 on page 1. 23 Nov partial (62 impressions so far).
+- Up: pay per appointment lead generation 85.5 -> 70.8, insurance appointment setting services 62 -> 52.5, meta ads calculator 55 -> 50, lead conversion rate 84.5 -> 79.3, exclusive home improvement leads 56 -> 53.
+- Down: insurance leads for agents 33 -> 51 (4 impr), insurance lead generation 43 -> 57.5, high ticket lead generation 10 -> 18 (3 impr), lead generation for consultants 53 -> 64. Small samples; /for/insurance-agencies copy changed today, Google has not recrawled it yet.
+- /mass-tort-leads (301 since 20 Nov) still shows 12+ impressions for mass tort queries; expected to fade.
+- Bots unchanged (Bingbot 403, GPTBot 429). Bing: 96 in index, 0 crawl issues.
+- Changes: none this run (14 pages changed on 23 Nov; waiting for recrawl). Fixed earlier tonight on owner request: testimonial video thumbnails (commit da2f5a0, live).

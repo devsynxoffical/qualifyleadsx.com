@@ -599,3 +599,4 @@ Task 3:
 - Disavow: no backlink export available in this session (OpenSEO has no credits), so docs/disavow.txt was not created.
 
 Verification: tsc, eslint (0 errors), next build, seo:validate PASS, seo:links PASS (link checker now accepts .csv files), playbook audit OK; every changed page checked locally at 390 px: 1 H1 containing the keyword, title <= 58 chars, description <= 155, FAQPage schema with 5+ questions, no horizontal overflow, no em dashes.
+- 23 Nov: brief changes verified live (lead scoring CSV 200, new titles/H1s/sections on /tools, qualify-leads, B2B ROAS, broad targeting, in-house, financial advisors, ad frequency). Bing already received 13 URLs at 08:57 UTC today, so these 9 changed URLs go to Bing/IndexNow in the 24 Nov 14:13 IST run (20-a-day rule). Google: owner to request indexing manually (Indexing API no longer used).

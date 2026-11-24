@@ -643,3 +643,10 @@ Scope: qualifiedleadsx.com only (owner instruction 23 Nov: work only on this sit
 - Not possible here: disavow upload (needs the backlink export), Clutch/G2 profiles, Reddit answers, monthly prompt checks in ChatGPT/Gemini/Perplexity (manual).
 Verification: tsc, eslint 0 errors, build, seo:validate PASS, seo:links PASS, playbook audit OK; new guide and both pages checked locally at 390 px (one H1, title 53-59, description 144-147, FAQPage 6-8 questions, no overflow, no em dashes).
 - 24 Nov: AEO/GEO changes verified live (new guide /blog/appointment-setting-vs-cold-calling, new FAQs on /appointment-setting). Guide goes to Bing in the 25 Nov 14:13 IST run (20-a-day cap used today).
+
+## Run 14: 24 Nov 2026 20:44 UTC (02:13 IST run, no indexing by rule)
+- GSC 7d: 1,222 impressions (+120), 12 clicks (+2), 78 pages (+3), 250 queries (+12), avg position 36.2. 28d: 1,879 impressions, 17 clicks, 313 queries, 15 on page 1. 24 Nov partial (72 impressions so far).
+- Up: /for/insurance-agencies is climbing on almost every insurance query (exclusive insurance leads 65.5 -> 52, insurance lead generation 58.7 -> 53.3, buy insurance leads 71 -> 62, how to get commercial insurance leads 62 -> 37.5, insurance leads for agents 51 -> 47); pay per appointment lead generation 65.3 -> 55.6 (10 impr).
+- Down: insurance agency lead generation 47 -> 55 (4 impr).
+- Bots unchanged (Bingbot 403, GPTBot 429). Bing: 98 in index, 0 crawl issues.
+- Changes: none this run (pages changed 23-24 Nov are being recrawled; 1 Dec scheduled body work pending).

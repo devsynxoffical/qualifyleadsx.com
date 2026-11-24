@@ -109,6 +109,7 @@ export default function Page() {
       faqs={[
         { q: "What is the best lead generation for insurance agents?", a: "Exclusive leads from your own ad campaigns usually beat shared vendor leads because you are the only agent calling. Our published final expense campaign produced leads at $7.79 each." },
         { q: "How much do insurance leads cost?", a: "In our published campaigns, final expense leads cost $7.79 and life insurance leads about $18. Prices depend on product, state and targeting." },
+        { q: "How do insurance agents get leads?", a: "Most use one of three routes: referrals, buying leads from vendors, or running their own ads with a qualification form. Your own campaign gives exclusive leads; in our published campaigns final expense leads cost $7.79 each and life insurance leads about $18." },
         { q: "How do life insurance agents get leads?", a: "The main options are referrals, buying vendor leads, and running your own ads with a qualification funnel. The last gives exclusive leads and steady volume." },
         { q: "Are your insurance leads exclusive?", a: "Yes. Every lead comes from a campaign run only for your agency and is never sold to another agent." },
         { q: "Can you book appointments instead of sending leads?", a: "Yes. We can qualify each lead and book them into your calendar, which is how our appointment setting service works." },

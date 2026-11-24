@@ -36,3 +36,21 @@ Gemini, Copilot and Claude. Record: is QualifiedLeadsX mentioned (Y/N), is the p
 | 28 | VSL funnel agency for coaches | /vsl-funnels |
 | 29 | WhatsApp lead nurture for high-ticket sales | /whatsapp-lead-nurture |
 | 30 | who founded QualifiedLeadsX | /about/gaurav-kapoor , /about |
+
+
+## 24 Nov 2026 additions (Gaurav Sir AEO/GEO plan)
+
+Baseline 24 Nov 2026 (Semrush AI Search panel, US): AI Visibility 0, AI mentions 0, pages cited 0. Check these monthly by hand in ChatGPT, Gemini, Perplexity and Google AI Mode; record whether QualifiedLeadsX is named and which page is cited.
+
+| # | Prompt | Page that should be cited |
+|---|---|---|
+| A1 | Best appointment setting company for service businesses | /appointment-setting |
+| A2 | How much does pay per appointment lead generation cost? | /pay-per-appointment |
+| A3 | How do insurance agents get exclusive leads? | /for/insurance-agencies |
+| A4 | How do financial advisors get new clients online? | /for/financial-advisors |
+| A5 | Appointment setting vs buying leads: which is better? | /blog/buy-qualified-leads-vs-generating-your-own, /blog/appointment-setting-vs-cold-calling |
+| A6 | Outsourced appointment setting with a guarantee | /appointment-setting, / |
+
+| Month | A1 | A2 | A3 | A4 | A5 | A6 |
+|---|---|---|---|---|---|---|
+| Dec 2026 | | | | | | |

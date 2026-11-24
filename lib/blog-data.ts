@@ -46,6 +46,7 @@ export interface BlogPost {
         label: string;
       };
       bulletList?: string[];
+      table?: { caption?: string; headers: string[]; rows: string[][] };
     }[];
     conclusion: string;
     faqs: {
@@ -60,6 +61,102 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  // 24 NOV 2026: AEO/GEO plan (Gaurav Sir), new guide "appointment setting vs cold calling". Only published figures (lib/case-studies-data.ts, /pay-per-appointment, /appointment-setting).
+  {
+    slug: "appointment-setting-vs-cold-calling",
+    seoTitle: "Appointment Setting vs Cold Calling: Which Is Better?",
+    title: "Appointment Setting vs Cold Calling: Which Books More Sales Calls?",
+    description: "Appointment setting vs cold calling compared on lead source, cost per booked call, show rate and fit, with published costs of $4.81 to $45 each.",
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readTime: "7 min read",
+    coverImage: "/images2/showreel/shot_14_ai_screener.webp",
+    author: {
+      name: "Gaurav Kapoor",
+      role: "Founder & Head of Acquisition, QualifiedLeadsX",
+      avatar: "/images/qualified-leadsx.webp",
+    },
+    category: "Lead Qualification",
+    tags: ["Appointment Setting", "Cold Calling", "Appointment Setting vs Cold Calling", "Outsourced Appointment Setting"],
+    aeoSummary: {
+      question: "Is appointment setting better than cold calling?",
+      answer: "For most service businesses, yes. Cold calling contacts people who never asked to hear from you, so most calls end before a conversation starts. Appointment setting works on people who already raised their hand through an ad or form, then qualifies and books them. In our published campaigns, booked appointments cost $4.81 to $45 each.",
+      bulletPoints: [
+        "Cold calling: you start the conversation with strangers",
+        "Appointment setting: you follow up with people who asked to be contacted",
+        "Published cost per booked appointment: $4.81 to $45",
+      ],
+    },
+    content: {
+      intro: "Both cold calling and appointment setting aim for the same result: a booked sales call. The difference is who you call and why they pick up. This guide compares the two on lead source, cost, show rate and when each one makes sense, using only numbers from campaigns we have published. If you want the booked calls without building the team, see our [appointment setting services](/appointment-setting).",
+      sections: [
+        {
+          heading: "Appointment Setting vs Cold Calling: The Short Answer",
+          body: [
+            "Cold calling means calling a list of people or businesses who have not shown interest yet. Appointment setting means contacting people who already asked for information, usually through an ad or a form, qualifying them and booking a call in your calendar.",
+            "Because appointment setting starts with interest, each conversation is shorter and more likely to end in a booking. Cold calling can still work for B2B sellers with a tight list and a strong offer, but it needs more dials for every booked call.",
+          ],
+          table: {
+            caption: "Appointment setting vs cold calling at a glance",
+            headers: ["", "Appointment setting", "Cold calling"],
+            rows: [
+              ["Who you contact", "People who asked to be contacted", "A list of people who did not ask"],
+              ["Opening line", "Following up on your request", "Interrupting their day"],
+              ["Qualification", "Answers collected in the form before the call", "Done live on the call"],
+              ["Main cost", "Ad spend plus follow-up", "Caller time plus data lists"],
+              ["Best fit", "Service businesses selling on a call or visit", "B2B sellers with a narrow, known list of buyers"],
+            ],
+          },
+        },
+        {
+          heading: "How Much Does Each Cost per Booked Appointment?",
+          body: [
+            "Judge both on cost per booked appointment, then cost per show and cost per sale, not on cost per dial or cost per lead.",
+            "Published appointment setting campaigns on this site booked calls at these costs. Cold calling costs depend on caller wages, list quality and connect rates, so measure your own cost per booked call before comparing.",
+          ],
+          table: {
+            caption: "Cost per booked appointment in published campaigns",
+            headers: ["Campaign", "Booked appointments", "Cost per appointment"],
+            rows: [
+              ["Kitchen remodeling, New York (19 days)", "337", "$4.81"],
+              ["HVAC company, New Jersey", "140", "$13.97"],
+              ["Med spa, 3 New York clinics", "453", "$22.93"],
+              ["HVAC company, Florida", "125", "$45"],
+            ],
+          },
+        },
+        {
+          heading: "Does Appointment Setting Work?",
+          body: [
+            "It works when the people who book actually show up and buy. For a med spa with three New York clinics, $10,387 in ads booked 453 appointments; 303 showed up (67%) and 247 became paying clients, with $74,100 in revenue. See the [full med spa case study](/case-studies/nyc-med-spa-rf-microneedling-74k).",
+            "Show rate is where most booked calls are lost. Our appointment setting system averages an 88.3% call show-up rate because every booking gets an instant confirmation plus SMS and WhatsApp reminders.",
+          ],
+        },
+        {
+          heading: "How to Choose Between Them",
+          body: [
+            "Use these steps to decide which one fits your business:",
+          ],
+          bulletList: [
+            "1. Count your buyers. If you can list every possible buyer by name (a few hundred companies), cold calling that list can work. If your buyers are thousands of local people or businesses, ads plus appointment setting reach them faster.",
+            "2. Check your deal value. If one client is worth $1,000 or more, a booked, qualified appointment at $4.81 to $45 is usually affordable.",
+            "3. Check your speed. Appointment setting only works if every new lead is contacted within minutes; ours reaches new leads in under 3 minutes.",
+            "4. Decide who does the work. In-house callers need hiring, scripts and management. An outsourced service or a [pay per appointment](/pay-per-appointment) model hands that work to someone else.",
+            "5. Measure the same number. Compare cost per booked appointment, show rate and cost per sale for whichever option you test.",
+          ],
+        },
+      ],
+      conclusion: "Cold calling starts conversations with people who did not ask; appointment setting follows up with people who did. For most service businesses that sell on a call or a visit, appointment setting books more qualified calls for the effort, with published costs of $4.81 to $45 per booked appointment. If you want it done for you, see our [appointment setting services](/appointment-setting) or our [done-for-you lead generation](/).",
+      faqs: [
+        { q: "What is the difference between appointment setting and cold calling?", a: "Cold calling contacts people who have not shown interest. Appointment setting contacts people who already asked for information through an ad or form, qualifies them and books a sales call in your calendar." },
+        { q: "Is appointment setting better than cold calling?", a: "For most service businesses, yes, because each call starts with someone who asked to hear from you. Cold calling can still suit B2B sellers with a short, known list of buyers and a strong offer." },
+        { q: "How much does a booked appointment cost?", a: "In our published campaigns, booked appointments cost between $4.81 and $45 each depending on the industry, offer and location." },
+        { q: "Does appointment setting include cold calling?", a: "Not in our system. We call and message people who asked to be contacted after seeing an ad, so every call is a follow-up rather than a cold call." },
+        { q: "What show rate should a booked appointment have?", a: "It depends on the follow-up. Our appointment setting system averages an 88.3% call show-up rate, using instant confirmation plus SMS and WhatsApp reminders." },
+        { q: "Can I outsource appointment setting?", a: "Yes. An outsourced service contacts, qualifies and books your leads, and reports cost per booked appointment, cost per show and cost per sale." },
+      ],
+    },
+  },
   // 20 NOV 2026: Gaurav Sir SEO Recovery Plan, P1 "how to get coaching clients" (260/mo, KD 20). Numbers from lib/case-studies-data.ts (DUsaqlQEsYB, DMTbiLhy45r, DMOUbBhywzQ).
   {
     slug: "how-to-get-coaching-clients",
@@ -610,6 +707,7 @@ export const blogPosts: BlogPost[] = [
             "Repeat on a Saturday morning. Most businesses discover that weekend applications are not touched until Monday afternoon, a 40-plus-hour response time on leads that cost the same as weekday leads.",
             "Pull the last 30 days of applications from your CRM and calculate the median time-to-first-response and the show-up rate. If the median is above 15 minutes or the show-up rate is below 75%, the fix is automation, not more reminders to the sales team.",
             "Then compare [cost per booked call](/blog/b2b-client-acquisition-cost-cac-benchmarks-2026) before and after automation. Across our accounts, moving from manual to automated 60-second follow-up typically lifts booked-call volume from the same ad spend by 30% to 45%, which is the cheapest cost-per-call improvement available.",
+            "Fast follow-up is the main difference between inbound appointment setting and cold outreach; see [appointment setting vs cold calling](/blog/appointment-setting-vs-cold-calling).",
           ],
           bulletList: [
             "Mystery-shop your own funnel on a weekday evening and a weekend morning.",
@@ -1116,6 +1214,7 @@ export const blogPosts: BlogPost[] = [
           body: [
             "Choose an in-house SDR team if: Your average deal size exceeds $50,000, your total addressable market is strictly under 500 enterprise enterprise accounts (Account-Based Marketing), and you have an experienced VP of Sales dedicated to daily management.",
             "Choose a done-for-you appointment setting agency if: You sell a [high-ticket offer](/blog/high-ticket-sales-how-to-get-high-ticket-clients) between $3,000 and $25,000, you want predictable inbound calls from Meta ads, you want zero management overhead, and you want to scale revenue past $100K+/month without expanding internal payroll.",
+            "If you are weighing outbound dialing against inbound follow-up, read [appointment setting vs cold calling](/blog/appointment-setting-vs-cold-calling) for a side-by-side comparison with published cost per booked appointment.",
           ],
         },
       ],
@@ -3449,6 +3548,7 @@ export const blogPosts: BlogPost[] = [
           body: [
             "Use our [Cost Per Booked Call Calculator](/tools/cost-per-booked-call-calculator) to evaluate how setter compensation impacts overall customer acquisition cost.",
             "For companies ready to scale deal execution, pair your setter team with our dedicated [outsourced sales closers](/outsourced-sales-closers).",
+            "Before you hire, decide what the setter will do: follow up with inbound leads or dial cold lists. Our guide to [appointment setting vs cold calling](/blog/appointment-setting-vs-cold-calling) compares the two.",
           ],
         },
       ],

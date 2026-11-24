@@ -108,7 +108,7 @@ export default async function BlogPostPage({ params }: Props) {
   const coverImage = imageObject(post.coverImage, `${postUrl}#primaryimage`);
   const bodyText = [
     post.content.intro,
-    ...post.content.sections.flatMap((sec) => [sec.heading, ...sec.body, ...(sec.bulletList ?? [])]),
+    ...post.content.sections.flatMap((sec) => [sec.heading, ...sec.body, ...(sec.bulletList ?? []), ...(sec.table ? sec.table.rows.map((r) => r.join(" ")) : [])]),
     post.content.conclusion,
   ]
     .map(plainText)
@@ -394,6 +394,31 @@ export default async function BlogPostPage({ params }: Props) {
                           </li>
                         ))}
                       </ul>
+                    )}
+
+                    {/* Table (24 Nov 2026, AEO plan: comparison and cost tables) */}
+                    {section.table && (
+                      <div className="mt-6 overflow-x-auto rounded-xl border border-line">
+                        <table className="w-full text-left text-sm">
+                          {section.table.caption && <caption className="px-4 pt-4 text-left text-xs font-mono uppercase tracking-wider text-dim">{section.table.caption}</caption>}
+                          <thead className="border-b border-line bg-panel text-fog">
+                            <tr>
+                              {section.table.headers.map((h, hIdx) => (
+                                <th key={hIdx} className="p-4 font-semibold">{h}</th>
+                              ))}
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-line">
+                            {section.table.rows.map((row, rIdx) => (
+                              <tr key={rIdx}>
+                                {row.map((cell, cIdx) => (
+                                  <td key={cIdx} className={cIdx === 0 ? "p-4 font-medium text-fog" : "p-4 text-mist"}>{cell}</td>
+                                ))}
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
                     )}
 
                     {/* High-Impact Stat Metric */}

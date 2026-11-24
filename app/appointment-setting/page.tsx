@@ -110,6 +110,14 @@ const appointmentFaqs = [
     q: "Which countries do you book appointments in?",
     a: "The US, UK, Canada and Australia, in the time zone of your sales team.",
   },
+  {
+    q: "What are the best appointment setting services?",
+    a: "Look for five things: every lead contacted within minutes, qualification questions you agree on, booking straight into your calendar, SMS and WhatsApp reminders, and reporting on cost per booked appointment, per show and per sale. Ask for published results with the ad spend shown.",
+  },
+  {
+    q: "Does appointment setting work?",
+    a: "It works when booked calls show up and buy. For a med spa with three New York clinics, $10,387 in ads booked 453 appointments; 303 showed up and 247 became paying clients, with $74,100 in revenue.",
+  },
 ];
 
 export default function AppointmentSettingPage() {

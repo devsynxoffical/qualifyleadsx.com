@@ -642,3 +642,4 @@ Scope: qualifiedleadsx.com only (owner instruction 23 Nov: work only on this sit
 - Owner decision: the plan's cost table lists MVA $19.62, but MVA was moved to the sister sites on 20 Nov; it will be left out unless the owner says otherwise.
 - Not possible here: disavow upload (needs the backlink export), Clutch/G2 profiles, Reddit answers, monthly prompt checks in ChatGPT/Gemini/Perplexity (manual).
 Verification: tsc, eslint 0 errors, build, seo:validate PASS, seo:links PASS, playbook audit OK; new guide and both pages checked locally at 390 px (one H1, title 53-59, description 144-147, FAQPage 6-8 questions, no overflow, no em dashes).
+- 24 Nov: AEO/GEO changes verified live (new guide /blog/appointment-setting-vs-cold-calling, new FAQs on /appointment-setting). Guide goes to Bing in the 25 Nov 14:13 IST run (20-a-day cap used today).

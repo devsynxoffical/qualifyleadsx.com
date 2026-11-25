@@ -679,3 +679,4 @@ Note: the plan says at most 3 new pages per run; the owner asked for all tasks t
 - Deploy: city pages commit cea81f2 is on main but not live yet (10 location URLs return 404); Bing submission for them waits until live.
 - Changes: none this run.
 Indexing submissions 2026-11-25 08:47 UTC: Bing 2 URLs (accepted): /blog/appointment-setting-vs-cold-calling /blog/high-ticket-lead-generation-strategies. Google: owner manual request.
+- 25 Nov: city pages verified live (10 x 200, 3 redirects 301, sitemap-locations 10 URLs, hub section live). Indexing submissions 2026-11-25 08:51 UTC: Bing 11 URLs (accepted): /lead-generation-agency + the 10 location pages. Google: owner manual request (10 a day, priority NY, Miami, Chicago, Atlanta, Denver, Tampa, Houston, Dallas, Florida, Texas).

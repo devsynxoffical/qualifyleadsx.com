@@ -702,3 +702,4 @@ Verification: tsc, eslint 0 errors, build, seo:validate PASS, seo:links PASS, pl
 - Bots unchanged (Bingbot 403, GPTBot 429). Bing: 99 in index, 0 crawl issues.
 - URL Inspection re-run started on all 130 sitemap URLs (incl. the 10 new location pages); results appended when complete.
 - Changes: none this run (evening session already changed 15 pages today).
+- URL Inspection 25 Nov 20:5x UTC (130 sitemap URLs): 109 indexed (unchanged), 8 discovered not indexed (same as 23 Nov: crm-automation, 2 compare pages, 2 case studies, financial advisors, LTV:CAC calculator, Meta ads CPM benchmark), 13 unknown to Google (ROAS calculator, scaling-coaching post, plus the 11 pages published 24-25 Nov: cold-calling guide and 10 location pages, not crawled yet). No losses.

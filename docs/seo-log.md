@@ -650,3 +650,24 @@ Verification: tsc, eslint 0 errors, build, seo:validate PASS, seo:links PASS, pl
 - Down: insurance agency lead generation 47 -> 55 (4 impr).
 - Bots unchanged (Bingbot 403, GPTBot 429). Bing: 98 in index, 0 crawl issues.
 - Changes: none this run (pages changed 23-24 Nov are being recrawled; 1 Dec scheduled body work pending).
+
+## 25 Nov 2026: City Page Plan (CLAUDE_CODE_CITY_PAGES_GAURAV.md + City_Page_Map_Gaurav_Sites.csv), QLX rows only
+Scope: qualifiedleadsx.com only (owner instruction: this website only). FTP, BSH, SFS and CL rows not touched.
+Step 1, URL map for QLX rows:
+| CSV URL | Status | Action |
+|---|---|---|
+| /appointment-setting-services | conflict: /appointment-setting already targets "appointment setting services" (edited 23-24 Nov) | 301 to /appointment-setting (no duplicate page) |
+| /lead-generation-agency | exists (last change 17 Nov; HOLD on title/meta/H1 until 14 Dec) | body only: new "Lead generation companies near me: cities we serve" section linking all 10 location pages |
+| /lead-generation-agency/{new-york-ny, miami-fl, chicago-il, atlanta-ga, denver-co, tampa-fl, houston-tx, dallas-tx} | missing | built |
+| /lead-generation-agency/{florida, texas} | missing | built (Florida links to Miami and Tampa, Texas to Houston and Dallas) |
+| /for/real-estate-investors | exists (18 Nov) | not changed this run |
+| /for/insurance-agencies | exists, edited 23-24 Nov | skipped (7-day rule) |
+| /for/final-expense | duplicate of existing /final-expense-leads | 301 to /final-expense-leads |
+| /for/health-insurance | missing | blocked: no published health insurance or Medicare campaign to use as proof |
+| /for/mortgage | duplicate of existing /mortgage-leads | 301 to /mortgage-leads |
+| /for/financial-advisors | exists, edited 23 Nov | skipped (7-day rule) |
+| /for/coaches, /for/saas, /b2b-lead-generation | exist | week 12 rows, not changed |
+Local facts: US Census Bureau files only (Vintage 2024 city population estimates sub-est2024.csv; County Business Patterns 2022 county and state files), each linked on the page. census.gov web pages and the keyless API were blocked, so the official data files on www2.census.gov were used. Proof: published campaigns only, labeled local only for New York (NYC med spa, NY remodeling), Florida (Florida HVAC) and Texas (mortgage, remodeling, real estate, solar); Chicago, Atlanta and Denver say they have no local case study and use national results.
+Template: Service schema with areaServed (City or State), FAQPage, BreadcrumbList; no LocalBusiness, no address. CTA: booking link only (phone number awaiting owner choice). No footer "Cities we serve" block (owner instruction 23 Nov: no sitewide footer links); the US hub links to every city instead. New pages are in /sitemap-locations.xml, which robots.txt now references.
+Verification (local build): all 10 pages 200, self canonical, one H1, titles 49-56, descriptions 142-154, JSON-LD parses, FAQPage 5-6, no em dash, 712-945 words, uniqueness vs siblings 65%+ (lowest Tampa/Miami 65%), no mobile overflow; 3 redirects return 301; seo:validate and seo:links PASS.
+Note: the plan says at most 3 new pages per run; the owner asked for all tasks today, so all 10 QLX location pages were built in one run.

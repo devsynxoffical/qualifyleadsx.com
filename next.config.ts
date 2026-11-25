@@ -17,6 +17,9 @@ const nextConfig: NextConfig = {
       { source: "/appointment-setting-for-saas", destination: "/for/saas", statusCode: 301 },
       // 20 Nov 2026 (SEO Recovery Plan): legal and roofing topics move to sister sites
       { source: "/personal-injury-leads", destination: "/services", statusCode: 301 },
+      { source: "/appointment-setting-services", destination: "/appointment-setting", statusCode: 301 },
+      { source: "/for/final-expense", destination: "/final-expense-leads", statusCode: 301 },
+      { source: "/for/mortgage", destination: "/mortgage-leads", statusCode: 301 },
       { source: "/mva-leads", destination: "/services", statusCode: 301 },
       { source: "/mass-tort-leads", destination: "/services", statusCode: 301 },
       { source: "/for/law-firms", destination: "/services", statusCode: 301 },

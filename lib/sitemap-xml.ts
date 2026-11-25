@@ -7,7 +7,7 @@ import { allSitemapEntries } from "@/lib/sitemap-entries";
  *   /sitemap.xml            sitemap index
  *   /sitemap-core.xml       home, services, hubs, comparisons, proof, company
  *   /sitemap-industries.xml /for/[industry] and /[service]-for-[industry]
- *   /sitemap-locations.xml  location pages (none yet; listed only when they exist)
+ *   /sitemap-locations.xml  city and state pages (/lead-generation-agency/[slug], 25 Nov 2026)
  *   /sitemap-content.xml    blog, glossary, free tools and benchmarks
  */
 export type SitemapType = "core" | "industries" | "locations" | "content";
@@ -15,7 +15,7 @@ export const SITEMAP_TYPES: SitemapType[] = ["core", "industries", "locations", 
 
 export function typeOf(path: string): SitemapType {
   const first = path.split("/")[1] ?? "";
-  if (first === "locations") return "locations";
+  if (first === "locations" || path.startsWith("/lead-generation-agency/")) return "locations";
   if (first === "for" || first.includes("-for-")) return "industries";
   if (["blog", "glossary", "tools", "benchmarks"].includes(first)) return "content";
   return "core";

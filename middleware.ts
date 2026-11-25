@@ -17,6 +17,10 @@ const MERGED: Record<string, string> = {
   // 20 Nov 2026 (Gaurav Sir SEO Recovery Plan): legal (PI/MVA/mass tort) and roofing leads
   // are owned by sister sites; these pages leave qualifiedleadsx.com.
   "/personal-injury-leads": "/services",
+  // 25 Nov 2026 city page plan: plan URLs that duplicate existing pages
+  "/appointment-setting-services": "/appointment-setting",
+  "/for/final-expense": "/final-expense-leads",
+  "/for/mortgage": "/mortgage-leads",
   "/mva-leads": "/services",
   "/mass-tort-leads": "/services",
   "/for/law-firms": "/services",

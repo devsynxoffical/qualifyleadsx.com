@@ -25,7 +25,7 @@ const BOTS = [
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: BOTS.map((userAgent) => ({ userAgent, allow: "/", disallow: ["/api/"] })),
-    sitemap: `${site.url}/sitemap.xml`,
+    sitemap: [`${site.url}/sitemap.xml`, `${site.url}/sitemap-locations.xml`],
     host: site.url,
   };
 }

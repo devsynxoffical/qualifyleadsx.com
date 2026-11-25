@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
+import { locationPages } from "@/lib/locations";
 import { caseStudyIds } from "@/lib/case-study-meta";
 import routeLastmod from "@/lib/route-lastmod.json";
 import { blogPosts, blogCategories, getPostsByCategory } from "@/lib/blog-data";
@@ -507,7 +508,14 @@ export function allSitemapEntries(): MetadataRoute.Sitemap {
     return date ? { ...entry, lastModified: new Date(date) } : entry;
   };
 
-  return [...coreRoutes, ...categoryRoutes, ...blogRoutes, ...caseStudyRoutes]
+  const locationRoutes: MetadataRoute.Sitemap = locationPages.map((l) => ({
+    url: `${site.url}/lead-generation-agency/${l.slug}`,
+    lastModified: new Date("2026-11-25"),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...coreRoutes, ...categoryRoutes, ...blogRoutes, ...caseStudyRoutes, ...locationRoutes]
     .filter((entry) => !NOINDEX_PATHS.has(entry.url.replace(site.url, "")))
     .map(withRealDates);
 }

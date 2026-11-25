@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { cityPages, statePages } from "@/lib/locations";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
@@ -279,6 +280,38 @@ export default function LeadGenAgencyPage() {
       <ProofStack variant="full" />
 
       <DeepDive content={leadGenAgencyDeepDive} />
+
+      {/* 25 Nov 2026 (City Page Plan): US hub, "lead generation companies near me", links down to every city and state page. */}
+      <section className="py-16 sm:py-20 border-t border-line">
+        <div className="container-x max-w-5xl">
+          <h2 className="text-3xl sm:text-4xl font-bold text-fog">Lead generation companies near me: cities we serve</h2>
+          <p className="mt-4 max-w-3xl text-mist leading-relaxed">
+            Looking for a lead generation company near you? QualifiedLeadsX works remotely with service businesses across the United States, so you get the same system wherever you are: ads targeted to your service area, every lead qualified and contacted within minutes, and appointments booked in your time zone. These pages show the local market numbers and the published results closest to each city.
+          </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            {[...statePages, ...cityPages].length > 0 && (
+              <>
+                <div>
+                  <p className="font-mono text-xs uppercase tracking-wider text-dim">States</p>
+                  <ul className="mt-3 space-y-2">
+                    {statePages.map((l) => (
+                      <li key={l.slug}><Link href={`/lead-generation-agency/${l.slug}`} className="text-lime underline-offset-2 hover:underline">Lead generation agency in {l.name}</Link></li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-mono text-xs uppercase tracking-wider text-dim">Cities</p>
+                  <ul className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+                    {cityPages.map((l) => (
+                      <li key={l.slug}><Link href={`/lead-generation-agency/${l.slug}`} className="text-lime underline-offset-2 hover:underline">{l.name}, {l.region}</Link></li>
+                    ))}
+                  </ul>
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      </section>
 
       {/* Frequently Asked Questions */}
       <section className="py-16 sm:py-24 border-t border-line bg-panel/40">

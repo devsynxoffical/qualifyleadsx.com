@@ -671,3 +671,11 @@ Local facts: US Census Bureau files only (Vintage 2024 city population estimates
 Template: Service schema with areaServed (City or State), FAQPage, BreadcrumbList; no LocalBusiness, no address. CTA: booking link only (phone number awaiting owner choice). No footer "Cities we serve" block (owner instruction 23 Nov: no sitewide footer links); the US hub links to every city instead. New pages are in /sitemap-locations.xml, which robots.txt now references.
 Verification (local build): all 10 pages 200, self canonical, one H1, titles 49-56, descriptions 142-154, JSON-LD parses, FAQPage 5-6, no em dash, 712-945 words, uniqueness vs siblings 65%+ (lowest Tampa/Miami 65%), no mobile overflow; 3 redirects return 301; seo:validate and seo:links PASS.
 Note: the plan says at most 3 new pages per run; the owner asked for all tasks today, so all 10 QLX location pages were built in one run.
+
+## Run 15: 25 Nov 2026 08:44 UTC (14:13 IST run)
+- GSC: 24 Nov = 313 impressions, 0 clicks (new daily high; previous 253 on 23 Nov). 7d: 1,383 impressions (+161), 10 clicks, 259 queries, avg position 38.1. 28d: 2,110 impressions, 16 clicks, 334 queries, 17 on page 1 (+2).
+- Up: best insurance leads for agents 21 -> 14, meta ads calculator 30.5 -> 17, auto insurance leads for agents 60 -> 47.5, refinance mortgage leads 63 -> 50, insurance lead generation 53 -> 50 (12 impr). /mass-tort-leads and /mva-leads (301 since 20 Nov) still show legacy impressions.
+- Bots unchanged (Bingbot 403, GPTBot 429). Bing: 99 in index, 0 crawl issues.
+- Deploy: city pages commit cea81f2 is on main but not live yet (10 location URLs return 404); Bing submission for them waits until live.
+- Changes: none this run.
+Indexing submissions 2026-11-25 08:47 UTC: Bing 2 URLs (accepted): /blog/appointment-setting-vs-cold-calling /blog/high-ticket-lead-generation-strategies. Google: owner manual request.

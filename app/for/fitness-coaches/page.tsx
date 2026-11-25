@@ -28,21 +28,22 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "How do you navigate Meta's strict health and personal attributes ad policies?",
-    a: "We strictly avoid policy violations (no before/after body zoom-ins or negative self-image prompts). Instead, we engineer compliant lifestyle, routine transformation, and energy optimization hooks that Meta's automated compliance filters approve smoothly.",
+    q: "How do online fitness coaches get clients?",
+    a: "Most start with referrals and social content, then add paid ads to a simple first offer. The model behind our published fitness results is an ascension funnel: Meta ads sell a low-ticket membership, a one-time offer adds revenue, and the best buyers are invited to a higher-ticket coaching program.",
   },
   {
-    q: "Can fitness coaches sell programs above $3,000 using this system?",
-    a: "Yes. Our client funnels transition coaches away from cheap $50/month app subscriptions into high-ticket holistic concierge transformation programs ($3,000–$6,000 for 4–6 months), combining nutrition, bloodwork, and 1-on-1 coaching.",
+    q: "How do you handle Meta's health and personal attributes ad policies?",
+    a: "Ads avoid before-and-after body shots and negative self-image claims. Hooks focus on routines, energy and the coaching experience, and every ad is checked against Meta's policy before launch.",
   },
   {
-    q: "What is the typical cost per booked call for high-ticket fitness?",
-    a: "Across our active fitness coaching clients, the cost per qualified booked call averages $85 to $145, yielding an average client acquisition cost of $450 to $850 for a $3,500 program.",
+    q: "Can fitness coaches sell higher-ticket programs with this system?",
+    a: "Yes. In one published launch, 35 buyers moved up to a mastermind at an average of $2,542 each ($89,000), after first buying a low-ticket membership.",
   },
   {
-    q: "Do you use Instagram DM funnels for fitness coaches?",
-    a: "Yes. ManyChat and automated Instagram DM triage are ideal for fitness. We use keyword-triggered story and reel ads that start a conversation in the DMs, where setters qualify prospects before sharing booking links.",
+    q: "What results have fitness coaches had with your campaigns?",
+    a: "One fitness funnel generated $203,941 in 11 days (1,566 memberships, 246 one-time offers, 35 mastermind clients). Another fitness coach sold 696 courses for $70,673 in 30 days from $21,789 in ads, a 3.24 ROAS.",
   },
+
 ];
 
 export default function FitnessCoachesPage() {
@@ -110,26 +111,26 @@ export default function FitnessCoachesPage() {
                 Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
-                To acquire <strong>high-ticket online fitness coaching clients ($2,500–$6,000 packages)</strong>, we combine compliant Meta lifestyle ads, Instagram DM triage sequences, and appointment setters. This system books 30 to 60 qualified consultation calls monthly at an average cost of $85–$145 per call.
+                To get <strong>online fitness coaching clients</strong>, we run compliant Meta ads into a low-ticket offer, move the best buyers up to a higher-ticket program, and book calls for the coaching tier. One published fitness funnel sold 1,566 memberships, 246 one-time offers and 35 mastermind places: <strong>$203,941 in 11 days</strong>.
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-lime font-mono">35–60</div>
-                <div className="text-xs text-fog mt-1">Booked Consultations / Mo</div>
+                <div className="text-2xl font-bold text-lime font-mono">$203,941</div>
+                <div className="text-xs text-fog mt-1">Fitness funnel revenue in 11 days</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-paper font-mono">$112</div>
-                <div className="text-xs text-fog mt-1">Avg Cost Per Booked Call</div>
+                <div className="text-2xl font-bold text-paper font-mono">35</div>
+                <div className="text-xs text-fog mt-1">Mastermind clients from one launch</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-lime font-mono">4.6x</div>
-                <div className="text-xs text-fog mt-1">Verified Return on Ad Spend</div>
+                <div className="text-2xl font-bold text-lime font-mono">696</div>
+                <div className="text-xs text-fog mt-1">Courses sold in 30 days (another coach)</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-paper font-mono">100%</div>
-                <div className="text-xs text-fog mt-1">Meta Ad Policy Compliant</div>
+                <div className="text-2xl font-bold text-paper font-mono">3.24</div>
+                <div className="text-xs text-fog mt-1">ROAS on $21,789 in ad spend</div>
               </div>
             </div>
 
@@ -151,6 +152,34 @@ export default function FitnessCoachesPage() {
         </section>
 
         <ProofStack variant="full" />
+
+        {/* 25 Nov 2026: published results only (lib/case-studies-data.ts) */}
+        <section className="py-16 border-b border-line">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-paper mb-4">Published fitness coaching results</h2>
+            <p className="text-fog max-w-3xl mb-8">Both campaigns were published with the numbers shown, so you can check them. Results depend on the offer, audience and budget.</p>
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="border border-line rounded-xl p-6 bg-paper/[0.02]">
+                <h3 className="text-lg font-semibold text-paper mb-2">$203,941 in 11 days from an ascension funnel</h3>
+                <p className="text-fog text-sm sm:text-base leading-relaxed">1,566 low-ticket memberships ($86,967), 246 one-time offers ($27,974) and 35 mastermind clients ($89,000, about $2,542 each).</p>
+                <Link href="/case-studies/high-ticket-coaching-203k" className="mt-3 inline-block text-sm text-lime underline-offset-2 hover:underline">Read the case study</Link>
+              </div>
+              <div className="border border-line rounded-xl p-6 bg-paper/[0.02]">
+                <h3 className="text-lg font-semibold text-paper mb-2">696 courses sold in 30 days</h3>
+                <p className="text-fog text-sm sm:text-base leading-relaxed">$21,789 in Meta ads produced $70,673 in revenue, a 3.24 ROAS, after testing more than 15 ad angles.</p>
+                <a href="https://www.instagram.com/p/DMOUbBhywzQ/" className="mt-3 inline-block text-sm text-lime underline-offset-2 hover:underline" target="_blank" rel="noopener noreferrer">See the original post</a>
+              </div>
+            </div>
+            <h3 className="text-xl font-semibold text-paper mt-12 mb-4">How a fitness coaching funnel works</h3>
+            <ol className="space-y-3 text-fog">
+              <li className="flex gap-3"><span className="font-mono text-lime">1.</span><span>Compliant Meta ads sell a simple first offer, such as a membership or course.</span></li>
+              <li className="flex gap-3"><span className="font-mono text-lime">2.</span><span>A one-time offer at checkout lifts the value of every buyer.</span></li>
+              <li className="flex gap-3"><span className="font-mono text-lime">3.</span><span>Engaged buyers are invited to a higher-ticket coaching or mastermind tier.</span></li>
+              <li className="flex gap-3"><span className="font-mono text-lime">4.</span><span>Applicants answer a short form and book a call, with reminders before it.</span></li>
+              <li className="flex gap-3"><span className="font-mono text-lime">5.</span><span>Every step is tracked: cost per buyer, ascension rate and revenue per client.</span></li>
+            </ol>
+          </div>
+        </section>
 
         {/* FAQs */}
         <section className="py-16">

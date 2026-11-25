@@ -28,21 +28,22 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "Why do low-ticket $47 course funnels fail to produce real profit?",
-    a: "Customer acquisition costs on Meta have risen. Selling a $47 course requires 10x the conversion volume to break even on ad spend. Transitioning into high-ticket cohorts or VIP implementation tiers ($2,000–$5,000) provides the margin required to scale ad budgets aggressively.",
+    q: "How do course creators get more students?",
+    a: "Paid ads to a clear offer, then follow-up that moves buyers to the next step. In our published campaigns, a digital course sold $69,652 in 8 days and a $97/month community added 537 members in 19 days, both from Meta ads.",
   },
   {
-    q: "Do you recommend automated webinars or 12-minute VSL funnels?",
-    a: "For offers between $1,500 and $10,000, 12-to-15-minute direct VSL funnels out-convert 60-minute webinars. Today's buyers want concise proof, clear mechanisms, and an immediate pathway to speak with an advisor rather than sitting through fluff.",
+    q: "Should I sell my course with a webinar, a VSL or a direct checkout?",
+    a: "It depends on the price. Lower-priced courses and memberships can sell from an ad straight to checkout, as the $97/month community did. Higher-priced programs usually need a video sales letter or an application and a call.",
   },
   {
-    q: "How do you handle cohort launch deadlines versus evergreen funnels?",
-    a: "We architect both evergreen rolling enrollment engines and seasonal launch sprint campaigns. Evergreen funnels maintain steady weekly cash flow, while timed cohorts generate large cash injection spikes.",
+    q: "What ROAS can a course launch get?",
+    a: "Published examples: 3.65x on a digital course ($69,652 from $19,104), 3.24x for a fitness course seller ($70,673 from $21,789) and 2.53x for a $97/month community ($57,577 from $22,774). Your result depends on the offer and audience.",
   },
   {
-    q: "What is the benchmark ROAS for high-ticket course funnels?",
-    a: "Our course creator campaigns average 3.5x to 5.5x front-end return on ad spend, with back-end mastermind upsells driving 12-month customer value above $8,500.",
+    q: "Do you work on evergreen funnels or launches?",
+    a: "Both. The published results above include an 8-day launch and 19-day and 30-day evergreen runs.",
   },
+
 ];
 
 export default function CourseCreatorsPage() {
@@ -110,26 +111,26 @@ export default function CourseCreatorsPage() {
                 Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
-                For course creators selling <strong>premium programs ($1,500–$10,000)</strong>, <strong>lead generation requires direct VSL funnels paired with phone enrollment advisors</strong>. This bypasses low-converting checkout pages, yielding 4x higher student conversion and 80%+ show rates for cohort interviews.
+                For course creators, <strong>lead generation works best as a funnel</strong>: Meta ads sell a course or membership, then the best buyers move up to a higher-ticket program. Published results: a digital course made <strong>$69,652 in 8 days</strong> from $19,104 in ads (3.65x), and a $97/month community added 537 paying members in 19 days.
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-lime font-mono">4.2x</div>
-                <div className="text-xs text-fog mt-1">Average Front-End ROAS</div>
+                <div className="text-2xl font-bold text-lime font-mono">$69,652</div>
+                <div className="text-xs text-fog mt-1">Course revenue in 8 days</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-paper font-mono">$2,800</div>
-                <div className="text-xs text-fog mt-1">Average Offer Price Point</div>
+                <div className="text-2xl font-bold text-paper font-mono">3.65x</div>
+                <div className="text-xs text-fog mt-1">ROAS on that launch</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-lime font-mono">15 Mins</div>
-                <div className="text-xs text-fog mt-1">Average VSL Watch Duration</div>
+                <div className="text-2xl font-bold text-lime font-mono">537</div>
+                <div className="text-xs text-fog mt-1">Paying members in 19 days ($97/mo)</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-paper font-mono">32%</div>
-                <div className="text-xs text-fog mt-1">Enrollment Call Close Rate</div>
+                <div className="text-2xl font-bold text-paper font-mono">$70,673</div>
+                <div className="text-xs text-fog mt-1">Course revenue in 30 days (696 sold)</div>
               </div>
             </div>
 
@@ -151,6 +152,39 @@ export default function CourseCreatorsPage() {
         </section>
 
         <ProofStack variant="full" />
+
+        {/* 25 Nov 2026: published results only (lib/case-studies-data.ts) */}
+        <section className="py-16 border-b border-line">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-paper mb-4">Published course and membership results</h2>
+            <p className="text-fog max-w-3xl mb-8">Three campaigns published with the spend shown. Results depend on the offer, audience and budget.</p>
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="border border-line rounded-xl p-6 bg-paper/[0.02]">
+                <h3 className="text-lg font-semibold text-paper mb-2">$69,652 in 8 days from a digital course</h3>
+                <p className="text-fog text-sm sm:text-base leading-relaxed">A course on landing high-ticket clients, with community access, sold $69,652 from $19,104 in ads: a 3.65x ROAS.</p>
+                <a href="https://www.instagram.com/p/DK2tpecTDVQ/" className="mt-3 inline-block text-sm text-lime underline-offset-2 hover:underline" target="_blank" rel="noopener noreferrer">See the original post</a>
+              </div>
+              <div className="border border-line rounded-xl p-6 bg-paper/[0.02]">
+                <h3 className="text-lg font-semibold text-paper mb-2">537 paying members in 19 days</h3>
+                <p className="text-fog text-sm sm:text-base leading-relaxed">A $97/month coaching community collected $57,577 from $22,774 in ads (2.53x ROAS), with a $107.25 average order value.</p>
+                <a href="https://www.instagram.com/p/DMTbiLhy45r/" className="mt-3 inline-block text-sm text-lime underline-offset-2 hover:underline" target="_blank" rel="noopener noreferrer">See the original post</a>
+              </div>
+              <div className="border border-line rounded-xl p-6 bg-paper/[0.02]">
+                <h3 className="text-lg font-semibold text-paper mb-2">696 courses in 30 days</h3>
+                <p className="text-fog text-sm sm:text-base leading-relaxed">$21,789 in ads produced $70,673 in revenue (3.24 ROAS) for a fitness course seller.</p>
+                <a href="https://www.instagram.com/p/DMOUbBhywzQ/" className="mt-3 inline-block text-sm text-lime underline-offset-2 hover:underline" target="_blank" rel="noopener noreferrer">See the original post</a>
+              </div>
+            </div>
+            <h3 className="text-xl font-semibold text-paper mt-12 mb-4">How a course funnel works</h3>
+            <ol className="space-y-3 text-fog">
+              <li className="flex gap-3"><span className="font-mono text-lime">1.</span><span>Meta ads lead with the transformation the course delivers, tested across many angles.</span></li>
+              <li className="flex gap-3"><span className="font-mono text-lime">2.</span><span>The offer page or video sells the course or membership directly.</span></li>
+              <li className="flex gap-3"><span className="font-mono text-lime">3.</span><span>Order bumps and one-time offers raise the value of each buyer.</span></li>
+              <li className="flex gap-3"><span className="font-mono text-lime">4.</span><span>Engaged students are invited to a higher-ticket program or mastermind.</span></li>
+              <li className="flex gap-3"><span className="font-mono text-lime">5.</span><span>Reporting covers cost per buyer, ROAS and revenue per student.</span></li>
+            </ol>
+          </div>
+        </section>
 
         {/* FAQs */}
         <section className="py-16">

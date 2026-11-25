@@ -68,7 +68,7 @@ const serviceOfferings = [
     icon: PhoneCall,
     badge: "Speed to Lead",
     description:
-      "Sub-5-minute multichannel automated follow-up across SMS, email, and WhatsApp combined with human setters to lock 30–50 qualified calls monthly.",
+      "Sub-5-minute multichannel automated follow-up across SMS, email, and WhatsApp combined with human setters, so qualified leads are booked while they are still interested. Published campaigns booked appointments for $4.81 to $45 each.",
     metrics: "88%+ show-up rate · Instant qualification filtration",
   },
   {
@@ -164,7 +164,7 @@ const faqs = [
   },
   {
     q: "What ad spend budget is required to launch?",
-    a: "We recommend a minimum paid advertising budget of $2,000 to $3,000 per month dedicated to Meta Ads (Facebook & Instagram). This gives Meta's algorithmic bidding engine enough conversion data to exit the learning phase within 14 days and produce 30 to 50 qualified appointments monthly.",
+    a: "We recommend a minimum paid advertising budget of $2,000 to $3,000 per month dedicated to Meta Ads (Facebook & Instagram). This gives Meta's algorithmic bidding engine enough conversion data to exit the learning phase within 14 days. Published campaigns booked appointments for $4.81 to $45 each; your volume depends on the offer, market and budget.",
   },
   {
     q: "How fast can these acquisition services be installed?",
@@ -233,7 +233,7 @@ export default function ServicesHubPage() {
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-mist leading-relaxed font-sans max-w-3xl mx-auto">
-            Stop relying on sporadic organic referrals and broken cold outreach. We install, manage, and guarantee a comprehensive client acquisition engine that fills your calendar with 30 to 50 sales-ready appointments every month.
+            Stop relying on sporadic organic referrals and broken cold outreach. We install, manage, and guarantee a comprehensive client acquisition engine that fills your calendar with sales-ready appointments.
           </p>
 
           {/* Quick Answer Block (AEO Standard) */}

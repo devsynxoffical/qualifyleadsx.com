@@ -3,9 +3,9 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /about,company/legal,About : $50M+ Meta Ads Managed,1263,1296,165,none,keep
 /about/gaurav-kapoor,company/legal,"Gaurav Kapoor, Founder of",215,277,165,none,keep
 /appointment-setting,core,Appointment Setting Services That Book Sales Calls,1580,2094,165,none,keep
-/appointment-setting-for-agencies,industry,Appointment Setting for Agencies: Booked Strategy Calls,534,863,165,none,keep
+/appointment-setting-for-agencies,industry,Appointment Setting for Agencies: Booked Strategy Calls,551,880,165,none,keep
 /appointment-setting-for-consultants,industry,Appointment Setting for Consultants: Qualified Calls Only,457,786,165,none,keep
-/b2b-lead-generation,core,Qualified B2B Leads: Enterprise Lead Generation Services,1093,1806,165,none,keep
+/b2b-lead-generation,core,Qualified B2B Leads: Enterprise Lead Generation Services,1089,1802,165,none,keep
 /benchmarks,free tool,B2B & High-Ticket Marketing Benchmarks 2026,492,921,165,none,keep
 /benchmarks/close-rate,free tool,Average High-Ticket Close Rate (2026): 24–31% Benchmarks,244,357,165,thin (244 unique words),improve
 /benchmarks/cost-per-booked-call,free tool,Cost Per Booked Call & Qualified Meeting Benchmarks [2026],421,911,165,none,keep
@@ -105,34 +105,34 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /disclaimer,company/legal,Earnings Disclaimer,104,104,165,noindex,keep (noindex)
 /final-expense-leads,core,Final Expense & Burial Insurance Leads (Exclusive),726,779,165,none,keep
 /for,industry,Lead Generation by Industry,712,1141,165,none,keep
-/for/agencies,industry,Lead Generation for Agencies: Win More Retainer Clients,1662,2235,165,none,keep
-/for/b2b-services,industry,Lead Generation for Consultancies & B2B Service Firms,492,1204,165,none,keep
+/for/agencies,industry,Lead Generation for Agencies: Win More Retainer Clients,1682,2255,165,none,keep
+/for/b2b-services,industry,Lead Generation for Consultancies & B2B Service Firms,487,1199,165,none,keep
 /for/coaches,industry,Lead Generation for Coaches: Client Acquisition Funnels,1373,1922,165,none,keep
 /for/consultants,industry,Lead Generation for Consultants: B2B Client Acquisition,1124,1678,165,none,keep
-/for/course-creators,industry,Course Creator Lead Generation,230,555,165,thin (230 unique words),improve
+/for/course-creators,industry,Course Creator Lead Generation,407,744,165,none,keep
 /for/financial-advisors,industry,Lead Generation for Financial Advisors,477,1180,165,none,keep
-/for/fitness-coaches,industry,Online Fitness Coach Clients,241,566,165,thin (241 unique words),improve
+/for/fitness-coaches,industry,Online Fitness Coach Clients,410,739,165,none,keep
 /for/home-improvement,industry,Home Improvement Leads,209,534,165,thin (209 unique words),improve
 /for/insurance-agencies,industry,Lead Generation for Insurance Agents: Exclusive Leads,1016,1099,165,none,keep
 /for/med-spas,industry,Med Spa Lead Generation: High-Ticket Booking Agency,497,1205,165,none,keep
 /for/real-estate-investors,industry,Buy Motivated Seller Leads: Off-Market Real Estate Deals,807,1132,165,none,keep
 /for/recruitment-agencies,industry,Recruitment Agency Leads,217,542,10,noindex,keep (noindex)
-/for/saas,industry,B2B SaaS Lead Generation & Demo Booking Agency,478,1192,165,none,keep
+/for/saas,industry,B2B SaaS Lead Generation & Demo Booking Agency,497,1211,165,none,keep
 /for/solar-companies,industry,"Solar Appointment Setting: Exclusive, Pre-Qualified Leads",778,1103,165,none,keep
 /glossary,blog,Client Acquisition Glossary (29 Terms),1360,2199,165,none,keep
-/high-ticket-lead-generation,core,High Ticket Lead Generation: 30–50 Booked Calls Monthly,1053,1752,165,none,keep
+/high-ticket-lead-generation,core,High Ticket Lead Generation: 30–50 Booked Calls Monthly,1050,1749,165,none,keep
 /hvac-leads,core,HVAC Leads: Exclusive Homeowner Leads and Appointments,1080,1175,165,meta description 159 chars,shorten description
-/lead-generation-agency,core,Customer Acquisition Agency for High-Ticket B2B: Done-for-You,1354,2072,165,title 61 chars,shorten title
-/lead-generation-agency/atlanta-ga,core,"Lead Generation Agency in Atlanta, GA",529,628,3,3 internal links in,add links
-/lead-generation-agency/chicago-il,core,"Lead Generation Agency in Chicago, IL",544,643,3,3 internal links in,add links
-/lead-generation-agency/dallas-tx,core,"Lead Generation Agency in Dallas, TX",562,646,5,same keyword as /lead-generation-agency/houston-tx,merge or differentiate
-/lead-generation-agency/denver-co,core,"Lead Generation Agency in Denver, CO",528,607,2,2 internal links in,add links
-/lead-generation-agency/florida,core,Lead Generation Agency in Florida,483,557,4,same keyword as /lead-generation-agency/texas; 4 internal links in,merge or differentiate + add links
-/lead-generation-agency/houston-tx,core,"Lead Generation Agency in Houston, TX",512,609,3,same keyword as /lead-generation-agency/dallas-tx; 3 internal links in,merge or differentiate + add links
-/lead-generation-agency/miami-fl,core,"Lead Generation Agency in Miami, FL",587,688,4,same keyword as /lead-generation-agency/tampa-fl; 4 internal links in,merge or differentiate + add links
-/lead-generation-agency/new-york-ny,core,"Lead Generation Agency in New York, NY",662,765,3,3 internal links in,add links
-/lead-generation-agency/tampa-fl,core,"Lead Generation Agency in Tampa, FL",497,598,5,same keyword as /lead-generation-agency/miami-fl; meta description 159 chars,merge or differentiate + shorten description
-/lead-generation-agency/texas,core,Lead Generation Agency in Texas,525,603,4,same keyword as /lead-generation-agency/florida; 4 internal links in,merge or differentiate + add links
+/lead-generation-agency,core,Customer Acquisition Agency for High-Ticket B2B: Done-for-You,1368,2086,165,title 61 chars,shorten title
+/lead-generation-agency/atlanta-ga,core,"Lead Generation Agency in Atlanta, GA",652,751,3,3 internal links in,add links
+/lead-generation-agency/chicago-il,core,"Lead Generation Agency in Chicago, IL",672,771,3,3 internal links in,add links
+/lead-generation-agency/dallas-tx,core,"Lead Generation Agency in Dallas, TX",686,770,5,same keyword as /lead-generation-agency/houston-tx,merge or differentiate
+/lead-generation-agency/denver-co,core,"Lead Generation Agency in Denver, CO",642,721,2,2 internal links in,add links
+/lead-generation-agency/florida,core,Lead Generation Agency in Florida,599,673,4,same keyword as /lead-generation-agency/texas; 4 internal links in,merge or differentiate + add links
+/lead-generation-agency/houston-tx,core,"Lead Generation Agency in Houston, TX",633,730,3,same keyword as /lead-generation-agency/dallas-tx; 3 internal links in,merge or differentiate + add links
+/lead-generation-agency/miami-fl,core,"Lead Generation Agency in Miami, FL",710,811,4,same keyword as /lead-generation-agency/tampa-fl; 4 internal links in,merge or differentiate + add links
+/lead-generation-agency/new-york-ny,core,"Lead Generation Agency in New York, NY",799,902,3,3 internal links in,add links
+/lead-generation-agency/tampa-fl,core,"Lead Generation Agency in Tampa, FL",610,711,5,same keyword as /lead-generation-agency/miami-fl,merge or differentiate
+/lead-generation-agency/texas,core,Lead Generation Agency in Texas,632,710,4,same keyword as /lead-generation-agency/florida; 4 internal links in,merge or differentiate + add links
 /mastermind,core,AI Client Acquisition Mastermind for Agency Owners & Coaches,693,1256,165,none,keep
 /mastermind/7-days-paid-trial,core,7 Days Paid Trial Funnel Breakdown,807,1242,165,none,keep
 /mastermind/hidden-facebook-interest,core,AI Client Acquisition Mastermind: 6-Week Meta Ads Program,1566,2005,165,none,keep
@@ -143,12 +143,12 @@ URL,Page type,Primary keyword,Unique words,Total words,Internal links in,Problem
 /meta-ads-for-consultants,industry,Facebook Ads for Consultants: Proof-Led Campaigns,440,769,165,none,keep
 /meta-ads-for-financial-advisors,industry,Facebook Ads for Financial Advisors,244,569,165,noindex,keep (noindex)
 /meta-ads-for-med-spas,industry,Meta & Facebook Ads for Med Spas: Real Booking Results,487,817,165,none,keep
-/meta-ads-for-saas,industry,Facebook Ads for SaaS: Real Results and Playbook,521,850,165,none,keep
+/meta-ads-for-saas,industry,Facebook Ads for SaaS: Real Results and Playbook,526,855,165,none,keep
 /mortgage-leads,core,"Mortgage Leads: Exclusive, OTP-Verified Borrower Leads",1010,1100,165,meta description 161 chars,shorten description
 /outsourced-sales-closers,core,Outsourced Sales Closers: Commission-Based Closers,745,1070,165,none,keep
 /pay-per-appointment,core,Pay Per Appointment Lead Generation,981,1076,165,none,keep
 /privacy,company/legal,Privacy Policy,210,210,165,noindex,keep (noindex)
-/services,core,"Client Acquisition Services: Meta Ads, VSL & Setters",674,1107,165,none,keep
+/services,core,"Client Acquisition Services: Meta Ads, VSL & Setters",692,1125,165,none,keep
 /speed-to-lead,core,Speed to Lead Automation: Sub-5-Minute Quick Lead Acquisition,926,1626,165,title 61 chars,shorten title
 /terms,company/legal,Terms of Service,169,169,165,noindex,keep (noindex)
 /tools,free tool,Lead Generation Calculator & Free Marketing Tools,809,1243,165,none,keep

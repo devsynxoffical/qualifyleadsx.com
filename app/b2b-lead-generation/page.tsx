@@ -112,7 +112,7 @@ export default function B2bLeadGenAgencyPage() {
         name: "B2B Lead Generation Agency",
         serviceType: "Enterprise & Commercial Lead Generation",
         description:
-          "Premier B2B lead generation agency building outbound and paid acquisition funnels. Book 30–50 qualified commercial sales appointments every month.",
+          "Premier B2B lead generation agency building outbound and paid acquisition funnels that book qualified commercial sales appointments.",
         url: pageUrl,
         provider: orgRef,
         areaServed: TIER1_MARKETS.map((name) => ({ "@type": "Country", name })),
@@ -171,7 +171,7 @@ export default function B2bLeadGenAgencyPage() {
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-mist leading-relaxed font-sans max-w-3xl mx-auto">
-            Stop waiting for referrals or hoping cold email open rates recover. We engineer an inbound paid acquisition engine that consistently books 30 to 50 commercial sales appointments on your calendar every month.
+            Stop waiting for referrals or hoping cold email open rates recover. We engineer an inbound paid acquisition engine that books qualified commercial sales appointments on your calendar.
           </p>
 
           {/* Quick Answer Block (AEO Standard) */}

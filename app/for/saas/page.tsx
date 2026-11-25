@@ -23,7 +23,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "B2B SaaS Lead Generation & Demo Booking Agency",
   description:
-    "Predictable B2B SaaS lead generation and demo booking funnels for high-ACV software platforms. Book 30–50 qualified sales demos monthly.",
+    "Predictable B2B SaaS lead generation and demo booking funnels for high-ACV software platforms: qualified sales demos booked on your calendar.",
   keywords: [
     "saas lead generation",
     "b2b saas lead generation",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "B2B SaaS Lead Generation & Demo Booking Agency",
     description:
-      "Predictable B2B SaaS lead generation and demo booking funnels for high-ACV software platforms. Book 30–50 qualified demos monthly.",
+      "Predictable B2B SaaS lead generation and demo booking funnels for high-ACV software platforms: qualified sales demos booked on your calendar.",
     url: `${site.url}/for/saas`,
     type: "website",
   },
@@ -106,7 +106,7 @@ export default function SaasLeadGenPage() {
         name: "B2B SaaS Lead Generation & Demo Setting",
         serviceType: "SaaS Client Acquisition & Demo Booking",
         description:
-          "Predictable B2B SaaS lead generation and demo booking funnels for high-ACV software platforms. Book 30–50 qualified sales demos monthly.",
+          "Predictable B2B SaaS lead generation and demo booking funnels for high-ACV software platforms: qualified sales demos booked on your calendar.",
         url: pageUrl,
         provider: orgRef,
         areaServed: TIER1_MARKETS.map((name) => ({ "@type": "Country", name })),
@@ -165,7 +165,7 @@ export default function SaasLeadGenPage() {
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-mist leading-relaxed font-sans max-w-3xl mx-auto">
-            Stop burning venture capital on low-intent freemium signups. We build a high-converting demo booking engine that puts 30 to 50 qualified enterprise software decision-makers on your sales calendar every month.
+            Stop burning venture capital on low-intent freemium signups. We build a high-converting demo booking engine that puts qualified enterprise software decision-makers on your sales calendar. For a published example, see how an AI automation SaaS added 320 customers and $71,934 in 24 days in our <Link href="/case-studies/b2b-technology-agency-71k" className="text-lime underline-offset-2 hover:underline">AI SaaS case study</Link>.
           </p>
 
           {/* Quick Answer Block (AEO Standard) */}

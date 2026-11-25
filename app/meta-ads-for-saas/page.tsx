@@ -113,22 +113,22 @@ export default function MetaAdsForSaasPage() {
                 Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
-                <strong>Facebook ads for SaaS</strong> generate qualified software demo requests by deploying product-led UI walkthrough videos and business-email-verified booking funnels. Operating at 60% lower CPMs than LinkedIn, this engine books 30 to 60 sales-qualified demos monthly at $180–$280 per completed demo.
+                <strong>Facebook ads for SaaS</strong> generate qualified software demo requests by deploying product-led UI walkthrough videos and business-email-verified booking funnels. For a published example, an AI automation SaaS added 320 customers and $71,934 in 24 days at a 2.78 ROAS.
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-lime font-mono">30–60</div>
-                <div className="text-xs text-fog mt-1">Qualified Demos / Mo</div>
+                <div className="text-2xl font-bold text-lime font-mono">320</div>
+                <div className="text-xs text-fog mt-1">New SaaS Customers in 24 Days</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-paper font-mono">$215</div>
-                <div className="text-xs text-fog mt-1">Avg Cost Per Completed Demo</div>
+                <div className="text-2xl font-bold text-paper font-mono">$71,934</div>
+                <div className="text-xs text-fog mt-1">SaaS Revenue in 24 Days</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-lime font-mono">84%</div>
-                <div className="text-xs text-fog mt-1">Demo Show-Up Rate</div>
+                <div className="text-2xl font-bold text-lime font-mono">2.78</div>
+                <div className="text-xs text-fog mt-1">ROAS on That Campaign</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
                 <div className="text-2xl font-bold text-paper font-mono">&lt;5 Mins</div>

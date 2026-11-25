@@ -115,7 +115,7 @@ export default function HighTicketLeadGenPage() {
         name: "High Ticket Lead Generation System",
         serviceType: "High Ticket Client Acquisition",
         description:
-          "Done-for-you high ticket lead generation for consultants, coaches, and agencies. Get 30–50 pre-sold, qualified sales calls monthly with verified proof.",
+          "Done-for-you high ticket lead generation for consultants, coaches, and agencies: pre-sold, qualified sales calls, with published campaigns booking appointments for $4.81 to $45 each.",
         url: pageUrl,
         provider: orgRef,
         areaServed: TIER1_MARKETS.map((name) => ({ "@type": "Country", name })),
@@ -174,7 +174,7 @@ export default function HighTicketLeadGenPage() {
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-mist leading-relaxed font-sans max-w-3xl mx-auto">
-            Stop speaking with tire-kickers who can&apos;t afford your services. We install an end-to-end client acquisition engine that pre-sells, qualifies, and books 30 to 50 ready-to-invest prospects directly onto your calendar.
+            Stop speaking with tire-kickers who can&apos;t afford your services. We install an end-to-end client acquisition engine that pre-sells, qualifies, and books ready-to-invest prospects directly onto your calendar.
           </p>
 
           {/* Quick Answer Block (AEO Standard) */}

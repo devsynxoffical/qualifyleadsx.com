@@ -107,7 +107,7 @@ const faqs = [
   },
   {
     q: "How many qualified sales appointments can I expect each month?",
-    a: "Our typical partner sees 30 to 50 sales-ready discovery calls booked directly onto their calendar each month, with an average appointment show-up rate exceeding 85%.",
+    a: "It depends on the offer, market and budget, so we do not promise a fixed number of calls. Published campaigns booked appointments for $4.81 to $45 each, and our appointment setting system averages an 88.3% call show-up rate.",
   },
   {
     q: "What is your pricing model for lead generation services?",
@@ -191,7 +191,7 @@ export default function LeadGenAgencyPage() {
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-mist leading-relaxed font-sans max-w-3xl mx-auto">
-            We install, manage, and scale complete client acquisition funnels that consistently generate 30 to 50 qualified sales calls every month. From Meta media buying to sub-5-minute appointment setting, everything is done for you.
+            We install, manage, and scale complete client acquisition funnels that book qualified sales calls, with published campaigns booking appointments for $4.81 to $45 each. From Meta media buying to sub-5-minute appointment setting, everything is done for you.
           </p>
 
           {/* Quick Answer Block (AEO Standard) */}
@@ -203,7 +203,7 @@ export default function LeadGenAgencyPage() {
               What does a modern lead generation agency do?
             </h2>
             <p className="mt-3 text-sm sm:text-base leading-relaxed text-mist">
-              A modern lead generation agency engineers end-to-end client acquisition pipelines rather than delivering raw unverified spreadsheets. At QualifiedLeadsX, we manage algorithmic broad-targeted Meta Ads, construct 12-minute VSL funnels, deploy strict 4-tier qualification surveys, and activate sub-5-minute appointment setters to guarantee 30 to 50 sales-ready discovery calls directly on your calendar.
+              A modern lead generation agency engineers end-to-end client acquisition pipelines rather than delivering raw unverified spreadsheets. At QualifiedLeadsX, we manage algorithmic broad-targeted Meta Ads, construct 12-minute VSL funnels, deploy strict 4-tier qualification surveys, and activate sub-5-minute appointment setters that book sales-ready discovery calls directly on your calendar.
             </p>
           </div>
         </div>

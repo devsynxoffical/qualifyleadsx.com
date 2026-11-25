@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     absolute: "Meta Ads Agency for B2B & High-Ticket ($50M+ Managed Spend)",
   },
   description:
-    "Meta ads agency for high-ticket coaches, consultants and B2B agencies: custom VSL funnels, broad targeting and 30–50 qualified calls a month.",
+    "Meta ads agency for high-ticket coaches, consultants and B2B agencies: custom VSL funnels, broad targeting and booked, qualified sales calls.",
   keywords: [
     "meta ads agency",
     "meta ads agency for b2b",
@@ -92,7 +92,7 @@ const metaAgencyFaqs = [
   },
   {
     q: "What ad spend budget is required to work with QualifiedLeadsX?",
-    a: "Our clients typically begin with a minimum ad spend budget of $2,000 to $5,000 per month on Meta (Facebook & Instagram). This volume allows the Meta machine-learning algorithm to gather sufficient conversion data, optimize creative variations, and deliver a predictable flow of 25–50 qualified appointments every month. You can estimate the budget for your own targets with our free Meta ads budget calculator.",
+    a: "Our clients typically begin with a minimum ad spend budget of $2,000 to $5,000 per month on Meta (Facebook & Instagram). This volume allows the Meta machine-learning algorithm to gather sufficient conversion data, optimize creative variations, and deliver a steady flow of qualified appointments. You can estimate the budget for your own targets with our free Meta ads budget calculator.",
   },
   {
     q: "Do Meta ads still work for B2B services, consultants, and high-ticket coaches in 2026?",
@@ -238,7 +238,7 @@ export default function MetaAdsAgencyPage() {
 
           {/* Subtitle with Secondary Keyword */}
           <p className="mt-6 text-lg sm:text-2xl text-mist max-w-3xl mx-auto leading-relaxed font-normal">
-            Stop burning budget with average <em>Facebook ads agencies</em> that deliver cheap, unqualified leads. We install an algorithmic creative machine that books 30–50 high-ticket sales calls every month.
+            Stop burning budget with average <em>Facebook ads agencies</em> that deliver cheap, unqualified leads. We install an algorithmic creative machine built to book qualified high-ticket sales calls, not cheap form fills.
           </p>
 
           {/* CTAs */}

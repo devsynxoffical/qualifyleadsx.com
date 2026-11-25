@@ -24,7 +24,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "VSL Funnel Agency: High-Ticket Video Sales Letter Funnels",
   description:
-    "Premier VSL funnel agency engineering 12-minute video sales letters that pre-sell $3K–$25K offers. Book 30–50 qualified sales calls every month.",
+    "Premier VSL funnel agency engineering 12-minute video sales letters that pre-sell $3K–$25K offers before the sales call.",
   keywords: [
     "vsl funnel agency",
     "video sales letter funnel",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "VSL Funnel Agency: High-Ticket Video Sales Letter Funnels | QualifiedLeadsX™",
     description:
-      "Premier VSL funnel agency engineering 12-minute video sales letters that pre-sell $3K–$25K offers. Book 30–50 qualified calls monthly.",
+      "Premier VSL funnel agency engineering 12-minute video sales letters that pre-sell $3K–$25K offers before the sales call.",
     url: `${site.url}/vsl-funnels`,
     type: "website",
   },
@@ -120,7 +120,7 @@ export default function VslFunnelsPage() {
         name: "VSL Funnel Engineering Agency",
         serviceType: "Video Sales Letter Funnel Architecture",
         description:
-          "Premier VSL funnel agency engineering 12-minute video sales letters that pre-sell $3K–$25K offers. Book 30–50 qualified sales calls every month.",
+          "Premier VSL funnel agency engineering 12-minute video sales letters that pre-sell $3K–$25K offers before the sales call.",
         url: pageUrl,
         provider: orgRef,
         areaServed: TIER1_MARKETS.map((name) => ({ "@type": "Country", name })),

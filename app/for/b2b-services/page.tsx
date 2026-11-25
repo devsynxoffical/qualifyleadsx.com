@@ -24,7 +24,7 @@ import { ProofStack } from "@/components/sections/ProofStack";
 export const metadata: Metadata = {
   title: "Lead Generation for Consultancies & B2B Service Firms",
   description:
-    "Predictable B2B service lead generation for IT firms, consultancies, and commercial contractors. Book 30–50 qualified high-ticket client calls monthly.",
+    "Predictable B2B service lead generation for IT firms, consultancies, and commercial contractors: qualified high-ticket client calls on your calendar.",
   keywords: [
     "b2b service lead generation",
     "b2b lead generation services",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Lead Generation for Consultancies & B2B Service Firms",
     description:
-      "Predictable B2B service lead generation for IT firms, consultancies, and commercial contractors. Book 30–50 qualified calls monthly.",
+      "Predictable B2B service lead generation for IT firms, consultancies, and commercial contractors: qualified client calls booked on your calendar.",
     url: `${site.url}/for/b2b-services`,
     type: "website",
   },
@@ -107,7 +107,7 @@ export default function B2bServicesPage() {
         name: "B2B Service Lead Generation",
         serviceType: "Commercial B2B Client Acquisition",
         description:
-          "Predictable B2B service lead generation for IT firms, consultancies, and commercial contractors. Book 30–50 qualified high-ticket client calls monthly.",
+          "Predictable B2B service lead generation for IT firms, consultancies, and commercial contractors: qualified high-ticket client calls on your calendar.",
         url: pageUrl,
         provider: orgRef,
         areaServed: TIER1_MARKETS.map((name) => ({ "@type": "Country", name })),
@@ -166,7 +166,7 @@ export default function B2bServicesPage() {
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-mist leading-relaxed font-sans max-w-3xl mx-auto">
-            Stop relying on word-of-mouth and inconsistent cold outreach. We engineer a predictable inbound acquisition system that books 30 to 50 sales-ready commercial appointments directly on your calendar every month.
+            Stop relying on word-of-mouth and inconsistent cold outreach. We engineer a predictable inbound acquisition system that books sales-ready commercial appointments directly on your calendar.
           </p>
 
           {/* Quick Answer Block (AEO Standard) */}

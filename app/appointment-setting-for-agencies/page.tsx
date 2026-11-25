@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "How many qualified calls can an agency expect per month?",
-    a: "An agency running optimized Meta ad campaigns typically books 25 to 50 qualified discovery consultations per month with our embedded setter team.",
+    a: "It depends on the offer, budget and market, so we do not promise a fixed number. Published campaigns booked appointments for $4.81 to $45 each, and our appointment setting system averages an 88.3% call show-up rate.",
   },
   {
     q: "Do you handle inbound speed to lead across weekends?",
@@ -113,22 +113,22 @@ export default function AppointmentSettingForAgenciesPage() {
                 Quick answer
               </span>
               <p className="text-base sm:text-lg text-paper leading-relaxed">
-                <strong>Appointment setting for agencies</strong> places trained sales setters into your CRM to engage inbound leads within 5 minutes, verify monthly marketing budgets ($5K+/mo), and book 25 to 50 qualified discovery calls monthly. This protects founder billable time and lifts calendar show rates to 82%+.
+                <strong>Appointment setting for agencies</strong> places trained sales setters into your CRM to engage inbound leads within 5 minutes, verify monthly marketing budgets ($5K+/mo), and book qualified discovery calls on your calendar. This protects founder billable time; our appointment setting system averages an 88.3% call show-up rate.
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-lime font-mono">25–50</div>
-                <div className="text-xs text-fog mt-1">Qualified Retainer Calls / Mo</div>
+                <div className="text-2xl font-bold text-lime font-mono">$4.81–$45</div>
+                <div className="text-xs text-fog mt-1">Published Cost per Booked Appointment</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
                 <div className="text-2xl font-bold text-paper font-mono">&lt;5 Mins</div>
                 <div className="text-xs text-fog mt-1">Inbound Response Speed</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
-                <div className="text-2xl font-bold text-lime font-mono">82%</div>
-                <div className="text-xs text-fog mt-1">Agency Calendar Show Rate</div>
+                <div className="text-2xl font-bold text-lime font-mono">88.3%</div>
+                <div className="text-xs text-fog mt-1">Call Show-Up Rate (Our System)</div>
               </div>
               <div className="border border-line rounded-lg p-4 bg-paper/5">
                 <div className="text-2xl font-bold text-paper font-mono">$6.5K/mo</div>

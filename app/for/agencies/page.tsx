@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ShortAnswer } from "@/components/seo/ShortAnswer";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Nav } from "@/components/layout/Nav";
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
 const agencyFaqs = [
   {
     q: "How do marketing agencies generate qualified leads without cold email or referrals?",
-    a: "Modern agencies replace cold outreach with a high-converting Video Sales Letter (VSL) funnel paired with broad Meta ads. Rather than spamming inboxes with automated sequences that risk domain blacklisting, this system presents a proprietary, commercial mechanism directly to CEOs, CMOs, and founders on Facebook and Instagram—booking 35–60 pre-qualified discovery calls every month.",
+    a: "Modern agencies replace cold outreach with a high-converting Video Sales Letter (VSL) funnel paired with broad Meta ads. Rather than spamming inboxes with automated sequences that risk domain blacklisting, this system presents a proprietary, commercial mechanism directly to CEOs, CMOs, and founders on Facebook and Instagram, and books pre-qualified discovery calls on your calendar.",
   },
   {
     q: "What is the typical cost per booked retainer call for a digital agency?",
@@ -153,7 +154,7 @@ export default function AgenciesLandingPage() {
           </ShortAnswer>
 
           <p className="mt-6 text-lg sm:text-2xl text-mist max-w-3xl mx-auto leading-relaxed">
-            Stop relying on word-of-mouth or burnt-out cold email scrapers. We install a battle-tested inbound VSL funnel that delivers 35–60 qualified retainer sales appointments every month.
+            Stop relying on word-of-mouth or burnt-out cold email scrapers. We install a battle-tested inbound VSL funnel that books qualified retainer sales appointments. See how one agency client did $85K in a month and tracked toward $95K+ in our <Link href="/case-studies/strategic-consulting-85k" className="text-lime underline-offset-2 hover:underline">$85K agency case study</Link>.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -168,16 +169,16 @@ export default function AgenciesLandingPage() {
           {/* Quick Metrics Bar */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             <div className="rounded-2xl border border-line bg-panel/70 p-5 backdrop-blur-md">
-              <div className="font-mono text-3xl sm:text-4xl font-bold text-lime">35–60</div>
-              <div className="text-xs text-mist mt-1 uppercase font-mono">Retainer Calls / Mo</div>
+              <div className="font-mono text-3xl sm:text-4xl font-bold text-lime">$85K</div>
+              <div className="text-xs text-mist mt-1 uppercase font-mono">Agency Client Month (Case Study)</div>
             </div>
             <div className="rounded-2xl border border-line bg-panel/70 p-5 backdrop-blur-md">
               <div className="font-mono text-3xl sm:text-4xl font-bold text-fog">$5K–$25K</div>
               <div className="text-xs text-mist mt-1 uppercase font-mono">Monthly Retainer Size</div>
             </div>
             <div className="rounded-2xl border border-line bg-panel/70 p-5 backdrop-blur-md">
-              <div className="font-mono text-3xl sm:text-4xl font-bold text-lime">84%+</div>
-              <div className="text-xs text-mist mt-1 uppercase font-mono">Show-Up Rate</div>
+              <div className="font-mono text-3xl sm:text-4xl font-bold text-lime">88.3%</div>
+              <div className="text-xs text-mist mt-1 uppercase font-mono">Call Show-Up Rate</div>
             </div>
             <div className="rounded-2xl border border-line bg-panel/70 p-5 backdrop-blur-md">
               <div className="font-mono text-3xl sm:text-4xl font-bold text-fog">21 Days</div>

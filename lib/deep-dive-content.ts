@@ -1026,7 +1026,7 @@ export const b2bLeadGenDeepDive: DeepDiveContent = {
     title: "Engineering predictable commercial deal flow for high-ticket service contracts",
     paragraphs: [
       "Most B2B lead generation relies on buying scraped email lists and firing automated cold sequences that burn domain reputations and yield a 1% reply rate. For professional service firms selling $10,000 to $100,000+ contracts, cold spam damages enterprise positioning before the first conversation begins.",
-      "QualifiedLeadsX installs an inbound direct-response acquisition engine built on algorithmic Meta Ads, 12-minute executive VSL assets, and sub-5-minute phone triage. By pre-selling corporate decision-makers before they book, our clients consistently generate 30 to 50 qualified B2B appointments each month with 85%+ calendar attendance rates.",
+      "QualifiedLeadsX installs an inbound direct-response acquisition engine built on algorithmic Meta Ads, 12-minute executive VSL assets, and sub-5-minute phone triage. By pre-selling corporate decision-makers before they book, the system fills your calendar with qualified B2B appointments; published campaigns booked appointments for $4.81 to $45 each.",
     ],
   },
   sections: [

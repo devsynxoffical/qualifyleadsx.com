@@ -694,3 +694,11 @@ Rules followed: qualifiedleadsx.com only; content and SEO only; published number
 4. reports/gbp-optimization-qualifiedleadsx-2026-11-25.md: full Business Profile audit and change plan (description validated by Google in validate-only mode; no live profile changes made).
 Verification: tsc, eslint 0 errors, build, seo:validate PASS, seo:links PASS, playbook audit OK; 13 changed pages checked locally at 390 px: one H1, descriptions 120-155, JSON-LD parses, FAQPage present, no overflow, no monthly-volume promise in rendered text.
 - 25 Nov 18:31 UTC: evening changes verified live (fitness results section live; no volume promise in page text on course creators, meta ads for SaaS, services; /for/agencies only in its HOLD-locked social preview description). Indexing submissions 2026-11-25 18:31 UTC: Bing 7 URLs (accepted): /for/fitness-coaches /for/course-creators /for/agencies /for/saas /meta-ads-for-saas /appointment-setting-for-agencies /services (20 total in 24 hours).
+
+## Run 16: 25 Nov 2026 20:44 UTC (02:13 IST run, no indexing by rule)
+- GSC 7d: 1,494 impressions (+111), 10 clicks, 278 queries (+19), avg position 37.8 (was 38.1). 28d: 2,221 impressions, 16 clicks, 351 queries, 17 on page 1. 25 Nov partial (63 impressions so far).
+- Up: qualified mortgage leads 50.5 -> 43.7, pre qualified mortgage leads 76 -> 70, pre qualified insurance leads 70.5 -> 62.7, mortgage refi leads 67 -> 59, b2b appointment setting for saas 30 -> 26.5. Down: best insurance leads for agents 14 -> 20 (3 impr), refi leads 52 -> 58.5.
+- New: 19 queries, incl. best leads for insurance agents (25), high ticket agency mastermind (13), qualified meeting generation (51.7).
+- Bots unchanged (Bingbot 403, GPTBot 429). Bing: 99 in index, 0 crawl issues.
+- URL Inspection re-run started on all 130 sitemap URLs (incl. the 10 new location pages); results appended when complete.
+- Changes: none this run (evening session already changed 15 pages today).

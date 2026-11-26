@@ -726,3 +726,9 @@ Verification: tsc, eslint 0 errors, build, seo:validate PASS (0 required missing
 - Bots unchanged (Bingbot 403, GPTBot 429; OAI-SearchBot, PerplexityBot, ClaudeBot 200). Bing: 102 in index (+3), 0 crawl issues.
 - Tracker: no rows due today.
 - Changes this run: none beyond the Day 1 work above (already 55 files today).
+
+## Run 18: 26 Nov 2026 20:44 UTC (02:13 IST run, no indexing by rule)
+- Search Console and Bing not measured: the container was rebuilt and its key files are gone (the Search Console service-account JSON in the uploads folder and the Bing key in the scratchpad). reports/rank-monitor-latest.md still shows the 08:44 UTC run. Both keys must be re-supplied before the next run.
+- Bots: Googlebot, OAI-SearchBot, PerplexityBot, ClaudeBot and browser 200 on all 5 paths; Bingbot 403 and GPTBot 429 (unchanged, Hostinger setting).
+- Tracker: no rows due (earliest check_on 3 Dec).
+- Changes: none (no fresh data to justify a change; Day 1 work already shipped today).

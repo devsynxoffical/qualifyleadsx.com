@@ -3626,7 +3626,7 @@ export const blogPosts: BlogPost[] = [
     slug: "why-leads-dont-show-up",
     title: "Why Leads Don't Show Up: The Psychology of Call Ghosting",
     seoTitle: "Why Leads Don't Show Up: Fix No-Shows (2026)",
-    description: "Analyze the psychological drivers behind sales call no-shows. How buyer remorse, friction deficit, and passive booking cause ghosting—and how to fix it.",
+    description: "Analyze the psychological drivers behind sales call no-shows. How buyer remorse, friction deficit, and passive booking cause ghosting, and how to fix it.",
     publishedAt: "2026-11-05",
     updatedAt: "2026-11-05",
     readTime: "9 min read",

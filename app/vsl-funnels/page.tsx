@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "VSL Funnel Agency: High-Ticket Video Sales Letter Funnels | QualifiedLeadsX™",
+    title: "VSL Funnel Agency: High-Ticket Video Sales Letter Funnels",
     description:
       "Premier VSL funnel agency engineering 12-minute video sales letters that pre-sell $3K–$25K offers before the sales call.",
     url: `${site.url}/vsl-funnels`,

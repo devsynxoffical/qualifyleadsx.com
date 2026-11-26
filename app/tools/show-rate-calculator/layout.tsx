@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: "/tools/show-rate-calculator" },
   openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
+    title: "Show-Up Rate & No-Show Cost Calculator | QualifiedLeadsX",
+    description: "Measure your sales call show-up rate and see how much revenue no-shows cost each month, with benchmarks for qualified high-ticket appointments.",
     url: "/tools/show-rate-calculator",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: TITLE }],
   },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ["/opengraph-image"] },
+  twitter: { card: "summary_large_image", title: "Show-Up Rate & No-Show Cost Calculator | QualifiedLeadsX", description: DESCRIPTION, images: ["/opengraph-image"] },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

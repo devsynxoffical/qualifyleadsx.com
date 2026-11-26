@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Course Creator Lead Generation | QualifiedLeadsX",
     description:
-      "Scale premium courses & cohort masterminds ($1.5K–$10K). High-converting VSL funnels and phone setters.",
+      "Scale premium courses and cohort masterminds ($1.5K–$10K) with VSL funnels, webinar remarketing and phone setters that drive steady enrollments.",
     url: `${site.url}/for/course-creators`,
     siteName: site.name,
     type: "website",

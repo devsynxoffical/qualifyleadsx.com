@@ -36,18 +36,18 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "7 Days Paid Trial Funnel Breakdown | QualifiedLeadsX™",
+    title: "7 Days Paid Trial Funnel Breakdown | Mastermind",
     description:
-      "How to engineer a self-liquidating 7 Days Paid Trial front-end offer converting cold ads into high-ticket clients.",
+      "Mastermind breakdown: how to build a 7 days paid trial front-end offer that turns cold Meta ads traffic into paying users and high-ticket clients.",
     url: "/mastermind/7-days-paid-trial",
     type: "article",
   },
   twitter: {
     images: [defaultOgImage.url],
     card: "summary_large_image",
-    title: "7 Days Paid Trial Funnel Breakdown | QualifiedLeadsX™",
+    title: "7 Days Paid Trial Funnel Breakdown | Mastermind",
     description:
-      "Convert cold Meta Ads traffic into high-ticket clients using a 7-day paid trial engine.",
+      "Mastermind breakdown: how to build a 7 days paid trial front-end offer that turns cold Meta ads traffic into paying users and high-ticket clients.",
   },
 };
 

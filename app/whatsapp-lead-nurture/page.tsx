@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "WhatsApp Lead Nurturing | QualifiedLeadsX",
     description:
-      "Convert 42% more booked calls with automated WhatsApp lead nurturing. Sub-60s response times and 98% open rates.",
+      "Convert 42% more booked calls with automated WhatsApp lead nurturing. Sub-60s response times, 98% open rates, and 2-way setter handoff.",
     url: `${site.url}/whatsapp-lead-nurture`,
     siteName: site.name,
     type: "website",

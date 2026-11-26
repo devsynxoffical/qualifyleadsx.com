@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Lead Scoring Template: Free High-Ticket Scoring Rubric",
     description:
-      "Battle-tested 4-tier qualification framework to protect sales calendars and route VIP buyers.",
+      "Free lead scoring template: score leads on revenue, budget, timeline and authority out of 100, route them into 4 tiers, and download the CSV for your CRM.",
     url: `${site.url}/tools/lead-scoring-template`,
     type: "website",
   },

@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/book-your-call",
   },
+  openGraph: { title: "Book Your Free Strategy Call | QualifiedLeadsX Booking", description: "Book a free 30-minute strategy call with QualifiedLeadsX. Get an offer audit and the exact funnel to fill your calendar with qualified sales calls.", url: "/book-your-call", type: "website" },
 };
 
 const points = [

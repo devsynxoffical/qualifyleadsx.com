@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Cost Per Booked Call & Qualified Meeting Benchmarks [2026]",
     description:
-      "Verified 2026 cost per booked call and cost per qualified meeting data across $3K–$25K offer tiers based on $50M+ in managed ad spend.",
+      "Verified 2026 cost per booked call and cost per qualified meeting benchmarks across $3K–$25K tiers from $50M+ in ad spend. Compare acquisition costs.",
     url: `${site.url}/benchmarks/cost-per-booked-call`,
     type: "website",
   },

@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   keywords: ["lead conversion rate calculator", "lead to client conversion rate", "sales funnel conversion calculator", "lead generation calculator"],
   alternates: { canonical: "/tools/lead-conversion-rate-calculator" },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: "/tools/lead-conversion-rate-calculator", type: "website", images: [defaultOgImage] },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: [defaultOgImage.url] },
+  openGraph: { title: "Lead Conversion Rate Calculator (Free) | QualifiedLeadsX", description: DESCRIPTION, url: "/tools/lead-conversion-rate-calculator", type: "website", images: [defaultOgImage] },
+  twitter: { card: "summary_large_image", title: "Lead Conversion Rate Calculator (Free) | QualifiedLeadsX", description: DESCRIPTION, images: [defaultOgImage.url] },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

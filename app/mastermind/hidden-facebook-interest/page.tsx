@@ -49,16 +49,16 @@ export const metadata: Metadata = {
   alternates: { canonical: PATH },
   openGraph: {
     images: [defaultOgImage],
-    title: "AI Client Acquisition Mastermind | QualifiedLeadsX™",
-    description: "Build a predictable client acquisition system in 6 weeks: Meta ads, AI advertising, tracking, scaling and profitability.",
+    title: "AI Client Acquisition Mastermind: 6-Week Meta Ads Program",
+    description: "A 6-week, hands-on mastermind: Meta ads, hidden interest research, AI ads, tracking, scaling and unit economics, built on your own campaigns. Apply now.",
     url: PATH,
     type: "website",
   },
   twitter: {
     images: [defaultOgImage.url],
     card: "summary_large_image",
-    title: "AI Client Acquisition Mastermind | QualifiedLeadsX™",
-    description: "Build a predictable client acquisition system in 6 weeks: Meta ads, AI advertising, tracking, scaling and profitability.",
+    title: "AI Client Acquisition Mastermind: 6-Week Meta Ads Program",
+    description: "A 6-week, hands-on mastermind: Meta ads, hidden interest research, AI ads, tracking, scaling and unit economics, built on your own campaigns. Apply now.",
   },
 };
 

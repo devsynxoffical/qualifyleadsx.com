@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Facebook Ads for Med Spas | QualifiedLeadsX",
+    title: "Meta & Facebook Ads for Med Spas: Real Booking Results",
     description:
-      "High-ticket aesthetic consultations for medical spas & plastic surgeons. Verified $639K patient revenue case study.",
+      "High-ticket aesthetic consultations for medical spas & plastic surgeons. Scale injectables, body contouring, and laser packages with sub-45s speed to lead.",
     url: `${site.url}/meta-ads-for-med-spas`,
     siteName: site.name,
     type: "website",

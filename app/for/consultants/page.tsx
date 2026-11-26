@@ -43,9 +43,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Lead Generation for Consultants: B2B Client Acquisition | QualifiedLeadsX™",
+    title: "Lead Generation for Consultants: B2B Client Acquisition",
     description:
-      "Install an enterprise client acquisition funnel for B2B consultants. Book qualified C-level decision-makers without cold email deliverability headaches.",
+      "Lead generation for strategy, operations and management consultants: a predictable pipeline of vetted discovery calls with senior B2B decision-makers.",
     url: "/for/consultants",
     type: "website",
   },

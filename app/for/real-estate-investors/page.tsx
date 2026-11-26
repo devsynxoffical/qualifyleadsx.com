@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Buy Motivated Seller Leads: Off-Market Real Estate Deals",
     description:
-      "Stop buying recycled shared lists. Generate exclusive off-market motivated seller leads and high-equity contracts. Sub-90s triage and $32K+ average spreads.",
+      "Stop buying recycled shared lists. Generate exclusive motivated seller leads for real estate investors, contacted in under 90 seconds.",
     url: `${site.url}/for/real-estate-investors`,
     siteName: site.name,
     type: "website",

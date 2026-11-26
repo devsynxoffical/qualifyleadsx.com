@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "CRM Automation for Coaches | QualifiedLeadsX",
     description:
-      "End pipeline drop-off with bespoke CRM automation for high-ticket coaches. Automated reminders, 80%+ show rates, and tracking.",
+      "End pipeline drop-off with bespoke CRM automation for high-ticket coaches. Automated reminders, 80%+ show rates, and full attribution tracking.",
     url: `${site.url}/crm-automation`,
     siteName: site.name,
     type: "website",

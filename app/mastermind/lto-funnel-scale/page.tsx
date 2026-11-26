@@ -35,18 +35,18 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "How We Scaled an LTO Funnel to $847K | QualifiedLeadsX™",
+    title: "How We Scaled an LTO Funnel to $847K | Mastermind",
     description:
-      "Deep dive breakdown: scaling a Low-Ticket Offer funnel to $847,290 revenue at 3.32x net ROAS with Meta Ads.",
+      "Case Study & Mastermind Breakdown: How we scaled a Low-Ticket Offer (LTO) funnel to $847K in revenue with $255K ad spend using Meta Ads.",
     url: "/mastermind/lto-funnel-scale",
     type: "article",
   },
   twitter: {
     images: [defaultOgImage.url],
     card: "summary_large_image",
-    title: "How We Scaled an LTO Funnel to $847K | QualifiedLeadsX™",
+    title: "How We Scaled an LTO Funnel to $847K | Mastermind",
     description:
-      "Scaling an LTO funnel to $847K at 3.32x ROAS with Meta Ads.",
+      "Case Study & Mastermind Breakdown: How we scaled a Low-Ticket Offer (LTO) funnel to $847K in revenue with $255K ad spend using Meta Ads.",
   },
 };
 

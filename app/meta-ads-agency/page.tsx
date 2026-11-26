@@ -52,9 +52,9 @@ export const metadata: Metadata = {
     canonical: "/meta-ads-agency",
   },
   openGraph: {
-    title: "Meta Ads Agency for B2B & High-Ticket ($50M+ Managed Spend) | QualifiedLeadsX™",
+    title: "Meta Ads Agency for B2B & High-Ticket ($50M+ Managed Spend)",
     description:
-      "Elite Meta ads agency scaling high-ticket coaches, consultants, and B2B agencies to $100K+/month with predictable booked client calls.",
+      "Meta ads agency for high-ticket coaches, consultants and B2B agencies: custom VSL funnels, broad targeting and booked, qualified sales calls.",
     url: `${site.url}/meta-ads-agency`,
     siteName: site.name,
     images: [
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Meta Ads Agency for B2B & High-Ticket ($50M+ Managed Spend)",
     description:
-      "Elite Meta ads agency scaling high-ticket coaches, consultants, and B2B agencies to $100K+/month with predictable booked client calls.",
+      "Meta ads agency for high-ticket coaches, consultants and B2B agencies: custom VSL funnels, broad targeting and booked, qualified sales calls.",
   },
 };
 

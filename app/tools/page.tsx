@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Lead Generation Calculator & Free Marketing Tools",
     description:
-      "Interactive calculators to model high-ticket client acquisition costs, ad spend break-even, and appointment funnels.",
+      "Free lead generation calculator set: work out leads, booked calls and clients from your ad budget, plus CAC, ROAS, MER, show rate and LTV to CAC.",
     url: `${site.url}/tools`,
     type: "website",
   },

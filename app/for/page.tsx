@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Lead Generation by Industry - QualifiedLeadsX",
     description:
-      "Explore specialized client acquisition systems and cost-per-booked-call benchmarks across 16+ high-ticket industries.",
+      "Done-for-you lead generation by industry. Client acquisition funnels and benchmarks for coaches, consultants, agencies, med spas and SaaS.",
     url: `${site.url}/for`,
     type: "website",
   },

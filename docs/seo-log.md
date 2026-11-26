@@ -703,3 +703,16 @@ Verification: tsc, eslint 0 errors, build, seo:validate PASS, seo:links PASS, pl
 - URL Inspection re-run started on all 130 sitemap URLs (incl. the 10 new location pages); results appended when complete.
 - Changes: none this run (evening session already changed 15 pages today).
 - URL Inspection 25 Nov 20:5x UTC (130 sitemap URLs): 109 indexed (unchanged), 8 discovered not indexed (same as 23 Nov: crm-automation, 2 compare pages, 2 case studies, financial advisors, LTV:CAC calculator, Meta ads CPM benchmark), 13 unknown to Google (ROAS calculator, scaling-coaching post, plus the 11 pages published 24-25 Nov: cold-calling guide and 10 location pages, not crawled yet). No losses.
+
+## 26 Nov 2026: Day 1 of the two-day SEO, AEO and GEO plan (metadata, slugs, schema dates)
+Rules followed: qualifiedleadsx.com only; content and SEO only (no UI changes); no em dashes; HOLD row untouched; 7-day rule respected (only title, meta and social preview changes on pages edited since 19 Nov).
+
+1. Metadata audit of all 130 sitemap URLs (local production build): no duplicate titles or descriptions, one H1 on every page, every slug lowercase and hyphenated with no stop-word clutter or dates (slugs left as they are: changing indexed URLs would reset their history).
+2. Fixes:
+   - /speed-to-lead title 61 -> 59 characters: "Speed to Lead Automation: Reply to Leads in Under 5 Minutes".
+   - /hvac-leads description 159 -> 146; /mortgage-leads description 161 -> 148 (same published figures).
+   - /blog/why-leads-dont-show-up description: em dash removed.
+3. Social previews (og:title, og:description, twitter:title, twitter:description) now match each page's own title and description on 49 static pages (they showed older titles or the sitewide default on /about and /book-your-call), plus every blog post and blog category page (shared from the same title logic). HOLD pages left as they are.
+4. GEO / freshness: every page with a breadcrumb now carries a WebPage node with its real last-changed date (dateModified from git history, lib/route-lastmod.json); webPageNode also reads the per-page date instead of a fixed 4 Nov date. Answer blocks checked: every service, industry, tool, benchmark, compare and blog page already opens with a "Quick answer" or "In short" block.
+5. Homepage rendering (Suspense boundaries put 21 below-the-fold sections into hidden streamed blocks in the HTML) noted; not changed today because the homepage was edited on 23 Nov (7-day rule). Earliest change date: 30 Nov.
+Verification: tsc, eslint 0 errors, build, seo:validate PASS (0 required missing), seo:links PASS, metadata re-audit: only HOLD pages differ.

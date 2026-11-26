@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Solar Appointment Setting: Exclusive, Pre-Qualified Leads",
     description:
-      "Exclusive qualified solar appointments with verified homeowners. Credit-checked ($650+ FICO) and electric bill qualified.",
+      "Exclusive qualified solar appointments with verified homeowners. Credit-checked ($650+ FICO), electric bill qualified ($150+/mo), with 80%+ sit rates.",
     url: `${site.url}/for/solar-companies`,
     siteName: site.name,
     type: "website",

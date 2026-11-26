@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Done For You vs Done With You Lead Gen | QualifiedLeadsX",
     description:
-      "Compare Done-For-You (DFY) vs Done-With-You (DWY) lead generation. Economics and execution risk.",
+      "Compare Done-For-You (DFY) vs Done-With-You (DWY) lead generation. Economics, time investment, execution risk, and which model scales faster.",
     url: `${site.url}/compare/done-for-you-vs-done-with-you-lead-generation`,
     siteName: site.name,
     type: "article",

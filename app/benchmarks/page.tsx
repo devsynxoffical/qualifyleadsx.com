@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "B2B & High-Ticket Marketing Benchmarks 2026 | QualifiedLeadsX™",
+    title: "B2B & High-Ticket Marketing Benchmarks 2026",
     description:
-      "Explore real data from $50M+ managed Meta ad spend: cost per call, show rate, close rates, and CAC benchmarks.",
+      "2026 marketing benchmarks from our own campaigns: cost per qualified meeting ($120–$250), Meta CPMs, CAC and show-up rates across 30+ industries.",
     url: `${site.url}/benchmarks`,
     type: "website",
   },

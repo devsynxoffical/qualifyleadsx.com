@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Average High-Ticket Close Rate (2026): 24–31% Benchmarks",
     description:
-      "High-ticket close rate benchmarks for 2026 across $3K, $10K, and $25K+ offers from 125+ client accounts.",
+      "Setter-qualified calls close at 24–31% on $5K–$10K offers vs 9–14% for unvetted bookings. 2026 close rate benchmarks for $3K to $25K+ offers.",
     url: `${site.url}/benchmarks/close-rate`,
     siteName: site.name,
     type: "article",

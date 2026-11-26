@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: "/tools/ltv-cac-calculator" },
   openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
+    title: "LTV to CAC Ratio Calculator | QualifiedLeadsX",
+    description: "Free LTV:CAC calculator. Work out customer lifetime value, acquisition cost and the ratio that tells you whether paid acquisition is ready to scale.",
     url: "/tools/ltv-cac-calculator",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: TITLE }],
   },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ["/opengraph-image"] },
+  twitter: { card: "summary_large_image", title: "LTV to CAC Ratio Calculator | QualifiedLeadsX", description: DESCRIPTION, images: ["/opengraph-image"] },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

@@ -48,15 +48,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const postUrl = `${site.url}/blog/${post.slug}`;
 
+  const pageTitle =
+    (post.seoTitle ?? post.title).length + " | QualifiedLeadsX™".length <= 60
+      ? `${post.seoTitle ?? post.title} | QualifiedLeadsX™`
+      : (post.seoTitle ?? post.title);
   return {
     // Keep the search phrase visible: add the brand suffix only when the full
     // title stays within 60 characters (playbook rule).
-    title: {
-      absolute:
-        (post.seoTitle ?? post.title).length + " | QualifiedLeadsX™".length <= 60
-          ? `${post.seoTitle ?? post.title} | QualifiedLeadsX™`
-          : (post.seoTitle ?? post.title),
-    },
+    title: { absolute: pageTitle },
     description: post.description,
     keywords: post.tags,
     authors: [{ name: post.author.name, url: site.url }],
@@ -64,7 +63,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `/blog/${post.slug}`,
     },
     openGraph: {
-      title: post.title,
+      title: pageTitle,
       description: post.description,
       url: postUrl,
       type: "article",
@@ -83,7 +82,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
+      title: pageTitle,
       description: post.description,
       images: [post.coverImage],
     },

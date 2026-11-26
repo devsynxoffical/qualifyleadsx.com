@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Appointment Show Rate Benchmarks 2026 - QualifiedLeadsX",
     description:
-      "Verified 2026 appointment show rate data by industry and follow-up channel based on 125+ client accounts.",
+      "Verified 2026 appointment show rate benchmarks by industry and channel. See how sub-5-minute speed to lead increases show rates to 88%+ consistently.",
     url: `${site.url}/benchmarks/show-rate`,
     type: "website",
   },

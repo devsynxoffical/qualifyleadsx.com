@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Appointment Setting for Agencies | QualifiedLeadsX",
+    title: "Appointment Setting for Agencies: Booked Strategy Calls",
     description:
-      "Scale agency retainers ($3K–$15K/mo) with dedicated appointment setters. Sub-5-minute speed to lead.",
+      "Scale agency retainers ($3K–$15K/mo) with dedicated appointment setters. Sub-5-minute speed to lead, qualified discovery calls and 82%+ show rates.",
     url: `${site.url}/appointment-setting-for-agencies`,
     siteName: site.name,
     type: "website",

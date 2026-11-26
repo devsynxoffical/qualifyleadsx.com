@@ -1,5 +1,8 @@
 import { site } from "@/lib/site";
+import routeLastmodJson from "@/lib/route-lastmod.json";
 import { brandFacts } from "@/lib/brand-facts";
+
+const routeLastmodMap = routeLastmodJson as Record<string, string>;
 
 /**
  * Shared schema.org building blocks so every page references the same
@@ -197,7 +200,7 @@ export function webPageNode(opts: {
     publisher: orgRef,
     breadcrumb: { "@id": `${url}#breadcrumb` },
     primaryImageOfPage: imageObject(opts.primaryImage ?? "/opengraph-image"),
-    dateModified: opts.dateModified ?? SITE_LAST_MODIFIED,
+    dateModified: opts.dateModified ?? (routeLastmodMap[opts.path] ?? SITE_LAST_MODIFIED).slice(0, 10),
     ...(opts.speakable
       ? {
           speakable: {

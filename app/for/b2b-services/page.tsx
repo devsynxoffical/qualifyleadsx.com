@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Lead Generation for Consultancies & B2B Service Firms",
     description:
-      "Predictable B2B service lead generation for IT firms, consultancies, and commercial contractors: qualified client calls booked on your calendar.",
+      "Predictable B2B service lead generation for IT firms, consultancies, and commercial contractors: qualified high-ticket client calls on your calendar.",
     url: `${site.url}/for/b2b-services`,
     type: "website",
   },

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Meta Ads vs Google Ads for High-Ticket Offers",
     description:
-      "Meta Ads vs Google Ads for coaches & consultants. Compare CAC, intent vs disruption, and volume.",
+      "Meta Ads vs Google Ads for coaches & consultants. Compare CAC, intent vs disruption, volume, and how to scale $5K+ offers in 2026.",
     url: `${site.url}/compare/meta-ads-vs-google-ads-high-ticket`,
     siteName: site.name,
     type: "article",

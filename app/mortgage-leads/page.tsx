@@ -12,7 +12,7 @@ import { RichLeadPage } from "@/components/landing/RichLeadPage";
 const PATH = "/mortgage-leads";
 const TITLE = "Mortgage Leads: Exclusive, OTP-Verified Borrower Leads";
 const DESCRIPTION =
-  "Exclusive mortgage and refinance leads, OTP-verified, from Meta ads in your own account. Published: 823 Texas leads at $23.97; 208 leads that became 37 closings.";
+  "Exclusive OTP-verified mortgage and refinance leads from Meta ads in your own account. Published: 823 Texas leads at $23.97; 208 leads, 37 closings.";
 
 export const metadata: Metadata = {
   title: TITLE,

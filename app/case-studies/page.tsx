@@ -36,18 +36,18 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "125+ Real Client Case Studies & Scaling Proof | QualifiedLeadsX™",
+    title: "125+ Real Client Case Studies & Scaling Proof",
     description:
-      "Real ad spend, verified cost per lead, revenue dashboards, and live video breakdowns from funnels installed across 30+ high-ticket niches.",
+      "Explore 125+ verified scaling case studies, video breakdowns, Meta Ads ad account dashboards, and client revenue proof across 30+ high-ticket industries.",
     url: "/case-studies",
     type: "website",
   },
   twitter: {
     images: [defaultOgImage.url],
     card: "summary_large_image",
-    title: "125+ Real Client Case Studies & Scaling Proof | QualifiedLeadsX™",
+    title: "125+ Real Client Case Studies & Scaling Proof",
     description:
-      "Explore 125+ verified scaling case studies, video breakdowns, Meta Ads ad account dashboards, and client revenue proof.",
+      "Explore 125+ verified scaling case studies, video breakdowns, Meta Ads ad account dashboards, and client revenue proof across 30+ high-ticket industries.",
   },
 };
 

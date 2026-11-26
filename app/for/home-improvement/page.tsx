@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Home Improvement Leads | QualifiedLeadsX",
     description:
-      "Exclusive homeowner lead generation for roofing, HVAC, and remodeling contractors. Pre-set in-home estimates.",
+      "Exclusive homeowner lead generation for roofing, solar, HVAC, and kitchen remodeling contractors. Pre-set in-home estimates with verified property owners.",
     url: `${site.url}/for/home-improvement`,
     siteName: site.name,
     type: "website",

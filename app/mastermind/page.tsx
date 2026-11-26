@@ -42,18 +42,18 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "AI Client Acquisition Mastermind | QualifiedLeadsX™",
+    title: "AI Client Acquisition Mastermind for Agency Owners & Coaches",
     description:
-      "Exclusive collective of high-ticket coaches, agency owners, and founders scaling past $100K–$500K+/month.",
+      "An exclusive private collective of high-ticket coaches, agency owners, and B2B founders scaling past $100K–$500K+/month with Meta Ads and AI pipelines.",
     url: "/mastermind",
     type: "website",
   },
   twitter: {
     images: [defaultOgImage.url],
     card: "summary_large_image",
-    title: "8-Figure Mastermind | QualifiedLeadsX™",
+    title: "AI Client Acquisition Mastermind for Agency Owners & Coaches",
     description:
-      "Private collective of founders and coaches scaling past $100K–$500K+/month.",
+      "An exclusive private collective of high-ticket coaches, agency owners, and B2B founders scaling past $100K–$500K+/month with Meta Ads and AI pipelines.",
   },
 };
 

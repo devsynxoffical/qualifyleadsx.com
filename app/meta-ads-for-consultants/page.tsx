@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Facebook Ads for Consultants | QualifiedLeadsX",
+    title: "Facebook Ads for Consultants: Proof-Led Campaigns",
     description:
-      "Generate high-fee B2B consulting engagements ($10K–$50K+). Bespoke Meta ad funnels and executive VSLs.",
+      "Generate high-fee B2B consulting engagements ($10K–$50K+). Bespoke Meta ad funnels, executive white-paper VSLs, and verified C-suite consultations.",
     url: `${site.url}/meta-ads-for-consultants`,
     siteName: site.name,
     type: "website",

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Appointment Setter vs Virtual Assistant (VA): Which to Hire",
     description:
-      "Appointment setter vs virtual assistant: compare conversion rates, compensation, and sales impact.",
+      "Appointment setter vs virtual assistant (VA): compare conversion rates, compensation, qualification skills, and sales impact for high-ticket offers.",
     url: `${site.url}/compare/appointment-setter-vs-va`,
     siteName: site.name,
     type: "article",

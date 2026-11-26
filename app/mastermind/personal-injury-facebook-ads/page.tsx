@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: PATH },
   openGraph: {
-    title: "Sniper Method Mastermind: Facebook Ads for Personal Injury | QualifiedLeadsX™",
-    description: DESCRIPTION,
+    title: "Facebook Ads for Personal Injury Lawyers: Sniper Method",
+    description: "Sniper Method mastermind for PI law firms and agencies: find hidden Facebook audiences for car, motorcycle, 18-wheeler and rideshare accident cases.",
     url: PATH,
     type: "website",
     images: [{ url: POSTER, width: 1280, height: 720, alt: VIDEO_TITLE }],
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
   twitter: {
     images: [defaultOgImage.url],
     card: "summary_large_image",
-    title: "Sniper Method Mastermind: Facebook Ads for Personal Injury",
-    description: DESCRIPTION,
+    title: "Facebook Ads for Personal Injury Lawyers: Sniper Method",
+    description: "Sniper Method mastermind for PI law firms and agencies: find hidden Facebook audiences for car, motorcycle, 18-wheeler and rideshare accident cases.",
   },
 };
 

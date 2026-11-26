@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   keywords: ["meta ads budget calculator", "facebook ads budget calculator", "how much to spend on facebook ads", "facebook ads budget for lead generation"],
   alternates: { canonical: "/tools/meta-ads-budget-calculator" },
   openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
+    title: "Meta Ads Budget Calculator (Free) | QualifiedLeadsX™",
+    description: "Work out the monthly Facebook and Instagram ad budget you need from your target clients, close rate, show rate and cost per booked call. Free, no sign-up.",
     url: "/tools/meta-ads-budget-calculator",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: TITLE }],
   },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ["/opengraph-image"] },
+  twitter: { card: "summary_large_image", title: "Meta Ads Budget Calculator (Free) | QualifiedLeadsX™", description: DESCRIPTION, images: ["/opengraph-image"] },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

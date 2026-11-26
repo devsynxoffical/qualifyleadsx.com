@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Facebook Ads for Coaches: Best Practices & Client Acquisition | QualifiedLeadsX™",
+    title: "Facebook Ads for Coaches: Management Best Practices",
     description:
-      "Scale $5K–$25K coaching offers with high-converting Facebook ads, proven best practices, and sub-$180 booked calls.",
+      "Scale $5K–$25K coaching offers with Facebook and Instagram ads: discover proven best practices, broad Advantage+ scaling, and sub-$180 booked calls.",
     url: `${site.url}/meta-ads-for-coaches`,
     siteName: site.name,
     type: "website",

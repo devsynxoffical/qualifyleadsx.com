@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Online Fitness Coach Clients | QualifiedLeadsX",
     description:
-      "Scale high-ticket online fitness coaching ($2.5K–$6K offers). Book 30–60 qualified transformation clients monthly.",
+      "Scale high-ticket online fitness coaching ($2.5K–$6K offers). Book 30–60 qualified transformation clients monthly with Meta ads and automated DM setters.",
     url: `${site.url}/for/fitness-coaches`,
     siteName: site.name,
     type: "website",

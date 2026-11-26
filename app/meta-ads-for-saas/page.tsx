@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Facebook Ads for SaaS | QualifiedLeadsX",
+    title: "Facebook Ads for SaaS: Real Results and Playbook",
     description:
-      "Scale B2B SaaS demo requests with targeted Facebook & Instagram ads. Sub-$240 completed demos.",
+      "Scale B2B SaaS demo requests with targeted Facebook & Instagram ads. Product-led video walkthroughs, qualification forms, and sub-$240 completed demos.",
     url: `${site.url}/meta-ads-for-saas`,
     siteName: site.name,
     type: "website",

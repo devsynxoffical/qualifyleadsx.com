@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Meta Ads CPM Benchmarks 2026 | QualifiedLeadsX",
     description:
-      "Facebook & Instagram Ads CPM benchmarks for 2026 across seasons, niches, and creative formats.",
+      "Facebook & Instagram Ads CPM benchmarks for 2026. Real cost per thousand impressions data across seasons, niches, and creative formats from $50M+ spend.",
     url: `${site.url}/benchmarks/meta-ads-cpm`,
     siteName: site.name,
     type: "article",

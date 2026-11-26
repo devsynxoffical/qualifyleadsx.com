@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Top QualifiedLeadsX Alternatives: Lead Gen Agencies Comparison | QualifiedLeadsX™",
+    title: "QualifiedLeadsX Alternatives: Lead Gen Agencies Compared",
     description:
-      "Honest comparison of QualifiedLeadsX alternatives for high-ticket lead generation. Traditional agencies vs QLX.",
+      "An honest comparison of QualifiedLeadsX alternatives for high-ticket lead generation: traditional agencies, cold email shops, and in-house hiring.",
     url: `${site.url}/compare/qualifiedleadsx-alternatives`,
     siteName: site.name,
     type: "article",

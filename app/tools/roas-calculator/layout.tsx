@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: "/tools/roas-calculator" },
   openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
+    title: "ROAS & Break-Even ROAS Calculator | QualifiedLeadsX",
+    description: "Calculate return on ad spend and your break-even ROAS for a high-ticket offer, including front-end cash collected and lifetime revenue per client.",
     url: "/tools/roas-calculator",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: TITLE }],
   },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ["/opengraph-image"] },
+  twitter: { card: "summary_large_image", title: "ROAS & Break-Even ROAS Calculator | QualifiedLeadsX", description: DESCRIPTION, images: ["/opengraph-image"] },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

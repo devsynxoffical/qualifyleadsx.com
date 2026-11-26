@@ -12,7 +12,7 @@ import { RichLeadPage } from "@/components/landing/RichLeadPage";
 const PATH = "/hvac-leads";
 const TITLE = "HVAC Leads: Exclusive Homeowner Leads and Appointments";
 const DESCRIPTION =
-  "Exclusive HVAC leads and booked appointments from Meta ads. Published: 140 appointments and 12 installs from $1,956 (19.6x ROAS); 630 verified leads at $23.09.";
+  "Exclusive HVAC leads and booked appointments from Meta ads. Published: 140 appointments and 12 installs from $1,956; 630 verified leads at $23.09.";
 
 export const metadata: Metadata = {
   title: TITLE,

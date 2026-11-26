@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     canonical: "/blog",
   },
   openGraph: {
-    title: "B2B Client Acquisition & Meta Ads Blog | QualifiedLeadsX™",
+    title: "B2B Client Acquisition & Meta Ads Blog",
     description:
-      "Actionable scaling blueprints, funnel architecture, and media buying guides for high-ticket service providers.",
+      "B2B client acquisition guides: VSL funnels, Meta ads playbooks, lead qualification and benchmarks from campaigns we run for high-ticket businesses.",
     url: "/blog",
     type: "website",
     images: [

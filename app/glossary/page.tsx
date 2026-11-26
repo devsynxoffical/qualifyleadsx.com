@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: "/glossary" },
   openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
+    title: "Client Acquisition Glossary (29 Terms) | QualifiedLeadsX™",
+    description: "Plain-English definitions of speed to lead, VSL funnel, blended CAC, ROAS, lead qualification and 20+ more terms, each linked to a full guide.",
     url: "/glossary",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "QualifiedLeadsX client acquisition glossary" }],
   },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ["/opengraph-image"] },
+  twitter: { card: "summary_large_image", title: "Client Acquisition Glossary (29 Terms) | QualifiedLeadsX™", description: DESCRIPTION, images: ["/opengraph-image"] },
 };
 
 export default function GlossaryPage() {

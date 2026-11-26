@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
     title: "Cost Per Lead by Industry 2026 Benchmarks | QualifiedLeadsX",
     description:
-      "Real CPL benchmarks across B2B SaaS, med spas, real estate, and high-ticket coaching based on $50M+ spend.",
+      "Cost per lead by industry in 2026. Real CPL benchmarks across B2B SaaS, med spas, real estate, financial advising, and coaching based on $50M+ ad spend.",
     url: `${site.url}/benchmarks/cost-per-lead-by-industry`,
     siteName: site.name,
     type: "article",

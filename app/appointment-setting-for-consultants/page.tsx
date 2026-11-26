@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Appointment Setting for Consultants | QualifiedLeadsX",
+    title: "Appointment Setting for Consultants: Qualified Calls Only",
     description:
-      "High-touch appointment setting for management & B2B consultants. Book C-suite decision-makers for $15K–$50K+ engagements.",
+      "High-touch appointment setting for management & B2B consultants. Book C-suite decision-makers for $15K–$50K+ advisory engagements with 85%+ show rates.",
     url: `${site.url}/appointment-setting-for-consultants`,
     siteName: site.name,
     type: "website",

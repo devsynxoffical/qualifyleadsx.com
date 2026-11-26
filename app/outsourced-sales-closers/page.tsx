@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Outsourced Sales Closers | QualifiedLeadsX",
+    title: "Outsourced Sales Closers: Commission-Based Closers",
     description:
-      "Hire vetted outsourced sales closers for $3K–$25K high-ticket offers. Commission-aligned talent, call audits, and 25%+ close rates.",
+      "Hire vetted outsourced sales closers for $3K–$25K high-ticket offers. Commission-aligned sales talent, call audits, and consistent 25%+ close rates.",
     url: `${site.url}/outsourced-sales-closers`,
     siteName: site.name,
     type: "website",

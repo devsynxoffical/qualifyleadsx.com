@@ -40,6 +40,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/about",
   },
+  openGraph: { title: "About QualifiedLeadsX: $50M+ Meta Ads Managed", description: "QualifiedLeadsX is operated by Ecom Expertz LLC and founded by Gaurav Kapoor: 12+ years of performance marketing, $50M+ Meta ads spend, 125+ case studies.", url: "/about", type: "website" },
 };
 
 const numbers = [

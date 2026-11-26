@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: [defaultOgImage],
-    title: "Client Acquisition Services | QualifiedLeadsX",
+    title: "Client Acquisition Services: Meta Ads, VSL & Setters",
     description:
-      "Meta ads, VSL funnels, AI speed to lead, WhatsApp nurture, CRM automation, appointment setting and sales closers for high-ticket businesses.",
+      "Every QualifiedLeadsX service in one place: Meta ads, VSL funnels, AI speed to lead, WhatsApp nurture, CRM automation, appointment setting and closers.",
     url: `${site.url}/services`,
     type: "website",
   },

@@ -716,3 +716,13 @@ Rules followed: qualifiedleadsx.com only; content and SEO only (no UI changes); 
 4. GEO / freshness: every page with a breadcrumb now carries a WebPage node with its real last-changed date (dateModified from git history, lib/route-lastmod.json); webPageNode also reads the per-page date instead of a fixed 4 Nov date. Answer blocks checked: every service, industry, tool, benchmark, compare and blog page already opens with a "Quick answer" or "In short" block.
 5. Homepage rendering (Suspense boundaries put 21 below-the-fold sections into hidden streamed blocks in the HTML) noted; not changed today because the homepage was edited on 23 Nov (7-day rule). Earliest change date: 30 Nov.
 Verification: tsc, eslint 0 errors, build, seo:validate PASS (0 required missing), seo:links PASS, metadata re-audit: only HOLD pages differ.
+- 26 Nov: Day 1 changes verified live 08:43 UTC (/speed-to-lead new title; og:title matches page title on /hvac-leads, /mortgage-leads, /about, /book-your-call, /blog/why-leads-dont-show-up; WebPage dateModified present). Indexing submissions 2026-11-26 08:53 UTC: Bing 13 URLs (accepted): /speed-to-lead /hvac-leads /mortgage-leads /about /book-your-call /blog/why-leads-dont-show-up /crm-automation /compare/meta-ads-vs-google-ads-high-ticket /compare/done-for-you-vs-done-with-you-lead-generation /for/financial-advisors /tools/ltv-cac-calculator /benchmarks/meta-ads-cpm /tools/roas-calculator. IndexNow: 403 UserForbiddedToAccessSite (unchanged). Google: owner manual request.
+
+## Run 17: 26 Nov 2026 08:44 UTC (14:13 IST run)
+- GSC: no new day since the last run (latest 25 Nov). 7d: 1,548 impressions (+54 late data), 9 clicks, 278 queries, avg position 38.5.
+- Up: quick lead acquisition 27 -> 21.8 (/speed-to-lead), qualified personal loan leads 51 -> 43, lead conversion rate 79 -> 70. Down: qualified b2b leads 51 -> 64.8 (homepage, 6 impr), facebook ads for coaches 52 -> 59.5.
+- 13 new queries, incl. 2 AI-style prompts at position 1 (/benchmarks, /meta-ads-agency).
+- Striking distance: facebook ads agency vs hiring an in-house media buyer (pos 5, 24 impr), b2b appointment setting quote (pos 8, 10 impr).
+- Bots unchanged (Bingbot 403, GPTBot 429; OAI-SearchBot, PerplexityBot, ClaudeBot 200). Bing: 102 in index (+3), 0 crawl issues.
+- Tracker: no rows due today.
+- Changes this run: none beyond the Day 1 work above (already 55 files today).

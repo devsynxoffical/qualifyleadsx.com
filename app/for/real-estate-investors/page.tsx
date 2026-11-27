@@ -57,6 +57,14 @@ const faqs = [
     q: "Do you filter for property condition and equity?",
     a: "Yes. Our multi-step qualifying funnel captures mortgage status, approximate asking price, repair needs, and timeline to close (under 30 days vs 90+ days) so acquisitions managers focus exclusively on high-margin deals.",
   },
+  {
+    q: "Can I outsource lead generation as a real estate investor?",
+    a: "Yes. We run the Meta ads, the seller funnel and the first contact for you, inside an ad account you own, so every motivated seller lead is exclusive to you. In one published campaign, $4,397 in ads produced 157 motivated home seller leads in 7 days at $28 per lead.",
+  },
+  {
+    q: "Can real estate lead generation scale without the cost per lead rising?",
+    a: "In a published Texas real estate campaign, spend grew from $4,069 in the test month (247 leads at $16.48) to $22,456 in September (986 leads at $22.78). Over 3 months, $49,888 produced 2,279 OTP-verified, pre-qualified leads.",
+  },
   ...realEstateInvestorsDeepDive.faqs,
 ];
 
@@ -196,6 +204,9 @@ export default function RealEstateInvestorsPage() {
               </div>
             </div>
 
+            <p className="mt-6 text-sm text-fog leading-relaxed">
+              Every seller lead is routed, tagged and followed up automatically through our <Link href="/crm-automation" className="text-lime underline-offset-2 hover:underline">CRM automation</Link>, so no inquiry waits for a callback.
+            </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <Link
                 href="/book-your-call#book"

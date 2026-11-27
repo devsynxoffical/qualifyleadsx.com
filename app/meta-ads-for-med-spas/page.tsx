@@ -45,6 +45,10 @@ const faqs = [
     q: "How do you navigate Meta's healthcare ad policies for aesthetics?",
     a: "We avoid prohibited before-and-after body close-ups and personal attribute callouts. Instead, we showcase provider artistry, clinic ambiance, treatment demonstrations, and patient testimonial videos.",
   },
+  {
+    q: "How much does a med spa appointment cost from Meta ads?",
+    a: "For a med spa with three New York clinics, $10,387 in Meta ads booked 453 appointments at $22.93 each. 303 people showed up (67%), 247 became paying clients and revenue reached $74,100.",
+  },
   ...medSpasMetaDeepDive.faqs,
 ];
 

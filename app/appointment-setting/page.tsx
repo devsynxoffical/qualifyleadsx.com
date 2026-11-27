@@ -107,6 +107,10 @@ const appointmentFaqs = [
     a: "Yes. We book calls for B2B service companies, agencies and consultants as well as local and consumer service businesses.",
   },
   {
+    q: "How do I get a quote for B2B appointment setting?",
+    a: "Book a free strategy call. Every engagement is custom quoted on your niche, monthly ad budget, funnel scope and number of offers, so there is no public price list. Published campaigns have booked appointments from $4.81 to $45 each.",
+  },
+  {
     q: "Which countries do you book appointments in?",
     a: "The US, UK, Canada and Australia, in the time zone of your sales team.",
   },

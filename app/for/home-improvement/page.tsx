@@ -43,6 +43,14 @@ const faqs = [
     q: "How do you protect show rates for evening and weekend appointments?",
     a: "Our automated dispatch workflow sends 24-hour and 2-hour SMS reminder pings, complete with the estimator's photo, licensing credentials, and past local project photos to ensure both decision-makers are present.",
   },
+  {
+    q: "Should I buy home improvement leads or generate my own?",
+    a: "Bought leads are usually sold to several contractors at once, so you race competitors to the phone. Leads from your own Meta campaign are exclusive to you. Published examples: a New York garage door and kitchen remodeling client got 361 pre-qualified inquiries for $1,840 ($5.10 each), and a Texas remodeler got 542 leads in 30 days for $12,911 ($23.82 each).",
+  },
+  {
+    q: "What are the main home improvement lead sources?",
+    a: "Referrals, shared lead marketplaces, Google search ads and Meta ads. In our published campaigns, Meta ads with a qualifying form and fast follow-up booked 337 kitchen remodeling appointments in 19 days from $1,621 in New York, or $4.81 per appointment.",
+  },
 ];
 
 export default function HomeImprovementPage() {

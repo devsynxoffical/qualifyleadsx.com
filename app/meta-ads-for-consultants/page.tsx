@@ -45,6 +45,10 @@ const faqs = [
     q: "How do you pre-qualify consulting prospects before they get on the calendar?",
     a: "Our intake form requires prospects to state company annual revenue, current system bottlenecks, and project timeline before unlocking calendar availability.",
   },
+  {
+    q: "What results have consultants seen from Meta ads?",
+    a: "Two published examples: an executive consulting funnel collected $150,348 in five days from 2,063 memberships, 183 bundle upsells and 30 high-ticket done-for-you programs, and an agency consulting client reached an $85K month, tracking toward $95K+, after we rebuilt its retargeting.",
+  },
   ...metaAdsConsultantsDeepDive.faqs,
 ];
 
@@ -136,6 +140,9 @@ export default function MetaAdsForConsultantsPage() {
               </div>
             </div>
 
+            <p className="mt-6 text-sm text-fog leading-relaxed">
+              Deciding between platforms? Read <Link href="/compare/meta-ads-vs-google-ads-high-ticket" className="text-lime underline-offset-2 hover:underline">Meta ads vs Google ads for high-ticket offers</Link>.
+            </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <Link
                 href="/book-your-call#book"

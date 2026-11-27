@@ -45,6 +45,10 @@ const faqs = [
     q: "What is the typical cost per qualified solar sit?",
     a: "Depending on utility territory and net metering policy (NEM 3.0 vs 1-to-1 credit states), cost per qualified sit-down ranges from $120 to $220.",
   },
+  {
+    q: "How much do solar leads cost on Meta ads?",
+    a: "In a published campaign for a solar company serving California and Texas, $3,642.68 in ads produced 353 OTP-verified leads in 5 days, about $10.32 per lead. Another solar client received 232 qualified homeowner leads in 15 days from about $6,000 in spend.",
+  },
   ...solarDeepDive.faqs,
 ];
 

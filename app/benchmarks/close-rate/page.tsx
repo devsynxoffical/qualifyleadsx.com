@@ -51,6 +51,10 @@ const faqs = [
     q: "What is the single biggest cause of low high-ticket close rates?",
     a: "The number one cause is selling on the first call to someone who has never consumed your proof content. Requiring prospects to watch a 10-minute VSL before booking increases close rates by up to 12 percentage points.",
   },
+  {
+    q: "What close rates do published campaigns show?",
+    a: "Two published examples: a New York med spa turned 303 attended appointments into 247 paying clients (about 82% of those who showed), and a New Jersey HVAC company turned 140 booked appointments into 12 installs worth $38,400. Close rate depends heavily on the offer, price and how the call is run.",
+  },
 ];
 
 export default function HighTicketCloseRatePage() {
@@ -122,6 +126,9 @@ export default function HighTicketCloseRatePage() {
               </p>
             </div>
 
+            <p className="mt-6 text-sm text-fog leading-relaxed">
+              To see what a close rate is worth, compare lifetime value with acquisition cost in the <Link href="/tools/ltv-cac-calculator" className="text-lime underline-offset-2 hover:underline">LTV to CAC ratio calculator</Link>.
+            </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <Link
                 href="/outsourced-sales-closers"

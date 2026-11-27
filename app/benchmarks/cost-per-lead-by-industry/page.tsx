@@ -60,6 +60,10 @@ const faqs = [
     q: "What dataset are these 2026 CPL benchmarks derived from?",
     a: "These benchmarks are calculated from over $50,000,000 in direct client ad spend across 125+ client accounts managed by QualifiedLeadsX between 2024 and 2026.",
   },
+  {
+    q: "What cost per lead have published QualifiedLeadsX campaigns achieved?",
+    a: "From campaigns we have published with the spend shown: kitchen remodeling and garage doors $5.10, final expense insurance $7.79 (2,440 leads), solar $10.32 (353 OTP-verified leads), luxury real estate $11.57, HVAC $23.09 (630 verified leads), mortgage $23.97 (823 Texas leads) and motivated home sellers $28 (157 leads in 7 days). Results vary by offer, market and budget.",
+  },
 ];
 
 export default function CplByIndustryPage() {
@@ -131,6 +135,9 @@ export default function CplByIndustryPage() {
               </p>
             </div>
 
+            <p className="mt-6 text-sm text-fog leading-relaxed">
+              Cost per lead follows the price of reach: see the <Link href="/benchmarks/meta-ads-cpm" className="text-lime underline-offset-2 hover:underline">2026 Meta ads CPM benchmarks</Link>. Advisors can see how we qualify on investable assets on our <Link href="/for/financial-advisors" className="text-lime underline-offset-2 hover:underline">lead generation for financial advisors</Link> page.
+            </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <Link
                 href="/tools/cac-calculator"

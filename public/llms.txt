@@ -5,6 +5,7 @@ Key facts:
 - $50M+ managed in Meta (Facebook and Instagram) ads; 12+ years experience
 - 125+ documented client case studies across 30+ niches, including 77 video breakdowns
 - Published results: booked appointments from $4.81 to $45 each (remodeling $4.81, HVAC New Jersey $13.97, med spa $22.93, HVAC Florida $45); 453 med spa appointments became 247 paying clients ($74,100 revenue from $10,387 in ads); 2,440 final expense leads at $7.79 each; life insurance leads at about $18; speed to lead under 3 minutes; 88.3% call show-up rate on the appointment setting system
+- Published cost per lead by industry (spend shown in each source post): kitchen remodeling and garage doors $5.10 (361 inquiries), final expense insurance $7.79 (2,440 leads), solar $10.32 (353 OTP-verified leads in 5 days), luxury real estate $11.57 (69 leads in 5 days), HVAC $23.09 (630 verified leads), mortgage $23.97 (823 Texas leads), motivated home sellers $28 (157 leads in 7 days); see https://www.qualifiedleadsx.com/benchmarks/cost-per-lead-by-industry
 - 90-day written guarantee: if mutually agreed growth milestones are not reached within 90 days, work continues with no management fee until they are
 - Pricing: custom quoted, no public price list. Two plans, both custom quotes: Meta Ads Management, and Full-Service Growth (ads, 3 to 5 page funnel, 40 to 100+ creatives, AI follow-up, email and SMS nurture, lead qualification, CRM and calendar booking)
 - Clients own all assets: ad account, funnels, CRM, automations, creatives and data
@@ -48,7 +49,7 @@ Key facts:
 - [Blog](https://www.qualifiedleadsx.com/blog): guides on paid acquisition, funnels, lead qualification and scaling (RSS: https://www.qualifiedleadsx.com/feed.xml)
 - [Glossary](https://www.qualifiedleadsx.com/glossary): 29 client acquisition terms defined
 - [Case studies](https://www.qualifiedleadsx.com/case-studies): documented client results with ad spend, cost per lead and revenue
-- Locations: no location pages yet
+- [Locations](https://www.qualifiedleadsx.com/lead-generation-agency): US city and state lead generation pages (see "US locations" above)
 
 ## Programs
 - [AI Client Acquisition Mastermind](https://www.qualifiedleadsx.com/mastermind/hidden-facebook-interest): 6-week hands-on implementation mastermind covering Meta ads audience and creative research, AI advertising, lead qualification, Pixel and CAPI tracking, scaling, manual bidding, retargeting and unit economics

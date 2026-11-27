@@ -732,3 +732,24 @@ Verification: tsc, eslint 0 errors, build, seo:validate PASS (0 required missing
 - Bots: Googlebot, OAI-SearchBot, PerplexityBot, ClaudeBot and browser 200 on all 5 paths; Bingbot 403 and GPTBot 429 (unchanged, Hostinger setting).
 - Tracker: no rows due (earliest check_on 3 Dec).
 - Changes: none (no fresh data to justify a change; Day 1 work already shipped today).
+
+## 27 Nov 2026: Day 2 of the two-day SEO, AEO and GEO plan (FAQs, llms.txt, links to not-indexed pages)
+Rules followed: qualifiedleadsx.com only; content and SEO only; published figures only (lib/case-studies-data.ts source posts); no em dashes; HOLD row untouched; 7-day rule (FAQ additions on pages changed recently; body links only on pages whose content was last changed 19 Nov, the 26 Nov edit being metadata only).
+- Search Console and Bing not pulled: the container was rebuilt and both key files are missing. Dependencies were reinstalled (npm ci).
+1. 10 new FAQs (in the visible FAQ and FAQPage schema), each answering a real Search Console query with published numbers:
+   - /for/real-estate-investors (queries: real estate investor lead generation, outsourced lead generation for real estate investors): outsourcing (157 seller leads, $4,397, 7 days, $28 each) and scaling (Texas: $4,069 -> $22,456 a month; 2,279 OTP-verified leads from $49,888).
+   - /for/home-improvement (queries: buy home improvement leads, home improvement lead sources): buy vs generate (361 inquiries at $5.10; 542 Texas leads at $23.82) and lead sources (337 kitchen remodeling appointments in 19 days at $4.81).
+   - /for/solar-companies: solar cost per lead (353 OTP-verified leads in 5 days at $10.32; 232 leads in 15 days from about $6,000).
+   - /meta-ads-for-consultants: consulting results ($150,348 in five days; $85K month).
+   - /meta-ads-for-med-spas: cost per med spa appointment (453 at $22.93; 303 showed; 247 clients; $74,100).
+   - /benchmarks/cost-per-lead-by-industry: published CPL by industry (7 niches with spend shown).
+   - /benchmarks/close-rate: published close outcomes (247 of 303 attended, about 82%; 140 HVAC appointments to 12 installs).
+   - /appointment-setting (query: b2b appointment setting quote, position 8, 10 impressions): how to get a quote (custom quoted, brand-facts wording).
+2. llms.txt: stale "no location pages yet" line replaced with the location hub link; new key-facts line with published cost per lead by industry. llms-full.txt rebuilt.
+3. Contextual links into pages Google has discovered but not indexed:
+   - /benchmarks/cost-per-lead-by-industry -> /benchmarks/meta-ads-cpm and /for/financial-advisors
+   - /benchmarks/close-rate -> /tools/ltv-cac-calculator
+   - /meta-ads-for-consultants -> /compare/meta-ads-vs-google-ads-high-ticket
+   - /compare/qualifiedleadsx-alternatives -> /compare/done-for-you-vs-done-with-you-lead-generation
+   - /for/real-estate-investors -> /crm-automation
+Verification: tsc, eslint 0, build, seo:validate PASS (0 required missing), seo:links PASS (0 broken), playbook audit 0 issues; 9 changed pages at 390 px: one H1, titles 40-59, descriptions 134-155, FAQPage present, JSON-LD parses, no overflow, no em dashes.

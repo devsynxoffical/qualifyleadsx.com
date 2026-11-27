@@ -169,6 +169,9 @@ export default function QualifiedLeadsXAlternativesPage() {
               </p>
             </div>
 
+            <p className="mt-6 text-sm text-fog leading-relaxed">
+              Not sure whether you want the work done for you or alongside you? Compare <Link href="/compare/done-for-you-vs-done-with-you-lead-generation" className="text-lime underline-offset-2 hover:underline">done-for-you vs done-with-you lead generation</Link>.
+            </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <Link
                 href="/book-your-call#book"

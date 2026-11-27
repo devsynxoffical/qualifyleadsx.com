@@ -754,3 +754,10 @@ Rules followed: qualifiedleadsx.com only; content and SEO only; published figure
    - /for/real-estate-investors -> /crm-automation
 Verification: tsc, eslint 0, build, seo:validate PASS (0 required missing), seo:links PASS (0 broken), playbook audit 0 issues; 9 changed pages at 390 px: one H1, titles 40-59, descriptions 134-155, FAQPage present, JSON-LD parses, no overflow, no em dashes.
 - 27 Nov: Day 2 changes verified live (new FAQs on /for/real-estate-investors and /appointment-setting, new links on /benchmarks/cost-per-lead-by-industry and /compare/qualifiedleadsx-alternatives, llms.txt cost-per-lead line). Bing submission not possible: Bing key missing after container rebuild. Changed URLs for Bing and Search Console: /for/real-estate-investors /for/home-improvement /for/solar-companies /meta-ads-for-consultants /meta-ads-for-med-spas /benchmarks/cost-per-lead-by-industry /benchmarks/close-rate /compare/qualifiedleadsx-alternatives /appointment-setting.
+
+## Run 19: 27 Nov 2026 08:44 UTC (14:13 IST run)
+- Search Console and Bing not measured: both key files are still missing after the container rebuild (service-account JSON in uploads; Bing key in scratchpad).
+- Bots: Googlebot, OAI-SearchBot, PerplexityBot, ClaudeBot, browser 200; Bingbot 403, GPTBot 429 (unchanged).
+- Indexing: Bing submission not possible (no key). IndexNow tried: 403 UserForbiddedToAccessSite. Owner, request in Search Console: the 9 Day 2 URLs listed above.
+- Tracker: no rows due (earliest check_on 3 Dec).
+- Changes: none (Day 2 work shipped earlier today; no fresh data to justify more).

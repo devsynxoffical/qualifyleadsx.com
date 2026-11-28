@@ -767,3 +767,10 @@ Verification: tsc, eslint 0, build, seo:validate PASS (0 required missing), seo:
 - Bots unchanged: Googlebot, OAI-SearchBot, PerplexityBot, ClaudeBot, browser 200; Bingbot 403, GPTBot 429.
 - Tracker: no rows due (earliest check_on 3 Dec).
 - Changes: none (no fresh data; Day 2 changes went live 27 Nov).
+
+## Run 21: 28 Nov 2026 08:43 UTC (14:13 IST run)
+- Search Console and Bing not measured: both key files still missing (fourth run in a row).
+- Bots unchanged: Googlebot, OAI-SearchBot, PerplexityBot, ClaudeBot, browser 200; Bingbot 403, GPTBot 429.
+- Indexing: no pages changed since the 27 Nov submission list; Bing not possible (no key); IndexNow 403 UserForbiddedToAccessSite.
+- Tracker: no rows due (earliest check_on 3 Dec).
+- Changes: none (no fresh data to justify a change).
